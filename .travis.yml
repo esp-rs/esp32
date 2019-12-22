@@ -1,0 +1,16 @@
+language: rust
+rust:
+  - stable
+  - nightly
+cache: cargo
+
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+
+install:
+  - rustup component add rustfmt
+  - pip3 install --upgrade --user svdtools
+  - cargo install form
+  - cargo install svd2rust
