@@ -1,6 +1,9 @@
 # esp32
 
+[![Build Status](https://travis-ci.com/esp-rs/esp32.svg?branch=master)](https://travis-ci.com/esp-rs/esp32)
+
 A peripheral access crate the ESP32. See the [`svd2rust repo`](https://github.com/rust-embedded/svd2rust) for more infomation on how to use this crate.
+
 
 ## [`Documentation`](https://docs.rs/esp32/latest/esp32/)
 

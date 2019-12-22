@@ -11,6 +11,6 @@ matrix:
 
 install:
   - rustup component add rustfmt
-  - pip3 install --upgrade --user svdtools
+  - pip install --upgrade --user svdtools
   - cargo install form
   - cargo install svd2rust
