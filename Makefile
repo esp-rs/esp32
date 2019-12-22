@@ -1,6 +1,6 @@
 
 
-all: clean patch generate form build
+all: clean patch generate form fmt build
 
 clean:
 	rm -rf src/
@@ -15,6 +15,9 @@ generate:
 form:
 	form -i lib.rs -o src/
 	rm lib.rs
+
+fmt:
+	cargo fmt
 
 build:
 	cargo clean

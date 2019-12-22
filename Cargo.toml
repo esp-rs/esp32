@@ -5,7 +5,7 @@ authors = ["Scott Mabin <scott@mabez.dev>"]
 edition = "2018"
 readme = "README.md"
 repository = "https://github.com/esp-rs/esp32"
-desciption = "Peripheral access crate for the ESP32"
+description = "Peripheral access crate for the ESP32"
 keywords = ["no-std", "esp32", "wifi", "embedded"]
 categories = [
     "embedded",
