@@ -11,8 +11,6 @@ categories = [
     "embedded",
     "hardware-support",
     "no-std",
-    "register",
-    "ESP32"
 ]
 exclude = [
     "svd",
