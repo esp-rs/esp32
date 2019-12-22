@@ -1,0 +1,25 @@
+[package]
+name = "esp32"
+version = "0.1.0"
+authors = ["Scott Mabin <scott@mabez.dev>"]
+edition = "2018"
+readme = "README.md"
+repository = "https://github.com/esp-rs/esp32"
+description = "Peripheral access crate for the ESP32"
+keywords = ["no-std", "esp32", "wifi", "embedded"]
+categories = [
+    "embedded",
+    "hardware-support",
+    "no-std",
+    "register",
+    "ESP32"
+]
+exclude = [
+    "svd",
+    "svd/*"
+]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+bare-metal = "0.2"
+vcell = "0.1"
