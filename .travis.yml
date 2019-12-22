@@ -20,3 +20,5 @@ install:
   - pip3 install --upgrade --user svdtools
   - cargo install form
   - cargo install svd2rust
+
+script: make all
