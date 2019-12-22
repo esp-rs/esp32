@@ -4,11 +4,10 @@ rust:
   - nightly
 cache: cargo
 dist: "trusty"
-addons:
-  apt:
-    packages:
-      - "python3"
-      - "python3-pip"
+before_install:
+  - python --version
+  - pyenv install 3.6.3
+  - pyenv global 3.6.3
 
 matrix:
   allow_failures:
@@ -18,7 +17,7 @@ matrix:
 install:
   - rustup component add rustfmt
   - pip3 install --upgrade --user svdtools
-  - cargo install form
-  - cargo install svd2rust
+  - cargo install form --force
+  - cargo install svd2rust --force
 
 script: make all
