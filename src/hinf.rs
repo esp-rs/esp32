@@ -2,174 +2,174 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "0x00 - HINF_CFG_DATA0_REG"]
-    pub hinf_cfg_data0_reg: HINF_CFG_DATA0_REG,
+    pub cfg_data0: CFG_DATA0,
     #[doc = "0x04 - HINF_CFG_DATA1_REG"]
-    pub hinf_cfg_data1_reg: HINF_CFG_DATA1_REG,
+    pub cfg_data1: CFG_DATA1,
     _reserved2: [u8; 20usize],
     #[doc = "0x1c - HINF_CFG_DATA7_REG"]
-    pub hinf_cfg_data7_reg: HINF_CFG_DATA7_REG,
+    pub cfg_data7: CFG_DATA7,
     #[doc = "0x20 - HINF_CIS_CONF0_REG"]
-    pub hinf_cis_conf0_reg: HINF_CIS_CONF0_REG,
+    pub cis_conf0: CIS_CONF0,
     #[doc = "0x24 - HINF_CIS_CONF1_REG"]
-    pub hinf_cis_conf1_reg: HINF_CIS_CONF1_REG,
+    pub cis_conf1: CIS_CONF1,
     #[doc = "0x28 - HINF_CIS_CONF2_REG"]
-    pub hinf_cis_conf2_reg: HINF_CIS_CONF2_REG,
+    pub cis_conf2: CIS_CONF2,
     #[doc = "0x2c - HINF_CIS_CONF3_REG"]
-    pub hinf_cis_conf3_reg: HINF_CIS_CONF3_REG,
+    pub cis_conf3: CIS_CONF3,
     #[doc = "0x30 - HINF_CIS_CONF4_REG"]
-    pub hinf_cis_conf4_reg: HINF_CIS_CONF4_REG,
+    pub cis_conf4: CIS_CONF4,
     #[doc = "0x34 - HINF_CIS_CONF5_REG"]
-    pub hinf_cis_conf5_reg: HINF_CIS_CONF5_REG,
+    pub cis_conf5: CIS_CONF5,
     #[doc = "0x38 - HINF_CIS_CONF6_REG"]
-    pub hinf_cis_conf6_reg: HINF_CIS_CONF6_REG,
+    pub cis_conf6: CIS_CONF6,
     #[doc = "0x3c - HINF_CIS_CONF7_REG"]
-    pub hinf_cis_conf7_reg: HINF_CIS_CONF7_REG,
+    pub cis_conf7: CIS_CONF7,
     #[doc = "0x40 - HINF_CFG_DATA16_REG"]
-    pub hinf_cfg_data16_reg: HINF_CFG_DATA16_REG,
+    pub cfg_data16: CFG_DATA16,
     _reserved12: [u8; 184usize],
     #[doc = "0xfc - HINF_DATE_REG"]
-    pub hinf_date_reg: HINF_DATE_REG,
+    pub date: DATE,
 }
-#[doc = "HINF_CFG_DATA0_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cfg_data0_reg](hinf_cfg_data0_reg) module"]
-pub type HINF_CFG_DATA0_REG = crate::Reg<u32, _HINF_CFG_DATA0_REG>;
+#[doc = "HINF_CFG_DATA0_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cfg_data0](cfg_data0) module"]
+pub type CFG_DATA0 = crate::Reg<u32, _CFG_DATA0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CFG_DATA0_REG;
-#[doc = "`read()` method returns [hinf_cfg_data0_reg::R](hinf_cfg_data0_reg::R) reader structure"]
-impl crate::Readable for HINF_CFG_DATA0_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cfg_data0_reg::W](hinf_cfg_data0_reg::W) writer structure"]
-impl crate::Writable for HINF_CFG_DATA0_REG {}
+pub struct _CFG_DATA0;
+#[doc = "`read()` method returns [cfg_data0::R](cfg_data0::R) reader structure"]
+impl crate::Readable for CFG_DATA0 {}
+#[doc = "`write(|w| ..)` method takes [cfg_data0::W](cfg_data0::W) writer structure"]
+impl crate::Writable for CFG_DATA0 {}
 #[doc = "HINF_CFG_DATA0_REG"]
-pub mod hinf_cfg_data0_reg;
-#[doc = "HINF_CFG_DATA1_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cfg_data1_reg](hinf_cfg_data1_reg) module"]
-pub type HINF_CFG_DATA1_REG = crate::Reg<u32, _HINF_CFG_DATA1_REG>;
+pub mod cfg_data0;
+#[doc = "HINF_CFG_DATA1_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cfg_data1](cfg_data1) module"]
+pub type CFG_DATA1 = crate::Reg<u32, _CFG_DATA1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CFG_DATA1_REG;
-#[doc = "`read()` method returns [hinf_cfg_data1_reg::R](hinf_cfg_data1_reg::R) reader structure"]
-impl crate::Readable for HINF_CFG_DATA1_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cfg_data1_reg::W](hinf_cfg_data1_reg::W) writer structure"]
-impl crate::Writable for HINF_CFG_DATA1_REG {}
+pub struct _CFG_DATA1;
+#[doc = "`read()` method returns [cfg_data1::R](cfg_data1::R) reader structure"]
+impl crate::Readable for CFG_DATA1 {}
+#[doc = "`write(|w| ..)` method takes [cfg_data1::W](cfg_data1::W) writer structure"]
+impl crate::Writable for CFG_DATA1 {}
 #[doc = "HINF_CFG_DATA1_REG"]
-pub mod hinf_cfg_data1_reg;
-#[doc = "HINF_CFG_DATA7_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cfg_data7_reg](hinf_cfg_data7_reg) module"]
-pub type HINF_CFG_DATA7_REG = crate::Reg<u32, _HINF_CFG_DATA7_REG>;
+pub mod cfg_data1;
+#[doc = "HINF_CFG_DATA7_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cfg_data7](cfg_data7) module"]
+pub type CFG_DATA7 = crate::Reg<u32, _CFG_DATA7>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CFG_DATA7_REG;
-#[doc = "`read()` method returns [hinf_cfg_data7_reg::R](hinf_cfg_data7_reg::R) reader structure"]
-impl crate::Readable for HINF_CFG_DATA7_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cfg_data7_reg::W](hinf_cfg_data7_reg::W) writer structure"]
-impl crate::Writable for HINF_CFG_DATA7_REG {}
+pub struct _CFG_DATA7;
+#[doc = "`read()` method returns [cfg_data7::R](cfg_data7::R) reader structure"]
+impl crate::Readable for CFG_DATA7 {}
+#[doc = "`write(|w| ..)` method takes [cfg_data7::W](cfg_data7::W) writer structure"]
+impl crate::Writable for CFG_DATA7 {}
 #[doc = "HINF_CFG_DATA7_REG"]
-pub mod hinf_cfg_data7_reg;
-#[doc = "HINF_CIS_CONF0_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf0_reg](hinf_cis_conf0_reg) module"]
-pub type HINF_CIS_CONF0_REG = crate::Reg<u32, _HINF_CIS_CONF0_REG>;
+pub mod cfg_data7;
+#[doc = "HINF_CIS_CONF0_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf0](cis_conf0) module"]
+pub type CIS_CONF0 = crate::Reg<u32, _CIS_CONF0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF0_REG;
-#[doc = "`read()` method returns [hinf_cis_conf0_reg::R](hinf_cis_conf0_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF0_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf0_reg::W](hinf_cis_conf0_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF0_REG {}
+pub struct _CIS_CONF0;
+#[doc = "`read()` method returns [cis_conf0::R](cis_conf0::R) reader structure"]
+impl crate::Readable for CIS_CONF0 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf0::W](cis_conf0::W) writer structure"]
+impl crate::Writable for CIS_CONF0 {}
 #[doc = "HINF_CIS_CONF0_REG"]
-pub mod hinf_cis_conf0_reg;
-#[doc = "HINF_CIS_CONF1_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf1_reg](hinf_cis_conf1_reg) module"]
-pub type HINF_CIS_CONF1_REG = crate::Reg<u32, _HINF_CIS_CONF1_REG>;
+pub mod cis_conf0;
+#[doc = "HINF_CIS_CONF1_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf1](cis_conf1) module"]
+pub type CIS_CONF1 = crate::Reg<u32, _CIS_CONF1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF1_REG;
-#[doc = "`read()` method returns [hinf_cis_conf1_reg::R](hinf_cis_conf1_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF1_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf1_reg::W](hinf_cis_conf1_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF1_REG {}
+pub struct _CIS_CONF1;
+#[doc = "`read()` method returns [cis_conf1::R](cis_conf1::R) reader structure"]
+impl crate::Readable for CIS_CONF1 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf1::W](cis_conf1::W) writer structure"]
+impl crate::Writable for CIS_CONF1 {}
 #[doc = "HINF_CIS_CONF1_REG"]
-pub mod hinf_cis_conf1_reg;
-#[doc = "HINF_CIS_CONF2_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf2_reg](hinf_cis_conf2_reg) module"]
-pub type HINF_CIS_CONF2_REG = crate::Reg<u32, _HINF_CIS_CONF2_REG>;
+pub mod cis_conf1;
+#[doc = "HINF_CIS_CONF2_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf2](cis_conf2) module"]
+pub type CIS_CONF2 = crate::Reg<u32, _CIS_CONF2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF2_REG;
-#[doc = "`read()` method returns [hinf_cis_conf2_reg::R](hinf_cis_conf2_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF2_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf2_reg::W](hinf_cis_conf2_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF2_REG {}
+pub struct _CIS_CONF2;
+#[doc = "`read()` method returns [cis_conf2::R](cis_conf2::R) reader structure"]
+impl crate::Readable for CIS_CONF2 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf2::W](cis_conf2::W) writer structure"]
+impl crate::Writable for CIS_CONF2 {}
 #[doc = "HINF_CIS_CONF2_REG"]
-pub mod hinf_cis_conf2_reg;
-#[doc = "HINF_CIS_CONF3_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf3_reg](hinf_cis_conf3_reg) module"]
-pub type HINF_CIS_CONF3_REG = crate::Reg<u32, _HINF_CIS_CONF3_REG>;
+pub mod cis_conf2;
+#[doc = "HINF_CIS_CONF3_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf3](cis_conf3) module"]
+pub type CIS_CONF3 = crate::Reg<u32, _CIS_CONF3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF3_REG;
-#[doc = "`read()` method returns [hinf_cis_conf3_reg::R](hinf_cis_conf3_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF3_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf3_reg::W](hinf_cis_conf3_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF3_REG {}
+pub struct _CIS_CONF3;
+#[doc = "`read()` method returns [cis_conf3::R](cis_conf3::R) reader structure"]
+impl crate::Readable for CIS_CONF3 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf3::W](cis_conf3::W) writer structure"]
+impl crate::Writable for CIS_CONF3 {}
 #[doc = "HINF_CIS_CONF3_REG"]
-pub mod hinf_cis_conf3_reg;
-#[doc = "HINF_CIS_CONF4_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf4_reg](hinf_cis_conf4_reg) module"]
-pub type HINF_CIS_CONF4_REG = crate::Reg<u32, _HINF_CIS_CONF4_REG>;
+pub mod cis_conf3;
+#[doc = "HINF_CIS_CONF4_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf4](cis_conf4) module"]
+pub type CIS_CONF4 = crate::Reg<u32, _CIS_CONF4>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF4_REG;
-#[doc = "`read()` method returns [hinf_cis_conf4_reg::R](hinf_cis_conf4_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF4_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf4_reg::W](hinf_cis_conf4_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF4_REG {}
+pub struct _CIS_CONF4;
+#[doc = "`read()` method returns [cis_conf4::R](cis_conf4::R) reader structure"]
+impl crate::Readable for CIS_CONF4 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf4::W](cis_conf4::W) writer structure"]
+impl crate::Writable for CIS_CONF4 {}
 #[doc = "HINF_CIS_CONF4_REG"]
-pub mod hinf_cis_conf4_reg;
-#[doc = "HINF_CIS_CONF5_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf5_reg](hinf_cis_conf5_reg) module"]
-pub type HINF_CIS_CONF5_REG = crate::Reg<u32, _HINF_CIS_CONF5_REG>;
+pub mod cis_conf4;
+#[doc = "HINF_CIS_CONF5_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf5](cis_conf5) module"]
+pub type CIS_CONF5 = crate::Reg<u32, _CIS_CONF5>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF5_REG;
-#[doc = "`read()` method returns [hinf_cis_conf5_reg::R](hinf_cis_conf5_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF5_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf5_reg::W](hinf_cis_conf5_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF5_REG {}
+pub struct _CIS_CONF5;
+#[doc = "`read()` method returns [cis_conf5::R](cis_conf5::R) reader structure"]
+impl crate::Readable for CIS_CONF5 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf5::W](cis_conf5::W) writer structure"]
+impl crate::Writable for CIS_CONF5 {}
 #[doc = "HINF_CIS_CONF5_REG"]
-pub mod hinf_cis_conf5_reg;
-#[doc = "HINF_CIS_CONF6_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf6_reg](hinf_cis_conf6_reg) module"]
-pub type HINF_CIS_CONF6_REG = crate::Reg<u32, _HINF_CIS_CONF6_REG>;
+pub mod cis_conf5;
+#[doc = "HINF_CIS_CONF6_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf6](cis_conf6) module"]
+pub type CIS_CONF6 = crate::Reg<u32, _CIS_CONF6>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF6_REG;
-#[doc = "`read()` method returns [hinf_cis_conf6_reg::R](hinf_cis_conf6_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF6_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf6_reg::W](hinf_cis_conf6_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF6_REG {}
+pub struct _CIS_CONF6;
+#[doc = "`read()` method returns [cis_conf6::R](cis_conf6::R) reader structure"]
+impl crate::Readable for CIS_CONF6 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf6::W](cis_conf6::W) writer structure"]
+impl crate::Writable for CIS_CONF6 {}
 #[doc = "HINF_CIS_CONF6_REG"]
-pub mod hinf_cis_conf6_reg;
-#[doc = "HINF_CIS_CONF7_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cis_conf7_reg](hinf_cis_conf7_reg) module"]
-pub type HINF_CIS_CONF7_REG = crate::Reg<u32, _HINF_CIS_CONF7_REG>;
+pub mod cis_conf6;
+#[doc = "HINF_CIS_CONF7_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cis_conf7](cis_conf7) module"]
+pub type CIS_CONF7 = crate::Reg<u32, _CIS_CONF7>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CIS_CONF7_REG;
-#[doc = "`read()` method returns [hinf_cis_conf7_reg::R](hinf_cis_conf7_reg::R) reader structure"]
-impl crate::Readable for HINF_CIS_CONF7_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cis_conf7_reg::W](hinf_cis_conf7_reg::W) writer structure"]
-impl crate::Writable for HINF_CIS_CONF7_REG {}
+pub struct _CIS_CONF7;
+#[doc = "`read()` method returns [cis_conf7::R](cis_conf7::R) reader structure"]
+impl crate::Readable for CIS_CONF7 {}
+#[doc = "`write(|w| ..)` method takes [cis_conf7::W](cis_conf7::W) writer structure"]
+impl crate::Writable for CIS_CONF7 {}
 #[doc = "HINF_CIS_CONF7_REG"]
-pub mod hinf_cis_conf7_reg;
-#[doc = "HINF_CFG_DATA16_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_cfg_data16_reg](hinf_cfg_data16_reg) module"]
-pub type HINF_CFG_DATA16_REG = crate::Reg<u32, _HINF_CFG_DATA16_REG>;
+pub mod cis_conf7;
+#[doc = "HINF_CFG_DATA16_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cfg_data16](cfg_data16) module"]
+pub type CFG_DATA16 = crate::Reg<u32, _CFG_DATA16>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_CFG_DATA16_REG;
-#[doc = "`read()` method returns [hinf_cfg_data16_reg::R](hinf_cfg_data16_reg::R) reader structure"]
-impl crate::Readable for HINF_CFG_DATA16_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_cfg_data16_reg::W](hinf_cfg_data16_reg::W) writer structure"]
-impl crate::Writable for HINF_CFG_DATA16_REG {}
+pub struct _CFG_DATA16;
+#[doc = "`read()` method returns [cfg_data16::R](cfg_data16::R) reader structure"]
+impl crate::Readable for CFG_DATA16 {}
+#[doc = "`write(|w| ..)` method takes [cfg_data16::W](cfg_data16::W) writer structure"]
+impl crate::Writable for CFG_DATA16 {}
 #[doc = "HINF_CFG_DATA16_REG"]
-pub mod hinf_cfg_data16_reg;
-#[doc = "HINF_DATE_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [hinf_date_reg](hinf_date_reg) module"]
-pub type HINF_DATE_REG = crate::Reg<u32, _HINF_DATE_REG>;
+pub mod cfg_data16;
+#[doc = "HINF_DATE_REG\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [date](date) module"]
+pub type DATE = crate::Reg<u32, _DATE>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _HINF_DATE_REG;
-#[doc = "`read()` method returns [hinf_date_reg::R](hinf_date_reg::R) reader structure"]
-impl crate::Readable for HINF_DATE_REG {}
-#[doc = "`write(|w| ..)` method takes [hinf_date_reg::W](hinf_date_reg::W) writer structure"]
-impl crate::Writable for HINF_DATE_REG {}
+pub struct _DATE;
+#[doc = "`read()` method returns [date::R](date::R) reader structure"]
+impl crate::Readable for DATE {}
+#[doc = "`write(|w| ..)` method takes [date::W](date::W) writer structure"]
+impl crate::Writable for DATE {}
 #[doc = "HINF_DATE_REG"]
-pub mod hinf_date_reg;
+pub mod date;

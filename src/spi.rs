@@ -2,878 +2,878 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "0x00 - SPI_CMD_REG(i)"]
-    pub spi_cmd_reg: SPI_CMD_REG,
+    pub cmd: CMD,
     _reserved1: [u8; 4usize],
     #[doc = "0x08 - SPI_CTRL_REG(i)"]
-    pub spi_ctrl_reg: SPI_CTRL_REG,
+    pub ctrl: CTRL,
     #[doc = "0x0c - SPI_CTRL1_REG(i)"]
-    pub spi_ctrl1_reg: SPI_CTRL1_REG,
+    pub ctrl1: CTRL1,
     #[doc = "0x10 - SPI_RD_STATUS_REG(i)"]
-    pub spi_rd_status_reg: SPI_RD_STATUS_REG,
+    pub rd_status: RD_STATUS,
     #[doc = "0x14 - SPI_CTRL2_REG(i)"]
-    pub spi_ctrl2_reg: SPI_CTRL2_REG,
+    pub ctrl2: CTRL2,
     #[doc = "0x18 - SPI_CLOCK_REG(i)"]
-    pub spi_clock_reg: SPI_CLOCK_REG,
+    pub clock: CLOCK,
     #[doc = "0x1c - SPI_USER_REG(i)"]
-    pub spi_user_reg: SPI_USER_REG,
+    pub user: USER,
     #[doc = "0x20 - SPI_USER1_REG(i)"]
-    pub spi_user1_reg: SPI_USER1_REG,
+    pub user1: USER1,
     #[doc = "0x24 - SPI_USER2_REG(i)"]
-    pub spi_user2_reg: SPI_USER2_REG,
+    pub user2: USER2,
     #[doc = "0x28 - SPI_MOSI_DLEN_REG(i)"]
-    pub spi_mosi_dlen_reg: SPI_MOSI_DLEN_REG,
+    pub mosi_dlen: MOSI_DLEN,
     #[doc = "0x2c - SPI_MISO_DLEN_REG(i)"]
-    pub spi_miso_dlen_reg: SPI_MISO_DLEN_REG,
+    pub miso_dlen: MISO_DLEN,
     #[doc = "0x30 - SPI_SLV_WR_STATUS_REG(i)"]
-    pub spi_slv_wr_status_reg: SPI_SLV_WR_STATUS_REG,
+    pub slv_wr_status: SLV_WR_STATUS,
     #[doc = "0x34 - SPI_PIN_REG(i)"]
-    pub spi_pin_reg: SPI_PIN_REG,
+    pub pin: PIN,
     #[doc = "0x38 - SPI_SLAVE_REG(i)"]
-    pub spi_slave_reg: SPI_SLAVE_REG,
+    pub slave: SLAVE,
     #[doc = "0x3c - SPI_SLAVE1_REG(i)"]
-    pub spi_slave1_reg: SPI_SLAVE1_REG,
+    pub slave1: SLAVE1,
     #[doc = "0x40 - SPI_SLAVE2_REG(i)"]
-    pub spi_slave2_reg: SPI_SLAVE2_REG,
+    pub slave2: SLAVE2,
     #[doc = "0x44 - SPI_SLAVE3_REG(i)"]
-    pub spi_slave3_reg: SPI_SLAVE3_REG,
+    pub slave3: SLAVE3,
     #[doc = "0x48 - SPI_SLV_WRBUF_DLEN_REG(i)"]
-    pub spi_slv_wrbuf_dlen_reg: SPI_SLV_WRBUF_DLEN_REG,
+    pub slv_wrbuf_dlen: SLV_WRBUF_DLEN,
     #[doc = "0x4c - SPI_SLV_RDBUF_DLEN_REG(i)"]
-    pub spi_slv_rdbuf_dlen_reg: SPI_SLV_RDBUF_DLEN_REG,
+    pub slv_rdbuf_dlen: SLV_RDBUF_DLEN,
     #[doc = "0x50 - SPI_CACHE_FCTRL_REG(i)"]
-    pub spi_cache_fctrl_reg: SPI_CACHE_FCTRL_REG,
+    pub cache_fctrl: CACHE_FCTRL,
     #[doc = "0x54 - SPI_CACHE_SCTRL_REG(i)"]
-    pub spi_cache_sctrl_reg: SPI_CACHE_SCTRL_REG,
+    pub cache_sctrl: CACHE_SCTRL,
     #[doc = "0x58 - SPI_SRAM_CMD_REG(i)"]
-    pub spi_sram_cmd_reg: SPI_SRAM_CMD_REG,
+    pub sram_cmd: SRAM_CMD,
     #[doc = "0x5c - SPI_SRAM_DRD_CMD_REG(i)"]
-    pub spi_sram_drd_cmd_reg: SPI_SRAM_DRD_CMD_REG,
+    pub sram_drd_cmd: SRAM_DRD_CMD,
     #[doc = "0x60 - SPI_SRAM_DWR_CMD_REG(i)"]
-    pub spi_sram_dwr_cmd_reg: SPI_SRAM_DWR_CMD_REG,
+    pub sram_dwr_cmd: SRAM_DWR_CMD,
     #[doc = "0x64 - SPI_SLV_RD_BIT_REG(i)"]
-    pub spi_slv_rd_bit_reg: SPI_SLV_RD_BIT_REG,
+    pub slv_rd_bit: SLV_RD_BIT,
     _reserved25: [u8; 24usize],
     #[doc = "0x80 - SPI_W0_REG(i)"]
-    pub spi_w0_reg: SPI_W0_REG,
+    pub w0: W0,
     #[doc = "0x84 - SPI_W1_REG(i)"]
-    pub spi_w1_reg: SPI_W1_REG,
+    pub w1: W1,
     #[doc = "0x88 - SPI_W2_REG(i)"]
-    pub spi_w2_reg: SPI_W2_REG,
+    pub w2: W2,
     #[doc = "0x8c - SPI_W3_REG(i)"]
-    pub spi_w3_reg: SPI_W3_REG,
+    pub w3: W3,
     #[doc = "0x90 - SPI_W4_REG(i)"]
-    pub spi_w4_reg: SPI_W4_REG,
+    pub w4: W4,
     #[doc = "0x94 - SPI_W5_REG(i)"]
-    pub spi_w5_reg: SPI_W5_REG,
+    pub w5: W5,
     #[doc = "0x98 - SPI_W6_REG(i)"]
-    pub spi_w6_reg: SPI_W6_REG,
+    pub w6: W6,
     #[doc = "0x9c - SPI_W7_REG(i)"]
-    pub spi_w7_reg: SPI_W7_REG,
+    pub w7: W7,
     #[doc = "0xa0 - SPI_W8_REG(i)"]
-    pub spi_w8_reg: SPI_W8_REG,
+    pub w8: W8,
     #[doc = "0xa4 - SPI_W9_REG(i)"]
-    pub spi_w9_reg: SPI_W9_REG,
+    pub w9: W9,
     #[doc = "0xa8 - SPI_W10_REG(i)"]
-    pub spi_w10_reg: SPI_W10_REG,
+    pub w10: W10,
     #[doc = "0xac - SPI_W11_REG(i)"]
-    pub spi_w11_reg: SPI_W11_REG,
+    pub w11: W11,
     #[doc = "0xb0 - SPI_W12_REG(i)"]
-    pub spi_w12_reg: SPI_W12_REG,
+    pub w12: W12,
     #[doc = "0xb4 - SPI_W13_REG(i)"]
-    pub spi_w13_reg: SPI_W13_REG,
+    pub w13: W13,
     #[doc = "0xb8 - SPI_W14_REG(i)"]
-    pub spi_w14_reg: SPI_W14_REG,
+    pub w14: W14,
     #[doc = "0xbc - SPI_W15_REG(i)"]
-    pub spi_w15_reg: SPI_W15_REG,
+    pub w15: W15,
     #[doc = "0xc0 - SPI_TX_CRC_REG(i)"]
-    pub spi_tx_crc_reg: SPI_TX_CRC_REG,
+    pub tx_crc: TX_CRC,
     _reserved42: [u8; 44usize],
     #[doc = "0xf0 - SPI_EXT0_REG(i)"]
-    pub spi_ext0_reg: SPI_EXT0_REG,
+    pub ext0: EXT0,
     #[doc = "0xf4 - SPI_EXT1_REG(i)"]
-    pub spi_ext1_reg: SPI_EXT1_REG,
+    pub ext1: EXT1,
     #[doc = "0xf8 - SPI_EXT2_REG(i)"]
-    pub spi_ext2_reg: SPI_EXT2_REG,
+    pub ext2: EXT2,
     #[doc = "0xfc - SPI_EXT3_REG(i)"]
-    pub spi_ext3_reg: SPI_EXT3_REG,
+    pub ext3: EXT3,
     #[doc = "0x100 - SPI_DMA_CONF_REG(i)"]
-    pub spi_dma_conf_reg: SPI_DMA_CONF_REG,
+    pub dma_conf: DMA_CONF,
     #[doc = "0x104 - SPI_DMA_OUT_LINK_REG(i)"]
-    pub spi_dma_out_link_reg: SPI_DMA_OUT_LINK_REG,
+    pub dma_out_link: DMA_OUT_LINK,
     #[doc = "0x108 - SPI_DMA_IN_LINK_REG(i)"]
-    pub spi_dma_in_link_reg: SPI_DMA_IN_LINK_REG,
+    pub dma_in_link: DMA_IN_LINK,
     #[doc = "0x10c - SPI_DMA_STATUS_REG(i)"]
-    pub spi_dma_status_reg: SPI_DMA_STATUS_REG,
+    pub dma_status: DMA_STATUS,
     #[doc = "0x110 - SPI_DMA_INT_ENA_REG(i)"]
-    pub spi_dma_int_ena_reg: SPI_DMA_INT_ENA_REG,
+    pub dma_int_ena: DMA_INT_ENA,
     #[doc = "0x114 - SPI_DMA_INT_RAW_REG(i)"]
-    pub spi_dma_int_raw_reg: SPI_DMA_INT_RAW_REG,
+    pub dma_int_raw: DMA_INT_RAW,
     #[doc = "0x118 - SPI_DMA_INT_ST_REG(i)"]
-    pub spi_dma_int_st_reg: SPI_DMA_INT_ST_REG,
+    pub dma_int_st: DMA_INT_ST,
     #[doc = "0x11c - SPI_DMA_INT_CLR_REG(i)"]
-    pub spi_dma_int_clr_reg: SPI_DMA_INT_CLR_REG,
+    pub dma_int_clr: DMA_INT_CLR,
     #[doc = "0x120 - SPI_IN_ERR_EOF_DES_ADDR_REG(i)"]
-    pub spi_in_err_eof_des_addr_reg: SPI_IN_ERR_EOF_DES_ADDR_REG,
+    pub in_err_eof_des_addr: IN_ERR_EOF_DES_ADDR,
     #[doc = "0x124 - SPI_IN_SUC_EOF_DES_ADDR_REG(i)"]
-    pub spi_in_suc_eof_des_addr_reg: SPI_IN_SUC_EOF_DES_ADDR_REG,
+    pub in_suc_eof_des_addr: IN_SUC_EOF_DES_ADDR,
     #[doc = "0x128 - SPI_INLINK_DSCR_REG(i)"]
-    pub spi_inlink_dscr_reg: SPI_INLINK_DSCR_REG,
+    pub inlink_dscr: INLINK_DSCR,
     #[doc = "0x12c - SPI_INLINK_DSCR_BF0_REG(i)"]
-    pub spi_inlink_dscr_bf0_reg: SPI_INLINK_DSCR_BF0_REG,
+    pub inlink_dscr_bf0: INLINK_DSCR_BF0,
     #[doc = "0x130 - SPI_INLINK_DSCR_BF1_REG(i)"]
-    pub spi_inlink_dscr_bf1_reg: SPI_INLINK_DSCR_BF1_REG,
+    pub inlink_dscr_bf1: INLINK_DSCR_BF1,
     #[doc = "0x134 - SPI_OUT_EOF_BFR_DES_ADDR_REG(i)"]
-    pub spi_out_eof_bfr_des_addr_reg: SPI_OUT_EOF_BFR_DES_ADDR_REG,
+    pub out_eof_bfr_des_addr: OUT_EOF_BFR_DES_ADDR,
     #[doc = "0x138 - SPI_OUT_EOF_DES_ADDR_REG(i)"]
-    pub spi_out_eof_des_addr_reg: SPI_OUT_EOF_DES_ADDR_REG,
+    pub out_eof_des_addr: OUT_EOF_DES_ADDR,
     #[doc = "0x13c - SPI_OUTLINK_DSCR_REG(i)"]
-    pub spi_outlink_dscr_reg: SPI_OUTLINK_DSCR_REG,
+    pub outlink_dscr: OUTLINK_DSCR,
     #[doc = "0x140 - SPI_OUTLINK_DSCR_BF0_REG(i)"]
-    pub spi_outlink_dscr_bf0_reg: SPI_OUTLINK_DSCR_BF0_REG,
+    pub outlink_dscr_bf0: OUTLINK_DSCR_BF0,
     #[doc = "0x144 - SPI_OUTLINK_DSCR_BF1_REG(i)"]
-    pub spi_outlink_dscr_bf1_reg: SPI_OUTLINK_DSCR_BF1_REG,
+    pub outlink_dscr_bf1: OUTLINK_DSCR_BF1,
     #[doc = "0x148 - SPI_DMA_RSTATUS_REG(i)"]
-    pub spi_dma_rstatus_reg: SPI_DMA_RSTATUS_REG,
+    pub dma_rstatus: DMA_RSTATUS,
     #[doc = "0x14c - SPI_DMA_TSTATUS_REG(i)"]
-    pub spi_dma_tstatus_reg: SPI_DMA_TSTATUS_REG,
+    pub dma_tstatus: DMA_TSTATUS,
     _reserved66: [u8; 684usize],
     #[doc = "0x3fc - SPI_DATE_REG(i)"]
-    pub spi_date_reg: SPI_DATE_REG,
+    pub date: DATE,
 }
-#[doc = "SPI_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_cmd_reg](spi_cmd_reg) module"]
-pub type SPI_CMD_REG = crate::Reg<u32, _SPI_CMD_REG>;
+#[doc = "SPI_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cmd](cmd) module"]
+pub type CMD = crate::Reg<u32, _CMD>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_CMD_REG;
-#[doc = "`read()` method returns [spi_cmd_reg::R](spi_cmd_reg::R) reader structure"]
-impl crate::Readable for SPI_CMD_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_cmd_reg::W](spi_cmd_reg::W) writer structure"]
-impl crate::Writable for SPI_CMD_REG {}
+pub struct _CMD;
+#[doc = "`read()` method returns [cmd::R](cmd::R) reader structure"]
+impl crate::Readable for CMD {}
+#[doc = "`write(|w| ..)` method takes [cmd::W](cmd::W) writer structure"]
+impl crate::Writable for CMD {}
 #[doc = "SPI_CMD_REG(i)"]
-pub mod spi_cmd_reg;
-#[doc = "SPI_CTRL_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_ctrl_reg](spi_ctrl_reg) module"]
-pub type SPI_CTRL_REG = crate::Reg<u32, _SPI_CTRL_REG>;
+pub mod cmd;
+#[doc = "SPI_CTRL_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ctrl](ctrl) module"]
+pub type CTRL = crate::Reg<u32, _CTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_CTRL_REG;
-#[doc = "`read()` method returns [spi_ctrl_reg::R](spi_ctrl_reg::R) reader structure"]
-impl crate::Readable for SPI_CTRL_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_ctrl_reg::W](spi_ctrl_reg::W) writer structure"]
-impl crate::Writable for SPI_CTRL_REG {}
+pub struct _CTRL;
+#[doc = "`read()` method returns [ctrl::R](ctrl::R) reader structure"]
+impl crate::Readable for CTRL {}
+#[doc = "`write(|w| ..)` method takes [ctrl::W](ctrl::W) writer structure"]
+impl crate::Writable for CTRL {}
 #[doc = "SPI_CTRL_REG(i)"]
-pub mod spi_ctrl_reg;
-#[doc = "SPI_CTRL1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_ctrl1_reg](spi_ctrl1_reg) module"]
-pub type SPI_CTRL1_REG = crate::Reg<u32, _SPI_CTRL1_REG>;
+pub mod ctrl;
+#[doc = "SPI_CTRL1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ctrl1](ctrl1) module"]
+pub type CTRL1 = crate::Reg<u32, _CTRL1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_CTRL1_REG;
-#[doc = "`read()` method returns [spi_ctrl1_reg::R](spi_ctrl1_reg::R) reader structure"]
-impl crate::Readable for SPI_CTRL1_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_ctrl1_reg::W](spi_ctrl1_reg::W) writer structure"]
-impl crate::Writable for SPI_CTRL1_REG {}
+pub struct _CTRL1;
+#[doc = "`read()` method returns [ctrl1::R](ctrl1::R) reader structure"]
+impl crate::Readable for CTRL1 {}
+#[doc = "`write(|w| ..)` method takes [ctrl1::W](ctrl1::W) writer structure"]
+impl crate::Writable for CTRL1 {}
 #[doc = "SPI_CTRL1_REG(i)"]
-pub mod spi_ctrl1_reg;
-#[doc = "SPI_RD_STATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_rd_status_reg](spi_rd_status_reg) module"]
-pub type SPI_RD_STATUS_REG = crate::Reg<u32, _SPI_RD_STATUS_REG>;
+pub mod ctrl1;
+#[doc = "SPI_RD_STATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [rd_status](rd_status) module"]
+pub type RD_STATUS = crate::Reg<u32, _RD_STATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_RD_STATUS_REG;
-#[doc = "`read()` method returns [spi_rd_status_reg::R](spi_rd_status_reg::R) reader structure"]
-impl crate::Readable for SPI_RD_STATUS_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_rd_status_reg::W](spi_rd_status_reg::W) writer structure"]
-impl crate::Writable for SPI_RD_STATUS_REG {}
+pub struct _RD_STATUS;
+#[doc = "`read()` method returns [rd_status::R](rd_status::R) reader structure"]
+impl crate::Readable for RD_STATUS {}
+#[doc = "`write(|w| ..)` method takes [rd_status::W](rd_status::W) writer structure"]
+impl crate::Writable for RD_STATUS {}
 #[doc = "SPI_RD_STATUS_REG(i)"]
-pub mod spi_rd_status_reg;
-#[doc = "SPI_CTRL2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_ctrl2_reg](spi_ctrl2_reg) module"]
-pub type SPI_CTRL2_REG = crate::Reg<u32, _SPI_CTRL2_REG>;
+pub mod rd_status;
+#[doc = "SPI_CTRL2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ctrl2](ctrl2) module"]
+pub type CTRL2 = crate::Reg<u32, _CTRL2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_CTRL2_REG;
-#[doc = "`read()` method returns [spi_ctrl2_reg::R](spi_ctrl2_reg::R) reader structure"]
-impl crate::Readable for SPI_CTRL2_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_ctrl2_reg::W](spi_ctrl2_reg::W) writer structure"]
-impl crate::Writable for SPI_CTRL2_REG {}
+pub struct _CTRL2;
+#[doc = "`read()` method returns [ctrl2::R](ctrl2::R) reader structure"]
+impl crate::Readable for CTRL2 {}
+#[doc = "`write(|w| ..)` method takes [ctrl2::W](ctrl2::W) writer structure"]
+impl crate::Writable for CTRL2 {}
 #[doc = "SPI_CTRL2_REG(i)"]
-pub mod spi_ctrl2_reg;
-#[doc = "SPI_CLOCK_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_clock_reg](spi_clock_reg) module"]
-pub type SPI_CLOCK_REG = crate::Reg<u32, _SPI_CLOCK_REG>;
+pub mod ctrl2;
+#[doc = "SPI_CLOCK_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [clock](clock) module"]
+pub type CLOCK = crate::Reg<u32, _CLOCK>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_CLOCK_REG;
-#[doc = "`read()` method returns [spi_clock_reg::R](spi_clock_reg::R) reader structure"]
-impl crate::Readable for SPI_CLOCK_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_clock_reg::W](spi_clock_reg::W) writer structure"]
-impl crate::Writable for SPI_CLOCK_REG {}
+pub struct _CLOCK;
+#[doc = "`read()` method returns [clock::R](clock::R) reader structure"]
+impl crate::Readable for CLOCK {}
+#[doc = "`write(|w| ..)` method takes [clock::W](clock::W) writer structure"]
+impl crate::Writable for CLOCK {}
 #[doc = "SPI_CLOCK_REG(i)"]
-pub mod spi_clock_reg;
-#[doc = "SPI_USER_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_user_reg](spi_user_reg) module"]
-pub type SPI_USER_REG = crate::Reg<u32, _SPI_USER_REG>;
+pub mod clock;
+#[doc = "SPI_USER_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [user](user) module"]
+pub type USER = crate::Reg<u32, _USER>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_USER_REG;
-#[doc = "`read()` method returns [spi_user_reg::R](spi_user_reg::R) reader structure"]
-impl crate::Readable for SPI_USER_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_user_reg::W](spi_user_reg::W) writer structure"]
-impl crate::Writable for SPI_USER_REG {}
+pub struct _USER;
+#[doc = "`read()` method returns [user::R](user::R) reader structure"]
+impl crate::Readable for USER {}
+#[doc = "`write(|w| ..)` method takes [user::W](user::W) writer structure"]
+impl crate::Writable for USER {}
 #[doc = "SPI_USER_REG(i)"]
-pub mod spi_user_reg;
-#[doc = "SPI_USER1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_user1_reg](spi_user1_reg) module"]
-pub type SPI_USER1_REG = crate::Reg<u32, _SPI_USER1_REG>;
+pub mod user;
+#[doc = "SPI_USER1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [user1](user1) module"]
+pub type USER1 = crate::Reg<u32, _USER1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_USER1_REG;
-#[doc = "`read()` method returns [spi_user1_reg::R](spi_user1_reg::R) reader structure"]
-impl crate::Readable for SPI_USER1_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_user1_reg::W](spi_user1_reg::W) writer structure"]
-impl crate::Writable for SPI_USER1_REG {}
+pub struct _USER1;
+#[doc = "`read()` method returns [user1::R](user1::R) reader structure"]
+impl crate::Readable for USER1 {}
+#[doc = "`write(|w| ..)` method takes [user1::W](user1::W) writer structure"]
+impl crate::Writable for USER1 {}
 #[doc = "SPI_USER1_REG(i)"]
-pub mod spi_user1_reg;
-#[doc = "SPI_USER2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_user2_reg](spi_user2_reg) module"]
-pub type SPI_USER2_REG = crate::Reg<u32, _SPI_USER2_REG>;
+pub mod user1;
+#[doc = "SPI_USER2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [user2](user2) module"]
+pub type USER2 = crate::Reg<u32, _USER2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_USER2_REG;
-#[doc = "`read()` method returns [spi_user2_reg::R](spi_user2_reg::R) reader structure"]
-impl crate::Readable for SPI_USER2_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_user2_reg::W](spi_user2_reg::W) writer structure"]
-impl crate::Writable for SPI_USER2_REG {}
+pub struct _USER2;
+#[doc = "`read()` method returns [user2::R](user2::R) reader structure"]
+impl crate::Readable for USER2 {}
+#[doc = "`write(|w| ..)` method takes [user2::W](user2::W) writer structure"]
+impl crate::Writable for USER2 {}
 #[doc = "SPI_USER2_REG(i)"]
-pub mod spi_user2_reg;
-#[doc = "SPI_MOSI_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_mosi_dlen_reg](spi_mosi_dlen_reg) module"]
-pub type SPI_MOSI_DLEN_REG = crate::Reg<u32, _SPI_MOSI_DLEN_REG>;
+pub mod user2;
+#[doc = "SPI_MOSI_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [mosi_dlen](mosi_dlen) module"]
+pub type MOSI_DLEN = crate::Reg<u32, _MOSI_DLEN>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_MOSI_DLEN_REG;
-#[doc = "`read()` method returns [spi_mosi_dlen_reg::R](spi_mosi_dlen_reg::R) reader structure"]
-impl crate::Readable for SPI_MOSI_DLEN_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_mosi_dlen_reg::W](spi_mosi_dlen_reg::W) writer structure"]
-impl crate::Writable for SPI_MOSI_DLEN_REG {}
+pub struct _MOSI_DLEN;
+#[doc = "`read()` method returns [mosi_dlen::R](mosi_dlen::R) reader structure"]
+impl crate::Readable for MOSI_DLEN {}
+#[doc = "`write(|w| ..)` method takes [mosi_dlen::W](mosi_dlen::W) writer structure"]
+impl crate::Writable for MOSI_DLEN {}
 #[doc = "SPI_MOSI_DLEN_REG(i)"]
-pub mod spi_mosi_dlen_reg;
-#[doc = "SPI_MISO_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_miso_dlen_reg](spi_miso_dlen_reg) module"]
-pub type SPI_MISO_DLEN_REG = crate::Reg<u32, _SPI_MISO_DLEN_REG>;
+pub mod mosi_dlen;
+#[doc = "SPI_MISO_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [miso_dlen](miso_dlen) module"]
+pub type MISO_DLEN = crate::Reg<u32, _MISO_DLEN>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_MISO_DLEN_REG;
-#[doc = "`read()` method returns [spi_miso_dlen_reg::R](spi_miso_dlen_reg::R) reader structure"]
-impl crate::Readable for SPI_MISO_DLEN_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_miso_dlen_reg::W](spi_miso_dlen_reg::W) writer structure"]
-impl crate::Writable for SPI_MISO_DLEN_REG {}
+pub struct _MISO_DLEN;
+#[doc = "`read()` method returns [miso_dlen::R](miso_dlen::R) reader structure"]
+impl crate::Readable for MISO_DLEN {}
+#[doc = "`write(|w| ..)` method takes [miso_dlen::W](miso_dlen::W) writer structure"]
+impl crate::Writable for MISO_DLEN {}
 #[doc = "SPI_MISO_DLEN_REG(i)"]
-pub mod spi_miso_dlen_reg;
-#[doc = "SPI_SLV_WR_STATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slv_wr_status_reg](spi_slv_wr_status_reg) module"]
-pub type SPI_SLV_WR_STATUS_REG = crate::Reg<u32, _SPI_SLV_WR_STATUS_REG>;
+pub mod miso_dlen;
+#[doc = "SPI_SLV_WR_STATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slv_wr_status](slv_wr_status) module"]
+pub type SLV_WR_STATUS = crate::Reg<u32, _SLV_WR_STATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLV_WR_STATUS_REG;
-#[doc = "`read()` method returns [spi_slv_wr_status_reg::R](spi_slv_wr_status_reg::R) reader structure"]
-impl crate::Readable for SPI_SLV_WR_STATUS_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slv_wr_status_reg::W](spi_slv_wr_status_reg::W) writer structure"]
-impl crate::Writable for SPI_SLV_WR_STATUS_REG {}
+pub struct _SLV_WR_STATUS;
+#[doc = "`read()` method returns [slv_wr_status::R](slv_wr_status::R) reader structure"]
+impl crate::Readable for SLV_WR_STATUS {}
+#[doc = "`write(|w| ..)` method takes [slv_wr_status::W](slv_wr_status::W) writer structure"]
+impl crate::Writable for SLV_WR_STATUS {}
 #[doc = "SPI_SLV_WR_STATUS_REG(i)"]
-pub mod spi_slv_wr_status_reg;
-#[doc = "SPI_PIN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_pin_reg](spi_pin_reg) module"]
-pub type SPI_PIN_REG = crate::Reg<u32, _SPI_PIN_REG>;
+pub mod slv_wr_status;
+#[doc = "SPI_PIN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [pin](pin) module"]
+pub type PIN = crate::Reg<u32, _PIN>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_PIN_REG;
-#[doc = "`read()` method returns [spi_pin_reg::R](spi_pin_reg::R) reader structure"]
-impl crate::Readable for SPI_PIN_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_pin_reg::W](spi_pin_reg::W) writer structure"]
-impl crate::Writable for SPI_PIN_REG {}
+pub struct _PIN;
+#[doc = "`read()` method returns [pin::R](pin::R) reader structure"]
+impl crate::Readable for PIN {}
+#[doc = "`write(|w| ..)` method takes [pin::W](pin::W) writer structure"]
+impl crate::Writable for PIN {}
 #[doc = "SPI_PIN_REG(i)"]
-pub mod spi_pin_reg;
-#[doc = "SPI_SLAVE_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slave_reg](spi_slave_reg) module"]
-pub type SPI_SLAVE_REG = crate::Reg<u32, _SPI_SLAVE_REG>;
+pub mod pin;
+#[doc = "SPI_SLAVE_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slave](slave) module"]
+pub type SLAVE = crate::Reg<u32, _SLAVE>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLAVE_REG;
-#[doc = "`read()` method returns [spi_slave_reg::R](spi_slave_reg::R) reader structure"]
-impl crate::Readable for SPI_SLAVE_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slave_reg::W](spi_slave_reg::W) writer structure"]
-impl crate::Writable for SPI_SLAVE_REG {}
+pub struct _SLAVE;
+#[doc = "`read()` method returns [slave::R](slave::R) reader structure"]
+impl crate::Readable for SLAVE {}
+#[doc = "`write(|w| ..)` method takes [slave::W](slave::W) writer structure"]
+impl crate::Writable for SLAVE {}
 #[doc = "SPI_SLAVE_REG(i)"]
-pub mod spi_slave_reg;
-#[doc = "SPI_SLAVE1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slave1_reg](spi_slave1_reg) module"]
-pub type SPI_SLAVE1_REG = crate::Reg<u32, _SPI_SLAVE1_REG>;
+pub mod slave;
+#[doc = "SPI_SLAVE1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slave1](slave1) module"]
+pub type SLAVE1 = crate::Reg<u32, _SLAVE1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLAVE1_REG;
-#[doc = "`read()` method returns [spi_slave1_reg::R](spi_slave1_reg::R) reader structure"]
-impl crate::Readable for SPI_SLAVE1_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slave1_reg::W](spi_slave1_reg::W) writer structure"]
-impl crate::Writable for SPI_SLAVE1_REG {}
+pub struct _SLAVE1;
+#[doc = "`read()` method returns [slave1::R](slave1::R) reader structure"]
+impl crate::Readable for SLAVE1 {}
+#[doc = "`write(|w| ..)` method takes [slave1::W](slave1::W) writer structure"]
+impl crate::Writable for SLAVE1 {}
 #[doc = "SPI_SLAVE1_REG(i)"]
-pub mod spi_slave1_reg;
-#[doc = "SPI_SLAVE2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slave2_reg](spi_slave2_reg) module"]
-pub type SPI_SLAVE2_REG = crate::Reg<u32, _SPI_SLAVE2_REG>;
+pub mod slave1;
+#[doc = "SPI_SLAVE2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slave2](slave2) module"]
+pub type SLAVE2 = crate::Reg<u32, _SLAVE2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLAVE2_REG;
-#[doc = "`read()` method returns [spi_slave2_reg::R](spi_slave2_reg::R) reader structure"]
-impl crate::Readable for SPI_SLAVE2_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slave2_reg::W](spi_slave2_reg::W) writer structure"]
-impl crate::Writable for SPI_SLAVE2_REG {}
+pub struct _SLAVE2;
+#[doc = "`read()` method returns [slave2::R](slave2::R) reader structure"]
+impl crate::Readable for SLAVE2 {}
+#[doc = "`write(|w| ..)` method takes [slave2::W](slave2::W) writer structure"]
+impl crate::Writable for SLAVE2 {}
 #[doc = "SPI_SLAVE2_REG(i)"]
-pub mod spi_slave2_reg;
-#[doc = "SPI_SLAVE3_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slave3_reg](spi_slave3_reg) module"]
-pub type SPI_SLAVE3_REG = crate::Reg<u32, _SPI_SLAVE3_REG>;
+pub mod slave2;
+#[doc = "SPI_SLAVE3_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slave3](slave3) module"]
+pub type SLAVE3 = crate::Reg<u32, _SLAVE3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLAVE3_REG;
-#[doc = "`read()` method returns [spi_slave3_reg::R](spi_slave3_reg::R) reader structure"]
-impl crate::Readable for SPI_SLAVE3_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slave3_reg::W](spi_slave3_reg::W) writer structure"]
-impl crate::Writable for SPI_SLAVE3_REG {}
+pub struct _SLAVE3;
+#[doc = "`read()` method returns [slave3::R](slave3::R) reader structure"]
+impl crate::Readable for SLAVE3 {}
+#[doc = "`write(|w| ..)` method takes [slave3::W](slave3::W) writer structure"]
+impl crate::Writable for SLAVE3 {}
 #[doc = "SPI_SLAVE3_REG(i)"]
-pub mod spi_slave3_reg;
-#[doc = "SPI_SLV_WRBUF_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slv_wrbuf_dlen_reg](spi_slv_wrbuf_dlen_reg) module"]
-pub type SPI_SLV_WRBUF_DLEN_REG = crate::Reg<u32, _SPI_SLV_WRBUF_DLEN_REG>;
+pub mod slave3;
+#[doc = "SPI_SLV_WRBUF_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slv_wrbuf_dlen](slv_wrbuf_dlen) module"]
+pub type SLV_WRBUF_DLEN = crate::Reg<u32, _SLV_WRBUF_DLEN>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLV_WRBUF_DLEN_REG;
-#[doc = "`read()` method returns [spi_slv_wrbuf_dlen_reg::R](spi_slv_wrbuf_dlen_reg::R) reader structure"]
-impl crate::Readable for SPI_SLV_WRBUF_DLEN_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slv_wrbuf_dlen_reg::W](spi_slv_wrbuf_dlen_reg::W) writer structure"]
-impl crate::Writable for SPI_SLV_WRBUF_DLEN_REG {}
+pub struct _SLV_WRBUF_DLEN;
+#[doc = "`read()` method returns [slv_wrbuf_dlen::R](slv_wrbuf_dlen::R) reader structure"]
+impl crate::Readable for SLV_WRBUF_DLEN {}
+#[doc = "`write(|w| ..)` method takes [slv_wrbuf_dlen::W](slv_wrbuf_dlen::W) writer structure"]
+impl crate::Writable for SLV_WRBUF_DLEN {}
 #[doc = "SPI_SLV_WRBUF_DLEN_REG(i)"]
-pub mod spi_slv_wrbuf_dlen_reg;
-#[doc = "SPI_SLV_RDBUF_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slv_rdbuf_dlen_reg](spi_slv_rdbuf_dlen_reg) module"]
-pub type SPI_SLV_RDBUF_DLEN_REG = crate::Reg<u32, _SPI_SLV_RDBUF_DLEN_REG>;
+pub mod slv_wrbuf_dlen;
+#[doc = "SPI_SLV_RDBUF_DLEN_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slv_rdbuf_dlen](slv_rdbuf_dlen) module"]
+pub type SLV_RDBUF_DLEN = crate::Reg<u32, _SLV_RDBUF_DLEN>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLV_RDBUF_DLEN_REG;
-#[doc = "`read()` method returns [spi_slv_rdbuf_dlen_reg::R](spi_slv_rdbuf_dlen_reg::R) reader structure"]
-impl crate::Readable for SPI_SLV_RDBUF_DLEN_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slv_rdbuf_dlen_reg::W](spi_slv_rdbuf_dlen_reg::W) writer structure"]
-impl crate::Writable for SPI_SLV_RDBUF_DLEN_REG {}
+pub struct _SLV_RDBUF_DLEN;
+#[doc = "`read()` method returns [slv_rdbuf_dlen::R](slv_rdbuf_dlen::R) reader structure"]
+impl crate::Readable for SLV_RDBUF_DLEN {}
+#[doc = "`write(|w| ..)` method takes [slv_rdbuf_dlen::W](slv_rdbuf_dlen::W) writer structure"]
+impl crate::Writable for SLV_RDBUF_DLEN {}
 #[doc = "SPI_SLV_RDBUF_DLEN_REG(i)"]
-pub mod spi_slv_rdbuf_dlen_reg;
-#[doc = "SPI_CACHE_FCTRL_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_cache_fctrl_reg](spi_cache_fctrl_reg) module"]
-pub type SPI_CACHE_FCTRL_REG = crate::Reg<u32, _SPI_CACHE_FCTRL_REG>;
+pub mod slv_rdbuf_dlen;
+#[doc = "SPI_CACHE_FCTRL_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cache_fctrl](cache_fctrl) module"]
+pub type CACHE_FCTRL = crate::Reg<u32, _CACHE_FCTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_CACHE_FCTRL_REG;
-#[doc = "`read()` method returns [spi_cache_fctrl_reg::R](spi_cache_fctrl_reg::R) reader structure"]
-impl crate::Readable for SPI_CACHE_FCTRL_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_cache_fctrl_reg::W](spi_cache_fctrl_reg::W) writer structure"]
-impl crate::Writable for SPI_CACHE_FCTRL_REG {}
+pub struct _CACHE_FCTRL;
+#[doc = "`read()` method returns [cache_fctrl::R](cache_fctrl::R) reader structure"]
+impl crate::Readable for CACHE_FCTRL {}
+#[doc = "`write(|w| ..)` method takes [cache_fctrl::W](cache_fctrl::W) writer structure"]
+impl crate::Writable for CACHE_FCTRL {}
 #[doc = "SPI_CACHE_FCTRL_REG(i)"]
-pub mod spi_cache_fctrl_reg;
-#[doc = "SPI_CACHE_SCTRL_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_cache_sctrl_reg](spi_cache_sctrl_reg) module"]
-pub type SPI_CACHE_SCTRL_REG = crate::Reg<u32, _SPI_CACHE_SCTRL_REG>;
+pub mod cache_fctrl;
+#[doc = "SPI_CACHE_SCTRL_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cache_sctrl](cache_sctrl) module"]
+pub type CACHE_SCTRL = crate::Reg<u32, _CACHE_SCTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_CACHE_SCTRL_REG;
-#[doc = "`read()` method returns [spi_cache_sctrl_reg::R](spi_cache_sctrl_reg::R) reader structure"]
-impl crate::Readable for SPI_CACHE_SCTRL_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_cache_sctrl_reg::W](spi_cache_sctrl_reg::W) writer structure"]
-impl crate::Writable for SPI_CACHE_SCTRL_REG {}
+pub struct _CACHE_SCTRL;
+#[doc = "`read()` method returns [cache_sctrl::R](cache_sctrl::R) reader structure"]
+impl crate::Readable for CACHE_SCTRL {}
+#[doc = "`write(|w| ..)` method takes [cache_sctrl::W](cache_sctrl::W) writer structure"]
+impl crate::Writable for CACHE_SCTRL {}
 #[doc = "SPI_CACHE_SCTRL_REG(i)"]
-pub mod spi_cache_sctrl_reg;
-#[doc = "SPI_SRAM_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_sram_cmd_reg](spi_sram_cmd_reg) module"]
-pub type SPI_SRAM_CMD_REG = crate::Reg<u32, _SPI_SRAM_CMD_REG>;
+pub mod cache_sctrl;
+#[doc = "SPI_SRAM_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [sram_cmd](sram_cmd) module"]
+pub type SRAM_CMD = crate::Reg<u32, _SRAM_CMD>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SRAM_CMD_REG;
-#[doc = "`read()` method returns [spi_sram_cmd_reg::R](spi_sram_cmd_reg::R) reader structure"]
-impl crate::Readable for SPI_SRAM_CMD_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_sram_cmd_reg::W](spi_sram_cmd_reg::W) writer structure"]
-impl crate::Writable for SPI_SRAM_CMD_REG {}
+pub struct _SRAM_CMD;
+#[doc = "`read()` method returns [sram_cmd::R](sram_cmd::R) reader structure"]
+impl crate::Readable for SRAM_CMD {}
+#[doc = "`write(|w| ..)` method takes [sram_cmd::W](sram_cmd::W) writer structure"]
+impl crate::Writable for SRAM_CMD {}
 #[doc = "SPI_SRAM_CMD_REG(i)"]
-pub mod spi_sram_cmd_reg;
-#[doc = "SPI_SRAM_DRD_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_sram_drd_cmd_reg](spi_sram_drd_cmd_reg) module"]
-pub type SPI_SRAM_DRD_CMD_REG = crate::Reg<u32, _SPI_SRAM_DRD_CMD_REG>;
+pub mod sram_cmd;
+#[doc = "SPI_SRAM_DRD_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [sram_drd_cmd](sram_drd_cmd) module"]
+pub type SRAM_DRD_CMD = crate::Reg<u32, _SRAM_DRD_CMD>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SRAM_DRD_CMD_REG;
-#[doc = "`read()` method returns [spi_sram_drd_cmd_reg::R](spi_sram_drd_cmd_reg::R) reader structure"]
-impl crate::Readable for SPI_SRAM_DRD_CMD_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_sram_drd_cmd_reg::W](spi_sram_drd_cmd_reg::W) writer structure"]
-impl crate::Writable for SPI_SRAM_DRD_CMD_REG {}
+pub struct _SRAM_DRD_CMD;
+#[doc = "`read()` method returns [sram_drd_cmd::R](sram_drd_cmd::R) reader structure"]
+impl crate::Readable for SRAM_DRD_CMD {}
+#[doc = "`write(|w| ..)` method takes [sram_drd_cmd::W](sram_drd_cmd::W) writer structure"]
+impl crate::Writable for SRAM_DRD_CMD {}
 #[doc = "SPI_SRAM_DRD_CMD_REG(i)"]
-pub mod spi_sram_drd_cmd_reg;
-#[doc = "SPI_SRAM_DWR_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_sram_dwr_cmd_reg](spi_sram_dwr_cmd_reg) module"]
-pub type SPI_SRAM_DWR_CMD_REG = crate::Reg<u32, _SPI_SRAM_DWR_CMD_REG>;
+pub mod sram_drd_cmd;
+#[doc = "SPI_SRAM_DWR_CMD_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [sram_dwr_cmd](sram_dwr_cmd) module"]
+pub type SRAM_DWR_CMD = crate::Reg<u32, _SRAM_DWR_CMD>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SRAM_DWR_CMD_REG;
-#[doc = "`read()` method returns [spi_sram_dwr_cmd_reg::R](spi_sram_dwr_cmd_reg::R) reader structure"]
-impl crate::Readable for SPI_SRAM_DWR_CMD_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_sram_dwr_cmd_reg::W](spi_sram_dwr_cmd_reg::W) writer structure"]
-impl crate::Writable for SPI_SRAM_DWR_CMD_REG {}
+pub struct _SRAM_DWR_CMD;
+#[doc = "`read()` method returns [sram_dwr_cmd::R](sram_dwr_cmd::R) reader structure"]
+impl crate::Readable for SRAM_DWR_CMD {}
+#[doc = "`write(|w| ..)` method takes [sram_dwr_cmd::W](sram_dwr_cmd::W) writer structure"]
+impl crate::Writable for SRAM_DWR_CMD {}
 #[doc = "SPI_SRAM_DWR_CMD_REG(i)"]
-pub mod spi_sram_dwr_cmd_reg;
-#[doc = "SPI_SLV_RD_BIT_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_slv_rd_bit_reg](spi_slv_rd_bit_reg) module"]
-pub type SPI_SLV_RD_BIT_REG = crate::Reg<u32, _SPI_SLV_RD_BIT_REG>;
+pub mod sram_dwr_cmd;
+#[doc = "SPI_SLV_RD_BIT_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [slv_rd_bit](slv_rd_bit) module"]
+pub type SLV_RD_BIT = crate::Reg<u32, _SLV_RD_BIT>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_SLV_RD_BIT_REG;
-#[doc = "`read()` method returns [spi_slv_rd_bit_reg::R](spi_slv_rd_bit_reg::R) reader structure"]
-impl crate::Readable for SPI_SLV_RD_BIT_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_slv_rd_bit_reg::W](spi_slv_rd_bit_reg::W) writer structure"]
-impl crate::Writable for SPI_SLV_RD_BIT_REG {}
+pub struct _SLV_RD_BIT;
+#[doc = "`read()` method returns [slv_rd_bit::R](slv_rd_bit::R) reader structure"]
+impl crate::Readable for SLV_RD_BIT {}
+#[doc = "`write(|w| ..)` method takes [slv_rd_bit::W](slv_rd_bit::W) writer structure"]
+impl crate::Writable for SLV_RD_BIT {}
 #[doc = "SPI_SLV_RD_BIT_REG(i)"]
-pub mod spi_slv_rd_bit_reg;
-#[doc = "SPI_W0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w0_reg](spi_w0_reg) module"]
-pub type SPI_W0_REG = crate::Reg<u32, _SPI_W0_REG>;
+pub mod slv_rd_bit;
+#[doc = "SPI_W0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w0](w0) module"]
+pub type W0 = crate::Reg<u32, _W0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W0_REG;
-#[doc = "`read()` method returns [spi_w0_reg::R](spi_w0_reg::R) reader structure"]
-impl crate::Readable for SPI_W0_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w0_reg::W](spi_w0_reg::W) writer structure"]
-impl crate::Writable for SPI_W0_REG {}
+pub struct _W0;
+#[doc = "`read()` method returns [w0::R](w0::R) reader structure"]
+impl crate::Readable for W0 {}
+#[doc = "`write(|w| ..)` method takes [w0::W](w0::W) writer structure"]
+impl crate::Writable for W0 {}
 #[doc = "SPI_W0_REG(i)"]
-pub mod spi_w0_reg;
-#[doc = "SPI_W1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w1_reg](spi_w1_reg) module"]
-pub type SPI_W1_REG = crate::Reg<u32, _SPI_W1_REG>;
+pub mod w0;
+#[doc = "SPI_W1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w1](w1) module"]
+pub type W1 = crate::Reg<u32, _W1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W1_REG;
-#[doc = "`read()` method returns [spi_w1_reg::R](spi_w1_reg::R) reader structure"]
-impl crate::Readable for SPI_W1_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w1_reg::W](spi_w1_reg::W) writer structure"]
-impl crate::Writable for SPI_W1_REG {}
+pub struct _W1;
+#[doc = "`read()` method returns [w1::R](w1::R) reader structure"]
+impl crate::Readable for W1 {}
+#[doc = "`write(|w| ..)` method takes [w1::W](w1::W) writer structure"]
+impl crate::Writable for W1 {}
 #[doc = "SPI_W1_REG(i)"]
-pub mod spi_w1_reg;
-#[doc = "SPI_W2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w2_reg](spi_w2_reg) module"]
-pub type SPI_W2_REG = crate::Reg<u32, _SPI_W2_REG>;
+pub mod w1;
+#[doc = "SPI_W2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w2](w2) module"]
+pub type W2 = crate::Reg<u32, _W2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W2_REG;
-#[doc = "`read()` method returns [spi_w2_reg::R](spi_w2_reg::R) reader structure"]
-impl crate::Readable for SPI_W2_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w2_reg::W](spi_w2_reg::W) writer structure"]
-impl crate::Writable for SPI_W2_REG {}
+pub struct _W2;
+#[doc = "`read()` method returns [w2::R](w2::R) reader structure"]
+impl crate::Readable for W2 {}
+#[doc = "`write(|w| ..)` method takes [w2::W](w2::W) writer structure"]
+impl crate::Writable for W2 {}
 #[doc = "SPI_W2_REG(i)"]
-pub mod spi_w2_reg;
-#[doc = "SPI_W3_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w3_reg](spi_w3_reg) module"]
-pub type SPI_W3_REG = crate::Reg<u32, _SPI_W3_REG>;
+pub mod w2;
+#[doc = "SPI_W3_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w3](w3) module"]
+pub type W3 = crate::Reg<u32, _W3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W3_REG;
-#[doc = "`read()` method returns [spi_w3_reg::R](spi_w3_reg::R) reader structure"]
-impl crate::Readable for SPI_W3_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w3_reg::W](spi_w3_reg::W) writer structure"]
-impl crate::Writable for SPI_W3_REG {}
+pub struct _W3;
+#[doc = "`read()` method returns [w3::R](w3::R) reader structure"]
+impl crate::Readable for W3 {}
+#[doc = "`write(|w| ..)` method takes [w3::W](w3::W) writer structure"]
+impl crate::Writable for W3 {}
 #[doc = "SPI_W3_REG(i)"]
-pub mod spi_w3_reg;
-#[doc = "SPI_W4_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w4_reg](spi_w4_reg) module"]
-pub type SPI_W4_REG = crate::Reg<u32, _SPI_W4_REG>;
+pub mod w3;
+#[doc = "SPI_W4_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w4](w4) module"]
+pub type W4 = crate::Reg<u32, _W4>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W4_REG;
-#[doc = "`read()` method returns [spi_w4_reg::R](spi_w4_reg::R) reader structure"]
-impl crate::Readable for SPI_W4_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w4_reg::W](spi_w4_reg::W) writer structure"]
-impl crate::Writable for SPI_W4_REG {}
+pub struct _W4;
+#[doc = "`read()` method returns [w4::R](w4::R) reader structure"]
+impl crate::Readable for W4 {}
+#[doc = "`write(|w| ..)` method takes [w4::W](w4::W) writer structure"]
+impl crate::Writable for W4 {}
 #[doc = "SPI_W4_REG(i)"]
-pub mod spi_w4_reg;
-#[doc = "SPI_W5_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w5_reg](spi_w5_reg) module"]
-pub type SPI_W5_REG = crate::Reg<u32, _SPI_W5_REG>;
+pub mod w4;
+#[doc = "SPI_W5_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w5](w5) module"]
+pub type W5 = crate::Reg<u32, _W5>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W5_REG;
-#[doc = "`read()` method returns [spi_w5_reg::R](spi_w5_reg::R) reader structure"]
-impl crate::Readable for SPI_W5_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w5_reg::W](spi_w5_reg::W) writer structure"]
-impl crate::Writable for SPI_W5_REG {}
+pub struct _W5;
+#[doc = "`read()` method returns [w5::R](w5::R) reader structure"]
+impl crate::Readable for W5 {}
+#[doc = "`write(|w| ..)` method takes [w5::W](w5::W) writer structure"]
+impl crate::Writable for W5 {}
 #[doc = "SPI_W5_REG(i)"]
-pub mod spi_w5_reg;
-#[doc = "SPI_W6_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w6_reg](spi_w6_reg) module"]
-pub type SPI_W6_REG = crate::Reg<u32, _SPI_W6_REG>;
+pub mod w5;
+#[doc = "SPI_W6_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w6](w6) module"]
+pub type W6 = crate::Reg<u32, _W6>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W6_REG;
-#[doc = "`read()` method returns [spi_w6_reg::R](spi_w6_reg::R) reader structure"]
-impl crate::Readable for SPI_W6_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w6_reg::W](spi_w6_reg::W) writer structure"]
-impl crate::Writable for SPI_W6_REG {}
+pub struct _W6;
+#[doc = "`read()` method returns [w6::R](w6::R) reader structure"]
+impl crate::Readable for W6 {}
+#[doc = "`write(|w| ..)` method takes [w6::W](w6::W) writer structure"]
+impl crate::Writable for W6 {}
 #[doc = "SPI_W6_REG(i)"]
-pub mod spi_w6_reg;
-#[doc = "SPI_W7_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w7_reg](spi_w7_reg) module"]
-pub type SPI_W7_REG = crate::Reg<u32, _SPI_W7_REG>;
+pub mod w6;
+#[doc = "SPI_W7_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w7](w7) module"]
+pub type W7 = crate::Reg<u32, _W7>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W7_REG;
-#[doc = "`read()` method returns [spi_w7_reg::R](spi_w7_reg::R) reader structure"]
-impl crate::Readable for SPI_W7_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w7_reg::W](spi_w7_reg::W) writer structure"]
-impl crate::Writable for SPI_W7_REG {}
+pub struct _W7;
+#[doc = "`read()` method returns [w7::R](w7::R) reader structure"]
+impl crate::Readable for W7 {}
+#[doc = "`write(|w| ..)` method takes [w7::W](w7::W) writer structure"]
+impl crate::Writable for W7 {}
 #[doc = "SPI_W7_REG(i)"]
-pub mod spi_w7_reg;
-#[doc = "SPI_W8_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w8_reg](spi_w8_reg) module"]
-pub type SPI_W8_REG = crate::Reg<u32, _SPI_W8_REG>;
+pub mod w7;
+#[doc = "SPI_W8_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w8](w8) module"]
+pub type W8 = crate::Reg<u32, _W8>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W8_REG;
-#[doc = "`read()` method returns [spi_w8_reg::R](spi_w8_reg::R) reader structure"]
-impl crate::Readable for SPI_W8_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w8_reg::W](spi_w8_reg::W) writer structure"]
-impl crate::Writable for SPI_W8_REG {}
+pub struct _W8;
+#[doc = "`read()` method returns [w8::R](w8::R) reader structure"]
+impl crate::Readable for W8 {}
+#[doc = "`write(|w| ..)` method takes [w8::W](w8::W) writer structure"]
+impl crate::Writable for W8 {}
 #[doc = "SPI_W8_REG(i)"]
-pub mod spi_w8_reg;
-#[doc = "SPI_W9_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w9_reg](spi_w9_reg) module"]
-pub type SPI_W9_REG = crate::Reg<u32, _SPI_W9_REG>;
+pub mod w8;
+#[doc = "SPI_W9_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w9](w9) module"]
+pub type W9 = crate::Reg<u32, _W9>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W9_REG;
-#[doc = "`read()` method returns [spi_w9_reg::R](spi_w9_reg::R) reader structure"]
-impl crate::Readable for SPI_W9_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w9_reg::W](spi_w9_reg::W) writer structure"]
-impl crate::Writable for SPI_W9_REG {}
+pub struct _W9;
+#[doc = "`read()` method returns [w9::R](w9::R) reader structure"]
+impl crate::Readable for W9 {}
+#[doc = "`write(|w| ..)` method takes [w9::W](w9::W) writer structure"]
+impl crate::Writable for W9 {}
 #[doc = "SPI_W9_REG(i)"]
-pub mod spi_w9_reg;
-#[doc = "SPI_W10_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w10_reg](spi_w10_reg) module"]
-pub type SPI_W10_REG = crate::Reg<u32, _SPI_W10_REG>;
+pub mod w9;
+#[doc = "SPI_W10_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w10](w10) module"]
+pub type W10 = crate::Reg<u32, _W10>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W10_REG;
-#[doc = "`read()` method returns [spi_w10_reg::R](spi_w10_reg::R) reader structure"]
-impl crate::Readable for SPI_W10_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w10_reg::W](spi_w10_reg::W) writer structure"]
-impl crate::Writable for SPI_W10_REG {}
+pub struct _W10;
+#[doc = "`read()` method returns [w10::R](w10::R) reader structure"]
+impl crate::Readable for W10 {}
+#[doc = "`write(|w| ..)` method takes [w10::W](w10::W) writer structure"]
+impl crate::Writable for W10 {}
 #[doc = "SPI_W10_REG(i)"]
-pub mod spi_w10_reg;
-#[doc = "SPI_W11_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w11_reg](spi_w11_reg) module"]
-pub type SPI_W11_REG = crate::Reg<u32, _SPI_W11_REG>;
+pub mod w10;
+#[doc = "SPI_W11_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w11](w11) module"]
+pub type W11 = crate::Reg<u32, _W11>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W11_REG;
-#[doc = "`read()` method returns [spi_w11_reg::R](spi_w11_reg::R) reader structure"]
-impl crate::Readable for SPI_W11_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w11_reg::W](spi_w11_reg::W) writer structure"]
-impl crate::Writable for SPI_W11_REG {}
+pub struct _W11;
+#[doc = "`read()` method returns [w11::R](w11::R) reader structure"]
+impl crate::Readable for W11 {}
+#[doc = "`write(|w| ..)` method takes [w11::W](w11::W) writer structure"]
+impl crate::Writable for W11 {}
 #[doc = "SPI_W11_REG(i)"]
-pub mod spi_w11_reg;
-#[doc = "SPI_W12_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w12_reg](spi_w12_reg) module"]
-pub type SPI_W12_REG = crate::Reg<u32, _SPI_W12_REG>;
+pub mod w11;
+#[doc = "SPI_W12_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w12](w12) module"]
+pub type W12 = crate::Reg<u32, _W12>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W12_REG;
-#[doc = "`read()` method returns [spi_w12_reg::R](spi_w12_reg::R) reader structure"]
-impl crate::Readable for SPI_W12_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w12_reg::W](spi_w12_reg::W) writer structure"]
-impl crate::Writable for SPI_W12_REG {}
+pub struct _W12;
+#[doc = "`read()` method returns [w12::R](w12::R) reader structure"]
+impl crate::Readable for W12 {}
+#[doc = "`write(|w| ..)` method takes [w12::W](w12::W) writer structure"]
+impl crate::Writable for W12 {}
 #[doc = "SPI_W12_REG(i)"]
-pub mod spi_w12_reg;
-#[doc = "SPI_W13_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w13_reg](spi_w13_reg) module"]
-pub type SPI_W13_REG = crate::Reg<u32, _SPI_W13_REG>;
+pub mod w12;
+#[doc = "SPI_W13_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w13](w13) module"]
+pub type W13 = crate::Reg<u32, _W13>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W13_REG;
-#[doc = "`read()` method returns [spi_w13_reg::R](spi_w13_reg::R) reader structure"]
-impl crate::Readable for SPI_W13_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w13_reg::W](spi_w13_reg::W) writer structure"]
-impl crate::Writable for SPI_W13_REG {}
+pub struct _W13;
+#[doc = "`read()` method returns [w13::R](w13::R) reader structure"]
+impl crate::Readable for W13 {}
+#[doc = "`write(|w| ..)` method takes [w13::W](w13::W) writer structure"]
+impl crate::Writable for W13 {}
 #[doc = "SPI_W13_REG(i)"]
-pub mod spi_w13_reg;
-#[doc = "SPI_W14_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w14_reg](spi_w14_reg) module"]
-pub type SPI_W14_REG = crate::Reg<u32, _SPI_W14_REG>;
+pub mod w13;
+#[doc = "SPI_W14_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w14](w14) module"]
+pub type W14 = crate::Reg<u32, _W14>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W14_REG;
-#[doc = "`read()` method returns [spi_w14_reg::R](spi_w14_reg::R) reader structure"]
-impl crate::Readable for SPI_W14_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w14_reg::W](spi_w14_reg::W) writer structure"]
-impl crate::Writable for SPI_W14_REG {}
+pub struct _W14;
+#[doc = "`read()` method returns [w14::R](w14::R) reader structure"]
+impl crate::Readable for W14 {}
+#[doc = "`write(|w| ..)` method takes [w14::W](w14::W) writer structure"]
+impl crate::Writable for W14 {}
 #[doc = "SPI_W14_REG(i)"]
-pub mod spi_w14_reg;
-#[doc = "SPI_W15_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_w15_reg](spi_w15_reg) module"]
-pub type SPI_W15_REG = crate::Reg<u32, _SPI_W15_REG>;
+pub mod w14;
+#[doc = "SPI_W15_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [w15](w15) module"]
+pub type W15 = crate::Reg<u32, _W15>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_W15_REG;
-#[doc = "`read()` method returns [spi_w15_reg::R](spi_w15_reg::R) reader structure"]
-impl crate::Readable for SPI_W15_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_w15_reg::W](spi_w15_reg::W) writer structure"]
-impl crate::Writable for SPI_W15_REG {}
+pub struct _W15;
+#[doc = "`read()` method returns [w15::R](w15::R) reader structure"]
+impl crate::Readable for W15 {}
+#[doc = "`write(|w| ..)` method takes [w15::W](w15::W) writer structure"]
+impl crate::Writable for W15 {}
 #[doc = "SPI_W15_REG(i)"]
-pub mod spi_w15_reg;
-#[doc = "SPI_TX_CRC_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_tx_crc_reg](spi_tx_crc_reg) module"]
-pub type SPI_TX_CRC_REG = crate::Reg<u32, _SPI_TX_CRC_REG>;
+pub mod w15;
+#[doc = "SPI_TX_CRC_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [tx_crc](tx_crc) module"]
+pub type TX_CRC = crate::Reg<u32, _TX_CRC>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_TX_CRC_REG;
-#[doc = "`read()` method returns [spi_tx_crc_reg::R](spi_tx_crc_reg::R) reader structure"]
-impl crate::Readable for SPI_TX_CRC_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_tx_crc_reg::W](spi_tx_crc_reg::W) writer structure"]
-impl crate::Writable for SPI_TX_CRC_REG {}
+pub struct _TX_CRC;
+#[doc = "`read()` method returns [tx_crc::R](tx_crc::R) reader structure"]
+impl crate::Readable for TX_CRC {}
+#[doc = "`write(|w| ..)` method takes [tx_crc::W](tx_crc::W) writer structure"]
+impl crate::Writable for TX_CRC {}
 #[doc = "SPI_TX_CRC_REG(i)"]
-pub mod spi_tx_crc_reg;
-#[doc = "SPI_EXT0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_ext0_reg](spi_ext0_reg) module"]
-pub type SPI_EXT0_REG = crate::Reg<u32, _SPI_EXT0_REG>;
+pub mod tx_crc;
+#[doc = "SPI_EXT0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ext0](ext0) module"]
+pub type EXT0 = crate::Reg<u32, _EXT0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_EXT0_REG;
-#[doc = "`read()` method returns [spi_ext0_reg::R](spi_ext0_reg::R) reader structure"]
-impl crate::Readable for SPI_EXT0_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_ext0_reg::W](spi_ext0_reg::W) writer structure"]
-impl crate::Writable for SPI_EXT0_REG {}
+pub struct _EXT0;
+#[doc = "`read()` method returns [ext0::R](ext0::R) reader structure"]
+impl crate::Readable for EXT0 {}
+#[doc = "`write(|w| ..)` method takes [ext0::W](ext0::W) writer structure"]
+impl crate::Writable for EXT0 {}
 #[doc = "SPI_EXT0_REG(i)"]
-pub mod spi_ext0_reg;
-#[doc = "SPI_EXT1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_ext1_reg](spi_ext1_reg) module"]
-pub type SPI_EXT1_REG = crate::Reg<u32, _SPI_EXT1_REG>;
+pub mod ext0;
+#[doc = "SPI_EXT1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ext1](ext1) module"]
+pub type EXT1 = crate::Reg<u32, _EXT1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_EXT1_REG;
-#[doc = "`read()` method returns [spi_ext1_reg::R](spi_ext1_reg::R) reader structure"]
-impl crate::Readable for SPI_EXT1_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_ext1_reg::W](spi_ext1_reg::W) writer structure"]
-impl crate::Writable for SPI_EXT1_REG {}
+pub struct _EXT1;
+#[doc = "`read()` method returns [ext1::R](ext1::R) reader structure"]
+impl crate::Readable for EXT1 {}
+#[doc = "`write(|w| ..)` method takes [ext1::W](ext1::W) writer structure"]
+impl crate::Writable for EXT1 {}
 #[doc = "SPI_EXT1_REG(i)"]
-pub mod spi_ext1_reg;
-#[doc = "SPI_EXT2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_ext2_reg](spi_ext2_reg) module"]
-pub type SPI_EXT2_REG = crate::Reg<u32, _SPI_EXT2_REG>;
+pub mod ext1;
+#[doc = "SPI_EXT2_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ext2](ext2) module"]
+pub type EXT2 = crate::Reg<u32, _EXT2>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_EXT2_REG;
-#[doc = "`read()` method returns [spi_ext2_reg::R](spi_ext2_reg::R) reader structure"]
-impl crate::Readable for SPI_EXT2_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_ext2_reg::W](spi_ext2_reg::W) writer structure"]
-impl crate::Writable for SPI_EXT2_REG {}
+pub struct _EXT2;
+#[doc = "`read()` method returns [ext2::R](ext2::R) reader structure"]
+impl crate::Readable for EXT2 {}
+#[doc = "`write(|w| ..)` method takes [ext2::W](ext2::W) writer structure"]
+impl crate::Writable for EXT2 {}
 #[doc = "SPI_EXT2_REG(i)"]
-pub mod spi_ext2_reg;
-#[doc = "SPI_EXT3_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_ext3_reg](spi_ext3_reg) module"]
-pub type SPI_EXT3_REG = crate::Reg<u32, _SPI_EXT3_REG>;
+pub mod ext2;
+#[doc = "SPI_EXT3_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ext3](ext3) module"]
+pub type EXT3 = crate::Reg<u32, _EXT3>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_EXT3_REG;
-#[doc = "`read()` method returns [spi_ext3_reg::R](spi_ext3_reg::R) reader structure"]
-impl crate::Readable for SPI_EXT3_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_ext3_reg::W](spi_ext3_reg::W) writer structure"]
-impl crate::Writable for SPI_EXT3_REG {}
+pub struct _EXT3;
+#[doc = "`read()` method returns [ext3::R](ext3::R) reader structure"]
+impl crate::Readable for EXT3 {}
+#[doc = "`write(|w| ..)` method takes [ext3::W](ext3::W) writer structure"]
+impl crate::Writable for EXT3 {}
 #[doc = "SPI_EXT3_REG(i)"]
-pub mod spi_ext3_reg;
-#[doc = "SPI_DMA_CONF_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_conf_reg](spi_dma_conf_reg) module"]
-pub type SPI_DMA_CONF_REG = crate::Reg<u32, _SPI_DMA_CONF_REG>;
+pub mod ext3;
+#[doc = "SPI_DMA_CONF_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_conf](dma_conf) module"]
+pub type DMA_CONF = crate::Reg<u32, _DMA_CONF>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_CONF_REG;
-#[doc = "`read()` method returns [spi_dma_conf_reg::R](spi_dma_conf_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_CONF_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_conf_reg::W](spi_dma_conf_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_CONF_REG {}
+pub struct _DMA_CONF;
+#[doc = "`read()` method returns [dma_conf::R](dma_conf::R) reader structure"]
+impl crate::Readable for DMA_CONF {}
+#[doc = "`write(|w| ..)` method takes [dma_conf::W](dma_conf::W) writer structure"]
+impl crate::Writable for DMA_CONF {}
 #[doc = "SPI_DMA_CONF_REG(i)"]
-pub mod spi_dma_conf_reg;
-#[doc = "SPI_DMA_OUT_LINK_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_out_link_reg](spi_dma_out_link_reg) module"]
-pub type SPI_DMA_OUT_LINK_REG = crate::Reg<u32, _SPI_DMA_OUT_LINK_REG>;
+pub mod dma_conf;
+#[doc = "SPI_DMA_OUT_LINK_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_out_link](dma_out_link) module"]
+pub type DMA_OUT_LINK = crate::Reg<u32, _DMA_OUT_LINK>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_OUT_LINK_REG;
-#[doc = "`read()` method returns [spi_dma_out_link_reg::R](spi_dma_out_link_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_OUT_LINK_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_out_link_reg::W](spi_dma_out_link_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_OUT_LINK_REG {}
+pub struct _DMA_OUT_LINK;
+#[doc = "`read()` method returns [dma_out_link::R](dma_out_link::R) reader structure"]
+impl crate::Readable for DMA_OUT_LINK {}
+#[doc = "`write(|w| ..)` method takes [dma_out_link::W](dma_out_link::W) writer structure"]
+impl crate::Writable for DMA_OUT_LINK {}
 #[doc = "SPI_DMA_OUT_LINK_REG(i)"]
-pub mod spi_dma_out_link_reg;
-#[doc = "SPI_DMA_IN_LINK_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_in_link_reg](spi_dma_in_link_reg) module"]
-pub type SPI_DMA_IN_LINK_REG = crate::Reg<u32, _SPI_DMA_IN_LINK_REG>;
+pub mod dma_out_link;
+#[doc = "SPI_DMA_IN_LINK_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_in_link](dma_in_link) module"]
+pub type DMA_IN_LINK = crate::Reg<u32, _DMA_IN_LINK>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_IN_LINK_REG;
-#[doc = "`read()` method returns [spi_dma_in_link_reg::R](spi_dma_in_link_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_IN_LINK_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_in_link_reg::W](spi_dma_in_link_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_IN_LINK_REG {}
+pub struct _DMA_IN_LINK;
+#[doc = "`read()` method returns [dma_in_link::R](dma_in_link::R) reader structure"]
+impl crate::Readable for DMA_IN_LINK {}
+#[doc = "`write(|w| ..)` method takes [dma_in_link::W](dma_in_link::W) writer structure"]
+impl crate::Writable for DMA_IN_LINK {}
 #[doc = "SPI_DMA_IN_LINK_REG(i)"]
-pub mod spi_dma_in_link_reg;
-#[doc = "SPI_DMA_STATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_status_reg](spi_dma_status_reg) module"]
-pub type SPI_DMA_STATUS_REG = crate::Reg<u32, _SPI_DMA_STATUS_REG>;
+pub mod dma_in_link;
+#[doc = "SPI_DMA_STATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_status](dma_status) module"]
+pub type DMA_STATUS = crate::Reg<u32, _DMA_STATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_STATUS_REG;
-#[doc = "`read()` method returns [spi_dma_status_reg::R](spi_dma_status_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_STATUS_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_status_reg::W](spi_dma_status_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_STATUS_REG {}
+pub struct _DMA_STATUS;
+#[doc = "`read()` method returns [dma_status::R](dma_status::R) reader structure"]
+impl crate::Readable for DMA_STATUS {}
+#[doc = "`write(|w| ..)` method takes [dma_status::W](dma_status::W) writer structure"]
+impl crate::Writable for DMA_STATUS {}
 #[doc = "SPI_DMA_STATUS_REG(i)"]
-pub mod spi_dma_status_reg;
-#[doc = "SPI_DMA_INT_ENA_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_int_ena_reg](spi_dma_int_ena_reg) module"]
-pub type SPI_DMA_INT_ENA_REG = crate::Reg<u32, _SPI_DMA_INT_ENA_REG>;
+pub mod dma_status;
+#[doc = "SPI_DMA_INT_ENA_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_int_ena](dma_int_ena) module"]
+pub type DMA_INT_ENA = crate::Reg<u32, _DMA_INT_ENA>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_INT_ENA_REG;
-#[doc = "`read()` method returns [spi_dma_int_ena_reg::R](spi_dma_int_ena_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_INT_ENA_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_int_ena_reg::W](spi_dma_int_ena_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_INT_ENA_REG {}
+pub struct _DMA_INT_ENA;
+#[doc = "`read()` method returns [dma_int_ena::R](dma_int_ena::R) reader structure"]
+impl crate::Readable for DMA_INT_ENA {}
+#[doc = "`write(|w| ..)` method takes [dma_int_ena::W](dma_int_ena::W) writer structure"]
+impl crate::Writable for DMA_INT_ENA {}
 #[doc = "SPI_DMA_INT_ENA_REG(i)"]
-pub mod spi_dma_int_ena_reg;
-#[doc = "SPI_DMA_INT_RAW_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_int_raw_reg](spi_dma_int_raw_reg) module"]
-pub type SPI_DMA_INT_RAW_REG = crate::Reg<u32, _SPI_DMA_INT_RAW_REG>;
+pub mod dma_int_ena;
+#[doc = "SPI_DMA_INT_RAW_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_int_raw](dma_int_raw) module"]
+pub type DMA_INT_RAW = crate::Reg<u32, _DMA_INT_RAW>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_INT_RAW_REG;
-#[doc = "`read()` method returns [spi_dma_int_raw_reg::R](spi_dma_int_raw_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_INT_RAW_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_int_raw_reg::W](spi_dma_int_raw_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_INT_RAW_REG {}
+pub struct _DMA_INT_RAW;
+#[doc = "`read()` method returns [dma_int_raw::R](dma_int_raw::R) reader structure"]
+impl crate::Readable for DMA_INT_RAW {}
+#[doc = "`write(|w| ..)` method takes [dma_int_raw::W](dma_int_raw::W) writer structure"]
+impl crate::Writable for DMA_INT_RAW {}
 #[doc = "SPI_DMA_INT_RAW_REG(i)"]
-pub mod spi_dma_int_raw_reg;
-#[doc = "SPI_DMA_INT_ST_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_int_st_reg](spi_dma_int_st_reg) module"]
-pub type SPI_DMA_INT_ST_REG = crate::Reg<u32, _SPI_DMA_INT_ST_REG>;
+pub mod dma_int_raw;
+#[doc = "SPI_DMA_INT_ST_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_int_st](dma_int_st) module"]
+pub type DMA_INT_ST = crate::Reg<u32, _DMA_INT_ST>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_INT_ST_REG;
-#[doc = "`read()` method returns [spi_dma_int_st_reg::R](spi_dma_int_st_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_INT_ST_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_int_st_reg::W](spi_dma_int_st_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_INT_ST_REG {}
+pub struct _DMA_INT_ST;
+#[doc = "`read()` method returns [dma_int_st::R](dma_int_st::R) reader structure"]
+impl crate::Readable for DMA_INT_ST {}
+#[doc = "`write(|w| ..)` method takes [dma_int_st::W](dma_int_st::W) writer structure"]
+impl crate::Writable for DMA_INT_ST {}
 #[doc = "SPI_DMA_INT_ST_REG(i)"]
-pub mod spi_dma_int_st_reg;
-#[doc = "SPI_DMA_INT_CLR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_int_clr_reg](spi_dma_int_clr_reg) module"]
-pub type SPI_DMA_INT_CLR_REG = crate::Reg<u32, _SPI_DMA_INT_CLR_REG>;
+pub mod dma_int_st;
+#[doc = "SPI_DMA_INT_CLR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_int_clr](dma_int_clr) module"]
+pub type DMA_INT_CLR = crate::Reg<u32, _DMA_INT_CLR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_INT_CLR_REG;
-#[doc = "`read()` method returns [spi_dma_int_clr_reg::R](spi_dma_int_clr_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_INT_CLR_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_int_clr_reg::W](spi_dma_int_clr_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_INT_CLR_REG {}
+pub struct _DMA_INT_CLR;
+#[doc = "`read()` method returns [dma_int_clr::R](dma_int_clr::R) reader structure"]
+impl crate::Readable for DMA_INT_CLR {}
+#[doc = "`write(|w| ..)` method takes [dma_int_clr::W](dma_int_clr::W) writer structure"]
+impl crate::Writable for DMA_INT_CLR {}
 #[doc = "SPI_DMA_INT_CLR_REG(i)"]
-pub mod spi_dma_int_clr_reg;
-#[doc = "SPI_IN_ERR_EOF_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_in_err_eof_des_addr_reg](spi_in_err_eof_des_addr_reg) module"]
-pub type SPI_IN_ERR_EOF_DES_ADDR_REG = crate::Reg<u32, _SPI_IN_ERR_EOF_DES_ADDR_REG>;
+pub mod dma_int_clr;
+#[doc = "SPI_IN_ERR_EOF_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [in_err_eof_des_addr](in_err_eof_des_addr) module"]
+pub type IN_ERR_EOF_DES_ADDR = crate::Reg<u32, _IN_ERR_EOF_DES_ADDR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_IN_ERR_EOF_DES_ADDR_REG;
-#[doc = "`read()` method returns [spi_in_err_eof_des_addr_reg::R](spi_in_err_eof_des_addr_reg::R) reader structure"]
-impl crate::Readable for SPI_IN_ERR_EOF_DES_ADDR_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_in_err_eof_des_addr_reg::W](spi_in_err_eof_des_addr_reg::W) writer structure"]
-impl crate::Writable for SPI_IN_ERR_EOF_DES_ADDR_REG {}
+pub struct _IN_ERR_EOF_DES_ADDR;
+#[doc = "`read()` method returns [in_err_eof_des_addr::R](in_err_eof_des_addr::R) reader structure"]
+impl crate::Readable for IN_ERR_EOF_DES_ADDR {}
+#[doc = "`write(|w| ..)` method takes [in_err_eof_des_addr::W](in_err_eof_des_addr::W) writer structure"]
+impl crate::Writable for IN_ERR_EOF_DES_ADDR {}
 #[doc = "SPI_IN_ERR_EOF_DES_ADDR_REG(i)"]
-pub mod spi_in_err_eof_des_addr_reg;
-#[doc = "SPI_IN_SUC_EOF_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_in_suc_eof_des_addr_reg](spi_in_suc_eof_des_addr_reg) module"]
-pub type SPI_IN_SUC_EOF_DES_ADDR_REG = crate::Reg<u32, _SPI_IN_SUC_EOF_DES_ADDR_REG>;
+pub mod in_err_eof_des_addr;
+#[doc = "SPI_IN_SUC_EOF_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [in_suc_eof_des_addr](in_suc_eof_des_addr) module"]
+pub type IN_SUC_EOF_DES_ADDR = crate::Reg<u32, _IN_SUC_EOF_DES_ADDR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_IN_SUC_EOF_DES_ADDR_REG;
-#[doc = "`read()` method returns [spi_in_suc_eof_des_addr_reg::R](spi_in_suc_eof_des_addr_reg::R) reader structure"]
-impl crate::Readable for SPI_IN_SUC_EOF_DES_ADDR_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_in_suc_eof_des_addr_reg::W](spi_in_suc_eof_des_addr_reg::W) writer structure"]
-impl crate::Writable for SPI_IN_SUC_EOF_DES_ADDR_REG {}
+pub struct _IN_SUC_EOF_DES_ADDR;
+#[doc = "`read()` method returns [in_suc_eof_des_addr::R](in_suc_eof_des_addr::R) reader structure"]
+impl crate::Readable for IN_SUC_EOF_DES_ADDR {}
+#[doc = "`write(|w| ..)` method takes [in_suc_eof_des_addr::W](in_suc_eof_des_addr::W) writer structure"]
+impl crate::Writable for IN_SUC_EOF_DES_ADDR {}
 #[doc = "SPI_IN_SUC_EOF_DES_ADDR_REG(i)"]
-pub mod spi_in_suc_eof_des_addr_reg;
-#[doc = "SPI_INLINK_DSCR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_inlink_dscr_reg](spi_inlink_dscr_reg) module"]
-pub type SPI_INLINK_DSCR_REG = crate::Reg<u32, _SPI_INLINK_DSCR_REG>;
+pub mod in_suc_eof_des_addr;
+#[doc = "SPI_INLINK_DSCR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [inlink_dscr](inlink_dscr) module"]
+pub type INLINK_DSCR = crate::Reg<u32, _INLINK_DSCR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_INLINK_DSCR_REG;
-#[doc = "`read()` method returns [spi_inlink_dscr_reg::R](spi_inlink_dscr_reg::R) reader structure"]
-impl crate::Readable for SPI_INLINK_DSCR_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_inlink_dscr_reg::W](spi_inlink_dscr_reg::W) writer structure"]
-impl crate::Writable for SPI_INLINK_DSCR_REG {}
+pub struct _INLINK_DSCR;
+#[doc = "`read()` method returns [inlink_dscr::R](inlink_dscr::R) reader structure"]
+impl crate::Readable for INLINK_DSCR {}
+#[doc = "`write(|w| ..)` method takes [inlink_dscr::W](inlink_dscr::W) writer structure"]
+impl crate::Writable for INLINK_DSCR {}
 #[doc = "SPI_INLINK_DSCR_REG(i)"]
-pub mod spi_inlink_dscr_reg;
-#[doc = "SPI_INLINK_DSCR_BF0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_inlink_dscr_bf0_reg](spi_inlink_dscr_bf0_reg) module"]
-pub type SPI_INLINK_DSCR_BF0_REG = crate::Reg<u32, _SPI_INLINK_DSCR_BF0_REG>;
+pub mod inlink_dscr;
+#[doc = "SPI_INLINK_DSCR_BF0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [inlink_dscr_bf0](inlink_dscr_bf0) module"]
+pub type INLINK_DSCR_BF0 = crate::Reg<u32, _INLINK_DSCR_BF0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_INLINK_DSCR_BF0_REG;
-#[doc = "`read()` method returns [spi_inlink_dscr_bf0_reg::R](spi_inlink_dscr_bf0_reg::R) reader structure"]
-impl crate::Readable for SPI_INLINK_DSCR_BF0_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_inlink_dscr_bf0_reg::W](spi_inlink_dscr_bf0_reg::W) writer structure"]
-impl crate::Writable for SPI_INLINK_DSCR_BF0_REG {}
+pub struct _INLINK_DSCR_BF0;
+#[doc = "`read()` method returns [inlink_dscr_bf0::R](inlink_dscr_bf0::R) reader structure"]
+impl crate::Readable for INLINK_DSCR_BF0 {}
+#[doc = "`write(|w| ..)` method takes [inlink_dscr_bf0::W](inlink_dscr_bf0::W) writer structure"]
+impl crate::Writable for INLINK_DSCR_BF0 {}
 #[doc = "SPI_INLINK_DSCR_BF0_REG(i)"]
-pub mod spi_inlink_dscr_bf0_reg;
-#[doc = "SPI_INLINK_DSCR_BF1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_inlink_dscr_bf1_reg](spi_inlink_dscr_bf1_reg) module"]
-pub type SPI_INLINK_DSCR_BF1_REG = crate::Reg<u32, _SPI_INLINK_DSCR_BF1_REG>;
+pub mod inlink_dscr_bf0;
+#[doc = "SPI_INLINK_DSCR_BF1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [inlink_dscr_bf1](inlink_dscr_bf1) module"]
+pub type INLINK_DSCR_BF1 = crate::Reg<u32, _INLINK_DSCR_BF1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_INLINK_DSCR_BF1_REG;
-#[doc = "`read()` method returns [spi_inlink_dscr_bf1_reg::R](spi_inlink_dscr_bf1_reg::R) reader structure"]
-impl crate::Readable for SPI_INLINK_DSCR_BF1_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_inlink_dscr_bf1_reg::W](spi_inlink_dscr_bf1_reg::W) writer structure"]
-impl crate::Writable for SPI_INLINK_DSCR_BF1_REG {}
+pub struct _INLINK_DSCR_BF1;
+#[doc = "`read()` method returns [inlink_dscr_bf1::R](inlink_dscr_bf1::R) reader structure"]
+impl crate::Readable for INLINK_DSCR_BF1 {}
+#[doc = "`write(|w| ..)` method takes [inlink_dscr_bf1::W](inlink_dscr_bf1::W) writer structure"]
+impl crate::Writable for INLINK_DSCR_BF1 {}
 #[doc = "SPI_INLINK_DSCR_BF1_REG(i)"]
-pub mod spi_inlink_dscr_bf1_reg;
-#[doc = "SPI_OUT_EOF_BFR_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_out_eof_bfr_des_addr_reg](spi_out_eof_bfr_des_addr_reg) module"]
-pub type SPI_OUT_EOF_BFR_DES_ADDR_REG = crate::Reg<u32, _SPI_OUT_EOF_BFR_DES_ADDR_REG>;
+pub mod inlink_dscr_bf1;
+#[doc = "SPI_OUT_EOF_BFR_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_eof_bfr_des_addr](out_eof_bfr_des_addr) module"]
+pub type OUT_EOF_BFR_DES_ADDR = crate::Reg<u32, _OUT_EOF_BFR_DES_ADDR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_OUT_EOF_BFR_DES_ADDR_REG;
-#[doc = "`read()` method returns [spi_out_eof_bfr_des_addr_reg::R](spi_out_eof_bfr_des_addr_reg::R) reader structure"]
-impl crate::Readable for SPI_OUT_EOF_BFR_DES_ADDR_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_out_eof_bfr_des_addr_reg::W](spi_out_eof_bfr_des_addr_reg::W) writer structure"]
-impl crate::Writable for SPI_OUT_EOF_BFR_DES_ADDR_REG {}
+pub struct _OUT_EOF_BFR_DES_ADDR;
+#[doc = "`read()` method returns [out_eof_bfr_des_addr::R](out_eof_bfr_des_addr::R) reader structure"]
+impl crate::Readable for OUT_EOF_BFR_DES_ADDR {}
+#[doc = "`write(|w| ..)` method takes [out_eof_bfr_des_addr::W](out_eof_bfr_des_addr::W) writer structure"]
+impl crate::Writable for OUT_EOF_BFR_DES_ADDR {}
 #[doc = "SPI_OUT_EOF_BFR_DES_ADDR_REG(i)"]
-pub mod spi_out_eof_bfr_des_addr_reg;
-#[doc = "SPI_OUT_EOF_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_out_eof_des_addr_reg](spi_out_eof_des_addr_reg) module"]
-pub type SPI_OUT_EOF_DES_ADDR_REG = crate::Reg<u32, _SPI_OUT_EOF_DES_ADDR_REG>;
+pub mod out_eof_bfr_des_addr;
+#[doc = "SPI_OUT_EOF_DES_ADDR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [out_eof_des_addr](out_eof_des_addr) module"]
+pub type OUT_EOF_DES_ADDR = crate::Reg<u32, _OUT_EOF_DES_ADDR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_OUT_EOF_DES_ADDR_REG;
-#[doc = "`read()` method returns [spi_out_eof_des_addr_reg::R](spi_out_eof_des_addr_reg::R) reader structure"]
-impl crate::Readable for SPI_OUT_EOF_DES_ADDR_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_out_eof_des_addr_reg::W](spi_out_eof_des_addr_reg::W) writer structure"]
-impl crate::Writable for SPI_OUT_EOF_DES_ADDR_REG {}
+pub struct _OUT_EOF_DES_ADDR;
+#[doc = "`read()` method returns [out_eof_des_addr::R](out_eof_des_addr::R) reader structure"]
+impl crate::Readable for OUT_EOF_DES_ADDR {}
+#[doc = "`write(|w| ..)` method takes [out_eof_des_addr::W](out_eof_des_addr::W) writer structure"]
+impl crate::Writable for OUT_EOF_DES_ADDR {}
 #[doc = "SPI_OUT_EOF_DES_ADDR_REG(i)"]
-pub mod spi_out_eof_des_addr_reg;
-#[doc = "SPI_OUTLINK_DSCR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_outlink_dscr_reg](spi_outlink_dscr_reg) module"]
-pub type SPI_OUTLINK_DSCR_REG = crate::Reg<u32, _SPI_OUTLINK_DSCR_REG>;
+pub mod out_eof_des_addr;
+#[doc = "SPI_OUTLINK_DSCR_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [outlink_dscr](outlink_dscr) module"]
+pub type OUTLINK_DSCR = crate::Reg<u32, _OUTLINK_DSCR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_OUTLINK_DSCR_REG;
-#[doc = "`read()` method returns [spi_outlink_dscr_reg::R](spi_outlink_dscr_reg::R) reader structure"]
-impl crate::Readable for SPI_OUTLINK_DSCR_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_outlink_dscr_reg::W](spi_outlink_dscr_reg::W) writer structure"]
-impl crate::Writable for SPI_OUTLINK_DSCR_REG {}
+pub struct _OUTLINK_DSCR;
+#[doc = "`read()` method returns [outlink_dscr::R](outlink_dscr::R) reader structure"]
+impl crate::Readable for OUTLINK_DSCR {}
+#[doc = "`write(|w| ..)` method takes [outlink_dscr::W](outlink_dscr::W) writer structure"]
+impl crate::Writable for OUTLINK_DSCR {}
 #[doc = "SPI_OUTLINK_DSCR_REG(i)"]
-pub mod spi_outlink_dscr_reg;
-#[doc = "SPI_OUTLINK_DSCR_BF0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_outlink_dscr_bf0_reg](spi_outlink_dscr_bf0_reg) module"]
-pub type SPI_OUTLINK_DSCR_BF0_REG = crate::Reg<u32, _SPI_OUTLINK_DSCR_BF0_REG>;
+pub mod outlink_dscr;
+#[doc = "SPI_OUTLINK_DSCR_BF0_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [outlink_dscr_bf0](outlink_dscr_bf0) module"]
+pub type OUTLINK_DSCR_BF0 = crate::Reg<u32, _OUTLINK_DSCR_BF0>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_OUTLINK_DSCR_BF0_REG;
-#[doc = "`read()` method returns [spi_outlink_dscr_bf0_reg::R](spi_outlink_dscr_bf0_reg::R) reader structure"]
-impl crate::Readable for SPI_OUTLINK_DSCR_BF0_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_outlink_dscr_bf0_reg::W](spi_outlink_dscr_bf0_reg::W) writer structure"]
-impl crate::Writable for SPI_OUTLINK_DSCR_BF0_REG {}
+pub struct _OUTLINK_DSCR_BF0;
+#[doc = "`read()` method returns [outlink_dscr_bf0::R](outlink_dscr_bf0::R) reader structure"]
+impl crate::Readable for OUTLINK_DSCR_BF0 {}
+#[doc = "`write(|w| ..)` method takes [outlink_dscr_bf0::W](outlink_dscr_bf0::W) writer structure"]
+impl crate::Writable for OUTLINK_DSCR_BF0 {}
 #[doc = "SPI_OUTLINK_DSCR_BF0_REG(i)"]
-pub mod spi_outlink_dscr_bf0_reg;
-#[doc = "SPI_OUTLINK_DSCR_BF1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_outlink_dscr_bf1_reg](spi_outlink_dscr_bf1_reg) module"]
-pub type SPI_OUTLINK_DSCR_BF1_REG = crate::Reg<u32, _SPI_OUTLINK_DSCR_BF1_REG>;
+pub mod outlink_dscr_bf0;
+#[doc = "SPI_OUTLINK_DSCR_BF1_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [outlink_dscr_bf1](outlink_dscr_bf1) module"]
+pub type OUTLINK_DSCR_BF1 = crate::Reg<u32, _OUTLINK_DSCR_BF1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_OUTLINK_DSCR_BF1_REG;
-#[doc = "`read()` method returns [spi_outlink_dscr_bf1_reg::R](spi_outlink_dscr_bf1_reg::R) reader structure"]
-impl crate::Readable for SPI_OUTLINK_DSCR_BF1_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_outlink_dscr_bf1_reg::W](spi_outlink_dscr_bf1_reg::W) writer structure"]
-impl crate::Writable for SPI_OUTLINK_DSCR_BF1_REG {}
+pub struct _OUTLINK_DSCR_BF1;
+#[doc = "`read()` method returns [outlink_dscr_bf1::R](outlink_dscr_bf1::R) reader structure"]
+impl crate::Readable for OUTLINK_DSCR_BF1 {}
+#[doc = "`write(|w| ..)` method takes [outlink_dscr_bf1::W](outlink_dscr_bf1::W) writer structure"]
+impl crate::Writable for OUTLINK_DSCR_BF1 {}
 #[doc = "SPI_OUTLINK_DSCR_BF1_REG(i)"]
-pub mod spi_outlink_dscr_bf1_reg;
-#[doc = "SPI_DMA_RSTATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_rstatus_reg](spi_dma_rstatus_reg) module"]
-pub type SPI_DMA_RSTATUS_REG = crate::Reg<u32, _SPI_DMA_RSTATUS_REG>;
+pub mod outlink_dscr_bf1;
+#[doc = "SPI_DMA_RSTATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_rstatus](dma_rstatus) module"]
+pub type DMA_RSTATUS = crate::Reg<u32, _DMA_RSTATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_RSTATUS_REG;
-#[doc = "`read()` method returns [spi_dma_rstatus_reg::R](spi_dma_rstatus_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_RSTATUS_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_rstatus_reg::W](spi_dma_rstatus_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_RSTATUS_REG {}
+pub struct _DMA_RSTATUS;
+#[doc = "`read()` method returns [dma_rstatus::R](dma_rstatus::R) reader structure"]
+impl crate::Readable for DMA_RSTATUS {}
+#[doc = "`write(|w| ..)` method takes [dma_rstatus::W](dma_rstatus::W) writer structure"]
+impl crate::Writable for DMA_RSTATUS {}
 #[doc = "SPI_DMA_RSTATUS_REG(i)"]
-pub mod spi_dma_rstatus_reg;
-#[doc = "SPI_DMA_TSTATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_dma_tstatus_reg](spi_dma_tstatus_reg) module"]
-pub type SPI_DMA_TSTATUS_REG = crate::Reg<u32, _SPI_DMA_TSTATUS_REG>;
+pub mod dma_rstatus;
+#[doc = "SPI_DMA_TSTATUS_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [dma_tstatus](dma_tstatus) module"]
+pub type DMA_TSTATUS = crate::Reg<u32, _DMA_TSTATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DMA_TSTATUS_REG;
-#[doc = "`read()` method returns [spi_dma_tstatus_reg::R](spi_dma_tstatus_reg::R) reader structure"]
-impl crate::Readable for SPI_DMA_TSTATUS_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_dma_tstatus_reg::W](spi_dma_tstatus_reg::W) writer structure"]
-impl crate::Writable for SPI_DMA_TSTATUS_REG {}
+pub struct _DMA_TSTATUS;
+#[doc = "`read()` method returns [dma_tstatus::R](dma_tstatus::R) reader structure"]
+impl crate::Readable for DMA_TSTATUS {}
+#[doc = "`write(|w| ..)` method takes [dma_tstatus::W](dma_tstatus::W) writer structure"]
+impl crate::Writable for DMA_TSTATUS {}
 #[doc = "SPI_DMA_TSTATUS_REG(i)"]
-pub mod spi_dma_tstatus_reg;
-#[doc = "SPI_DATE_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [spi_date_reg](spi_date_reg) module"]
-pub type SPI_DATE_REG = crate::Reg<u32, _SPI_DATE_REG>;
+pub mod dma_tstatus;
+#[doc = "SPI_DATE_REG(i)\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [date](date) module"]
+pub type DATE = crate::Reg<u32, _DATE>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _SPI_DATE_REG;
-#[doc = "`read()` method returns [spi_date_reg::R](spi_date_reg::R) reader structure"]
-impl crate::Readable for SPI_DATE_REG {}
-#[doc = "`write(|w| ..)` method takes [spi_date_reg::W](spi_date_reg::W) writer structure"]
-impl crate::Writable for SPI_DATE_REG {}
+pub struct _DATE;
+#[doc = "`read()` method returns [date::R](date::R) reader structure"]
+impl crate::Readable for DATE {}
+#[doc = "`write(|w| ..)` method takes [date::W](date::W) writer structure"]
+impl crate::Writable for DATE {}
 #[doc = "SPI_DATE_REG(i)"]
-pub mod spi_date_reg;
+pub mod date;
