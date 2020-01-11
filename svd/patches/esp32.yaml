@@ -1,4 +1,4 @@
-_svd: ../esp32.svd
+_svd: ../esp32.base.svd
 
 
 _include:

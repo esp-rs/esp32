@@ -1,4 +1,5 @@
-
+OUTPUT=esp32.svd
+BASE=esp32.base.svd
 
 all: clean patch generate form fmt build
 
@@ -7,10 +8,10 @@ clean:
 
 patch:
 	svd patch svd/patches/esp32.yaml
-	mv svd/esp32.svd.patched svd/esp32.svd
+	mv svd/$(BASE).patched svd/$(OUTPUT)
 
 generate:
-	svd2rust --target none -i svd/esp32.svd
+	svd2rust --target none -i svd/$(OUTPUT)
 
 form:
 	form -i lib.rs -o src/
