@@ -61,7 +61,7 @@ RTC_I2C:
 
 RTCCNTL:
   _strip:
-    - RTCCNTL_
+    - RTC_CNTL_
 
 RTCIO:
   _strip:
