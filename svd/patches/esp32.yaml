@@ -1,7 +1,13 @@
 _svd: ../esp32.svd
 
+
+_include:
+  - "_rename_registers.yaml"
+
+
 # TODO: 'TIMG' peripheral(s)
 # TODO patch in interrupt information
+
 
 _modify:
   PWM:
@@ -10,7 +16,7 @@ _modify:
     name: I2C0
   I2C1_EXT:
     name: I2C1
-  
+
 
 _derive:
   SPI0: SPI
