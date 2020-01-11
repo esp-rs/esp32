@@ -7,6 +7,7 @@ clean:
 	rm -rf src/
 
 patch:
+	rm -f svd/$(OUTPUT)
 	svd patch svd/patches/esp32.yaml
 	mv svd/$(BASE).patched svd/$(OUTPUT)
 

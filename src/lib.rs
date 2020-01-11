@@ -687,6 +687,42 @@ impl Deref for SPI0 {
         unsafe { &*SPI0::ptr() }
     }
 }
+#[doc = "TIMG0"]
+pub struct TIMG0 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for TIMG0 {}
+impl TIMG0 {
+    #[doc = r"Returns a pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const timg::RegisterBlock {
+        0x3ff5_f000 as *const _
+    }
+}
+impl Deref for TIMG0 {
+    type Target = timg::RegisterBlock;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*TIMG0::ptr() }
+    }
+}
+#[doc = "TIMG1"]
+pub struct TIMG1 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for TIMG1 {}
+impl TIMG1 {
+    #[doc = r"Returns a pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const timg::RegisterBlock {
+        0x3ff6_0000 as *const _
+    }
+}
+impl Deref for TIMG1 {
+    type Target = timg::RegisterBlock;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*TIMG1::ptr() }
+    }
+}
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r"All the peripherals"]
@@ -762,6 +798,10 @@ pub struct Peripherals {
     pub UHCI: UHCI,
     #[doc = "SPI0"]
     pub SPI0: SPI0,
+    #[doc = "TIMG0"]
+    pub TIMG0: TIMG0,
+    #[doc = "TIMG1"]
+    pub TIMG1: TIMG1,
 }
 impl Peripherals {
     #[doc = r"Unchecked version of `Peripherals::take`"]
@@ -871,6 +911,12 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             SPI0: SPI0 {
+                _marker: PhantomData,
+            },
+            TIMG0: TIMG0 {
+                _marker: PhantomData,
+            },
+            TIMG1: TIMG1 {
                 _marker: PhantomData,
             },
         }
