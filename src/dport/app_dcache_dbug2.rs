@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_DCACHE_DBUG2 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_CACHE_VADDR`"]
-pub type DPORT_APP_CACHE_VADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_APP_CACHE_VADDR`"]
-pub struct DPORT_APP_CACHE_VADDR_W<'a> {
+#[doc = "Reader of field `APP_CACHE_VADDR`"]
+pub type APP_CACHE_VADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `APP_CACHE_VADDR`"]
+pub struct APP_CACHE_VADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_CACHE_VADDR_W<'a> {
+impl<'a> APP_CACHE_VADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_APP_CACHE_VADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:26"]
     #[inline(always)]
-    pub fn dport_app_cache_vaddr(&self) -> DPORT_APP_CACHE_VADDR_R {
-        DPORT_APP_CACHE_VADDR_R::new((self.bits & 0x07ff_ffff) as u32)
+    pub fn app_cache_vaddr(&self) -> APP_CACHE_VADDR_R {
+        APP_CACHE_VADDR_R::new((self.bits & 0x07ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:26"]
     #[inline(always)]
-    pub fn dport_app_cache_vaddr(&mut self) -> DPORT_APP_CACHE_VADDR_W {
-        DPORT_APP_CACHE_VADDR_W { w: self }
+    pub fn app_cache_vaddr(&mut self) -> APP_CACHE_VADDR_W {
+        APP_CACHE_VADDR_W { w: self }
     }
 }

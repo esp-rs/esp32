@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_DCACHE_DBUG3 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_CACHE_IRAM0_PID_ERROR`"]
-pub type DPORT_APP_CACHE_IRAM0_PID_ERROR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_APP_CACHE_IRAM0_PID_ERROR`"]
-pub struct DPORT_APP_CACHE_IRAM0_PID_ERROR_W<'a> {
+#[doc = "Reader of field `APP_CACHE_IRAM0_PID_ERROR`"]
+pub type APP_CACHE_IRAM0_PID_ERROR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APP_CACHE_IRAM0_PID_ERROR`"]
+pub struct APP_CACHE_IRAM0_PID_ERROR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_CACHE_IRAM0_PID_ERROR_W<'a> {
+impl<'a> APP_CACHE_IRAM0_PID_ERROR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> DPORT_APP_CACHE_IRAM0_PID_ERROR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_APP_CPU_DISABLED_CACHE_IA`"]
-pub type DPORT_APP_CPU_DISABLED_CACHE_IA_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_APP_CPU_DISABLED_CACHE_IA`"]
-pub struct DPORT_APP_CPU_DISABLED_CACHE_IA_W<'a> {
+#[doc = "Reader of field `APP_CPU_DISABLED_CACHE_IA`"]
+pub type APP_CPU_DISABLED_CACHE_IA_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `APP_CPU_DISABLED_CACHE_IA`"]
+pub struct APP_CPU_DISABLED_CACHE_IA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_CPU_DISABLED_CACHE_IA_W<'a> {
+impl<'a> APP_CPU_DISABLED_CACHE_IA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> DPORT_APP_CPU_DISABLED_CACHE_IA_W<'a> {
 impl R {
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn dport_app_cache_iram0_pid_error(&self) -> DPORT_APP_CACHE_IRAM0_PID_ERROR_R {
-        DPORT_APP_CACHE_IRAM0_PID_ERROR_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn app_cache_iram0_pid_error(&self) -> APP_CACHE_IRAM0_PID_ERROR_R {
+        APP_CACHE_IRAM0_PID_ERROR_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bits 9:14"]
     #[inline(always)]
-    pub fn dport_app_cpu_disabled_cache_ia(&self) -> DPORT_APP_CPU_DISABLED_CACHE_IA_R {
-        DPORT_APP_CPU_DISABLED_CACHE_IA_R::new(((self.bits >> 9) & 0x3f) as u8)
+    pub fn app_cpu_disabled_cache_ia(&self) -> APP_CPU_DISABLED_CACHE_IA_R {
+        APP_CPU_DISABLED_CACHE_IA_R::new(((self.bits >> 9) & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn dport_app_cache_iram0_pid_error(&mut self) -> DPORT_APP_CACHE_IRAM0_PID_ERROR_W {
-        DPORT_APP_CACHE_IRAM0_PID_ERROR_W { w: self }
+    pub fn app_cache_iram0_pid_error(&mut self) -> APP_CACHE_IRAM0_PID_ERROR_W {
+        APP_CACHE_IRAM0_PID_ERROR_W { w: self }
     }
     #[doc = "Bits 9:14"]
     #[inline(always)]
-    pub fn dport_app_cpu_disabled_cache_ia(&mut self) -> DPORT_APP_CPU_DISABLED_CACHE_IA_W {
-        DPORT_APP_CPU_DISABLED_CACHE_IA_W { w: self }
+    pub fn app_cpu_disabled_cache_ia(&mut self) -> APP_CPU_DISABLED_CACHE_IA_W {
+        APP_CPU_DISABLED_CACHE_IA_W { w: self }
     }
 }

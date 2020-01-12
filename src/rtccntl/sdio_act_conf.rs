@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SDIO_ACT_CONF {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SDIO_ACT_DNUM`"]
-pub type RTC_CNTL_SDIO_ACT_DNUM_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RTC_CNTL_SDIO_ACT_DNUM`"]
-pub struct RTC_CNTL_SDIO_ACT_DNUM_W<'a> {
+#[doc = "Reader of field `SDIO_ACT_DNUM`"]
+pub type SDIO_ACT_DNUM_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `SDIO_ACT_DNUM`"]
+pub struct SDIO_ACT_DNUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SDIO_ACT_DNUM_W<'a> {
+impl<'a> SDIO_ACT_DNUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_CNTL_SDIO_ACT_DNUM_W<'a> {
 impl R {
     #[doc = "Bits 22:31"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_act_dnum(&self) -> RTC_CNTL_SDIO_ACT_DNUM_R {
-        RTC_CNTL_SDIO_ACT_DNUM_R::new(((self.bits >> 22) & 0x03ff) as u16)
+    pub fn sdio_act_dnum(&self) -> SDIO_ACT_DNUM_R {
+        SDIO_ACT_DNUM_R::new(((self.bits >> 22) & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 22:31"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_act_dnum(&mut self) -> RTC_CNTL_SDIO_ACT_DNUM_W {
-        RTC_CNTL_SDIO_ACT_DNUM_W { w: self }
+    pub fn sdio_act_dnum(&mut self) -> SDIO_ACT_DNUM_W {
+        SDIO_ACT_DNUM_W { w: self }
     }
 }

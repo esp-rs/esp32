@@ -10,13 +10,13 @@ impl crate::ResetValue for super::QUICK_SENT {
         0
     }
 }
-#[doc = "Reader of field `UHCI_ALWAYS_SEND_EN`"]
-pub type UHCI_ALWAYS_SEND_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_ALWAYS_SEND_EN`"]
-pub struct UHCI_ALWAYS_SEND_EN_W<'a> {
+#[doc = "Reader of field `ALWAYS_SEND_EN`"]
+pub type ALWAYS_SEND_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ALWAYS_SEND_EN`"]
+pub struct ALWAYS_SEND_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_ALWAYS_SEND_EN_W<'a> {
+impl<'a> ALWAYS_SEND_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> UHCI_ALWAYS_SEND_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_ALWAYS_SEND_NUM`"]
-pub type UHCI_ALWAYS_SEND_NUM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_ALWAYS_SEND_NUM`"]
-pub struct UHCI_ALWAYS_SEND_NUM_W<'a> {
+#[doc = "Reader of field `ALWAYS_SEND_NUM`"]
+pub type ALWAYS_SEND_NUM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ALWAYS_SEND_NUM`"]
+pub struct ALWAYS_SEND_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_ALWAYS_SEND_NUM_W<'a> {
+impl<'a> ALWAYS_SEND_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> UHCI_ALWAYS_SEND_NUM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_SINGLE_SEND_EN`"]
-pub type UHCI_SINGLE_SEND_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_SINGLE_SEND_EN`"]
-pub struct UHCI_SINGLE_SEND_EN_W<'a> {
+#[doc = "Reader of field `SINGLE_SEND_EN`"]
+pub type SINGLE_SEND_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SINGLE_SEND_EN`"]
+pub struct SINGLE_SEND_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SINGLE_SEND_EN_W<'a> {
+impl<'a> SINGLE_SEND_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> UHCI_SINGLE_SEND_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_SINGLE_SEND_NUM`"]
-pub type UHCI_SINGLE_SEND_NUM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_SINGLE_SEND_NUM`"]
-pub struct UHCI_SINGLE_SEND_NUM_W<'a> {
+#[doc = "Reader of field `SINGLE_SEND_NUM`"]
+pub type SINGLE_SEND_NUM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SINGLE_SEND_NUM`"]
+pub struct SINGLE_SEND_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SINGLE_SEND_NUM_W<'a> {
+impl<'a> SINGLE_SEND_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -89,44 +89,44 @@ impl<'a> UHCI_SINGLE_SEND_NUM_W<'a> {
 impl R {
     #[doc = "Bit 7 - Set this bit to enable continuously send the same short packet"]
     #[inline(always)]
-    pub fn uhci_always_send_en(&self) -> UHCI_ALWAYS_SEND_EN_R {
-        UHCI_ALWAYS_SEND_EN_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn always_send_en(&self) -> ALWAYS_SEND_EN_R {
+        ALWAYS_SEND_EN_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bits 4:6 - The bits are used to choose which short packet"]
     #[inline(always)]
-    pub fn uhci_always_send_num(&self) -> UHCI_ALWAYS_SEND_NUM_R {
-        UHCI_ALWAYS_SEND_NUM_R::new(((self.bits >> 4) & 0x07) as u8)
+    pub fn always_send_num(&self) -> ALWAYS_SEND_NUM_R {
+        ALWAYS_SEND_NUM_R::new(((self.bits >> 4) & 0x07) as u8)
     }
     #[doc = "Bit 3 - Set this bit to enable send a short packet"]
     #[inline(always)]
-    pub fn uhci_single_send_en(&self) -> UHCI_SINGLE_SEND_EN_R {
-        UHCI_SINGLE_SEND_EN_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn single_send_en(&self) -> SINGLE_SEND_EN_R {
+        SINGLE_SEND_EN_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bits 0:2 - The bits are used to choose which short packet"]
     #[inline(always)]
-    pub fn uhci_single_send_num(&self) -> UHCI_SINGLE_SEND_NUM_R {
-        UHCI_SINGLE_SEND_NUM_R::new((self.bits & 0x07) as u8)
+    pub fn single_send_num(&self) -> SINGLE_SEND_NUM_R {
+        SINGLE_SEND_NUM_R::new((self.bits & 0x07) as u8)
     }
 }
 impl W {
     #[doc = "Bit 7 - Set this bit to enable continuously send the same short packet"]
     #[inline(always)]
-    pub fn uhci_always_send_en(&mut self) -> UHCI_ALWAYS_SEND_EN_W {
-        UHCI_ALWAYS_SEND_EN_W { w: self }
+    pub fn always_send_en(&mut self) -> ALWAYS_SEND_EN_W {
+        ALWAYS_SEND_EN_W { w: self }
     }
     #[doc = "Bits 4:6 - The bits are used to choose which short packet"]
     #[inline(always)]
-    pub fn uhci_always_send_num(&mut self) -> UHCI_ALWAYS_SEND_NUM_W {
-        UHCI_ALWAYS_SEND_NUM_W { w: self }
+    pub fn always_send_num(&mut self) -> ALWAYS_SEND_NUM_W {
+        ALWAYS_SEND_NUM_W { w: self }
     }
     #[doc = "Bit 3 - Set this bit to enable send a short packet"]
     #[inline(always)]
-    pub fn uhci_single_send_en(&mut self) -> UHCI_SINGLE_SEND_EN_W {
-        UHCI_SINGLE_SEND_EN_W { w: self }
+    pub fn single_send_en(&mut self) -> SINGLE_SEND_EN_W {
+        SINGLE_SEND_EN_W { w: self }
     }
     #[doc = "Bits 0:2 - The bits are used to choose which short packet"]
     #[inline(always)]
-    pub fn uhci_single_send_num(&mut self) -> UHCI_SINGLE_SEND_NUM_W {
-        UHCI_SINGLE_SEND_NUM_W { w: self }
+    pub fn single_send_num(&mut self) -> SINGLE_SEND_NUM_W {
+        SINGLE_SEND_NUM_W { w: self }
     }
 }

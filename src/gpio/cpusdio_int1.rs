@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CPUSDIO_INT1 {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SDIO_INT_H`"]
-pub type GPIO_SDIO_INT_H_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_SDIO_INT_H`"]
-pub struct GPIO_SDIO_INT_H_W<'a> {
+#[doc = "Reader of field `SDIO_INT_H`"]
+pub type SDIO_INT_H_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SDIO_INT_H`"]
+pub struct SDIO_INT_H_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SDIO_INT_H_W<'a> {
+impl<'a> SDIO_INT_H_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_SDIO_INT_H_W<'a> {
 impl R {
     #[doc = "Bits 0:7 - SDIO's extent GPIO32~39 interrupt"]
     #[inline(always)]
-    pub fn gpio_sdio_int_h(&self) -> GPIO_SDIO_INT_H_R {
-        GPIO_SDIO_INT_H_R::new((self.bits & 0xff) as u8)
+    pub fn sdio_int_h(&self) -> SDIO_INT_H_R {
+        SDIO_INT_H_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:7 - SDIO's extent GPIO32~39 interrupt"]
     #[inline(always)]
-    pub fn gpio_sdio_int_h(&mut self) -> GPIO_SDIO_INT_H_W {
-        GPIO_SDIO_INT_H_W { w: self }
+    pub fn sdio_int_h(&mut self) -> SDIO_INT_H_W {
+        SDIO_INT_H_W { w: self }
     }
 }

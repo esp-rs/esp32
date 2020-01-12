@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TX_CRC {
         0
     }
 }
-#[doc = "Reader of field `SPI_TX_CRC_DATA`"]
-pub type SPI_TX_CRC_DATA_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_TX_CRC_DATA`"]
-pub struct SPI_TX_CRC_DATA_W<'a> {
+#[doc = "Reader of field `TX_CRC_DATA`"]
+pub type TX_CRC_DATA_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `TX_CRC_DATA`"]
+pub struct TX_CRC_DATA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_TX_CRC_DATA_W<'a> {
+impl<'a> TX_CRC_DATA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_TX_CRC_DATA_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - For SPI1 the value of crc32 for 256 bits data."]
     #[inline(always)]
-    pub fn spi_tx_crc_data(&self) -> SPI_TX_CRC_DATA_R {
-        SPI_TX_CRC_DATA_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn tx_crc_data(&self) -> TX_CRC_DATA_R {
+        TX_CRC_DATA_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - For SPI1 the value of crc32 for 256 bits data."]
     #[inline(always)]
-    pub fn spi_tx_crc_data(&mut self) -> SPI_TX_CRC_DATA_W {
-        SPI_TX_CRC_DATA_W { w: self }
+    pub fn tx_crc_data(&mut self) -> TX_CRC_DATA_W {
+        TX_CRC_DATA_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_FE {
         0
     }
 }
-#[doc = "Reader of field `DPORT_FE_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_FE_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_FE_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_FE_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `FE_ACCESS_GRANT_CONFIG`"]
+pub type FE_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `FE_ACCESS_GRANT_CONFIG`"]
+pub struct FE_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_FE_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> FE_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_FE_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_fe_access_grant_config(&self) -> DPORT_FE_ACCESS_GRANT_CONFIG_R {
-        DPORT_FE_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn fe_access_grant_config(&self) -> FE_ACCESS_GRANT_CONFIG_R {
+        FE_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_fe_access_grant_config(&mut self) -> DPORT_FE_ACCESS_GRANT_CONFIG_W {
-        DPORT_FE_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn fe_access_grant_config(&mut self) -> FE_ACCESS_GRANT_CONFIG_W {
+        FE_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

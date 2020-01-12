@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMA_RSTATUS {
         0
     }
 }
-#[doc = "Reader of field `SPI_DMA_OUT_STATUS`"]
-pub type SPI_DMA_OUT_STATUS_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_DMA_OUT_STATUS`"]
-pub struct SPI_DMA_OUT_STATUS_W<'a> {
+#[doc = "Reader of field `DMA_OUT_STATUS`"]
+pub type DMA_OUT_STATUS_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `DMA_OUT_STATUS`"]
+pub struct DMA_OUT_STATUS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_DMA_OUT_STATUS_W<'a> {
+impl<'a> DMA_OUT_STATUS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_DMA_OUT_STATUS_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - spi dma read data from memory status."]
     #[inline(always)]
-    pub fn spi_dma_out_status(&self) -> SPI_DMA_OUT_STATUS_R {
-        SPI_DMA_OUT_STATUS_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn dma_out_status(&self) -> DMA_OUT_STATUS_R {
+        DMA_OUT_STATUS_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - spi dma read data from memory status."]
     #[inline(always)]
-    pub fn spi_dma_out_status(&mut self) -> SPI_DMA_OUT_STATUS_W {
-        SPI_DMA_OUT_STATUS_W { w: self }
+    pub fn dma_out_status(&mut self) -> DMA_OUT_STATUS_W {
+        DMA_OUT_STATUS_W { w: self }
     }
 }

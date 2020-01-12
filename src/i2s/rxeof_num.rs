@@ -10,13 +10,13 @@ impl crate::ResetValue for super::RXEOF_NUM {
         0
     }
 }
-#[doc = "Reader of field `I2S_RX_EOF_NUM`"]
-pub type I2S_RX_EOF_NUM_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `I2S_RX_EOF_NUM`"]
-pub struct I2S_RX_EOF_NUM_W<'a> {
+#[doc = "Reader of field `RX_EOF_NUM`"]
+pub type RX_EOF_NUM_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `RX_EOF_NUM`"]
+pub struct RX_EOF_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_EOF_NUM_W<'a> {
+impl<'a> RX_EOF_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> I2S_RX_EOF_NUM_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_rx_eof_num(&self) -> I2S_RX_EOF_NUM_R {
-        I2S_RX_EOF_NUM_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn rx_eof_num(&self) -> RX_EOF_NUM_R {
+        RX_EOF_NUM_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_rx_eof_num(&mut self) -> I2S_RX_EOF_NUM_W {
-        I2S_RX_EOF_NUM_W { w: self }
+    pub fn rx_eof_num(&mut self) -> RX_EOF_NUM_W {
+        RX_EOF_NUM_W { w: self }
     }
 }

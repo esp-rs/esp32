@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHB_TEST {
         0
     }
 }
-#[doc = "Reader of field `SLC_AHB_TESTADDR`"]
-pub type SLC_AHB_TESTADDR_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_AHB_TESTADDR`"]
-pub struct SLC_AHB_TESTADDR_W<'a> {
+#[doc = "Reader of field `AHB_TESTADDR`"]
+pub type AHB_TESTADDR_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `AHB_TESTADDR`"]
+pub struct AHB_TESTADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_AHB_TESTADDR_W<'a> {
+impl<'a> AHB_TESTADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SLC_AHB_TESTADDR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_AHB_TESTMODE`"]
-pub type SLC_AHB_TESTMODE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_AHB_TESTMODE`"]
-pub struct SLC_AHB_TESTMODE_W<'a> {
+#[doc = "Reader of field `AHB_TESTMODE`"]
+pub type AHB_TESTMODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `AHB_TESTMODE`"]
+pub struct AHB_TESTMODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_AHB_TESTMODE_W<'a> {
+impl<'a> AHB_TESTMODE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> SLC_AHB_TESTMODE_W<'a> {
 impl R {
     #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn slc_ahb_testaddr(&self) -> SLC_AHB_TESTADDR_R {
-        SLC_AHB_TESTADDR_R::new(((self.bits >> 4) & 0x03) as u8)
+    pub fn ahb_testaddr(&self) -> AHB_TESTADDR_R {
+        AHB_TESTADDR_R::new(((self.bits >> 4) & 0x03) as u8)
     }
     #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn slc_ahb_testmode(&self) -> SLC_AHB_TESTMODE_R {
-        SLC_AHB_TESTMODE_R::new((self.bits & 0x07) as u8)
+    pub fn ahb_testmode(&self) -> AHB_TESTMODE_R {
+        AHB_TESTMODE_R::new((self.bits & 0x07) as u8)
     }
 }
 impl W {
     #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn slc_ahb_testaddr(&mut self) -> SLC_AHB_TESTADDR_W {
-        SLC_AHB_TESTADDR_W { w: self }
+    pub fn ahb_testaddr(&mut self) -> AHB_TESTADDR_W {
+        AHB_TESTADDR_W { w: self }
     }
     #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn slc_ahb_testmode(&mut self) -> SLC_AHB_TESTMODE_W {
-        SLC_AHB_TESTMODE_W { w: self }
+    pub fn ahb_testmode(&mut self) -> AHB_TESTMODE_W {
+        AHB_TESTMODE_W { w: self }
     }
 }

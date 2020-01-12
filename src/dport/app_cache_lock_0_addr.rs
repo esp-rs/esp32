@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_CACHE_LOCK_0_ADDR {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_CACHE_LOCK_0_ADDR_MAX`"]
-pub type DPORT_APP_CACHE_LOCK_0_ADDR_MAX_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_APP_CACHE_LOCK_0_ADDR_MAX`"]
-pub struct DPORT_APP_CACHE_LOCK_0_ADDR_MAX_W<'a> {
+#[doc = "Reader of field `APP_CACHE_LOCK_0_ADDR_MAX`"]
+pub type APP_CACHE_LOCK_0_ADDR_MAX_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `APP_CACHE_LOCK_0_ADDR_MAX`"]
+pub struct APP_CACHE_LOCK_0_ADDR_MAX_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_CACHE_LOCK_0_ADDR_MAX_W<'a> {
+impl<'a> APP_CACHE_LOCK_0_ADDR_MAX_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> DPORT_APP_CACHE_LOCK_0_ADDR_MAX_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_APP_CACHE_LOCK_0_ADDR_MIN`"]
-pub type DPORT_APP_CACHE_LOCK_0_ADDR_MIN_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_APP_CACHE_LOCK_0_ADDR_MIN`"]
-pub struct DPORT_APP_CACHE_LOCK_0_ADDR_MIN_W<'a> {
+#[doc = "Reader of field `APP_CACHE_LOCK_0_ADDR_MIN`"]
+pub type APP_CACHE_LOCK_0_ADDR_MIN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `APP_CACHE_LOCK_0_ADDR_MIN`"]
+pub struct APP_CACHE_LOCK_0_ADDR_MIN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_CACHE_LOCK_0_ADDR_MIN_W<'a> {
+impl<'a> APP_CACHE_LOCK_0_ADDR_MIN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> DPORT_APP_CACHE_LOCK_0_ADDR_MIN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_APP_CACHE_LOCK_0_ADDR_PRE`"]
-pub type DPORT_APP_CACHE_LOCK_0_ADDR_PRE_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `DPORT_APP_CACHE_LOCK_0_ADDR_PRE`"]
-pub struct DPORT_APP_CACHE_LOCK_0_ADDR_PRE_W<'a> {
+#[doc = "Reader of field `APP_CACHE_LOCK_0_ADDR_PRE`"]
+pub type APP_CACHE_LOCK_0_ADDR_PRE_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `APP_CACHE_LOCK_0_ADDR_PRE`"]
+pub struct APP_CACHE_LOCK_0_ADDR_PRE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_CACHE_LOCK_0_ADDR_PRE_W<'a> {
+impl<'a> APP_CACHE_LOCK_0_ADDR_PRE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -55,34 +55,34 @@ impl<'a> DPORT_APP_CACHE_LOCK_0_ADDR_PRE_W<'a> {
 impl R {
     #[doc = "Bits 18:21"]
     #[inline(always)]
-    pub fn dport_app_cache_lock_0_addr_max(&self) -> DPORT_APP_CACHE_LOCK_0_ADDR_MAX_R {
-        DPORT_APP_CACHE_LOCK_0_ADDR_MAX_R::new(((self.bits >> 18) & 0x0f) as u8)
+    pub fn app_cache_lock_0_addr_max(&self) -> APP_CACHE_LOCK_0_ADDR_MAX_R {
+        APP_CACHE_LOCK_0_ADDR_MAX_R::new(((self.bits >> 18) & 0x0f) as u8)
     }
     #[doc = "Bits 14:17"]
     #[inline(always)]
-    pub fn dport_app_cache_lock_0_addr_min(&self) -> DPORT_APP_CACHE_LOCK_0_ADDR_MIN_R {
-        DPORT_APP_CACHE_LOCK_0_ADDR_MIN_R::new(((self.bits >> 14) & 0x0f) as u8)
+    pub fn app_cache_lock_0_addr_min(&self) -> APP_CACHE_LOCK_0_ADDR_MIN_R {
+        APP_CACHE_LOCK_0_ADDR_MIN_R::new(((self.bits >> 14) & 0x0f) as u8)
     }
     #[doc = "Bits 0:13"]
     #[inline(always)]
-    pub fn dport_app_cache_lock_0_addr_pre(&self) -> DPORT_APP_CACHE_LOCK_0_ADDR_PRE_R {
-        DPORT_APP_CACHE_LOCK_0_ADDR_PRE_R::new((self.bits & 0x3fff) as u16)
+    pub fn app_cache_lock_0_addr_pre(&self) -> APP_CACHE_LOCK_0_ADDR_PRE_R {
+        APP_CACHE_LOCK_0_ADDR_PRE_R::new((self.bits & 0x3fff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 18:21"]
     #[inline(always)]
-    pub fn dport_app_cache_lock_0_addr_max(&mut self) -> DPORT_APP_CACHE_LOCK_0_ADDR_MAX_W {
-        DPORT_APP_CACHE_LOCK_0_ADDR_MAX_W { w: self }
+    pub fn app_cache_lock_0_addr_max(&mut self) -> APP_CACHE_LOCK_0_ADDR_MAX_W {
+        APP_CACHE_LOCK_0_ADDR_MAX_W { w: self }
     }
     #[doc = "Bits 14:17"]
     #[inline(always)]
-    pub fn dport_app_cache_lock_0_addr_min(&mut self) -> DPORT_APP_CACHE_LOCK_0_ADDR_MIN_W {
-        DPORT_APP_CACHE_LOCK_0_ADDR_MIN_W { w: self }
+    pub fn app_cache_lock_0_addr_min(&mut self) -> APP_CACHE_LOCK_0_ADDR_MIN_W {
+        APP_CACHE_LOCK_0_ADDR_MIN_W { w: self }
     }
     #[doc = "Bits 0:13"]
     #[inline(always)]
-    pub fn dport_app_cache_lock_0_addr_pre(&mut self) -> DPORT_APP_CACHE_LOCK_0_ADDR_PRE_W {
-        DPORT_APP_CACHE_LOCK_0_ADDR_PRE_W { w: self }
+    pub fn app_cache_lock_0_addr_pre(&mut self) -> APP_CACHE_LOCK_0_ADDR_PRE_W {
+        APP_CACHE_LOCK_0_ADDR_PRE_W { w: self }
     }
 }

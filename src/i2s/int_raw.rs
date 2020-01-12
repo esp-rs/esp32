@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_RAW {
         0
     }
 }
-#[doc = "Reader of field `I2S_OUT_TOTAL_EOF_INT_RAW`"]
-pub type I2S_OUT_TOTAL_EOF_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_TOTAL_EOF_INT_RAW`"]
-pub struct I2S_OUT_TOTAL_EOF_INT_RAW_W<'a> {
+#[doc = "Reader of field `OUT_TOTAL_EOF_INT_RAW`"]
+pub type OUT_TOTAL_EOF_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_TOTAL_EOF_INT_RAW`"]
+pub struct OUT_TOTAL_EOF_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_TOTAL_EOF_INT_RAW_W<'a> {
+impl<'a> OUT_TOTAL_EOF_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2S_OUT_TOTAL_EOF_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_IN_DSCR_EMPTY_INT_RAW`"]
-pub type I2S_IN_DSCR_EMPTY_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_IN_DSCR_EMPTY_INT_RAW`"]
-pub struct I2S_IN_DSCR_EMPTY_INT_RAW_W<'a> {
+#[doc = "Reader of field `IN_DSCR_EMPTY_INT_RAW`"]
+pub type IN_DSCR_EMPTY_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_DSCR_EMPTY_INT_RAW`"]
+pub struct IN_DSCR_EMPTY_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_IN_DSCR_EMPTY_INT_RAW_W<'a> {
+impl<'a> IN_DSCR_EMPTY_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> I2S_IN_DSCR_EMPTY_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_DSCR_ERR_INT_RAW`"]
-pub type I2S_OUT_DSCR_ERR_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_DSCR_ERR_INT_RAW`"]
-pub struct I2S_OUT_DSCR_ERR_INT_RAW_W<'a> {
+#[doc = "Reader of field `OUT_DSCR_ERR_INT_RAW`"]
+pub type OUT_DSCR_ERR_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_DSCR_ERR_INT_RAW`"]
+pub struct OUT_DSCR_ERR_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_DSCR_ERR_INT_RAW_W<'a> {
+impl<'a> OUT_DSCR_ERR_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> I2S_OUT_DSCR_ERR_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_IN_DSCR_ERR_INT_RAW`"]
-pub type I2S_IN_DSCR_ERR_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_IN_DSCR_ERR_INT_RAW`"]
-pub struct I2S_IN_DSCR_ERR_INT_RAW_W<'a> {
+#[doc = "Reader of field `IN_DSCR_ERR_INT_RAW`"]
+pub type IN_DSCR_ERR_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_DSCR_ERR_INT_RAW`"]
+pub struct IN_DSCR_ERR_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_IN_DSCR_ERR_INT_RAW_W<'a> {
+impl<'a> IN_DSCR_ERR_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> I2S_IN_DSCR_ERR_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_EOF_INT_RAW`"]
-pub type I2S_OUT_EOF_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_EOF_INT_RAW`"]
-pub struct I2S_OUT_EOF_INT_RAW_W<'a> {
+#[doc = "Reader of field `OUT_EOF_INT_RAW`"]
+pub type OUT_EOF_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_EOF_INT_RAW`"]
+pub struct OUT_EOF_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_EOF_INT_RAW_W<'a> {
+impl<'a> OUT_EOF_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> I2S_OUT_EOF_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_DONE_INT_RAW`"]
-pub type I2S_OUT_DONE_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_DONE_INT_RAW`"]
-pub struct I2S_OUT_DONE_INT_RAW_W<'a> {
+#[doc = "Reader of field `OUT_DONE_INT_RAW`"]
+pub type OUT_DONE_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_DONE_INT_RAW`"]
+pub struct OUT_DONE_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_DONE_INT_RAW_W<'a> {
+impl<'a> OUT_DONE_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> I2S_OUT_DONE_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_IN_ERR_EOF_INT_RAW`"]
-pub type I2S_IN_ERR_EOF_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_IN_ERR_EOF_INT_RAW`"]
-pub struct I2S_IN_ERR_EOF_INT_RAW_W<'a> {
+#[doc = "Reader of field `IN_ERR_EOF_INT_RAW`"]
+pub type IN_ERR_EOF_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_ERR_EOF_INT_RAW`"]
+pub struct IN_ERR_EOF_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_IN_ERR_EOF_INT_RAW_W<'a> {
+impl<'a> IN_ERR_EOF_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> I2S_IN_ERR_EOF_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_IN_SUC_EOF_INT_RAW`"]
-pub type I2S_IN_SUC_EOF_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_IN_SUC_EOF_INT_RAW`"]
-pub struct I2S_IN_SUC_EOF_INT_RAW_W<'a> {
+#[doc = "Reader of field `IN_SUC_EOF_INT_RAW`"]
+pub type IN_SUC_EOF_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_SUC_EOF_INT_RAW`"]
+pub struct IN_SUC_EOF_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_IN_SUC_EOF_INT_RAW_W<'a> {
+impl<'a> IN_SUC_EOF_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> I2S_IN_SUC_EOF_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_IN_DONE_INT_RAW`"]
-pub type I2S_IN_DONE_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_IN_DONE_INT_RAW`"]
-pub struct I2S_IN_DONE_INT_RAW_W<'a> {
+#[doc = "Reader of field `IN_DONE_INT_RAW`"]
+pub type IN_DONE_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_DONE_INT_RAW`"]
+pub struct IN_DONE_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_IN_DONE_INT_RAW_W<'a> {
+impl<'a> IN_DONE_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> I2S_IN_DONE_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_HUNG_INT_RAW`"]
-pub type I2S_TX_HUNG_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_TX_HUNG_INT_RAW`"]
-pub struct I2S_TX_HUNG_INT_RAW_W<'a> {
+#[doc = "Reader of field `TX_HUNG_INT_RAW`"]
+pub type TX_HUNG_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_HUNG_INT_RAW`"]
+pub struct TX_HUNG_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_HUNG_INT_RAW_W<'a> {
+impl<'a> TX_HUNG_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> I2S_TX_HUNG_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_RX_HUNG_INT_RAW`"]
-pub type I2S_RX_HUNG_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_RX_HUNG_INT_RAW`"]
-pub struct I2S_RX_HUNG_INT_RAW_W<'a> {
+#[doc = "Reader of field `RX_HUNG_INT_RAW`"]
+pub type RX_HUNG_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_HUNG_INT_RAW`"]
+pub struct RX_HUNG_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_HUNG_INT_RAW_W<'a> {
+impl<'a> RX_HUNG_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> I2S_RX_HUNG_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_REMPTY_INT_RAW`"]
-pub type I2S_TX_REMPTY_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_TX_REMPTY_INT_RAW`"]
-pub struct I2S_TX_REMPTY_INT_RAW_W<'a> {
+#[doc = "Reader of field `TX_REMPTY_INT_RAW`"]
+pub type TX_REMPTY_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_REMPTY_INT_RAW`"]
+pub struct TX_REMPTY_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_REMPTY_INT_RAW_W<'a> {
+impl<'a> TX_REMPTY_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> I2S_TX_REMPTY_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_WFULL_INT_RAW`"]
-pub type I2S_TX_WFULL_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_TX_WFULL_INT_RAW`"]
-pub struct I2S_TX_WFULL_INT_RAW_W<'a> {
+#[doc = "Reader of field `TX_WFULL_INT_RAW`"]
+pub type TX_WFULL_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_WFULL_INT_RAW`"]
+pub struct TX_WFULL_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_WFULL_INT_RAW_W<'a> {
+impl<'a> TX_WFULL_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> I2S_TX_WFULL_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_RX_REMPTY_INT_RAW`"]
-pub type I2S_RX_REMPTY_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_RX_REMPTY_INT_RAW`"]
-pub struct I2S_RX_REMPTY_INT_RAW_W<'a> {
+#[doc = "Reader of field `RX_REMPTY_INT_RAW`"]
+pub type RX_REMPTY_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_REMPTY_INT_RAW`"]
+pub struct RX_REMPTY_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_REMPTY_INT_RAW_W<'a> {
+impl<'a> RX_REMPTY_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> I2S_RX_REMPTY_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_RX_WFULL_INT_RAW`"]
-pub type I2S_RX_WFULL_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_RX_WFULL_INT_RAW`"]
-pub struct I2S_RX_WFULL_INT_RAW_W<'a> {
+#[doc = "Reader of field `RX_WFULL_INT_RAW`"]
+pub type RX_WFULL_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_WFULL_INT_RAW`"]
+pub struct RX_WFULL_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_WFULL_INT_RAW_W<'a> {
+impl<'a> RX_WFULL_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -370,13 +370,13 @@ impl<'a> I2S_RX_WFULL_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PUT_DATA_INT_RAW`"]
-pub type I2S_TX_PUT_DATA_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_TX_PUT_DATA_INT_RAW`"]
-pub struct I2S_TX_PUT_DATA_INT_RAW_W<'a> {
+#[doc = "Reader of field `TX_PUT_DATA_INT_RAW`"]
+pub type TX_PUT_DATA_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_PUT_DATA_INT_RAW`"]
+pub struct TX_PUT_DATA_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PUT_DATA_INT_RAW_W<'a> {
+impl<'a> TX_PUT_DATA_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -394,13 +394,13 @@ impl<'a> I2S_TX_PUT_DATA_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_RX_TAKE_DATA_INT_RAW`"]
-pub type I2S_RX_TAKE_DATA_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_RX_TAKE_DATA_INT_RAW`"]
-pub struct I2S_RX_TAKE_DATA_INT_RAW_W<'a> {
+#[doc = "Reader of field `RX_TAKE_DATA_INT_RAW`"]
+pub type RX_TAKE_DATA_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_TAKE_DATA_INT_RAW`"]
+pub struct RX_TAKE_DATA_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_TAKE_DATA_INT_RAW_W<'a> {
+impl<'a> RX_TAKE_DATA_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -421,174 +421,174 @@ impl<'a> I2S_RX_TAKE_DATA_INT_RAW_W<'a> {
 impl R {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn i2s_out_total_eof_int_raw(&self) -> I2S_OUT_TOTAL_EOF_INT_RAW_R {
-        I2S_OUT_TOTAL_EOF_INT_RAW_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn out_total_eof_int_raw(&self) -> OUT_TOTAL_EOF_INT_RAW_R {
+        OUT_TOTAL_EOF_INT_RAW_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn i2s_in_dscr_empty_int_raw(&self) -> I2S_IN_DSCR_EMPTY_INT_RAW_R {
-        I2S_IN_DSCR_EMPTY_INT_RAW_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn in_dscr_empty_int_raw(&self) -> IN_DSCR_EMPTY_INT_RAW_R {
+        IN_DSCR_EMPTY_INT_RAW_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn i2s_out_dscr_err_int_raw(&self) -> I2S_OUT_DSCR_ERR_INT_RAW_R {
-        I2S_OUT_DSCR_ERR_INT_RAW_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn out_dscr_err_int_raw(&self) -> OUT_DSCR_ERR_INT_RAW_R {
+        OUT_DSCR_ERR_INT_RAW_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn i2s_in_dscr_err_int_raw(&self) -> I2S_IN_DSCR_ERR_INT_RAW_R {
-        I2S_IN_DSCR_ERR_INT_RAW_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn in_dscr_err_int_raw(&self) -> IN_DSCR_ERR_INT_RAW_R {
+        IN_DSCR_ERR_INT_RAW_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn i2s_out_eof_int_raw(&self) -> I2S_OUT_EOF_INT_RAW_R {
-        I2S_OUT_EOF_INT_RAW_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn out_eof_int_raw(&self) -> OUT_EOF_INT_RAW_R {
+        OUT_EOF_INT_RAW_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_out_done_int_raw(&self) -> I2S_OUT_DONE_INT_RAW_R {
-        I2S_OUT_DONE_INT_RAW_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn out_done_int_raw(&self) -> OUT_DONE_INT_RAW_R {
+        OUT_DONE_INT_RAW_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn i2s_in_err_eof_int_raw(&self) -> I2S_IN_ERR_EOF_INT_RAW_R {
-        I2S_IN_ERR_EOF_INT_RAW_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn in_err_eof_int_raw(&self) -> IN_ERR_EOF_INT_RAW_R {
+        IN_ERR_EOF_INT_RAW_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn i2s_in_suc_eof_int_raw(&self) -> I2S_IN_SUC_EOF_INT_RAW_R {
-        I2S_IN_SUC_EOF_INT_RAW_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn in_suc_eof_int_raw(&self) -> IN_SUC_EOF_INT_RAW_R {
+        IN_SUC_EOF_INT_RAW_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn i2s_in_done_int_raw(&self) -> I2S_IN_DONE_INT_RAW_R {
-        I2S_IN_DONE_INT_RAW_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn in_done_int_raw(&self) -> IN_DONE_INT_RAW_R {
+        IN_DONE_INT_RAW_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn i2s_tx_hung_int_raw(&self) -> I2S_TX_HUNG_INT_RAW_R {
-        I2S_TX_HUNG_INT_RAW_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn tx_hung_int_raw(&self) -> TX_HUNG_INT_RAW_R {
+        TX_HUNG_INT_RAW_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn i2s_rx_hung_int_raw(&self) -> I2S_RX_HUNG_INT_RAW_R {
-        I2S_RX_HUNG_INT_RAW_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn rx_hung_int_raw(&self) -> RX_HUNG_INT_RAW_R {
+        RX_HUNG_INT_RAW_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn i2s_tx_rempty_int_raw(&self) -> I2S_TX_REMPTY_INT_RAW_R {
-        I2S_TX_REMPTY_INT_RAW_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn tx_rempty_int_raw(&self) -> TX_REMPTY_INT_RAW_R {
+        TX_REMPTY_INT_RAW_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn i2s_tx_wfull_int_raw(&self) -> I2S_TX_WFULL_INT_RAW_R {
-        I2S_TX_WFULL_INT_RAW_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn tx_wfull_int_raw(&self) -> TX_WFULL_INT_RAW_R {
+        TX_WFULL_INT_RAW_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_rx_rempty_int_raw(&self) -> I2S_RX_REMPTY_INT_RAW_R {
-        I2S_RX_REMPTY_INT_RAW_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn rx_rempty_int_raw(&self) -> RX_REMPTY_INT_RAW_R {
+        RX_REMPTY_INT_RAW_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_rx_wfull_int_raw(&self) -> I2S_RX_WFULL_INT_RAW_R {
-        I2S_RX_WFULL_INT_RAW_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn rx_wfull_int_raw(&self) -> RX_WFULL_INT_RAW_R {
+        RX_WFULL_INT_RAW_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_tx_put_data_int_raw(&self) -> I2S_TX_PUT_DATA_INT_RAW_R {
-        I2S_TX_PUT_DATA_INT_RAW_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn tx_put_data_int_raw(&self) -> TX_PUT_DATA_INT_RAW_R {
+        TX_PUT_DATA_INT_RAW_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_rx_take_data_int_raw(&self) -> I2S_RX_TAKE_DATA_INT_RAW_R {
-        I2S_RX_TAKE_DATA_INT_RAW_R::new((self.bits & 0x01) != 0)
+    pub fn rx_take_data_int_raw(&self) -> RX_TAKE_DATA_INT_RAW_R {
+        RX_TAKE_DATA_INT_RAW_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn i2s_out_total_eof_int_raw(&mut self) -> I2S_OUT_TOTAL_EOF_INT_RAW_W {
-        I2S_OUT_TOTAL_EOF_INT_RAW_W { w: self }
+    pub fn out_total_eof_int_raw(&mut self) -> OUT_TOTAL_EOF_INT_RAW_W {
+        OUT_TOTAL_EOF_INT_RAW_W { w: self }
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn i2s_in_dscr_empty_int_raw(&mut self) -> I2S_IN_DSCR_EMPTY_INT_RAW_W {
-        I2S_IN_DSCR_EMPTY_INT_RAW_W { w: self }
+    pub fn in_dscr_empty_int_raw(&mut self) -> IN_DSCR_EMPTY_INT_RAW_W {
+        IN_DSCR_EMPTY_INT_RAW_W { w: self }
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn i2s_out_dscr_err_int_raw(&mut self) -> I2S_OUT_DSCR_ERR_INT_RAW_W {
-        I2S_OUT_DSCR_ERR_INT_RAW_W { w: self }
+    pub fn out_dscr_err_int_raw(&mut self) -> OUT_DSCR_ERR_INT_RAW_W {
+        OUT_DSCR_ERR_INT_RAW_W { w: self }
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn i2s_in_dscr_err_int_raw(&mut self) -> I2S_IN_DSCR_ERR_INT_RAW_W {
-        I2S_IN_DSCR_ERR_INT_RAW_W { w: self }
+    pub fn in_dscr_err_int_raw(&mut self) -> IN_DSCR_ERR_INT_RAW_W {
+        IN_DSCR_ERR_INT_RAW_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn i2s_out_eof_int_raw(&mut self) -> I2S_OUT_EOF_INT_RAW_W {
-        I2S_OUT_EOF_INT_RAW_W { w: self }
+    pub fn out_eof_int_raw(&mut self) -> OUT_EOF_INT_RAW_W {
+        OUT_EOF_INT_RAW_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_out_done_int_raw(&mut self) -> I2S_OUT_DONE_INT_RAW_W {
-        I2S_OUT_DONE_INT_RAW_W { w: self }
+    pub fn out_done_int_raw(&mut self) -> OUT_DONE_INT_RAW_W {
+        OUT_DONE_INT_RAW_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn i2s_in_err_eof_int_raw(&mut self) -> I2S_IN_ERR_EOF_INT_RAW_W {
-        I2S_IN_ERR_EOF_INT_RAW_W { w: self }
+    pub fn in_err_eof_int_raw(&mut self) -> IN_ERR_EOF_INT_RAW_W {
+        IN_ERR_EOF_INT_RAW_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn i2s_in_suc_eof_int_raw(&mut self) -> I2S_IN_SUC_EOF_INT_RAW_W {
-        I2S_IN_SUC_EOF_INT_RAW_W { w: self }
+    pub fn in_suc_eof_int_raw(&mut self) -> IN_SUC_EOF_INT_RAW_W {
+        IN_SUC_EOF_INT_RAW_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn i2s_in_done_int_raw(&mut self) -> I2S_IN_DONE_INT_RAW_W {
-        I2S_IN_DONE_INT_RAW_W { w: self }
+    pub fn in_done_int_raw(&mut self) -> IN_DONE_INT_RAW_W {
+        IN_DONE_INT_RAW_W { w: self }
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn i2s_tx_hung_int_raw(&mut self) -> I2S_TX_HUNG_INT_RAW_W {
-        I2S_TX_HUNG_INT_RAW_W { w: self }
+    pub fn tx_hung_int_raw(&mut self) -> TX_HUNG_INT_RAW_W {
+        TX_HUNG_INT_RAW_W { w: self }
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn i2s_rx_hung_int_raw(&mut self) -> I2S_RX_HUNG_INT_RAW_W {
-        I2S_RX_HUNG_INT_RAW_W { w: self }
+    pub fn rx_hung_int_raw(&mut self) -> RX_HUNG_INT_RAW_W {
+        RX_HUNG_INT_RAW_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn i2s_tx_rempty_int_raw(&mut self) -> I2S_TX_REMPTY_INT_RAW_W {
-        I2S_TX_REMPTY_INT_RAW_W { w: self }
+    pub fn tx_rempty_int_raw(&mut self) -> TX_REMPTY_INT_RAW_W {
+        TX_REMPTY_INT_RAW_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn i2s_tx_wfull_int_raw(&mut self) -> I2S_TX_WFULL_INT_RAW_W {
-        I2S_TX_WFULL_INT_RAW_W { w: self }
+    pub fn tx_wfull_int_raw(&mut self) -> TX_WFULL_INT_RAW_W {
+        TX_WFULL_INT_RAW_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_rx_rempty_int_raw(&mut self) -> I2S_RX_REMPTY_INT_RAW_W {
-        I2S_RX_REMPTY_INT_RAW_W { w: self }
+    pub fn rx_rempty_int_raw(&mut self) -> RX_REMPTY_INT_RAW_W {
+        RX_REMPTY_INT_RAW_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_rx_wfull_int_raw(&mut self) -> I2S_RX_WFULL_INT_RAW_W {
-        I2S_RX_WFULL_INT_RAW_W { w: self }
+    pub fn rx_wfull_int_raw(&mut self) -> RX_WFULL_INT_RAW_W {
+        RX_WFULL_INT_RAW_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_tx_put_data_int_raw(&mut self) -> I2S_TX_PUT_DATA_INT_RAW_W {
-        I2S_TX_PUT_DATA_INT_RAW_W { w: self }
+    pub fn tx_put_data_int_raw(&mut self) -> TX_PUT_DATA_INT_RAW_W {
+        TX_PUT_DATA_INT_RAW_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_rx_take_data_int_raw(&mut self) -> I2S_RX_TAKE_DATA_INT_RAW_W {
-        I2S_RX_TAKE_DATA_INT_RAW_W { w: self }
+    pub fn rx_take_data_int_raw(&mut self) -> RX_TAKE_DATA_INT_RAW_W {
+        RX_TAKE_DATA_INT_RAW_W { w: self }
     }
 }

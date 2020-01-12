@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DATE {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_CNTL_DATE`"]
-pub type RTC_CNTL_CNTL_DATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_CNTL_CNTL_DATE`"]
-pub struct RTC_CNTL_CNTL_DATE_W<'a> {
+#[doc = "Reader of field `CNTL_DATE`"]
+pub type CNTL_DATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `CNTL_DATE`"]
+pub struct CNTL_DATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_CNTL_DATE_W<'a> {
+impl<'a> CNTL_DATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_CNTL_CNTL_DATE_W<'a> {
 impl R {
     #[doc = "Bits 0:27"]
     #[inline(always)]
-    pub fn rtc_cntl_cntl_date(&self) -> RTC_CNTL_CNTL_DATE_R {
-        RTC_CNTL_CNTL_DATE_R::new((self.bits & 0x0fff_ffff) as u32)
+    pub fn cntl_date(&self) -> CNTL_DATE_R {
+        CNTL_DATE_R::new((self.bits & 0x0fff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:27"]
     #[inline(always)]
-    pub fn rtc_cntl_cntl_date(&mut self) -> RTC_CNTL_CNTL_DATE_W {
-        RTC_CNTL_CNTL_DATE_W { w: self }
+    pub fn cntl_date(&mut self) -> CNTL_DATE_W {
+        CNTL_DATE_W { w: self }
     }
 }

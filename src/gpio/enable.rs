@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ENABLE {
         0
     }
 }
-#[doc = "Reader of field `GPIO_ENABLE_DATA`"]
-pub type GPIO_ENABLE_DATA_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `GPIO_ENABLE_DATA`"]
-pub struct GPIO_ENABLE_DATA_W<'a> {
+#[doc = "Reader of field `ENABLE_DATA`"]
+pub type ENABLE_DATA_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `ENABLE_DATA`"]
+pub struct ENABLE_DATA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_ENABLE_DATA_W<'a> {
+impl<'a> ENABLE_DATA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_ENABLE_DATA_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - GPIO0~31 output enable"]
     #[inline(always)]
-    pub fn gpio_enable_data(&self) -> GPIO_ENABLE_DATA_R {
-        GPIO_ENABLE_DATA_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn enable_data(&self) -> ENABLE_DATA_R {
+        ENABLE_DATA_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - GPIO0~31 output enable"]
     #[inline(always)]
-    pub fn gpio_enable_data(&mut self) -> GPIO_ENABLE_DATA_W {
-        GPIO_ENABLE_DATA_W { w: self }
+    pub fn enable_data(&mut self) -> ENABLE_DATA_W {
+        ENABLE_DATA_W { w: self }
     }
 }

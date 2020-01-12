@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SIGMADELTA3 {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SD3_PRESCALE`"]
-pub type GPIO_SD3_PRESCALE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_SD3_PRESCALE`"]
-pub struct GPIO_SD3_PRESCALE_W<'a> {
+#[doc = "Reader of field `SD3_PRESCALE`"]
+pub type SD3_PRESCALE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SD3_PRESCALE`"]
+pub struct SD3_PRESCALE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SD3_PRESCALE_W<'a> {
+impl<'a> SD3_PRESCALE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> GPIO_SD3_PRESCALE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_SD3_IN`"]
-pub type GPIO_SD3_IN_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_SD3_IN`"]
-pub struct GPIO_SD3_IN_W<'a> {
+#[doc = "Reader of field `SD3_IN`"]
+pub type SD3_IN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SD3_IN`"]
+pub struct SD3_IN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SD3_IN_W<'a> {
+impl<'a> SD3_IN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> GPIO_SD3_IN_W<'a> {
 impl R {
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn gpio_sd3_prescale(&self) -> GPIO_SD3_PRESCALE_R {
-        GPIO_SD3_PRESCALE_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn sd3_prescale(&self) -> SD3_PRESCALE_R {
+        SD3_PRESCALE_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn gpio_sd3_in(&self) -> GPIO_SD3_IN_R {
-        GPIO_SD3_IN_R::new((self.bits & 0xff) as u8)
+    pub fn sd3_in(&self) -> SD3_IN_R {
+        SD3_IN_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn gpio_sd3_prescale(&mut self) -> GPIO_SD3_PRESCALE_W {
-        GPIO_SD3_PRESCALE_W { w: self }
+    pub fn sd3_prescale(&mut self) -> SD3_PRESCALE_W {
+        SD3_PRESCALE_W { w: self }
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn gpio_sd3_in(&mut self) -> GPIO_SD3_IN_W {
-        GPIO_SD3_IN_W { w: self }
+    pub fn sd3_in(&mut self) -> SD3_IN_W {
+        SD3_IN_W { w: self }
     }
 }

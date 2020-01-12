@@ -10,13 +10,13 @@ impl crate::ResetValue for super::WDTCONFIG3 {
         0
     }
 }
-#[doc = "Reader of field `TIMG_WDT_STG1_HOLD`"]
-pub type TIMG_WDT_STG1_HOLD_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_WDT_STG1_HOLD`"]
-pub struct TIMG_WDT_STG1_HOLD_W<'a> {
+#[doc = "Reader of field `WDT_STG1_HOLD`"]
+pub type WDT_STG1_HOLD_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `WDT_STG1_HOLD`"]
+pub struct WDT_STG1_HOLD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_WDT_STG1_HOLD_W<'a> {
+impl<'a> WDT_STG1_HOLD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_WDT_STG1_HOLD_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Stage 1 timeout value in SWDT clock cycles"]
     #[inline(always)]
-    pub fn timg_wdt_stg1_hold(&self) -> TIMG_WDT_STG1_HOLD_R {
-        TIMG_WDT_STG1_HOLD_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn wdt_stg1_hold(&self) -> WDT_STG1_HOLD_R {
+        WDT_STG1_HOLD_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Stage 1 timeout value in SWDT clock cycles"]
     #[inline(always)]
-    pub fn timg_wdt_stg1_hold(&mut self) -> TIMG_WDT_STG1_HOLD_W {
-        TIMG_WDT_STG1_HOLD_W { w: self }
+    pub fn wdt_stg1_hold(&mut self) -> WDT_STG1_HOLD_W {
+        WDT_STG1_HOLD_W { w: self }
     }
 }

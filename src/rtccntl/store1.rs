@@ -10,13 +10,13 @@ impl crate::ResetValue for super::STORE1 {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SCRATCH1`"]
-pub type RTC_CNTL_SCRATCH1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_CNTL_SCRATCH1`"]
-pub struct RTC_CNTL_SCRATCH1_W<'a> {
+#[doc = "Reader of field `SCRATCH1`"]
+pub type SCRATCH1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SCRATCH1`"]
+pub struct SCRATCH1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SCRATCH1_W<'a> {
+impl<'a> SCRATCH1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_CNTL_SCRATCH1_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - 32-bit general purpose retention register"]
     #[inline(always)]
-    pub fn rtc_cntl_scratch1(&self) -> RTC_CNTL_SCRATCH1_R {
-        RTC_CNTL_SCRATCH1_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn scratch1(&self) -> SCRATCH1_R {
+        SCRATCH1_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - 32-bit general purpose retention register"]
     #[inline(always)]
-    pub fn rtc_cntl_scratch1(&mut self) -> RTC_CNTL_SCRATCH1_W {
-        RTC_CNTL_SCRATCH1_W { w: self }
+    pub fn scratch1(&mut self) -> SCRATCH1_W {
+        SCRATCH1_W { w: self }
     }
 }

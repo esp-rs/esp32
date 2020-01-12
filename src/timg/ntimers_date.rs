@@ -10,13 +10,13 @@ impl crate::ResetValue for super::NTIMERS_DATE {
         0
     }
 }
-#[doc = "Reader of field `TIMG_NTIMERS_DATE`"]
-pub type TIMG_NTIMERS_DATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_NTIMERS_DATE`"]
-pub struct TIMG_NTIMERS_DATE_W<'a> {
+#[doc = "Reader of field `NTIMERS_DATE`"]
+pub type NTIMERS_DATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `NTIMERS_DATE`"]
+pub struct NTIMERS_DATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_NTIMERS_DATE_W<'a> {
+impl<'a> NTIMERS_DATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_NTIMERS_DATE_W<'a> {
 impl R {
     #[doc = "Bits 0:27 - Version of this regfile"]
     #[inline(always)]
-    pub fn timg_ntimers_date(&self) -> TIMG_NTIMERS_DATE_R {
-        TIMG_NTIMERS_DATE_R::new((self.bits & 0x0fff_ffff) as u32)
+    pub fn ntimers_date(&self) -> NTIMERS_DATE_R {
+        NTIMERS_DATE_R::new((self.bits & 0x0fff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:27 - Version of this regfile"]
     #[inline(always)]
-    pub fn timg_ntimers_date(&mut self) -> TIMG_NTIMERS_DATE_W {
-        TIMG_NTIMERS_DATE_W { w: self }
+    pub fn ntimers_date(&mut self) -> NTIMERS_DATE_W {
+        NTIMERS_DATE_W { w: self }
     }
 }

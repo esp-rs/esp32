@@ -10,13 +10,13 @@ impl crate::ResetValue for super::OUT_EOF_DES_ADDR {
         0
     }
 }
-#[doc = "Reader of field `I2S_OUT_EOF_DES_ADDR`"]
-pub type I2S_OUT_EOF_DES_ADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `I2S_OUT_EOF_DES_ADDR`"]
-pub struct I2S_OUT_EOF_DES_ADDR_W<'a> {
+#[doc = "Reader of field `OUT_EOF_DES_ADDR`"]
+pub type OUT_EOF_DES_ADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `OUT_EOF_DES_ADDR`"]
+pub struct OUT_EOF_DES_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_EOF_DES_ADDR_W<'a> {
+impl<'a> OUT_EOF_DES_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> I2S_OUT_EOF_DES_ADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_out_eof_des_addr(&self) -> I2S_OUT_EOF_DES_ADDR_R {
-        I2S_OUT_EOF_DES_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn out_eof_des_addr(&self) -> OUT_EOF_DES_ADDR_R {
+        OUT_EOF_DES_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_out_eof_des_addr(&mut self) -> I2S_OUT_EOF_DES_ADDR_W {
-        I2S_OUT_EOF_DES_ADDR_W { w: self }
+    pub fn out_eof_des_addr(&mut self) -> OUT_EOF_DES_ADDR_W {
+        OUT_EOF_DES_ADDR_W { w: self }
     }
 }

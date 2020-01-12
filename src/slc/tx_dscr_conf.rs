@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TX_DSCR_CONF {
         0
     }
 }
-#[doc = "Reader of field `SLC_WR_RETRY_THRESHOLD`"]
-pub type SLC_WR_RETRY_THRESHOLD_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SLC_WR_RETRY_THRESHOLD`"]
-pub struct SLC_WR_RETRY_THRESHOLD_W<'a> {
+#[doc = "Reader of field `WR_RETRY_THRESHOLD`"]
+pub type WR_RETRY_THRESHOLD_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `WR_RETRY_THRESHOLD`"]
+pub struct WR_RETRY_THRESHOLD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_WR_RETRY_THRESHOLD_W<'a> {
+impl<'a> WR_RETRY_THRESHOLD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SLC_WR_RETRY_THRESHOLD_W<'a> {
 impl R {
     #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn slc_wr_retry_threshold(&self) -> SLC_WR_RETRY_THRESHOLD_R {
-        SLC_WR_RETRY_THRESHOLD_R::new((self.bits & 0x07ff) as u16)
+    pub fn wr_retry_threshold(&self) -> WR_RETRY_THRESHOLD_R {
+        WR_RETRY_THRESHOLD_R::new((self.bits & 0x07ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn slc_wr_retry_threshold(&mut self) -> SLC_WR_RETRY_THRESHOLD_W {
-        SLC_WR_RETRY_THRESHOLD_W { w: self }
+    pub fn wr_retry_threshold(&mut self) -> WR_RETRY_THRESHOLD_W {
+        WR_RETRY_THRESHOLD_W { w: self }
     }
 }

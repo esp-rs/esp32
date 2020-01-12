@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ULP_CP_SLEEP_CYC0 {
         0
     }
 }
-#[doc = "Reader of field `SENS_SLEEP_CYCLES_S0`"]
-pub type SENS_SLEEP_CYCLES_S0_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SENS_SLEEP_CYCLES_S0`"]
-pub struct SENS_SLEEP_CYCLES_S0_W<'a> {
+#[doc = "Reader of field `SLEEP_CYCLES_S0`"]
+pub type SLEEP_CYCLES_S0_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SLEEP_CYCLES_S0`"]
+pub struct SLEEP_CYCLES_S0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_SLEEP_CYCLES_S0_W<'a> {
+impl<'a> SLEEP_CYCLES_S0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SENS_SLEEP_CYCLES_S0_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - sleep cycles for ULP-coprocessor timer"]
     #[inline(always)]
-    pub fn sens_sleep_cycles_s0(&self) -> SENS_SLEEP_CYCLES_S0_R {
-        SENS_SLEEP_CYCLES_S0_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn sleep_cycles_s0(&self) -> SLEEP_CYCLES_S0_R {
+        SLEEP_CYCLES_S0_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - sleep cycles for ULP-coprocessor timer"]
     #[inline(always)]
-    pub fn sens_sleep_cycles_s0(&mut self) -> SENS_SLEEP_CYCLES_S0_W {
-        SENS_SLEEP_CYCLES_S0_W { w: self }
+    pub fn sleep_cycles_s0(&mut self) -> SLEEP_CYCLES_S0_W {
+        SLEEP_CYCLES_S0_W { w: self }
     }
 }

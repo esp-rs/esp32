@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_NOUSE {
         0
     }
 }
-#[doc = "Reader of field `SENS_SAR_NOUSE`"]
-pub type SENS_SAR_NOUSE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SENS_SAR_NOUSE`"]
-pub struct SENS_SAR_NOUSE_W<'a> {
+#[doc = "Reader of field `SAR_NOUSE`"]
+pub type SAR_NOUSE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SAR_NOUSE`"]
+pub struct SAR_NOUSE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_SAR_NOUSE_W<'a> {
+impl<'a> SAR_NOUSE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SENS_SAR_NOUSE_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn sens_sar_nouse(&self) -> SENS_SAR_NOUSE_R {
-        SENS_SAR_NOUSE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn sar_nouse(&self) -> SAR_NOUSE_R {
+        SAR_NOUSE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn sens_sar_nouse(&mut self) -> SENS_SAR_NOUSE_W {
-        SENS_SAR_NOUSE_W { w: self }
+    pub fn sar_nouse(&mut self) -> SAR_NOUSE_W {
+        SAR_NOUSE_W { w: self }
     }
 }

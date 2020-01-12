@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SIGMADELTA2 {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SD2_PRESCALE`"]
-pub type GPIO_SD2_PRESCALE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_SD2_PRESCALE`"]
-pub struct GPIO_SD2_PRESCALE_W<'a> {
+#[doc = "Reader of field `SD2_PRESCALE`"]
+pub type SD2_PRESCALE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SD2_PRESCALE`"]
+pub struct SD2_PRESCALE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SD2_PRESCALE_W<'a> {
+impl<'a> SD2_PRESCALE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> GPIO_SD2_PRESCALE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_SD2_IN`"]
-pub type GPIO_SD2_IN_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_SD2_IN`"]
-pub struct GPIO_SD2_IN_W<'a> {
+#[doc = "Reader of field `SD2_IN`"]
+pub type SD2_IN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SD2_IN`"]
+pub struct SD2_IN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SD2_IN_W<'a> {
+impl<'a> SD2_IN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> GPIO_SD2_IN_W<'a> {
 impl R {
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn gpio_sd2_prescale(&self) -> GPIO_SD2_PRESCALE_R {
-        GPIO_SD2_PRESCALE_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn sd2_prescale(&self) -> SD2_PRESCALE_R {
+        SD2_PRESCALE_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn gpio_sd2_in(&self) -> GPIO_SD2_IN_R {
-        GPIO_SD2_IN_R::new((self.bits & 0xff) as u8)
+    pub fn sd2_in(&self) -> SD2_IN_R {
+        SD2_IN_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn gpio_sd2_prescale(&mut self) -> GPIO_SD2_PRESCALE_W {
-        GPIO_SD2_PRESCALE_W { w: self }
+    pub fn sd2_prescale(&mut self) -> SD2_PRESCALE_W {
+        SD2_PRESCALE_W { w: self }
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn gpio_sd2_in(&mut self) -> GPIO_SD2_IN_W {
-        GPIO_SD2_IN_W { w: self }
+    pub fn sd2_in(&mut self) -> SD2_IN_W {
+        SD2_IN_W { w: self }
     }
 }

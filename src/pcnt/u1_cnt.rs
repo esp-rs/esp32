@@ -10,13 +10,13 @@ impl crate::ResetValue for super::U1_CNT {
         0
     }
 }
-#[doc = "Reader of field `PCNT_PLUS_CNT_U1`"]
-pub type PCNT_PLUS_CNT_U1_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `PCNT_PLUS_CNT_U1`"]
-pub struct PCNT_PLUS_CNT_U1_W<'a> {
+#[doc = "Reader of field `PLUS_CNT_U1`"]
+pub type PLUS_CNT_U1_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `PLUS_CNT_U1`"]
+pub struct PLUS_CNT_U1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_PLUS_CNT_U1_W<'a> {
+impl<'a> PLUS_CNT_U1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> PCNT_PLUS_CNT_U1_W<'a> {
 impl R {
     #[doc = "Bits 0:15 - This register stores the current pulse count value for unit1."]
     #[inline(always)]
-    pub fn pcnt_plus_cnt_u1(&self) -> PCNT_PLUS_CNT_U1_R {
-        PCNT_PLUS_CNT_U1_R::new((self.bits & 0xffff) as u16)
+    pub fn plus_cnt_u1(&self) -> PLUS_CNT_U1_R {
+        PLUS_CNT_U1_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:15 - This register stores the current pulse count value for unit1."]
     #[inline(always)]
-    pub fn pcnt_plus_cnt_u1(&mut self) -> PCNT_PLUS_CNT_U1_W {
-        PCNT_PLUS_CNT_U1_W { w: self }
+    pub fn plus_cnt_u1(&mut self) -> PLUS_CNT_U1_W {
+        PLUS_CNT_U1_W { w: self }
     }
 }

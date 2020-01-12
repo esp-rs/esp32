@@ -10,13 +10,13 @@ impl crate::ResetValue for super::USER2 {
         0
     }
 }
-#[doc = "Reader of field `SPI_USR_COMMAND_BITLEN`"]
-pub type SPI_USR_COMMAND_BITLEN_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_USR_COMMAND_BITLEN`"]
-pub struct SPI_USR_COMMAND_BITLEN_W<'a> {
+#[doc = "Reader of field `USR_COMMAND_BITLEN`"]
+pub type USR_COMMAND_BITLEN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `USR_COMMAND_BITLEN`"]
+pub struct USR_COMMAND_BITLEN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_USR_COMMAND_BITLEN_W<'a> {
+impl<'a> USR_COMMAND_BITLEN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SPI_USR_COMMAND_BITLEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_USR_COMMAND_VALUE`"]
-pub type SPI_USR_COMMAND_VALUE_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SPI_USR_COMMAND_VALUE`"]
-pub struct SPI_USR_COMMAND_VALUE_W<'a> {
+#[doc = "Reader of field `USR_COMMAND_VALUE`"]
+pub type USR_COMMAND_VALUE_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `USR_COMMAND_VALUE`"]
+pub struct USR_COMMAND_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_USR_COMMAND_VALUE_W<'a> {
+impl<'a> USR_COMMAND_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> SPI_USR_COMMAND_VALUE_W<'a> {
 impl R {
     #[doc = "Bits 28:31 - The length in bits of command phase. The register value shall be (bit_num-1)"]
     #[inline(always)]
-    pub fn spi_usr_command_bitlen(&self) -> SPI_USR_COMMAND_BITLEN_R {
-        SPI_USR_COMMAND_BITLEN_R::new(((self.bits >> 28) & 0x0f) as u8)
+    pub fn usr_command_bitlen(&self) -> USR_COMMAND_BITLEN_R {
+        USR_COMMAND_BITLEN_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
     #[doc = "Bits 0:15 - The value of command."]
     #[inline(always)]
-    pub fn spi_usr_command_value(&self) -> SPI_USR_COMMAND_VALUE_R {
-        SPI_USR_COMMAND_VALUE_R::new((self.bits & 0xffff) as u16)
+    pub fn usr_command_value(&self) -> USR_COMMAND_VALUE_R {
+        USR_COMMAND_VALUE_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 28:31 - The length in bits of command phase. The register value shall be (bit_num-1)"]
     #[inline(always)]
-    pub fn spi_usr_command_bitlen(&mut self) -> SPI_USR_COMMAND_BITLEN_W {
-        SPI_USR_COMMAND_BITLEN_W { w: self }
+    pub fn usr_command_bitlen(&mut self) -> USR_COMMAND_BITLEN_W {
+        USR_COMMAND_BITLEN_W { w: self }
     }
     #[doc = "Bits 0:15 - The value of command."]
     #[inline(always)]
-    pub fn spi_usr_command_value(&mut self) -> SPI_USR_COMMAND_VALUE_W {
-        SPI_USR_COMMAND_VALUE_W { w: self }
+    pub fn usr_command_value(&mut self) -> USR_COMMAND_VALUE_W {
+        USR_COMMAND_VALUE_W { w: self }
     }
 }

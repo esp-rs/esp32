@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_RAW {
         0
     }
 }
-#[doc = "Reader of field `RTC_I2C_TIME_OUT_INT_RAW`"]
-pub type RTC_I2C_TIME_OUT_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_I2C_TIME_OUT_INT_RAW`"]
-pub struct RTC_I2C_TIME_OUT_INT_RAW_W<'a> {
+#[doc = "Reader of field `TIME_OUT_INT_RAW`"]
+pub type TIME_OUT_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIME_OUT_INT_RAW`"]
+pub struct TIME_OUT_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_TIME_OUT_INT_RAW_W<'a> {
+impl<'a> TIME_OUT_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_I2C_TIME_OUT_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_I2C_TRANS_COMPLETE_INT_RAW`"]
-pub type RTC_I2C_TRANS_COMPLETE_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_I2C_TRANS_COMPLETE_INT_RAW`"]
-pub struct RTC_I2C_TRANS_COMPLETE_INT_RAW_W<'a> {
+#[doc = "Reader of field `TRANS_COMPLETE_INT_RAW`"]
+pub type TRANS_COMPLETE_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TRANS_COMPLETE_INT_RAW`"]
+pub struct TRANS_COMPLETE_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_TRANS_COMPLETE_INT_RAW_W<'a> {
+impl<'a> TRANS_COMPLETE_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> RTC_I2C_TRANS_COMPLETE_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW`"]
-pub type RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW`"]
-pub struct RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_W<'a> {
+#[doc = "Reader of field `MASTER_TRANS_COMPLETE_INT_RAW`"]
+pub type MASTER_TRANS_COMPLETE_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MASTER_TRANS_COMPLETE_INT_RAW`"]
+pub struct MASTER_TRANS_COMPLETE_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_W<'a> {
+impl<'a> MASTER_TRANS_COMPLETE_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_I2C_ARBITRATION_LOST_INT_RAW`"]
-pub type RTC_I2C_ARBITRATION_LOST_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_I2C_ARBITRATION_LOST_INT_RAW`"]
-pub struct RTC_I2C_ARBITRATION_LOST_INT_RAW_W<'a> {
+#[doc = "Reader of field `ARBITRATION_LOST_INT_RAW`"]
+pub type ARBITRATION_LOST_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ARBITRATION_LOST_INT_RAW`"]
+pub struct ARBITRATION_LOST_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_ARBITRATION_LOST_INT_RAW_W<'a> {
+impl<'a> ARBITRATION_LOST_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> RTC_I2C_ARBITRATION_LOST_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW`"]
-pub type RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW`"]
-pub struct RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_W<'a> {
+#[doc = "Reader of field `SLAVE_TRANS_COMPLETE_INT_RAW`"]
+pub type SLAVE_TRANS_COMPLETE_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLAVE_TRANS_COMPLETE_INT_RAW`"]
+pub struct SLAVE_TRANS_COMPLETE_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_W<'a> {
+impl<'a> SLAVE_TRANS_COMPLETE_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -133,58 +133,54 @@ impl<'a> RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_W<'a> {
 impl R {
     #[doc = "Bit 7 - time out interrupt raw status"]
     #[inline(always)]
-    pub fn rtc_i2c_time_out_int_raw(&self) -> RTC_I2C_TIME_OUT_INT_RAW_R {
-        RTC_I2C_TIME_OUT_INT_RAW_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn time_out_int_raw(&self) -> TIME_OUT_INT_RAW_R {
+        TIME_OUT_INT_RAW_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - Stop condition has been detected interrupt raw status"]
     #[inline(always)]
-    pub fn rtc_i2c_trans_complete_int_raw(&self) -> RTC_I2C_TRANS_COMPLETE_INT_RAW_R {
-        RTC_I2C_TRANS_COMPLETE_INT_RAW_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn trans_complete_int_raw(&self) -> TRANS_COMPLETE_INT_RAW_R {
+        TRANS_COMPLETE_INT_RAW_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn rtc_i2c_master_trans_complete_int_raw(&self) -> RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_R {
-        RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn master_trans_complete_int_raw(&self) -> MASTER_TRANS_COMPLETE_INT_RAW_R {
+        MASTER_TRANS_COMPLETE_INT_RAW_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4 - Master lost arbitration"]
     #[inline(always)]
-    pub fn rtc_i2c_arbitration_lost_int_raw(&self) -> RTC_I2C_ARBITRATION_LOST_INT_RAW_R {
-        RTC_I2C_ARBITRATION_LOST_INT_RAW_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn arbitration_lost_int_raw(&self) -> ARBITRATION_LOST_INT_RAW_R {
+        ARBITRATION_LOST_INT_RAW_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3 - Slave accepted 1 byte and address matched"]
     #[inline(always)]
-    pub fn rtc_i2c_slave_trans_complete_int_raw(&self) -> RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_R {
-        RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn slave_trans_complete_int_raw(&self) -> SLAVE_TRANS_COMPLETE_INT_RAW_R {
+        SLAVE_TRANS_COMPLETE_INT_RAW_R::new(((self.bits >> 3) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 7 - time out interrupt raw status"]
     #[inline(always)]
-    pub fn rtc_i2c_time_out_int_raw(&mut self) -> RTC_I2C_TIME_OUT_INT_RAW_W {
-        RTC_I2C_TIME_OUT_INT_RAW_W { w: self }
+    pub fn time_out_int_raw(&mut self) -> TIME_OUT_INT_RAW_W {
+        TIME_OUT_INT_RAW_W { w: self }
     }
     #[doc = "Bit 6 - Stop condition has been detected interrupt raw status"]
     #[inline(always)]
-    pub fn rtc_i2c_trans_complete_int_raw(&mut self) -> RTC_I2C_TRANS_COMPLETE_INT_RAW_W {
-        RTC_I2C_TRANS_COMPLETE_INT_RAW_W { w: self }
+    pub fn trans_complete_int_raw(&mut self) -> TRANS_COMPLETE_INT_RAW_W {
+        TRANS_COMPLETE_INT_RAW_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn rtc_i2c_master_trans_complete_int_raw(
-        &mut self,
-    ) -> RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_W {
-        RTC_I2C_MASTER_TRANS_COMPLETE_INT_RAW_W { w: self }
+    pub fn master_trans_complete_int_raw(&mut self) -> MASTER_TRANS_COMPLETE_INT_RAW_W {
+        MASTER_TRANS_COMPLETE_INT_RAW_W { w: self }
     }
     #[doc = "Bit 4 - Master lost arbitration"]
     #[inline(always)]
-    pub fn rtc_i2c_arbitration_lost_int_raw(&mut self) -> RTC_I2C_ARBITRATION_LOST_INT_RAW_W {
-        RTC_I2C_ARBITRATION_LOST_INT_RAW_W { w: self }
+    pub fn arbitration_lost_int_raw(&mut self) -> ARBITRATION_LOST_INT_RAW_W {
+        ARBITRATION_LOST_INT_RAW_W { w: self }
     }
     #[doc = "Bit 3 - Slave accepted 1 byte and address matched"]
     #[inline(always)]
-    pub fn rtc_i2c_slave_trans_complete_int_raw(
-        &mut self,
-    ) -> RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_W {
-        RTC_I2C_SLAVE_TRANS_COMPLETE_INT_RAW_W { w: self }
+    pub fn slave_trans_complete_int_raw(&mut self) -> SLAVE_TRANS_COMPLETE_INT_RAW_W {
+        SLAVE_TRANS_COMPLETE_INT_RAW_W { w: self }
     }
 }

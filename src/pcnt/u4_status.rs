@@ -10,13 +10,13 @@ impl crate::ResetValue for super::U4_STATUS {
         0
     }
 }
-#[doc = "Reader of field `PCNT_CORE_STATUS_U4`"]
-pub type PCNT_CORE_STATUS_U4_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `PCNT_CORE_STATUS_U4`"]
-pub struct PCNT_CORE_STATUS_U4_W<'a> {
+#[doc = "Reader of field `CORE_STATUS_U4`"]
+pub type CORE_STATUS_U4_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `CORE_STATUS_U4`"]
+pub struct CORE_STATUS_U4_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CORE_STATUS_U4_W<'a> {
+impl<'a> CORE_STATUS_U4_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> PCNT_CORE_STATUS_U4_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn pcnt_core_status_u4(&self) -> PCNT_CORE_STATUS_U4_R {
-        PCNT_CORE_STATUS_U4_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn core_status_u4(&self) -> CORE_STATUS_U4_R {
+        CORE_STATUS_U4_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn pcnt_core_status_u4(&mut self) -> PCNT_CORE_STATUS_U4_W {
-        PCNT_CORE_STATUS_U4_W { w: self }
+    pub fn core_status_u4(&mut self) -> CORE_STATUS_U4_W {
+        CORE_STATUS_U4_W { w: self }
     }
 }

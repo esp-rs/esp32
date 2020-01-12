@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLAVE {
         0
     }
 }
-#[doc = "Reader of field `SPI_SYNC_RESET`"]
-pub type SPI_SYNC_RESET_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SYNC_RESET`"]
-pub struct SPI_SYNC_RESET_W<'a> {
+#[doc = "Reader of field `SYNC_RESET`"]
+pub type SYNC_RESET_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SYNC_RESET`"]
+pub struct SYNC_RESET_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SYNC_RESET_W<'a> {
+impl<'a> SYNC_RESET_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SPI_SYNC_RESET_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLAVE_MODE`"]
-pub type SPI_SLAVE_MODE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLAVE_MODE`"]
-pub struct SPI_SLAVE_MODE_W<'a> {
+#[doc = "Reader of field `SLAVE_MODE`"]
+pub type SLAVE_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLAVE_MODE`"]
+pub struct SLAVE_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLAVE_MODE_W<'a> {
+impl<'a> SLAVE_MODE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SPI_SLAVE_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_WR_RD_BUF_EN`"]
-pub type SPI_SLV_WR_RD_BUF_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLV_WR_RD_BUF_EN`"]
-pub struct SPI_SLV_WR_RD_BUF_EN_W<'a> {
+#[doc = "Reader of field `SLV_WR_RD_BUF_EN`"]
+pub type SLV_WR_RD_BUF_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLV_WR_RD_BUF_EN`"]
+pub struct SLV_WR_RD_BUF_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_WR_RD_BUF_EN_W<'a> {
+impl<'a> SLV_WR_RD_BUF_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> SPI_SLV_WR_RD_BUF_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_WR_RD_STA_EN`"]
-pub type SPI_SLV_WR_RD_STA_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLV_WR_RD_STA_EN`"]
-pub struct SPI_SLV_WR_RD_STA_EN_W<'a> {
+#[doc = "Reader of field `SLV_WR_RD_STA_EN`"]
+pub type SLV_WR_RD_STA_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLV_WR_RD_STA_EN`"]
+pub struct SLV_WR_RD_STA_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_WR_RD_STA_EN_W<'a> {
+impl<'a> SLV_WR_RD_STA_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> SPI_SLV_WR_RD_STA_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_CMD_DEFINE`"]
-pub type SPI_SLV_CMD_DEFINE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLV_CMD_DEFINE`"]
-pub struct SPI_SLV_CMD_DEFINE_W<'a> {
+#[doc = "Reader of field `SLV_CMD_DEFINE`"]
+pub type SLV_CMD_DEFINE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLV_CMD_DEFINE`"]
+pub struct SLV_CMD_DEFINE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_CMD_DEFINE_W<'a> {
+impl<'a> SLV_CMD_DEFINE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> SPI_SLV_CMD_DEFINE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_TRANS_CNT`"]
-pub type SPI_TRANS_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_TRANS_CNT`"]
-pub struct SPI_TRANS_CNT_W<'a> {
+#[doc = "Reader of field `TRANS_CNT`"]
+pub type TRANS_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TRANS_CNT`"]
+pub struct TRANS_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_TRANS_CNT_W<'a> {
+impl<'a> TRANS_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -144,13 +144,13 @@ impl<'a> SPI_TRANS_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_LAST_STATE`"]
-pub type SPI_SLV_LAST_STATE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_SLV_LAST_STATE`"]
-pub struct SPI_SLV_LAST_STATE_W<'a> {
+#[doc = "Reader of field `SLV_LAST_STATE`"]
+pub type SLV_LAST_STATE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SLV_LAST_STATE`"]
+pub struct SLV_LAST_STATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_LAST_STATE_W<'a> {
+impl<'a> SLV_LAST_STATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -158,13 +158,13 @@ impl<'a> SPI_SLV_LAST_STATE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_LAST_COMMAND`"]
-pub type SPI_SLV_LAST_COMMAND_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_SLV_LAST_COMMAND`"]
-pub struct SPI_SLV_LAST_COMMAND_W<'a> {
+#[doc = "Reader of field `SLV_LAST_COMMAND`"]
+pub type SLV_LAST_COMMAND_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SLV_LAST_COMMAND`"]
+pub struct SLV_LAST_COMMAND_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_LAST_COMMAND_W<'a> {
+impl<'a> SLV_LAST_COMMAND_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -172,13 +172,13 @@ impl<'a> SPI_SLV_LAST_COMMAND_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_CS_I_MODE`"]
-pub type SPI_CS_I_MODE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_CS_I_MODE`"]
-pub struct SPI_CS_I_MODE_W<'a> {
+#[doc = "Reader of field `CS_I_MODE`"]
+pub type CS_I_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CS_I_MODE`"]
+pub struct CS_I_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_CS_I_MODE_W<'a> {
+impl<'a> CS_I_MODE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -186,13 +186,13 @@ impl<'a> SPI_CS_I_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_INT_EN`"]
-pub type SPI_INT_EN_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_INT_EN`"]
-pub struct SPI_INT_EN_W<'a> {
+#[doc = "Reader of field `INT_EN`"]
+pub type INT_EN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `INT_EN`"]
+pub struct INT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_INT_EN_W<'a> {
+impl<'a> INT_EN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -200,13 +200,13 @@ impl<'a> SPI_INT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_TRANS_DONE`"]
-pub type SPI_TRANS_DONE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_TRANS_DONE`"]
-pub struct SPI_TRANS_DONE_W<'a> {
+#[doc = "Reader of field `TRANS_DONE`"]
+pub type TRANS_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TRANS_DONE`"]
+pub struct TRANS_DONE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_TRANS_DONE_W<'a> {
+impl<'a> TRANS_DONE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -224,13 +224,13 @@ impl<'a> SPI_TRANS_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_WR_STA_DONE`"]
-pub type SPI_SLV_WR_STA_DONE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLV_WR_STA_DONE`"]
-pub struct SPI_SLV_WR_STA_DONE_W<'a> {
+#[doc = "Reader of field `SLV_WR_STA_DONE`"]
+pub type SLV_WR_STA_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLV_WR_STA_DONE`"]
+pub struct SLV_WR_STA_DONE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_WR_STA_DONE_W<'a> {
+impl<'a> SLV_WR_STA_DONE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -248,13 +248,13 @@ impl<'a> SPI_SLV_WR_STA_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_RD_STA_DONE`"]
-pub type SPI_SLV_RD_STA_DONE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLV_RD_STA_DONE`"]
-pub struct SPI_SLV_RD_STA_DONE_W<'a> {
+#[doc = "Reader of field `SLV_RD_STA_DONE`"]
+pub type SLV_RD_STA_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLV_RD_STA_DONE`"]
+pub struct SLV_RD_STA_DONE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_RD_STA_DONE_W<'a> {
+impl<'a> SLV_RD_STA_DONE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -272,13 +272,13 @@ impl<'a> SPI_SLV_RD_STA_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_WR_BUF_DONE`"]
-pub type SPI_SLV_WR_BUF_DONE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLV_WR_BUF_DONE`"]
-pub struct SPI_SLV_WR_BUF_DONE_W<'a> {
+#[doc = "Reader of field `SLV_WR_BUF_DONE`"]
+pub type SLV_WR_BUF_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLV_WR_BUF_DONE`"]
+pub struct SLV_WR_BUF_DONE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_WR_BUF_DONE_W<'a> {
+impl<'a> SLV_WR_BUF_DONE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -296,13 +296,13 @@ impl<'a> SPI_SLV_WR_BUF_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_RD_BUF_DONE`"]
-pub type SPI_SLV_RD_BUF_DONE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SLV_RD_BUF_DONE`"]
-pub struct SPI_SLV_RD_BUF_DONE_W<'a> {
+#[doc = "Reader of field `SLV_RD_BUF_DONE`"]
+pub type SLV_RD_BUF_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLV_RD_BUF_DONE`"]
+pub struct SLV_RD_BUF_DONE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_RD_BUF_DONE_W<'a> {
+impl<'a> SLV_RD_BUF_DONE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -323,154 +323,154 @@ impl<'a> SPI_SLV_RD_BUF_DONE_W<'a> {
 impl R {
     #[doc = "Bit 31 - Software reset enable, reset the spi clock line cs line and data lines."]
     #[inline(always)]
-    pub fn spi_sync_reset(&self) -> SPI_SYNC_RESET_R {
-        SPI_SYNC_RESET_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn sync_reset(&self) -> SYNC_RESET_R {
+        SYNC_RESET_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bit 30 - 1: slave mode 0: master mode."]
     #[inline(always)]
-    pub fn spi_slave_mode(&self) -> SPI_SLAVE_MODE_R {
-        SPI_SLAVE_MODE_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn slave_mode(&self) -> SLAVE_MODE_R {
+        SLAVE_MODE_R::new(((self.bits >> 30) & 0x01) != 0)
     }
     #[doc = "Bit 29 - write and read buffer enable in the slave mode"]
     #[inline(always)]
-    pub fn spi_slv_wr_rd_buf_en(&self) -> SPI_SLV_WR_RD_BUF_EN_R {
-        SPI_SLV_WR_RD_BUF_EN_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn slv_wr_rd_buf_en(&self) -> SLV_WR_RD_BUF_EN_R {
+        SLV_WR_RD_BUF_EN_R::new(((self.bits >> 29) & 0x01) != 0)
     }
     #[doc = "Bit 28 - write and read status enable in the slave mode"]
     #[inline(always)]
-    pub fn spi_slv_wr_rd_sta_en(&self) -> SPI_SLV_WR_RD_STA_EN_R {
-        SPI_SLV_WR_RD_STA_EN_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn slv_wr_rd_sta_en(&self) -> SLV_WR_RD_STA_EN_R {
+        SLV_WR_RD_STA_EN_R::new(((self.bits >> 28) & 0x01) != 0)
     }
     #[doc = "Bit 27 - 1: slave mode commands are defined in SPI_SLAVE3. 0: slave mode commands are fixed as: 1: write-status 2: write-buffer and 3: read-buffer."]
     #[inline(always)]
-    pub fn spi_slv_cmd_define(&self) -> SPI_SLV_CMD_DEFINE_R {
-        SPI_SLV_CMD_DEFINE_R::new(((self.bits >> 27) & 0x01) != 0)
+    pub fn slv_cmd_define(&self) -> SLV_CMD_DEFINE_R {
+        SLV_CMD_DEFINE_R::new(((self.bits >> 27) & 0x01) != 0)
     }
     #[doc = "Bits 23:26 - The operations counter in both the master mode and the slave mode. 4: read-status"]
     #[inline(always)]
-    pub fn spi_trans_cnt(&self) -> SPI_TRANS_CNT_R {
-        SPI_TRANS_CNT_R::new(((self.bits >> 23) & 0x0f) as u8)
+    pub fn trans_cnt(&self) -> TRANS_CNT_R {
+        TRANS_CNT_R::new(((self.bits >> 23) & 0x0f) as u8)
     }
     #[doc = "Bits 20:22 - In the slave mode it is the state of spi state machine."]
     #[inline(always)]
-    pub fn spi_slv_last_state(&self) -> SPI_SLV_LAST_STATE_R {
-        SPI_SLV_LAST_STATE_R::new(((self.bits >> 20) & 0x07) as u8)
+    pub fn slv_last_state(&self) -> SLV_LAST_STATE_R {
+        SLV_LAST_STATE_R::new(((self.bits >> 20) & 0x07) as u8)
     }
     #[doc = "Bits 17:19 - In the slave mode it is the value of command."]
     #[inline(always)]
-    pub fn spi_slv_last_command(&self) -> SPI_SLV_LAST_COMMAND_R {
-        SPI_SLV_LAST_COMMAND_R::new(((self.bits >> 17) & 0x07) as u8)
+    pub fn slv_last_command(&self) -> SLV_LAST_COMMAND_R {
+        SLV_LAST_COMMAND_R::new(((self.bits >> 17) & 0x07) as u8)
     }
     #[doc = "Bits 10:11 - In the slave mode this bits used to synchronize the input spi cs signal and eliminate spi cs jitter."]
     #[inline(always)]
-    pub fn spi_cs_i_mode(&self) -> SPI_CS_I_MODE_R {
-        SPI_CS_I_MODE_R::new(((self.bits >> 10) & 0x03) as u8)
+    pub fn cs_i_mode(&self) -> CS_I_MODE_R {
+        CS_I_MODE_R::new(((self.bits >> 10) & 0x03) as u8)
     }
     #[doc = "Bits 5:9 - Interrupt enable bits for the below 5 sources"]
     #[inline(always)]
-    pub fn spi_int_en(&self) -> SPI_INT_EN_R {
-        SPI_INT_EN_R::new(((self.bits >> 5) & 0x1f) as u8)
+    pub fn int_en(&self) -> INT_EN_R {
+        INT_EN_R::new(((self.bits >> 5) & 0x1f) as u8)
     }
     #[doc = "Bit 4 - The interrupt raw bit for the completion of any operation in both the master mode and the slave mode."]
     #[inline(always)]
-    pub fn spi_trans_done(&self) -> SPI_TRANS_DONE_R {
-        SPI_TRANS_DONE_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn trans_done(&self) -> TRANS_DONE_R {
+        TRANS_DONE_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3 - The interrupt raw bit for the completion of write-status operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_wr_sta_done(&self) -> SPI_SLV_WR_STA_DONE_R {
-        SPI_SLV_WR_STA_DONE_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn slv_wr_sta_done(&self) -> SLV_WR_STA_DONE_R {
+        SLV_WR_STA_DONE_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2 - The interrupt raw bit for the completion of read-status operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_rd_sta_done(&self) -> SPI_SLV_RD_STA_DONE_R {
-        SPI_SLV_RD_STA_DONE_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn slv_rd_sta_done(&self) -> SLV_RD_STA_DONE_R {
+        SLV_RD_STA_DONE_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1 - The interrupt raw bit for the completion of write-buffer operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_wr_buf_done(&self) -> SPI_SLV_WR_BUF_DONE_R {
-        SPI_SLV_WR_BUF_DONE_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn slv_wr_buf_done(&self) -> SLV_WR_BUF_DONE_R {
+        SLV_WR_BUF_DONE_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - The interrupt raw bit for the completion of read-buffer operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_rd_buf_done(&self) -> SPI_SLV_RD_BUF_DONE_R {
-        SPI_SLV_RD_BUF_DONE_R::new((self.bits & 0x01) != 0)
+    pub fn slv_rd_buf_done(&self) -> SLV_RD_BUF_DONE_R {
+        SLV_RD_BUF_DONE_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31 - Software reset enable, reset the spi clock line cs line and data lines."]
     #[inline(always)]
-    pub fn spi_sync_reset(&mut self) -> SPI_SYNC_RESET_W {
-        SPI_SYNC_RESET_W { w: self }
+    pub fn sync_reset(&mut self) -> SYNC_RESET_W {
+        SYNC_RESET_W { w: self }
     }
     #[doc = "Bit 30 - 1: slave mode 0: master mode."]
     #[inline(always)]
-    pub fn spi_slave_mode(&mut self) -> SPI_SLAVE_MODE_W {
-        SPI_SLAVE_MODE_W { w: self }
+    pub fn slave_mode(&mut self) -> SLAVE_MODE_W {
+        SLAVE_MODE_W { w: self }
     }
     #[doc = "Bit 29 - write and read buffer enable in the slave mode"]
     #[inline(always)]
-    pub fn spi_slv_wr_rd_buf_en(&mut self) -> SPI_SLV_WR_RD_BUF_EN_W {
-        SPI_SLV_WR_RD_BUF_EN_W { w: self }
+    pub fn slv_wr_rd_buf_en(&mut self) -> SLV_WR_RD_BUF_EN_W {
+        SLV_WR_RD_BUF_EN_W { w: self }
     }
     #[doc = "Bit 28 - write and read status enable in the slave mode"]
     #[inline(always)]
-    pub fn spi_slv_wr_rd_sta_en(&mut self) -> SPI_SLV_WR_RD_STA_EN_W {
-        SPI_SLV_WR_RD_STA_EN_W { w: self }
+    pub fn slv_wr_rd_sta_en(&mut self) -> SLV_WR_RD_STA_EN_W {
+        SLV_WR_RD_STA_EN_W { w: self }
     }
     #[doc = "Bit 27 - 1: slave mode commands are defined in SPI_SLAVE3. 0: slave mode commands are fixed as: 1: write-status 2: write-buffer and 3: read-buffer."]
     #[inline(always)]
-    pub fn spi_slv_cmd_define(&mut self) -> SPI_SLV_CMD_DEFINE_W {
-        SPI_SLV_CMD_DEFINE_W { w: self }
+    pub fn slv_cmd_define(&mut self) -> SLV_CMD_DEFINE_W {
+        SLV_CMD_DEFINE_W { w: self }
     }
     #[doc = "Bits 23:26 - The operations counter in both the master mode and the slave mode. 4: read-status"]
     #[inline(always)]
-    pub fn spi_trans_cnt(&mut self) -> SPI_TRANS_CNT_W {
-        SPI_TRANS_CNT_W { w: self }
+    pub fn trans_cnt(&mut self) -> TRANS_CNT_W {
+        TRANS_CNT_W { w: self }
     }
     #[doc = "Bits 20:22 - In the slave mode it is the state of spi state machine."]
     #[inline(always)]
-    pub fn spi_slv_last_state(&mut self) -> SPI_SLV_LAST_STATE_W {
-        SPI_SLV_LAST_STATE_W { w: self }
+    pub fn slv_last_state(&mut self) -> SLV_LAST_STATE_W {
+        SLV_LAST_STATE_W { w: self }
     }
     #[doc = "Bits 17:19 - In the slave mode it is the value of command."]
     #[inline(always)]
-    pub fn spi_slv_last_command(&mut self) -> SPI_SLV_LAST_COMMAND_W {
-        SPI_SLV_LAST_COMMAND_W { w: self }
+    pub fn slv_last_command(&mut self) -> SLV_LAST_COMMAND_W {
+        SLV_LAST_COMMAND_W { w: self }
     }
     #[doc = "Bits 10:11 - In the slave mode this bits used to synchronize the input spi cs signal and eliminate spi cs jitter."]
     #[inline(always)]
-    pub fn spi_cs_i_mode(&mut self) -> SPI_CS_I_MODE_W {
-        SPI_CS_I_MODE_W { w: self }
+    pub fn cs_i_mode(&mut self) -> CS_I_MODE_W {
+        CS_I_MODE_W { w: self }
     }
     #[doc = "Bits 5:9 - Interrupt enable bits for the below 5 sources"]
     #[inline(always)]
-    pub fn spi_int_en(&mut self) -> SPI_INT_EN_W {
-        SPI_INT_EN_W { w: self }
+    pub fn int_en(&mut self) -> INT_EN_W {
+        INT_EN_W { w: self }
     }
     #[doc = "Bit 4 - The interrupt raw bit for the completion of any operation in both the master mode and the slave mode."]
     #[inline(always)]
-    pub fn spi_trans_done(&mut self) -> SPI_TRANS_DONE_W {
-        SPI_TRANS_DONE_W { w: self }
+    pub fn trans_done(&mut self) -> TRANS_DONE_W {
+        TRANS_DONE_W { w: self }
     }
     #[doc = "Bit 3 - The interrupt raw bit for the completion of write-status operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_wr_sta_done(&mut self) -> SPI_SLV_WR_STA_DONE_W {
-        SPI_SLV_WR_STA_DONE_W { w: self }
+    pub fn slv_wr_sta_done(&mut self) -> SLV_WR_STA_DONE_W {
+        SLV_WR_STA_DONE_W { w: self }
     }
     #[doc = "Bit 2 - The interrupt raw bit for the completion of read-status operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_rd_sta_done(&mut self) -> SPI_SLV_RD_STA_DONE_W {
-        SPI_SLV_RD_STA_DONE_W { w: self }
+    pub fn slv_rd_sta_done(&mut self) -> SLV_RD_STA_DONE_W {
+        SLV_RD_STA_DONE_W { w: self }
     }
     #[doc = "Bit 1 - The interrupt raw bit for the completion of write-buffer operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_wr_buf_done(&mut self) -> SPI_SLV_WR_BUF_DONE_W {
-        SPI_SLV_WR_BUF_DONE_W { w: self }
+    pub fn slv_wr_buf_done(&mut self) -> SLV_WR_BUF_DONE_W {
+        SLV_WR_BUF_DONE_W { w: self }
     }
     #[doc = "Bit 0 - The interrupt raw bit for the completion of read-buffer operation in the slave mode."]
     #[inline(always)]
-    pub fn spi_slv_rd_buf_done(&mut self) -> SPI_SLV_RD_BUF_DONE_W {
-        SPI_SLV_RD_BUF_DONE_W { w: self }
+    pub fn slv_rd_buf_done(&mut self) -> SLV_RD_BUF_DONE_W {
+        SLV_RD_BUF_DONE_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SDIO_CRC_ST0 {
         0
     }
 }
-#[doc = "Reader of field `SLC_DAT3_CRC_ERR_CNT`"]
-pub type SLC_DAT3_CRC_ERR_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_DAT3_CRC_ERR_CNT`"]
-pub struct SLC_DAT3_CRC_ERR_CNT_W<'a> {
+#[doc = "Reader of field `DAT3_CRC_ERR_CNT`"]
+pub type DAT3_CRC_ERR_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DAT3_CRC_ERR_CNT`"]
+pub struct DAT3_CRC_ERR_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_DAT3_CRC_ERR_CNT_W<'a> {
+impl<'a> DAT3_CRC_ERR_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SLC_DAT3_CRC_ERR_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_DAT2_CRC_ERR_CNT`"]
-pub type SLC_DAT2_CRC_ERR_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_DAT2_CRC_ERR_CNT`"]
-pub struct SLC_DAT2_CRC_ERR_CNT_W<'a> {
+#[doc = "Reader of field `DAT2_CRC_ERR_CNT`"]
+pub type DAT2_CRC_ERR_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DAT2_CRC_ERR_CNT`"]
+pub struct DAT2_CRC_ERR_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_DAT2_CRC_ERR_CNT_W<'a> {
+impl<'a> DAT2_CRC_ERR_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> SLC_DAT2_CRC_ERR_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_DAT1_CRC_ERR_CNT`"]
-pub type SLC_DAT1_CRC_ERR_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_DAT1_CRC_ERR_CNT`"]
-pub struct SLC_DAT1_CRC_ERR_CNT_W<'a> {
+#[doc = "Reader of field `DAT1_CRC_ERR_CNT`"]
+pub type DAT1_CRC_ERR_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DAT1_CRC_ERR_CNT`"]
+pub struct DAT1_CRC_ERR_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_DAT1_CRC_ERR_CNT_W<'a> {
+impl<'a> DAT1_CRC_ERR_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -52,13 +52,13 @@ impl<'a> SLC_DAT1_CRC_ERR_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_DAT0_CRC_ERR_CNT`"]
-pub type SLC_DAT0_CRC_ERR_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_DAT0_CRC_ERR_CNT`"]
-pub struct SLC_DAT0_CRC_ERR_CNT_W<'a> {
+#[doc = "Reader of field `DAT0_CRC_ERR_CNT`"]
+pub type DAT0_CRC_ERR_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DAT0_CRC_ERR_CNT`"]
+pub struct DAT0_CRC_ERR_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_DAT0_CRC_ERR_CNT_W<'a> {
+impl<'a> DAT0_CRC_ERR_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -69,44 +69,44 @@ impl<'a> SLC_DAT0_CRC_ERR_CNT_W<'a> {
 impl R {
     #[doc = "Bits 24:31"]
     #[inline(always)]
-    pub fn slc_dat3_crc_err_cnt(&self) -> SLC_DAT3_CRC_ERR_CNT_R {
-        SLC_DAT3_CRC_ERR_CNT_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn dat3_crc_err_cnt(&self) -> DAT3_CRC_ERR_CNT_R {
+        DAT3_CRC_ERR_CNT_R::new(((self.bits >> 24) & 0xff) as u8)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn slc_dat2_crc_err_cnt(&self) -> SLC_DAT2_CRC_ERR_CNT_R {
-        SLC_DAT2_CRC_ERR_CNT_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn dat2_crc_err_cnt(&self) -> DAT2_CRC_ERR_CNT_R {
+        DAT2_CRC_ERR_CNT_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn slc_dat1_crc_err_cnt(&self) -> SLC_DAT1_CRC_ERR_CNT_R {
-        SLC_DAT1_CRC_ERR_CNT_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn dat1_crc_err_cnt(&self) -> DAT1_CRC_ERR_CNT_R {
+        DAT1_CRC_ERR_CNT_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn slc_dat0_crc_err_cnt(&self) -> SLC_DAT0_CRC_ERR_CNT_R {
-        SLC_DAT0_CRC_ERR_CNT_R::new((self.bits & 0xff) as u8)
+    pub fn dat0_crc_err_cnt(&self) -> DAT0_CRC_ERR_CNT_R {
+        DAT0_CRC_ERR_CNT_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 24:31"]
     #[inline(always)]
-    pub fn slc_dat3_crc_err_cnt(&mut self) -> SLC_DAT3_CRC_ERR_CNT_W {
-        SLC_DAT3_CRC_ERR_CNT_W { w: self }
+    pub fn dat3_crc_err_cnt(&mut self) -> DAT3_CRC_ERR_CNT_W {
+        DAT3_CRC_ERR_CNT_W { w: self }
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn slc_dat2_crc_err_cnt(&mut self) -> SLC_DAT2_CRC_ERR_CNT_W {
-        SLC_DAT2_CRC_ERR_CNT_W { w: self }
+    pub fn dat2_crc_err_cnt(&mut self) -> DAT2_CRC_ERR_CNT_W {
+        DAT2_CRC_ERR_CNT_W { w: self }
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn slc_dat1_crc_err_cnt(&mut self) -> SLC_DAT1_CRC_ERR_CNT_W {
-        SLC_DAT1_CRC_ERR_CNT_W { w: self }
+    pub fn dat1_crc_err_cnt(&mut self) -> DAT1_CRC_ERR_CNT_W {
+        DAT1_CRC_ERR_CNT_W { w: self }
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn slc_dat0_crc_err_cnt(&mut self) -> SLC_DAT0_CRC_ERR_CNT_W {
-        SLC_DAT0_CRC_ERR_CNT_W { w: self }
+    pub fn dat0_crc_err_cnt(&mut self) -> DAT0_CRC_ERR_CNT_W {
+        DAT0_CRC_ERR_CNT_W { w: self }
     }
 }

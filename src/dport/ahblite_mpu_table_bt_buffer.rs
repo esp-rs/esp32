@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_BT_BUFFER {
         0
     }
 }
-#[doc = "Reader of field `DPORT_BTBUFFER_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_BTBUFFER_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `BTBUFFER_ACCESS_GRANT_CONFIG`"]
+pub type BTBUFFER_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `BTBUFFER_ACCESS_GRANT_CONFIG`"]
+pub struct BTBUFFER_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> BTBUFFER_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_btbuffer_access_grant_config(&self) -> DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_R {
-        DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn btbuffer_access_grant_config(&self) -> BTBUFFER_ACCESS_GRANT_CONFIG_R {
+        BTBUFFER_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_btbuffer_access_grant_config(&mut self) -> DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_W {
-        DPORT_BTBUFFER_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn btbuffer_access_grant_config(&mut self) -> BTBUFFER_ACCESS_GRANT_CONFIG_W {
+        BTBUFFER_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

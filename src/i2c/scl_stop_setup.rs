@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SCL_STOP_SETUP {
         0
     }
 }
-#[doc = "Reader of field `I2C_SCL_STOP_SETUP_TIME`"]
-pub type I2C_SCL_STOP_SETUP_TIME_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `I2C_SCL_STOP_SETUP_TIME`"]
-pub struct I2C_SCL_STOP_SETUP_TIME_W<'a> {
+#[doc = "Reader of field `SCL_STOP_SETUP_TIME`"]
+pub type SCL_STOP_SETUP_TIME_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `SCL_STOP_SETUP_TIME`"]
+pub struct SCL_STOP_SETUP_TIME_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_SCL_STOP_SETUP_TIME_W<'a> {
+impl<'a> SCL_STOP_SETUP_TIME_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> I2C_SCL_STOP_SETUP_TIME_W<'a> {
 impl R {
     #[doc = "Bits 0:9 - This register is used to configure the clock num between the posedge of SCL and the posedge of SDA."]
     #[inline(always)]
-    pub fn i2c_scl_stop_setup_time(&self) -> I2C_SCL_STOP_SETUP_TIME_R {
-        I2C_SCL_STOP_SETUP_TIME_R::new((self.bits & 0x03ff) as u16)
+    pub fn scl_stop_setup_time(&self) -> SCL_STOP_SETUP_TIME_R {
+        SCL_STOP_SETUP_TIME_R::new((self.bits & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:9 - This register is used to configure the clock num between the posedge of SCL and the posedge of SDA."]
     #[inline(always)]
-    pub fn i2c_scl_stop_setup_time(&mut self) -> I2C_SCL_STOP_SETUP_TIME_W {
-        I2C_SCL_STOP_SETUP_TIME_W { w: self }
+    pub fn scl_stop_setup_time(&mut self) -> SCL_STOP_SETUP_TIME_W {
+        SCL_STOP_SETUP_TIME_W { w: self }
     }
 }

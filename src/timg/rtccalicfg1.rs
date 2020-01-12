@@ -10,13 +10,13 @@ impl crate::ResetValue for super::RTCCALICFG1 {
         0
     }
 }
-#[doc = "Reader of field `TIMG_RTC_CALI_VALUE`"]
-pub type TIMG_RTC_CALI_VALUE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_RTC_CALI_VALUE`"]
-pub struct TIMG_RTC_CALI_VALUE_W<'a> {
+#[doc = "Reader of field `RTC_CALI_VALUE`"]
+pub type RTC_CALI_VALUE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `RTC_CALI_VALUE`"]
+pub struct RTC_CALI_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_RTC_CALI_VALUE_W<'a> {
+impl<'a> RTC_CALI_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_RTC_CALI_VALUE_W<'a> {
 impl R {
     #[doc = "Bits 7:31"]
     #[inline(always)]
-    pub fn timg_rtc_cali_value(&self) -> TIMG_RTC_CALI_VALUE_R {
-        TIMG_RTC_CALI_VALUE_R::new(((self.bits >> 7) & 0x01ff_ffff) as u32)
+    pub fn rtc_cali_value(&self) -> RTC_CALI_VALUE_R {
+        RTC_CALI_VALUE_R::new(((self.bits >> 7) & 0x01ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 7:31"]
     #[inline(always)]
-    pub fn timg_rtc_cali_value(&mut self) -> TIMG_RTC_CALI_VALUE_W {
-        TIMG_RTC_CALI_VALUE_W { w: self }
+    pub fn rtc_cali_value(&mut self) -> RTC_CALI_VALUE_W {
+        RTC_CALI_VALUE_W { w: self }
     }
 }

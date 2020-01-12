@@ -10,13 +10,13 @@ impl crate::ResetValue for super::GEN0_TSTMP_B {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_GEN0_B`"]
-pub type MCPWM_GEN0_B_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `MCPWM_GEN0_B`"]
-pub struct MCPWM_GEN0_B_W<'a> {
+#[doc = "Reader of field `GEN0_B`"]
+pub type GEN0_B_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `GEN0_B`"]
+pub struct GEN0_B_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_GEN0_B_W<'a> {
+impl<'a> GEN0_B_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> MCPWM_GEN0_B_W<'a> {
 impl R {
     #[doc = "Bits 0:15 - PWM generator 0 time stamp B's shadow reg"]
     #[inline(always)]
-    pub fn mcpwm_gen0_b(&self) -> MCPWM_GEN0_B_R {
-        MCPWM_GEN0_B_R::new((self.bits & 0xffff) as u16)
+    pub fn gen0_b(&self) -> GEN0_B_R {
+        GEN0_B_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:15 - PWM generator 0 time stamp B's shadow reg"]
     #[inline(always)]
-    pub fn mcpwm_gen0_b(&mut self) -> MCPWM_GEN0_B_W {
-        MCPWM_GEN0_B_W { w: self }
+    pub fn gen0_b(&mut self) -> GEN0_B_W {
+        GEN0_B_W { w: self }
     }
 }

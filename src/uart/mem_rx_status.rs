@@ -10,13 +10,13 @@ impl crate::ResetValue for super::MEM_RX_STATUS {
         0
     }
 }
-#[doc = "Reader of field `UART_MEM_RX_STATUS`"]
-pub type UART_MEM_RX_STATUS_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UART_MEM_RX_STATUS`"]
-pub struct UART_MEM_RX_STATUS_W<'a> {
+#[doc = "Reader of field `MEM_RX_STATUS`"]
+pub type MEM_RX_STATUS_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `MEM_RX_STATUS`"]
+pub struct MEM_RX_STATUS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_MEM_RX_STATUS_W<'a> {
+impl<'a> MEM_RX_STATUS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> UART_MEM_RX_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_MEM_RX_RD_ADDR`"]
-pub type UART_MEM_RX_RD_ADDR_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `UART_MEM_RX_RD_ADDR`"]
-pub struct UART_MEM_RX_RD_ADDR_W<'a> {
+#[doc = "Reader of field `MEM_RX_RD_ADDR`"]
+pub type MEM_RX_RD_ADDR_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `MEM_RX_RD_ADDR`"]
+pub struct MEM_RX_RD_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_MEM_RX_RD_ADDR_W<'a> {
+impl<'a> MEM_RX_RD_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> UART_MEM_RX_RD_ADDR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_MEM_RX_WR_ADDR`"]
-pub type UART_MEM_RX_WR_ADDR_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `UART_MEM_RX_WR_ADDR`"]
-pub struct UART_MEM_RX_WR_ADDR_W<'a> {
+#[doc = "Reader of field `MEM_RX_WR_ADDR`"]
+pub type MEM_RX_WR_ADDR_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `MEM_RX_WR_ADDR`"]
+pub struct MEM_RX_WR_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_MEM_RX_WR_ADDR_W<'a> {
+impl<'a> MEM_RX_WR_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -55,34 +55,34 @@ impl<'a> UART_MEM_RX_WR_ADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:23 - This register stores the current uart rx mem read address and rx mem write address"]
     #[inline(always)]
-    pub fn uart_mem_rx_status(&self) -> UART_MEM_RX_STATUS_R {
-        UART_MEM_RX_STATUS_R::new((self.bits & 0x00ff_ffff) as u32)
+    pub fn mem_rx_status(&self) -> MEM_RX_STATUS_R {
+        MEM_RX_STATUS_R::new((self.bits & 0x00ff_ffff) as u32)
     }
     #[doc = "Bits 2:12 - This register stores the rx mem read address"]
     #[inline(always)]
-    pub fn uart_mem_rx_rd_addr(&self) -> UART_MEM_RX_RD_ADDR_R {
-        UART_MEM_RX_RD_ADDR_R::new(((self.bits >> 2) & 0x07ff) as u16)
+    pub fn mem_rx_rd_addr(&self) -> MEM_RX_RD_ADDR_R {
+        MEM_RX_RD_ADDR_R::new(((self.bits >> 2) & 0x07ff) as u16)
     }
     #[doc = "Bits 13:23 - This register stores the rx mem write address"]
     #[inline(always)]
-    pub fn uart_mem_rx_wr_addr(&self) -> UART_MEM_RX_WR_ADDR_R {
-        UART_MEM_RX_WR_ADDR_R::new(((self.bits >> 13) & 0x07ff) as u16)
+    pub fn mem_rx_wr_addr(&self) -> MEM_RX_WR_ADDR_R {
+        MEM_RX_WR_ADDR_R::new(((self.bits >> 13) & 0x07ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:23 - This register stores the current uart rx mem read address and rx mem write address"]
     #[inline(always)]
-    pub fn uart_mem_rx_status(&mut self) -> UART_MEM_RX_STATUS_W {
-        UART_MEM_RX_STATUS_W { w: self }
+    pub fn mem_rx_status(&mut self) -> MEM_RX_STATUS_W {
+        MEM_RX_STATUS_W { w: self }
     }
     #[doc = "Bits 2:12 - This register stores the rx mem read address"]
     #[inline(always)]
-    pub fn uart_mem_rx_rd_addr(&mut self) -> UART_MEM_RX_RD_ADDR_W {
-        UART_MEM_RX_RD_ADDR_W { w: self }
+    pub fn mem_rx_rd_addr(&mut self) -> MEM_RX_RD_ADDR_W {
+        MEM_RX_RD_ADDR_W { w: self }
     }
     #[doc = "Bits 13:23 - This register stores the rx mem write address"]
     #[inline(always)]
-    pub fn uart_mem_rx_wr_addr(&mut self) -> UART_MEM_RX_WR_ADDR_W {
-        UART_MEM_RX_WR_ADDR_W { w: self }
+    pub fn mem_rx_wr_addr(&mut self) -> MEM_RX_WR_ADDR_W {
+        MEM_RX_WR_ADDR_W { w: self }
     }
 }

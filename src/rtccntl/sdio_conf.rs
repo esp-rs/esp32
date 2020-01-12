@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SDIO_CONF {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_XPD_SDIO_REG`"]
-pub type RTC_CNTL_XPD_SDIO_REG_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_XPD_SDIO_REG`"]
-pub struct RTC_CNTL_XPD_SDIO_REG_W<'a> {
+#[doc = "Reader of field `XPD_SDIO_REG`"]
+pub type XPD_SDIO_REG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `XPD_SDIO_REG`"]
+pub struct XPD_SDIO_REG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_XPD_SDIO_REG_W<'a> {
+impl<'a> XPD_SDIO_REG_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_XPD_SDIO_REG_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_DREFH_SDIO`"]
-pub type RTC_CNTL_DREFH_SDIO_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_DREFH_SDIO`"]
-pub struct RTC_CNTL_DREFH_SDIO_W<'a> {
+#[doc = "Reader of field `DREFH_SDIO`"]
+pub type DREFH_SDIO_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DREFH_SDIO`"]
+pub struct DREFH_SDIO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_DREFH_SDIO_W<'a> {
+impl<'a> DREFH_SDIO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> RTC_CNTL_DREFH_SDIO_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_DREFM_SDIO`"]
-pub type RTC_CNTL_DREFM_SDIO_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_DREFM_SDIO`"]
-pub struct RTC_CNTL_DREFM_SDIO_W<'a> {
+#[doc = "Reader of field `DREFM_SDIO`"]
+pub type DREFM_SDIO_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DREFM_SDIO`"]
+pub struct DREFM_SDIO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_DREFM_SDIO_W<'a> {
+impl<'a> DREFM_SDIO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -62,13 +62,13 @@ impl<'a> RTC_CNTL_DREFM_SDIO_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_DREFL_SDIO`"]
-pub type RTC_CNTL_DREFL_SDIO_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_DREFL_SDIO`"]
-pub struct RTC_CNTL_DREFL_SDIO_W<'a> {
+#[doc = "Reader of field `DREFL_SDIO`"]
+pub type DREFL_SDIO_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DREFL_SDIO`"]
+pub struct DREFL_SDIO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_DREFL_SDIO_W<'a> {
+impl<'a> DREFL_SDIO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -76,13 +76,13 @@ impl<'a> RTC_CNTL_DREFL_SDIO_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_REG1P8_READY`"]
-pub type RTC_CNTL_REG1P8_READY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_REG1P8_READY`"]
-pub struct RTC_CNTL_REG1P8_READY_W<'a> {
+#[doc = "Reader of field `REG1P8_READY`"]
+pub type REG1P8_READY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `REG1P8_READY`"]
+pub struct REG1P8_READY_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_REG1P8_READY_W<'a> {
+impl<'a> REG1P8_READY_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -100,13 +100,13 @@ impl<'a> RTC_CNTL_REG1P8_READY_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SDIO_TIEH`"]
-pub type RTC_CNTL_SDIO_TIEH_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SDIO_TIEH`"]
-pub struct RTC_CNTL_SDIO_TIEH_W<'a> {
+#[doc = "Reader of field `SDIO_TIEH`"]
+pub type SDIO_TIEH_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SDIO_TIEH`"]
+pub struct SDIO_TIEH_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SDIO_TIEH_W<'a> {
+impl<'a> SDIO_TIEH_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -124,13 +124,13 @@ impl<'a> RTC_CNTL_SDIO_TIEH_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SDIO_FORCE`"]
-pub type RTC_CNTL_SDIO_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SDIO_FORCE`"]
-pub struct RTC_CNTL_SDIO_FORCE_W<'a> {
+#[doc = "Reader of field `SDIO_FORCE`"]
+pub type SDIO_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SDIO_FORCE`"]
+pub struct SDIO_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SDIO_FORCE_W<'a> {
+impl<'a> SDIO_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -148,13 +148,13 @@ impl<'a> RTC_CNTL_SDIO_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SDIO_PD_EN`"]
-pub type RTC_CNTL_SDIO_PD_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SDIO_PD_EN`"]
-pub struct RTC_CNTL_SDIO_PD_EN_W<'a> {
+#[doc = "Reader of field `SDIO_PD_EN`"]
+pub type SDIO_PD_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SDIO_PD_EN`"]
+pub struct SDIO_PD_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SDIO_PD_EN_W<'a> {
+impl<'a> SDIO_PD_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -175,84 +175,84 @@ impl<'a> RTC_CNTL_SDIO_PD_EN_W<'a> {
 impl R {
     #[doc = "Bit 31 - SW option for XPD_SDIO_REG. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_xpd_sdio_reg(&self) -> RTC_CNTL_XPD_SDIO_REG_R {
-        RTC_CNTL_XPD_SDIO_REG_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn xpd_sdio_reg(&self) -> XPD_SDIO_REG_R {
+        XPD_SDIO_REG_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bits 29:30 - SW option for DREFH_SDIO. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_drefh_sdio(&self) -> RTC_CNTL_DREFH_SDIO_R {
-        RTC_CNTL_DREFH_SDIO_R::new(((self.bits >> 29) & 0x03) as u8)
+    pub fn drefh_sdio(&self) -> DREFH_SDIO_R {
+        DREFH_SDIO_R::new(((self.bits >> 29) & 0x03) as u8)
     }
     #[doc = "Bits 27:28 - SW option for DREFM_SDIO. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_drefm_sdio(&self) -> RTC_CNTL_DREFM_SDIO_R {
-        RTC_CNTL_DREFM_SDIO_R::new(((self.bits >> 27) & 0x03) as u8)
+    pub fn drefm_sdio(&self) -> DREFM_SDIO_R {
+        DREFM_SDIO_R::new(((self.bits >> 27) & 0x03) as u8)
     }
     #[doc = "Bits 25:26 - SW option for DREFL_SDIO. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_drefl_sdio(&self) -> RTC_CNTL_DREFL_SDIO_R {
-        RTC_CNTL_DREFL_SDIO_R::new(((self.bits >> 25) & 0x03) as u8)
+    pub fn drefl_sdio(&self) -> DREFL_SDIO_R {
+        DREFL_SDIO_R::new(((self.bits >> 25) & 0x03) as u8)
     }
     #[doc = "Bit 24 - read only register for REG1P8_READY"]
     #[inline(always)]
-    pub fn rtc_cntl_reg1p8_ready(&self) -> RTC_CNTL_REG1P8_READY_R {
-        RTC_CNTL_REG1P8_READY_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn reg1p8_ready(&self) -> REG1P8_READY_R {
+        REG1P8_READY_R::new(((self.bits >> 24) & 0x01) != 0)
     }
     #[doc = "Bit 23 - SW option for SDIO_TIEH. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_tieh(&self) -> RTC_CNTL_SDIO_TIEH_R {
-        RTC_CNTL_SDIO_TIEH_R::new(((self.bits >> 23) & 0x01) != 0)
+    pub fn sdio_tieh(&self) -> SDIO_TIEH_R {
+        SDIO_TIEH_R::new(((self.bits >> 23) & 0x01) != 0)
     }
     #[doc = "Bit 22 - 1: use SW option to control SDIO_REG 0: use state machine"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_force(&self) -> RTC_CNTL_SDIO_FORCE_R {
-        RTC_CNTL_SDIO_FORCE_R::new(((self.bits >> 22) & 0x01) != 0)
+    pub fn sdio_force(&self) -> SDIO_FORCE_R {
+        SDIO_FORCE_R::new(((self.bits >> 22) & 0x01) != 0)
     }
     #[doc = "Bit 21 - power down SDIO_REG in sleep. Only active when reg_sdio_force = 0"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_pd_en(&self) -> RTC_CNTL_SDIO_PD_EN_R {
-        RTC_CNTL_SDIO_PD_EN_R::new(((self.bits >> 21) & 0x01) != 0)
+    pub fn sdio_pd_en(&self) -> SDIO_PD_EN_R {
+        SDIO_PD_EN_R::new(((self.bits >> 21) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31 - SW option for XPD_SDIO_REG. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_xpd_sdio_reg(&mut self) -> RTC_CNTL_XPD_SDIO_REG_W {
-        RTC_CNTL_XPD_SDIO_REG_W { w: self }
+    pub fn xpd_sdio_reg(&mut self) -> XPD_SDIO_REG_W {
+        XPD_SDIO_REG_W { w: self }
     }
     #[doc = "Bits 29:30 - SW option for DREFH_SDIO. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_drefh_sdio(&mut self) -> RTC_CNTL_DREFH_SDIO_W {
-        RTC_CNTL_DREFH_SDIO_W { w: self }
+    pub fn drefh_sdio(&mut self) -> DREFH_SDIO_W {
+        DREFH_SDIO_W { w: self }
     }
     #[doc = "Bits 27:28 - SW option for DREFM_SDIO. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_drefm_sdio(&mut self) -> RTC_CNTL_DREFM_SDIO_W {
-        RTC_CNTL_DREFM_SDIO_W { w: self }
+    pub fn drefm_sdio(&mut self) -> DREFM_SDIO_W {
+        DREFM_SDIO_W { w: self }
     }
     #[doc = "Bits 25:26 - SW option for DREFL_SDIO. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_drefl_sdio(&mut self) -> RTC_CNTL_DREFL_SDIO_W {
-        RTC_CNTL_DREFL_SDIO_W { w: self }
+    pub fn drefl_sdio(&mut self) -> DREFL_SDIO_W {
+        DREFL_SDIO_W { w: self }
     }
     #[doc = "Bit 24 - read only register for REG1P8_READY"]
     #[inline(always)]
-    pub fn rtc_cntl_reg1p8_ready(&mut self) -> RTC_CNTL_REG1P8_READY_W {
-        RTC_CNTL_REG1P8_READY_W { w: self }
+    pub fn reg1p8_ready(&mut self) -> REG1P8_READY_W {
+        REG1P8_READY_W { w: self }
     }
     #[doc = "Bit 23 - SW option for SDIO_TIEH. Only active when reg_sdio_force = 1"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_tieh(&mut self) -> RTC_CNTL_SDIO_TIEH_W {
-        RTC_CNTL_SDIO_TIEH_W { w: self }
+    pub fn sdio_tieh(&mut self) -> SDIO_TIEH_W {
+        SDIO_TIEH_W { w: self }
     }
     #[doc = "Bit 22 - 1: use SW option to control SDIO_REG 0: use state machine"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_force(&mut self) -> RTC_CNTL_SDIO_FORCE_W {
-        RTC_CNTL_SDIO_FORCE_W { w: self }
+    pub fn sdio_force(&mut self) -> SDIO_FORCE_W {
+        SDIO_FORCE_W { w: self }
     }
     #[doc = "Bit 21 - power down SDIO_REG in sleep. Only active when reg_sdio_force = 0"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_pd_en(&mut self) -> RTC_CNTL_SDIO_PD_EN_W {
-        RTC_CNTL_SDIO_PD_EN_W { w: self }
+    pub fn sdio_pd_en(&mut self) -> SDIO_PD_EN_W {
+        SDIO_PD_EN_W { w: self }
     }
 }

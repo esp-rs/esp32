@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_INTRUSION_STATUS {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_INTRUSION_RECORD`"]
-pub type DPORT_PRO_INTRUSION_RECORD_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_PRO_INTRUSION_RECORD`"]
-pub struct DPORT_PRO_INTRUSION_RECORD_W<'a> {
+#[doc = "Reader of field `PRO_INTRUSION_RECORD`"]
+pub type PRO_INTRUSION_RECORD_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PRO_INTRUSION_RECORD`"]
+pub struct PRO_INTRUSION_RECORD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_INTRUSION_RECORD_W<'a> {
+impl<'a> PRO_INTRUSION_RECORD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PRO_INTRUSION_RECORD_W<'a> {
 impl R {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn dport_pro_intrusion_record(&self) -> DPORT_PRO_INTRUSION_RECORD_R {
-        DPORT_PRO_INTRUSION_RECORD_R::new((self.bits & 0x0f) as u8)
+    pub fn pro_intrusion_record(&self) -> PRO_INTRUSION_RECORD_R {
+        PRO_INTRUSION_RECORD_R::new((self.bits & 0x0f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn dport_pro_intrusion_record(&mut self) -> DPORT_PRO_INTRUSION_RECORD_W {
-        DPORT_PRO_INTRUSION_RECORD_W { w: self }
+    pub fn pro_intrusion_record(&mut self) -> PRO_INTRUSION_RECORD_W {
+        PRO_INTRUSION_RECORD_W { w: self }
     }
 }

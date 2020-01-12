@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMA_IN_ERR_EOF_DES_ADDR {
         0
     }
 }
-#[doc = "Reader of field `UHCI_IN_ERR_EOF_DES_ADDR`"]
-pub type UHCI_IN_ERR_EOF_DES_ADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UHCI_IN_ERR_EOF_DES_ADDR`"]
-pub struct UHCI_IN_ERR_EOF_DES_ADDR_W<'a> {
+#[doc = "Reader of field `IN_ERR_EOF_DES_ADDR`"]
+pub type IN_ERR_EOF_DES_ADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `IN_ERR_EOF_DES_ADDR`"]
+pub struct IN_ERR_EOF_DES_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_IN_ERR_EOF_DES_ADDR_W<'a> {
+impl<'a> IN_ERR_EOF_DES_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UHCI_IN_ERR_EOF_DES_ADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - This register stores the address of in link descriptor when there are some errors in this descriptor."]
     #[inline(always)]
-    pub fn uhci_in_err_eof_des_addr(&self) -> UHCI_IN_ERR_EOF_DES_ADDR_R {
-        UHCI_IN_ERR_EOF_DES_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn in_err_eof_des_addr(&self) -> IN_ERR_EOF_DES_ADDR_R {
+        IN_ERR_EOF_DES_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - This register stores the address of in link descriptor when there are some errors in this descriptor."]
     #[inline(always)]
-    pub fn uhci_in_err_eof_des_addr(&mut self) -> UHCI_IN_ERR_EOF_DES_ADDR_W {
-        UHCI_IN_ERR_EOF_DES_ADDR_W { w: self }
+    pub fn in_err_eof_des_addr(&mut self) -> IN_ERR_EOF_DES_ADDR_W {
+        IN_ERR_EOF_DES_ADDR_W { w: self }
     }
 }

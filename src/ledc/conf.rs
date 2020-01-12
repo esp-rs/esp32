@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CONF {
         0
     }
 }
-#[doc = "Reader of field `LEDC_APB_CLK_SEL`"]
-pub type LEDC_APB_CLK_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LEDC_APB_CLK_SEL`"]
-pub struct LEDC_APB_CLK_SEL_W<'a> {
+#[doc = "Reader of field `APB_CLK_SEL`"]
+pub type APB_CLK_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APB_CLK_SEL`"]
+pub struct APB_CLK_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_APB_CLK_SEL_W<'a> {
+impl<'a> APB_CLK_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> LEDC_APB_CLK_SEL_W<'a> {
 impl R {
     #[doc = "Bit 0 - This bit is used to set the frequency of slow_clk. 1'b1:80mhz 1'b0:8mhz"]
     #[inline(always)]
-    pub fn ledc_apb_clk_sel(&self) -> LEDC_APB_CLK_SEL_R {
-        LEDC_APB_CLK_SEL_R::new((self.bits & 0x01) != 0)
+    pub fn apb_clk_sel(&self) -> APB_CLK_SEL_R {
+        APB_CLK_SEL_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0 - This bit is used to set the frequency of slow_clk. 1'b1:80mhz 1'b0:8mhz"]
     #[inline(always)]
-    pub fn ledc_apb_clk_sel(&mut self) -> LEDC_APB_CLK_SEL_W {
-        LEDC_APB_CLK_SEL_W { w: self }
+    pub fn apb_clk_sel(&mut self) -> APB_CLK_SEL_W {
+        APB_CLK_SEL_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::_1_RXLINK_DSCR_BF1 {
         0
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RXLINK_DSCR_BF1`"]
-pub type SLC_SLC1_RXLINK_DSCR_BF1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SLC_SLC1_RXLINK_DSCR_BF1`"]
-pub struct SLC_SLC1_RXLINK_DSCR_BF1_W<'a> {
+#[doc = "Reader of field `SLC1_RXLINK_DSCR_BF1`"]
+pub type SLC1_RXLINK_DSCR_BF1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SLC1_RXLINK_DSCR_BF1`"]
+pub struct SLC1_RXLINK_DSCR_BF1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RXLINK_DSCR_BF1_W<'a> {
+impl<'a> SLC1_RXLINK_DSCR_BF1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SLC_SLC1_RXLINK_DSCR_BF1_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_slc1_rxlink_dscr_bf1(&self) -> SLC_SLC1_RXLINK_DSCR_BF1_R {
-        SLC_SLC1_RXLINK_DSCR_BF1_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn slc1_rxlink_dscr_bf1(&self) -> SLC1_RXLINK_DSCR_BF1_R {
+        SLC1_RXLINK_DSCR_BF1_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_slc1_rxlink_dscr_bf1(&mut self) -> SLC_SLC1_RXLINK_DSCR_BF1_W {
-        SLC_SLC1_RXLINK_DSCR_BF1_W { w: self }
+    pub fn slc1_rxlink_dscr_bf1(&mut self) -> SLC1_RXLINK_DSCR_BF1_W {
+        SLC1_RXLINK_DSCR_BF1_W { w: self }
     }
 }

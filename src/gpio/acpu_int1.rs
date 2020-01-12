@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ACPU_INT1 {
         0
     }
 }
-#[doc = "Reader of field `GPIO_APPCPU_INT_H`"]
-pub type GPIO_APPCPU_INT_H_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_APPCPU_INT_H`"]
-pub struct GPIO_APPCPU_INT_H_W<'a> {
+#[doc = "Reader of field `APPCPU_INT_H`"]
+pub type APPCPU_INT_H_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `APPCPU_INT_H`"]
+pub struct APPCPU_INT_H_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_APPCPU_INT_H_W<'a> {
+impl<'a> APPCPU_INT_H_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_APPCPU_INT_H_W<'a> {
 impl R {
     #[doc = "Bits 0:7 - GPIO32~39 APP CPU interrupt status"]
     #[inline(always)]
-    pub fn gpio_appcpu_int_h(&self) -> GPIO_APPCPU_INT_H_R {
-        GPIO_APPCPU_INT_H_R::new((self.bits & 0xff) as u8)
+    pub fn appcpu_int_h(&self) -> APPCPU_INT_H_R {
+        APPCPU_INT_H_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:7 - GPIO32~39 APP CPU interrupt status"]
     #[inline(always)]
-    pub fn gpio_appcpu_int_h(&mut self) -> GPIO_APPCPU_INT_H_W {
-        GPIO_APPCPU_INT_H_W { w: self }
+    pub fn appcpu_int_h(&mut self) -> APPCPU_INT_H_W {
+        APPCPU_INT_H_W { w: self }
     }
 }

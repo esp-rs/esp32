@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMA_OUT_LINK {
         0
     }
 }
-#[doc = "Reader of field `SPI_OUTLINK_RESTART`"]
-pub type SPI_OUTLINK_RESTART_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUTLINK_RESTART`"]
-pub struct SPI_OUTLINK_RESTART_W<'a> {
+#[doc = "Reader of field `OUTLINK_RESTART`"]
+pub type OUTLINK_RESTART_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUTLINK_RESTART`"]
+pub struct OUTLINK_RESTART_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUTLINK_RESTART_W<'a> {
+impl<'a> OUTLINK_RESTART_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SPI_OUTLINK_RESTART_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUTLINK_START`"]
-pub type SPI_OUTLINK_START_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUTLINK_START`"]
-pub struct SPI_OUTLINK_START_W<'a> {
+#[doc = "Reader of field `OUTLINK_START`"]
+pub type OUTLINK_START_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUTLINK_START`"]
+pub struct OUTLINK_START_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUTLINK_START_W<'a> {
+impl<'a> OUTLINK_START_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SPI_OUTLINK_START_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUTLINK_STOP`"]
-pub type SPI_OUTLINK_STOP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUTLINK_STOP`"]
-pub struct SPI_OUTLINK_STOP_W<'a> {
+#[doc = "Reader of field `OUTLINK_STOP`"]
+pub type OUTLINK_STOP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUTLINK_STOP`"]
+pub struct OUTLINK_STOP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUTLINK_STOP_W<'a> {
+impl<'a> OUTLINK_STOP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> SPI_OUTLINK_STOP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUTLINK_ADDR`"]
-pub type SPI_OUTLINK_ADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_OUTLINK_ADDR`"]
-pub struct SPI_OUTLINK_ADDR_W<'a> {
+#[doc = "Reader of field `OUTLINK_ADDR`"]
+pub type OUTLINK_ADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `OUTLINK_ADDR`"]
+pub struct OUTLINK_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUTLINK_ADDR_W<'a> {
+impl<'a> OUTLINK_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -99,44 +99,44 @@ impl<'a> SPI_OUTLINK_ADDR_W<'a> {
 impl R {
     #[doc = "Bit 30 - Set the bit to mount on new outlink descriptors."]
     #[inline(always)]
-    pub fn spi_outlink_restart(&self) -> SPI_OUTLINK_RESTART_R {
-        SPI_OUTLINK_RESTART_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn outlink_restart(&self) -> OUTLINK_RESTART_R {
+        OUTLINK_RESTART_R::new(((self.bits >> 30) & 0x01) != 0)
     }
     #[doc = "Bit 29 - Set the bit to start to use outlink descriptor."]
     #[inline(always)]
-    pub fn spi_outlink_start(&self) -> SPI_OUTLINK_START_R {
-        SPI_OUTLINK_START_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn outlink_start(&self) -> OUTLINK_START_R {
+        OUTLINK_START_R::new(((self.bits >> 29) & 0x01) != 0)
     }
     #[doc = "Bit 28 - Set the bit to stop to use outlink descriptor."]
     #[inline(always)]
-    pub fn spi_outlink_stop(&self) -> SPI_OUTLINK_STOP_R {
-        SPI_OUTLINK_STOP_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn outlink_stop(&self) -> OUTLINK_STOP_R {
+        OUTLINK_STOP_R::new(((self.bits >> 28) & 0x01) != 0)
     }
     #[doc = "Bits 0:19 - The address of the first outlink descriptor."]
     #[inline(always)]
-    pub fn spi_outlink_addr(&self) -> SPI_OUTLINK_ADDR_R {
-        SPI_OUTLINK_ADDR_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn outlink_addr(&self) -> OUTLINK_ADDR_R {
+        OUTLINK_ADDR_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bit 30 - Set the bit to mount on new outlink descriptors."]
     #[inline(always)]
-    pub fn spi_outlink_restart(&mut self) -> SPI_OUTLINK_RESTART_W {
-        SPI_OUTLINK_RESTART_W { w: self }
+    pub fn outlink_restart(&mut self) -> OUTLINK_RESTART_W {
+        OUTLINK_RESTART_W { w: self }
     }
     #[doc = "Bit 29 - Set the bit to start to use outlink descriptor."]
     #[inline(always)]
-    pub fn spi_outlink_start(&mut self) -> SPI_OUTLINK_START_W {
-        SPI_OUTLINK_START_W { w: self }
+    pub fn outlink_start(&mut self) -> OUTLINK_START_W {
+        OUTLINK_START_W { w: self }
     }
     #[doc = "Bit 28 - Set the bit to stop to use outlink descriptor."]
     #[inline(always)]
-    pub fn spi_outlink_stop(&mut self) -> SPI_OUTLINK_STOP_W {
-        SPI_OUTLINK_STOP_W { w: self }
+    pub fn outlink_stop(&mut self) -> OUTLINK_STOP_W {
+        OUTLINK_STOP_W { w: self }
     }
     #[doc = "Bits 0:19 - The address of the first outlink descriptor."]
     #[inline(always)]
-    pub fn spi_outlink_addr(&mut self) -> SPI_OUTLINK_ADDR_W {
-        SPI_OUTLINK_ADDR_W { w: self }
+    pub fn outlink_addr(&mut self) -> OUTLINK_ADDR_W {
+        OUTLINK_ADDR_W { w: self }
     }
 }

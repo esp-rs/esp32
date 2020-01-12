@@ -10,13 +10,13 @@ impl crate::ResetValue for super::BLK0_WDATA0 {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_FLASH_CRYPT_CNT`"]
-pub type EFUSE_FLASH_CRYPT_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_FLASH_CRYPT_CNT`"]
-pub struct EFUSE_FLASH_CRYPT_CNT_W<'a> {
+#[doc = "Reader of field `FLASH_CRYPT_CNT`"]
+pub type FLASH_CRYPT_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `FLASH_CRYPT_CNT`"]
+pub struct FLASH_CRYPT_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_FLASH_CRYPT_CNT_W<'a> {
+impl<'a> FLASH_CRYPT_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> EFUSE_FLASH_CRYPT_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_RD_DIS`"]
-pub type EFUSE_RD_DIS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_RD_DIS`"]
-pub struct EFUSE_RD_DIS_W<'a> {
+#[doc = "Reader of field `RD_DIS`"]
+pub type RD_DIS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RD_DIS`"]
+pub struct RD_DIS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_RD_DIS_W<'a> {
+impl<'a> RD_DIS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> EFUSE_RD_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_WR_DIS`"]
-pub type EFUSE_WR_DIS_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `EFUSE_WR_DIS`"]
-pub struct EFUSE_WR_DIS_W<'a> {
+#[doc = "Reader of field `WR_DIS`"]
+pub type WR_DIS_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `WR_DIS`"]
+pub struct WR_DIS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_WR_DIS_W<'a> {
+impl<'a> WR_DIS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -55,34 +55,34 @@ impl<'a> EFUSE_WR_DIS_W<'a> {
 impl R {
     #[doc = "Bits 20:26 - program for flash_crypt_cnt"]
     #[inline(always)]
-    pub fn efuse_flash_crypt_cnt(&self) -> EFUSE_FLASH_CRYPT_CNT_R {
-        EFUSE_FLASH_CRYPT_CNT_R::new(((self.bits >> 20) & 0x7f) as u8)
+    pub fn flash_crypt_cnt(&self) -> FLASH_CRYPT_CNT_R {
+        FLASH_CRYPT_CNT_R::new(((self.bits >> 20) & 0x7f) as u8)
     }
     #[doc = "Bits 16:19 - program for efuse_rd_disable"]
     #[inline(always)]
-    pub fn efuse_rd_dis(&self) -> EFUSE_RD_DIS_R {
-        EFUSE_RD_DIS_R::new(((self.bits >> 16) & 0x0f) as u8)
+    pub fn rd_dis(&self) -> RD_DIS_R {
+        RD_DIS_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
     #[doc = "Bits 0:15 - program for efuse_wr_disable"]
     #[inline(always)]
-    pub fn efuse_wr_dis(&self) -> EFUSE_WR_DIS_R {
-        EFUSE_WR_DIS_R::new((self.bits & 0xffff) as u16)
+    pub fn wr_dis(&self) -> WR_DIS_R {
+        WR_DIS_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 20:26 - program for flash_crypt_cnt"]
     #[inline(always)]
-    pub fn efuse_flash_crypt_cnt(&mut self) -> EFUSE_FLASH_CRYPT_CNT_W {
-        EFUSE_FLASH_CRYPT_CNT_W { w: self }
+    pub fn flash_crypt_cnt(&mut self) -> FLASH_CRYPT_CNT_W {
+        FLASH_CRYPT_CNT_W { w: self }
     }
     #[doc = "Bits 16:19 - program for efuse_rd_disable"]
     #[inline(always)]
-    pub fn efuse_rd_dis(&mut self) -> EFUSE_RD_DIS_W {
-        EFUSE_RD_DIS_W { w: self }
+    pub fn rd_dis(&mut self) -> RD_DIS_W {
+        RD_DIS_W { w: self }
     }
     #[doc = "Bits 0:15 - program for efuse_wr_disable"]
     #[inline(always)]
-    pub fn efuse_wr_dis(&mut self) -> EFUSE_WR_DIS_W {
-        EFUSE_WR_DIS_W { w: self }
+    pub fn wr_dis(&mut self) -> WR_DIS_W {
+        WR_DIS_W { w: self }
     }
 }

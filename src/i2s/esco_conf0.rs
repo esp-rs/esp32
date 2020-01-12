@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ESCO_CONF0 {
         0
     }
 }
-#[doc = "Reader of field `I2S_PLC2DMA_EN`"]
-pub type I2S_PLC2DMA_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_PLC2DMA_EN`"]
-pub struct I2S_PLC2DMA_EN_W<'a> {
+#[doc = "Reader of field `PLC2DMA_EN`"]
+pub type PLC2DMA_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PLC2DMA_EN`"]
+pub struct PLC2DMA_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_PLC2DMA_EN_W<'a> {
+impl<'a> PLC2DMA_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2S_PLC2DMA_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_PLC_EN`"]
-pub type I2S_PLC_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_PLC_EN`"]
-pub struct I2S_PLC_EN_W<'a> {
+#[doc = "Reader of field `PLC_EN`"]
+pub type PLC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PLC_EN`"]
+pub struct PLC_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_PLC_EN_W<'a> {
+impl<'a> PLC_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> I2S_PLC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_CVSD_DEC_RESET`"]
-pub type I2S_CVSD_DEC_RESET_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_CVSD_DEC_RESET`"]
-pub struct I2S_CVSD_DEC_RESET_W<'a> {
+#[doc = "Reader of field `CVSD_DEC_RESET`"]
+pub type CVSD_DEC_RESET_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CVSD_DEC_RESET`"]
+pub struct CVSD_DEC_RESET_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_CVSD_DEC_RESET_W<'a> {
+impl<'a> CVSD_DEC_RESET_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> I2S_CVSD_DEC_RESET_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_CVSD_DEC_START`"]
-pub type I2S_CVSD_DEC_START_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_CVSD_DEC_START`"]
-pub struct I2S_CVSD_DEC_START_W<'a> {
+#[doc = "Reader of field `CVSD_DEC_START`"]
+pub type CVSD_DEC_START_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CVSD_DEC_START`"]
+pub struct CVSD_DEC_START_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_CVSD_DEC_START_W<'a> {
+impl<'a> CVSD_DEC_START_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> I2S_CVSD_DEC_START_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_ESCO_CVSD_INF_EN`"]
-pub type I2S_ESCO_CVSD_INF_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_ESCO_CVSD_INF_EN`"]
-pub struct I2S_ESCO_CVSD_INF_EN_W<'a> {
+#[doc = "Reader of field `ESCO_CVSD_INF_EN`"]
+pub type ESCO_CVSD_INF_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ESCO_CVSD_INF_EN`"]
+pub struct ESCO_CVSD_INF_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_ESCO_CVSD_INF_EN_W<'a> {
+impl<'a> ESCO_CVSD_INF_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> I2S_ESCO_CVSD_INF_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_ESCO_CVSD_PACK_LEN_8K`"]
-pub type I2S_ESCO_CVSD_PACK_LEN_8K_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_ESCO_CVSD_PACK_LEN_8K`"]
-pub struct I2S_ESCO_CVSD_PACK_LEN_8K_W<'a> {
+#[doc = "Reader of field `ESCO_CVSD_PACK_LEN_8K`"]
+pub type ESCO_CVSD_PACK_LEN_8K_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ESCO_CVSD_PACK_LEN_8K`"]
+pub struct ESCO_CVSD_PACK_LEN_8K_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_ESCO_CVSD_PACK_LEN_8K_W<'a> {
+impl<'a> ESCO_CVSD_PACK_LEN_8K_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -144,13 +144,13 @@ impl<'a> I2S_ESCO_CVSD_PACK_LEN_8K_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_ESCO_CVSD_DEC_PACK_ERR`"]
-pub type I2S_ESCO_CVSD_DEC_PACK_ERR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_ESCO_CVSD_DEC_PACK_ERR`"]
-pub struct I2S_ESCO_CVSD_DEC_PACK_ERR_W<'a> {
+#[doc = "Reader of field `ESCO_CVSD_DEC_PACK_ERR`"]
+pub type ESCO_CVSD_DEC_PACK_ERR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ESCO_CVSD_DEC_PACK_ERR`"]
+pub struct ESCO_CVSD_DEC_PACK_ERR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_ESCO_CVSD_DEC_PACK_ERR_W<'a> {
+impl<'a> ESCO_CVSD_DEC_PACK_ERR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -168,13 +168,13 @@ impl<'a> I2S_ESCO_CVSD_DEC_PACK_ERR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_ESCO_CHAN_MOD`"]
-pub type I2S_ESCO_CHAN_MOD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_ESCO_CHAN_MOD`"]
-pub struct I2S_ESCO_CHAN_MOD_W<'a> {
+#[doc = "Reader of field `ESCO_CHAN_MOD`"]
+pub type ESCO_CHAN_MOD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ESCO_CHAN_MOD`"]
+pub struct ESCO_CHAN_MOD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_ESCO_CHAN_MOD_W<'a> {
+impl<'a> ESCO_CHAN_MOD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -192,13 +192,13 @@ impl<'a> I2S_ESCO_CHAN_MOD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_ESCO_EN`"]
-pub type I2S_ESCO_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_ESCO_EN`"]
-pub struct I2S_ESCO_EN_W<'a> {
+#[doc = "Reader of field `ESCO_EN`"]
+pub type ESCO_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ESCO_EN`"]
+pub struct ESCO_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_ESCO_EN_W<'a> {
+impl<'a> ESCO_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -219,94 +219,94 @@ impl<'a> I2S_ESCO_EN_W<'a> {
 impl R {
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn i2s_plc2dma_en(&self) -> I2S_PLC2DMA_EN_R {
-        I2S_PLC2DMA_EN_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn plc2dma_en(&self) -> PLC2DMA_EN_R {
+        PLC2DMA_EN_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_plc_en(&self) -> I2S_PLC_EN_R {
-        I2S_PLC_EN_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn plc_en(&self) -> PLC_EN_R {
+        PLC_EN_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn i2s_cvsd_dec_reset(&self) -> I2S_CVSD_DEC_RESET_R {
-        I2S_CVSD_DEC_RESET_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn cvsd_dec_reset(&self) -> CVSD_DEC_RESET_R {
+        CVSD_DEC_RESET_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn i2s_cvsd_dec_start(&self) -> I2S_CVSD_DEC_START_R {
-        I2S_CVSD_DEC_START_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn cvsd_dec_start(&self) -> CVSD_DEC_START_R {
+        CVSD_DEC_START_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn i2s_esco_cvsd_inf_en(&self) -> I2S_ESCO_CVSD_INF_EN_R {
-        I2S_ESCO_CVSD_INF_EN_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn esco_cvsd_inf_en(&self) -> ESCO_CVSD_INF_EN_R {
+        ESCO_CVSD_INF_EN_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bits 3:7"]
     #[inline(always)]
-    pub fn i2s_esco_cvsd_pack_len_8k(&self) -> I2S_ESCO_CVSD_PACK_LEN_8K_R {
-        I2S_ESCO_CVSD_PACK_LEN_8K_R::new(((self.bits >> 3) & 0x1f) as u8)
+    pub fn esco_cvsd_pack_len_8k(&self) -> ESCO_CVSD_PACK_LEN_8K_R {
+        ESCO_CVSD_PACK_LEN_8K_R::new(((self.bits >> 3) & 0x1f) as u8)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_esco_cvsd_dec_pack_err(&self) -> I2S_ESCO_CVSD_DEC_PACK_ERR_R {
-        I2S_ESCO_CVSD_DEC_PACK_ERR_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn esco_cvsd_dec_pack_err(&self) -> ESCO_CVSD_DEC_PACK_ERR_R {
+        ESCO_CVSD_DEC_PACK_ERR_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_esco_chan_mod(&self) -> I2S_ESCO_CHAN_MOD_R {
-        I2S_ESCO_CHAN_MOD_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn esco_chan_mod(&self) -> ESCO_CHAN_MOD_R {
+        ESCO_CHAN_MOD_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_esco_en(&self) -> I2S_ESCO_EN_R {
-        I2S_ESCO_EN_R::new((self.bits & 0x01) != 0)
+    pub fn esco_en(&self) -> ESCO_EN_R {
+        ESCO_EN_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn i2s_plc2dma_en(&mut self) -> I2S_PLC2DMA_EN_W {
-        I2S_PLC2DMA_EN_W { w: self }
+    pub fn plc2dma_en(&mut self) -> PLC2DMA_EN_W {
+        PLC2DMA_EN_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_plc_en(&mut self) -> I2S_PLC_EN_W {
-        I2S_PLC_EN_W { w: self }
+    pub fn plc_en(&mut self) -> PLC_EN_W {
+        PLC_EN_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn i2s_cvsd_dec_reset(&mut self) -> I2S_CVSD_DEC_RESET_W {
-        I2S_CVSD_DEC_RESET_W { w: self }
+    pub fn cvsd_dec_reset(&mut self) -> CVSD_DEC_RESET_W {
+        CVSD_DEC_RESET_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn i2s_cvsd_dec_start(&mut self) -> I2S_CVSD_DEC_START_W {
-        I2S_CVSD_DEC_START_W { w: self }
+    pub fn cvsd_dec_start(&mut self) -> CVSD_DEC_START_W {
+        CVSD_DEC_START_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn i2s_esco_cvsd_inf_en(&mut self) -> I2S_ESCO_CVSD_INF_EN_W {
-        I2S_ESCO_CVSD_INF_EN_W { w: self }
+    pub fn esco_cvsd_inf_en(&mut self) -> ESCO_CVSD_INF_EN_W {
+        ESCO_CVSD_INF_EN_W { w: self }
     }
     #[doc = "Bits 3:7"]
     #[inline(always)]
-    pub fn i2s_esco_cvsd_pack_len_8k(&mut self) -> I2S_ESCO_CVSD_PACK_LEN_8K_W {
-        I2S_ESCO_CVSD_PACK_LEN_8K_W { w: self }
+    pub fn esco_cvsd_pack_len_8k(&mut self) -> ESCO_CVSD_PACK_LEN_8K_W {
+        ESCO_CVSD_PACK_LEN_8K_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_esco_cvsd_dec_pack_err(&mut self) -> I2S_ESCO_CVSD_DEC_PACK_ERR_W {
-        I2S_ESCO_CVSD_DEC_PACK_ERR_W { w: self }
+    pub fn esco_cvsd_dec_pack_err(&mut self) -> ESCO_CVSD_DEC_PACK_ERR_W {
+        ESCO_CVSD_DEC_PACK_ERR_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_esco_chan_mod(&mut self) -> I2S_ESCO_CHAN_MOD_W {
-        I2S_ESCO_CHAN_MOD_W { w: self }
+    pub fn esco_chan_mod(&mut self) -> ESCO_CHAN_MOD_W {
+        ESCO_CHAN_MOD_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_esco_en(&mut self) -> I2S_ESCO_EN_W {
-        I2S_ESCO_EN_W { w: self }
+    pub fn esco_en(&mut self) -> ESCO_EN_W {
+        ESCO_EN_W { w: self }
     }
 }

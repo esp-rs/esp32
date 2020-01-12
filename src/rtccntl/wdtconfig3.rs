@@ -10,13 +10,13 @@ impl crate::ResetValue for super::WDTCONFIG3 {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_WDT_STG2_HOLD`"]
-pub type RTC_CNTL_WDT_STG2_HOLD_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_CNTL_WDT_STG2_HOLD`"]
-pub struct RTC_CNTL_WDT_STG2_HOLD_W<'a> {
+#[doc = "Reader of field `WDT_STG2_HOLD`"]
+pub type WDT_STG2_HOLD_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `WDT_STG2_HOLD`"]
+pub struct WDT_STG2_HOLD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_WDT_STG2_HOLD_W<'a> {
+impl<'a> WDT_STG2_HOLD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_CNTL_WDT_STG2_HOLD_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn rtc_cntl_wdt_stg2_hold(&self) -> RTC_CNTL_WDT_STG2_HOLD_R {
-        RTC_CNTL_WDT_STG2_HOLD_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn wdt_stg2_hold(&self) -> WDT_STG2_HOLD_R {
+        WDT_STG2_HOLD_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn rtc_cntl_wdt_stg2_hold(&mut self) -> RTC_CNTL_WDT_STG2_HOLD_W {
-        RTC_CNTL_WDT_STG2_HOLD_W { w: self }
+    pub fn wdt_stg2_hold(&mut self) -> WDT_STG2_HOLD_W {
+        WDT_STG2_HOLD_W { w: self }
     }
 }

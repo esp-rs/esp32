@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_I2C_CTRL {
         0
     }
 }
-#[doc = "Reader of field `SENS_SAR_I2C_START_FORCE`"]
-pub type SENS_SAR_I2C_START_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_SAR_I2C_START_FORCE`"]
-pub struct SENS_SAR_I2C_START_FORCE_W<'a> {
+#[doc = "Reader of field `SAR_I2C_START_FORCE`"]
+pub type SAR_I2C_START_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SAR_I2C_START_FORCE`"]
+pub struct SAR_I2C_START_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_SAR_I2C_START_FORCE_W<'a> {
+impl<'a> SAR_I2C_START_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SENS_SAR_I2C_START_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_SAR_I2C_START`"]
-pub type SENS_SAR_I2C_START_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_SAR_I2C_START`"]
-pub struct SENS_SAR_I2C_START_W<'a> {
+#[doc = "Reader of field `SAR_I2C_START`"]
+pub type SAR_I2C_START_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SAR_I2C_START`"]
+pub struct SAR_I2C_START_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_SAR_I2C_START_W<'a> {
+impl<'a> SAR_I2C_START_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SENS_SAR_I2C_START_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_SAR_I2C_CTRL`"]
-pub type SENS_SAR_I2C_CTRL_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SENS_SAR_I2C_CTRL`"]
-pub struct SENS_SAR_I2C_CTRL_W<'a> {
+#[doc = "Reader of field `SAR_I2C_CTRL`"]
+pub type SAR_I2C_CTRL_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SAR_I2C_CTRL`"]
+pub struct SAR_I2C_CTRL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_SAR_I2C_CTRL_W<'a> {
+impl<'a> SAR_I2C_CTRL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -75,34 +75,34 @@ impl<'a> SENS_SAR_I2C_CTRL_W<'a> {
 impl R {
     #[doc = "Bit 29 - 1: I2C started by SW 0: I2C started by FSM"]
     #[inline(always)]
-    pub fn sens_sar_i2c_start_force(&self) -> SENS_SAR_I2C_START_FORCE_R {
-        SENS_SAR_I2C_START_FORCE_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn sar_i2c_start_force(&self) -> SAR_I2C_START_FORCE_R {
+        SAR_I2C_START_FORCE_R::new(((self.bits >> 29) & 0x01) != 0)
     }
     #[doc = "Bit 28 - start I2C only active when reg_sar_i2c_start_force = 1"]
     #[inline(always)]
-    pub fn sens_sar_i2c_start(&self) -> SENS_SAR_I2C_START_R {
-        SENS_SAR_I2C_START_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn sar_i2c_start(&self) -> SAR_I2C_START_R {
+        SAR_I2C_START_R::new(((self.bits >> 28) & 0x01) != 0)
     }
     #[doc = "Bits 0:27 - I2C control data only active when reg_sar_i2c_start_force = 1"]
     #[inline(always)]
-    pub fn sens_sar_i2c_ctrl(&self) -> SENS_SAR_I2C_CTRL_R {
-        SENS_SAR_I2C_CTRL_R::new((self.bits & 0x0fff_ffff) as u32)
+    pub fn sar_i2c_ctrl(&self) -> SAR_I2C_CTRL_R {
+        SAR_I2C_CTRL_R::new((self.bits & 0x0fff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bit 29 - 1: I2C started by SW 0: I2C started by FSM"]
     #[inline(always)]
-    pub fn sens_sar_i2c_start_force(&mut self) -> SENS_SAR_I2C_START_FORCE_W {
-        SENS_SAR_I2C_START_FORCE_W { w: self }
+    pub fn sar_i2c_start_force(&mut self) -> SAR_I2C_START_FORCE_W {
+        SAR_I2C_START_FORCE_W { w: self }
     }
     #[doc = "Bit 28 - start I2C only active when reg_sar_i2c_start_force = 1"]
     #[inline(always)]
-    pub fn sens_sar_i2c_start(&mut self) -> SENS_SAR_I2C_START_W {
-        SENS_SAR_I2C_START_W { w: self }
+    pub fn sar_i2c_start(&mut self) -> SAR_I2C_START_W {
+        SAR_I2C_START_W { w: self }
     }
     #[doc = "Bits 0:27 - I2C control data only active when reg_sar_i2c_start_force = 1"]
     #[inline(always)]
-    pub fn sens_sar_i2c_ctrl(&mut self) -> SENS_SAR_I2C_CTRL_W {
-        SENS_SAR_I2C_CTRL_W { w: self }
+    pub fn sar_i2c_ctrl(&mut self) -> SAR_I2C_CTRL_W {
+        SAR_I2C_CTRL_W { w: self }
     }
 }

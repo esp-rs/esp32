@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PLL_TICK_CONF {
         0
     }
 }
-#[doc = "Reader of field `SYSCON_PLL_TICK_NUM`"]
-pub type SYSCON_PLL_TICK_NUM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SYSCON_PLL_TICK_NUM`"]
-pub struct SYSCON_PLL_TICK_NUM_W<'a> {
+#[doc = "Reader of field `PLL_TICK_NUM`"]
+pub type PLL_TICK_NUM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PLL_TICK_NUM`"]
+pub struct PLL_TICK_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SYSCON_PLL_TICK_NUM_W<'a> {
+impl<'a> PLL_TICK_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SYSCON_PLL_TICK_NUM_W<'a> {
 impl R {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn syscon_pll_tick_num(&self) -> SYSCON_PLL_TICK_NUM_R {
-        SYSCON_PLL_TICK_NUM_R::new((self.bits & 0xff) as u8)
+    pub fn pll_tick_num(&self) -> PLL_TICK_NUM_R {
+        PLL_TICK_NUM_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn syscon_pll_tick_num(&mut self) -> SYSCON_PLL_TICK_NUM_W {
-        SYSCON_PLL_TICK_NUM_W { w: self }
+    pub fn pll_tick_num(&mut self) -> PLL_TICK_NUM_W {
+        PLL_TICK_NUM_W { w: self }
     }
 }

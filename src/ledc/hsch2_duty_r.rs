@@ -10,13 +10,13 @@ impl crate::ResetValue for super::HSCH2_DUTY_R {
         0
     }
 }
-#[doc = "Reader of field `LEDC_DUTY_HSCH2`"]
-pub type LEDC_DUTY_HSCH2_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `LEDC_DUTY_HSCH2`"]
-pub struct LEDC_DUTY_HSCH2_W<'a> {
+#[doc = "Reader of field `DUTY_HSCH2`"]
+pub type DUTY_HSCH2_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `DUTY_HSCH2`"]
+pub struct DUTY_HSCH2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_DUTY_HSCH2_W<'a> {
+impl<'a> DUTY_HSCH2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> LEDC_DUTY_HSCH2_W<'a> {
 impl R {
     #[doc = "Bits 0:24 - This register represents the current duty of the output signal for high speed channel2."]
     #[inline(always)]
-    pub fn ledc_duty_hsch2(&self) -> LEDC_DUTY_HSCH2_R {
-        LEDC_DUTY_HSCH2_R::new((self.bits & 0x01ff_ffff) as u32)
+    pub fn duty_hsch2(&self) -> DUTY_HSCH2_R {
+        DUTY_HSCH2_R::new((self.bits & 0x01ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:24 - This register represents the current duty of the output signal for high speed channel2."]
     #[inline(always)]
-    pub fn ledc_duty_hsch2(&mut self) -> LEDC_DUTY_HSCH2_W {
-        LEDC_DUTY_HSCH2_W { w: self }
+    pub fn duty_hsch2(&mut self) -> DUTY_HSCH2_W {
+        DUTY_HSCH2_W { w: self }
     }
 }

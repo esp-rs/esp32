@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_CACHE_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_DRAM_HL`"]
-pub type DPORT_PRO_DRAM_HL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_DRAM_HL`"]
-pub struct DPORT_PRO_DRAM_HL_W<'a> {
+#[doc = "Reader of field `PRO_DRAM_HL`"]
+pub type PRO_DRAM_HL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_DRAM_HL`"]
+pub struct PRO_DRAM_HL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_DRAM_HL_W<'a> {
+impl<'a> PRO_DRAM_HL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> DPORT_PRO_DRAM_HL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_SLAVE_REQ`"]
-pub type DPORT_SLAVE_REQ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_SLAVE_REQ`"]
-pub struct DPORT_SLAVE_REQ_W<'a> {
+#[doc = "Reader of field `SLAVE_REQ`"]
+pub type SLAVE_REQ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLAVE_REQ`"]
+pub struct SLAVE_REQ_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_SLAVE_REQ_W<'a> {
+impl<'a> SLAVE_REQ_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> DPORT_SLAVE_REQ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_AHB_SPI_REQ`"]
-pub type DPORT_AHB_SPI_REQ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_AHB_SPI_REQ`"]
-pub struct DPORT_AHB_SPI_REQ_W<'a> {
+#[doc = "Reader of field `AHB_SPI_REQ`"]
+pub type AHB_SPI_REQ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AHB_SPI_REQ`"]
+pub struct AHB_SPI_REQ_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_AHB_SPI_REQ_W<'a> {
+impl<'a> AHB_SPI_REQ_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> DPORT_AHB_SPI_REQ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_SLAVE_REQ`"]
-pub type DPORT_PRO_SLAVE_REQ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_SLAVE_REQ`"]
-pub struct DPORT_PRO_SLAVE_REQ_W<'a> {
+#[doc = "Reader of field `PRO_SLAVE_REQ`"]
+pub type PRO_SLAVE_REQ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_SLAVE_REQ`"]
+pub struct PRO_SLAVE_REQ_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_SLAVE_REQ_W<'a> {
+impl<'a> PRO_SLAVE_REQ_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> DPORT_PRO_SLAVE_REQ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_AHB_SPI_REQ`"]
-pub type DPORT_PRO_AHB_SPI_REQ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_AHB_SPI_REQ`"]
-pub struct DPORT_PRO_AHB_SPI_REQ_W<'a> {
+#[doc = "Reader of field `PRO_AHB_SPI_REQ`"]
+pub type PRO_AHB_SPI_REQ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_AHB_SPI_REQ`"]
+pub struct PRO_AHB_SPI_REQ_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_AHB_SPI_REQ_W<'a> {
+impl<'a> PRO_AHB_SPI_REQ_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> DPORT_PRO_AHB_SPI_REQ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_DRAM_SPLIT`"]
-pub type DPORT_PRO_DRAM_SPLIT_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_DRAM_SPLIT`"]
-pub struct DPORT_PRO_DRAM_SPLIT_W<'a> {
+#[doc = "Reader of field `PRO_DRAM_SPLIT`"]
+pub type PRO_DRAM_SPLIT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_DRAM_SPLIT`"]
+pub struct PRO_DRAM_SPLIT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_DRAM_SPLIT_W<'a> {
+impl<'a> PRO_DRAM_SPLIT_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> DPORT_PRO_DRAM_SPLIT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_SINGLE_IRAM_ENA`"]
-pub type DPORT_PRO_SINGLE_IRAM_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_SINGLE_IRAM_ENA`"]
-pub struct DPORT_PRO_SINGLE_IRAM_ENA_W<'a> {
+#[doc = "Reader of field `PRO_SINGLE_IRAM_ENA`"]
+pub type PRO_SINGLE_IRAM_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_SINGLE_IRAM_ENA`"]
+pub struct PRO_SINGLE_IRAM_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_SINGLE_IRAM_ENA_W<'a> {
+impl<'a> PRO_SINGLE_IRAM_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> DPORT_PRO_SINGLE_IRAM_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_LOCK_3_EN`"]
-pub type DPORT_PRO_CACHE_LOCK_3_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_LOCK_3_EN`"]
-pub struct DPORT_PRO_CACHE_LOCK_3_EN_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_LOCK_3_EN`"]
+pub type PRO_CACHE_LOCK_3_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_LOCK_3_EN`"]
+pub struct PRO_CACHE_LOCK_3_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_LOCK_3_EN_W<'a> {
+impl<'a> PRO_CACHE_LOCK_3_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> DPORT_PRO_CACHE_LOCK_3_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_LOCK_2_EN`"]
-pub type DPORT_PRO_CACHE_LOCK_2_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_LOCK_2_EN`"]
-pub struct DPORT_PRO_CACHE_LOCK_2_EN_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_LOCK_2_EN`"]
+pub type PRO_CACHE_LOCK_2_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_LOCK_2_EN`"]
+pub struct PRO_CACHE_LOCK_2_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_LOCK_2_EN_W<'a> {
+impl<'a> PRO_CACHE_LOCK_2_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> DPORT_PRO_CACHE_LOCK_2_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_LOCK_1_EN`"]
-pub type DPORT_PRO_CACHE_LOCK_1_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_LOCK_1_EN`"]
-pub struct DPORT_PRO_CACHE_LOCK_1_EN_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_LOCK_1_EN`"]
+pub type PRO_CACHE_LOCK_1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_LOCK_1_EN`"]
+pub struct PRO_CACHE_LOCK_1_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_LOCK_1_EN_W<'a> {
+impl<'a> PRO_CACHE_LOCK_1_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> DPORT_PRO_CACHE_LOCK_1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_LOCK_0_EN`"]
-pub type DPORT_PRO_CACHE_LOCK_0_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_LOCK_0_EN`"]
-pub struct DPORT_PRO_CACHE_LOCK_0_EN_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_LOCK_0_EN`"]
+pub type PRO_CACHE_LOCK_0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_LOCK_0_EN`"]
+pub struct PRO_CACHE_LOCK_0_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_LOCK_0_EN_W<'a> {
+impl<'a> PRO_CACHE_LOCK_0_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> DPORT_PRO_CACHE_LOCK_0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_FLUSH_DONE`"]
-pub type DPORT_PRO_CACHE_FLUSH_DONE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_FLUSH_DONE`"]
-pub struct DPORT_PRO_CACHE_FLUSH_DONE_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_FLUSH_DONE`"]
+pub type PRO_CACHE_FLUSH_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_FLUSH_DONE`"]
+pub struct PRO_CACHE_FLUSH_DONE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_FLUSH_DONE_W<'a> {
+impl<'a> PRO_CACHE_FLUSH_DONE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> DPORT_PRO_CACHE_FLUSH_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_FLUSH_ENA`"]
-pub type DPORT_PRO_CACHE_FLUSH_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_FLUSH_ENA`"]
-pub struct DPORT_PRO_CACHE_FLUSH_ENA_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_FLUSH_ENA`"]
+pub type PRO_CACHE_FLUSH_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_FLUSH_ENA`"]
+pub struct PRO_CACHE_FLUSH_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_FLUSH_ENA_W<'a> {
+impl<'a> PRO_CACHE_FLUSH_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> DPORT_PRO_CACHE_FLUSH_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_ENABLE`"]
-pub type DPORT_PRO_CACHE_ENABLE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_ENABLE`"]
-pub struct DPORT_PRO_CACHE_ENABLE_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_ENABLE`"]
+pub type PRO_CACHE_ENABLE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_ENABLE`"]
+pub struct PRO_CACHE_ENABLE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_ENABLE_W<'a> {
+impl<'a> PRO_CACHE_ENABLE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> DPORT_PRO_CACHE_ENABLE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_MODE`"]
-pub type DPORT_PRO_CACHE_MODE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_MODE`"]
-pub struct DPORT_PRO_CACHE_MODE_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_MODE`"]
+pub type PRO_CACHE_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CACHE_MODE`"]
+pub struct PRO_CACHE_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_MODE_W<'a> {
+impl<'a> PRO_CACHE_MODE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -373,154 +373,154 @@ impl<'a> DPORT_PRO_CACHE_MODE_W<'a> {
 impl R {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn dport_pro_dram_hl(&self) -> DPORT_PRO_DRAM_HL_R {
-        DPORT_PRO_DRAM_HL_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn pro_dram_hl(&self) -> PRO_DRAM_HL_R {
+        PRO_DRAM_HL_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn dport_slave_req(&self) -> DPORT_SLAVE_REQ_R {
-        DPORT_SLAVE_REQ_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn slave_req(&self) -> SLAVE_REQ_R {
+        SLAVE_REQ_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn dport_ahb_spi_req(&self) -> DPORT_AHB_SPI_REQ_R {
-        DPORT_AHB_SPI_REQ_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn ahb_spi_req(&self) -> AHB_SPI_REQ_R {
+        AHB_SPI_REQ_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn dport_pro_slave_req(&self) -> DPORT_PRO_SLAVE_REQ_R {
-        DPORT_PRO_SLAVE_REQ_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn pro_slave_req(&self) -> PRO_SLAVE_REQ_R {
+        PRO_SLAVE_REQ_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn dport_pro_ahb_spi_req(&self) -> DPORT_PRO_AHB_SPI_REQ_R {
-        DPORT_PRO_AHB_SPI_REQ_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn pro_ahb_spi_req(&self) -> PRO_AHB_SPI_REQ_R {
+        PRO_AHB_SPI_REQ_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn dport_pro_dram_split(&self) -> DPORT_PRO_DRAM_SPLIT_R {
-        DPORT_PRO_DRAM_SPLIT_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn pro_dram_split(&self) -> PRO_DRAM_SPLIT_R {
+        PRO_DRAM_SPLIT_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn dport_pro_single_iram_ena(&self) -> DPORT_PRO_SINGLE_IRAM_ENA_R {
-        DPORT_PRO_SINGLE_IRAM_ENA_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn pro_single_iram_ena(&self) -> PRO_SINGLE_IRAM_ENA_R {
+        PRO_SINGLE_IRAM_ENA_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_3_en(&self) -> DPORT_PRO_CACHE_LOCK_3_EN_R {
-        DPORT_PRO_CACHE_LOCK_3_EN_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn pro_cache_lock_3_en(&self) -> PRO_CACHE_LOCK_3_EN_R {
+        PRO_CACHE_LOCK_3_EN_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_2_en(&self) -> DPORT_PRO_CACHE_LOCK_2_EN_R {
-        DPORT_PRO_CACHE_LOCK_2_EN_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn pro_cache_lock_2_en(&self) -> PRO_CACHE_LOCK_2_EN_R {
+        PRO_CACHE_LOCK_2_EN_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_1_en(&self) -> DPORT_PRO_CACHE_LOCK_1_EN_R {
-        DPORT_PRO_CACHE_LOCK_1_EN_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn pro_cache_lock_1_en(&self) -> PRO_CACHE_LOCK_1_EN_R {
+        PRO_CACHE_LOCK_1_EN_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_0_en(&self) -> DPORT_PRO_CACHE_LOCK_0_EN_R {
-        DPORT_PRO_CACHE_LOCK_0_EN_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn pro_cache_lock_0_en(&self) -> PRO_CACHE_LOCK_0_EN_R {
+        PRO_CACHE_LOCK_0_EN_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn dport_pro_cache_flush_done(&self) -> DPORT_PRO_CACHE_FLUSH_DONE_R {
-        DPORT_PRO_CACHE_FLUSH_DONE_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn pro_cache_flush_done(&self) -> PRO_CACHE_FLUSH_DONE_R {
+        PRO_CACHE_FLUSH_DONE_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn dport_pro_cache_flush_ena(&self) -> DPORT_PRO_CACHE_FLUSH_ENA_R {
-        DPORT_PRO_CACHE_FLUSH_ENA_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn pro_cache_flush_ena(&self) -> PRO_CACHE_FLUSH_ENA_R {
+        PRO_CACHE_FLUSH_ENA_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn dport_pro_cache_enable(&self) -> DPORT_PRO_CACHE_ENABLE_R {
-        DPORT_PRO_CACHE_ENABLE_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn pro_cache_enable(&self) -> PRO_CACHE_ENABLE_R {
+        PRO_CACHE_ENABLE_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn dport_pro_cache_mode(&self) -> DPORT_PRO_CACHE_MODE_R {
-        DPORT_PRO_CACHE_MODE_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn pro_cache_mode(&self) -> PRO_CACHE_MODE_R {
+        PRO_CACHE_MODE_R::new(((self.bits >> 2) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn dport_pro_dram_hl(&mut self) -> DPORT_PRO_DRAM_HL_W {
-        DPORT_PRO_DRAM_HL_W { w: self }
+    pub fn pro_dram_hl(&mut self) -> PRO_DRAM_HL_W {
+        PRO_DRAM_HL_W { w: self }
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn dport_slave_req(&mut self) -> DPORT_SLAVE_REQ_W {
-        DPORT_SLAVE_REQ_W { w: self }
+    pub fn slave_req(&mut self) -> SLAVE_REQ_W {
+        SLAVE_REQ_W { w: self }
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn dport_ahb_spi_req(&mut self) -> DPORT_AHB_SPI_REQ_W {
-        DPORT_AHB_SPI_REQ_W { w: self }
+    pub fn ahb_spi_req(&mut self) -> AHB_SPI_REQ_W {
+        AHB_SPI_REQ_W { w: self }
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn dport_pro_slave_req(&mut self) -> DPORT_PRO_SLAVE_REQ_W {
-        DPORT_PRO_SLAVE_REQ_W { w: self }
+    pub fn pro_slave_req(&mut self) -> PRO_SLAVE_REQ_W {
+        PRO_SLAVE_REQ_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn dport_pro_ahb_spi_req(&mut self) -> DPORT_PRO_AHB_SPI_REQ_W {
-        DPORT_PRO_AHB_SPI_REQ_W { w: self }
+    pub fn pro_ahb_spi_req(&mut self) -> PRO_AHB_SPI_REQ_W {
+        PRO_AHB_SPI_REQ_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn dport_pro_dram_split(&mut self) -> DPORT_PRO_DRAM_SPLIT_W {
-        DPORT_PRO_DRAM_SPLIT_W { w: self }
+    pub fn pro_dram_split(&mut self) -> PRO_DRAM_SPLIT_W {
+        PRO_DRAM_SPLIT_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn dport_pro_single_iram_ena(&mut self) -> DPORT_PRO_SINGLE_IRAM_ENA_W {
-        DPORT_PRO_SINGLE_IRAM_ENA_W { w: self }
+    pub fn pro_single_iram_ena(&mut self) -> PRO_SINGLE_IRAM_ENA_W {
+        PRO_SINGLE_IRAM_ENA_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_3_en(&mut self) -> DPORT_PRO_CACHE_LOCK_3_EN_W {
-        DPORT_PRO_CACHE_LOCK_3_EN_W { w: self }
+    pub fn pro_cache_lock_3_en(&mut self) -> PRO_CACHE_LOCK_3_EN_W {
+        PRO_CACHE_LOCK_3_EN_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_2_en(&mut self) -> DPORT_PRO_CACHE_LOCK_2_EN_W {
-        DPORT_PRO_CACHE_LOCK_2_EN_W { w: self }
+    pub fn pro_cache_lock_2_en(&mut self) -> PRO_CACHE_LOCK_2_EN_W {
+        PRO_CACHE_LOCK_2_EN_W { w: self }
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_1_en(&mut self) -> DPORT_PRO_CACHE_LOCK_1_EN_W {
-        DPORT_PRO_CACHE_LOCK_1_EN_W { w: self }
+    pub fn pro_cache_lock_1_en(&mut self) -> PRO_CACHE_LOCK_1_EN_W {
+        PRO_CACHE_LOCK_1_EN_W { w: self }
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn dport_pro_cache_lock_0_en(&mut self) -> DPORT_PRO_CACHE_LOCK_0_EN_W {
-        DPORT_PRO_CACHE_LOCK_0_EN_W { w: self }
+    pub fn pro_cache_lock_0_en(&mut self) -> PRO_CACHE_LOCK_0_EN_W {
+        PRO_CACHE_LOCK_0_EN_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn dport_pro_cache_flush_done(&mut self) -> DPORT_PRO_CACHE_FLUSH_DONE_W {
-        DPORT_PRO_CACHE_FLUSH_DONE_W { w: self }
+    pub fn pro_cache_flush_done(&mut self) -> PRO_CACHE_FLUSH_DONE_W {
+        PRO_CACHE_FLUSH_DONE_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn dport_pro_cache_flush_ena(&mut self) -> DPORT_PRO_CACHE_FLUSH_ENA_W {
-        DPORT_PRO_CACHE_FLUSH_ENA_W { w: self }
+    pub fn pro_cache_flush_ena(&mut self) -> PRO_CACHE_FLUSH_ENA_W {
+        PRO_CACHE_FLUSH_ENA_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn dport_pro_cache_enable(&mut self) -> DPORT_PRO_CACHE_ENABLE_W {
-        DPORT_PRO_CACHE_ENABLE_W { w: self }
+    pub fn pro_cache_enable(&mut self) -> PRO_CACHE_ENABLE_W {
+        PRO_CACHE_ENABLE_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn dport_pro_cache_mode(&mut self) -> DPORT_PRO_CACHE_MODE_W {
-        DPORT_PRO_CACHE_MODE_W { w: self }
+    pub fn pro_cache_mode(&mut self) -> PRO_CACHE_MODE_W {
+        PRO_CACHE_MODE_W { w: self }
     }
 }

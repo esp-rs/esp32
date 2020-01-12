@@ -10,13 +10,13 @@ impl crate::ResetValue for super::HOLD_FORCE {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_X32N_HOLD_FORCE`"]
-pub type RTC_CNTL_X32N_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_X32N_HOLD_FORCE`"]
-pub struct RTC_CNTL_X32N_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `X32N_HOLD_FORCE`"]
+pub type X32N_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `X32N_HOLD_FORCE`"]
+pub struct X32N_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_X32N_HOLD_FORCE_W<'a> {
+impl<'a> X32N_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_X32N_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_X32P_HOLD_FORCE`"]
-pub type RTC_CNTL_X32P_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_X32P_HOLD_FORCE`"]
-pub struct RTC_CNTL_X32P_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `X32P_HOLD_FORCE`"]
+pub type X32P_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `X32P_HOLD_FORCE`"]
+pub struct X32P_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_X32P_HOLD_FORCE_W<'a> {
+impl<'a> X32P_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> RTC_CNTL_X32P_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD7_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD7_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD7_HOLD_FORCE`"]
+pub type TOUCH_PAD7_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD7_HOLD_FORCE`"]
+pub struct TOUCH_PAD7_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD7_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD6_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD6_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD6_HOLD_FORCE`"]
+pub type TOUCH_PAD6_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD6_HOLD_FORCE`"]
+pub struct TOUCH_PAD6_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD6_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD5_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD5_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD5_HOLD_FORCE`"]
+pub type TOUCH_PAD5_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD5_HOLD_FORCE`"]
+pub struct TOUCH_PAD5_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD5_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD4_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD4_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD4_HOLD_FORCE`"]
+pub type TOUCH_PAD4_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD4_HOLD_FORCE`"]
+pub struct TOUCH_PAD4_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD4_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD3_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD3_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD3_HOLD_FORCE`"]
+pub type TOUCH_PAD3_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD3_HOLD_FORCE`"]
+pub struct TOUCH_PAD3_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD3_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD2_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD2_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD2_HOLD_FORCE`"]
+pub type TOUCH_PAD2_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD2_HOLD_FORCE`"]
+pub struct TOUCH_PAD2_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD2_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD1_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD1_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD1_HOLD_FORCE`"]
+pub type TOUCH_PAD1_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD1_HOLD_FORCE`"]
+pub struct TOUCH_PAD1_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD1_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TOUCH_PAD0_HOLD_FORCE`"]
-pub type RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TOUCH_PAD0_HOLD_FORCE`"]
-pub struct RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD0_HOLD_FORCE`"]
+pub type TOUCH_PAD0_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TOUCH_PAD0_HOLD_FORCE`"]
+pub struct TOUCH_PAD0_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_W<'a> {
+impl<'a> TOUCH_PAD0_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SENSE4_HOLD_FORCE`"]
-pub type RTC_CNTL_SENSE4_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SENSE4_HOLD_FORCE`"]
-pub struct RTC_CNTL_SENSE4_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `SENSE4_HOLD_FORCE`"]
+pub type SENSE4_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SENSE4_HOLD_FORCE`"]
+pub struct SENSE4_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SENSE4_HOLD_FORCE_W<'a> {
+impl<'a> SENSE4_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> RTC_CNTL_SENSE4_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SENSE3_HOLD_FORCE`"]
-pub type RTC_CNTL_SENSE3_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SENSE3_HOLD_FORCE`"]
-pub struct RTC_CNTL_SENSE3_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `SENSE3_HOLD_FORCE`"]
+pub type SENSE3_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SENSE3_HOLD_FORCE`"]
+pub struct SENSE3_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SENSE3_HOLD_FORCE_W<'a> {
+impl<'a> SENSE3_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> RTC_CNTL_SENSE3_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SENSE2_HOLD_FORCE`"]
-pub type RTC_CNTL_SENSE2_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SENSE2_HOLD_FORCE`"]
-pub struct RTC_CNTL_SENSE2_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `SENSE2_HOLD_FORCE`"]
+pub type SENSE2_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SENSE2_HOLD_FORCE`"]
+pub struct SENSE2_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SENSE2_HOLD_FORCE_W<'a> {
+impl<'a> SENSE2_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> RTC_CNTL_SENSE2_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SENSE1_HOLD_FORCE`"]
-pub type RTC_CNTL_SENSE1_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SENSE1_HOLD_FORCE`"]
-pub struct RTC_CNTL_SENSE1_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `SENSE1_HOLD_FORCE`"]
+pub type SENSE1_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SENSE1_HOLD_FORCE`"]
+pub struct SENSE1_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SENSE1_HOLD_FORCE_W<'a> {
+impl<'a> SENSE1_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> RTC_CNTL_SENSE1_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_PDAC2_HOLD_FORCE`"]
-pub type RTC_CNTL_PDAC2_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_PDAC2_HOLD_FORCE`"]
-pub struct RTC_CNTL_PDAC2_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `PDAC2_HOLD_FORCE`"]
+pub type PDAC2_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PDAC2_HOLD_FORCE`"]
+pub struct PDAC2_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_PDAC2_HOLD_FORCE_W<'a> {
+impl<'a> PDAC2_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -370,13 +370,13 @@ impl<'a> RTC_CNTL_PDAC2_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_PDAC1_HOLD_FORCE`"]
-pub type RTC_CNTL_PDAC1_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_PDAC1_HOLD_FORCE`"]
-pub struct RTC_CNTL_PDAC1_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `PDAC1_HOLD_FORCE`"]
+pub type PDAC1_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PDAC1_HOLD_FORCE`"]
+pub struct PDAC1_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_PDAC1_HOLD_FORCE_W<'a> {
+impl<'a> PDAC1_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -394,13 +394,13 @@ impl<'a> RTC_CNTL_PDAC1_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_ADC2_HOLD_FORCE`"]
-pub type RTC_CNTL_ADC2_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_ADC2_HOLD_FORCE`"]
-pub struct RTC_CNTL_ADC2_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `ADC2_HOLD_FORCE`"]
+pub type ADC2_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ADC2_HOLD_FORCE`"]
+pub struct ADC2_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_ADC2_HOLD_FORCE_W<'a> {
+impl<'a> ADC2_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -418,13 +418,13 @@ impl<'a> RTC_CNTL_ADC2_HOLD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_ADC1_HOLD_FORCE`"]
-pub type RTC_CNTL_ADC1_HOLD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_ADC1_HOLD_FORCE`"]
-pub struct RTC_CNTL_ADC1_HOLD_FORCE_W<'a> {
+#[doc = "Reader of field `ADC1_HOLD_FORCE`"]
+pub type ADC1_HOLD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ADC1_HOLD_FORCE`"]
+pub struct ADC1_HOLD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_ADC1_HOLD_FORCE_W<'a> {
+impl<'a> ADC1_HOLD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -445,184 +445,184 @@ impl<'a> RTC_CNTL_ADC1_HOLD_FORCE_W<'a> {
 impl R {
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn rtc_cntl_x32n_hold_force(&self) -> RTC_CNTL_X32N_HOLD_FORCE_R {
-        RTC_CNTL_X32N_HOLD_FORCE_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn x32n_hold_force(&self) -> X32N_HOLD_FORCE_R {
+        X32N_HOLD_FORCE_R::new(((self.bits >> 17) & 0x01) != 0)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn rtc_cntl_x32p_hold_force(&self) -> RTC_CNTL_X32P_HOLD_FORCE_R {
-        RTC_CNTL_X32P_HOLD_FORCE_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn x32p_hold_force(&self) -> X32P_HOLD_FORCE_R {
+        X32P_HOLD_FORCE_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad7_hold_force(&self) -> RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn touch_pad7_hold_force(&self) -> TOUCH_PAD7_HOLD_FORCE_R {
+        TOUCH_PAD7_HOLD_FORCE_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad6_hold_force(&self) -> RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn touch_pad6_hold_force(&self) -> TOUCH_PAD6_HOLD_FORCE_R {
+        TOUCH_PAD6_HOLD_FORCE_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad5_hold_force(&self) -> RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn touch_pad5_hold_force(&self) -> TOUCH_PAD5_HOLD_FORCE_R {
+        TOUCH_PAD5_HOLD_FORCE_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad4_hold_force(&self) -> RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn touch_pad4_hold_force(&self) -> TOUCH_PAD4_HOLD_FORCE_R {
+        TOUCH_PAD4_HOLD_FORCE_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad3_hold_force(&self) -> RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn touch_pad3_hold_force(&self) -> TOUCH_PAD3_HOLD_FORCE_R {
+        TOUCH_PAD3_HOLD_FORCE_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad2_hold_force(&self) -> RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn touch_pad2_hold_force(&self) -> TOUCH_PAD2_HOLD_FORCE_R {
+        TOUCH_PAD2_HOLD_FORCE_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad1_hold_force(&self) -> RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn touch_pad1_hold_force(&self) -> TOUCH_PAD1_HOLD_FORCE_R {
+        TOUCH_PAD1_HOLD_FORCE_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad0_hold_force(&self) -> RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_R {
-        RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn touch_pad0_hold_force(&self) -> TOUCH_PAD0_HOLD_FORCE_R {
+        TOUCH_PAD0_HOLD_FORCE_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn rtc_cntl_sense4_hold_force(&self) -> RTC_CNTL_SENSE4_HOLD_FORCE_R {
-        RTC_CNTL_SENSE4_HOLD_FORCE_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn sense4_hold_force(&self) -> SENSE4_HOLD_FORCE_R {
+        SENSE4_HOLD_FORCE_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn rtc_cntl_sense3_hold_force(&self) -> RTC_CNTL_SENSE3_HOLD_FORCE_R {
-        RTC_CNTL_SENSE3_HOLD_FORCE_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn sense3_hold_force(&self) -> SENSE3_HOLD_FORCE_R {
+        SENSE3_HOLD_FORCE_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn rtc_cntl_sense2_hold_force(&self) -> RTC_CNTL_SENSE2_HOLD_FORCE_R {
-        RTC_CNTL_SENSE2_HOLD_FORCE_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn sense2_hold_force(&self) -> SENSE2_HOLD_FORCE_R {
+        SENSE2_HOLD_FORCE_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn rtc_cntl_sense1_hold_force(&self) -> RTC_CNTL_SENSE1_HOLD_FORCE_R {
-        RTC_CNTL_SENSE1_HOLD_FORCE_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn sense1_hold_force(&self) -> SENSE1_HOLD_FORCE_R {
+        SENSE1_HOLD_FORCE_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn rtc_cntl_pdac2_hold_force(&self) -> RTC_CNTL_PDAC2_HOLD_FORCE_R {
-        RTC_CNTL_PDAC2_HOLD_FORCE_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn pdac2_hold_force(&self) -> PDAC2_HOLD_FORCE_R {
+        PDAC2_HOLD_FORCE_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn rtc_cntl_pdac1_hold_force(&self) -> RTC_CNTL_PDAC1_HOLD_FORCE_R {
-        RTC_CNTL_PDAC1_HOLD_FORCE_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn pdac1_hold_force(&self) -> PDAC1_HOLD_FORCE_R {
+        PDAC1_HOLD_FORCE_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn rtc_cntl_adc2_hold_force(&self) -> RTC_CNTL_ADC2_HOLD_FORCE_R {
-        RTC_CNTL_ADC2_HOLD_FORCE_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn adc2_hold_force(&self) -> ADC2_HOLD_FORCE_R {
+        ADC2_HOLD_FORCE_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn rtc_cntl_adc1_hold_force(&self) -> RTC_CNTL_ADC1_HOLD_FORCE_R {
-        RTC_CNTL_ADC1_HOLD_FORCE_R::new((self.bits & 0x01) != 0)
+    pub fn adc1_hold_force(&self) -> ADC1_HOLD_FORCE_R {
+        ADC1_HOLD_FORCE_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn rtc_cntl_x32n_hold_force(&mut self) -> RTC_CNTL_X32N_HOLD_FORCE_W {
-        RTC_CNTL_X32N_HOLD_FORCE_W { w: self }
+    pub fn x32n_hold_force(&mut self) -> X32N_HOLD_FORCE_W {
+        X32N_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn rtc_cntl_x32p_hold_force(&mut self) -> RTC_CNTL_X32P_HOLD_FORCE_W {
-        RTC_CNTL_X32P_HOLD_FORCE_W { w: self }
+    pub fn x32p_hold_force(&mut self) -> X32P_HOLD_FORCE_W {
+        X32P_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad7_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD7_HOLD_FORCE_W { w: self }
+    pub fn touch_pad7_hold_force(&mut self) -> TOUCH_PAD7_HOLD_FORCE_W {
+        TOUCH_PAD7_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad6_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD6_HOLD_FORCE_W { w: self }
+    pub fn touch_pad6_hold_force(&mut self) -> TOUCH_PAD6_HOLD_FORCE_W {
+        TOUCH_PAD6_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad5_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD5_HOLD_FORCE_W { w: self }
+    pub fn touch_pad5_hold_force(&mut self) -> TOUCH_PAD5_HOLD_FORCE_W {
+        TOUCH_PAD5_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad4_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD4_HOLD_FORCE_W { w: self }
+    pub fn touch_pad4_hold_force(&mut self) -> TOUCH_PAD4_HOLD_FORCE_W {
+        TOUCH_PAD4_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad3_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD3_HOLD_FORCE_W { w: self }
+    pub fn touch_pad3_hold_force(&mut self) -> TOUCH_PAD3_HOLD_FORCE_W {
+        TOUCH_PAD3_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad2_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD2_HOLD_FORCE_W { w: self }
+    pub fn touch_pad2_hold_force(&mut self) -> TOUCH_PAD2_HOLD_FORCE_W {
+        TOUCH_PAD2_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad1_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD1_HOLD_FORCE_W { w: self }
+    pub fn touch_pad1_hold_force(&mut self) -> TOUCH_PAD1_HOLD_FORCE_W {
+        TOUCH_PAD1_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn rtc_cntl_touch_pad0_hold_force(&mut self) -> RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_W {
-        RTC_CNTL_TOUCH_PAD0_HOLD_FORCE_W { w: self }
+    pub fn touch_pad0_hold_force(&mut self) -> TOUCH_PAD0_HOLD_FORCE_W {
+        TOUCH_PAD0_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn rtc_cntl_sense4_hold_force(&mut self) -> RTC_CNTL_SENSE4_HOLD_FORCE_W {
-        RTC_CNTL_SENSE4_HOLD_FORCE_W { w: self }
+    pub fn sense4_hold_force(&mut self) -> SENSE4_HOLD_FORCE_W {
+        SENSE4_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn rtc_cntl_sense3_hold_force(&mut self) -> RTC_CNTL_SENSE3_HOLD_FORCE_W {
-        RTC_CNTL_SENSE3_HOLD_FORCE_W { w: self }
+    pub fn sense3_hold_force(&mut self) -> SENSE3_HOLD_FORCE_W {
+        SENSE3_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn rtc_cntl_sense2_hold_force(&mut self) -> RTC_CNTL_SENSE2_HOLD_FORCE_W {
-        RTC_CNTL_SENSE2_HOLD_FORCE_W { w: self }
+    pub fn sense2_hold_force(&mut self) -> SENSE2_HOLD_FORCE_W {
+        SENSE2_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn rtc_cntl_sense1_hold_force(&mut self) -> RTC_CNTL_SENSE1_HOLD_FORCE_W {
-        RTC_CNTL_SENSE1_HOLD_FORCE_W { w: self }
+    pub fn sense1_hold_force(&mut self) -> SENSE1_HOLD_FORCE_W {
+        SENSE1_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn rtc_cntl_pdac2_hold_force(&mut self) -> RTC_CNTL_PDAC2_HOLD_FORCE_W {
-        RTC_CNTL_PDAC2_HOLD_FORCE_W { w: self }
+    pub fn pdac2_hold_force(&mut self) -> PDAC2_HOLD_FORCE_W {
+        PDAC2_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn rtc_cntl_pdac1_hold_force(&mut self) -> RTC_CNTL_PDAC1_HOLD_FORCE_W {
-        RTC_CNTL_PDAC1_HOLD_FORCE_W { w: self }
+    pub fn pdac1_hold_force(&mut self) -> PDAC1_HOLD_FORCE_W {
+        PDAC1_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn rtc_cntl_adc2_hold_force(&mut self) -> RTC_CNTL_ADC2_HOLD_FORCE_W {
-        RTC_CNTL_ADC2_HOLD_FORCE_W { w: self }
+    pub fn adc2_hold_force(&mut self) -> ADC2_HOLD_FORCE_W {
+        ADC2_HOLD_FORCE_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn rtc_cntl_adc1_hold_force(&mut self) -> RTC_CNTL_ADC1_HOLD_FORCE_W {
-        RTC_CNTL_ADC1_HOLD_FORCE_W { w: self }
+    pub fn adc1_hold_force(&mut self) -> ADC1_HOLD_FORCE_W {
+        ADC1_HOLD_FORCE_W { w: self }
     }
 }

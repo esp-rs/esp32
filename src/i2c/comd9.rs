@@ -10,13 +10,13 @@ impl crate::ResetValue for super::COMD9 {
         0
     }
 }
-#[doc = "Reader of field `I2C_COMMAND9_DONE`"]
-pub type I2C_COMMAND9_DONE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2C_COMMAND9_DONE`"]
-pub struct I2C_COMMAND9_DONE_W<'a> {
+#[doc = "Reader of field `COMMAND9_DONE`"]
+pub type COMMAND9_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `COMMAND9_DONE`"]
+pub struct COMMAND9_DONE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_COMMAND9_DONE_W<'a> {
+impl<'a> COMMAND9_DONE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2C_COMMAND9_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_COMMAND9`"]
-pub type I2C_COMMAND9_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `I2C_COMMAND9`"]
-pub struct I2C_COMMAND9_W<'a> {
+#[doc = "Reader of field `COMMAND9`"]
+pub type COMMAND9_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `COMMAND9`"]
+pub struct COMMAND9_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_COMMAND9_W<'a> {
+impl<'a> COMMAND9_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> I2C_COMMAND9_W<'a> {
 impl R {
     #[doc = "Bit 31 - When command9 is done in I2C Master mode this bit changes to high level."]
     #[inline(always)]
-    pub fn i2c_command9_done(&self) -> I2C_COMMAND9_DONE_R {
-        I2C_COMMAND9_DONE_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn command9_done(&self) -> COMMAND9_DONE_R {
+        COMMAND9_DONE_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bits 0:13 - This is the content of command9. It consists of three part. op_code is the command 0: RSTART 1: WRITE 2: READ 3: STOP . 4:END. Byte_num represent the number of data need to be send or data need to be received. ack_check_en ack_exp and ack value are used to control the ack bit."]
     #[inline(always)]
-    pub fn i2c_command9(&self) -> I2C_COMMAND9_R {
-        I2C_COMMAND9_R::new((self.bits & 0x3fff) as u16)
+    pub fn command9(&self) -> COMMAND9_R {
+        COMMAND9_R::new((self.bits & 0x3fff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 31 - When command9 is done in I2C Master mode this bit changes to high level."]
     #[inline(always)]
-    pub fn i2c_command9_done(&mut self) -> I2C_COMMAND9_DONE_W {
-        I2C_COMMAND9_DONE_W { w: self }
+    pub fn command9_done(&mut self) -> COMMAND9_DONE_W {
+        COMMAND9_DONE_W { w: self }
     }
     #[doc = "Bits 0:13 - This is the content of command9. It consists of three part. op_code is the command 0: RSTART 1: WRITE 2: READ 3: STOP . 4:END. Byte_num represent the number of data need to be send or data need to be received. ack_check_en ack_exp and ack value are used to control the ack bit."]
     #[inline(always)]
-    pub fn i2c_command9(&mut self) -> I2C_COMMAND9_W {
-        I2C_COMMAND9_W { w: self }
+    pub fn command9(&mut self) -> COMMAND9_W {
+        COMMAND9_W { w: self }
     }
 }

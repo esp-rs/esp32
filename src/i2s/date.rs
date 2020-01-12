@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DATE {
         0
     }
 }
-#[doc = "Reader of field `I2S_I2SDATE`"]
-pub type I2S_I2SDATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `I2S_I2SDATE`"]
-pub struct I2S_I2SDATE_W<'a> {
+#[doc = "Reader of field `I2SDATE`"]
+pub type I2SDATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `I2SDATE`"]
+pub struct I2SDATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_I2SDATE_W<'a> {
+impl<'a> I2SDATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> I2S_I2SDATE_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_i2sdate(&self) -> I2S_I2SDATE_R {
-        I2S_I2SDATE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn i2sdate(&self) -> I2SDATE_R {
+        I2SDATE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_i2sdate(&mut self) -> I2S_I2SDATE_W {
-        I2S_I2SDATE_W { w: self }
+    pub fn i2sdate(&mut self) -> I2SDATE_W {
+        I2SDATE_W { w: self }
     }
 }

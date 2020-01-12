@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LACTLOADLO {
         0
     }
 }
-#[doc = "Reader of field `TIMG_LACT_LOAD_LO`"]
-pub type TIMG_LACT_LOAD_LO_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_LACT_LOAD_LO`"]
-pub struct TIMG_LACT_LOAD_LO_W<'a> {
+#[doc = "Reader of field `LACT_LOAD_LO`"]
+pub type LACT_LOAD_LO_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `LACT_LOAD_LO`"]
+pub struct LACT_LOAD_LO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_LOAD_LO_W<'a> {
+impl<'a> LACT_LOAD_LO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_LACT_LOAD_LO_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn timg_lact_load_lo(&self) -> TIMG_LACT_LOAD_LO_R {
-        TIMG_LACT_LOAD_LO_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn lact_load_lo(&self) -> LACT_LOAD_LO_R {
+        LACT_LOAD_LO_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn timg_lact_load_lo(&mut self) -> TIMG_LACT_LOAD_LO_W {
-        TIMG_LACT_LOAD_LO_W { w: self }
+    pub fn lact_load_lo(&mut self) -> LACT_LOAD_LO_W {
+        LACT_LOAD_LO_W { w: self }
     }
 }

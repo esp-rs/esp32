@@ -10,13 +10,13 @@ impl crate::ResetValue for super::POSPULSE {
         0
     }
 }
-#[doc = "Reader of field `UART_POSEDGE_MIN_CNT`"]
-pub type UART_POSEDGE_MIN_CNT_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UART_POSEDGE_MIN_CNT`"]
-pub struct UART_POSEDGE_MIN_CNT_W<'a> {
+#[doc = "Reader of field `POSEDGE_MIN_CNT`"]
+pub type POSEDGE_MIN_CNT_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `POSEDGE_MIN_CNT`"]
+pub struct POSEDGE_MIN_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_POSEDGE_MIN_CNT_W<'a> {
+impl<'a> POSEDGE_MIN_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UART_POSEDGE_MIN_CNT_W<'a> {
 impl R {
     #[doc = "Bits 0:19 - This register stores the count of rxd posedge edge. it is used in boudrate-detect process."]
     #[inline(always)]
-    pub fn uart_posedge_min_cnt(&self) -> UART_POSEDGE_MIN_CNT_R {
-        UART_POSEDGE_MIN_CNT_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn posedge_min_cnt(&self) -> POSEDGE_MIN_CNT_R {
+        POSEDGE_MIN_CNT_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19 - This register stores the count of rxd posedge edge. it is used in boudrate-detect process."]
     #[inline(always)]
-    pub fn uart_posedge_min_cnt(&mut self) -> UART_POSEDGE_MIN_CNT_W {
-        UART_POSEDGE_MIN_CNT_W { w: self }
+    pub fn posedge_min_cnt(&mut self) -> POSEDGE_MIN_CNT_W {
+        POSEDGE_MIN_CNT_W { w: self }
     }
 }

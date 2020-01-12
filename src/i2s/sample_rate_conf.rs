@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAMPLE_RATE_CONF {
         0
     }
 }
-#[doc = "Reader of field `I2S_RX_BITS_MOD`"]
-pub type I2S_RX_BITS_MOD_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_RX_BITS_MOD`"]
-pub struct I2S_RX_BITS_MOD_W<'a> {
+#[doc = "Reader of field `RX_BITS_MOD`"]
+pub type RX_BITS_MOD_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RX_BITS_MOD`"]
+pub struct RX_BITS_MOD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_BITS_MOD_W<'a> {
+impl<'a> RX_BITS_MOD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> I2S_RX_BITS_MOD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_BITS_MOD`"]
-pub type I2S_TX_BITS_MOD_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_BITS_MOD`"]
-pub struct I2S_TX_BITS_MOD_W<'a> {
+#[doc = "Reader of field `TX_BITS_MOD`"]
+pub type TX_BITS_MOD_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_BITS_MOD`"]
+pub struct TX_BITS_MOD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_BITS_MOD_W<'a> {
+impl<'a> TX_BITS_MOD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> I2S_TX_BITS_MOD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_RX_BCK_DIV_NUM`"]
-pub type I2S_RX_BCK_DIV_NUM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_RX_BCK_DIV_NUM`"]
-pub struct I2S_RX_BCK_DIV_NUM_W<'a> {
+#[doc = "Reader of field `RX_BCK_DIV_NUM`"]
+pub type RX_BCK_DIV_NUM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RX_BCK_DIV_NUM`"]
+pub struct RX_BCK_DIV_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_BCK_DIV_NUM_W<'a> {
+impl<'a> RX_BCK_DIV_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -52,13 +52,13 @@ impl<'a> I2S_RX_BCK_DIV_NUM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_BCK_DIV_NUM`"]
-pub type I2S_TX_BCK_DIV_NUM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_BCK_DIV_NUM`"]
-pub struct I2S_TX_BCK_DIV_NUM_W<'a> {
+#[doc = "Reader of field `TX_BCK_DIV_NUM`"]
+pub type TX_BCK_DIV_NUM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_BCK_DIV_NUM`"]
+pub struct TX_BCK_DIV_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_BCK_DIV_NUM_W<'a> {
+impl<'a> TX_BCK_DIV_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -69,44 +69,44 @@ impl<'a> I2S_TX_BCK_DIV_NUM_W<'a> {
 impl R {
     #[doc = "Bits 18:23"]
     #[inline(always)]
-    pub fn i2s_rx_bits_mod(&self) -> I2S_RX_BITS_MOD_R {
-        I2S_RX_BITS_MOD_R::new(((self.bits >> 18) & 0x3f) as u8)
+    pub fn rx_bits_mod(&self) -> RX_BITS_MOD_R {
+        RX_BITS_MOD_R::new(((self.bits >> 18) & 0x3f) as u8)
     }
     #[doc = "Bits 12:17"]
     #[inline(always)]
-    pub fn i2s_tx_bits_mod(&self) -> I2S_TX_BITS_MOD_R {
-        I2S_TX_BITS_MOD_R::new(((self.bits >> 12) & 0x3f) as u8)
+    pub fn tx_bits_mod(&self) -> TX_BITS_MOD_R {
+        TX_BITS_MOD_R::new(((self.bits >> 12) & 0x3f) as u8)
     }
     #[doc = "Bits 6:11"]
     #[inline(always)]
-    pub fn i2s_rx_bck_div_num(&self) -> I2S_RX_BCK_DIV_NUM_R {
-        I2S_RX_BCK_DIV_NUM_R::new(((self.bits >> 6) & 0x3f) as u8)
+    pub fn rx_bck_div_num(&self) -> RX_BCK_DIV_NUM_R {
+        RX_BCK_DIV_NUM_R::new(((self.bits >> 6) & 0x3f) as u8)
     }
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn i2s_tx_bck_div_num(&self) -> I2S_TX_BCK_DIV_NUM_R {
-        I2S_TX_BCK_DIV_NUM_R::new((self.bits & 0x3f) as u8)
+    pub fn tx_bck_div_num(&self) -> TX_BCK_DIV_NUM_R {
+        TX_BCK_DIV_NUM_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 18:23"]
     #[inline(always)]
-    pub fn i2s_rx_bits_mod(&mut self) -> I2S_RX_BITS_MOD_W {
-        I2S_RX_BITS_MOD_W { w: self }
+    pub fn rx_bits_mod(&mut self) -> RX_BITS_MOD_W {
+        RX_BITS_MOD_W { w: self }
     }
     #[doc = "Bits 12:17"]
     #[inline(always)]
-    pub fn i2s_tx_bits_mod(&mut self) -> I2S_TX_BITS_MOD_W {
-        I2S_TX_BITS_MOD_W { w: self }
+    pub fn tx_bits_mod(&mut self) -> TX_BITS_MOD_W {
+        TX_BITS_MOD_W { w: self }
     }
     #[doc = "Bits 6:11"]
     #[inline(always)]
-    pub fn i2s_rx_bck_div_num(&mut self) -> I2S_RX_BCK_DIV_NUM_W {
-        I2S_RX_BCK_DIV_NUM_W { w: self }
+    pub fn rx_bck_div_num(&mut self) -> RX_BCK_DIV_NUM_W {
+        RX_BCK_DIV_NUM_W { w: self }
     }
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn i2s_tx_bck_div_num(&mut self) -> I2S_TX_BCK_DIV_NUM_W {
-        I2S_TX_BCK_DIV_NUM_W { w: self }
+    pub fn tx_bck_div_num(&mut self) -> TX_BCK_DIV_NUM_W {
+        TX_BCK_DIV_NUM_W { w: self }
     }
 }

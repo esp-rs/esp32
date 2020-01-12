@@ -10,13 +10,13 @@ impl crate::ResetValue for super::RXD_CNT {
         0
     }
 }
-#[doc = "Reader of field `UART_RXD_EDGE_CNT`"]
-pub type UART_RXD_EDGE_CNT_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `UART_RXD_EDGE_CNT`"]
-pub struct UART_RXD_EDGE_CNT_W<'a> {
+#[doc = "Reader of field `RXD_EDGE_CNT`"]
+pub type RXD_EDGE_CNT_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `RXD_EDGE_CNT`"]
+pub struct RXD_EDGE_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RXD_EDGE_CNT_W<'a> {
+impl<'a> RXD_EDGE_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UART_RXD_EDGE_CNT_W<'a> {
 impl R {
     #[doc = "Bits 0:9 - This register stores the count of rxd edge change. it is used in baudrate-detect process."]
     #[inline(always)]
-    pub fn uart_rxd_edge_cnt(&self) -> UART_RXD_EDGE_CNT_R {
-        UART_RXD_EDGE_CNT_R::new((self.bits & 0x03ff) as u16)
+    pub fn rxd_edge_cnt(&self) -> RXD_EDGE_CNT_R {
+        RXD_EDGE_CNT_R::new((self.bits & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:9 - This register stores the count of rxd edge change. it is used in baudrate-detect process."]
     #[inline(always)]
-    pub fn uart_rxd_edge_cnt(&mut self) -> UART_RXD_EDGE_CNT_W {
-        UART_RXD_EDGE_CNT_W { w: self }
+    pub fn rxd_edge_cnt(&mut self) -> RXD_EDGE_CNT_W {
+        RXD_EDGE_CNT_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SIGMADELTA_CG {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SD_CLK_EN`"]
-pub type GPIO_SD_CLK_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_SD_CLK_EN`"]
-pub struct GPIO_SD_CLK_EN_W<'a> {
+#[doc = "Reader of field `SD_CLK_EN`"]
+pub type SD_CLK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SD_CLK_EN`"]
+pub struct SD_CLK_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SD_CLK_EN_W<'a> {
+impl<'a> SD_CLK_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> GPIO_SD_CLK_EN_W<'a> {
 impl R {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn gpio_sd_clk_en(&self) -> GPIO_SD_CLK_EN_R {
-        GPIO_SD_CLK_EN_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn sd_clk_en(&self) -> SD_CLK_EN_R {
+        SD_CLK_EN_R::new(((self.bits >> 31) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn gpio_sd_clk_en(&mut self) -> GPIO_SD_CLK_EN_W {
-        GPIO_SD_CLK_EN_W { w: self }
+    pub fn sd_clk_en(&mut self) -> SD_CLK_EN_W {
+        SD_CLK_EN_W { w: self }
     }
 }

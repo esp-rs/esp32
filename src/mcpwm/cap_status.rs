@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CAP_STATUS {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_CAP2_EDGE`"]
-pub type MCPWM_CAP2_EDGE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP2_EDGE`"]
-pub struct MCPWM_CAP2_EDGE_W<'a> {
+#[doc = "Reader of field `CAP2_EDGE`"]
+pub type CAP2_EDGE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP2_EDGE`"]
+pub struct CAP2_EDGE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP2_EDGE_W<'a> {
+impl<'a> CAP2_EDGE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> MCPWM_CAP2_EDGE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP1_EDGE`"]
-pub type MCPWM_CAP1_EDGE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP1_EDGE`"]
-pub struct MCPWM_CAP1_EDGE_W<'a> {
+#[doc = "Reader of field `CAP1_EDGE`"]
+pub type CAP1_EDGE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP1_EDGE`"]
+pub struct CAP1_EDGE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP1_EDGE_W<'a> {
+impl<'a> CAP1_EDGE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> MCPWM_CAP1_EDGE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP0_EDGE`"]
-pub type MCPWM_CAP0_EDGE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP0_EDGE`"]
-pub struct MCPWM_CAP0_EDGE_W<'a> {
+#[doc = "Reader of field `CAP0_EDGE`"]
+pub type CAP0_EDGE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP0_EDGE`"]
+pub struct CAP0_EDGE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP0_EDGE_W<'a> {
+impl<'a> CAP0_EDGE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -85,34 +85,34 @@ impl<'a> MCPWM_CAP0_EDGE_W<'a> {
 impl R {
     #[doc = "Bit 2 - Edge of last capture trigger on channel 2 0: posedge 1: negedge"]
     #[inline(always)]
-    pub fn mcpwm_cap2_edge(&self) -> MCPWM_CAP2_EDGE_R {
-        MCPWM_CAP2_EDGE_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn cap2_edge(&self) -> CAP2_EDGE_R {
+        CAP2_EDGE_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1 - Edge of last capture trigger on channel 1 0: posedge 1: negedge"]
     #[inline(always)]
-    pub fn mcpwm_cap1_edge(&self) -> MCPWM_CAP1_EDGE_R {
-        MCPWM_CAP1_EDGE_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn cap1_edge(&self) -> CAP1_EDGE_R {
+        CAP1_EDGE_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - Edge of last capture trigger on channel 0 0: posedge 1: negedge"]
     #[inline(always)]
-    pub fn mcpwm_cap0_edge(&self) -> MCPWM_CAP0_EDGE_R {
-        MCPWM_CAP0_EDGE_R::new((self.bits & 0x01) != 0)
+    pub fn cap0_edge(&self) -> CAP0_EDGE_R {
+        CAP0_EDGE_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 2 - Edge of last capture trigger on channel 2 0: posedge 1: negedge"]
     #[inline(always)]
-    pub fn mcpwm_cap2_edge(&mut self) -> MCPWM_CAP2_EDGE_W {
-        MCPWM_CAP2_EDGE_W { w: self }
+    pub fn cap2_edge(&mut self) -> CAP2_EDGE_W {
+        CAP2_EDGE_W { w: self }
     }
     #[doc = "Bit 1 - Edge of last capture trigger on channel 1 0: posedge 1: negedge"]
     #[inline(always)]
-    pub fn mcpwm_cap1_edge(&mut self) -> MCPWM_CAP1_EDGE_W {
-        MCPWM_CAP1_EDGE_W { w: self }
+    pub fn cap1_edge(&mut self) -> CAP1_EDGE_W {
+        CAP1_EDGE_W { w: self }
     }
     #[doc = "Bit 0 - Edge of last capture trigger on channel 0 0: posedge 1: negedge"]
     #[inline(always)]
-    pub fn mcpwm_cap0_edge(&mut self) -> MCPWM_CAP0_EDGE_W {
-        MCPWM_CAP0_EDGE_W { w: self }
+    pub fn cap0_edge(&mut self) -> CAP0_EDGE_W {
+        CAP0_EDGE_W { w: self }
     }
 }

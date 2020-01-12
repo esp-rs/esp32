@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DAC_CONF {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_DAC_CLK_PAD_SEL`"]
-pub type EFUSE_DAC_CLK_PAD_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EFUSE_DAC_CLK_PAD_SEL`"]
-pub struct EFUSE_DAC_CLK_PAD_SEL_W<'a> {
+#[doc = "Reader of field `DAC_CLK_PAD_SEL`"]
+pub type DAC_CLK_PAD_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DAC_CLK_PAD_SEL`"]
+pub struct DAC_CLK_PAD_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_DAC_CLK_PAD_SEL_W<'a> {
+impl<'a> DAC_CLK_PAD_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> EFUSE_DAC_CLK_PAD_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_DAC_CLK_DIV`"]
-pub type EFUSE_DAC_CLK_DIV_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_DAC_CLK_DIV`"]
-pub struct EFUSE_DAC_CLK_DIV_W<'a> {
+#[doc = "Reader of field `DAC_CLK_DIV`"]
+pub type DAC_CLK_DIV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DAC_CLK_DIV`"]
+pub struct DAC_CLK_DIV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_DAC_CLK_DIV_W<'a> {
+impl<'a> DAC_CLK_DIV_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> EFUSE_DAC_CLK_DIV_W<'a> {
 impl R {
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn efuse_dac_clk_pad_sel(&self) -> EFUSE_DAC_CLK_PAD_SEL_R {
-        EFUSE_DAC_CLK_PAD_SEL_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn dac_clk_pad_sel(&self) -> DAC_CLK_PAD_SEL_R {
+        DAC_CLK_PAD_SEL_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bits 0:7 - efuse timing configure"]
     #[inline(always)]
-    pub fn efuse_dac_clk_div(&self) -> EFUSE_DAC_CLK_DIV_R {
-        EFUSE_DAC_CLK_DIV_R::new((self.bits & 0xff) as u8)
+    pub fn dac_clk_div(&self) -> DAC_CLK_DIV_R {
+        DAC_CLK_DIV_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn efuse_dac_clk_pad_sel(&mut self) -> EFUSE_DAC_CLK_PAD_SEL_W {
-        EFUSE_DAC_CLK_PAD_SEL_W { w: self }
+    pub fn dac_clk_pad_sel(&mut self) -> DAC_CLK_PAD_SEL_W {
+        DAC_CLK_PAD_SEL_W { w: self }
     }
     #[doc = "Bits 0:7 - efuse timing configure"]
     #[inline(always)]
-    pub fn efuse_dac_clk_div(&mut self) -> EFUSE_DAC_CLK_DIV_W {
-        EFUSE_DAC_CLK_DIV_W { w: self }
+    pub fn dac_clk_div(&mut self) -> DAC_CLK_DIV_W {
+        DAC_CLK_DIV_W { w: self }
     }
 }

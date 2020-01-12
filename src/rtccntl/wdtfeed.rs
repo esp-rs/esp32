@@ -10,13 +10,13 @@ impl crate::ResetValue for super::WDTFEED {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_WDT_FEED`"]
-pub type RTC_CNTL_WDT_FEED_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_WDT_FEED`"]
-pub struct RTC_CNTL_WDT_FEED_W<'a> {
+#[doc = "Reader of field `WDT_FEED`"]
+pub type WDT_FEED_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `WDT_FEED`"]
+pub struct WDT_FEED_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_WDT_FEED_W<'a> {
+impl<'a> WDT_FEED_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> RTC_CNTL_WDT_FEED_W<'a> {
 impl R {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn rtc_cntl_wdt_feed(&self) -> RTC_CNTL_WDT_FEED_R {
-        RTC_CNTL_WDT_FEED_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn wdt_feed(&self) -> WDT_FEED_R {
+        WDT_FEED_R::new(((self.bits >> 31) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn rtc_cntl_wdt_feed(&mut self) -> RTC_CNTL_WDT_FEED_W {
-        RTC_CNTL_WDT_FEED_W { w: self }
+    pub fn wdt_feed(&mut self) -> WDT_FEED_W {
+        WDT_FEED_W { w: self }
     }
 }

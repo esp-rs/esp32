@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SIGMADELTA_VERSION {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SD_DATE`"]
-pub type GPIO_SD_DATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `GPIO_SD_DATE`"]
-pub struct GPIO_SD_DATE_W<'a> {
+#[doc = "Reader of field `SD_DATE`"]
+pub type SD_DATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SD_DATE`"]
+pub struct SD_DATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SD_DATE_W<'a> {
+impl<'a> SD_DATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_SD_DATE_W<'a> {
 impl R {
     #[doc = "Bits 0:27"]
     #[inline(always)]
-    pub fn gpio_sd_date(&self) -> GPIO_SD_DATE_R {
-        GPIO_SD_DATE_R::new((self.bits & 0x0fff_ffff) as u32)
+    pub fn sd_date(&self) -> SD_DATE_R {
+        SD_DATE_R::new((self.bits & 0x0fff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:27"]
     #[inline(always)]
-    pub fn gpio_sd_date(&mut self) -> GPIO_SD_DATE_W {
-        GPIO_SD_DATE_W { w: self }
+    pub fn sd_date(&mut self) -> SD_DATE_W {
+        SD_DATE_W { w: self }
     }
 }

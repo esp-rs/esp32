@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DATE {
         0
     }
 }
-#[doc = "Reader of field `HINF_SDIO_DATE`"]
-pub type HINF_SDIO_DATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `HINF_SDIO_DATE`"]
-pub struct HINF_SDIO_DATE_W<'a> {
+#[doc = "Reader of field `SDIO_DATE`"]
+pub type SDIO_DATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SDIO_DATE`"]
+pub struct SDIO_DATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> HINF_SDIO_DATE_W<'a> {
+impl<'a> SDIO_DATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> HINF_SDIO_DATE_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn hinf_sdio_date(&self) -> HINF_SDIO_DATE_R {
-        HINF_SDIO_DATE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn sdio_date(&self) -> SDIO_DATE_R {
+        SDIO_DATE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn hinf_sdio_date(&mut self) -> HINF_SDIO_DATE_W {
-        HINF_SDIO_DATE_W { w: self }
+    pub fn sdio_date(&mut self) -> SDIO_DATE_W {
+        SDIO_DATE_W { w: self }
     }
 }

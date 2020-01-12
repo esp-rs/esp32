@@ -10,13 +10,13 @@ impl crate::ResetValue for super::OUTFIFO_PUSH {
         0
     }
 }
-#[doc = "Reader of field `I2S_OUTFIFO_PUSH`"]
-pub type I2S_OUTFIFO_PUSH_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUTFIFO_PUSH`"]
-pub struct I2S_OUTFIFO_PUSH_W<'a> {
+#[doc = "Reader of field `OUTFIFO_PUSH`"]
+pub type OUTFIFO_PUSH_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUTFIFO_PUSH`"]
+pub struct OUTFIFO_PUSH_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUTFIFO_PUSH_W<'a> {
+impl<'a> OUTFIFO_PUSH_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2S_OUTFIFO_PUSH_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUTFIFO_WDATA`"]
-pub type I2S_OUTFIFO_WDATA_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `I2S_OUTFIFO_WDATA`"]
-pub struct I2S_OUTFIFO_WDATA_W<'a> {
+#[doc = "Reader of field `OUTFIFO_WDATA`"]
+pub type OUTFIFO_WDATA_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `OUTFIFO_WDATA`"]
+pub struct OUTFIFO_WDATA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUTFIFO_WDATA_W<'a> {
+impl<'a> OUTFIFO_WDATA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> I2S_OUTFIFO_WDATA_W<'a> {
 impl R {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn i2s_outfifo_push(&self) -> I2S_OUTFIFO_PUSH_R {
-        I2S_OUTFIFO_PUSH_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn outfifo_push(&self) -> OUTFIFO_PUSH_R {
+        OUTFIFO_PUSH_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn i2s_outfifo_wdata(&self) -> I2S_OUTFIFO_WDATA_R {
-        I2S_OUTFIFO_WDATA_R::new((self.bits & 0x01ff) as u16)
+    pub fn outfifo_wdata(&self) -> OUTFIFO_WDATA_R {
+        OUTFIFO_WDATA_R::new((self.bits & 0x01ff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn i2s_outfifo_push(&mut self) -> I2S_OUTFIFO_PUSH_W {
-        I2S_OUTFIFO_PUSH_W { w: self }
+    pub fn outfifo_push(&mut self) -> OUTFIFO_PUSH_W {
+        OUTFIFO_PUSH_W { w: self }
     }
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn i2s_outfifo_wdata(&mut self) -> I2S_OUTFIFO_WDATA_W {
-        I2S_OUTFIFO_WDATA_W { w: self }
+    pub fn outfifo_wdata(&mut self) -> OUTFIFO_WDATA_W {
+        OUTFIFO_WDATA_W { w: self }
     }
 }

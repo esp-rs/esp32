@@ -10,13 +10,13 @@ impl crate::ResetValue for super::HSTIMER2_VALUE {
         0
     }
 }
-#[doc = "Reader of field `LEDC_HSTIMER2_CNT`"]
-pub type LEDC_HSTIMER2_CNT_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `LEDC_HSTIMER2_CNT`"]
-pub struct LEDC_HSTIMER2_CNT_W<'a> {
+#[doc = "Reader of field `HSTIMER2_CNT`"]
+pub type HSTIMER2_CNT_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `HSTIMER2_CNT`"]
+pub struct HSTIMER2_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_HSTIMER2_CNT_W<'a> {
+impl<'a> HSTIMER2_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> LEDC_HSTIMER2_CNT_W<'a> {
 impl R {
     #[doc = "Bits 0:19 - software can read this register to get the current counter value in high speed timer2"]
     #[inline(always)]
-    pub fn ledc_hstimer2_cnt(&self) -> LEDC_HSTIMER2_CNT_R {
-        LEDC_HSTIMER2_CNT_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn hstimer2_cnt(&self) -> HSTIMER2_CNT_R {
+        HSTIMER2_CNT_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19 - software can read this register to get the current counter value in high speed timer2"]
     #[inline(always)]
-    pub fn ledc_hstimer2_cnt(&mut self) -> LEDC_HSTIMER2_CNT_W {
-        LEDC_HSTIMER2_CNT_W { w: self }
+    pub fn hstimer2_cnt(&mut self) -> HSTIMER2_CNT_W {
+        HSTIMER2_CNT_W { w: self }
     }
 }

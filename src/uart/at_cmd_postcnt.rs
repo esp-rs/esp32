@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AT_CMD_POSTCNT {
         0
     }
 }
-#[doc = "Reader of field `UART_POST_IDLE_NUM`"]
-pub type UART_POST_IDLE_NUM_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UART_POST_IDLE_NUM`"]
-pub struct UART_POST_IDLE_NUM_W<'a> {
+#[doc = "Reader of field `POST_IDLE_NUM`"]
+pub type POST_IDLE_NUM_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `POST_IDLE_NUM`"]
+pub struct POST_IDLE_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_POST_IDLE_NUM_W<'a> {
+impl<'a> POST_IDLE_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UART_POST_IDLE_NUM_W<'a> {
 impl R {
     #[doc = "Bits 0:23 - This register is used to configure the duration time between the last at_cmd and the next data. when the duration is less than this register value it will not take the previous data as at_cmd char."]
     #[inline(always)]
-    pub fn uart_post_idle_num(&self) -> UART_POST_IDLE_NUM_R {
-        UART_POST_IDLE_NUM_R::new((self.bits & 0x00ff_ffff) as u32)
+    pub fn post_idle_num(&self) -> POST_IDLE_NUM_R {
+        POST_IDLE_NUM_R::new((self.bits & 0x00ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:23 - This register is used to configure the duration time between the last at_cmd and the next data. when the duration is less than this register value it will not take the previous data as at_cmd char."]
     #[inline(always)]
-    pub fn uart_post_idle_num(&mut self) -> UART_POST_IDLE_NUM_W {
-        UART_POST_IDLE_NUM_W { w: self }
+    pub fn post_idle_num(&mut self) -> POST_IDLE_NUM_W {
+        POST_IDLE_NUM_W { w: self }
     }
 }

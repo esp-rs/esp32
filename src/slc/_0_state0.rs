@@ -10,13 +10,13 @@ impl crate::ResetValue for super::_0_STATE0 {
         0
     }
 }
-#[doc = "Reader of field `SLC_SLC0_STATE0`"]
-pub type SLC_SLC0_STATE0_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SLC_SLC0_STATE0`"]
-pub struct SLC_SLC0_STATE0_W<'a> {
+#[doc = "Reader of field `SLC0_STATE0`"]
+pub type SLC0_STATE0_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SLC0_STATE0`"]
+pub struct SLC0_STATE0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC0_STATE0_W<'a> {
+impl<'a> SLC0_STATE0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SLC_SLC0_STATE0_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_slc0_state0(&self) -> SLC_SLC0_STATE0_R {
-        SLC_SLC0_STATE0_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn slc0_state0(&self) -> SLC0_STATE0_R {
+        SLC0_STATE0_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_slc0_state0(&mut self) -> SLC_SLC0_STATE0_W {
-        SLC_SLC0_STATE0_W { w: self }
+    pub fn slc0_state0(&mut self) -> SLC0_STATE0_W {
+        SLC0_STATE0_W { w: self }
     }
 }

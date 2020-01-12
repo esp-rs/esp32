@@ -10,13 +10,13 @@ impl crate::ResetValue for super::FIFO_CONF {
         0
     }
 }
-#[doc = "Reader of field `I2C_NONFIFO_TX_THRES`"]
-pub type I2C_NONFIFO_TX_THRES_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2C_NONFIFO_TX_THRES`"]
-pub struct I2C_NONFIFO_TX_THRES_W<'a> {
+#[doc = "Reader of field `NONFIFO_TX_THRES`"]
+pub type NONFIFO_TX_THRES_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `NONFIFO_TX_THRES`"]
+pub struct NONFIFO_TX_THRES_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_NONFIFO_TX_THRES_W<'a> {
+impl<'a> NONFIFO_TX_THRES_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> I2C_NONFIFO_TX_THRES_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_NONFIFO_RX_THRES`"]
-pub type I2C_NONFIFO_RX_THRES_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2C_NONFIFO_RX_THRES`"]
-pub struct I2C_NONFIFO_RX_THRES_W<'a> {
+#[doc = "Reader of field `NONFIFO_RX_THRES`"]
+pub type NONFIFO_RX_THRES_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `NONFIFO_RX_THRES`"]
+pub struct NONFIFO_RX_THRES_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_NONFIFO_RX_THRES_W<'a> {
+impl<'a> NONFIFO_RX_THRES_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> I2C_NONFIFO_RX_THRES_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_TX_FIFO_RST`"]
-pub type I2C_TX_FIFO_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2C_TX_FIFO_RST`"]
-pub struct I2C_TX_FIFO_RST_W<'a> {
+#[doc = "Reader of field `TX_FIFO_RST`"]
+pub type TX_FIFO_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_FIFO_RST`"]
+pub struct TX_FIFO_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_TX_FIFO_RST_W<'a> {
+impl<'a> TX_FIFO_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -62,13 +62,13 @@ impl<'a> I2C_TX_FIFO_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_RX_FIFO_RST`"]
-pub type I2C_RX_FIFO_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2C_RX_FIFO_RST`"]
-pub struct I2C_RX_FIFO_RST_W<'a> {
+#[doc = "Reader of field `RX_FIFO_RST`"]
+pub type RX_FIFO_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_FIFO_RST`"]
+pub struct RX_FIFO_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_RX_FIFO_RST_W<'a> {
+impl<'a> RX_FIFO_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -86,13 +86,13 @@ impl<'a> I2C_RX_FIFO_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_FIFO_ADDR_CFG_EN`"]
-pub type I2C_FIFO_ADDR_CFG_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2C_FIFO_ADDR_CFG_EN`"]
-pub struct I2C_FIFO_ADDR_CFG_EN_W<'a> {
+#[doc = "Reader of field `FIFO_ADDR_CFG_EN`"]
+pub type FIFO_ADDR_CFG_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FIFO_ADDR_CFG_EN`"]
+pub struct FIFO_ADDR_CFG_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_FIFO_ADDR_CFG_EN_W<'a> {
+impl<'a> FIFO_ADDR_CFG_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -110,13 +110,13 @@ impl<'a> I2C_FIFO_ADDR_CFG_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_NONFIFO_EN`"]
-pub type I2C_NONFIFO_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2C_NONFIFO_EN`"]
-pub struct I2C_NONFIFO_EN_W<'a> {
+#[doc = "Reader of field `NONFIFO_EN`"]
+pub type NONFIFO_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `NONFIFO_EN`"]
+pub struct NONFIFO_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_NONFIFO_EN_W<'a> {
+impl<'a> NONFIFO_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -134,13 +134,13 @@ impl<'a> I2C_NONFIFO_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_TXFIFO_EMPTY_THRHD`"]
-pub type I2C_TXFIFO_EMPTY_THRHD_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2C_TXFIFO_EMPTY_THRHD`"]
-pub struct I2C_TXFIFO_EMPTY_THRHD_W<'a> {
+#[doc = "Reader of field `TXFIFO_EMPTY_THRHD`"]
+pub type TXFIFO_EMPTY_THRHD_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TXFIFO_EMPTY_THRHD`"]
+pub struct TXFIFO_EMPTY_THRHD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_TXFIFO_EMPTY_THRHD_W<'a> {
+impl<'a> TXFIFO_EMPTY_THRHD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -148,13 +148,13 @@ impl<'a> I2C_TXFIFO_EMPTY_THRHD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_RXFIFO_FULL_THRHD`"]
-pub type I2C_RXFIFO_FULL_THRHD_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2C_RXFIFO_FULL_THRHD`"]
-pub struct I2C_RXFIFO_FULL_THRHD_W<'a> {
+#[doc = "Reader of field `RXFIFO_FULL_THRHD`"]
+pub type RXFIFO_FULL_THRHD_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RXFIFO_FULL_THRHD`"]
+pub struct RXFIFO_FULL_THRHD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_RXFIFO_FULL_THRHD_W<'a> {
+impl<'a> RXFIFO_FULL_THRHD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -165,84 +165,84 @@ impl<'a> I2C_RXFIFO_FULL_THRHD_W<'a> {
 impl R {
     #[doc = "Bits 20:25 - when I2C sends more than nonfifo_tx_thres data it will produce tx_send_empty_int_raw interrupt and update the current offset address of the sending data."]
     #[inline(always)]
-    pub fn i2c_nonfifo_tx_thres(&self) -> I2C_NONFIFO_TX_THRES_R {
-        I2C_NONFIFO_TX_THRES_R::new(((self.bits >> 20) & 0x3f) as u8)
+    pub fn nonfifo_tx_thres(&self) -> NONFIFO_TX_THRES_R {
+        NONFIFO_TX_THRES_R::new(((self.bits >> 20) & 0x3f) as u8)
     }
     #[doc = "Bits 14:19 - when I2C receives more than nonfifo_rx_thres data it will produce rx_send_full_int_raw interrupt and update the current offset address of the receiving data."]
     #[inline(always)]
-    pub fn i2c_nonfifo_rx_thres(&self) -> I2C_NONFIFO_RX_THRES_R {
-        I2C_NONFIFO_RX_THRES_R::new(((self.bits >> 14) & 0x3f) as u8)
+    pub fn nonfifo_rx_thres(&self) -> NONFIFO_RX_THRES_R {
+        NONFIFO_RX_THRES_R::new(((self.bits >> 14) & 0x3f) as u8)
     }
     #[doc = "Bit 13 - Set this bit to reset tx fifo when using apb fifo access."]
     #[inline(always)]
-    pub fn i2c_tx_fifo_rst(&self) -> I2C_TX_FIFO_RST_R {
-        I2C_TX_FIFO_RST_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn tx_fifo_rst(&self) -> TX_FIFO_RST_R {
+        TX_FIFO_RST_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12 - Set this bit to reset rx fifo when using apb fifo access."]
     #[inline(always)]
-    pub fn i2c_rx_fifo_rst(&self) -> I2C_RX_FIFO_RST_R {
-        I2C_RX_FIFO_RST_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn rx_fifo_rst(&self) -> RX_FIFO_RST_R {
+        RX_FIFO_RST_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11 - When this bit is set to 1 then the byte after address represent the offset address of I2C Slave's ram."]
     #[inline(always)]
-    pub fn i2c_fifo_addr_cfg_en(&self) -> I2C_FIFO_ADDR_CFG_EN_R {
-        I2C_FIFO_ADDR_CFG_EN_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn fifo_addr_cfg_en(&self) -> FIFO_ADDR_CFG_EN_R {
+        FIFO_ADDR_CFG_EN_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10 - Set this bit to enble apb nonfifo access."]
     #[inline(always)]
-    pub fn i2c_nonfifo_en(&self) -> I2C_NONFIFO_EN_R {
-        I2C_NONFIFO_EN_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn nonfifo_en(&self) -> NONFIFO_EN_R {
+        NONFIFO_EN_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bits 5:9 - Config txfifo empty threhd value when using apb fifo access"]
     #[inline(always)]
-    pub fn i2c_txfifo_empty_thrhd(&self) -> I2C_TXFIFO_EMPTY_THRHD_R {
-        I2C_TXFIFO_EMPTY_THRHD_R::new(((self.bits >> 5) & 0x1f) as u8)
+    pub fn txfifo_empty_thrhd(&self) -> TXFIFO_EMPTY_THRHD_R {
+        TXFIFO_EMPTY_THRHD_R::new(((self.bits >> 5) & 0x1f) as u8)
     }
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn i2c_rxfifo_full_thrhd(&self) -> I2C_RXFIFO_FULL_THRHD_R {
-        I2C_RXFIFO_FULL_THRHD_R::new((self.bits & 0x1f) as u8)
+    pub fn rxfifo_full_thrhd(&self) -> RXFIFO_FULL_THRHD_R {
+        RXFIFO_FULL_THRHD_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 20:25 - when I2C sends more than nonfifo_tx_thres data it will produce tx_send_empty_int_raw interrupt and update the current offset address of the sending data."]
     #[inline(always)]
-    pub fn i2c_nonfifo_tx_thres(&mut self) -> I2C_NONFIFO_TX_THRES_W {
-        I2C_NONFIFO_TX_THRES_W { w: self }
+    pub fn nonfifo_tx_thres(&mut self) -> NONFIFO_TX_THRES_W {
+        NONFIFO_TX_THRES_W { w: self }
     }
     #[doc = "Bits 14:19 - when I2C receives more than nonfifo_rx_thres data it will produce rx_send_full_int_raw interrupt and update the current offset address of the receiving data."]
     #[inline(always)]
-    pub fn i2c_nonfifo_rx_thres(&mut self) -> I2C_NONFIFO_RX_THRES_W {
-        I2C_NONFIFO_RX_THRES_W { w: self }
+    pub fn nonfifo_rx_thres(&mut self) -> NONFIFO_RX_THRES_W {
+        NONFIFO_RX_THRES_W { w: self }
     }
     #[doc = "Bit 13 - Set this bit to reset tx fifo when using apb fifo access."]
     #[inline(always)]
-    pub fn i2c_tx_fifo_rst(&mut self) -> I2C_TX_FIFO_RST_W {
-        I2C_TX_FIFO_RST_W { w: self }
+    pub fn tx_fifo_rst(&mut self) -> TX_FIFO_RST_W {
+        TX_FIFO_RST_W { w: self }
     }
     #[doc = "Bit 12 - Set this bit to reset rx fifo when using apb fifo access."]
     #[inline(always)]
-    pub fn i2c_rx_fifo_rst(&mut self) -> I2C_RX_FIFO_RST_W {
-        I2C_RX_FIFO_RST_W { w: self }
+    pub fn rx_fifo_rst(&mut self) -> RX_FIFO_RST_W {
+        RX_FIFO_RST_W { w: self }
     }
     #[doc = "Bit 11 - When this bit is set to 1 then the byte after address represent the offset address of I2C Slave's ram."]
     #[inline(always)]
-    pub fn i2c_fifo_addr_cfg_en(&mut self) -> I2C_FIFO_ADDR_CFG_EN_W {
-        I2C_FIFO_ADDR_CFG_EN_W { w: self }
+    pub fn fifo_addr_cfg_en(&mut self) -> FIFO_ADDR_CFG_EN_W {
+        FIFO_ADDR_CFG_EN_W { w: self }
     }
     #[doc = "Bit 10 - Set this bit to enble apb nonfifo access."]
     #[inline(always)]
-    pub fn i2c_nonfifo_en(&mut self) -> I2C_NONFIFO_EN_W {
-        I2C_NONFIFO_EN_W { w: self }
+    pub fn nonfifo_en(&mut self) -> NONFIFO_EN_W {
+        NONFIFO_EN_W { w: self }
     }
     #[doc = "Bits 5:9 - Config txfifo empty threhd value when using apb fifo access"]
     #[inline(always)]
-    pub fn i2c_txfifo_empty_thrhd(&mut self) -> I2C_TXFIFO_EMPTY_THRHD_W {
-        I2C_TXFIFO_EMPTY_THRHD_W { w: self }
+    pub fn txfifo_empty_thrhd(&mut self) -> TXFIFO_EMPTY_THRHD_W {
+        TXFIFO_EMPTY_THRHD_W { w: self }
     }
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn i2c_rxfifo_full_thrhd(&mut self) -> I2C_RXFIFO_FULL_THRHD_W {
-        I2C_RXFIFO_FULL_THRHD_W { w: self }
+    pub fn rxfifo_full_thrhd(&mut self) -> RXFIFO_FULL_THRHD_W {
+        RXFIFO_FULL_THRHD_W { w: self }
     }
 }

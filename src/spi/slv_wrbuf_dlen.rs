@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLV_WRBUF_DLEN {
         0
     }
 }
-#[doc = "Reader of field `SPI_SLV_WRBUF_DBITLEN`"]
-pub type SPI_SLV_WRBUF_DBITLEN_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_SLV_WRBUF_DBITLEN`"]
-pub struct SPI_SLV_WRBUF_DBITLEN_W<'a> {
+#[doc = "Reader of field `SLV_WRBUF_DBITLEN`"]
+pub type SLV_WRBUF_DBITLEN_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SLV_WRBUF_DBITLEN`"]
+pub struct SLV_WRBUF_DBITLEN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_WRBUF_DBITLEN_W<'a> {
+impl<'a> SLV_WRBUF_DBITLEN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_SLV_WRBUF_DBITLEN_W<'a> {
 impl R {
     #[doc = "Bits 0:23 - In the slave mode it is the length in bits for write-buffer operations. The register value shall be (bit_num-1)."]
     #[inline(always)]
-    pub fn spi_slv_wrbuf_dbitlen(&self) -> SPI_SLV_WRBUF_DBITLEN_R {
-        SPI_SLV_WRBUF_DBITLEN_R::new((self.bits & 0x00ff_ffff) as u32)
+    pub fn slv_wrbuf_dbitlen(&self) -> SLV_WRBUF_DBITLEN_R {
+        SLV_WRBUF_DBITLEN_R::new((self.bits & 0x00ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:23 - In the slave mode it is the length in bits for write-buffer operations. The register value shall be (bit_num-1)."]
     #[inline(always)]
-    pub fn spi_slv_wrbuf_dbitlen(&mut self) -> SPI_SLV_WRBUF_DBITLEN_W {
-        SPI_SLV_WRBUF_DBITLEN_W { w: self }
+    pub fn slv_wrbuf_dbitlen(&mut self) -> SLV_WRBUF_DBITLEN_W {
+        SLV_WRBUF_DBITLEN_W { w: self }
     }
 }

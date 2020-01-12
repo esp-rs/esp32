@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_CPU_RECORD_PDEBUGINST {
         0
     }
 }
-#[doc = "Reader of field `DPORT_RECORD_PRO_PDEBUGINST`"]
-pub type DPORT_RECORD_PRO_PDEBUGINST_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_RECORD_PRO_PDEBUGINST`"]
-pub struct DPORT_RECORD_PRO_PDEBUGINST_W<'a> {
+#[doc = "Reader of field `RECORD_PRO_PDEBUGINST`"]
+pub type RECORD_PRO_PDEBUGINST_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `RECORD_PRO_PDEBUGINST`"]
+pub struct RECORD_PRO_PDEBUGINST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_RECORD_PRO_PDEBUGINST_W<'a> {
+impl<'a> RECORD_PRO_PDEBUGINST_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_RECORD_PRO_PDEBUGINST_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_record_pro_pdebuginst(&self) -> DPORT_RECORD_PRO_PDEBUGINST_R {
-        DPORT_RECORD_PRO_PDEBUGINST_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn record_pro_pdebuginst(&self) -> RECORD_PRO_PDEBUGINST_R {
+        RECORD_PRO_PDEBUGINST_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_record_pro_pdebuginst(&mut self) -> DPORT_RECORD_PRO_PDEBUGINST_W {
-        DPORT_RECORD_PRO_PDEBUGINST_W { w: self }
+    pub fn record_pro_pdebuginst(&mut self) -> RECORD_PRO_PDEBUGINST_W {
+        RECORD_PRO_PDEBUGINST_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SARADC_SAR2_PATT_TAB3 {
         0
     }
 }
-#[doc = "Reader of field `SYSCON_SARADC_SAR2_PATT_TAB3`"]
-pub type SYSCON_SARADC_SAR2_PATT_TAB3_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SYSCON_SARADC_SAR2_PATT_TAB3`"]
-pub struct SYSCON_SARADC_SAR2_PATT_TAB3_W<'a> {
+#[doc = "Reader of field `SARADC_SAR2_PATT_TAB3`"]
+pub type SARADC_SAR2_PATT_TAB3_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SARADC_SAR2_PATT_TAB3`"]
+pub struct SARADC_SAR2_PATT_TAB3_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SYSCON_SARADC_SAR2_PATT_TAB3_W<'a> {
+impl<'a> SARADC_SAR2_PATT_TAB3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SYSCON_SARADC_SAR2_PATT_TAB3_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Item 8 ~ 11 for pattern table 2 (each item one byte)"]
     #[inline(always)]
-    pub fn syscon_saradc_sar2_patt_tab3(&self) -> SYSCON_SARADC_SAR2_PATT_TAB3_R {
-        SYSCON_SARADC_SAR2_PATT_TAB3_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn saradc_sar2_patt_tab3(&self) -> SARADC_SAR2_PATT_TAB3_R {
+        SARADC_SAR2_PATT_TAB3_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Item 8 ~ 11 for pattern table 2 (each item one byte)"]
     #[inline(always)]
-    pub fn syscon_saradc_sar2_patt_tab3(&mut self) -> SYSCON_SARADC_SAR2_PATT_TAB3_W {
-        SYSCON_SARADC_SAR2_PATT_TAB3_W { w: self }
+    pub fn saradc_sar2_patt_tab3(&mut self) -> SARADC_SAR2_PATT_TAB3_W {
+        SARADC_SAR2_PATT_TAB3_W { w: self }
     }
 }

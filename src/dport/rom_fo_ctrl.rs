@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ROM_FO_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_SHARE_ROM_FO`"]
-pub type DPORT_SHARE_ROM_FO_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_SHARE_ROM_FO`"]
-pub struct DPORT_SHARE_ROM_FO_W<'a> {
+#[doc = "Reader of field `SHARE_ROM_FO`"]
+pub type SHARE_ROM_FO_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SHARE_ROM_FO`"]
+pub struct SHARE_ROM_FO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_SHARE_ROM_FO_W<'a> {
+impl<'a> SHARE_ROM_FO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> DPORT_SHARE_ROM_FO_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_APP_ROM_FO`"]
-pub type DPORT_APP_ROM_FO_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_APP_ROM_FO`"]
-pub struct DPORT_APP_ROM_FO_W<'a> {
+#[doc = "Reader of field `APP_ROM_FO`"]
+pub type APP_ROM_FO_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APP_ROM_FO`"]
+pub struct APP_ROM_FO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_ROM_FO_W<'a> {
+impl<'a> APP_ROM_FO_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> DPORT_APP_ROM_FO_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_ROM_FO`"]
-pub type DPORT_PRO_ROM_FO_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_ROM_FO`"]
-pub struct DPORT_PRO_ROM_FO_W<'a> {
+#[doc = "Reader of field `PRO_ROM_FO`"]
+pub type PRO_ROM_FO_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_ROM_FO`"]
+pub struct PRO_ROM_FO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_ROM_FO_W<'a> {
+impl<'a> PRO_ROM_FO_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -75,34 +75,34 @@ impl<'a> DPORT_PRO_ROM_FO_W<'a> {
 impl R {
     #[doc = "Bits 2:7"]
     #[inline(always)]
-    pub fn dport_share_rom_fo(&self) -> DPORT_SHARE_ROM_FO_R {
-        DPORT_SHARE_ROM_FO_R::new(((self.bits >> 2) & 0x3f) as u8)
+    pub fn share_rom_fo(&self) -> SHARE_ROM_FO_R {
+        SHARE_ROM_FO_R::new(((self.bits >> 2) & 0x3f) as u8)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn dport_app_rom_fo(&self) -> DPORT_APP_ROM_FO_R {
-        DPORT_APP_ROM_FO_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn app_rom_fo(&self) -> APP_ROM_FO_R {
+        APP_ROM_FO_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_rom_fo(&self) -> DPORT_PRO_ROM_FO_R {
-        DPORT_PRO_ROM_FO_R::new((self.bits & 0x01) != 0)
+    pub fn pro_rom_fo(&self) -> PRO_ROM_FO_R {
+        PRO_ROM_FO_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bits 2:7"]
     #[inline(always)]
-    pub fn dport_share_rom_fo(&mut self) -> DPORT_SHARE_ROM_FO_W {
-        DPORT_SHARE_ROM_FO_W { w: self }
+    pub fn share_rom_fo(&mut self) -> SHARE_ROM_FO_W {
+        SHARE_ROM_FO_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn dport_app_rom_fo(&mut self) -> DPORT_APP_ROM_FO_W {
-        DPORT_APP_ROM_FO_W { w: self }
+    pub fn app_rom_fo(&mut self) -> APP_ROM_FO_W {
+        APP_ROM_FO_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_rom_fo(&mut self) -> DPORT_PRO_ROM_FO_W {
-        DPORT_PRO_ROM_FO_W { w: self }
+    pub fn pro_rom_fo(&mut self) -> PRO_ROM_FO_W {
+        PRO_ROM_FO_W { w: self }
     }
 }

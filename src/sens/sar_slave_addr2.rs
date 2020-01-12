@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_SLAVE_ADDR2 {
         0
     }
 }
-#[doc = "Reader of field `SENS_I2C_SLAVE_ADDR2`"]
-pub type SENS_I2C_SLAVE_ADDR2_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_I2C_SLAVE_ADDR2`"]
-pub struct SENS_I2C_SLAVE_ADDR2_W<'a> {
+#[doc = "Reader of field `I2C_SLAVE_ADDR2`"]
+pub type I2C_SLAVE_ADDR2_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `I2C_SLAVE_ADDR2`"]
+pub struct I2C_SLAVE_ADDR2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_I2C_SLAVE_ADDR2_W<'a> {
+impl<'a> I2C_SLAVE_ADDR2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SENS_I2C_SLAVE_ADDR2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_I2C_SLAVE_ADDR3`"]
-pub type SENS_I2C_SLAVE_ADDR3_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_I2C_SLAVE_ADDR3`"]
-pub struct SENS_I2C_SLAVE_ADDR3_W<'a> {
+#[doc = "Reader of field `I2C_SLAVE_ADDR3`"]
+pub type I2C_SLAVE_ADDR3_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `I2C_SLAVE_ADDR3`"]
+pub struct I2C_SLAVE_ADDR3_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_I2C_SLAVE_ADDR3_W<'a> {
+impl<'a> I2C_SLAVE_ADDR3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> SENS_I2C_SLAVE_ADDR3_W<'a> {
 impl R {
     #[doc = "Bits 11:21"]
     #[inline(always)]
-    pub fn sens_i2c_slave_addr2(&self) -> SENS_I2C_SLAVE_ADDR2_R {
-        SENS_I2C_SLAVE_ADDR2_R::new(((self.bits >> 11) & 0x07ff) as u16)
+    pub fn i2c_slave_addr2(&self) -> I2C_SLAVE_ADDR2_R {
+        I2C_SLAVE_ADDR2_R::new(((self.bits >> 11) & 0x07ff) as u16)
     }
     #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn sens_i2c_slave_addr3(&self) -> SENS_I2C_SLAVE_ADDR3_R {
-        SENS_I2C_SLAVE_ADDR3_R::new((self.bits & 0x07ff) as u16)
+    pub fn i2c_slave_addr3(&self) -> I2C_SLAVE_ADDR3_R {
+        I2C_SLAVE_ADDR3_R::new((self.bits & 0x07ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 11:21"]
     #[inline(always)]
-    pub fn sens_i2c_slave_addr2(&mut self) -> SENS_I2C_SLAVE_ADDR2_W {
-        SENS_I2C_SLAVE_ADDR2_W { w: self }
+    pub fn i2c_slave_addr2(&mut self) -> I2C_SLAVE_ADDR2_W {
+        I2C_SLAVE_ADDR2_W { w: self }
     }
     #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn sens_i2c_slave_addr3(&mut self) -> SENS_I2C_SLAVE_ADDR3_W {
-        SENS_I2C_SLAVE_ADDR3_W { w: self }
+    pub fn i2c_slave_addr3(&mut self) -> I2C_SLAVE_ADDR3_W {
+        I2C_SLAVE_ADDR3_W { w: self }
     }
 }

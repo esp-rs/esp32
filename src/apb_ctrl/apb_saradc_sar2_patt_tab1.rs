@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APB_SARADC_SAR2_PATT_TAB1 {
         0
     }
 }
-#[doc = "Reader of field `APB_CTRL_SARADC_SAR2_PATT_TAB1`"]
-pub type APB_CTRL_SARADC_SAR2_PATT_TAB1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `APB_CTRL_SARADC_SAR2_PATT_TAB1`"]
-pub struct APB_CTRL_SARADC_SAR2_PATT_TAB1_W<'a> {
+#[doc = "Reader of field `SARADC_SAR2_PATT_TAB1`"]
+pub type SARADC_SAR2_PATT_TAB1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SARADC_SAR2_PATT_TAB1`"]
+pub struct SARADC_SAR2_PATT_TAB1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> APB_CTRL_SARADC_SAR2_PATT_TAB1_W<'a> {
+impl<'a> SARADC_SAR2_PATT_TAB1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> APB_CTRL_SARADC_SAR2_PATT_TAB1_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - item 0 ~ 3 for pattern table 2 (each item one byte)"]
     #[inline(always)]
-    pub fn apb_ctrl_saradc_sar2_patt_tab1(&self) -> APB_CTRL_SARADC_SAR2_PATT_TAB1_R {
-        APB_CTRL_SARADC_SAR2_PATT_TAB1_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn saradc_sar2_patt_tab1(&self) -> SARADC_SAR2_PATT_TAB1_R {
+        SARADC_SAR2_PATT_TAB1_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - item 0 ~ 3 for pattern table 2 (each item one byte)"]
     #[inline(always)]
-    pub fn apb_ctrl_saradc_sar2_patt_tab1(&mut self) -> APB_CTRL_SARADC_SAR2_PATT_TAB1_W {
-        APB_CTRL_SARADC_SAR2_PATT_TAB1_W { w: self }
+    pub fn saradc_sar2_patt_tab1(&mut self) -> SARADC_SAR2_PATT_TAB1_W {
+        SARADC_SAR2_PATT_TAB1_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LSCH0_HPOINT {
         0
     }
 }
-#[doc = "Reader of field `LEDC_HPOINT_LSCH0`"]
-pub type LEDC_HPOINT_LSCH0_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `LEDC_HPOINT_LSCH0`"]
-pub struct LEDC_HPOINT_LSCH0_W<'a> {
+#[doc = "Reader of field `HPOINT_LSCH0`"]
+pub type HPOINT_LSCH0_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `HPOINT_LSCH0`"]
+pub struct HPOINT_LSCH0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_HPOINT_LSCH0_W<'a> {
+impl<'a> HPOINT_LSCH0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> LEDC_HPOINT_LSCH0_W<'a> {
 impl R {
     #[doc = "Bits 0:19 - The output value changes to high when lstimerx(x=\\[0 3\\]) selected by low speed channel0 has reached reg_hpoint_lsch0\\[19:0\\]"]
     #[inline(always)]
-    pub fn ledc_hpoint_lsch0(&self) -> LEDC_HPOINT_LSCH0_R {
-        LEDC_HPOINT_LSCH0_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn hpoint_lsch0(&self) -> HPOINT_LSCH0_R {
+        HPOINT_LSCH0_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19 - The output value changes to high when lstimerx(x=\\[0 3\\]) selected by low speed channel0 has reached reg_hpoint_lsch0\\[19:0\\]"]
     #[inline(always)]
-    pub fn ledc_hpoint_lsch0(&mut self) -> LEDC_HPOINT_LSCH0_W {
-        LEDC_HPOINT_LSCH0_W { w: self }
+    pub fn hpoint_lsch0(&mut self) -> HPOINT_LSCH0_W {
+        HPOINT_LSCH0_W { w: self }
     }
 }

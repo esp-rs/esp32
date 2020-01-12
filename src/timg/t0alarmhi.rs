@@ -10,13 +10,13 @@ impl crate::ResetValue for super::T0ALARMHI {
         0
     }
 }
-#[doc = "Reader of field `TIMG_T0_ALARM_HI`"]
-pub type TIMG_T0_ALARM_HI_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_T0_ALARM_HI`"]
-pub struct TIMG_T0_ALARM_HI_W<'a> {
+#[doc = "Reader of field `T0_ALARM_HI`"]
+pub type T0_ALARM_HI_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `T0_ALARM_HI`"]
+pub struct T0_ALARM_HI_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_T0_ALARM_HI_W<'a> {
+impl<'a> T0_ALARM_HI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_T0_ALARM_HI_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Timer 0 time-base counter value higher 32 bits that will trigger the alarm"]
     #[inline(always)]
-    pub fn timg_t0_alarm_hi(&self) -> TIMG_T0_ALARM_HI_R {
-        TIMG_T0_ALARM_HI_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn t0_alarm_hi(&self) -> T0_ALARM_HI_R {
+        T0_ALARM_HI_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Timer 0 time-base counter value higher 32 bits that will trigger the alarm"]
     #[inline(always)]
-    pub fn timg_t0_alarm_hi(&mut self) -> TIMG_T0_ALARM_HI_W {
-        TIMG_T0_ALARM_HI_W { w: self }
+    pub fn t0_alarm_hi(&mut self) -> T0_ALARM_HI_W {
+        T0_ALARM_HI_W { w: self }
     }
 }

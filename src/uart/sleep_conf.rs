@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLEEP_CONF {
         0
     }
 }
-#[doc = "Reader of field `UART_ACTIVE_THRESHOLD`"]
-pub type UART_ACTIVE_THRESHOLD_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `UART_ACTIVE_THRESHOLD`"]
-pub struct UART_ACTIVE_THRESHOLD_W<'a> {
+#[doc = "Reader of field `ACTIVE_THRESHOLD`"]
+pub type ACTIVE_THRESHOLD_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `ACTIVE_THRESHOLD`"]
+pub struct ACTIVE_THRESHOLD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_ACTIVE_THRESHOLD_W<'a> {
+impl<'a> ACTIVE_THRESHOLD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UART_ACTIVE_THRESHOLD_W<'a> {
 impl R {
     #[doc = "Bits 0:9 - When the input rxd edge changes more than this register value. the uart is active from light sleeping mode."]
     #[inline(always)]
-    pub fn uart_active_threshold(&self) -> UART_ACTIVE_THRESHOLD_R {
-        UART_ACTIVE_THRESHOLD_R::new((self.bits & 0x03ff) as u16)
+    pub fn active_threshold(&self) -> ACTIVE_THRESHOLD_R {
+        ACTIVE_THRESHOLD_R::new((self.bits & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:9 - When the input rxd edge changes more than this register value. the uart is active from light sleeping mode."]
     #[inline(always)]
-    pub fn uart_active_threshold(&mut self) -> UART_ACTIVE_THRESHOLD_W {
-        UART_ACTIVE_THRESHOLD_W { w: self }
+    pub fn active_threshold(&mut self) -> ACTIVE_THRESHOLD_W {
+        ACTIVE_THRESHOLD_W { w: self }
     }
 }

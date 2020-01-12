@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SRAM_CMD {
         0
     }
 }
-#[doc = "Reader of field `SPI_SRAM_RSTIO`"]
-pub type SPI_SRAM_RSTIO_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SRAM_RSTIO`"]
-pub struct SPI_SRAM_RSTIO_W<'a> {
+#[doc = "Reader of field `SRAM_RSTIO`"]
+pub type SRAM_RSTIO_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SRAM_RSTIO`"]
+pub struct SRAM_RSTIO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SRAM_RSTIO_W<'a> {
+impl<'a> SRAM_RSTIO_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SPI_SRAM_RSTIO_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SRAM_QIO`"]
-pub type SPI_SRAM_QIO_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SRAM_QIO`"]
-pub struct SPI_SRAM_QIO_W<'a> {
+#[doc = "Reader of field `SRAM_QIO`"]
+pub type SRAM_QIO_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SRAM_QIO`"]
+pub struct SRAM_QIO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SRAM_QIO_W<'a> {
+impl<'a> SRAM_QIO_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SPI_SRAM_QIO_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SRAM_DIO`"]
-pub type SPI_SRAM_DIO_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_SRAM_DIO`"]
-pub struct SPI_SRAM_DIO_W<'a> {
+#[doc = "Reader of field `SRAM_DIO`"]
+pub type SRAM_DIO_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SRAM_DIO`"]
+pub struct SRAM_DIO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SRAM_DIO_W<'a> {
+impl<'a> SRAM_DIO_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -85,34 +85,34 @@ impl<'a> SPI_SRAM_DIO_W<'a> {
 impl R {
     #[doc = "Bit 4 - For SPI0 SRAM IO mode reset enable. SRAM IO mode reset operation will be triggered when the bit is set. The bit will be cleared once the operation done"]
     #[inline(always)]
-    pub fn spi_sram_rstio(&self) -> SPI_SRAM_RSTIO_R {
-        SPI_SRAM_RSTIO_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn sram_rstio(&self) -> SRAM_RSTIO_R {
+        SRAM_RSTIO_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 1 - For SPI0 SRAM QIO mode enable . SRAM QIO enable command will be send when the bit is set. The bit will be cleared once the operation done."]
     #[inline(always)]
-    pub fn spi_sram_qio(&self) -> SPI_SRAM_QIO_R {
-        SPI_SRAM_QIO_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn sram_qio(&self) -> SRAM_QIO_R {
+        SRAM_QIO_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - For SPI0 SRAM DIO mode enable . SRAM DIO enable command will be send when the bit is set. The bit will be cleared once the operation done."]
     #[inline(always)]
-    pub fn spi_sram_dio(&self) -> SPI_SRAM_DIO_R {
-        SPI_SRAM_DIO_R::new((self.bits & 0x01) != 0)
+    pub fn sram_dio(&self) -> SRAM_DIO_R {
+        SRAM_DIO_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 4 - For SPI0 SRAM IO mode reset enable. SRAM IO mode reset operation will be triggered when the bit is set. The bit will be cleared once the operation done"]
     #[inline(always)]
-    pub fn spi_sram_rstio(&mut self) -> SPI_SRAM_RSTIO_W {
-        SPI_SRAM_RSTIO_W { w: self }
+    pub fn sram_rstio(&mut self) -> SRAM_RSTIO_W {
+        SRAM_RSTIO_W { w: self }
     }
     #[doc = "Bit 1 - For SPI0 SRAM QIO mode enable . SRAM QIO enable command will be send when the bit is set. The bit will be cleared once the operation done."]
     #[inline(always)]
-    pub fn spi_sram_qio(&mut self) -> SPI_SRAM_QIO_W {
-        SPI_SRAM_QIO_W { w: self }
+    pub fn sram_qio(&mut self) -> SRAM_QIO_W {
+        SRAM_QIO_W { w: self }
     }
     #[doc = "Bit 0 - For SPI0 SRAM DIO mode enable . SRAM DIO enable command will be send when the bit is set. The bit will be cleared once the operation done."]
     #[inline(always)]
-    pub fn spi_sram_dio(&mut self) -> SPI_SRAM_DIO_W {
-        SPI_SRAM_DIO_W { w: self }
+    pub fn sram_dio(&mut self) -> SRAM_DIO_W {
+        SRAM_DIO_W { w: self }
     }
 }

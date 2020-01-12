@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMA_OUT_STATUS {
         0
     }
 }
-#[doc = "Reader of field `UHCI_OUT_EMPTY`"]
-pub type UHCI_OUT_EMPTY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_OUT_EMPTY`"]
-pub struct UHCI_OUT_EMPTY_W<'a> {
+#[doc = "Reader of field `OUT_EMPTY`"]
+pub type OUT_EMPTY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_EMPTY`"]
+pub struct OUT_EMPTY_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUT_EMPTY_W<'a> {
+impl<'a> OUT_EMPTY_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> UHCI_OUT_EMPTY_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_OUT_FULL`"]
-pub type UHCI_OUT_FULL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_OUT_FULL`"]
-pub struct UHCI_OUT_FULL_W<'a> {
+#[doc = "Reader of field `OUT_FULL`"]
+pub type OUT_FULL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_FULL`"]
+pub struct OUT_FULL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUT_FULL_W<'a> {
+impl<'a> OUT_FULL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> UHCI_OUT_FULL_W<'a> {
 impl R {
     #[doc = "Bit 1 - 1:DMA in link descriptor's fifo is empty."]
     #[inline(always)]
-    pub fn uhci_out_empty(&self) -> UHCI_OUT_EMPTY_R {
-        UHCI_OUT_EMPTY_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn out_empty(&self) -> OUT_EMPTY_R {
+        OUT_EMPTY_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - 1:DMA out link descriptor's fifo is full."]
     #[inline(always)]
-    pub fn uhci_out_full(&self) -> UHCI_OUT_FULL_R {
-        UHCI_OUT_FULL_R::new((self.bits & 0x01) != 0)
+    pub fn out_full(&self) -> OUT_FULL_R {
+        OUT_FULL_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 1 - 1:DMA in link descriptor's fifo is empty."]
     #[inline(always)]
-    pub fn uhci_out_empty(&mut self) -> UHCI_OUT_EMPTY_W {
-        UHCI_OUT_EMPTY_W { w: self }
+    pub fn out_empty(&mut self) -> OUT_EMPTY_W {
+        OUT_EMPTY_W { w: self }
     }
     #[doc = "Bit 0 - 1:DMA out link descriptor's fifo is full."]
     #[inline(always)]
-    pub fn uhci_out_full(&mut self) -> UHCI_OUT_FULL_W {
-        UHCI_OUT_FULL_W { w: self }
+    pub fn out_full(&mut self) -> OUT_FULL_W {
+        OUT_FULL_W { w: self }
     }
 }

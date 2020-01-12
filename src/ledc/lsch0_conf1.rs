@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LSCH0_CONF1 {
         0
     }
 }
-#[doc = "Reader of field `LEDC_DUTY_START_LSCH0`"]
-pub type LEDC_DUTY_START_LSCH0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LEDC_DUTY_START_LSCH0`"]
-pub struct LEDC_DUTY_START_LSCH0_W<'a> {
+#[doc = "Reader of field `DUTY_START_LSCH0`"]
+pub type DUTY_START_LSCH0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DUTY_START_LSCH0`"]
+pub struct DUTY_START_LSCH0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_DUTY_START_LSCH0_W<'a> {
+impl<'a> DUTY_START_LSCH0_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> LEDC_DUTY_START_LSCH0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LEDC_DUTY_INC_LSCH0`"]
-pub type LEDC_DUTY_INC_LSCH0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LEDC_DUTY_INC_LSCH0`"]
-pub struct LEDC_DUTY_INC_LSCH0_W<'a> {
+#[doc = "Reader of field `DUTY_INC_LSCH0`"]
+pub type DUTY_INC_LSCH0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DUTY_INC_LSCH0`"]
+pub struct DUTY_INC_LSCH0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_DUTY_INC_LSCH0_W<'a> {
+impl<'a> DUTY_INC_LSCH0_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> LEDC_DUTY_INC_LSCH0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LEDC_DUTY_NUM_LSCH0`"]
-pub type LEDC_DUTY_NUM_LSCH0_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `LEDC_DUTY_NUM_LSCH0`"]
-pub struct LEDC_DUTY_NUM_LSCH0_W<'a> {
+#[doc = "Reader of field `DUTY_NUM_LSCH0`"]
+pub type DUTY_NUM_LSCH0_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `DUTY_NUM_LSCH0`"]
+pub struct DUTY_NUM_LSCH0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_DUTY_NUM_LSCH0_W<'a> {
+impl<'a> DUTY_NUM_LSCH0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> LEDC_DUTY_NUM_LSCH0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LEDC_DUTY_CYCLE_LSCH0`"]
-pub type LEDC_DUTY_CYCLE_LSCH0_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `LEDC_DUTY_CYCLE_LSCH0`"]
-pub struct LEDC_DUTY_CYCLE_LSCH0_W<'a> {
+#[doc = "Reader of field `DUTY_CYCLE_LSCH0`"]
+pub type DUTY_CYCLE_LSCH0_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `DUTY_CYCLE_LSCH0`"]
+pub struct DUTY_CYCLE_LSCH0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_DUTY_CYCLE_LSCH0_W<'a> {
+impl<'a> DUTY_CYCLE_LSCH0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -86,13 +86,13 @@ impl<'a> LEDC_DUTY_CYCLE_LSCH0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LEDC_DUTY_SCALE_LSCH0`"]
-pub type LEDC_DUTY_SCALE_LSCH0_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `LEDC_DUTY_SCALE_LSCH0`"]
-pub struct LEDC_DUTY_SCALE_LSCH0_W<'a> {
+#[doc = "Reader of field `DUTY_SCALE_LSCH0`"]
+pub type DUTY_SCALE_LSCH0_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `DUTY_SCALE_LSCH0`"]
+pub struct DUTY_SCALE_LSCH0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_DUTY_SCALE_LSCH0_W<'a> {
+impl<'a> DUTY_SCALE_LSCH0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -103,54 +103,54 @@ impl<'a> LEDC_DUTY_SCALE_LSCH0_W<'a> {
 impl R {
     #[doc = "Bit 31 - When reg_duty_num_hsch1 reg_duty_cycle_hsch1 and reg_duty_scale_hsch1 has been configured. these register won't take effect until set reg_duty_start_hsch1. this bit is automatically cleared by hardware."]
     #[inline(always)]
-    pub fn ledc_duty_start_lsch0(&self) -> LEDC_DUTY_START_LSCH0_R {
-        LEDC_DUTY_START_LSCH0_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn duty_start_lsch0(&self) -> DUTY_START_LSCH0_R {
+        DUTY_START_LSCH0_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bit 30 - This register is used to increase the duty of output signal or decrease the duty of output signal for low speed channel6."]
     #[inline(always)]
-    pub fn ledc_duty_inc_lsch0(&self) -> LEDC_DUTY_INC_LSCH0_R {
-        LEDC_DUTY_INC_LSCH0_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn duty_inc_lsch0(&self) -> DUTY_INC_LSCH0_R {
+        DUTY_INC_LSCH0_R::new(((self.bits >> 30) & 0x01) != 0)
     }
     #[doc = "Bits 20:29 - This register is used to control the num of increased or decreased times for low speed channel6."]
     #[inline(always)]
-    pub fn ledc_duty_num_lsch0(&self) -> LEDC_DUTY_NUM_LSCH0_R {
-        LEDC_DUTY_NUM_LSCH0_R::new(((self.bits >> 20) & 0x03ff) as u16)
+    pub fn duty_num_lsch0(&self) -> DUTY_NUM_LSCH0_R {
+        DUTY_NUM_LSCH0_R::new(((self.bits >> 20) & 0x03ff) as u16)
     }
     #[doc = "Bits 10:19 - This register is used to increase or decrease the duty every reg_duty_cycle_lsch0 cycles for low speed channel0."]
     #[inline(always)]
-    pub fn ledc_duty_cycle_lsch0(&self) -> LEDC_DUTY_CYCLE_LSCH0_R {
-        LEDC_DUTY_CYCLE_LSCH0_R::new(((self.bits >> 10) & 0x03ff) as u16)
+    pub fn duty_cycle_lsch0(&self) -> DUTY_CYCLE_LSCH0_R {
+        DUTY_CYCLE_LSCH0_R::new(((self.bits >> 10) & 0x03ff) as u16)
     }
     #[doc = "Bits 0:9 - This register controls the increase or decrease step scale for low speed channel0."]
     #[inline(always)]
-    pub fn ledc_duty_scale_lsch0(&self) -> LEDC_DUTY_SCALE_LSCH0_R {
-        LEDC_DUTY_SCALE_LSCH0_R::new((self.bits & 0x03ff) as u16)
+    pub fn duty_scale_lsch0(&self) -> DUTY_SCALE_LSCH0_R {
+        DUTY_SCALE_LSCH0_R::new((self.bits & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 31 - When reg_duty_num_hsch1 reg_duty_cycle_hsch1 and reg_duty_scale_hsch1 has been configured. these register won't take effect until set reg_duty_start_hsch1. this bit is automatically cleared by hardware."]
     #[inline(always)]
-    pub fn ledc_duty_start_lsch0(&mut self) -> LEDC_DUTY_START_LSCH0_W {
-        LEDC_DUTY_START_LSCH0_W { w: self }
+    pub fn duty_start_lsch0(&mut self) -> DUTY_START_LSCH0_W {
+        DUTY_START_LSCH0_W { w: self }
     }
     #[doc = "Bit 30 - This register is used to increase the duty of output signal or decrease the duty of output signal for low speed channel6."]
     #[inline(always)]
-    pub fn ledc_duty_inc_lsch0(&mut self) -> LEDC_DUTY_INC_LSCH0_W {
-        LEDC_DUTY_INC_LSCH0_W { w: self }
+    pub fn duty_inc_lsch0(&mut self) -> DUTY_INC_LSCH0_W {
+        DUTY_INC_LSCH0_W { w: self }
     }
     #[doc = "Bits 20:29 - This register is used to control the num of increased or decreased times for low speed channel6."]
     #[inline(always)]
-    pub fn ledc_duty_num_lsch0(&mut self) -> LEDC_DUTY_NUM_LSCH0_W {
-        LEDC_DUTY_NUM_LSCH0_W { w: self }
+    pub fn duty_num_lsch0(&mut self) -> DUTY_NUM_LSCH0_W {
+        DUTY_NUM_LSCH0_W { w: self }
     }
     #[doc = "Bits 10:19 - This register is used to increase or decrease the duty every reg_duty_cycle_lsch0 cycles for low speed channel0."]
     #[inline(always)]
-    pub fn ledc_duty_cycle_lsch0(&mut self) -> LEDC_DUTY_CYCLE_LSCH0_W {
-        LEDC_DUTY_CYCLE_LSCH0_W { w: self }
+    pub fn duty_cycle_lsch0(&mut self) -> DUTY_CYCLE_LSCH0_W {
+        DUTY_CYCLE_LSCH0_W { w: self }
     }
     #[doc = "Bits 0:9 - This register controls the increase or decrease step scale for low speed channel0."]
     #[inline(always)]
-    pub fn ledc_duty_scale_lsch0(&mut self) -> LEDC_DUTY_SCALE_LSCH0_W {
-        LEDC_DUTY_SCALE_LSCH0_W { w: self }
+    pub fn duty_scale_lsch0(&mut self) -> DUTY_SCALE_LSCH0_W {
+        DUTY_SCALE_LSCH0_W { w: self }
     }
 }

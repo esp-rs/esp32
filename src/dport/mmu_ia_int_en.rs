@@ -10,13 +10,13 @@ impl crate::ResetValue for super::MMU_IA_INT_EN {
         0
     }
 }
-#[doc = "Reader of field `DPORT_MMU_IA_INT_EN`"]
-pub type DPORT_MMU_IA_INT_EN_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_MMU_IA_INT_EN`"]
-pub struct DPORT_MMU_IA_INT_EN_W<'a> {
+#[doc = "Reader of field `MMU_IA_INT_EN`"]
+pub type MMU_IA_INT_EN_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `MMU_IA_INT_EN`"]
+pub struct MMU_IA_INT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_MMU_IA_INT_EN_W<'a> {
+impl<'a> MMU_IA_INT_EN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_MMU_IA_INT_EN_W<'a> {
 impl R {
     #[doc = "Bits 0:23"]
     #[inline(always)]
-    pub fn dport_mmu_ia_int_en(&self) -> DPORT_MMU_IA_INT_EN_R {
-        DPORT_MMU_IA_INT_EN_R::new((self.bits & 0x00ff_ffff) as u32)
+    pub fn mmu_ia_int_en(&self) -> MMU_IA_INT_EN_R {
+        MMU_IA_INT_EN_R::new((self.bits & 0x00ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:23"]
     #[inline(always)]
-    pub fn dport_mmu_ia_int_en(&mut self) -> DPORT_MMU_IA_INT_EN_W {
-        DPORT_MMU_IA_INT_EN_W { w: self }
+    pub fn mmu_ia_int_en(&mut self) -> MMU_IA_INT_EN_W {
+        MMU_IA_INT_EN_W { w: self }
     }
 }

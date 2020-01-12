@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_CPU_RECORD_STATUS {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_CPU_RECORDING`"]
-pub type DPORT_APP_CPU_RECORDING_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_APP_CPU_RECORDING`"]
-pub struct DPORT_APP_CPU_RECORDING_W<'a> {
+#[doc = "Reader of field `APP_CPU_RECORDING`"]
+pub type APP_CPU_RECORDING_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APP_CPU_RECORDING`"]
+pub struct APP_CPU_RECORDING_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_CPU_RECORDING_W<'a> {
+impl<'a> APP_CPU_RECORDING_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_APP_CPU_RECORDING_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_app_cpu_recording(&self) -> DPORT_APP_CPU_RECORDING_R {
-        DPORT_APP_CPU_RECORDING_R::new((self.bits & 0x01) != 0)
+    pub fn app_cpu_recording(&self) -> APP_CPU_RECORDING_R {
+        APP_CPU_RECORDING_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_app_cpu_recording(&mut self) -> DPORT_APP_CPU_RECORDING_W {
-        DPORT_APP_CPU_RECORDING_W { w: self }
+    pub fn app_cpu_recording(&mut self) -> APP_CPU_RECORDING_W {
+        APP_CPU_RECORDING_W { w: self }
     }
 }

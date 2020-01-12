@@ -10,13 +10,13 @@ impl crate::ResetValue for super::MEM_CNT_STATUS {
         0
     }
 }
-#[doc = "Reader of field `UART_TX_MEM_CNT`"]
-pub type UART_TX_MEM_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UART_TX_MEM_CNT`"]
-pub struct UART_TX_MEM_CNT_W<'a> {
+#[doc = "Reader of field `TX_MEM_CNT`"]
+pub type TX_MEM_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_MEM_CNT`"]
+pub struct TX_MEM_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TX_MEM_CNT_W<'a> {
+impl<'a> TX_MEM_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> UART_TX_MEM_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RX_MEM_CNT`"]
-pub type UART_RX_MEM_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UART_RX_MEM_CNT`"]
-pub struct UART_RX_MEM_CNT_W<'a> {
+#[doc = "Reader of field `RX_MEM_CNT`"]
+pub type RX_MEM_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RX_MEM_CNT`"]
+pub struct RX_MEM_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RX_MEM_CNT_W<'a> {
+impl<'a> RX_MEM_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> UART_RX_MEM_CNT_W<'a> {
 impl R {
     #[doc = "Bits 3:5 - refer to the txfifo_cnt's describtion."]
     #[inline(always)]
-    pub fn uart_tx_mem_cnt(&self) -> UART_TX_MEM_CNT_R {
-        UART_TX_MEM_CNT_R::new(((self.bits >> 3) & 0x07) as u8)
+    pub fn tx_mem_cnt(&self) -> TX_MEM_CNT_R {
+        TX_MEM_CNT_R::new(((self.bits >> 3) & 0x07) as u8)
     }
     #[doc = "Bits 0:2 - refer to the rxfifo_cnt's describtion."]
     #[inline(always)]
-    pub fn uart_rx_mem_cnt(&self) -> UART_RX_MEM_CNT_R {
-        UART_RX_MEM_CNT_R::new((self.bits & 0x07) as u8)
+    pub fn rx_mem_cnt(&self) -> RX_MEM_CNT_R {
+        RX_MEM_CNT_R::new((self.bits & 0x07) as u8)
     }
 }
 impl W {
     #[doc = "Bits 3:5 - refer to the txfifo_cnt's describtion."]
     #[inline(always)]
-    pub fn uart_tx_mem_cnt(&mut self) -> UART_TX_MEM_CNT_W {
-        UART_TX_MEM_CNT_W { w: self }
+    pub fn tx_mem_cnt(&mut self) -> TX_MEM_CNT_W {
+        TX_MEM_CNT_W { w: self }
     }
     #[doc = "Bits 0:2 - refer to the rxfifo_cnt's describtion."]
     #[inline(always)]
-    pub fn uart_rx_mem_cnt(&mut self) -> UART_RX_MEM_CNT_W {
-        UART_RX_MEM_CNT_W { w: self }
+    pub fn rx_mem_cnt(&mut self) -> RX_MEM_CNT_W {
+        RX_MEM_CNT_W { w: self }
     }
 }

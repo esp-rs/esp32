@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_EFUSE {
         0
     }
 }
-#[doc = "Reader of field `DPORT_EFUSE_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_EFUSE_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_EFUSE_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_EFUSE_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `EFUSE_ACCESS_GRANT_CONFIG`"]
+pub type EFUSE_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `EFUSE_ACCESS_GRANT_CONFIG`"]
+pub struct EFUSE_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_EFUSE_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> EFUSE_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_EFUSE_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_efuse_access_grant_config(&self) -> DPORT_EFUSE_ACCESS_GRANT_CONFIG_R {
-        DPORT_EFUSE_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn efuse_access_grant_config(&self) -> EFUSE_ACCESS_GRANT_CONFIG_R {
+        EFUSE_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_efuse_access_grant_config(&mut self) -> DPORT_EFUSE_ACCESS_GRANT_CONFIG_W {
-        DPORT_EFUSE_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn efuse_access_grant_config(&mut self) -> EFUSE_ACCESS_GRANT_CONFIG_W {
+        EFUSE_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMMU_TABLE1 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_DMMU_TABLE1`"]
-pub type DPORT_DMMU_TABLE1_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_DMMU_TABLE1`"]
-pub struct DPORT_DMMU_TABLE1_W<'a> {
+#[doc = "Reader of field `DMMU_TABLE1`"]
+pub type DMMU_TABLE1_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DMMU_TABLE1`"]
+pub struct DMMU_TABLE1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_DMMU_TABLE1_W<'a> {
+impl<'a> DMMU_TABLE1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_DMMU_TABLE1_W<'a> {
 impl R {
     #[doc = "Bits 0:6"]
     #[inline(always)]
-    pub fn dport_dmmu_table1(&self) -> DPORT_DMMU_TABLE1_R {
-        DPORT_DMMU_TABLE1_R::new((self.bits & 0x7f) as u8)
+    pub fn dmmu_table1(&self) -> DMMU_TABLE1_R {
+        DMMU_TABLE1_R::new((self.bits & 0x7f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:6"]
     #[inline(always)]
-    pub fn dport_dmmu_table1(&mut self) -> DPORT_DMMU_TABLE1_W {
-        DPORT_DMMU_TABLE1_W { w: self }
+    pub fn dmmu_table1(&mut self) -> DMMU_TABLE1_W {
+        DMMU_TABLE1_W { w: self }
     }
 }

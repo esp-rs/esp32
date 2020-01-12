@@ -10,13 +10,13 @@ impl crate::ResetValue for super::RESET_STATE {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_PROCPU_STAT_VECTOR_SEL`"]
-pub type RTC_CNTL_PROCPU_STAT_VECTOR_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_PROCPU_STAT_VECTOR_SEL`"]
-pub struct RTC_CNTL_PROCPU_STAT_VECTOR_SEL_W<'a> {
+#[doc = "Reader of field `PROCPU_STAT_VECTOR_SEL`"]
+pub type PROCPU_STAT_VECTOR_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PROCPU_STAT_VECTOR_SEL`"]
+pub struct PROCPU_STAT_VECTOR_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_PROCPU_STAT_VECTOR_SEL_W<'a> {
+impl<'a> PROCPU_STAT_VECTOR_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_PROCPU_STAT_VECTOR_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_APPCPU_STAT_VECTOR_SEL`"]
-pub type RTC_CNTL_APPCPU_STAT_VECTOR_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_APPCPU_STAT_VECTOR_SEL`"]
-pub struct RTC_CNTL_APPCPU_STAT_VECTOR_SEL_W<'a> {
+#[doc = "Reader of field `APPCPU_STAT_VECTOR_SEL`"]
+pub type APPCPU_STAT_VECTOR_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APPCPU_STAT_VECTOR_SEL`"]
+pub struct APPCPU_STAT_VECTOR_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_APPCPU_STAT_VECTOR_SEL_W<'a> {
+impl<'a> APPCPU_STAT_VECTOR_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> RTC_CNTL_APPCPU_STAT_VECTOR_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_RESET_CAUSE_APPCPU`"]
-pub type RTC_CNTL_RESET_CAUSE_APPCPU_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_RESET_CAUSE_APPCPU`"]
-pub struct RTC_CNTL_RESET_CAUSE_APPCPU_W<'a> {
+#[doc = "Reader of field `RESET_CAUSE_APPCPU`"]
+pub type RESET_CAUSE_APPCPU_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RESET_CAUSE_APPCPU`"]
+pub struct RESET_CAUSE_APPCPU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_RESET_CAUSE_APPCPU_W<'a> {
+impl<'a> RESET_CAUSE_APPCPU_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> RTC_CNTL_RESET_CAUSE_APPCPU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_RESET_CAUSE_PROCPU`"]
-pub type RTC_CNTL_RESET_CAUSE_PROCPU_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_RESET_CAUSE_PROCPU`"]
-pub struct RTC_CNTL_RESET_CAUSE_PROCPU_W<'a> {
+#[doc = "Reader of field `RESET_CAUSE_PROCPU`"]
+pub type RESET_CAUSE_PROCPU_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RESET_CAUSE_PROCPU`"]
+pub struct RESET_CAUSE_PROCPU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_RESET_CAUSE_PROCPU_W<'a> {
+impl<'a> RESET_CAUSE_PROCPU_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -89,44 +89,44 @@ impl<'a> RTC_CNTL_RESET_CAUSE_PROCPU_W<'a> {
 impl R {
     #[doc = "Bit 13 - PRO CPU state vector sel"]
     #[inline(always)]
-    pub fn rtc_cntl_procpu_stat_vector_sel(&self) -> RTC_CNTL_PROCPU_STAT_VECTOR_SEL_R {
-        RTC_CNTL_PROCPU_STAT_VECTOR_SEL_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn procpu_stat_vector_sel(&self) -> PROCPU_STAT_VECTOR_SEL_R {
+        PROCPU_STAT_VECTOR_SEL_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12 - APP CPU state vector sel"]
     #[inline(always)]
-    pub fn rtc_cntl_appcpu_stat_vector_sel(&self) -> RTC_CNTL_APPCPU_STAT_VECTOR_SEL_R {
-        RTC_CNTL_APPCPU_STAT_VECTOR_SEL_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn appcpu_stat_vector_sel(&self) -> APPCPU_STAT_VECTOR_SEL_R {
+        APPCPU_STAT_VECTOR_SEL_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bits 6:11 - reset cause of APP CPU"]
     #[inline(always)]
-    pub fn rtc_cntl_reset_cause_appcpu(&self) -> RTC_CNTL_RESET_CAUSE_APPCPU_R {
-        RTC_CNTL_RESET_CAUSE_APPCPU_R::new(((self.bits >> 6) & 0x3f) as u8)
+    pub fn reset_cause_appcpu(&self) -> RESET_CAUSE_APPCPU_R {
+        RESET_CAUSE_APPCPU_R::new(((self.bits >> 6) & 0x3f) as u8)
     }
     #[doc = "Bits 0:5 - reset cause of PRO CPU"]
     #[inline(always)]
-    pub fn rtc_cntl_reset_cause_procpu(&self) -> RTC_CNTL_RESET_CAUSE_PROCPU_R {
-        RTC_CNTL_RESET_CAUSE_PROCPU_R::new((self.bits & 0x3f) as u8)
+    pub fn reset_cause_procpu(&self) -> RESET_CAUSE_PROCPU_R {
+        RESET_CAUSE_PROCPU_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bit 13 - PRO CPU state vector sel"]
     #[inline(always)]
-    pub fn rtc_cntl_procpu_stat_vector_sel(&mut self) -> RTC_CNTL_PROCPU_STAT_VECTOR_SEL_W {
-        RTC_CNTL_PROCPU_STAT_VECTOR_SEL_W { w: self }
+    pub fn procpu_stat_vector_sel(&mut self) -> PROCPU_STAT_VECTOR_SEL_W {
+        PROCPU_STAT_VECTOR_SEL_W { w: self }
     }
     #[doc = "Bit 12 - APP CPU state vector sel"]
     #[inline(always)]
-    pub fn rtc_cntl_appcpu_stat_vector_sel(&mut self) -> RTC_CNTL_APPCPU_STAT_VECTOR_SEL_W {
-        RTC_CNTL_APPCPU_STAT_VECTOR_SEL_W { w: self }
+    pub fn appcpu_stat_vector_sel(&mut self) -> APPCPU_STAT_VECTOR_SEL_W {
+        APPCPU_STAT_VECTOR_SEL_W { w: self }
     }
     #[doc = "Bits 6:11 - reset cause of APP CPU"]
     #[inline(always)]
-    pub fn rtc_cntl_reset_cause_appcpu(&mut self) -> RTC_CNTL_RESET_CAUSE_APPCPU_W {
-        RTC_CNTL_RESET_CAUSE_APPCPU_W { w: self }
+    pub fn reset_cause_appcpu(&mut self) -> RESET_CAUSE_APPCPU_W {
+        RESET_CAUSE_APPCPU_W { w: self }
     }
     #[doc = "Bits 0:5 - reset cause of PRO CPU"]
     #[inline(always)]
-    pub fn rtc_cntl_reset_cause_procpu(&mut self) -> RTC_CNTL_RESET_CAUSE_PROCPU_W {
-        RTC_CNTL_RESET_CAUSE_PROCPU_W { w: self }
+    pub fn reset_cause_procpu(&mut self) -> RESET_CAUSE_PROCPU_W {
+        RESET_CAUSE_PROCPU_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_TOUCH_ENABLE {
         0
     }
 }
-#[doc = "Reader of field `SENS_TOUCH_PAD_OUTEN1`"]
-pub type SENS_TOUCH_PAD_OUTEN1_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TOUCH_PAD_OUTEN1`"]
-pub struct SENS_TOUCH_PAD_OUTEN1_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD_OUTEN1`"]
+pub type TOUCH_PAD_OUTEN1_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TOUCH_PAD_OUTEN1`"]
+pub struct TOUCH_PAD_OUTEN1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TOUCH_PAD_OUTEN1_W<'a> {
+impl<'a> TOUCH_PAD_OUTEN1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SENS_TOUCH_PAD_OUTEN1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TOUCH_PAD_OUTEN2`"]
-pub type SENS_TOUCH_PAD_OUTEN2_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TOUCH_PAD_OUTEN2`"]
-pub struct SENS_TOUCH_PAD_OUTEN2_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD_OUTEN2`"]
+pub type TOUCH_PAD_OUTEN2_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TOUCH_PAD_OUTEN2`"]
+pub struct TOUCH_PAD_OUTEN2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TOUCH_PAD_OUTEN2_W<'a> {
+impl<'a> TOUCH_PAD_OUTEN2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> SENS_TOUCH_PAD_OUTEN2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TOUCH_PAD_WORKEN`"]
-pub type SENS_TOUCH_PAD_WORKEN_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TOUCH_PAD_WORKEN`"]
-pub struct SENS_TOUCH_PAD_WORKEN_W<'a> {
+#[doc = "Reader of field `TOUCH_PAD_WORKEN`"]
+pub type TOUCH_PAD_WORKEN_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TOUCH_PAD_WORKEN`"]
+pub struct TOUCH_PAD_WORKEN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TOUCH_PAD_WORKEN_W<'a> {
+impl<'a> TOUCH_PAD_WORKEN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -55,34 +55,34 @@ impl<'a> SENS_TOUCH_PAD_WORKEN_W<'a> {
 impl R {
     #[doc = "Bits 20:29 - Bitmap defining SET1 for generating wakeup interrupt. SET1 is \"touched\" only if at least one of touch pad in SET1 is \"touched\"."]
     #[inline(always)]
-    pub fn sens_touch_pad_outen1(&self) -> SENS_TOUCH_PAD_OUTEN1_R {
-        SENS_TOUCH_PAD_OUTEN1_R::new(((self.bits >> 20) & 0x03ff) as u16)
+    pub fn touch_pad_outen1(&self) -> TOUCH_PAD_OUTEN1_R {
+        TOUCH_PAD_OUTEN1_R::new(((self.bits >> 20) & 0x03ff) as u16)
     }
     #[doc = "Bits 10:19 - Bitmap defining SET2 for generating wakeup interrupt. SET2 is \"touched\" only if at least one of touch pad in SET2 is \"touched\"."]
     #[inline(always)]
-    pub fn sens_touch_pad_outen2(&self) -> SENS_TOUCH_PAD_OUTEN2_R {
-        SENS_TOUCH_PAD_OUTEN2_R::new(((self.bits >> 10) & 0x03ff) as u16)
+    pub fn touch_pad_outen2(&self) -> TOUCH_PAD_OUTEN2_R {
+        TOUCH_PAD_OUTEN2_R::new(((self.bits >> 10) & 0x03ff) as u16)
     }
     #[doc = "Bits 0:9 - Bitmap defining the working set during the measurement."]
     #[inline(always)]
-    pub fn sens_touch_pad_worken(&self) -> SENS_TOUCH_PAD_WORKEN_R {
-        SENS_TOUCH_PAD_WORKEN_R::new((self.bits & 0x03ff) as u16)
+    pub fn touch_pad_worken(&self) -> TOUCH_PAD_WORKEN_R {
+        TOUCH_PAD_WORKEN_R::new((self.bits & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 20:29 - Bitmap defining SET1 for generating wakeup interrupt. SET1 is \"touched\" only if at least one of touch pad in SET1 is \"touched\"."]
     #[inline(always)]
-    pub fn sens_touch_pad_outen1(&mut self) -> SENS_TOUCH_PAD_OUTEN1_W {
-        SENS_TOUCH_PAD_OUTEN1_W { w: self }
+    pub fn touch_pad_outen1(&mut self) -> TOUCH_PAD_OUTEN1_W {
+        TOUCH_PAD_OUTEN1_W { w: self }
     }
     #[doc = "Bits 10:19 - Bitmap defining SET2 for generating wakeup interrupt. SET2 is \"touched\" only if at least one of touch pad in SET2 is \"touched\"."]
     #[inline(always)]
-    pub fn sens_touch_pad_outen2(&mut self) -> SENS_TOUCH_PAD_OUTEN2_W {
-        SENS_TOUCH_PAD_OUTEN2_W { w: self }
+    pub fn touch_pad_outen2(&mut self) -> TOUCH_PAD_OUTEN2_W {
+        TOUCH_PAD_OUTEN2_W { w: self }
     }
     #[doc = "Bits 0:9 - Bitmap defining the working set during the measurement."]
     #[inline(always)]
-    pub fn sens_touch_pad_worken(&mut self) -> SENS_TOUCH_PAD_WORKEN_W {
-        SENS_TOUCH_PAD_WORKEN_W { w: self }
+    pub fn touch_pad_worken(&mut self) -> TOUCH_PAD_WORKEN_W {
+        TOUCH_PAD_WORKEN_W { w: self }
     }
 }

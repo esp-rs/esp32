@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_CPU_RECORD_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CPU_PDEBUG_ENABLE`"]
-pub type DPORT_PRO_CPU_PDEBUG_ENABLE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CPU_PDEBUG_ENABLE`"]
-pub struct DPORT_PRO_CPU_PDEBUG_ENABLE_W<'a> {
+#[doc = "Reader of field `PRO_CPU_PDEBUG_ENABLE`"]
+pub type PRO_CPU_PDEBUG_ENABLE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CPU_PDEBUG_ENABLE`"]
+pub struct PRO_CPU_PDEBUG_ENABLE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CPU_PDEBUG_ENABLE_W<'a> {
+impl<'a> PRO_CPU_PDEBUG_ENABLE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> DPORT_PRO_CPU_PDEBUG_ENABLE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CPU_RECORD_DISABLE`"]
-pub type DPORT_PRO_CPU_RECORD_DISABLE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CPU_RECORD_DISABLE`"]
-pub struct DPORT_PRO_CPU_RECORD_DISABLE_W<'a> {
+#[doc = "Reader of field `PRO_CPU_RECORD_DISABLE`"]
+pub type PRO_CPU_RECORD_DISABLE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CPU_RECORD_DISABLE`"]
+pub struct PRO_CPU_RECORD_DISABLE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CPU_RECORD_DISABLE_W<'a> {
+impl<'a> PRO_CPU_RECORD_DISABLE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> DPORT_PRO_CPU_RECORD_DISABLE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CPU_RECORD_ENABLE`"]
-pub type DPORT_PRO_CPU_RECORD_ENABLE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_CPU_RECORD_ENABLE`"]
-pub struct DPORT_PRO_CPU_RECORD_ENABLE_W<'a> {
+#[doc = "Reader of field `PRO_CPU_RECORD_ENABLE`"]
+pub type PRO_CPU_RECORD_ENABLE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_CPU_RECORD_ENABLE`"]
+pub struct PRO_CPU_RECORD_ENABLE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CPU_RECORD_ENABLE_W<'a> {
+impl<'a> PRO_CPU_RECORD_ENABLE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -85,34 +85,34 @@ impl<'a> DPORT_PRO_CPU_RECORD_ENABLE_W<'a> {
 impl R {
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn dport_pro_cpu_pdebug_enable(&self) -> DPORT_PRO_CPU_PDEBUG_ENABLE_R {
-        DPORT_PRO_CPU_PDEBUG_ENABLE_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn pro_cpu_pdebug_enable(&self) -> PRO_CPU_PDEBUG_ENABLE_R {
+        PRO_CPU_PDEBUG_ENABLE_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn dport_pro_cpu_record_disable(&self) -> DPORT_PRO_CPU_RECORD_DISABLE_R {
-        DPORT_PRO_CPU_RECORD_DISABLE_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn pro_cpu_record_disable(&self) -> PRO_CPU_RECORD_DISABLE_R {
+        PRO_CPU_RECORD_DISABLE_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_cpu_record_enable(&self) -> DPORT_PRO_CPU_RECORD_ENABLE_R {
-        DPORT_PRO_CPU_RECORD_ENABLE_R::new((self.bits & 0x01) != 0)
+    pub fn pro_cpu_record_enable(&self) -> PRO_CPU_RECORD_ENABLE_R {
+        PRO_CPU_RECORD_ENABLE_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn dport_pro_cpu_pdebug_enable(&mut self) -> DPORT_PRO_CPU_PDEBUG_ENABLE_W {
-        DPORT_PRO_CPU_PDEBUG_ENABLE_W { w: self }
+    pub fn pro_cpu_pdebug_enable(&mut self) -> PRO_CPU_PDEBUG_ENABLE_W {
+        PRO_CPU_PDEBUG_ENABLE_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn dport_pro_cpu_record_disable(&mut self) -> DPORT_PRO_CPU_RECORD_DISABLE_W {
-        DPORT_PRO_CPU_RECORD_DISABLE_W { w: self }
+    pub fn pro_cpu_record_disable(&mut self) -> PRO_CPU_RECORD_DISABLE_W {
+        PRO_CPU_RECORD_DISABLE_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_cpu_record_enable(&mut self) -> DPORT_PRO_CPU_RECORD_ENABLE_W {
-        DPORT_PRO_CPU_RECORD_ENABLE_W { w: self }
+    pub fn pro_cpu_record_enable(&mut self) -> PRO_CPU_RECORD_ENABLE_W {
+        PRO_CPU_RECORD_ENABLE_W { w: self }
     }
 }

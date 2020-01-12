@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ACPU_NMI_INT {
         0
     }
 }
-#[doc = "Reader of field `GPIO_APPCPU_NMI_INT`"]
-pub type GPIO_APPCPU_NMI_INT_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `GPIO_APPCPU_NMI_INT`"]
-pub struct GPIO_APPCPU_NMI_INT_W<'a> {
+#[doc = "Reader of field `APPCPU_NMI_INT`"]
+pub type APPCPU_NMI_INT_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `APPCPU_NMI_INT`"]
+pub struct APPCPU_NMI_INT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_APPCPU_NMI_INT_W<'a> {
+impl<'a> APPCPU_NMI_INT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_APPCPU_NMI_INT_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - GPIO0~31 APP CPU non-maskable interrupt status"]
     #[inline(always)]
-    pub fn gpio_appcpu_nmi_int(&self) -> GPIO_APPCPU_NMI_INT_R {
-        GPIO_APPCPU_NMI_INT_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn appcpu_nmi_int(&self) -> APPCPU_NMI_INT_R {
+        APPCPU_NMI_INT_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - GPIO0~31 APP CPU non-maskable interrupt status"]
     #[inline(always)]
-    pub fn gpio_appcpu_nmi_int(&mut self) -> GPIO_APPCPU_NMI_INT_W {
-        GPIO_APPCPU_NMI_INT_W { w: self }
+    pub fn appcpu_nmi_int(&mut self) -> APPCPU_NMI_INT_W {
+        APPCPU_NMI_INT_W { w: self }
     }
 }

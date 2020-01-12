@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SECURE_BOOT_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_SW_BOOTLOADER_SEL`"]
-pub type DPORT_SW_BOOTLOADER_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_SW_BOOTLOADER_SEL`"]
-pub struct DPORT_SW_BOOTLOADER_SEL_W<'a> {
+#[doc = "Reader of field `SW_BOOTLOADER_SEL`"]
+pub type SW_BOOTLOADER_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SW_BOOTLOADER_SEL`"]
+pub struct SW_BOOTLOADER_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_SW_BOOTLOADER_SEL_W<'a> {
+impl<'a> SW_BOOTLOADER_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_SW_BOOTLOADER_SEL_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_sw_bootloader_sel(&self) -> DPORT_SW_BOOTLOADER_SEL_R {
-        DPORT_SW_BOOTLOADER_SEL_R::new((self.bits & 0x01) != 0)
+    pub fn sw_bootloader_sel(&self) -> SW_BOOTLOADER_SEL_R {
+        SW_BOOTLOADER_SEL_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_sw_bootloader_sel(&mut self) -> DPORT_SW_BOOTLOADER_SEL_W {
-        DPORT_SW_BOOTLOADER_SEL_W { w: self }
+    pub fn sw_bootloader_sel(&mut self) -> SW_BOOTLOADER_SEL_W {
+        SW_BOOTLOADER_SEL_W { w: self }
     }
 }

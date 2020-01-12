@@ -10,13 +10,13 @@ impl crate::ResetValue for super::OUTLINK_DSCR {
         0
     }
 }
-#[doc = "Reader of field `I2S_OUTLINK_DSCR`"]
-pub type I2S_OUTLINK_DSCR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `I2S_OUTLINK_DSCR`"]
-pub struct I2S_OUTLINK_DSCR_W<'a> {
+#[doc = "Reader of field `OUTLINK_DSCR`"]
+pub type OUTLINK_DSCR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `OUTLINK_DSCR`"]
+pub struct OUTLINK_DSCR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUTLINK_DSCR_W<'a> {
+impl<'a> OUTLINK_DSCR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> I2S_OUTLINK_DSCR_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_outlink_dscr(&self) -> I2S_OUTLINK_DSCR_R {
-        I2S_OUTLINK_DSCR_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn outlink_dscr(&self) -> OUTLINK_DSCR_R {
+        OUTLINK_DSCR_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn i2s_outlink_dscr(&mut self) -> I2S_OUTLINK_DSCR_W {
-        I2S_OUTLINK_DSCR_W { w: self }
+    pub fn outlink_dscr(&mut self) -> OUTLINK_DSCR_W {
+        OUTLINK_DSCR_W { w: self }
     }
 }

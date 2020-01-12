@@ -10,13 +10,13 @@ impl crate::ResetValue for super::FH2_STATUS {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_FH2_OST_ON`"]
-pub type MCPWM_FH2_OST_ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH2_OST_ON`"]
-pub struct MCPWM_FH2_OST_ON_W<'a> {
+#[doc = "Reader of field `FH2_OST_ON`"]
+pub type FH2_OST_ON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH2_OST_ON`"]
+pub struct FH2_OST_ON_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH2_OST_ON_W<'a> {
+impl<'a> FH2_OST_ON_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> MCPWM_FH2_OST_ON_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FH2_CBC_ON`"]
-pub type MCPWM_FH2_CBC_ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH2_CBC_ON`"]
-pub struct MCPWM_FH2_CBC_ON_W<'a> {
+#[doc = "Reader of field `FH2_CBC_ON`"]
+pub type FH2_CBC_ON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH2_CBC_ON`"]
+pub struct FH2_CBC_ON_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH2_CBC_ON_W<'a> {
+impl<'a> FH2_CBC_ON_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> MCPWM_FH2_CBC_ON_W<'a> {
 impl R {
     #[doc = "Bit 1 - Set and reset by hardware. If set an one-shot mode action is on going"]
     #[inline(always)]
-    pub fn mcpwm_fh2_ost_on(&self) -> MCPWM_FH2_OST_ON_R {
-        MCPWM_FH2_OST_ON_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn fh2_ost_on(&self) -> FH2_OST_ON_R {
+        FH2_OST_ON_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - Set and reset by hardware. If set an cycle-by-cycle mode action is on going"]
     #[inline(always)]
-    pub fn mcpwm_fh2_cbc_on(&self) -> MCPWM_FH2_CBC_ON_R {
-        MCPWM_FH2_CBC_ON_R::new((self.bits & 0x01) != 0)
+    pub fn fh2_cbc_on(&self) -> FH2_CBC_ON_R {
+        FH2_CBC_ON_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 1 - Set and reset by hardware. If set an one-shot mode action is on going"]
     #[inline(always)]
-    pub fn mcpwm_fh2_ost_on(&mut self) -> MCPWM_FH2_OST_ON_W {
-        MCPWM_FH2_OST_ON_W { w: self }
+    pub fn fh2_ost_on(&mut self) -> FH2_OST_ON_W {
+        FH2_OST_ON_W { w: self }
     }
     #[doc = "Bit 0 - Set and reset by hardware. If set an cycle-by-cycle mode action is on going"]
     #[inline(always)]
-    pub fn mcpwm_fh2_cbc_on(&mut self) -> MCPWM_FH2_CBC_ON_W {
-        MCPWM_FH2_CBC_ON_W { w: self }
+    pub fn fh2_cbc_on(&mut self) -> FH2_CBC_ON_W {
+        FH2_CBC_ON_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_IO_MUX {
         0
     }
 }
-#[doc = "Reader of field `DPORT_IOMUX_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_IOMUX_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_IOMUX_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_IOMUX_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `IOMUX_ACCESS_GRANT_CONFIG`"]
+pub type IOMUX_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `IOMUX_ACCESS_GRANT_CONFIG`"]
+pub struct IOMUX_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_IOMUX_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> IOMUX_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_IOMUX_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_iomux_access_grant_config(&self) -> DPORT_IOMUX_ACCESS_GRANT_CONFIG_R {
-        DPORT_IOMUX_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn iomux_access_grant_config(&self) -> IOMUX_ACCESS_GRANT_CONFIG_R {
+        IOMUX_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_iomux_access_grant_config(&mut self) -> DPORT_IOMUX_ACCESS_GRANT_CONFIG_W {
-        DPORT_IOMUX_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn iomux_access_grant_config(&mut self) -> IOMUX_ACCESS_GRANT_CONFIG_W {
+        IOMUX_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

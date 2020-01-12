@@ -10,13 +10,13 @@ impl crate::ResetValue for super::EXT0 {
         0
     }
 }
-#[doc = "Reader of field `SPI_T_PP_ENA`"]
-pub type SPI_T_PP_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_T_PP_ENA`"]
-pub struct SPI_T_PP_ENA_W<'a> {
+#[doc = "Reader of field `T_PP_ENA`"]
+pub type T_PP_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `T_PP_ENA`"]
+pub struct T_PP_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_T_PP_ENA_W<'a> {
+impl<'a> T_PP_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SPI_T_PP_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_T_PP_SHIFT`"]
-pub type SPI_T_PP_SHIFT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_T_PP_SHIFT`"]
-pub struct SPI_T_PP_SHIFT_W<'a> {
+#[doc = "Reader of field `T_PP_SHIFT`"]
+pub type T_PP_SHIFT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `T_PP_SHIFT`"]
+pub struct T_PP_SHIFT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_T_PP_SHIFT_W<'a> {
+impl<'a> T_PP_SHIFT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> SPI_T_PP_SHIFT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_T_PP_TIME`"]
-pub type SPI_T_PP_TIME_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SPI_T_PP_TIME`"]
-pub struct SPI_T_PP_TIME_W<'a> {
+#[doc = "Reader of field `T_PP_TIME`"]
+pub type T_PP_TIME_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `T_PP_TIME`"]
+pub struct T_PP_TIME_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_T_PP_TIME_W<'a> {
+impl<'a> T_PP_TIME_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -65,34 +65,34 @@ impl<'a> SPI_T_PP_TIME_W<'a> {
 impl R {
     #[doc = "Bit 31 - page program delay enable."]
     #[inline(always)]
-    pub fn spi_t_pp_ena(&self) -> SPI_T_PP_ENA_R {
-        SPI_T_PP_ENA_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn t_pp_ena(&self) -> T_PP_ENA_R {
+        T_PP_ENA_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bits 16:19 - page program delay time shift ."]
     #[inline(always)]
-    pub fn spi_t_pp_shift(&self) -> SPI_T_PP_SHIFT_R {
-        SPI_T_PP_SHIFT_R::new(((self.bits >> 16) & 0x0f) as u8)
+    pub fn t_pp_shift(&self) -> T_PP_SHIFT_R {
+        T_PP_SHIFT_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
     #[doc = "Bits 0:11 - page program delay time by system clock."]
     #[inline(always)]
-    pub fn spi_t_pp_time(&self) -> SPI_T_PP_TIME_R {
-        SPI_T_PP_TIME_R::new((self.bits & 0x0fff) as u16)
+    pub fn t_pp_time(&self) -> T_PP_TIME_R {
+        T_PP_TIME_R::new((self.bits & 0x0fff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 31 - page program delay enable."]
     #[inline(always)]
-    pub fn spi_t_pp_ena(&mut self) -> SPI_T_PP_ENA_W {
-        SPI_T_PP_ENA_W { w: self }
+    pub fn t_pp_ena(&mut self) -> T_PP_ENA_W {
+        T_PP_ENA_W { w: self }
     }
     #[doc = "Bits 16:19 - page program delay time shift ."]
     #[inline(always)]
-    pub fn spi_t_pp_shift(&mut self) -> SPI_T_PP_SHIFT_W {
-        SPI_T_PP_SHIFT_W { w: self }
+    pub fn t_pp_shift(&mut self) -> T_PP_SHIFT_W {
+        T_PP_SHIFT_W { w: self }
     }
     #[doc = "Bits 0:11 - page program delay time by system clock."]
     #[inline(always)]
-    pub fn spi_t_pp_time(&mut self) -> SPI_T_PP_TIME_W {
-        SPI_T_PP_TIME_W { w: self }
+    pub fn t_pp_time(&mut self) -> T_PP_TIME_W {
+        T_PP_TIME_W { w: self }
     }
 }

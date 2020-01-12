@@ -10,13 +10,13 @@ impl crate::ResetValue for super::T0LOAD {
         0
     }
 }
-#[doc = "Reader of field `TIMG_T0_LOAD`"]
-pub type TIMG_T0_LOAD_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_T0_LOAD`"]
-pub struct TIMG_T0_LOAD_W<'a> {
+#[doc = "Reader of field `T0_LOAD`"]
+pub type T0_LOAD_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `T0_LOAD`"]
+pub struct T0_LOAD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_T0_LOAD_W<'a> {
+impl<'a> T0_LOAD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_T0_LOAD_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Write any value will trigger timer 0 time-base counter reload"]
     #[inline(always)]
-    pub fn timg_t0_load(&self) -> TIMG_T0_LOAD_R {
-        TIMG_T0_LOAD_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn t0_load(&self) -> T0_LOAD_R {
+        T0_LOAD_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Write any value will trigger timer 0 time-base counter reload"]
     #[inline(always)]
-    pub fn timg_t0_load(&mut self) -> TIMG_T0_LOAD_W {
-        TIMG_T0_LOAD_W { w: self }
+    pub fn t0_load(&mut self) -> T0_LOAD_W {
+        T0_LOAD_W { w: self }
     }
 }

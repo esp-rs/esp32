@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_BOOT_REMAP_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_BOOT_REMAP`"]
-pub type DPORT_APP_BOOT_REMAP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_APP_BOOT_REMAP`"]
-pub struct DPORT_APP_BOOT_REMAP_W<'a> {
+#[doc = "Reader of field `APP_BOOT_REMAP`"]
+pub type APP_BOOT_REMAP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APP_BOOT_REMAP`"]
+pub struct APP_BOOT_REMAP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_BOOT_REMAP_W<'a> {
+impl<'a> APP_BOOT_REMAP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_APP_BOOT_REMAP_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_app_boot_remap(&self) -> DPORT_APP_BOOT_REMAP_R {
-        DPORT_APP_BOOT_REMAP_R::new((self.bits & 0x01) != 0)
+    pub fn app_boot_remap(&self) -> APP_BOOT_REMAP_R {
+        APP_BOOT_REMAP_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_app_boot_remap(&mut self) -> DPORT_APP_BOOT_REMAP_W {
-        DPORT_APP_BOOT_REMAP_W { w: self }
+    pub fn app_boot_remap(&mut self) -> APP_BOOT_REMAP_W {
+        APP_BOOT_REMAP_W { w: self }
     }
 }

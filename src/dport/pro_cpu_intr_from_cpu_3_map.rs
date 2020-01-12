@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_CPU_INTR_FROM_CPU_3_MAP {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP`"]
-pub type DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP`"]
-pub struct DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_W<'a> {
+#[doc = "Reader of field `PRO_CPU_INTR_FROM_CPU_3_MAP`"]
+pub type PRO_CPU_INTR_FROM_CPU_3_MAP_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PRO_CPU_INTR_FROM_CPU_3_MAP`"]
+pub struct PRO_CPU_INTR_FROM_CPU_3_MAP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_W<'a> {
+impl<'a> PRO_CPU_INTR_FROM_CPU_3_MAP_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_W<'a> {
 impl R {
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn dport_pro_cpu_intr_from_cpu_3_map(&self) -> DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_R {
-        DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_R::new((self.bits & 0x1f) as u8)
+    pub fn pro_cpu_intr_from_cpu_3_map(&self) -> PRO_CPU_INTR_FROM_CPU_3_MAP_R {
+        PRO_CPU_INTR_FROM_CPU_3_MAP_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn dport_pro_cpu_intr_from_cpu_3_map(&mut self) -> DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_W {
-        DPORT_PRO_CPU_INTR_FROM_CPU_3_MAP_W { w: self }
+    pub fn pro_cpu_intr_from_cpu_3_map(&mut self) -> PRO_CPU_INTR_FROM_CPU_3_MAP_W {
+        PRO_CPU_INTR_FROM_CPU_3_MAP_W { w: self }
     }
 }

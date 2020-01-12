@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ID {
         0
     }
 }
-#[doc = "Reader of field `SLC_ID`"]
-pub type SLC_ID_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SLC_ID`"]
-pub struct SLC_ID_W<'a> {
+#[doc = "Reader of field `ID`"]
+pub type ID_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `ID`"]
+pub struct ID_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_ID_W<'a> {
+impl<'a> ID_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SLC_ID_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_id(&self) -> SLC_ID_R {
-        SLC_ID_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn id(&self) -> ID_R {
+        ID_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_id(&mut self) -> SLC_ID_W {
-        SLC_ID_W { w: self }
+    pub fn id(&mut self) -> ID_W {
+        ID_W { w: self }
     }
 }

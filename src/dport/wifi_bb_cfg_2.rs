@@ -10,13 +10,13 @@ impl crate::ResetValue for super::WIFI_BB_CFG_2 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_WIFI_BB_CFG_2`"]
-pub type DPORT_WIFI_BB_CFG_2_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_WIFI_BB_CFG_2`"]
-pub struct DPORT_WIFI_BB_CFG_2_W<'a> {
+#[doc = "Reader of field `WIFI_BB_CFG_2`"]
+pub type WIFI_BB_CFG_2_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `WIFI_BB_CFG_2`"]
+pub struct WIFI_BB_CFG_2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_WIFI_BB_CFG_2_W<'a> {
+impl<'a> WIFI_BB_CFG_2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_WIFI_BB_CFG_2_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_wifi_bb_cfg_2(&self) -> DPORT_WIFI_BB_CFG_2_R {
-        DPORT_WIFI_BB_CFG_2_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn wifi_bb_cfg_2(&self) -> WIFI_BB_CFG_2_R {
+        WIFI_BB_CFG_2_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_wifi_bb_cfg_2(&mut self) -> DPORT_WIFI_BB_CFG_2_W {
-        DPORT_WIFI_BB_CFG_2_W { w: self }
+    pub fn wifi_bb_cfg_2(&mut self) -> WIFI_BB_CFG_2_W {
+        WIFI_BB_CFG_2_W { w: self }
     }
 }

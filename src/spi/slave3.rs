@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLAVE3 {
         0
     }
 }
-#[doc = "Reader of field `SPI_SLV_WRSTA_CMD_VALUE`"]
-pub type SPI_SLV_WRSTA_CMD_VALUE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_SLV_WRSTA_CMD_VALUE`"]
-pub struct SPI_SLV_WRSTA_CMD_VALUE_W<'a> {
+#[doc = "Reader of field `SLV_WRSTA_CMD_VALUE`"]
+pub type SLV_WRSTA_CMD_VALUE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SLV_WRSTA_CMD_VALUE`"]
+pub struct SLV_WRSTA_CMD_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_WRSTA_CMD_VALUE_W<'a> {
+impl<'a> SLV_WRSTA_CMD_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SPI_SLV_WRSTA_CMD_VALUE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_RDSTA_CMD_VALUE`"]
-pub type SPI_SLV_RDSTA_CMD_VALUE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_SLV_RDSTA_CMD_VALUE`"]
-pub struct SPI_SLV_RDSTA_CMD_VALUE_W<'a> {
+#[doc = "Reader of field `SLV_RDSTA_CMD_VALUE`"]
+pub type SLV_RDSTA_CMD_VALUE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SLV_RDSTA_CMD_VALUE`"]
+pub struct SLV_RDSTA_CMD_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_RDSTA_CMD_VALUE_W<'a> {
+impl<'a> SLV_RDSTA_CMD_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> SPI_SLV_RDSTA_CMD_VALUE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_WRBUF_CMD_VALUE`"]
-pub type SPI_SLV_WRBUF_CMD_VALUE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_SLV_WRBUF_CMD_VALUE`"]
-pub struct SPI_SLV_WRBUF_CMD_VALUE_W<'a> {
+#[doc = "Reader of field `SLV_WRBUF_CMD_VALUE`"]
+pub type SLV_WRBUF_CMD_VALUE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SLV_WRBUF_CMD_VALUE`"]
+pub struct SLV_WRBUF_CMD_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_WRBUF_CMD_VALUE_W<'a> {
+impl<'a> SLV_WRBUF_CMD_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -52,13 +52,13 @@ impl<'a> SPI_SLV_WRBUF_CMD_VALUE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_SLV_RDBUF_CMD_VALUE`"]
-pub type SPI_SLV_RDBUF_CMD_VALUE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_SLV_RDBUF_CMD_VALUE`"]
-pub struct SPI_SLV_RDBUF_CMD_VALUE_W<'a> {
+#[doc = "Reader of field `SLV_RDBUF_CMD_VALUE`"]
+pub type SLV_RDBUF_CMD_VALUE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SLV_RDBUF_CMD_VALUE`"]
+pub struct SLV_RDBUF_CMD_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_RDBUF_CMD_VALUE_W<'a> {
+impl<'a> SLV_RDBUF_CMD_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -69,44 +69,44 @@ impl<'a> SPI_SLV_RDBUF_CMD_VALUE_W<'a> {
 impl R {
     #[doc = "Bits 24:31 - In the slave mode it is the value of write-status command."]
     #[inline(always)]
-    pub fn spi_slv_wrsta_cmd_value(&self) -> SPI_SLV_WRSTA_CMD_VALUE_R {
-        SPI_SLV_WRSTA_CMD_VALUE_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn slv_wrsta_cmd_value(&self) -> SLV_WRSTA_CMD_VALUE_R {
+        SLV_WRSTA_CMD_VALUE_R::new(((self.bits >> 24) & 0xff) as u8)
     }
     #[doc = "Bits 16:23 - In the slave mode it is the value of read-status command."]
     #[inline(always)]
-    pub fn spi_slv_rdsta_cmd_value(&self) -> SPI_SLV_RDSTA_CMD_VALUE_R {
-        SPI_SLV_RDSTA_CMD_VALUE_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn slv_rdsta_cmd_value(&self) -> SLV_RDSTA_CMD_VALUE_R {
+        SLV_RDSTA_CMD_VALUE_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - In the slave mode it is the value of write-buffer command."]
     #[inline(always)]
-    pub fn spi_slv_wrbuf_cmd_value(&self) -> SPI_SLV_WRBUF_CMD_VALUE_R {
-        SPI_SLV_WRBUF_CMD_VALUE_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn slv_wrbuf_cmd_value(&self) -> SLV_WRBUF_CMD_VALUE_R {
+        SLV_WRBUF_CMD_VALUE_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 0:7 - In the slave mode it is the value of read-buffer command."]
     #[inline(always)]
-    pub fn spi_slv_rdbuf_cmd_value(&self) -> SPI_SLV_RDBUF_CMD_VALUE_R {
-        SPI_SLV_RDBUF_CMD_VALUE_R::new((self.bits & 0xff) as u8)
+    pub fn slv_rdbuf_cmd_value(&self) -> SLV_RDBUF_CMD_VALUE_R {
+        SLV_RDBUF_CMD_VALUE_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 24:31 - In the slave mode it is the value of write-status command."]
     #[inline(always)]
-    pub fn spi_slv_wrsta_cmd_value(&mut self) -> SPI_SLV_WRSTA_CMD_VALUE_W {
-        SPI_SLV_WRSTA_CMD_VALUE_W { w: self }
+    pub fn slv_wrsta_cmd_value(&mut self) -> SLV_WRSTA_CMD_VALUE_W {
+        SLV_WRSTA_CMD_VALUE_W { w: self }
     }
     #[doc = "Bits 16:23 - In the slave mode it is the value of read-status command."]
     #[inline(always)]
-    pub fn spi_slv_rdsta_cmd_value(&mut self) -> SPI_SLV_RDSTA_CMD_VALUE_W {
-        SPI_SLV_RDSTA_CMD_VALUE_W { w: self }
+    pub fn slv_rdsta_cmd_value(&mut self) -> SLV_RDSTA_CMD_VALUE_W {
+        SLV_RDSTA_CMD_VALUE_W { w: self }
     }
     #[doc = "Bits 8:15 - In the slave mode it is the value of write-buffer command."]
     #[inline(always)]
-    pub fn spi_slv_wrbuf_cmd_value(&mut self) -> SPI_SLV_WRBUF_CMD_VALUE_W {
-        SPI_SLV_WRBUF_CMD_VALUE_W { w: self }
+    pub fn slv_wrbuf_cmd_value(&mut self) -> SLV_WRBUF_CMD_VALUE_W {
+        SLV_WRBUF_CMD_VALUE_W { w: self }
     }
     #[doc = "Bits 0:7 - In the slave mode it is the value of read-buffer command."]
     #[inline(always)]
-    pub fn spi_slv_rdbuf_cmd_value(&mut self) -> SPI_SLV_RDBUF_CMD_VALUE_W {
-        SPI_SLV_RDBUF_CMD_VALUE_W { w: self }
+    pub fn slv_rdbuf_cmd_value(&mut self) -> SLV_RDBUF_CMD_VALUE_W {
+        SLV_RDBUF_CMD_VALUE_W { w: self }
     }
 }

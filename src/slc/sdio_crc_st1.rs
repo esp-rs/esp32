@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SDIO_CRC_ST1 {
         0
     }
 }
-#[doc = "Reader of field `SLC_ERR_CNT_CLR`"]
-pub type SLC_ERR_CNT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_ERR_CNT_CLR`"]
-pub struct SLC_ERR_CNT_CLR_W<'a> {
+#[doc = "Reader of field `ERR_CNT_CLR`"]
+pub type ERR_CNT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ERR_CNT_CLR`"]
+pub struct ERR_CNT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_ERR_CNT_CLR_W<'a> {
+impl<'a> ERR_CNT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SLC_ERR_CNT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_CMD_CRC_ERR_CNT`"]
-pub type SLC_CMD_CRC_ERR_CNT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_CMD_CRC_ERR_CNT`"]
-pub struct SLC_CMD_CRC_ERR_CNT_W<'a> {
+#[doc = "Reader of field `CMD_CRC_ERR_CNT`"]
+pub type CMD_CRC_ERR_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CMD_CRC_ERR_CNT`"]
+pub struct CMD_CRC_ERR_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_CMD_CRC_ERR_CNT_W<'a> {
+impl<'a> CMD_CRC_ERR_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> SLC_CMD_CRC_ERR_CNT_W<'a> {
 impl R {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn slc_err_cnt_clr(&self) -> SLC_ERR_CNT_CLR_R {
-        SLC_ERR_CNT_CLR_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn err_cnt_clr(&self) -> ERR_CNT_CLR_R {
+        ERR_CNT_CLR_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn slc_cmd_crc_err_cnt(&self) -> SLC_CMD_CRC_ERR_CNT_R {
-        SLC_CMD_CRC_ERR_CNT_R::new((self.bits & 0xff) as u8)
+    pub fn cmd_crc_err_cnt(&self) -> CMD_CRC_ERR_CNT_R {
+        CMD_CRC_ERR_CNT_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn slc_err_cnt_clr(&mut self) -> SLC_ERR_CNT_CLR_W {
-        SLC_ERR_CNT_CLR_W { w: self }
+    pub fn err_cnt_clr(&mut self) -> ERR_CNT_CLR_W {
+        ERR_CNT_CLR_W { w: self }
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn slc_cmd_crc_err_cnt(&mut self) -> SLC_CMD_CRC_ERR_CNT_W {
-        SLC_CMD_CRC_ERR_CNT_W { w: self }
+    pub fn cmd_crc_err_cnt(&mut self) -> CMD_CRC_ERR_CNT_W {
+        CMD_CRC_ERR_CNT_W { w: self }
     }
 }

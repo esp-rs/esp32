@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLAVE_ADDR {
         0
     }
 }
-#[doc = "Reader of field `I2C_ADDR_10BIT_EN`"]
-pub type I2C_ADDR_10BIT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2C_ADDR_10BIT_EN`"]
-pub struct I2C_ADDR_10BIT_EN_W<'a> {
+#[doc = "Reader of field `ADDR_10BIT_EN`"]
+pub type ADDR_10BIT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ADDR_10BIT_EN`"]
+pub struct ADDR_10BIT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_ADDR_10BIT_EN_W<'a> {
+impl<'a> ADDR_10BIT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2C_ADDR_10BIT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_SLAVE_ADDR`"]
-pub type I2C_SLAVE_ADDR_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `I2C_SLAVE_ADDR`"]
-pub struct I2C_SLAVE_ADDR_W<'a> {
+#[doc = "Reader of field `SLAVE_ADDR`"]
+pub type SLAVE_ADDR_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `SLAVE_ADDR`"]
+pub struct SLAVE_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_SLAVE_ADDR_W<'a> {
+impl<'a> SLAVE_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> I2C_SLAVE_ADDR_W<'a> {
 impl R {
     #[doc = "Bit 31 - This register is used to enable slave 10bit address mode."]
     #[inline(always)]
-    pub fn i2c_addr_10bit_en(&self) -> I2C_ADDR_10BIT_EN_R {
-        I2C_ADDR_10BIT_EN_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn addr_10bit_en(&self) -> ADDR_10BIT_EN_R {
+        ADDR_10BIT_EN_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bits 0:14 - when configured as i2c slave this register is used to configure slave's address."]
     #[inline(always)]
-    pub fn i2c_slave_addr(&self) -> I2C_SLAVE_ADDR_R {
-        I2C_SLAVE_ADDR_R::new((self.bits & 0x7fff) as u16)
+    pub fn slave_addr(&self) -> SLAVE_ADDR_R {
+        SLAVE_ADDR_R::new((self.bits & 0x7fff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 31 - This register is used to enable slave 10bit address mode."]
     #[inline(always)]
-    pub fn i2c_addr_10bit_en(&mut self) -> I2C_ADDR_10BIT_EN_W {
-        I2C_ADDR_10BIT_EN_W { w: self }
+    pub fn addr_10bit_en(&mut self) -> ADDR_10BIT_EN_W {
+        ADDR_10BIT_EN_W { w: self }
     }
     #[doc = "Bits 0:14 - when configured as i2c slave this register is used to configure slave's address."]
     #[inline(always)]
-    pub fn i2c_slave_addr(&mut self) -> I2C_SLAVE_ADDR_W {
-        I2C_SLAVE_ADDR_W { w: self }
+    pub fn slave_addr(&mut self) -> SLAVE_ADDR_W {
+        SLAVE_ADDR_W { w: self }
     }
 }

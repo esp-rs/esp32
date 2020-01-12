@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CMD {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_PGM_CMD`"]
-pub type EFUSE_PGM_CMD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EFUSE_PGM_CMD`"]
-pub struct EFUSE_PGM_CMD_W<'a> {
+#[doc = "Reader of field `PGM_CMD`"]
+pub type PGM_CMD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PGM_CMD`"]
+pub struct PGM_CMD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_PGM_CMD_W<'a> {
+impl<'a> PGM_CMD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> EFUSE_PGM_CMD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_READ_CMD`"]
-pub type EFUSE_READ_CMD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EFUSE_READ_CMD`"]
-pub struct EFUSE_READ_CMD_W<'a> {
+#[doc = "Reader of field `READ_CMD`"]
+pub type READ_CMD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `READ_CMD`"]
+pub struct READ_CMD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_READ_CMD_W<'a> {
+impl<'a> READ_CMD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> EFUSE_READ_CMD_W<'a> {
 impl R {
     #[doc = "Bit 1 - command for program"]
     #[inline(always)]
-    pub fn efuse_pgm_cmd(&self) -> EFUSE_PGM_CMD_R {
-        EFUSE_PGM_CMD_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn pgm_cmd(&self) -> PGM_CMD_R {
+        PGM_CMD_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - command for read"]
     #[inline(always)]
-    pub fn efuse_read_cmd(&self) -> EFUSE_READ_CMD_R {
-        EFUSE_READ_CMD_R::new((self.bits & 0x01) != 0)
+    pub fn read_cmd(&self) -> READ_CMD_R {
+        READ_CMD_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 1 - command for program"]
     #[inline(always)]
-    pub fn efuse_pgm_cmd(&mut self) -> EFUSE_PGM_CMD_W {
-        EFUSE_PGM_CMD_W { w: self }
+    pub fn pgm_cmd(&mut self) -> PGM_CMD_W {
+        PGM_CMD_W { w: self }
     }
     #[doc = "Bit 0 - command for read"]
     #[inline(always)]
-    pub fn efuse_read_cmd(&mut self) -> EFUSE_READ_CMD_W {
-        EFUSE_READ_CMD_W { w: self }
+    pub fn read_cmd(&mut self) -> READ_CMD_W {
+        READ_CMD_W { w: self }
     }
 }

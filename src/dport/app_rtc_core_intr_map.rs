@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_RTC_CORE_INTR_MAP {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_RTC_CORE_INTR_MAP`"]
-pub type DPORT_APP_RTC_CORE_INTR_MAP_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_APP_RTC_CORE_INTR_MAP`"]
-pub struct DPORT_APP_RTC_CORE_INTR_MAP_W<'a> {
+#[doc = "Reader of field `APP_RTC_CORE_INTR_MAP`"]
+pub type APP_RTC_CORE_INTR_MAP_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `APP_RTC_CORE_INTR_MAP`"]
+pub struct APP_RTC_CORE_INTR_MAP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_RTC_CORE_INTR_MAP_W<'a> {
+impl<'a> APP_RTC_CORE_INTR_MAP_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_APP_RTC_CORE_INTR_MAP_W<'a> {
 impl R {
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn dport_app_rtc_core_intr_map(&self) -> DPORT_APP_RTC_CORE_INTR_MAP_R {
-        DPORT_APP_RTC_CORE_INTR_MAP_R::new((self.bits & 0x1f) as u8)
+    pub fn app_rtc_core_intr_map(&self) -> APP_RTC_CORE_INTR_MAP_R {
+        APP_RTC_CORE_INTR_MAP_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn dport_app_rtc_core_intr_map(&mut self) -> DPORT_APP_RTC_CORE_INTR_MAP_W {
-        DPORT_APP_RTC_CORE_INTR_MAP_W { w: self }
+    pub fn app_rtc_core_intr_map(&mut self) -> APP_RTC_CORE_INTR_MAP_W {
+        APP_RTC_CORE_INTR_MAP_W { w: self }
     }
 }

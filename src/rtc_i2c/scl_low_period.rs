@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SCL_LOW_PERIOD {
         0
     }
 }
-#[doc = "Reader of field `RTC_I2C_SCL_LOW_PERIOD`"]
-pub type RTC_I2C_SCL_LOW_PERIOD_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_I2C_SCL_LOW_PERIOD`"]
-pub struct RTC_I2C_SCL_LOW_PERIOD_W<'a> {
+#[doc = "Reader of field `SCL_LOW_PERIOD`"]
+pub type SCL_LOW_PERIOD_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SCL_LOW_PERIOD`"]
+pub struct SCL_LOW_PERIOD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_SCL_LOW_PERIOD_W<'a> {
+impl<'a> SCL_LOW_PERIOD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_I2C_SCL_LOW_PERIOD_W<'a> {
 impl R {
     #[doc = "Bits 0:18 - number of cycles that scl == 0"]
     #[inline(always)]
-    pub fn rtc_i2c_scl_low_period(&self) -> RTC_I2C_SCL_LOW_PERIOD_R {
-        RTC_I2C_SCL_LOW_PERIOD_R::new((self.bits & 0x0007_ffff) as u32)
+    pub fn scl_low_period(&self) -> SCL_LOW_PERIOD_R {
+        SCL_LOW_PERIOD_R::new((self.bits & 0x0007_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:18 - number of cycles that scl == 0"]
     #[inline(always)]
-    pub fn rtc_i2c_scl_low_period(&mut self) -> RTC_I2C_SCL_LOW_PERIOD_W {
-        RTC_I2C_SCL_LOW_PERIOD_W { w: self }
+    pub fn scl_low_period(&mut self) -> SCL_LOW_PERIOD_W {
+        SCL_LOW_PERIOD_W { w: self }
     }
 }

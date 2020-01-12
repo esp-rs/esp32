@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TIME0 {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TIME_LO`"]
-pub type RTC_CNTL_TIME_LO_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_CNTL_TIME_LO`"]
-pub struct RTC_CNTL_TIME_LO_W<'a> {
+#[doc = "Reader of field `TIME_LO`"]
+pub type TIME_LO_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `TIME_LO`"]
+pub struct TIME_LO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TIME_LO_W<'a> {
+impl<'a> TIME_LO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_CNTL_TIME_LO_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - RTC timer low 32 bits"]
     #[inline(always)]
-    pub fn rtc_cntl_time_lo(&self) -> RTC_CNTL_TIME_LO_R {
-        RTC_CNTL_TIME_LO_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn time_lo(&self) -> TIME_LO_R {
+        TIME_LO_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - RTC timer low 32 bits"]
     #[inline(always)]
-    pub fn rtc_cntl_time_lo(&mut self) -> RTC_CNTL_TIME_LO_W {
-        RTC_CNTL_TIME_LO_W { w: self }
+    pub fn time_lo(&mut self) -> TIME_LO_W {
+        TIME_LO_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMA_CONF {
         0
     }
 }
-#[doc = "Reader of field `SPI_DMA_CONTINUE`"]
-pub type SPI_DMA_CONTINUE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_DMA_CONTINUE`"]
-pub struct SPI_DMA_CONTINUE_W<'a> {
+#[doc = "Reader of field `DMA_CONTINUE`"]
+pub type DMA_CONTINUE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DMA_CONTINUE`"]
+pub struct DMA_CONTINUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_DMA_CONTINUE_W<'a> {
+impl<'a> DMA_CONTINUE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SPI_DMA_CONTINUE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_DMA_TX_STOP`"]
-pub type SPI_DMA_TX_STOP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_DMA_TX_STOP`"]
-pub struct SPI_DMA_TX_STOP_W<'a> {
+#[doc = "Reader of field `DMA_TX_STOP`"]
+pub type DMA_TX_STOP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DMA_TX_STOP`"]
+pub struct DMA_TX_STOP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_DMA_TX_STOP_W<'a> {
+impl<'a> DMA_TX_STOP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SPI_DMA_TX_STOP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_DMA_RX_STOP`"]
-pub type SPI_DMA_RX_STOP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_DMA_RX_STOP`"]
-pub struct SPI_DMA_RX_STOP_W<'a> {
+#[doc = "Reader of field `DMA_RX_STOP`"]
+pub type DMA_RX_STOP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DMA_RX_STOP`"]
+pub struct DMA_RX_STOP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_DMA_RX_STOP_W<'a> {
+impl<'a> DMA_RX_STOP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> SPI_DMA_RX_STOP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUT_DATA_BURST_EN`"]
-pub type SPI_OUT_DATA_BURST_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUT_DATA_BURST_EN`"]
-pub struct SPI_OUT_DATA_BURST_EN_W<'a> {
+#[doc = "Reader of field `OUT_DATA_BURST_EN`"]
+pub type OUT_DATA_BURST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_DATA_BURST_EN`"]
+pub struct OUT_DATA_BURST_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUT_DATA_BURST_EN_W<'a> {
+impl<'a> OUT_DATA_BURST_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> SPI_OUT_DATA_BURST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_INDSCR_BURST_EN`"]
-pub type SPI_INDSCR_BURST_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_INDSCR_BURST_EN`"]
-pub struct SPI_INDSCR_BURST_EN_W<'a> {
+#[doc = "Reader of field `INDSCR_BURST_EN`"]
+pub type INDSCR_BURST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `INDSCR_BURST_EN`"]
+pub struct INDSCR_BURST_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_INDSCR_BURST_EN_W<'a> {
+impl<'a> INDSCR_BURST_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> SPI_INDSCR_BURST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUTDSCR_BURST_EN`"]
-pub type SPI_OUTDSCR_BURST_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUTDSCR_BURST_EN`"]
-pub struct SPI_OUTDSCR_BURST_EN_W<'a> {
+#[doc = "Reader of field `OUTDSCR_BURST_EN`"]
+pub type OUTDSCR_BURST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUTDSCR_BURST_EN`"]
+pub struct OUTDSCR_BURST_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUTDSCR_BURST_EN_W<'a> {
+impl<'a> OUTDSCR_BURST_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> SPI_OUTDSCR_BURST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUT_EOF_MODE`"]
-pub type SPI_OUT_EOF_MODE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUT_EOF_MODE`"]
-pub struct SPI_OUT_EOF_MODE_W<'a> {
+#[doc = "Reader of field `OUT_EOF_MODE`"]
+pub type OUT_EOF_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_EOF_MODE`"]
+pub struct OUT_EOF_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUT_EOF_MODE_W<'a> {
+impl<'a> OUT_EOF_MODE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> SPI_OUT_EOF_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUT_AUTO_WRBACK`"]
-pub type SPI_OUT_AUTO_WRBACK_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUT_AUTO_WRBACK`"]
-pub struct SPI_OUT_AUTO_WRBACK_W<'a> {
+#[doc = "Reader of field `OUT_AUTO_WRBACK`"]
+pub type OUT_AUTO_WRBACK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_AUTO_WRBACK`"]
+pub struct OUT_AUTO_WRBACK_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUT_AUTO_WRBACK_W<'a> {
+impl<'a> OUT_AUTO_WRBACK_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> SPI_OUT_AUTO_WRBACK_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUT_LOOP_TEST`"]
-pub type SPI_OUT_LOOP_TEST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUT_LOOP_TEST`"]
-pub struct SPI_OUT_LOOP_TEST_W<'a> {
+#[doc = "Reader of field `OUT_LOOP_TEST`"]
+pub type OUT_LOOP_TEST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_LOOP_TEST`"]
+pub struct OUT_LOOP_TEST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUT_LOOP_TEST_W<'a> {
+impl<'a> OUT_LOOP_TEST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> SPI_OUT_LOOP_TEST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_IN_LOOP_TEST`"]
-pub type SPI_IN_LOOP_TEST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_IN_LOOP_TEST`"]
-pub struct SPI_IN_LOOP_TEST_W<'a> {
+#[doc = "Reader of field `IN_LOOP_TEST`"]
+pub type IN_LOOP_TEST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_LOOP_TEST`"]
+pub struct IN_LOOP_TEST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_IN_LOOP_TEST_W<'a> {
+impl<'a> IN_LOOP_TEST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> SPI_IN_LOOP_TEST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_AHBM_RST`"]
-pub type SPI_AHBM_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_AHBM_RST`"]
-pub struct SPI_AHBM_RST_W<'a> {
+#[doc = "Reader of field `AHBM_RST`"]
+pub type AHBM_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AHBM_RST`"]
+pub struct AHBM_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_AHBM_RST_W<'a> {
+impl<'a> AHBM_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> SPI_AHBM_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_AHBM_FIFO_RST`"]
-pub type SPI_AHBM_FIFO_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_AHBM_FIFO_RST`"]
-pub struct SPI_AHBM_FIFO_RST_W<'a> {
+#[doc = "Reader of field `AHBM_FIFO_RST`"]
+pub type AHBM_FIFO_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AHBM_FIFO_RST`"]
+pub struct AHBM_FIFO_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_AHBM_FIFO_RST_W<'a> {
+impl<'a> AHBM_FIFO_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> SPI_AHBM_FIFO_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_OUT_RST`"]
-pub type SPI_OUT_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_OUT_RST`"]
-pub struct SPI_OUT_RST_W<'a> {
+#[doc = "Reader of field `OUT_RST`"]
+pub type OUT_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_RST`"]
+pub struct OUT_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_OUT_RST_W<'a> {
+impl<'a> OUT_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> SPI_OUT_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SPI_IN_RST`"]
-pub type SPI_IN_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SPI_IN_RST`"]
-pub struct SPI_IN_RST_W<'a> {
+#[doc = "Reader of field `IN_RST`"]
+pub type IN_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_RST`"]
+pub struct IN_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_IN_RST_W<'a> {
+impl<'a> IN_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -349,144 +349,144 @@ impl<'a> SPI_IN_RST_W<'a> {
 impl R {
     #[doc = "Bit 16 - spi dma continue tx/rx data."]
     #[inline(always)]
-    pub fn spi_dma_continue(&self) -> SPI_DMA_CONTINUE_R {
-        SPI_DMA_CONTINUE_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn dma_continue(&self) -> DMA_CONTINUE_R {
+        DMA_CONTINUE_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15 - spi dma write data stop when in continue tx/rx mode."]
     #[inline(always)]
-    pub fn spi_dma_tx_stop(&self) -> SPI_DMA_TX_STOP_R {
-        SPI_DMA_TX_STOP_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn dma_tx_stop(&self) -> DMA_TX_STOP_R {
+        DMA_TX_STOP_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14 - spi dma read data stop when in continue tx/rx mode."]
     #[inline(always)]
-    pub fn spi_dma_rx_stop(&self) -> SPI_DMA_RX_STOP_R {
-        SPI_DMA_RX_STOP_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn dma_rx_stop(&self) -> DMA_RX_STOP_R {
+        DMA_RX_STOP_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 12 - spi dma read data from memory in burst mode."]
     #[inline(always)]
-    pub fn spi_out_data_burst_en(&self) -> SPI_OUT_DATA_BURST_EN_R {
-        SPI_OUT_DATA_BURST_EN_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn out_data_burst_en(&self) -> OUT_DATA_BURST_EN_R {
+        OUT_DATA_BURST_EN_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11 - read descriptor use burst mode when write data to memory."]
     #[inline(always)]
-    pub fn spi_indscr_burst_en(&self) -> SPI_INDSCR_BURST_EN_R {
-        SPI_INDSCR_BURST_EN_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn indscr_burst_en(&self) -> INDSCR_BURST_EN_R {
+        INDSCR_BURST_EN_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10 - read descriptor use burst mode when read data for memory."]
     #[inline(always)]
-    pub fn spi_outdscr_burst_en(&self) -> SPI_OUTDSCR_BURST_EN_R {
-        SPI_OUTDSCR_BURST_EN_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn outdscr_burst_en(&self) -> OUTDSCR_BURST_EN_R {
+        OUTDSCR_BURST_EN_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9 - out eof flag generation mode . 1: when dma pop all data from fifo 0:when ahb push all data to fifo."]
     #[inline(always)]
-    pub fn spi_out_eof_mode(&self) -> SPI_OUT_EOF_MODE_R {
-        SPI_OUT_EOF_MODE_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn out_eof_mode(&self) -> OUT_EOF_MODE_R {
+        OUT_EOF_MODE_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8 - when the link is empty jump to next automatically."]
     #[inline(always)]
-    pub fn spi_out_auto_wrback(&self) -> SPI_OUT_AUTO_WRBACK_R {
-        SPI_OUT_AUTO_WRBACK_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn out_auto_wrback(&self) -> OUT_AUTO_WRBACK_R {
+        OUT_AUTO_WRBACK_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7 - Set bit to test out link."]
     #[inline(always)]
-    pub fn spi_out_loop_test(&self) -> SPI_OUT_LOOP_TEST_R {
-        SPI_OUT_LOOP_TEST_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn out_loop_test(&self) -> OUT_LOOP_TEST_R {
+        OUT_LOOP_TEST_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - Set bit to test in link."]
     #[inline(always)]
-    pub fn spi_in_loop_test(&self) -> SPI_IN_LOOP_TEST_R {
-        SPI_IN_LOOP_TEST_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn in_loop_test(&self) -> IN_LOOP_TEST_R {
+        IN_LOOP_TEST_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5 - reset spi dma ahb master."]
     #[inline(always)]
-    pub fn spi_ahbm_rst(&self) -> SPI_AHBM_RST_R {
-        SPI_AHBM_RST_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn ahbm_rst(&self) -> AHBM_RST_R {
+        AHBM_RST_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4 - reset spi dma ahb master fifo pointer."]
     #[inline(always)]
-    pub fn spi_ahbm_fifo_rst(&self) -> SPI_AHBM_FIFO_RST_R {
-        SPI_AHBM_FIFO_RST_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn ahbm_fifo_rst(&self) -> AHBM_FIFO_RST_R {
+        AHBM_FIFO_RST_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3 - The bit is used to reset out dma fsm and out data fifo pointer."]
     #[inline(always)]
-    pub fn spi_out_rst(&self) -> SPI_OUT_RST_R {
-        SPI_OUT_RST_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn out_rst(&self) -> OUT_RST_R {
+        OUT_RST_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2 - The bit is used to reset in dma fsm and in data fifo pointer."]
     #[inline(always)]
-    pub fn spi_in_rst(&self) -> SPI_IN_RST_R {
-        SPI_IN_RST_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn in_rst(&self) -> IN_RST_R {
+        IN_RST_R::new(((self.bits >> 2) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 16 - spi dma continue tx/rx data."]
     #[inline(always)]
-    pub fn spi_dma_continue(&mut self) -> SPI_DMA_CONTINUE_W {
-        SPI_DMA_CONTINUE_W { w: self }
+    pub fn dma_continue(&mut self) -> DMA_CONTINUE_W {
+        DMA_CONTINUE_W { w: self }
     }
     #[doc = "Bit 15 - spi dma write data stop when in continue tx/rx mode."]
     #[inline(always)]
-    pub fn spi_dma_tx_stop(&mut self) -> SPI_DMA_TX_STOP_W {
-        SPI_DMA_TX_STOP_W { w: self }
+    pub fn dma_tx_stop(&mut self) -> DMA_TX_STOP_W {
+        DMA_TX_STOP_W { w: self }
     }
     #[doc = "Bit 14 - spi dma read data stop when in continue tx/rx mode."]
     #[inline(always)]
-    pub fn spi_dma_rx_stop(&mut self) -> SPI_DMA_RX_STOP_W {
-        SPI_DMA_RX_STOP_W { w: self }
+    pub fn dma_rx_stop(&mut self) -> DMA_RX_STOP_W {
+        DMA_RX_STOP_W { w: self }
     }
     #[doc = "Bit 12 - spi dma read data from memory in burst mode."]
     #[inline(always)]
-    pub fn spi_out_data_burst_en(&mut self) -> SPI_OUT_DATA_BURST_EN_W {
-        SPI_OUT_DATA_BURST_EN_W { w: self }
+    pub fn out_data_burst_en(&mut self) -> OUT_DATA_BURST_EN_W {
+        OUT_DATA_BURST_EN_W { w: self }
     }
     #[doc = "Bit 11 - read descriptor use burst mode when write data to memory."]
     #[inline(always)]
-    pub fn spi_indscr_burst_en(&mut self) -> SPI_INDSCR_BURST_EN_W {
-        SPI_INDSCR_BURST_EN_W { w: self }
+    pub fn indscr_burst_en(&mut self) -> INDSCR_BURST_EN_W {
+        INDSCR_BURST_EN_W { w: self }
     }
     #[doc = "Bit 10 - read descriptor use burst mode when read data for memory."]
     #[inline(always)]
-    pub fn spi_outdscr_burst_en(&mut self) -> SPI_OUTDSCR_BURST_EN_W {
-        SPI_OUTDSCR_BURST_EN_W { w: self }
+    pub fn outdscr_burst_en(&mut self) -> OUTDSCR_BURST_EN_W {
+        OUTDSCR_BURST_EN_W { w: self }
     }
     #[doc = "Bit 9 - out eof flag generation mode . 1: when dma pop all data from fifo 0:when ahb push all data to fifo."]
     #[inline(always)]
-    pub fn spi_out_eof_mode(&mut self) -> SPI_OUT_EOF_MODE_W {
-        SPI_OUT_EOF_MODE_W { w: self }
+    pub fn out_eof_mode(&mut self) -> OUT_EOF_MODE_W {
+        OUT_EOF_MODE_W { w: self }
     }
     #[doc = "Bit 8 - when the link is empty jump to next automatically."]
     #[inline(always)]
-    pub fn spi_out_auto_wrback(&mut self) -> SPI_OUT_AUTO_WRBACK_W {
-        SPI_OUT_AUTO_WRBACK_W { w: self }
+    pub fn out_auto_wrback(&mut self) -> OUT_AUTO_WRBACK_W {
+        OUT_AUTO_WRBACK_W { w: self }
     }
     #[doc = "Bit 7 - Set bit to test out link."]
     #[inline(always)]
-    pub fn spi_out_loop_test(&mut self) -> SPI_OUT_LOOP_TEST_W {
-        SPI_OUT_LOOP_TEST_W { w: self }
+    pub fn out_loop_test(&mut self) -> OUT_LOOP_TEST_W {
+        OUT_LOOP_TEST_W { w: self }
     }
     #[doc = "Bit 6 - Set bit to test in link."]
     #[inline(always)]
-    pub fn spi_in_loop_test(&mut self) -> SPI_IN_LOOP_TEST_W {
-        SPI_IN_LOOP_TEST_W { w: self }
+    pub fn in_loop_test(&mut self) -> IN_LOOP_TEST_W {
+        IN_LOOP_TEST_W { w: self }
     }
     #[doc = "Bit 5 - reset spi dma ahb master."]
     #[inline(always)]
-    pub fn spi_ahbm_rst(&mut self) -> SPI_AHBM_RST_W {
-        SPI_AHBM_RST_W { w: self }
+    pub fn ahbm_rst(&mut self) -> AHBM_RST_W {
+        AHBM_RST_W { w: self }
     }
     #[doc = "Bit 4 - reset spi dma ahb master fifo pointer."]
     #[inline(always)]
-    pub fn spi_ahbm_fifo_rst(&mut self) -> SPI_AHBM_FIFO_RST_W {
-        SPI_AHBM_FIFO_RST_W { w: self }
+    pub fn ahbm_fifo_rst(&mut self) -> AHBM_FIFO_RST_W {
+        AHBM_FIFO_RST_W { w: self }
     }
     #[doc = "Bit 3 - The bit is used to reset out dma fsm and out data fifo pointer."]
     #[inline(always)]
-    pub fn spi_out_rst(&mut self) -> SPI_OUT_RST_W {
-        SPI_OUT_RST_W { w: self }
+    pub fn out_rst(&mut self) -> OUT_RST_W {
+        OUT_RST_W { w: self }
     }
     #[doc = "Bit 2 - The bit is used to reset in dma fsm and in data fifo pointer."]
     #[inline(always)]
-    pub fn spi_in_rst(&mut self) -> SPI_IN_RST_W {
-        SPI_IN_RST_W { w: self }
+    pub fn in_rst(&mut self) -> IN_RST_W {
+        IN_RST_W { w: self }
     }
 }

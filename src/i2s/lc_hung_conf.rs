@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LC_HUNG_CONF {
         0
     }
 }
-#[doc = "Reader of field `I2S_LC_FIFO_TIMEOUT_ENA`"]
-pub type I2S_LC_FIFO_TIMEOUT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_LC_FIFO_TIMEOUT_ENA`"]
-pub struct I2S_LC_FIFO_TIMEOUT_ENA_W<'a> {
+#[doc = "Reader of field `LC_FIFO_TIMEOUT_ENA`"]
+pub type LC_FIFO_TIMEOUT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LC_FIFO_TIMEOUT_ENA`"]
+pub struct LC_FIFO_TIMEOUT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_LC_FIFO_TIMEOUT_ENA_W<'a> {
+impl<'a> LC_FIFO_TIMEOUT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2S_LC_FIFO_TIMEOUT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_LC_FIFO_TIMEOUT_SHIFT`"]
-pub type I2S_LC_FIFO_TIMEOUT_SHIFT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_LC_FIFO_TIMEOUT_SHIFT`"]
-pub struct I2S_LC_FIFO_TIMEOUT_SHIFT_W<'a> {
+#[doc = "Reader of field `LC_FIFO_TIMEOUT_SHIFT`"]
+pub type LC_FIFO_TIMEOUT_SHIFT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `LC_FIFO_TIMEOUT_SHIFT`"]
+pub struct LC_FIFO_TIMEOUT_SHIFT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_LC_FIFO_TIMEOUT_SHIFT_W<'a> {
+impl<'a> LC_FIFO_TIMEOUT_SHIFT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> I2S_LC_FIFO_TIMEOUT_SHIFT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_LC_FIFO_TIMEOUT`"]
-pub type I2S_LC_FIFO_TIMEOUT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_LC_FIFO_TIMEOUT`"]
-pub struct I2S_LC_FIFO_TIMEOUT_W<'a> {
+#[doc = "Reader of field `LC_FIFO_TIMEOUT`"]
+pub type LC_FIFO_TIMEOUT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `LC_FIFO_TIMEOUT`"]
+pub struct LC_FIFO_TIMEOUT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_LC_FIFO_TIMEOUT_W<'a> {
+impl<'a> LC_FIFO_TIMEOUT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -65,34 +65,34 @@ impl<'a> I2S_LC_FIFO_TIMEOUT_W<'a> {
 impl R {
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_lc_fifo_timeout_ena(&self) -> I2S_LC_FIFO_TIMEOUT_ENA_R {
-        I2S_LC_FIFO_TIMEOUT_ENA_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn lc_fifo_timeout_ena(&self) -> LC_FIFO_TIMEOUT_ENA_R {
+        LC_FIFO_TIMEOUT_ENA_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
-    pub fn i2s_lc_fifo_timeout_shift(&self) -> I2S_LC_FIFO_TIMEOUT_SHIFT_R {
-        I2S_LC_FIFO_TIMEOUT_SHIFT_R::new(((self.bits >> 8) & 0x07) as u8)
+    pub fn lc_fifo_timeout_shift(&self) -> LC_FIFO_TIMEOUT_SHIFT_R {
+        LC_FIFO_TIMEOUT_SHIFT_R::new(((self.bits >> 8) & 0x07) as u8)
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn i2s_lc_fifo_timeout(&self) -> I2S_LC_FIFO_TIMEOUT_R {
-        I2S_LC_FIFO_TIMEOUT_R::new((self.bits & 0xff) as u8)
+    pub fn lc_fifo_timeout(&self) -> LC_FIFO_TIMEOUT_R {
+        LC_FIFO_TIMEOUT_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_lc_fifo_timeout_ena(&mut self) -> I2S_LC_FIFO_TIMEOUT_ENA_W {
-        I2S_LC_FIFO_TIMEOUT_ENA_W { w: self }
+    pub fn lc_fifo_timeout_ena(&mut self) -> LC_FIFO_TIMEOUT_ENA_W {
+        LC_FIFO_TIMEOUT_ENA_W { w: self }
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
-    pub fn i2s_lc_fifo_timeout_shift(&mut self) -> I2S_LC_FIFO_TIMEOUT_SHIFT_W {
-        I2S_LC_FIFO_TIMEOUT_SHIFT_W { w: self }
+    pub fn lc_fifo_timeout_shift(&mut self) -> LC_FIFO_TIMEOUT_SHIFT_W {
+        LC_FIFO_TIMEOUT_SHIFT_W { w: self }
     }
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn i2s_lc_fifo_timeout(&mut self) -> I2S_LC_FIFO_TIMEOUT_W {
-        I2S_LC_FIFO_TIMEOUT_W { w: self }
+    pub fn lc_fifo_timeout(&mut self) -> LC_FIFO_TIMEOUT_W {
+        LC_FIFO_TIMEOUT_W { w: self }
     }
 }

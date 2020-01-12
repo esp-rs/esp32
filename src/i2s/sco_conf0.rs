@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SCO_CONF0 {
         0
     }
 }
-#[doc = "Reader of field `I2S_CVSD_ENC_RESET`"]
-pub type I2S_CVSD_ENC_RESET_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_CVSD_ENC_RESET`"]
-pub struct I2S_CVSD_ENC_RESET_W<'a> {
+#[doc = "Reader of field `CVSD_ENC_RESET`"]
+pub type CVSD_ENC_RESET_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CVSD_ENC_RESET`"]
+pub struct CVSD_ENC_RESET_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_CVSD_ENC_RESET_W<'a> {
+impl<'a> CVSD_ENC_RESET_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2S_CVSD_ENC_RESET_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_CVSD_ENC_START`"]
-pub type I2S_CVSD_ENC_START_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_CVSD_ENC_START`"]
-pub struct I2S_CVSD_ENC_START_W<'a> {
+#[doc = "Reader of field `CVSD_ENC_START`"]
+pub type CVSD_ENC_START_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CVSD_ENC_START`"]
+pub struct CVSD_ENC_START_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_CVSD_ENC_START_W<'a> {
+impl<'a> CVSD_ENC_START_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> I2S_CVSD_ENC_START_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_SCO_NO_I2S_EN`"]
-pub type I2S_SCO_NO_I2S_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_SCO_NO_I2S_EN`"]
-pub struct I2S_SCO_NO_I2S_EN_W<'a> {
+#[doc = "Reader of field `SCO_NO_I2S_EN`"]
+pub type SCO_NO_I2S_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SCO_NO_I2S_EN`"]
+pub struct SCO_NO_I2S_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_SCO_NO_I2S_EN_W<'a> {
+impl<'a> SCO_NO_I2S_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> I2S_SCO_NO_I2S_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_SCO_WITH_I2S_EN`"]
-pub type I2S_SCO_WITH_I2S_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_SCO_WITH_I2S_EN`"]
-pub struct I2S_SCO_WITH_I2S_EN_W<'a> {
+#[doc = "Reader of field `SCO_WITH_I2S_EN`"]
+pub type SCO_WITH_I2S_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SCO_WITH_I2S_EN`"]
+pub struct SCO_WITH_I2S_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_SCO_WITH_I2S_EN_W<'a> {
+impl<'a> SCO_WITH_I2S_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -109,44 +109,44 @@ impl<'a> I2S_SCO_WITH_I2S_EN_W<'a> {
 impl R {
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_cvsd_enc_reset(&self) -> I2S_CVSD_ENC_RESET_R {
-        I2S_CVSD_ENC_RESET_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn cvsd_enc_reset(&self) -> CVSD_ENC_RESET_R {
+        CVSD_ENC_RESET_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_cvsd_enc_start(&self) -> I2S_CVSD_ENC_START_R {
-        I2S_CVSD_ENC_START_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn cvsd_enc_start(&self) -> CVSD_ENC_START_R {
+        CVSD_ENC_START_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_sco_no_i2s_en(&self) -> I2S_SCO_NO_I2S_EN_R {
-        I2S_SCO_NO_I2S_EN_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn sco_no_i2s_en(&self) -> SCO_NO_I2S_EN_R {
+        SCO_NO_I2S_EN_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_sco_with_i2s_en(&self) -> I2S_SCO_WITH_I2S_EN_R {
-        I2S_SCO_WITH_I2S_EN_R::new((self.bits & 0x01) != 0)
+    pub fn sco_with_i2s_en(&self) -> SCO_WITH_I2S_EN_R {
+        SCO_WITH_I2S_EN_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_cvsd_enc_reset(&mut self) -> I2S_CVSD_ENC_RESET_W {
-        I2S_CVSD_ENC_RESET_W { w: self }
+    pub fn cvsd_enc_reset(&mut self) -> CVSD_ENC_RESET_W {
+        CVSD_ENC_RESET_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_cvsd_enc_start(&mut self) -> I2S_CVSD_ENC_START_W {
-        I2S_CVSD_ENC_START_W { w: self }
+    pub fn cvsd_enc_start(&mut self) -> CVSD_ENC_START_W {
+        CVSD_ENC_START_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_sco_no_i2s_en(&mut self) -> I2S_SCO_NO_I2S_EN_W {
-        I2S_SCO_NO_I2S_EN_W { w: self }
+    pub fn sco_no_i2s_en(&mut self) -> SCO_NO_I2S_EN_W {
+        SCO_NO_I2S_EN_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_sco_with_i2s_en(&mut self) -> I2S_SCO_WITH_I2S_EN_W {
-        I2S_SCO_WITH_I2S_EN_W { w: self }
+    pub fn sco_with_i2s_en(&mut self) -> SCO_WITH_I2S_EN_W {
+        SCO_WITH_I2S_EN_W { w: self }
     }
 }

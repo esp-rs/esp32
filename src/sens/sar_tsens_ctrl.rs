@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_TSENS_CTRL {
         0
     }
 }
-#[doc = "Reader of field `SENS_TSENS_DUMP_OUT`"]
-pub type SENS_TSENS_DUMP_OUT_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_TSENS_DUMP_OUT`"]
-pub struct SENS_TSENS_DUMP_OUT_W<'a> {
+#[doc = "Reader of field `TSENS_DUMP_OUT`"]
+pub type TSENS_DUMP_OUT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TSENS_DUMP_OUT`"]
+pub struct TSENS_DUMP_OUT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_DUMP_OUT_W<'a> {
+impl<'a> TSENS_DUMP_OUT_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SENS_TSENS_DUMP_OUT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_POWER_UP_FORCE`"]
-pub type SENS_TSENS_POWER_UP_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_TSENS_POWER_UP_FORCE`"]
-pub struct SENS_TSENS_POWER_UP_FORCE_W<'a> {
+#[doc = "Reader of field `TSENS_POWER_UP_FORCE`"]
+pub type TSENS_POWER_UP_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TSENS_POWER_UP_FORCE`"]
+pub struct TSENS_POWER_UP_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_POWER_UP_FORCE_W<'a> {
+impl<'a> TSENS_POWER_UP_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SENS_TSENS_POWER_UP_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_POWER_UP`"]
-pub type SENS_TSENS_POWER_UP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_TSENS_POWER_UP`"]
-pub struct SENS_TSENS_POWER_UP_W<'a> {
+#[doc = "Reader of field `TSENS_POWER_UP`"]
+pub type TSENS_POWER_UP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TSENS_POWER_UP`"]
+pub struct TSENS_POWER_UP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_POWER_UP_W<'a> {
+impl<'a> TSENS_POWER_UP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> SENS_TSENS_POWER_UP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_CLK_DIV`"]
-pub type SENS_TSENS_CLK_DIV_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SENS_TSENS_CLK_DIV`"]
-pub struct SENS_TSENS_CLK_DIV_W<'a> {
+#[doc = "Reader of field `TSENS_CLK_DIV`"]
+pub type TSENS_CLK_DIV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TSENS_CLK_DIV`"]
+pub struct TSENS_CLK_DIV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_CLK_DIV_W<'a> {
+impl<'a> TSENS_CLK_DIV_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -96,13 +96,13 @@ impl<'a> SENS_TSENS_CLK_DIV_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_IN_INV`"]
-pub type SENS_TSENS_IN_INV_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_TSENS_IN_INV`"]
-pub struct SENS_TSENS_IN_INV_W<'a> {
+#[doc = "Reader of field `TSENS_IN_INV`"]
+pub type TSENS_IN_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TSENS_IN_INV`"]
+pub struct TSENS_IN_INV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_IN_INV_W<'a> {
+impl<'a> TSENS_IN_INV_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -120,13 +120,13 @@ impl<'a> SENS_TSENS_IN_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_CLK_GATED`"]
-pub type SENS_TSENS_CLK_GATED_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_TSENS_CLK_GATED`"]
-pub struct SENS_TSENS_CLK_GATED_W<'a> {
+#[doc = "Reader of field `TSENS_CLK_GATED`"]
+pub type TSENS_CLK_GATED_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TSENS_CLK_GATED`"]
+pub struct TSENS_CLK_GATED_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_CLK_GATED_W<'a> {
+impl<'a> TSENS_CLK_GATED_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -144,13 +144,13 @@ impl<'a> SENS_TSENS_CLK_GATED_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_CLK_INV`"]
-pub type SENS_TSENS_CLK_INV_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_TSENS_CLK_INV`"]
-pub struct SENS_TSENS_CLK_INV_W<'a> {
+#[doc = "Reader of field `TSENS_CLK_INV`"]
+pub type TSENS_CLK_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TSENS_CLK_INV`"]
+pub struct TSENS_CLK_INV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_CLK_INV_W<'a> {
+impl<'a> TSENS_CLK_INV_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -168,13 +168,13 @@ impl<'a> SENS_TSENS_CLK_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_XPD_FORCE`"]
-pub type SENS_TSENS_XPD_FORCE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SENS_TSENS_XPD_FORCE`"]
-pub struct SENS_TSENS_XPD_FORCE_W<'a> {
+#[doc = "Reader of field `TSENS_XPD_FORCE`"]
+pub type TSENS_XPD_FORCE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TSENS_XPD_FORCE`"]
+pub struct TSENS_XPD_FORCE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_XPD_FORCE_W<'a> {
+impl<'a> TSENS_XPD_FORCE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -192,13 +192,13 @@ impl<'a> SENS_TSENS_XPD_FORCE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TSENS_XPD_WAIT`"]
-pub type SENS_TSENS_XPD_WAIT_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TSENS_XPD_WAIT`"]
-pub struct SENS_TSENS_XPD_WAIT_W<'a> {
+#[doc = "Reader of field `TSENS_XPD_WAIT`"]
+pub type TSENS_XPD_WAIT_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TSENS_XPD_WAIT`"]
+pub struct TSENS_XPD_WAIT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TSENS_XPD_WAIT_W<'a> {
+impl<'a> TSENS_XPD_WAIT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -209,94 +209,94 @@ impl<'a> SENS_TSENS_XPD_WAIT_W<'a> {
 impl R {
     #[doc = "Bit 26 - temperature sensor dump out only active when reg_tsens_power_up_force = 1"]
     #[inline(always)]
-    pub fn sens_tsens_dump_out(&self) -> SENS_TSENS_DUMP_OUT_R {
-        SENS_TSENS_DUMP_OUT_R::new(((self.bits >> 26) & 0x01) != 0)
+    pub fn tsens_dump_out(&self) -> TSENS_DUMP_OUT_R {
+        TSENS_DUMP_OUT_R::new(((self.bits >> 26) & 0x01) != 0)
     }
     #[doc = "Bit 25 - 1: dump out & power up controlled by SW 0: by FSM"]
     #[inline(always)]
-    pub fn sens_tsens_power_up_force(&self) -> SENS_TSENS_POWER_UP_FORCE_R {
-        SENS_TSENS_POWER_UP_FORCE_R::new(((self.bits >> 25) & 0x01) != 0)
+    pub fn tsens_power_up_force(&self) -> TSENS_POWER_UP_FORCE_R {
+        TSENS_POWER_UP_FORCE_R::new(((self.bits >> 25) & 0x01) != 0)
     }
     #[doc = "Bit 24 - temperature sensor power up"]
     #[inline(always)]
-    pub fn sens_tsens_power_up(&self) -> SENS_TSENS_POWER_UP_R {
-        SENS_TSENS_POWER_UP_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn tsens_power_up(&self) -> TSENS_POWER_UP_R {
+        TSENS_POWER_UP_R::new(((self.bits >> 24) & 0x01) != 0)
     }
     #[doc = "Bits 16:23 - temperature sensor clock divider"]
     #[inline(always)]
-    pub fn sens_tsens_clk_div(&self) -> SENS_TSENS_CLK_DIV_R {
-        SENS_TSENS_CLK_DIV_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn tsens_clk_div(&self) -> TSENS_CLK_DIV_R {
+        TSENS_CLK_DIV_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bit 15 - invert temperature sensor data"]
     #[inline(always)]
-    pub fn sens_tsens_in_inv(&self) -> SENS_TSENS_IN_INV_R {
-        SENS_TSENS_IN_INV_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn tsens_in_inv(&self) -> TSENS_IN_INV_R {
+        TSENS_IN_INV_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn sens_tsens_clk_gated(&self) -> SENS_TSENS_CLK_GATED_R {
-        SENS_TSENS_CLK_GATED_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn tsens_clk_gated(&self) -> TSENS_CLK_GATED_R {
+        TSENS_CLK_GATED_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn sens_tsens_clk_inv(&self) -> SENS_TSENS_CLK_INV_R {
-        SENS_TSENS_CLK_INV_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn tsens_clk_inv(&self) -> TSENS_CLK_INV_R {
+        TSENS_CLK_INV_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn sens_tsens_xpd_force(&self) -> SENS_TSENS_XPD_FORCE_R {
-        SENS_TSENS_XPD_FORCE_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn tsens_xpd_force(&self) -> TSENS_XPD_FORCE_R {
+        TSENS_XPD_FORCE_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn sens_tsens_xpd_wait(&self) -> SENS_TSENS_XPD_WAIT_R {
-        SENS_TSENS_XPD_WAIT_R::new((self.bits & 0x0fff) as u16)
+    pub fn tsens_xpd_wait(&self) -> TSENS_XPD_WAIT_R {
+        TSENS_XPD_WAIT_R::new((self.bits & 0x0fff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 26 - temperature sensor dump out only active when reg_tsens_power_up_force = 1"]
     #[inline(always)]
-    pub fn sens_tsens_dump_out(&mut self) -> SENS_TSENS_DUMP_OUT_W {
-        SENS_TSENS_DUMP_OUT_W { w: self }
+    pub fn tsens_dump_out(&mut self) -> TSENS_DUMP_OUT_W {
+        TSENS_DUMP_OUT_W { w: self }
     }
     #[doc = "Bit 25 - 1: dump out & power up controlled by SW 0: by FSM"]
     #[inline(always)]
-    pub fn sens_tsens_power_up_force(&mut self) -> SENS_TSENS_POWER_UP_FORCE_W {
-        SENS_TSENS_POWER_UP_FORCE_W { w: self }
+    pub fn tsens_power_up_force(&mut self) -> TSENS_POWER_UP_FORCE_W {
+        TSENS_POWER_UP_FORCE_W { w: self }
     }
     #[doc = "Bit 24 - temperature sensor power up"]
     #[inline(always)]
-    pub fn sens_tsens_power_up(&mut self) -> SENS_TSENS_POWER_UP_W {
-        SENS_TSENS_POWER_UP_W { w: self }
+    pub fn tsens_power_up(&mut self) -> TSENS_POWER_UP_W {
+        TSENS_POWER_UP_W { w: self }
     }
     #[doc = "Bits 16:23 - temperature sensor clock divider"]
     #[inline(always)]
-    pub fn sens_tsens_clk_div(&mut self) -> SENS_TSENS_CLK_DIV_W {
-        SENS_TSENS_CLK_DIV_W { w: self }
+    pub fn tsens_clk_div(&mut self) -> TSENS_CLK_DIV_W {
+        TSENS_CLK_DIV_W { w: self }
     }
     #[doc = "Bit 15 - invert temperature sensor data"]
     #[inline(always)]
-    pub fn sens_tsens_in_inv(&mut self) -> SENS_TSENS_IN_INV_W {
-        SENS_TSENS_IN_INV_W { w: self }
+    pub fn tsens_in_inv(&mut self) -> TSENS_IN_INV_W {
+        TSENS_IN_INV_W { w: self }
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn sens_tsens_clk_gated(&mut self) -> SENS_TSENS_CLK_GATED_W {
-        SENS_TSENS_CLK_GATED_W { w: self }
+    pub fn tsens_clk_gated(&mut self) -> TSENS_CLK_GATED_W {
+        TSENS_CLK_GATED_W { w: self }
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn sens_tsens_clk_inv(&mut self) -> SENS_TSENS_CLK_INV_W {
-        SENS_TSENS_CLK_INV_W { w: self }
+    pub fn tsens_clk_inv(&mut self) -> TSENS_CLK_INV_W {
+        TSENS_CLK_INV_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn sens_tsens_xpd_force(&mut self) -> SENS_TSENS_XPD_FORCE_W {
-        SENS_TSENS_XPD_FORCE_W { w: self }
+    pub fn tsens_xpd_force(&mut self) -> TSENS_XPD_FORCE_W {
+        TSENS_XPD_FORCE_W { w: self }
     }
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn sens_tsens_xpd_wait(&mut self) -> SENS_TSENS_XPD_WAIT_W {
-        SENS_TSENS_XPD_WAIT_W { w: self }
+    pub fn tsens_xpd_wait(&mut self) -> TSENS_XPD_WAIT_W {
+        TSENS_XPD_WAIT_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CH7ADDR {
         0
     }
 }
-#[doc = "Reader of field `RMT_APB_MEM_ADDR_CH7`"]
-pub type RMT_APB_MEM_ADDR_CH7_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RMT_APB_MEM_ADDR_CH7`"]
-pub struct RMT_APB_MEM_ADDR_CH7_W<'a> {
+#[doc = "Reader of field `APB_MEM_ADDR_CH7`"]
+pub type APB_MEM_ADDR_CH7_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `APB_MEM_ADDR_CH7`"]
+pub struct APB_MEM_ADDR_CH7_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_APB_MEM_ADDR_CH7_W<'a> {
+impl<'a> APB_MEM_ADDR_CH7_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RMT_APB_MEM_ADDR_CH7_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - The ram relative address in channel7 by apb fifo access"]
     #[inline(always)]
-    pub fn rmt_apb_mem_addr_ch7(&self) -> RMT_APB_MEM_ADDR_CH7_R {
-        RMT_APB_MEM_ADDR_CH7_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn apb_mem_addr_ch7(&self) -> APB_MEM_ADDR_CH7_R {
+        APB_MEM_ADDR_CH7_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - The ram relative address in channel7 by apb fifo access"]
     #[inline(always)]
-    pub fn rmt_apb_mem_addr_ch7(&mut self) -> RMT_APB_MEM_ADDR_CH7_W {
-        RMT_APB_MEM_ADDR_CH7_W { w: self }
+    pub fn apb_mem_addr_ch7(&mut self) -> APB_MEM_ADDR_CH7_W {
+        APB_MEM_ADDR_CH7_W { w: self }
     }
 }

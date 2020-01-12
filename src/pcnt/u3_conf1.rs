@@ -10,13 +10,13 @@ impl crate::ResetValue for super::U3_CONF1 {
         0
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THRES1_U3`"]
-pub type PCNT_CNT_THRES1_U3_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `PCNT_CNT_THRES1_U3`"]
-pub struct PCNT_CNT_THRES1_U3_W<'a> {
+#[doc = "Reader of field `CNT_THRES1_U3`"]
+pub type CNT_THRES1_U3_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CNT_THRES1_U3`"]
+pub struct CNT_THRES1_U3_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THRES1_U3_W<'a> {
+impl<'a> CNT_THRES1_U3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> PCNT_CNT_THRES1_U3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THRES0_U3`"]
-pub type PCNT_CNT_THRES0_U3_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `PCNT_CNT_THRES0_U3`"]
-pub struct PCNT_CNT_THRES0_U3_W<'a> {
+#[doc = "Reader of field `CNT_THRES0_U3`"]
+pub type CNT_THRES0_U3_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CNT_THRES0_U3`"]
+pub struct CNT_THRES0_U3_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THRES0_U3_W<'a> {
+impl<'a> CNT_THRES0_U3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> PCNT_CNT_THRES0_U3_W<'a> {
 impl R {
     #[doc = "Bits 16:31 - This register is used to configure thres1 value for unit3."]
     #[inline(always)]
-    pub fn pcnt_cnt_thres1_u3(&self) -> PCNT_CNT_THRES1_U3_R {
-        PCNT_CNT_THRES1_U3_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn cnt_thres1_u3(&self) -> CNT_THRES1_U3_R {
+        CNT_THRES1_U3_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bits 0:15 - This register is used to configure thres0 value for unit3."]
     #[inline(always)]
-    pub fn pcnt_cnt_thres0_u3(&self) -> PCNT_CNT_THRES0_U3_R {
-        PCNT_CNT_THRES0_U3_R::new((self.bits & 0xffff) as u16)
+    pub fn cnt_thres0_u3(&self) -> CNT_THRES0_U3_R {
+        CNT_THRES0_U3_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:31 - This register is used to configure thres1 value for unit3."]
     #[inline(always)]
-    pub fn pcnt_cnt_thres1_u3(&mut self) -> PCNT_CNT_THRES1_U3_W {
-        PCNT_CNT_THRES1_U3_W { w: self }
+    pub fn cnt_thres1_u3(&mut self) -> CNT_THRES1_U3_W {
+        CNT_THRES1_U3_W { w: self }
     }
     #[doc = "Bits 0:15 - This register is used to configure thres0 value for unit3."]
     #[inline(always)]
-    pub fn pcnt_cnt_thres0_u3(&mut self) -> PCNT_CNT_THRES0_U3_W {
-        PCNT_CNT_THRES0_U3_W { w: self }
+    pub fn cnt_thres0_u3(&mut self) -> CNT_THRES0_U3_W {
+        CNT_THRES0_U3_W { w: self }
     }
 }

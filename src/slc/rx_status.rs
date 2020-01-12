@@ -10,13 +10,13 @@ impl crate::ResetValue for super::RX_STATUS {
         0
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RX_EMPTY`"]
-pub type SLC_SLC1_RX_EMPTY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_RX_EMPTY`"]
-pub struct SLC_SLC1_RX_EMPTY_W<'a> {
+#[doc = "Reader of field `SLC1_RX_EMPTY`"]
+pub type SLC1_RX_EMPTY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_RX_EMPTY`"]
+pub struct SLC1_RX_EMPTY_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RX_EMPTY_W<'a> {
+impl<'a> SLC1_RX_EMPTY_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SLC_SLC1_RX_EMPTY_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RX_FULL`"]
-pub type SLC_SLC1_RX_FULL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_RX_FULL`"]
-pub struct SLC_SLC1_RX_FULL_W<'a> {
+#[doc = "Reader of field `SLC1_RX_FULL`"]
+pub type SLC1_RX_FULL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_RX_FULL`"]
+pub struct SLC1_RX_FULL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RX_FULL_W<'a> {
+impl<'a> SLC1_RX_FULL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SLC_SLC1_RX_FULL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC0_RX_EMPTY`"]
-pub type SLC_SLC0_RX_EMPTY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC0_RX_EMPTY`"]
-pub struct SLC_SLC0_RX_EMPTY_W<'a> {
+#[doc = "Reader of field `SLC0_RX_EMPTY`"]
+pub type SLC0_RX_EMPTY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC0_RX_EMPTY`"]
+pub struct SLC0_RX_EMPTY_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC0_RX_EMPTY_W<'a> {
+impl<'a> SLC0_RX_EMPTY_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> SLC_SLC0_RX_EMPTY_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC0_RX_FULL`"]
-pub type SLC_SLC0_RX_FULL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC0_RX_FULL`"]
-pub struct SLC_SLC0_RX_FULL_W<'a> {
+#[doc = "Reader of field `SLC0_RX_FULL`"]
+pub type SLC0_RX_FULL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC0_RX_FULL`"]
+pub struct SLC0_RX_FULL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC0_RX_FULL_W<'a> {
+impl<'a> SLC0_RX_FULL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -109,44 +109,44 @@ impl<'a> SLC_SLC0_RX_FULL_W<'a> {
 impl R {
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn slc_slc1_rx_empty(&self) -> SLC_SLC1_RX_EMPTY_R {
-        SLC_SLC1_RX_EMPTY_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn slc1_rx_empty(&self) -> SLC1_RX_EMPTY_R {
+        SLC1_RX_EMPTY_R::new(((self.bits >> 17) & 0x01) != 0)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn slc_slc1_rx_full(&self) -> SLC_SLC1_RX_FULL_R {
-        SLC_SLC1_RX_FULL_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn slc1_rx_full(&self) -> SLC1_RX_FULL_R {
+        SLC1_RX_FULL_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn slc_slc0_rx_empty(&self) -> SLC_SLC0_RX_EMPTY_R {
-        SLC_SLC0_RX_EMPTY_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn slc0_rx_empty(&self) -> SLC0_RX_EMPTY_R {
+        SLC0_RX_EMPTY_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn slc_slc0_rx_full(&self) -> SLC_SLC0_RX_FULL_R {
-        SLC_SLC0_RX_FULL_R::new((self.bits & 0x01) != 0)
+    pub fn slc0_rx_full(&self) -> SLC0_RX_FULL_R {
+        SLC0_RX_FULL_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn slc_slc1_rx_empty(&mut self) -> SLC_SLC1_RX_EMPTY_W {
-        SLC_SLC1_RX_EMPTY_W { w: self }
+    pub fn slc1_rx_empty(&mut self) -> SLC1_RX_EMPTY_W {
+        SLC1_RX_EMPTY_W { w: self }
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn slc_slc1_rx_full(&mut self) -> SLC_SLC1_RX_FULL_W {
-        SLC_SLC1_RX_FULL_W { w: self }
+    pub fn slc1_rx_full(&mut self) -> SLC1_RX_FULL_W {
+        SLC1_RX_FULL_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn slc_slc0_rx_empty(&mut self) -> SLC_SLC0_RX_EMPTY_W {
-        SLC_SLC0_RX_EMPTY_W { w: self }
+    pub fn slc0_rx_empty(&mut self) -> SLC0_RX_EMPTY_W {
+        SLC0_RX_EMPTY_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn slc_slc0_rx_full(&mut self) -> SLC_SLC0_RX_FULL_W {
-        SLC_SLC0_RX_FULL_W { w: self }
+    pub fn slc0_rx_full(&mut self) -> SLC0_RX_FULL_W {
+        SLC0_RX_FULL_W { w: self }
     }
 }

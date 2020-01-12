@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_DCACHE_DBUG7 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_IRAM1ADDR_IA`"]
-pub type DPORT_APP_IRAM1ADDR_IA_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_APP_IRAM1ADDR_IA`"]
-pub struct DPORT_APP_IRAM1ADDR_IA_W<'a> {
+#[doc = "Reader of field `APP_IRAM1ADDR_IA`"]
+pub type APP_IRAM1ADDR_IA_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `APP_IRAM1ADDR_IA`"]
+pub struct APP_IRAM1ADDR_IA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_IRAM1ADDR_IA_W<'a> {
+impl<'a> APP_IRAM1ADDR_IA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_APP_IRAM1ADDR_IA_W<'a> {
 impl R {
     #[doc = "Bits 0:19"]
     #[inline(always)]
-    pub fn dport_app_iram1addr_ia(&self) -> DPORT_APP_IRAM1ADDR_IA_R {
-        DPORT_APP_IRAM1ADDR_IA_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn app_iram1addr_ia(&self) -> APP_IRAM1ADDR_IA_R {
+        APP_IRAM1ADDR_IA_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19"]
     #[inline(always)]
-    pub fn dport_app_iram1addr_ia(&mut self) -> DPORT_APP_IRAM1ADDR_IA_W {
-        DPORT_APP_IRAM1ADDR_IA_W { w: self }
+    pub fn app_iram1addr_ia(&mut self) -> APP_IRAM1ADDR_IA_W {
+        APP_IRAM1ADDR_IA_W { w: self }
     }
 }

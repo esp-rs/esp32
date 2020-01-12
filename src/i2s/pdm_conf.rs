@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PDM_CONF {
         0
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_HP_BYPASS`"]
-pub type I2S_TX_PDM_HP_BYPASS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_TX_PDM_HP_BYPASS`"]
-pub struct I2S_TX_PDM_HP_BYPASS_W<'a> {
+#[doc = "Reader of field `TX_PDM_HP_BYPASS`"]
+pub type TX_PDM_HP_BYPASS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_PDM_HP_BYPASS`"]
+pub struct TX_PDM_HP_BYPASS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_HP_BYPASS_W<'a> {
+impl<'a> TX_PDM_HP_BYPASS_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2S_TX_PDM_HP_BYPASS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_RX_PDM_SINC_DSR_16_EN`"]
-pub type I2S_RX_PDM_SINC_DSR_16_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_RX_PDM_SINC_DSR_16_EN`"]
-pub struct I2S_RX_PDM_SINC_DSR_16_EN_W<'a> {
+#[doc = "Reader of field `RX_PDM_SINC_DSR_16_EN`"]
+pub type RX_PDM_SINC_DSR_16_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_PDM_SINC_DSR_16_EN`"]
+pub struct RX_PDM_SINC_DSR_16_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_PDM_SINC_DSR_16_EN_W<'a> {
+impl<'a> RX_PDM_SINC_DSR_16_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> I2S_RX_PDM_SINC_DSR_16_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_SIGMADELTA_IN_SHIFT`"]
-pub type I2S_TX_PDM_SIGMADELTA_IN_SHIFT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_PDM_SIGMADELTA_IN_SHIFT`"]
-pub struct I2S_TX_PDM_SIGMADELTA_IN_SHIFT_W<'a> {
+#[doc = "Reader of field `TX_PDM_SIGMADELTA_IN_SHIFT`"]
+pub type TX_PDM_SIGMADELTA_IN_SHIFT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_PDM_SIGMADELTA_IN_SHIFT`"]
+pub struct TX_PDM_SIGMADELTA_IN_SHIFT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_SIGMADELTA_IN_SHIFT_W<'a> {
+impl<'a> TX_PDM_SIGMADELTA_IN_SHIFT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> I2S_TX_PDM_SIGMADELTA_IN_SHIFT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_SINC_IN_SHIFT`"]
-pub type I2S_TX_PDM_SINC_IN_SHIFT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_PDM_SINC_IN_SHIFT`"]
-pub struct I2S_TX_PDM_SINC_IN_SHIFT_W<'a> {
+#[doc = "Reader of field `TX_PDM_SINC_IN_SHIFT`"]
+pub type TX_PDM_SINC_IN_SHIFT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_PDM_SINC_IN_SHIFT`"]
+pub struct TX_PDM_SINC_IN_SHIFT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_SINC_IN_SHIFT_W<'a> {
+impl<'a> TX_PDM_SINC_IN_SHIFT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -86,13 +86,13 @@ impl<'a> I2S_TX_PDM_SINC_IN_SHIFT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_LP_IN_SHIFT`"]
-pub type I2S_TX_PDM_LP_IN_SHIFT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_PDM_LP_IN_SHIFT`"]
-pub struct I2S_TX_PDM_LP_IN_SHIFT_W<'a> {
+#[doc = "Reader of field `TX_PDM_LP_IN_SHIFT`"]
+pub type TX_PDM_LP_IN_SHIFT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_PDM_LP_IN_SHIFT`"]
+pub struct TX_PDM_LP_IN_SHIFT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_LP_IN_SHIFT_W<'a> {
+impl<'a> TX_PDM_LP_IN_SHIFT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -100,13 +100,13 @@ impl<'a> I2S_TX_PDM_LP_IN_SHIFT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_HP_IN_SHIFT`"]
-pub type I2S_TX_PDM_HP_IN_SHIFT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_PDM_HP_IN_SHIFT`"]
-pub struct I2S_TX_PDM_HP_IN_SHIFT_W<'a> {
+#[doc = "Reader of field `TX_PDM_HP_IN_SHIFT`"]
+pub type TX_PDM_HP_IN_SHIFT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_PDM_HP_IN_SHIFT`"]
+pub struct TX_PDM_HP_IN_SHIFT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_HP_IN_SHIFT_W<'a> {
+impl<'a> TX_PDM_HP_IN_SHIFT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -114,13 +114,13 @@ impl<'a> I2S_TX_PDM_HP_IN_SHIFT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_PRESCALE`"]
-pub type I2S_TX_PDM_PRESCALE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_PDM_PRESCALE`"]
-pub struct I2S_TX_PDM_PRESCALE_W<'a> {
+#[doc = "Reader of field `TX_PDM_PRESCALE`"]
+pub type TX_PDM_PRESCALE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_PDM_PRESCALE`"]
+pub struct TX_PDM_PRESCALE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_PRESCALE_W<'a> {
+impl<'a> TX_PDM_PRESCALE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -128,13 +128,13 @@ impl<'a> I2S_TX_PDM_PRESCALE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_SINC_OSR2`"]
-pub type I2S_TX_PDM_SINC_OSR2_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_PDM_SINC_OSR2`"]
-pub struct I2S_TX_PDM_SINC_OSR2_W<'a> {
+#[doc = "Reader of field `TX_PDM_SINC_OSR2`"]
+pub type TX_PDM_SINC_OSR2_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_PDM_SINC_OSR2`"]
+pub struct TX_PDM_SINC_OSR2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_SINC_OSR2_W<'a> {
+impl<'a> TX_PDM_SINC_OSR2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -142,13 +142,13 @@ impl<'a> I2S_TX_PDM_SINC_OSR2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_PDM2PCM_CONV_EN`"]
-pub type I2S_PDM2PCM_CONV_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_PDM2PCM_CONV_EN`"]
-pub struct I2S_PDM2PCM_CONV_EN_W<'a> {
+#[doc = "Reader of field `PDM2PCM_CONV_EN`"]
+pub type PDM2PCM_CONV_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PDM2PCM_CONV_EN`"]
+pub struct PDM2PCM_CONV_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_PDM2PCM_CONV_EN_W<'a> {
+impl<'a> PDM2PCM_CONV_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -166,13 +166,13 @@ impl<'a> I2S_PDM2PCM_CONV_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_PCM2PDM_CONV_EN`"]
-pub type I2S_PCM2PDM_CONV_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_PCM2PDM_CONV_EN`"]
-pub struct I2S_PCM2PDM_CONV_EN_W<'a> {
+#[doc = "Reader of field `PCM2PDM_CONV_EN`"]
+pub type PCM2PDM_CONV_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PCM2PDM_CONV_EN`"]
+pub struct PCM2PDM_CONV_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_PCM2PDM_CONV_EN_W<'a> {
+impl<'a> PCM2PDM_CONV_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -190,13 +190,13 @@ impl<'a> I2S_PCM2PDM_CONV_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_RX_PDM_EN`"]
-pub type I2S_RX_PDM_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_RX_PDM_EN`"]
-pub struct I2S_RX_PDM_EN_W<'a> {
+#[doc = "Reader of field `RX_PDM_EN`"]
+pub type RX_PDM_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_PDM_EN`"]
+pub struct RX_PDM_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_PDM_EN_W<'a> {
+impl<'a> RX_PDM_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -214,13 +214,13 @@ impl<'a> I2S_RX_PDM_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_PDM_EN`"]
-pub type I2S_TX_PDM_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_TX_PDM_EN`"]
-pub struct I2S_TX_PDM_EN_W<'a> {
+#[doc = "Reader of field `TX_PDM_EN`"]
+pub type TX_PDM_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_PDM_EN`"]
+pub struct TX_PDM_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_PDM_EN_W<'a> {
+impl<'a> TX_PDM_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -241,124 +241,124 @@ impl<'a> I2S_TX_PDM_EN_W<'a> {
 impl R {
     #[doc = "Bit 25"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_hp_bypass(&self) -> I2S_TX_PDM_HP_BYPASS_R {
-        I2S_TX_PDM_HP_BYPASS_R::new(((self.bits >> 25) & 0x01) != 0)
+    pub fn tx_pdm_hp_bypass(&self) -> TX_PDM_HP_BYPASS_R {
+        TX_PDM_HP_BYPASS_R::new(((self.bits >> 25) & 0x01) != 0)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
-    pub fn i2s_rx_pdm_sinc_dsr_16_en(&self) -> I2S_RX_PDM_SINC_DSR_16_EN_R {
-        I2S_RX_PDM_SINC_DSR_16_EN_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn rx_pdm_sinc_dsr_16_en(&self) -> RX_PDM_SINC_DSR_16_EN_R {
+        RX_PDM_SINC_DSR_16_EN_R::new(((self.bits >> 24) & 0x01) != 0)
     }
     #[doc = "Bits 22:23"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_sigmadelta_in_shift(&self) -> I2S_TX_PDM_SIGMADELTA_IN_SHIFT_R {
-        I2S_TX_PDM_SIGMADELTA_IN_SHIFT_R::new(((self.bits >> 22) & 0x03) as u8)
+    pub fn tx_pdm_sigmadelta_in_shift(&self) -> TX_PDM_SIGMADELTA_IN_SHIFT_R {
+        TX_PDM_SIGMADELTA_IN_SHIFT_R::new(((self.bits >> 22) & 0x03) as u8)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_sinc_in_shift(&self) -> I2S_TX_PDM_SINC_IN_SHIFT_R {
-        I2S_TX_PDM_SINC_IN_SHIFT_R::new(((self.bits >> 20) & 0x03) as u8)
+    pub fn tx_pdm_sinc_in_shift(&self) -> TX_PDM_SINC_IN_SHIFT_R {
+        TX_PDM_SINC_IN_SHIFT_R::new(((self.bits >> 20) & 0x03) as u8)
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_lp_in_shift(&self) -> I2S_TX_PDM_LP_IN_SHIFT_R {
-        I2S_TX_PDM_LP_IN_SHIFT_R::new(((self.bits >> 18) & 0x03) as u8)
+    pub fn tx_pdm_lp_in_shift(&self) -> TX_PDM_LP_IN_SHIFT_R {
+        TX_PDM_LP_IN_SHIFT_R::new(((self.bits >> 18) & 0x03) as u8)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_hp_in_shift(&self) -> I2S_TX_PDM_HP_IN_SHIFT_R {
-        I2S_TX_PDM_HP_IN_SHIFT_R::new(((self.bits >> 16) & 0x03) as u8)
+    pub fn tx_pdm_hp_in_shift(&self) -> TX_PDM_HP_IN_SHIFT_R {
+        TX_PDM_HP_IN_SHIFT_R::new(((self.bits >> 16) & 0x03) as u8)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_prescale(&self) -> I2S_TX_PDM_PRESCALE_R {
-        I2S_TX_PDM_PRESCALE_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn tx_pdm_prescale(&self) -> TX_PDM_PRESCALE_R {
+        TX_PDM_PRESCALE_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_sinc_osr2(&self) -> I2S_TX_PDM_SINC_OSR2_R {
-        I2S_TX_PDM_SINC_OSR2_R::new(((self.bits >> 4) & 0x0f) as u8)
+    pub fn tx_pdm_sinc_osr2(&self) -> TX_PDM_SINC_OSR2_R {
+        TX_PDM_SINC_OSR2_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_pdm2pcm_conv_en(&self) -> I2S_PDM2PCM_CONV_EN_R {
-        I2S_PDM2PCM_CONV_EN_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn pdm2pcm_conv_en(&self) -> PDM2PCM_CONV_EN_R {
+        PDM2PCM_CONV_EN_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_pcm2pdm_conv_en(&self) -> I2S_PCM2PDM_CONV_EN_R {
-        I2S_PCM2PDM_CONV_EN_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn pcm2pdm_conv_en(&self) -> PCM2PDM_CONV_EN_R {
+        PCM2PDM_CONV_EN_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_rx_pdm_en(&self) -> I2S_RX_PDM_EN_R {
-        I2S_RX_PDM_EN_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn rx_pdm_en(&self) -> RX_PDM_EN_R {
+        RX_PDM_EN_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_en(&self) -> I2S_TX_PDM_EN_R {
-        I2S_TX_PDM_EN_R::new((self.bits & 0x01) != 0)
+    pub fn tx_pdm_en(&self) -> TX_PDM_EN_R {
+        TX_PDM_EN_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 25"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_hp_bypass(&mut self) -> I2S_TX_PDM_HP_BYPASS_W {
-        I2S_TX_PDM_HP_BYPASS_W { w: self }
+    pub fn tx_pdm_hp_bypass(&mut self) -> TX_PDM_HP_BYPASS_W {
+        TX_PDM_HP_BYPASS_W { w: self }
     }
     #[doc = "Bit 24"]
     #[inline(always)]
-    pub fn i2s_rx_pdm_sinc_dsr_16_en(&mut self) -> I2S_RX_PDM_SINC_DSR_16_EN_W {
-        I2S_RX_PDM_SINC_DSR_16_EN_W { w: self }
+    pub fn rx_pdm_sinc_dsr_16_en(&mut self) -> RX_PDM_SINC_DSR_16_EN_W {
+        RX_PDM_SINC_DSR_16_EN_W { w: self }
     }
     #[doc = "Bits 22:23"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_sigmadelta_in_shift(&mut self) -> I2S_TX_PDM_SIGMADELTA_IN_SHIFT_W {
-        I2S_TX_PDM_SIGMADELTA_IN_SHIFT_W { w: self }
+    pub fn tx_pdm_sigmadelta_in_shift(&mut self) -> TX_PDM_SIGMADELTA_IN_SHIFT_W {
+        TX_PDM_SIGMADELTA_IN_SHIFT_W { w: self }
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_sinc_in_shift(&mut self) -> I2S_TX_PDM_SINC_IN_SHIFT_W {
-        I2S_TX_PDM_SINC_IN_SHIFT_W { w: self }
+    pub fn tx_pdm_sinc_in_shift(&mut self) -> TX_PDM_SINC_IN_SHIFT_W {
+        TX_PDM_SINC_IN_SHIFT_W { w: self }
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_lp_in_shift(&mut self) -> I2S_TX_PDM_LP_IN_SHIFT_W {
-        I2S_TX_PDM_LP_IN_SHIFT_W { w: self }
+    pub fn tx_pdm_lp_in_shift(&mut self) -> TX_PDM_LP_IN_SHIFT_W {
+        TX_PDM_LP_IN_SHIFT_W { w: self }
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_hp_in_shift(&mut self) -> I2S_TX_PDM_HP_IN_SHIFT_W {
-        I2S_TX_PDM_HP_IN_SHIFT_W { w: self }
+    pub fn tx_pdm_hp_in_shift(&mut self) -> TX_PDM_HP_IN_SHIFT_W {
+        TX_PDM_HP_IN_SHIFT_W { w: self }
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_prescale(&mut self) -> I2S_TX_PDM_PRESCALE_W {
-        I2S_TX_PDM_PRESCALE_W { w: self }
+    pub fn tx_pdm_prescale(&mut self) -> TX_PDM_PRESCALE_W {
+        TX_PDM_PRESCALE_W { w: self }
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_sinc_osr2(&mut self) -> I2S_TX_PDM_SINC_OSR2_W {
-        I2S_TX_PDM_SINC_OSR2_W { w: self }
+    pub fn tx_pdm_sinc_osr2(&mut self) -> TX_PDM_SINC_OSR2_W {
+        TX_PDM_SINC_OSR2_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_pdm2pcm_conv_en(&mut self) -> I2S_PDM2PCM_CONV_EN_W {
-        I2S_PDM2PCM_CONV_EN_W { w: self }
+    pub fn pdm2pcm_conv_en(&mut self) -> PDM2PCM_CONV_EN_W {
+        PDM2PCM_CONV_EN_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_pcm2pdm_conv_en(&mut self) -> I2S_PCM2PDM_CONV_EN_W {
-        I2S_PCM2PDM_CONV_EN_W { w: self }
+    pub fn pcm2pdm_conv_en(&mut self) -> PCM2PDM_CONV_EN_W {
+        PCM2PDM_CONV_EN_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_rx_pdm_en(&mut self) -> I2S_RX_PDM_EN_W {
-        I2S_RX_PDM_EN_W { w: self }
+    pub fn rx_pdm_en(&mut self) -> RX_PDM_EN_W {
+        RX_PDM_EN_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_tx_pdm_en(&mut self) -> I2S_TX_PDM_EN_W {
-        I2S_TX_PDM_EN_W { w: self }
+    pub fn tx_pdm_en(&mut self) -> TX_PDM_EN_W {
+        TX_PDM_EN_W { w: self }
     }
 }

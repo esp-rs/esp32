@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SCL_START_PERIOD {
         0
     }
 }
-#[doc = "Reader of field `RTC_I2C_SCL_START_PERIOD`"]
-pub type RTC_I2C_SCL_START_PERIOD_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_I2C_SCL_START_PERIOD`"]
-pub struct RTC_I2C_SCL_START_PERIOD_W<'a> {
+#[doc = "Reader of field `SCL_START_PERIOD`"]
+pub type SCL_START_PERIOD_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SCL_START_PERIOD`"]
+pub struct SCL_START_PERIOD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_SCL_START_PERIOD_W<'a> {
+impl<'a> SCL_START_PERIOD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_I2C_SCL_START_PERIOD_W<'a> {
 impl R {
     #[doc = "Bits 0:19 - Number of FAST_CLK cycles to wait before generating start condition"]
     #[inline(always)]
-    pub fn rtc_i2c_scl_start_period(&self) -> RTC_I2C_SCL_START_PERIOD_R {
-        RTC_I2C_SCL_START_PERIOD_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn scl_start_period(&self) -> SCL_START_PERIOD_R {
+        SCL_START_PERIOD_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19 - Number of FAST_CLK cycles to wait before generating start condition"]
     #[inline(always)]
-    pub fn rtc_i2c_scl_start_period(&mut self) -> RTC_I2C_SCL_START_PERIOD_W {
-        RTC_I2C_SCL_START_PERIOD_W { w: self }
+    pub fn scl_start_period(&mut self) -> SCL_START_PERIOD_W {
+        SCL_START_PERIOD_W { w: self }
     }
 }

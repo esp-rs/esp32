@@ -10,13 +10,13 @@ impl crate::ResetValue for super::EXT_WAKEUP_CONF {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_EXT_WAKEUP1_LV`"]
-pub type RTC_CNTL_EXT_WAKEUP1_LV_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_EXT_WAKEUP1_LV`"]
-pub struct RTC_CNTL_EXT_WAKEUP1_LV_W<'a> {
+#[doc = "Reader of field `EXT_WAKEUP1_LV`"]
+pub type EXT_WAKEUP1_LV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `EXT_WAKEUP1_LV`"]
+pub struct EXT_WAKEUP1_LV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_EXT_WAKEUP1_LV_W<'a> {
+impl<'a> EXT_WAKEUP1_LV_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_EXT_WAKEUP1_LV_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_EXT_WAKEUP0_LV`"]
-pub type RTC_CNTL_EXT_WAKEUP0_LV_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_EXT_WAKEUP0_LV`"]
-pub struct RTC_CNTL_EXT_WAKEUP0_LV_W<'a> {
+#[doc = "Reader of field `EXT_WAKEUP0_LV`"]
+pub type EXT_WAKEUP0_LV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `EXT_WAKEUP0_LV`"]
+pub struct EXT_WAKEUP0_LV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_EXT_WAKEUP0_LV_W<'a> {
+impl<'a> EXT_WAKEUP0_LV_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> RTC_CNTL_EXT_WAKEUP0_LV_W<'a> {
 impl R {
     #[doc = "Bit 31 - 0: external wakeup at low level 1: external wakeup at high level"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_lv(&self) -> RTC_CNTL_EXT_WAKEUP1_LV_R {
-        RTC_CNTL_EXT_WAKEUP1_LV_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn ext_wakeup1_lv(&self) -> EXT_WAKEUP1_LV_R {
+        EXT_WAKEUP1_LV_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bit 30 - 0: external wakeup at low level 1: external wakeup at high level"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup0_lv(&self) -> RTC_CNTL_EXT_WAKEUP0_LV_R {
-        RTC_CNTL_EXT_WAKEUP0_LV_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn ext_wakeup0_lv(&self) -> EXT_WAKEUP0_LV_R {
+        EXT_WAKEUP0_LV_R::new(((self.bits >> 30) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31 - 0: external wakeup at low level 1: external wakeup at high level"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_lv(&mut self) -> RTC_CNTL_EXT_WAKEUP1_LV_W {
-        RTC_CNTL_EXT_WAKEUP1_LV_W { w: self }
+    pub fn ext_wakeup1_lv(&mut self) -> EXT_WAKEUP1_LV_W {
+        EXT_WAKEUP1_LV_W { w: self }
     }
     #[doc = "Bit 30 - 0: external wakeup at low level 1: external wakeup at high level"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup0_lv(&mut self) -> RTC_CNTL_EXT_WAKEUP0_LV_W {
-        RTC_CNTL_EXT_WAKEUP0_LV_W { w: self }
+    pub fn ext_wakeup0_lv(&mut self) -> EXT_WAKEUP0_LV_W {
+        EXT_WAKEUP0_LV_W { w: self }
     }
 }

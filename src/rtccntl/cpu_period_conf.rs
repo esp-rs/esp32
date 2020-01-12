@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CPU_PERIOD_CONF {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_CPUPERIOD_SEL`"]
-pub type RTC_CNTL_CPUPERIOD_SEL_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_CPUPERIOD_SEL`"]
-pub struct RTC_CNTL_CPUPERIOD_SEL_W<'a> {
+#[doc = "Reader of field `CPUPERIOD_SEL`"]
+pub type CPUPERIOD_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CPUPERIOD_SEL`"]
+pub struct CPUPERIOD_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_CPUPERIOD_SEL_W<'a> {
+impl<'a> CPUPERIOD_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> RTC_CNTL_CPUPERIOD_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_CPUSEL_CONF`"]
-pub type RTC_CNTL_CPUSEL_CONF_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_CPUSEL_CONF`"]
-pub struct RTC_CNTL_CPUSEL_CONF_W<'a> {
+#[doc = "Reader of field `CPUSEL_CONF`"]
+pub type CPUSEL_CONF_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CPUSEL_CONF`"]
+pub struct CPUSEL_CONF_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_CPUSEL_CONF_W<'a> {
+impl<'a> CPUSEL_CONF_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> RTC_CNTL_CPUSEL_CONF_W<'a> {
 impl R {
     #[doc = "Bits 30:31 - CPU period sel"]
     #[inline(always)]
-    pub fn rtc_cntl_cpuperiod_sel(&self) -> RTC_CNTL_CPUPERIOD_SEL_R {
-        RTC_CNTL_CPUPERIOD_SEL_R::new(((self.bits >> 30) & 0x03) as u8)
+    pub fn cpuperiod_sel(&self) -> CPUPERIOD_SEL_R {
+        CPUPERIOD_SEL_R::new(((self.bits >> 30) & 0x03) as u8)
     }
     #[doc = "Bit 29 - CPU sel option"]
     #[inline(always)]
-    pub fn rtc_cntl_cpusel_conf(&self) -> RTC_CNTL_CPUSEL_CONF_R {
-        RTC_CNTL_CPUSEL_CONF_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn cpusel_conf(&self) -> CPUSEL_CONF_R {
+        CPUSEL_CONF_R::new(((self.bits >> 29) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bits 30:31 - CPU period sel"]
     #[inline(always)]
-    pub fn rtc_cntl_cpuperiod_sel(&mut self) -> RTC_CNTL_CPUPERIOD_SEL_W {
-        RTC_CNTL_CPUPERIOD_SEL_W { w: self }
+    pub fn cpuperiod_sel(&mut self) -> CPUPERIOD_SEL_W {
+        CPUPERIOD_SEL_W { w: self }
     }
     #[doc = "Bit 29 - CPU sel option"]
     #[inline(always)]
-    pub fn rtc_cntl_cpusel_conf(&mut self) -> RTC_CNTL_CPUSEL_CONF_W {
-        RTC_CNTL_CPUSEL_CONF_W { w: self }
+    pub fn cpusel_conf(&mut self) -> CPUSEL_CONF_W {
+        CPUSEL_CONF_W { w: self }
     }
 }

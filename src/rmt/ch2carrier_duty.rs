@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CH2CARRIER_DUTY {
         0
     }
 }
-#[doc = "Reader of field `RMT_CARRIER_HIGH_CH2`"]
-pub type RMT_CARRIER_HIGH_CH2_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RMT_CARRIER_HIGH_CH2`"]
-pub struct RMT_CARRIER_HIGH_CH2_W<'a> {
+#[doc = "Reader of field `CARRIER_HIGH_CH2`"]
+pub type CARRIER_HIGH_CH2_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CARRIER_HIGH_CH2`"]
+pub struct CARRIER_HIGH_CH2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_CARRIER_HIGH_CH2_W<'a> {
+impl<'a> CARRIER_HIGH_CH2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> RMT_CARRIER_HIGH_CH2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RMT_CARRIER_LOW_CH2`"]
-pub type RMT_CARRIER_LOW_CH2_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RMT_CARRIER_LOW_CH2`"]
-pub struct RMT_CARRIER_LOW_CH2_W<'a> {
+#[doc = "Reader of field `CARRIER_LOW_CH2`"]
+pub type CARRIER_LOW_CH2_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CARRIER_LOW_CH2`"]
+pub struct CARRIER_LOW_CH2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_CARRIER_LOW_CH2_W<'a> {
+impl<'a> CARRIER_LOW_CH2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> RMT_CARRIER_LOW_CH2_W<'a> {
 impl R {
     #[doc = "Bits 16:31 - This register is used to configure carrier wave's high level value for channel2."]
     #[inline(always)]
-    pub fn rmt_carrier_high_ch2(&self) -> RMT_CARRIER_HIGH_CH2_R {
-        RMT_CARRIER_HIGH_CH2_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn carrier_high_ch2(&self) -> CARRIER_HIGH_CH2_R {
+        CARRIER_HIGH_CH2_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bits 0:15 - This register is used to configure carrier wave's low level value for channel2."]
     #[inline(always)]
-    pub fn rmt_carrier_low_ch2(&self) -> RMT_CARRIER_LOW_CH2_R {
-        RMT_CARRIER_LOW_CH2_R::new((self.bits & 0xffff) as u16)
+    pub fn carrier_low_ch2(&self) -> CARRIER_LOW_CH2_R {
+        CARRIER_LOW_CH2_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:31 - This register is used to configure carrier wave's high level value for channel2."]
     #[inline(always)]
-    pub fn rmt_carrier_high_ch2(&mut self) -> RMT_CARRIER_HIGH_CH2_W {
-        RMT_CARRIER_HIGH_CH2_W { w: self }
+    pub fn carrier_high_ch2(&mut self) -> CARRIER_HIGH_CH2_W {
+        CARRIER_HIGH_CH2_W { w: self }
     }
     #[doc = "Bits 0:15 - This register is used to configure carrier wave's low level value for channel2."]
     #[inline(always)]
-    pub fn rmt_carrier_low_ch2(&mut self) -> RMT_CARRIER_LOW_CH2_W {
-        RMT_CARRIER_LOW_CH2_W { w: self }
+    pub fn carrier_low_ch2(&mut self) -> CARRIER_LOW_CH2_W {
+        CARRIER_LOW_CH2_W { w: self }
     }
 }

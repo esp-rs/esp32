@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_READ_STATUS1 {
         0
     }
 }
-#[doc = "Reader of field `SENS_SAR1_READER_STATUS`"]
-pub type SENS_SAR1_READER_STATUS_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SENS_SAR1_READER_STATUS`"]
-pub struct SENS_SAR1_READER_STATUS_W<'a> {
+#[doc = "Reader of field `SAR1_READER_STATUS`"]
+pub type SAR1_READER_STATUS_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SAR1_READER_STATUS`"]
+pub struct SAR1_READER_STATUS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_SAR1_READER_STATUS_W<'a> {
+impl<'a> SAR1_READER_STATUS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SENS_SAR1_READER_STATUS_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn sens_sar1_reader_status(&self) -> SENS_SAR1_READER_STATUS_R {
-        SENS_SAR1_READER_STATUS_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn sar1_reader_status(&self) -> SAR1_READER_STATUS_R {
+        SAR1_READER_STATUS_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn sens_sar1_reader_status(&mut self) -> SENS_SAR1_READER_STATUS_W {
-        SENS_SAR1_READER_STATUS_W { w: self }
+    pub fn sar1_reader_status(&mut self) -> SAR1_READER_STATUS_W {
+        SAR1_READER_STATUS_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::T1UPDATE {
         0
     }
 }
-#[doc = "Reader of field `TIMG_T1_UPDATE`"]
-pub type TIMG_T1_UPDATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_T1_UPDATE`"]
-pub struct TIMG_T1_UPDATE_W<'a> {
+#[doc = "Reader of field `T1_UPDATE`"]
+pub type T1_UPDATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `T1_UPDATE`"]
+pub struct T1_UPDATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_T1_UPDATE_W<'a> {
+impl<'a> T1_UPDATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_T1_UPDATE_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Write any value will trigger a timer 1 time-base counter value update (timer 1 current value will be stored in registers above)"]
     #[inline(always)]
-    pub fn timg_t1_update(&self) -> TIMG_T1_UPDATE_R {
-        TIMG_T1_UPDATE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn t1_update(&self) -> T1_UPDATE_R {
+        T1_UPDATE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Write any value will trigger a timer 1 time-base counter value update (timer 1 current value will be stored in registers above)"]
     #[inline(always)]
-    pub fn timg_t1_update(&mut self) -> TIMG_T1_UPDATE_W {
-        TIMG_T1_UPDATE_W { w: self }
+    pub fn t1_update(&mut self) -> T1_UPDATE_W {
+        T1_UPDATE_W { w: self }
     }
 }

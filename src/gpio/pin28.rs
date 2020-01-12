@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PIN28 {
         0
     }
 }
-#[doc = "Reader of field `GPIO_PIN28_INT_ENA`"]
-pub type GPIO_PIN28_INT_ENA_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_PIN28_INT_ENA`"]
-pub struct GPIO_PIN28_INT_ENA_W<'a> {
+#[doc = "Reader of field `PIN28_INT_ENA`"]
+pub type PIN28_INT_ENA_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PIN28_INT_ENA`"]
+pub struct PIN28_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_PIN28_INT_ENA_W<'a> {
+impl<'a> PIN28_INT_ENA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> GPIO_PIN28_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_PIN28_CONFIG`"]
-pub type GPIO_PIN28_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_PIN28_CONFIG`"]
-pub struct GPIO_PIN28_CONFIG_W<'a> {
+#[doc = "Reader of field `PIN28_CONFIG`"]
+pub type PIN28_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PIN28_CONFIG`"]
+pub struct PIN28_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_PIN28_CONFIG_W<'a> {
+impl<'a> PIN28_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> GPIO_PIN28_CONFIG_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_PIN28_WAKEUP_ENABLE`"]
-pub type GPIO_PIN28_WAKEUP_ENABLE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_PIN28_WAKEUP_ENABLE`"]
-pub struct GPIO_PIN28_WAKEUP_ENABLE_W<'a> {
+#[doc = "Reader of field `PIN28_WAKEUP_ENABLE`"]
+pub type PIN28_WAKEUP_ENABLE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PIN28_WAKEUP_ENABLE`"]
+pub struct PIN28_WAKEUP_ENABLE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_PIN28_WAKEUP_ENABLE_W<'a> {
+impl<'a> PIN28_WAKEUP_ENABLE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -62,13 +62,13 @@ impl<'a> GPIO_PIN28_WAKEUP_ENABLE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_PIN28_INT_TYPE`"]
-pub type GPIO_PIN28_INT_TYPE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_PIN28_INT_TYPE`"]
-pub struct GPIO_PIN28_INT_TYPE_W<'a> {
+#[doc = "Reader of field `PIN28_INT_TYPE`"]
+pub type PIN28_INT_TYPE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PIN28_INT_TYPE`"]
+pub struct PIN28_INT_TYPE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_PIN28_INT_TYPE_W<'a> {
+impl<'a> PIN28_INT_TYPE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -76,13 +76,13 @@ impl<'a> GPIO_PIN28_INT_TYPE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_PIN28_PAD_DRIVER`"]
-pub type GPIO_PIN28_PAD_DRIVER_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_PIN28_PAD_DRIVER`"]
-pub struct GPIO_PIN28_PAD_DRIVER_W<'a> {
+#[doc = "Reader of field `PIN28_PAD_DRIVER`"]
+pub type PIN28_PAD_DRIVER_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PIN28_PAD_DRIVER`"]
+pub struct PIN28_PAD_DRIVER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_PIN28_PAD_DRIVER_W<'a> {
+impl<'a> PIN28_PAD_DRIVER_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -103,54 +103,54 @@ impl<'a> GPIO_PIN28_PAD_DRIVER_W<'a> {
 impl R {
     #[doc = "Bits 13:17 - bit0: APP CPU interrupt enable bit1: APP CPU non-maskable interrupt enable bit3: PRO CPU interrupt enable bit4: PRO CPU non-maskable interrupt enable bit5: SDIO's extent interrupt enable"]
     #[inline(always)]
-    pub fn gpio_pin28_int_ena(&self) -> GPIO_PIN28_INT_ENA_R {
-        GPIO_PIN28_INT_ENA_R::new(((self.bits >> 13) & 0x1f) as u8)
+    pub fn pin28_int_ena(&self) -> PIN28_INT_ENA_R {
+        PIN28_INT_ENA_R::new(((self.bits >> 13) & 0x1f) as u8)
     }
     #[doc = "Bits 11:12 - NA"]
     #[inline(always)]
-    pub fn gpio_pin28_config(&self) -> GPIO_PIN28_CONFIG_R {
-        GPIO_PIN28_CONFIG_R::new(((self.bits >> 11) & 0x03) as u8)
+    pub fn pin28_config(&self) -> PIN28_CONFIG_R {
+        PIN28_CONFIG_R::new(((self.bits >> 11) & 0x03) as u8)
     }
     #[doc = "Bit 10 - GPIO wake up enable only available in light sleep"]
     #[inline(always)]
-    pub fn gpio_pin28_wakeup_enable(&self) -> GPIO_PIN28_WAKEUP_ENABLE_R {
-        GPIO_PIN28_WAKEUP_ENABLE_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn pin28_wakeup_enable(&self) -> PIN28_WAKEUP_ENABLE_R {
+        PIN28_WAKEUP_ENABLE_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bits 7:9 - if set to 0: GPIO interrupt disable if set to 1: rising edge trigger if set to 2: falling edge trigger if set to 3: any edge trigger if set to 4: low level trigger if set to 5: high level trigger"]
     #[inline(always)]
-    pub fn gpio_pin28_int_type(&self) -> GPIO_PIN28_INT_TYPE_R {
-        GPIO_PIN28_INT_TYPE_R::new(((self.bits >> 7) & 0x07) as u8)
+    pub fn pin28_int_type(&self) -> PIN28_INT_TYPE_R {
+        PIN28_INT_TYPE_R::new(((self.bits >> 7) & 0x07) as u8)
     }
     #[doc = "Bit 2 - if set to 0: normal output if set to 1: open drain"]
     #[inline(always)]
-    pub fn gpio_pin28_pad_driver(&self) -> GPIO_PIN28_PAD_DRIVER_R {
-        GPIO_PIN28_PAD_DRIVER_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn pin28_pad_driver(&self) -> PIN28_PAD_DRIVER_R {
+        PIN28_PAD_DRIVER_R::new(((self.bits >> 2) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bits 13:17 - bit0: APP CPU interrupt enable bit1: APP CPU non-maskable interrupt enable bit3: PRO CPU interrupt enable bit4: PRO CPU non-maskable interrupt enable bit5: SDIO's extent interrupt enable"]
     #[inline(always)]
-    pub fn gpio_pin28_int_ena(&mut self) -> GPIO_PIN28_INT_ENA_W {
-        GPIO_PIN28_INT_ENA_W { w: self }
+    pub fn pin28_int_ena(&mut self) -> PIN28_INT_ENA_W {
+        PIN28_INT_ENA_W { w: self }
     }
     #[doc = "Bits 11:12 - NA"]
     #[inline(always)]
-    pub fn gpio_pin28_config(&mut self) -> GPIO_PIN28_CONFIG_W {
-        GPIO_PIN28_CONFIG_W { w: self }
+    pub fn pin28_config(&mut self) -> PIN28_CONFIG_W {
+        PIN28_CONFIG_W { w: self }
     }
     #[doc = "Bit 10 - GPIO wake up enable only available in light sleep"]
     #[inline(always)]
-    pub fn gpio_pin28_wakeup_enable(&mut self) -> GPIO_PIN28_WAKEUP_ENABLE_W {
-        GPIO_PIN28_WAKEUP_ENABLE_W { w: self }
+    pub fn pin28_wakeup_enable(&mut self) -> PIN28_WAKEUP_ENABLE_W {
+        PIN28_WAKEUP_ENABLE_W { w: self }
     }
     #[doc = "Bits 7:9 - if set to 0: GPIO interrupt disable if set to 1: rising edge trigger if set to 2: falling edge trigger if set to 3: any edge trigger if set to 4: low level trigger if set to 5: high level trigger"]
     #[inline(always)]
-    pub fn gpio_pin28_int_type(&mut self) -> GPIO_PIN28_INT_TYPE_W {
-        GPIO_PIN28_INT_TYPE_W { w: self }
+    pub fn pin28_int_type(&mut self) -> PIN28_INT_TYPE_W {
+        PIN28_INT_TYPE_W { w: self }
     }
     #[doc = "Bit 2 - if set to 0: normal output if set to 1: open drain"]
     #[inline(always)]
-    pub fn gpio_pin28_pad_driver(&mut self) -> GPIO_PIN28_PAD_DRIVER_W {
-        GPIO_PIN28_PAD_DRIVER_W { w: self }
+    pub fn pin28_pad_driver(&mut self) -> PIN28_PAD_DRIVER_W {
+        PIN28_PAD_DRIVER_W { w: self }
     }
 }

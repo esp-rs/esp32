@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLP_REJECT_CONF {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_REJECT_CAUSE`"]
-pub type RTC_CNTL_REJECT_CAUSE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_REJECT_CAUSE`"]
-pub struct RTC_CNTL_REJECT_CAUSE_W<'a> {
+#[doc = "Reader of field `REJECT_CAUSE`"]
+pub type REJECT_CAUSE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `REJECT_CAUSE`"]
+pub struct REJECT_CAUSE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_REJECT_CAUSE_W<'a> {
+impl<'a> REJECT_CAUSE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> RTC_CNTL_REJECT_CAUSE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_DEEP_SLP_REJECT_EN`"]
-pub type RTC_CNTL_DEEP_SLP_REJECT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_DEEP_SLP_REJECT_EN`"]
-pub struct RTC_CNTL_DEEP_SLP_REJECT_EN_W<'a> {
+#[doc = "Reader of field `DEEP_SLP_REJECT_EN`"]
+pub type DEEP_SLP_REJECT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DEEP_SLP_REJECT_EN`"]
+pub struct DEEP_SLP_REJECT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_DEEP_SLP_REJECT_EN_W<'a> {
+impl<'a> DEEP_SLP_REJECT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> RTC_CNTL_DEEP_SLP_REJECT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_LIGHT_SLP_REJECT_EN`"]
-pub type RTC_CNTL_LIGHT_SLP_REJECT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_LIGHT_SLP_REJECT_EN`"]
-pub struct RTC_CNTL_LIGHT_SLP_REJECT_EN_W<'a> {
+#[doc = "Reader of field `LIGHT_SLP_REJECT_EN`"]
+pub type LIGHT_SLP_REJECT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LIGHT_SLP_REJECT_EN`"]
+pub struct LIGHT_SLP_REJECT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_LIGHT_SLP_REJECT_EN_W<'a> {
+impl<'a> LIGHT_SLP_REJECT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> RTC_CNTL_LIGHT_SLP_REJECT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SDIO_REJECT_EN`"]
-pub type RTC_CNTL_SDIO_REJECT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_SDIO_REJECT_EN`"]
-pub struct RTC_CNTL_SDIO_REJECT_EN_W<'a> {
+#[doc = "Reader of field `SDIO_REJECT_EN`"]
+pub type SDIO_REJECT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SDIO_REJECT_EN`"]
+pub struct SDIO_REJECT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SDIO_REJECT_EN_W<'a> {
+impl<'a> SDIO_REJECT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -96,13 +96,13 @@ impl<'a> RTC_CNTL_SDIO_REJECT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_GPIO_REJECT_EN`"]
-pub type RTC_CNTL_GPIO_REJECT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_GPIO_REJECT_EN`"]
-pub struct RTC_CNTL_GPIO_REJECT_EN_W<'a> {
+#[doc = "Reader of field `GPIO_REJECT_EN`"]
+pub type GPIO_REJECT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `GPIO_REJECT_EN`"]
+pub struct GPIO_REJECT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_GPIO_REJECT_EN_W<'a> {
+impl<'a> GPIO_REJECT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -123,54 +123,54 @@ impl<'a> RTC_CNTL_GPIO_REJECT_EN_W<'a> {
 impl R {
     #[doc = "Bits 28:31 - sleep reject cause"]
     #[inline(always)]
-    pub fn rtc_cntl_reject_cause(&self) -> RTC_CNTL_REJECT_CAUSE_R {
-        RTC_CNTL_REJECT_CAUSE_R::new(((self.bits >> 28) & 0x0f) as u8)
+    pub fn reject_cause(&self) -> REJECT_CAUSE_R {
+        REJECT_CAUSE_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
     #[doc = "Bit 27 - enable reject for deep sleep"]
     #[inline(always)]
-    pub fn rtc_cntl_deep_slp_reject_en(&self) -> RTC_CNTL_DEEP_SLP_REJECT_EN_R {
-        RTC_CNTL_DEEP_SLP_REJECT_EN_R::new(((self.bits >> 27) & 0x01) != 0)
+    pub fn deep_slp_reject_en(&self) -> DEEP_SLP_REJECT_EN_R {
+        DEEP_SLP_REJECT_EN_R::new(((self.bits >> 27) & 0x01) != 0)
     }
     #[doc = "Bit 26 - enable reject for light sleep"]
     #[inline(always)]
-    pub fn rtc_cntl_light_slp_reject_en(&self) -> RTC_CNTL_LIGHT_SLP_REJECT_EN_R {
-        RTC_CNTL_LIGHT_SLP_REJECT_EN_R::new(((self.bits >> 26) & 0x01) != 0)
+    pub fn light_slp_reject_en(&self) -> LIGHT_SLP_REJECT_EN_R {
+        LIGHT_SLP_REJECT_EN_R::new(((self.bits >> 26) & 0x01) != 0)
     }
     #[doc = "Bit 25 - enable SDIO reject"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_reject_en(&self) -> RTC_CNTL_SDIO_REJECT_EN_R {
-        RTC_CNTL_SDIO_REJECT_EN_R::new(((self.bits >> 25) & 0x01) != 0)
+    pub fn sdio_reject_en(&self) -> SDIO_REJECT_EN_R {
+        SDIO_REJECT_EN_R::new(((self.bits >> 25) & 0x01) != 0)
     }
     #[doc = "Bit 24 - enable GPIO reject"]
     #[inline(always)]
-    pub fn rtc_cntl_gpio_reject_en(&self) -> RTC_CNTL_GPIO_REJECT_EN_R {
-        RTC_CNTL_GPIO_REJECT_EN_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn gpio_reject_en(&self) -> GPIO_REJECT_EN_R {
+        GPIO_REJECT_EN_R::new(((self.bits >> 24) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bits 28:31 - sleep reject cause"]
     #[inline(always)]
-    pub fn rtc_cntl_reject_cause(&mut self) -> RTC_CNTL_REJECT_CAUSE_W {
-        RTC_CNTL_REJECT_CAUSE_W { w: self }
+    pub fn reject_cause(&mut self) -> REJECT_CAUSE_W {
+        REJECT_CAUSE_W { w: self }
     }
     #[doc = "Bit 27 - enable reject for deep sleep"]
     #[inline(always)]
-    pub fn rtc_cntl_deep_slp_reject_en(&mut self) -> RTC_CNTL_DEEP_SLP_REJECT_EN_W {
-        RTC_CNTL_DEEP_SLP_REJECT_EN_W { w: self }
+    pub fn deep_slp_reject_en(&mut self) -> DEEP_SLP_REJECT_EN_W {
+        DEEP_SLP_REJECT_EN_W { w: self }
     }
     #[doc = "Bit 26 - enable reject for light sleep"]
     #[inline(always)]
-    pub fn rtc_cntl_light_slp_reject_en(&mut self) -> RTC_CNTL_LIGHT_SLP_REJECT_EN_W {
-        RTC_CNTL_LIGHT_SLP_REJECT_EN_W { w: self }
+    pub fn light_slp_reject_en(&mut self) -> LIGHT_SLP_REJECT_EN_W {
+        LIGHT_SLP_REJECT_EN_W { w: self }
     }
     #[doc = "Bit 25 - enable SDIO reject"]
     #[inline(always)]
-    pub fn rtc_cntl_sdio_reject_en(&mut self) -> RTC_CNTL_SDIO_REJECT_EN_W {
-        RTC_CNTL_SDIO_REJECT_EN_W { w: self }
+    pub fn sdio_reject_en(&mut self) -> SDIO_REJECT_EN_W {
+        SDIO_REJECT_EN_W { w: self }
     }
     #[doc = "Bit 24 - enable GPIO reject"]
     #[inline(always)]
-    pub fn rtc_cntl_gpio_reject_en(&mut self) -> RTC_CNTL_GPIO_REJECT_EN_W {
-        RTC_CNTL_GPIO_REJECT_EN_W { w: self }
+    pub fn gpio_reject_en(&mut self) -> GPIO_REJECT_EN_W {
+        GPIO_REJECT_EN_W { w: self }
     }
 }

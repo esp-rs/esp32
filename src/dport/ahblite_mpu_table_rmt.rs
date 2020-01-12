@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_RMT {
         0
     }
 }
-#[doc = "Reader of field `DPORT_RMT_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_RMT_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_RMT_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_RMT_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `RMT_ACCESS_GRANT_CONFIG`"]
+pub type RMT_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RMT_ACCESS_GRANT_CONFIG`"]
+pub struct RMT_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_RMT_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> RMT_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_RMT_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_rmt_access_grant_config(&self) -> DPORT_RMT_ACCESS_GRANT_CONFIG_R {
-        DPORT_RMT_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn rmt_access_grant_config(&self) -> RMT_ACCESS_GRANT_CONFIG_R {
+        RMT_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_rmt_access_grant_config(&mut self) -> DPORT_RMT_ACCESS_GRANT_CONFIG_W {
-        DPORT_RMT_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn rmt_access_grant_config(&mut self) -> RMT_ACCESS_GRANT_CONFIG_W {
+        RMT_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

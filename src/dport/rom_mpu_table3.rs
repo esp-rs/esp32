@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ROM_MPU_TABLE3 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_ROM_MPU_TABLE3`"]
-pub type DPORT_ROM_MPU_TABLE3_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_ROM_MPU_TABLE3`"]
-pub struct DPORT_ROM_MPU_TABLE3_W<'a> {
+#[doc = "Reader of field `ROM_MPU_TABLE3`"]
+pub type ROM_MPU_TABLE3_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ROM_MPU_TABLE3`"]
+pub struct ROM_MPU_TABLE3_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_ROM_MPU_TABLE3_W<'a> {
+impl<'a> ROM_MPU_TABLE3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_ROM_MPU_TABLE3_W<'a> {
 impl R {
     #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn dport_rom_mpu_table3(&self) -> DPORT_ROM_MPU_TABLE3_R {
-        DPORT_ROM_MPU_TABLE3_R::new((self.bits & 0x03) as u8)
+    pub fn rom_mpu_table3(&self) -> ROM_MPU_TABLE3_R {
+        ROM_MPU_TABLE3_R::new((self.bits & 0x03) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn dport_rom_mpu_table3(&mut self) -> DPORT_ROM_MPU_TABLE3_W {
-        DPORT_ROM_MPU_TABLE3_W { w: self }
+    pub fn rom_mpu_table3(&mut self) -> ROM_MPU_TABLE3_W {
+        ROM_MPU_TABLE3_W { w: self }
     }
 }

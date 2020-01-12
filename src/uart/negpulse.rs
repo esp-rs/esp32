@@ -10,13 +10,13 @@ impl crate::ResetValue for super::NEGPULSE {
         0
     }
 }
-#[doc = "Reader of field `UART_NEGEDGE_MIN_CNT`"]
-pub type UART_NEGEDGE_MIN_CNT_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UART_NEGEDGE_MIN_CNT`"]
-pub struct UART_NEGEDGE_MIN_CNT_W<'a> {
+#[doc = "Reader of field `NEGEDGE_MIN_CNT`"]
+pub type NEGEDGE_MIN_CNT_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `NEGEDGE_MIN_CNT`"]
+pub struct NEGEDGE_MIN_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_NEGEDGE_MIN_CNT_W<'a> {
+impl<'a> NEGEDGE_MIN_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UART_NEGEDGE_MIN_CNT_W<'a> {
 impl R {
     #[doc = "Bits 0:19 - This register stores the count of rxd negedge edge. it is used in boudrate-detect process."]
     #[inline(always)]
-    pub fn uart_negedge_min_cnt(&self) -> UART_NEGEDGE_MIN_CNT_R {
-        UART_NEGEDGE_MIN_CNT_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn negedge_min_cnt(&self) -> NEGEDGE_MIN_CNT_R {
+        NEGEDGE_MIN_CNT_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19 - This register stores the count of rxd negedge edge. it is used in boudrate-detect process."]
     #[inline(always)]
-    pub fn uart_negedge_min_cnt(&mut self) -> UART_NEGEDGE_MIN_CNT_W {
-        UART_NEGEDGE_MIN_CNT_W { w: self }
+    pub fn negedge_min_cnt(&mut self) -> NEGEDGE_MIN_CNT_W {
+        NEGEDGE_MIN_CNT_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ANA_CONF {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_PLL_I2C_PU`"]
-pub type RTC_CNTL_PLL_I2C_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_PLL_I2C_PU`"]
-pub struct RTC_CNTL_PLL_I2C_PU_W<'a> {
+#[doc = "Reader of field `PLL_I2C_PU`"]
+pub type PLL_I2C_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PLL_I2C_PU`"]
+pub struct PLL_I2C_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_PLL_I2C_PU_W<'a> {
+impl<'a> PLL_I2C_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_PLL_I2C_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_CKGEN_I2C_PU`"]
-pub type RTC_CNTL_CKGEN_I2C_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_CKGEN_I2C_PU`"]
-pub struct RTC_CNTL_CKGEN_I2C_PU_W<'a> {
+#[doc = "Reader of field `CKGEN_I2C_PU`"]
+pub type CKGEN_I2C_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CKGEN_I2C_PU`"]
+pub struct CKGEN_I2C_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_CKGEN_I2C_PU_W<'a> {
+impl<'a> CKGEN_I2C_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> RTC_CNTL_CKGEN_I2C_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_RFRX_PBUS_PU`"]
-pub type RTC_CNTL_RFRX_PBUS_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_RFRX_PBUS_PU`"]
-pub struct RTC_CNTL_RFRX_PBUS_PU_W<'a> {
+#[doc = "Reader of field `RFRX_PBUS_PU`"]
+pub type RFRX_PBUS_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RFRX_PBUS_PU`"]
+pub struct RFRX_PBUS_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_RFRX_PBUS_PU_W<'a> {
+impl<'a> RFRX_PBUS_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> RTC_CNTL_RFRX_PBUS_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_TXRF_I2C_PU`"]
-pub type RTC_CNTL_TXRF_I2C_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_TXRF_I2C_PU`"]
-pub struct RTC_CNTL_TXRF_I2C_PU_W<'a> {
+#[doc = "Reader of field `TXRF_I2C_PU`"]
+pub type TXRF_I2C_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TXRF_I2C_PU`"]
+pub struct TXRF_I2C_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_TXRF_I2C_PU_W<'a> {
+impl<'a> TXRF_I2C_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> RTC_CNTL_TXRF_I2C_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_PVTMON_PU`"]
-pub type RTC_CNTL_PVTMON_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_PVTMON_PU`"]
-pub struct RTC_CNTL_PVTMON_PU_W<'a> {
+#[doc = "Reader of field `PVTMON_PU`"]
+pub type PVTMON_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PVTMON_PU`"]
+pub struct PVTMON_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_PVTMON_PU_W<'a> {
+impl<'a> PVTMON_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> RTC_CNTL_PVTMON_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_BBPLL_CAL_SLP_START`"]
-pub type RTC_CNTL_BBPLL_CAL_SLP_START_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_BBPLL_CAL_SLP_START`"]
-pub struct RTC_CNTL_BBPLL_CAL_SLP_START_W<'a> {
+#[doc = "Reader of field `BBPLL_CAL_SLP_START`"]
+pub type BBPLL_CAL_SLP_START_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BBPLL_CAL_SLP_START`"]
+pub struct BBPLL_CAL_SLP_START_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_BBPLL_CAL_SLP_START_W<'a> {
+impl<'a> BBPLL_CAL_SLP_START_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> RTC_CNTL_BBPLL_CAL_SLP_START_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_PLLA_FORCE_PU`"]
-pub type RTC_CNTL_PLLA_FORCE_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_PLLA_FORCE_PU`"]
-pub struct RTC_CNTL_PLLA_FORCE_PU_W<'a> {
+#[doc = "Reader of field `PLLA_FORCE_PU`"]
+pub type PLLA_FORCE_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PLLA_FORCE_PU`"]
+pub struct PLLA_FORCE_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_PLLA_FORCE_PU_W<'a> {
+impl<'a> PLLA_FORCE_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> RTC_CNTL_PLLA_FORCE_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_PLLA_FORCE_PD`"]
-pub type RTC_CNTL_PLLA_FORCE_PD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_PLLA_FORCE_PD`"]
-pub struct RTC_CNTL_PLLA_FORCE_PD_W<'a> {
+#[doc = "Reader of field `PLLA_FORCE_PD`"]
+pub type PLLA_FORCE_PD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PLLA_FORCE_PD`"]
+pub struct PLLA_FORCE_PD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_PLLA_FORCE_PD_W<'a> {
+impl<'a> PLLA_FORCE_PD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -205,84 +205,84 @@ impl<'a> RTC_CNTL_PLLA_FORCE_PD_W<'a> {
 impl R {
     #[doc = "Bit 31 - 1: PLL_I2C power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_pll_i2c_pu(&self) -> RTC_CNTL_PLL_I2C_PU_R {
-        RTC_CNTL_PLL_I2C_PU_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn pll_i2c_pu(&self) -> PLL_I2C_PU_R {
+        PLL_I2C_PU_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bit 30 - 1: CKGEN_I2C power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_ckgen_i2c_pu(&self) -> RTC_CNTL_CKGEN_I2C_PU_R {
-        RTC_CNTL_CKGEN_I2C_PU_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn ckgen_i2c_pu(&self) -> CKGEN_I2C_PU_R {
+        CKGEN_I2C_PU_R::new(((self.bits >> 30) & 0x01) != 0)
     }
     #[doc = "Bit 28 - 1: RFRX_PBUS power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_rfrx_pbus_pu(&self) -> RTC_CNTL_RFRX_PBUS_PU_R {
-        RTC_CNTL_RFRX_PBUS_PU_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn rfrx_pbus_pu(&self) -> RFRX_PBUS_PU_R {
+        RFRX_PBUS_PU_R::new(((self.bits >> 28) & 0x01) != 0)
     }
     #[doc = "Bit 27 - 1: TXRF_I2C power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_txrf_i2c_pu(&self) -> RTC_CNTL_TXRF_I2C_PU_R {
-        RTC_CNTL_TXRF_I2C_PU_R::new(((self.bits >> 27) & 0x01) != 0)
+    pub fn txrf_i2c_pu(&self) -> TXRF_I2C_PU_R {
+        TXRF_I2C_PU_R::new(((self.bits >> 27) & 0x01) != 0)
     }
     #[doc = "Bit 26 - 1: PVTMON power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_pvtmon_pu(&self) -> RTC_CNTL_PVTMON_PU_R {
-        RTC_CNTL_PVTMON_PU_R::new(((self.bits >> 26) & 0x01) != 0)
+    pub fn pvtmon_pu(&self) -> PVTMON_PU_R {
+        PVTMON_PU_R::new(((self.bits >> 26) & 0x01) != 0)
     }
     #[doc = "Bit 25 - start BBPLL calibration during sleep"]
     #[inline(always)]
-    pub fn rtc_cntl_bbpll_cal_slp_start(&self) -> RTC_CNTL_BBPLL_CAL_SLP_START_R {
-        RTC_CNTL_BBPLL_CAL_SLP_START_R::new(((self.bits >> 25) & 0x01) != 0)
+    pub fn bbpll_cal_slp_start(&self) -> BBPLL_CAL_SLP_START_R {
+        BBPLL_CAL_SLP_START_R::new(((self.bits >> 25) & 0x01) != 0)
     }
     #[doc = "Bit 24 - PLLA force power up"]
     #[inline(always)]
-    pub fn rtc_cntl_plla_force_pu(&self) -> RTC_CNTL_PLLA_FORCE_PU_R {
-        RTC_CNTL_PLLA_FORCE_PU_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn plla_force_pu(&self) -> PLLA_FORCE_PU_R {
+        PLLA_FORCE_PU_R::new(((self.bits >> 24) & 0x01) != 0)
     }
     #[doc = "Bit 23 - PLLA force power down"]
     #[inline(always)]
-    pub fn rtc_cntl_plla_force_pd(&self) -> RTC_CNTL_PLLA_FORCE_PD_R {
-        RTC_CNTL_PLLA_FORCE_PD_R::new(((self.bits >> 23) & 0x01) != 0)
+    pub fn plla_force_pd(&self) -> PLLA_FORCE_PD_R {
+        PLLA_FORCE_PD_R::new(((self.bits >> 23) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31 - 1: PLL_I2C power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_pll_i2c_pu(&mut self) -> RTC_CNTL_PLL_I2C_PU_W {
-        RTC_CNTL_PLL_I2C_PU_W { w: self }
+    pub fn pll_i2c_pu(&mut self) -> PLL_I2C_PU_W {
+        PLL_I2C_PU_W { w: self }
     }
     #[doc = "Bit 30 - 1: CKGEN_I2C power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_ckgen_i2c_pu(&mut self) -> RTC_CNTL_CKGEN_I2C_PU_W {
-        RTC_CNTL_CKGEN_I2C_PU_W { w: self }
+    pub fn ckgen_i2c_pu(&mut self) -> CKGEN_I2C_PU_W {
+        CKGEN_I2C_PU_W { w: self }
     }
     #[doc = "Bit 28 - 1: RFRX_PBUS power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_rfrx_pbus_pu(&mut self) -> RTC_CNTL_RFRX_PBUS_PU_W {
-        RTC_CNTL_RFRX_PBUS_PU_W { w: self }
+    pub fn rfrx_pbus_pu(&mut self) -> RFRX_PBUS_PU_W {
+        RFRX_PBUS_PU_W { w: self }
     }
     #[doc = "Bit 27 - 1: TXRF_I2C power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_txrf_i2c_pu(&mut self) -> RTC_CNTL_TXRF_I2C_PU_W {
-        RTC_CNTL_TXRF_I2C_PU_W { w: self }
+    pub fn txrf_i2c_pu(&mut self) -> TXRF_I2C_PU_W {
+        TXRF_I2C_PU_W { w: self }
     }
     #[doc = "Bit 26 - 1: PVTMON power up otherwise power down"]
     #[inline(always)]
-    pub fn rtc_cntl_pvtmon_pu(&mut self) -> RTC_CNTL_PVTMON_PU_W {
-        RTC_CNTL_PVTMON_PU_W { w: self }
+    pub fn pvtmon_pu(&mut self) -> PVTMON_PU_W {
+        PVTMON_PU_W { w: self }
     }
     #[doc = "Bit 25 - start BBPLL calibration during sleep"]
     #[inline(always)]
-    pub fn rtc_cntl_bbpll_cal_slp_start(&mut self) -> RTC_CNTL_BBPLL_CAL_SLP_START_W {
-        RTC_CNTL_BBPLL_CAL_SLP_START_W { w: self }
+    pub fn bbpll_cal_slp_start(&mut self) -> BBPLL_CAL_SLP_START_W {
+        BBPLL_CAL_SLP_START_W { w: self }
     }
     #[doc = "Bit 24 - PLLA force power up"]
     #[inline(always)]
-    pub fn rtc_cntl_plla_force_pu(&mut self) -> RTC_CNTL_PLLA_FORCE_PU_W {
-        RTC_CNTL_PLLA_FORCE_PU_W { w: self }
+    pub fn plla_force_pu(&mut self) -> PLLA_FORCE_PU_W {
+        PLLA_FORCE_PU_W { w: self }
     }
     #[doc = "Bit 23 - PLLA force power down"]
     #[inline(always)]
-    pub fn rtc_cntl_plla_force_pd(&mut self) -> RTC_CNTL_PLLA_FORCE_PD_W {
-        RTC_CNTL_PLLA_FORCE_PD_W { w: self }
+    pub fn plla_force_pd(&mut self) -> PLLA_FORCE_PD_W {
+        PLLA_FORCE_PD_W { w: self }
     }
 }

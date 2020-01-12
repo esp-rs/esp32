@@ -10,13 +10,13 @@ impl crate::ResetValue for super::IN_ERR_EOF_DES_ADDR {
         0
     }
 }
-#[doc = "Reader of field `SPI_DMA_IN_ERR_EOF_DES_ADDR`"]
-pub type SPI_DMA_IN_ERR_EOF_DES_ADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_DMA_IN_ERR_EOF_DES_ADDR`"]
-pub struct SPI_DMA_IN_ERR_EOF_DES_ADDR_W<'a> {
+#[doc = "Reader of field `DMA_IN_ERR_EOF_DES_ADDR`"]
+pub type DMA_IN_ERR_EOF_DES_ADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `DMA_IN_ERR_EOF_DES_ADDR`"]
+pub struct DMA_IN_ERR_EOF_DES_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_DMA_IN_ERR_EOF_DES_ADDR_W<'a> {
+impl<'a> DMA_IN_ERR_EOF_DES_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_DMA_IN_ERR_EOF_DES_ADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - The inlink descriptor address when spi dma produce receiving error."]
     #[inline(always)]
-    pub fn spi_dma_in_err_eof_des_addr(&self) -> SPI_DMA_IN_ERR_EOF_DES_ADDR_R {
-        SPI_DMA_IN_ERR_EOF_DES_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn dma_in_err_eof_des_addr(&self) -> DMA_IN_ERR_EOF_DES_ADDR_R {
+        DMA_IN_ERR_EOF_DES_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - The inlink descriptor address when spi dma produce receiving error."]
     #[inline(always)]
-    pub fn spi_dma_in_err_eof_des_addr(&mut self) -> SPI_DMA_IN_ERR_EOF_DES_ADDR_W {
-        SPI_DMA_IN_ERR_EOF_DES_ADDR_W { w: self }
+    pub fn dma_in_err_eof_des_addr(&mut self) -> DMA_IN_ERR_EOF_DES_ADDR_W {
+        DMA_IN_ERR_EOF_DES_ADDR_W { w: self }
     }
 }

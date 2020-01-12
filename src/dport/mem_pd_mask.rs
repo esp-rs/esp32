@@ -10,13 +10,13 @@ impl crate::ResetValue for super::MEM_PD_MASK {
         0
     }
 }
-#[doc = "Reader of field `DPORT_LSLP_MEM_PD_MASK`"]
-pub type DPORT_LSLP_MEM_PD_MASK_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_LSLP_MEM_PD_MASK`"]
-pub struct DPORT_LSLP_MEM_PD_MASK_W<'a> {
+#[doc = "Reader of field `LSLP_MEM_PD_MASK`"]
+pub type LSLP_MEM_PD_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LSLP_MEM_PD_MASK`"]
+pub struct LSLP_MEM_PD_MASK_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_LSLP_MEM_PD_MASK_W<'a> {
+impl<'a> LSLP_MEM_PD_MASK_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_LSLP_MEM_PD_MASK_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_lslp_mem_pd_mask(&self) -> DPORT_LSLP_MEM_PD_MASK_R {
-        DPORT_LSLP_MEM_PD_MASK_R::new((self.bits & 0x01) != 0)
+    pub fn lslp_mem_pd_mask(&self) -> LSLP_MEM_PD_MASK_R {
+        LSLP_MEM_PD_MASK_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_lslp_mem_pd_mask(&mut self) -> DPORT_LSLP_MEM_PD_MASK_W {
-        DPORT_LSLP_MEM_PD_MASK_W { w: self }
+    pub fn lslp_mem_pd_mask(&mut self) -> LSLP_MEM_PD_MASK_W {
+        LSLP_MEM_PD_MASK_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_ENA {
         0
     }
 }
-#[doc = "Reader of field `UART_AT_CMD_CHAR_DET_INT_ENA`"]
-pub type UART_AT_CMD_CHAR_DET_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_AT_CMD_CHAR_DET_INT_ENA`"]
-pub struct UART_AT_CMD_CHAR_DET_INT_ENA_W<'a> {
+#[doc = "Reader of field `AT_CMD_CHAR_DET_INT_ENA`"]
+pub type AT_CMD_CHAR_DET_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AT_CMD_CHAR_DET_INT_ENA`"]
+pub struct AT_CMD_CHAR_DET_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_AT_CMD_CHAR_DET_INT_ENA_W<'a> {
+impl<'a> AT_CMD_CHAR_DET_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> UART_AT_CMD_CHAR_DET_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RS485_CLASH_INT_ENA`"]
-pub type UART_RS485_CLASH_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RS485_CLASH_INT_ENA`"]
-pub struct UART_RS485_CLASH_INT_ENA_W<'a> {
+#[doc = "Reader of field `RS485_CLASH_INT_ENA`"]
+pub type RS485_CLASH_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RS485_CLASH_INT_ENA`"]
+pub struct RS485_CLASH_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RS485_CLASH_INT_ENA_W<'a> {
+impl<'a> RS485_CLASH_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> UART_RS485_CLASH_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RS485_FRM_ERR_INT_ENA`"]
-pub type UART_RS485_FRM_ERR_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RS485_FRM_ERR_INT_ENA`"]
-pub struct UART_RS485_FRM_ERR_INT_ENA_W<'a> {
+#[doc = "Reader of field `RS485_FRM_ERR_INT_ENA`"]
+pub type RS485_FRM_ERR_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RS485_FRM_ERR_INT_ENA`"]
+pub struct RS485_FRM_ERR_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RS485_FRM_ERR_INT_ENA_W<'a> {
+impl<'a> RS485_FRM_ERR_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> UART_RS485_FRM_ERR_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RS485_PARITY_ERR_INT_ENA`"]
-pub type UART_RS485_PARITY_ERR_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RS485_PARITY_ERR_INT_ENA`"]
-pub struct UART_RS485_PARITY_ERR_INT_ENA_W<'a> {
+#[doc = "Reader of field `RS485_PARITY_ERR_INT_ENA`"]
+pub type RS485_PARITY_ERR_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RS485_PARITY_ERR_INT_ENA`"]
+pub struct RS485_PARITY_ERR_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RS485_PARITY_ERR_INT_ENA_W<'a> {
+impl<'a> RS485_PARITY_ERR_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> UART_RS485_PARITY_ERR_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TX_DONE_INT_ENA`"]
-pub type UART_TX_DONE_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TX_DONE_INT_ENA`"]
-pub struct UART_TX_DONE_INT_ENA_W<'a> {
+#[doc = "Reader of field `TX_DONE_INT_ENA`"]
+pub type TX_DONE_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_DONE_INT_ENA`"]
+pub struct TX_DONE_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TX_DONE_INT_ENA_W<'a> {
+impl<'a> TX_DONE_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> UART_TX_DONE_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TX_BRK_IDLE_DONE_INT_ENA`"]
-pub type UART_TX_BRK_IDLE_DONE_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TX_BRK_IDLE_DONE_INT_ENA`"]
-pub struct UART_TX_BRK_IDLE_DONE_INT_ENA_W<'a> {
+#[doc = "Reader of field `TX_BRK_IDLE_DONE_INT_ENA`"]
+pub type TX_BRK_IDLE_DONE_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_BRK_IDLE_DONE_INT_ENA`"]
+pub struct TX_BRK_IDLE_DONE_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TX_BRK_IDLE_DONE_INT_ENA_W<'a> {
+impl<'a> TX_BRK_IDLE_DONE_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> UART_TX_BRK_IDLE_DONE_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TX_BRK_DONE_INT_ENA`"]
-pub type UART_TX_BRK_DONE_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TX_BRK_DONE_INT_ENA`"]
-pub struct UART_TX_BRK_DONE_INT_ENA_W<'a> {
+#[doc = "Reader of field `TX_BRK_DONE_INT_ENA`"]
+pub type TX_BRK_DONE_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_BRK_DONE_INT_ENA`"]
+pub struct TX_BRK_DONE_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TX_BRK_DONE_INT_ENA_W<'a> {
+impl<'a> TX_BRK_DONE_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> UART_TX_BRK_DONE_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_GLITCH_DET_INT_ENA`"]
-pub type UART_GLITCH_DET_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_GLITCH_DET_INT_ENA`"]
-pub struct UART_GLITCH_DET_INT_ENA_W<'a> {
+#[doc = "Reader of field `GLITCH_DET_INT_ENA`"]
+pub type GLITCH_DET_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `GLITCH_DET_INT_ENA`"]
+pub struct GLITCH_DET_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_GLITCH_DET_INT_ENA_W<'a> {
+impl<'a> GLITCH_DET_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> UART_GLITCH_DET_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_SW_XOFF_INT_ENA`"]
-pub type UART_SW_XOFF_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_SW_XOFF_INT_ENA`"]
-pub struct UART_SW_XOFF_INT_ENA_W<'a> {
+#[doc = "Reader of field `SW_XOFF_INT_ENA`"]
+pub type SW_XOFF_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SW_XOFF_INT_ENA`"]
+pub struct SW_XOFF_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_SW_XOFF_INT_ENA_W<'a> {
+impl<'a> SW_XOFF_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> UART_SW_XOFF_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_SW_XON_INT_ENA`"]
-pub type UART_SW_XON_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_SW_XON_INT_ENA`"]
-pub struct UART_SW_XON_INT_ENA_W<'a> {
+#[doc = "Reader of field `SW_XON_INT_ENA`"]
+pub type SW_XON_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SW_XON_INT_ENA`"]
+pub struct SW_XON_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_SW_XON_INT_ENA_W<'a> {
+impl<'a> SW_XON_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> UART_SW_XON_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RXFIFO_TOUT_INT_ENA`"]
-pub type UART_RXFIFO_TOUT_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RXFIFO_TOUT_INT_ENA`"]
-pub struct UART_RXFIFO_TOUT_INT_ENA_W<'a> {
+#[doc = "Reader of field `RXFIFO_TOUT_INT_ENA`"]
+pub type RXFIFO_TOUT_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RXFIFO_TOUT_INT_ENA`"]
+pub struct RXFIFO_TOUT_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RXFIFO_TOUT_INT_ENA_W<'a> {
+impl<'a> RXFIFO_TOUT_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> UART_RXFIFO_TOUT_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_BRK_DET_INT_ENA`"]
-pub type UART_BRK_DET_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_BRK_DET_INT_ENA`"]
-pub struct UART_BRK_DET_INT_ENA_W<'a> {
+#[doc = "Reader of field `BRK_DET_INT_ENA`"]
+pub type BRK_DET_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BRK_DET_INT_ENA`"]
+pub struct BRK_DET_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_BRK_DET_INT_ENA_W<'a> {
+impl<'a> BRK_DET_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> UART_BRK_DET_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_CTS_CHG_INT_ENA`"]
-pub type UART_CTS_CHG_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_CTS_CHG_INT_ENA`"]
-pub struct UART_CTS_CHG_INT_ENA_W<'a> {
+#[doc = "Reader of field `CTS_CHG_INT_ENA`"]
+pub type CTS_CHG_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CTS_CHG_INT_ENA`"]
+pub struct CTS_CHG_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_CTS_CHG_INT_ENA_W<'a> {
+impl<'a> CTS_CHG_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> UART_CTS_CHG_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_DSR_CHG_INT_ENA`"]
-pub type UART_DSR_CHG_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_DSR_CHG_INT_ENA`"]
-pub struct UART_DSR_CHG_INT_ENA_W<'a> {
+#[doc = "Reader of field `DSR_CHG_INT_ENA`"]
+pub type DSR_CHG_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DSR_CHG_INT_ENA`"]
+pub struct DSR_CHG_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_DSR_CHG_INT_ENA_W<'a> {
+impl<'a> DSR_CHG_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> UART_DSR_CHG_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RXFIFO_OVF_INT_ENA`"]
-pub type UART_RXFIFO_OVF_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RXFIFO_OVF_INT_ENA`"]
-pub struct UART_RXFIFO_OVF_INT_ENA_W<'a> {
+#[doc = "Reader of field `RXFIFO_OVF_INT_ENA`"]
+pub type RXFIFO_OVF_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RXFIFO_OVF_INT_ENA`"]
+pub struct RXFIFO_OVF_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RXFIFO_OVF_INT_ENA_W<'a> {
+impl<'a> RXFIFO_OVF_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -370,13 +370,13 @@ impl<'a> UART_RXFIFO_OVF_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_FRM_ERR_INT_ENA`"]
-pub type UART_FRM_ERR_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_FRM_ERR_INT_ENA`"]
-pub struct UART_FRM_ERR_INT_ENA_W<'a> {
+#[doc = "Reader of field `FRM_ERR_INT_ENA`"]
+pub type FRM_ERR_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRM_ERR_INT_ENA`"]
+pub struct FRM_ERR_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_FRM_ERR_INT_ENA_W<'a> {
+impl<'a> FRM_ERR_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -394,13 +394,13 @@ impl<'a> UART_FRM_ERR_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_PARITY_ERR_INT_ENA`"]
-pub type UART_PARITY_ERR_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_PARITY_ERR_INT_ENA`"]
-pub struct UART_PARITY_ERR_INT_ENA_W<'a> {
+#[doc = "Reader of field `PARITY_ERR_INT_ENA`"]
+pub type PARITY_ERR_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PARITY_ERR_INT_ENA`"]
+pub struct PARITY_ERR_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_PARITY_ERR_INT_ENA_W<'a> {
+impl<'a> PARITY_ERR_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -418,13 +418,13 @@ impl<'a> UART_PARITY_ERR_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TXFIFO_EMPTY_INT_ENA`"]
-pub type UART_TXFIFO_EMPTY_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TXFIFO_EMPTY_INT_ENA`"]
-pub struct UART_TXFIFO_EMPTY_INT_ENA_W<'a> {
+#[doc = "Reader of field `TXFIFO_EMPTY_INT_ENA`"]
+pub type TXFIFO_EMPTY_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TXFIFO_EMPTY_INT_ENA`"]
+pub struct TXFIFO_EMPTY_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TXFIFO_EMPTY_INT_ENA_W<'a> {
+impl<'a> TXFIFO_EMPTY_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -442,13 +442,13 @@ impl<'a> UART_TXFIFO_EMPTY_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RXFIFO_FULL_INT_ENA`"]
-pub type UART_RXFIFO_FULL_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RXFIFO_FULL_INT_ENA`"]
-pub struct UART_RXFIFO_FULL_INT_ENA_W<'a> {
+#[doc = "Reader of field `RXFIFO_FULL_INT_ENA`"]
+pub type RXFIFO_FULL_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RXFIFO_FULL_INT_ENA`"]
+pub struct RXFIFO_FULL_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RXFIFO_FULL_INT_ENA_W<'a> {
+impl<'a> RXFIFO_FULL_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -469,194 +469,194 @@ impl<'a> UART_RXFIFO_FULL_INT_ENA_W<'a> {
 impl R {
     #[doc = "Bit 18 - This is the enable bit for at_cmd_char_det_int_st register."]
     #[inline(always)]
-    pub fn uart_at_cmd_char_det_int_ena(&self) -> UART_AT_CMD_CHAR_DET_INT_ENA_R {
-        UART_AT_CMD_CHAR_DET_INT_ENA_R::new(((self.bits >> 18) & 0x01) != 0)
+    pub fn at_cmd_char_det_int_ena(&self) -> AT_CMD_CHAR_DET_INT_ENA_R {
+        AT_CMD_CHAR_DET_INT_ENA_R::new(((self.bits >> 18) & 0x01) != 0)
     }
     #[doc = "Bit 17 - This is the enable bit for rs485_clash_int_st register."]
     #[inline(always)]
-    pub fn uart_rs485_clash_int_ena(&self) -> UART_RS485_CLASH_INT_ENA_R {
-        UART_RS485_CLASH_INT_ENA_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn rs485_clash_int_ena(&self) -> RS485_CLASH_INT_ENA_R {
+        RS485_CLASH_INT_ENA_R::new(((self.bits >> 17) & 0x01) != 0)
     }
     #[doc = "Bit 16 - This is the enable bit for rs485_parity_err_int_st register."]
     #[inline(always)]
-    pub fn uart_rs485_frm_err_int_ena(&self) -> UART_RS485_FRM_ERR_INT_ENA_R {
-        UART_RS485_FRM_ERR_INT_ENA_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn rs485_frm_err_int_ena(&self) -> RS485_FRM_ERR_INT_ENA_R {
+        RS485_FRM_ERR_INT_ENA_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15 - This is the enable bit for rs485_parity_err_int_st register."]
     #[inline(always)]
-    pub fn uart_rs485_parity_err_int_ena(&self) -> UART_RS485_PARITY_ERR_INT_ENA_R {
-        UART_RS485_PARITY_ERR_INT_ENA_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn rs485_parity_err_int_ena(&self) -> RS485_PARITY_ERR_INT_ENA_R {
+        RS485_PARITY_ERR_INT_ENA_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14 - This is the enable bit for tx_done_int_st register."]
     #[inline(always)]
-    pub fn uart_tx_done_int_ena(&self) -> UART_TX_DONE_INT_ENA_R {
-        UART_TX_DONE_INT_ENA_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn tx_done_int_ena(&self) -> TX_DONE_INT_ENA_R {
+        TX_DONE_INT_ENA_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13 - This is the enable bit for tx_brk_idle_done_int_st register."]
     #[inline(always)]
-    pub fn uart_tx_brk_idle_done_int_ena(&self) -> UART_TX_BRK_IDLE_DONE_INT_ENA_R {
-        UART_TX_BRK_IDLE_DONE_INT_ENA_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn tx_brk_idle_done_int_ena(&self) -> TX_BRK_IDLE_DONE_INT_ENA_R {
+        TX_BRK_IDLE_DONE_INT_ENA_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12 - This is the enable bit for tx_brk_done_int_st register."]
     #[inline(always)]
-    pub fn uart_tx_brk_done_int_ena(&self) -> UART_TX_BRK_DONE_INT_ENA_R {
-        UART_TX_BRK_DONE_INT_ENA_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn tx_brk_done_int_ena(&self) -> TX_BRK_DONE_INT_ENA_R {
+        TX_BRK_DONE_INT_ENA_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11 - This is the enable bit for glitch_det_int_st register."]
     #[inline(always)]
-    pub fn uart_glitch_det_int_ena(&self) -> UART_GLITCH_DET_INT_ENA_R {
-        UART_GLITCH_DET_INT_ENA_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn glitch_det_int_ena(&self) -> GLITCH_DET_INT_ENA_R {
+        GLITCH_DET_INT_ENA_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10 - This is the enable bit for sw_xoff_int_st register."]
     #[inline(always)]
-    pub fn uart_sw_xoff_int_ena(&self) -> UART_SW_XOFF_INT_ENA_R {
-        UART_SW_XOFF_INT_ENA_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn sw_xoff_int_ena(&self) -> SW_XOFF_INT_ENA_R {
+        SW_XOFF_INT_ENA_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9 - This is the enable bit for sw_xon_int_st register."]
     #[inline(always)]
-    pub fn uart_sw_xon_int_ena(&self) -> UART_SW_XON_INT_ENA_R {
-        UART_SW_XON_INT_ENA_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn sw_xon_int_ena(&self) -> SW_XON_INT_ENA_R {
+        SW_XON_INT_ENA_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8 - This is the enable bit for rxfifo_tout_int_st register."]
     #[inline(always)]
-    pub fn uart_rxfifo_tout_int_ena(&self) -> UART_RXFIFO_TOUT_INT_ENA_R {
-        UART_RXFIFO_TOUT_INT_ENA_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn rxfifo_tout_int_ena(&self) -> RXFIFO_TOUT_INT_ENA_R {
+        RXFIFO_TOUT_INT_ENA_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7 - This is the enable bit for brk_det_int_st register."]
     #[inline(always)]
-    pub fn uart_brk_det_int_ena(&self) -> UART_BRK_DET_INT_ENA_R {
-        UART_BRK_DET_INT_ENA_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn brk_det_int_ena(&self) -> BRK_DET_INT_ENA_R {
+        BRK_DET_INT_ENA_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - This is the enable bit for cts_chg_int_st register."]
     #[inline(always)]
-    pub fn uart_cts_chg_int_ena(&self) -> UART_CTS_CHG_INT_ENA_R {
-        UART_CTS_CHG_INT_ENA_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn cts_chg_int_ena(&self) -> CTS_CHG_INT_ENA_R {
+        CTS_CHG_INT_ENA_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5 - This is the enable bit for dsr_chg_int_st register."]
     #[inline(always)]
-    pub fn uart_dsr_chg_int_ena(&self) -> UART_DSR_CHG_INT_ENA_R {
-        UART_DSR_CHG_INT_ENA_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn dsr_chg_int_ena(&self) -> DSR_CHG_INT_ENA_R {
+        DSR_CHG_INT_ENA_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4 - This is the enable bit for rxfifo_ovf_int_st register."]
     #[inline(always)]
-    pub fn uart_rxfifo_ovf_int_ena(&self) -> UART_RXFIFO_OVF_INT_ENA_R {
-        UART_RXFIFO_OVF_INT_ENA_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn rxfifo_ovf_int_ena(&self) -> RXFIFO_OVF_INT_ENA_R {
+        RXFIFO_OVF_INT_ENA_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3 - This is the enable bit for frm_err_int_st register."]
     #[inline(always)]
-    pub fn uart_frm_err_int_ena(&self) -> UART_FRM_ERR_INT_ENA_R {
-        UART_FRM_ERR_INT_ENA_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn frm_err_int_ena(&self) -> FRM_ERR_INT_ENA_R {
+        FRM_ERR_INT_ENA_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2 - This is the enable bit for parity_err_int_st register."]
     #[inline(always)]
-    pub fn uart_parity_err_int_ena(&self) -> UART_PARITY_ERR_INT_ENA_R {
-        UART_PARITY_ERR_INT_ENA_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn parity_err_int_ena(&self) -> PARITY_ERR_INT_ENA_R {
+        PARITY_ERR_INT_ENA_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1 - This is the enable bit for rxfifo_full_int_st register."]
     #[inline(always)]
-    pub fn uart_txfifo_empty_int_ena(&self) -> UART_TXFIFO_EMPTY_INT_ENA_R {
-        UART_TXFIFO_EMPTY_INT_ENA_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn txfifo_empty_int_ena(&self) -> TXFIFO_EMPTY_INT_ENA_R {
+        TXFIFO_EMPTY_INT_ENA_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - This is the enable bit for rxfifo_full_int_st register."]
     #[inline(always)]
-    pub fn uart_rxfifo_full_int_ena(&self) -> UART_RXFIFO_FULL_INT_ENA_R {
-        UART_RXFIFO_FULL_INT_ENA_R::new((self.bits & 0x01) != 0)
+    pub fn rxfifo_full_int_ena(&self) -> RXFIFO_FULL_INT_ENA_R {
+        RXFIFO_FULL_INT_ENA_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 18 - This is the enable bit for at_cmd_char_det_int_st register."]
     #[inline(always)]
-    pub fn uart_at_cmd_char_det_int_ena(&mut self) -> UART_AT_CMD_CHAR_DET_INT_ENA_W {
-        UART_AT_CMD_CHAR_DET_INT_ENA_W { w: self }
+    pub fn at_cmd_char_det_int_ena(&mut self) -> AT_CMD_CHAR_DET_INT_ENA_W {
+        AT_CMD_CHAR_DET_INT_ENA_W { w: self }
     }
     #[doc = "Bit 17 - This is the enable bit for rs485_clash_int_st register."]
     #[inline(always)]
-    pub fn uart_rs485_clash_int_ena(&mut self) -> UART_RS485_CLASH_INT_ENA_W {
-        UART_RS485_CLASH_INT_ENA_W { w: self }
+    pub fn rs485_clash_int_ena(&mut self) -> RS485_CLASH_INT_ENA_W {
+        RS485_CLASH_INT_ENA_W { w: self }
     }
     #[doc = "Bit 16 - This is the enable bit for rs485_parity_err_int_st register."]
     #[inline(always)]
-    pub fn uart_rs485_frm_err_int_ena(&mut self) -> UART_RS485_FRM_ERR_INT_ENA_W {
-        UART_RS485_FRM_ERR_INT_ENA_W { w: self }
+    pub fn rs485_frm_err_int_ena(&mut self) -> RS485_FRM_ERR_INT_ENA_W {
+        RS485_FRM_ERR_INT_ENA_W { w: self }
     }
     #[doc = "Bit 15 - This is the enable bit for rs485_parity_err_int_st register."]
     #[inline(always)]
-    pub fn uart_rs485_parity_err_int_ena(&mut self) -> UART_RS485_PARITY_ERR_INT_ENA_W {
-        UART_RS485_PARITY_ERR_INT_ENA_W { w: self }
+    pub fn rs485_parity_err_int_ena(&mut self) -> RS485_PARITY_ERR_INT_ENA_W {
+        RS485_PARITY_ERR_INT_ENA_W { w: self }
     }
     #[doc = "Bit 14 - This is the enable bit for tx_done_int_st register."]
     #[inline(always)]
-    pub fn uart_tx_done_int_ena(&mut self) -> UART_TX_DONE_INT_ENA_W {
-        UART_TX_DONE_INT_ENA_W { w: self }
+    pub fn tx_done_int_ena(&mut self) -> TX_DONE_INT_ENA_W {
+        TX_DONE_INT_ENA_W { w: self }
     }
     #[doc = "Bit 13 - This is the enable bit for tx_brk_idle_done_int_st register."]
     #[inline(always)]
-    pub fn uart_tx_brk_idle_done_int_ena(&mut self) -> UART_TX_BRK_IDLE_DONE_INT_ENA_W {
-        UART_TX_BRK_IDLE_DONE_INT_ENA_W { w: self }
+    pub fn tx_brk_idle_done_int_ena(&mut self) -> TX_BRK_IDLE_DONE_INT_ENA_W {
+        TX_BRK_IDLE_DONE_INT_ENA_W { w: self }
     }
     #[doc = "Bit 12 - This is the enable bit for tx_brk_done_int_st register."]
     #[inline(always)]
-    pub fn uart_tx_brk_done_int_ena(&mut self) -> UART_TX_BRK_DONE_INT_ENA_W {
-        UART_TX_BRK_DONE_INT_ENA_W { w: self }
+    pub fn tx_brk_done_int_ena(&mut self) -> TX_BRK_DONE_INT_ENA_W {
+        TX_BRK_DONE_INT_ENA_W { w: self }
     }
     #[doc = "Bit 11 - This is the enable bit for glitch_det_int_st register."]
     #[inline(always)]
-    pub fn uart_glitch_det_int_ena(&mut self) -> UART_GLITCH_DET_INT_ENA_W {
-        UART_GLITCH_DET_INT_ENA_W { w: self }
+    pub fn glitch_det_int_ena(&mut self) -> GLITCH_DET_INT_ENA_W {
+        GLITCH_DET_INT_ENA_W { w: self }
     }
     #[doc = "Bit 10 - This is the enable bit for sw_xoff_int_st register."]
     #[inline(always)]
-    pub fn uart_sw_xoff_int_ena(&mut self) -> UART_SW_XOFF_INT_ENA_W {
-        UART_SW_XOFF_INT_ENA_W { w: self }
+    pub fn sw_xoff_int_ena(&mut self) -> SW_XOFF_INT_ENA_W {
+        SW_XOFF_INT_ENA_W { w: self }
     }
     #[doc = "Bit 9 - This is the enable bit for sw_xon_int_st register."]
     #[inline(always)]
-    pub fn uart_sw_xon_int_ena(&mut self) -> UART_SW_XON_INT_ENA_W {
-        UART_SW_XON_INT_ENA_W { w: self }
+    pub fn sw_xon_int_ena(&mut self) -> SW_XON_INT_ENA_W {
+        SW_XON_INT_ENA_W { w: self }
     }
     #[doc = "Bit 8 - This is the enable bit for rxfifo_tout_int_st register."]
     #[inline(always)]
-    pub fn uart_rxfifo_tout_int_ena(&mut self) -> UART_RXFIFO_TOUT_INT_ENA_W {
-        UART_RXFIFO_TOUT_INT_ENA_W { w: self }
+    pub fn rxfifo_tout_int_ena(&mut self) -> RXFIFO_TOUT_INT_ENA_W {
+        RXFIFO_TOUT_INT_ENA_W { w: self }
     }
     #[doc = "Bit 7 - This is the enable bit for brk_det_int_st register."]
     #[inline(always)]
-    pub fn uart_brk_det_int_ena(&mut self) -> UART_BRK_DET_INT_ENA_W {
-        UART_BRK_DET_INT_ENA_W { w: self }
+    pub fn brk_det_int_ena(&mut self) -> BRK_DET_INT_ENA_W {
+        BRK_DET_INT_ENA_W { w: self }
     }
     #[doc = "Bit 6 - This is the enable bit for cts_chg_int_st register."]
     #[inline(always)]
-    pub fn uart_cts_chg_int_ena(&mut self) -> UART_CTS_CHG_INT_ENA_W {
-        UART_CTS_CHG_INT_ENA_W { w: self }
+    pub fn cts_chg_int_ena(&mut self) -> CTS_CHG_INT_ENA_W {
+        CTS_CHG_INT_ENA_W { w: self }
     }
     #[doc = "Bit 5 - This is the enable bit for dsr_chg_int_st register."]
     #[inline(always)]
-    pub fn uart_dsr_chg_int_ena(&mut self) -> UART_DSR_CHG_INT_ENA_W {
-        UART_DSR_CHG_INT_ENA_W { w: self }
+    pub fn dsr_chg_int_ena(&mut self) -> DSR_CHG_INT_ENA_W {
+        DSR_CHG_INT_ENA_W { w: self }
     }
     #[doc = "Bit 4 - This is the enable bit for rxfifo_ovf_int_st register."]
     #[inline(always)]
-    pub fn uart_rxfifo_ovf_int_ena(&mut self) -> UART_RXFIFO_OVF_INT_ENA_W {
-        UART_RXFIFO_OVF_INT_ENA_W { w: self }
+    pub fn rxfifo_ovf_int_ena(&mut self) -> RXFIFO_OVF_INT_ENA_W {
+        RXFIFO_OVF_INT_ENA_W { w: self }
     }
     #[doc = "Bit 3 - This is the enable bit for frm_err_int_st register."]
     #[inline(always)]
-    pub fn uart_frm_err_int_ena(&mut self) -> UART_FRM_ERR_INT_ENA_W {
-        UART_FRM_ERR_INT_ENA_W { w: self }
+    pub fn frm_err_int_ena(&mut self) -> FRM_ERR_INT_ENA_W {
+        FRM_ERR_INT_ENA_W { w: self }
     }
     #[doc = "Bit 2 - This is the enable bit for parity_err_int_st register."]
     #[inline(always)]
-    pub fn uart_parity_err_int_ena(&mut self) -> UART_PARITY_ERR_INT_ENA_W {
-        UART_PARITY_ERR_INT_ENA_W { w: self }
+    pub fn parity_err_int_ena(&mut self) -> PARITY_ERR_INT_ENA_W {
+        PARITY_ERR_INT_ENA_W { w: self }
     }
     #[doc = "Bit 1 - This is the enable bit for rxfifo_full_int_st register."]
     #[inline(always)]
-    pub fn uart_txfifo_empty_int_ena(&mut self) -> UART_TXFIFO_EMPTY_INT_ENA_W {
-        UART_TXFIFO_EMPTY_INT_ENA_W { w: self }
+    pub fn txfifo_empty_int_ena(&mut self) -> TXFIFO_EMPTY_INT_ENA_W {
+        TXFIFO_EMPTY_INT_ENA_W { w: self }
     }
     #[doc = "Bit 0 - This is the enable bit for rxfifo_full_int_st register."]
     #[inline(always)]
-    pub fn uart_rxfifo_full_int_ena(&mut self) -> UART_RXFIFO_FULL_INT_ENA_W {
-        UART_RXFIFO_FULL_INT_ENA_W { w: self }
+    pub fn rxfifo_full_int_ena(&mut self) -> RXFIFO_FULL_INT_ENA_W {
+        RXFIFO_FULL_INT_ENA_W { w: self }
     }
 }

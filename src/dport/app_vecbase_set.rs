@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_VECBASE_SET {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_OUT_VECBASE_REG`"]
-pub type DPORT_APP_OUT_VECBASE_REG_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_APP_OUT_VECBASE_REG`"]
-pub struct DPORT_APP_OUT_VECBASE_REG_W<'a> {
+#[doc = "Reader of field `APP_OUT_VECBASE_REG`"]
+pub type APP_OUT_VECBASE_REG_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `APP_OUT_VECBASE_REG`"]
+pub struct APP_OUT_VECBASE_REG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_OUT_VECBASE_REG_W<'a> {
+impl<'a> APP_OUT_VECBASE_REG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_APP_OUT_VECBASE_REG_W<'a> {
 impl R {
     #[doc = "Bits 0:21"]
     #[inline(always)]
-    pub fn dport_app_out_vecbase_reg(&self) -> DPORT_APP_OUT_VECBASE_REG_R {
-        DPORT_APP_OUT_VECBASE_REG_R::new((self.bits & 0x003f_ffff) as u32)
+    pub fn app_out_vecbase_reg(&self) -> APP_OUT_VECBASE_REG_R {
+        APP_OUT_VECBASE_REG_R::new((self.bits & 0x003f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:21"]
     #[inline(always)]
-    pub fn dport_app_out_vecbase_reg(&mut self) -> DPORT_APP_OUT_VECBASE_REG_W {
-        DPORT_APP_OUT_VECBASE_REG_W { w: self }
+    pub fn app_out_vecbase_reg(&mut self) -> APP_OUT_VECBASE_REG_W {
+        APP_OUT_VECBASE_REG_W { w: self }
     }
 }

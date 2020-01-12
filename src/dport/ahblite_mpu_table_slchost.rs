@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_SLCHOST {
         0
     }
 }
-#[doc = "Reader of field `DPORT_SLCHOST_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_SLCHOST_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_SLCHOST_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_SLCHOST_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `SLCHOST_ACCESS_GRANT_CONFIG`"]
+pub type SLCHOST_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SLCHOST_ACCESS_GRANT_CONFIG`"]
+pub struct SLCHOST_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_SLCHOST_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> SLCHOST_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_SLCHOST_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_slchost_access_grant_config(&self) -> DPORT_SLCHOST_ACCESS_GRANT_CONFIG_R {
-        DPORT_SLCHOST_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn slchost_access_grant_config(&self) -> SLCHOST_ACCESS_GRANT_CONFIG_R {
+        SLCHOST_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_slchost_access_grant_config(&mut self) -> DPORT_SLCHOST_ACCESS_GRANT_CONFIG_W {
-        DPORT_SLCHOST_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn slchost_access_grant_config(&mut self) -> SLCHOST_ACCESS_GRANT_CONFIG_W {
+        SLCHOST_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

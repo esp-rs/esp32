@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APPCPU_CTRL_A {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APPCPU_RESETTING`"]
-pub type DPORT_APPCPU_RESETTING_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_APPCPU_RESETTING`"]
-pub struct DPORT_APPCPU_RESETTING_W<'a> {
+#[doc = "Reader of field `APPCPU_RESETTING`"]
+pub type APPCPU_RESETTING_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APPCPU_RESETTING`"]
+pub struct APPCPU_RESETTING_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APPCPU_RESETTING_W<'a> {
+impl<'a> APPCPU_RESETTING_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_APPCPU_RESETTING_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_appcpu_resetting(&self) -> DPORT_APPCPU_RESETTING_R {
-        DPORT_APPCPU_RESETTING_R::new((self.bits & 0x01) != 0)
+    pub fn appcpu_resetting(&self) -> APPCPU_RESETTING_R {
+        APPCPU_RESETTING_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_appcpu_resetting(&mut self) -> DPORT_APPCPU_RESETTING_W {
-        DPORT_APPCPU_RESETTING_W { w: self }
+    pub fn appcpu_resetting(&mut self) -> APPCPU_RESETTING_W {
+        APPCPU_RESETTING_W { w: self }
     }
 }

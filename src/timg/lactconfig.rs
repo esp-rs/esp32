@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LACTCONFIG {
         0
     }
 }
-#[doc = "Reader of field `TIMG_LACT_EN`"]
-pub type TIMG_LACT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_EN`"]
-pub struct TIMG_LACT_EN_W<'a> {
+#[doc = "Reader of field `LACT_EN`"]
+pub type LACT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_EN`"]
+pub struct LACT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_EN_W<'a> {
+impl<'a> LACT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> TIMG_LACT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_INCREASE`"]
-pub type TIMG_LACT_INCREASE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_INCREASE`"]
-pub struct TIMG_LACT_INCREASE_W<'a> {
+#[doc = "Reader of field `LACT_INCREASE`"]
+pub type LACT_INCREASE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_INCREASE`"]
+pub struct LACT_INCREASE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_INCREASE_W<'a> {
+impl<'a> LACT_INCREASE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> TIMG_LACT_INCREASE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_AUTORELOAD`"]
-pub type TIMG_LACT_AUTORELOAD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_AUTORELOAD`"]
-pub struct TIMG_LACT_AUTORELOAD_W<'a> {
+#[doc = "Reader of field `LACT_AUTORELOAD`"]
+pub type LACT_AUTORELOAD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_AUTORELOAD`"]
+pub struct LACT_AUTORELOAD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_AUTORELOAD_W<'a> {
+impl<'a> LACT_AUTORELOAD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> TIMG_LACT_AUTORELOAD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_DIVIDER`"]
-pub type TIMG_LACT_DIVIDER_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `TIMG_LACT_DIVIDER`"]
-pub struct TIMG_LACT_DIVIDER_W<'a> {
+#[doc = "Reader of field `LACT_DIVIDER`"]
+pub type LACT_DIVIDER_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `LACT_DIVIDER`"]
+pub struct LACT_DIVIDER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_DIVIDER_W<'a> {
+impl<'a> LACT_DIVIDER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -96,13 +96,13 @@ impl<'a> TIMG_LACT_DIVIDER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_EDGE_INT_EN`"]
-pub type TIMG_LACT_EDGE_INT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_EDGE_INT_EN`"]
-pub struct TIMG_LACT_EDGE_INT_EN_W<'a> {
+#[doc = "Reader of field `LACT_EDGE_INT_EN`"]
+pub type LACT_EDGE_INT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_EDGE_INT_EN`"]
+pub struct LACT_EDGE_INT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_EDGE_INT_EN_W<'a> {
+impl<'a> LACT_EDGE_INT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -120,13 +120,13 @@ impl<'a> TIMG_LACT_EDGE_INT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_LEVEL_INT_EN`"]
-pub type TIMG_LACT_LEVEL_INT_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_LEVEL_INT_EN`"]
-pub struct TIMG_LACT_LEVEL_INT_EN_W<'a> {
+#[doc = "Reader of field `LACT_LEVEL_INT_EN`"]
+pub type LACT_LEVEL_INT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_LEVEL_INT_EN`"]
+pub struct LACT_LEVEL_INT_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_LEVEL_INT_EN_W<'a> {
+impl<'a> LACT_LEVEL_INT_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -144,13 +144,13 @@ impl<'a> TIMG_LACT_LEVEL_INT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_ALARM_EN`"]
-pub type TIMG_LACT_ALARM_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_ALARM_EN`"]
-pub struct TIMG_LACT_ALARM_EN_W<'a> {
+#[doc = "Reader of field `LACT_ALARM_EN`"]
+pub type LACT_ALARM_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_ALARM_EN`"]
+pub struct LACT_ALARM_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_ALARM_EN_W<'a> {
+impl<'a> LACT_ALARM_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -168,13 +168,13 @@ impl<'a> TIMG_LACT_ALARM_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_LAC_EN`"]
-pub type TIMG_LACT_LAC_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_LAC_EN`"]
-pub struct TIMG_LACT_LAC_EN_W<'a> {
+#[doc = "Reader of field `LACT_LAC_EN`"]
+pub type LACT_LAC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_LAC_EN`"]
+pub struct LACT_LAC_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_LAC_EN_W<'a> {
+impl<'a> LACT_LAC_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -192,13 +192,13 @@ impl<'a> TIMG_LACT_LAC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_CPST_EN`"]
-pub type TIMG_LACT_CPST_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_CPST_EN`"]
-pub struct TIMG_LACT_CPST_EN_W<'a> {
+#[doc = "Reader of field `LACT_CPST_EN`"]
+pub type LACT_CPST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_CPST_EN`"]
+pub struct LACT_CPST_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_CPST_EN_W<'a> {
+impl<'a> LACT_CPST_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -216,13 +216,13 @@ impl<'a> TIMG_LACT_CPST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_LACT_RTC_ONLY`"]
-pub type TIMG_LACT_RTC_ONLY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_RTC_ONLY`"]
-pub struct TIMG_LACT_RTC_ONLY_W<'a> {
+#[doc = "Reader of field `LACT_RTC_ONLY`"]
+pub type LACT_RTC_ONLY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_RTC_ONLY`"]
+pub struct LACT_RTC_ONLY_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_RTC_ONLY_W<'a> {
+impl<'a> LACT_RTC_ONLY_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -243,104 +243,104 @@ impl<'a> TIMG_LACT_RTC_ONLY_W<'a> {
 impl R {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn timg_lact_en(&self) -> TIMG_LACT_EN_R {
-        TIMG_LACT_EN_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn lact_en(&self) -> LACT_EN_R {
+        LACT_EN_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn timg_lact_increase(&self) -> TIMG_LACT_INCREASE_R {
-        TIMG_LACT_INCREASE_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn lact_increase(&self) -> LACT_INCREASE_R {
+        LACT_INCREASE_R::new(((self.bits >> 30) & 0x01) != 0)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
-    pub fn timg_lact_autoreload(&self) -> TIMG_LACT_AUTORELOAD_R {
-        TIMG_LACT_AUTORELOAD_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn lact_autoreload(&self) -> LACT_AUTORELOAD_R {
+        LACT_AUTORELOAD_R::new(((self.bits >> 29) & 0x01) != 0)
     }
     #[doc = "Bits 13:28"]
     #[inline(always)]
-    pub fn timg_lact_divider(&self) -> TIMG_LACT_DIVIDER_R {
-        TIMG_LACT_DIVIDER_R::new(((self.bits >> 13) & 0xffff) as u16)
+    pub fn lact_divider(&self) -> LACT_DIVIDER_R {
+        LACT_DIVIDER_R::new(((self.bits >> 13) & 0xffff) as u16)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn timg_lact_edge_int_en(&self) -> TIMG_LACT_EDGE_INT_EN_R {
-        TIMG_LACT_EDGE_INT_EN_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn lact_edge_int_en(&self) -> LACT_EDGE_INT_EN_R {
+        LACT_EDGE_INT_EN_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn timg_lact_level_int_en(&self) -> TIMG_LACT_LEVEL_INT_EN_R {
-        TIMG_LACT_LEVEL_INT_EN_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn lact_level_int_en(&self) -> LACT_LEVEL_INT_EN_R {
+        LACT_LEVEL_INT_EN_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn timg_lact_alarm_en(&self) -> TIMG_LACT_ALARM_EN_R {
-        TIMG_LACT_ALARM_EN_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn lact_alarm_en(&self) -> LACT_ALARM_EN_R {
+        LACT_ALARM_EN_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn timg_lact_lac_en(&self) -> TIMG_LACT_LAC_EN_R {
-        TIMG_LACT_LAC_EN_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn lact_lac_en(&self) -> LACT_LAC_EN_R {
+        LACT_LAC_EN_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn timg_lact_cpst_en(&self) -> TIMG_LACT_CPST_EN_R {
-        TIMG_LACT_CPST_EN_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn lact_cpst_en(&self) -> LACT_CPST_EN_R {
+        LACT_CPST_EN_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn timg_lact_rtc_only(&self) -> TIMG_LACT_RTC_ONLY_R {
-        TIMG_LACT_RTC_ONLY_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn lact_rtc_only(&self) -> LACT_RTC_ONLY_R {
+        LACT_RTC_ONLY_R::new(((self.bits >> 7) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn timg_lact_en(&mut self) -> TIMG_LACT_EN_W {
-        TIMG_LACT_EN_W { w: self }
+    pub fn lact_en(&mut self) -> LACT_EN_W {
+        LACT_EN_W { w: self }
     }
     #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn timg_lact_increase(&mut self) -> TIMG_LACT_INCREASE_W {
-        TIMG_LACT_INCREASE_W { w: self }
+    pub fn lact_increase(&mut self) -> LACT_INCREASE_W {
+        LACT_INCREASE_W { w: self }
     }
     #[doc = "Bit 29"]
     #[inline(always)]
-    pub fn timg_lact_autoreload(&mut self) -> TIMG_LACT_AUTORELOAD_W {
-        TIMG_LACT_AUTORELOAD_W { w: self }
+    pub fn lact_autoreload(&mut self) -> LACT_AUTORELOAD_W {
+        LACT_AUTORELOAD_W { w: self }
     }
     #[doc = "Bits 13:28"]
     #[inline(always)]
-    pub fn timg_lact_divider(&mut self) -> TIMG_LACT_DIVIDER_W {
-        TIMG_LACT_DIVIDER_W { w: self }
+    pub fn lact_divider(&mut self) -> LACT_DIVIDER_W {
+        LACT_DIVIDER_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn timg_lact_edge_int_en(&mut self) -> TIMG_LACT_EDGE_INT_EN_W {
-        TIMG_LACT_EDGE_INT_EN_W { w: self }
+    pub fn lact_edge_int_en(&mut self) -> LACT_EDGE_INT_EN_W {
+        LACT_EDGE_INT_EN_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn timg_lact_level_int_en(&mut self) -> TIMG_LACT_LEVEL_INT_EN_W {
-        TIMG_LACT_LEVEL_INT_EN_W { w: self }
+    pub fn lact_level_int_en(&mut self) -> LACT_LEVEL_INT_EN_W {
+        LACT_LEVEL_INT_EN_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn timg_lact_alarm_en(&mut self) -> TIMG_LACT_ALARM_EN_W {
-        TIMG_LACT_ALARM_EN_W { w: self }
+    pub fn lact_alarm_en(&mut self) -> LACT_ALARM_EN_W {
+        LACT_ALARM_EN_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn timg_lact_lac_en(&mut self) -> TIMG_LACT_LAC_EN_W {
-        TIMG_LACT_LAC_EN_W { w: self }
+    pub fn lact_lac_en(&mut self) -> LACT_LAC_EN_W {
+        LACT_LAC_EN_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn timg_lact_cpst_en(&mut self) -> TIMG_LACT_CPST_EN_W {
-        TIMG_LACT_CPST_EN_W { w: self }
+    pub fn lact_cpst_en(&mut self) -> LACT_CPST_EN_W {
+        LACT_CPST_EN_W { w: self }
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn timg_lact_rtc_only(&mut self) -> TIMG_LACT_RTC_ONLY_W {
-        TIMG_LACT_RTC_ONLY_W { w: self }
+    pub fn lact_rtc_only(&mut self) -> LACT_RTC_ONLY_W {
+        LACT_RTC_ONLY_W { w: self }
     }
 }

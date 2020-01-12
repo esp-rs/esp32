@@ -10,13 +10,13 @@ impl crate::ResetValue for super::XTAL_TICK_CONF {
         0
     }
 }
-#[doc = "Reader of field `APB_CTRL_XTAL_TICK_NUM`"]
-pub type APB_CTRL_XTAL_TICK_NUM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `APB_CTRL_XTAL_TICK_NUM`"]
-pub struct APB_CTRL_XTAL_TICK_NUM_W<'a> {
+#[doc = "Reader of field `XTAL_TICK_NUM`"]
+pub type XTAL_TICK_NUM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `XTAL_TICK_NUM`"]
+pub struct XTAL_TICK_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> APB_CTRL_XTAL_TICK_NUM_W<'a> {
+impl<'a> XTAL_TICK_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> APB_CTRL_XTAL_TICK_NUM_W<'a> {
 impl R {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn apb_ctrl_xtal_tick_num(&self) -> APB_CTRL_XTAL_TICK_NUM_R {
-        APB_CTRL_XTAL_TICK_NUM_R::new((self.bits & 0xff) as u8)
+    pub fn xtal_tick_num(&self) -> XTAL_TICK_NUM_R {
+        XTAL_TICK_NUM_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn apb_ctrl_xtal_tick_num(&mut self) -> APB_CTRL_XTAL_TICK_NUM_W {
-        APB_CTRL_XTAL_TICK_NUM_W { w: self }
+    pub fn xtal_tick_num(&mut self) -> XTAL_TICK_NUM_W {
+        XTAL_TICK_NUM_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_CLR {
         0
     }
 }
-#[doc = "Reader of field `UART_AT_CMD_CHAR_DET_INT_CLR`"]
-pub type UART_AT_CMD_CHAR_DET_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_AT_CMD_CHAR_DET_INT_CLR`"]
-pub struct UART_AT_CMD_CHAR_DET_INT_CLR_W<'a> {
+#[doc = "Reader of field `AT_CMD_CHAR_DET_INT_CLR`"]
+pub type AT_CMD_CHAR_DET_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AT_CMD_CHAR_DET_INT_CLR`"]
+pub struct AT_CMD_CHAR_DET_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_AT_CMD_CHAR_DET_INT_CLR_W<'a> {
+impl<'a> AT_CMD_CHAR_DET_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> UART_AT_CMD_CHAR_DET_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RS485_CLASH_INT_CLR`"]
-pub type UART_RS485_CLASH_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RS485_CLASH_INT_CLR`"]
-pub struct UART_RS485_CLASH_INT_CLR_W<'a> {
+#[doc = "Reader of field `RS485_CLASH_INT_CLR`"]
+pub type RS485_CLASH_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RS485_CLASH_INT_CLR`"]
+pub struct RS485_CLASH_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RS485_CLASH_INT_CLR_W<'a> {
+impl<'a> RS485_CLASH_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> UART_RS485_CLASH_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RS485_FRM_ERR_INT_CLR`"]
-pub type UART_RS485_FRM_ERR_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RS485_FRM_ERR_INT_CLR`"]
-pub struct UART_RS485_FRM_ERR_INT_CLR_W<'a> {
+#[doc = "Reader of field `RS485_FRM_ERR_INT_CLR`"]
+pub type RS485_FRM_ERR_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RS485_FRM_ERR_INT_CLR`"]
+pub struct RS485_FRM_ERR_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RS485_FRM_ERR_INT_CLR_W<'a> {
+impl<'a> RS485_FRM_ERR_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> UART_RS485_FRM_ERR_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RS485_PARITY_ERR_INT_CLR`"]
-pub type UART_RS485_PARITY_ERR_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RS485_PARITY_ERR_INT_CLR`"]
-pub struct UART_RS485_PARITY_ERR_INT_CLR_W<'a> {
+#[doc = "Reader of field `RS485_PARITY_ERR_INT_CLR`"]
+pub type RS485_PARITY_ERR_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RS485_PARITY_ERR_INT_CLR`"]
+pub struct RS485_PARITY_ERR_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RS485_PARITY_ERR_INT_CLR_W<'a> {
+impl<'a> RS485_PARITY_ERR_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> UART_RS485_PARITY_ERR_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TX_DONE_INT_CLR`"]
-pub type UART_TX_DONE_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TX_DONE_INT_CLR`"]
-pub struct UART_TX_DONE_INT_CLR_W<'a> {
+#[doc = "Reader of field `TX_DONE_INT_CLR`"]
+pub type TX_DONE_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_DONE_INT_CLR`"]
+pub struct TX_DONE_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TX_DONE_INT_CLR_W<'a> {
+impl<'a> TX_DONE_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> UART_TX_DONE_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TX_BRK_IDLE_DONE_INT_CLR`"]
-pub type UART_TX_BRK_IDLE_DONE_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TX_BRK_IDLE_DONE_INT_CLR`"]
-pub struct UART_TX_BRK_IDLE_DONE_INT_CLR_W<'a> {
+#[doc = "Reader of field `TX_BRK_IDLE_DONE_INT_CLR`"]
+pub type TX_BRK_IDLE_DONE_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_BRK_IDLE_DONE_INT_CLR`"]
+pub struct TX_BRK_IDLE_DONE_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TX_BRK_IDLE_DONE_INT_CLR_W<'a> {
+impl<'a> TX_BRK_IDLE_DONE_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> UART_TX_BRK_IDLE_DONE_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TX_BRK_DONE_INT_CLR`"]
-pub type UART_TX_BRK_DONE_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TX_BRK_DONE_INT_CLR`"]
-pub struct UART_TX_BRK_DONE_INT_CLR_W<'a> {
+#[doc = "Reader of field `TX_BRK_DONE_INT_CLR`"]
+pub type TX_BRK_DONE_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_BRK_DONE_INT_CLR`"]
+pub struct TX_BRK_DONE_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TX_BRK_DONE_INT_CLR_W<'a> {
+impl<'a> TX_BRK_DONE_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> UART_TX_BRK_DONE_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_GLITCH_DET_INT_CLR`"]
-pub type UART_GLITCH_DET_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_GLITCH_DET_INT_CLR`"]
-pub struct UART_GLITCH_DET_INT_CLR_W<'a> {
+#[doc = "Reader of field `GLITCH_DET_INT_CLR`"]
+pub type GLITCH_DET_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `GLITCH_DET_INT_CLR`"]
+pub struct GLITCH_DET_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_GLITCH_DET_INT_CLR_W<'a> {
+impl<'a> GLITCH_DET_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> UART_GLITCH_DET_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_SW_XOFF_INT_CLR`"]
-pub type UART_SW_XOFF_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_SW_XOFF_INT_CLR`"]
-pub struct UART_SW_XOFF_INT_CLR_W<'a> {
+#[doc = "Reader of field `SW_XOFF_INT_CLR`"]
+pub type SW_XOFF_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SW_XOFF_INT_CLR`"]
+pub struct SW_XOFF_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_SW_XOFF_INT_CLR_W<'a> {
+impl<'a> SW_XOFF_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> UART_SW_XOFF_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_SW_XON_INT_CLR`"]
-pub type UART_SW_XON_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_SW_XON_INT_CLR`"]
-pub struct UART_SW_XON_INT_CLR_W<'a> {
+#[doc = "Reader of field `SW_XON_INT_CLR`"]
+pub type SW_XON_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SW_XON_INT_CLR`"]
+pub struct SW_XON_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_SW_XON_INT_CLR_W<'a> {
+impl<'a> SW_XON_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> UART_SW_XON_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RXFIFO_TOUT_INT_CLR`"]
-pub type UART_RXFIFO_TOUT_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RXFIFO_TOUT_INT_CLR`"]
-pub struct UART_RXFIFO_TOUT_INT_CLR_W<'a> {
+#[doc = "Reader of field `RXFIFO_TOUT_INT_CLR`"]
+pub type RXFIFO_TOUT_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RXFIFO_TOUT_INT_CLR`"]
+pub struct RXFIFO_TOUT_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RXFIFO_TOUT_INT_CLR_W<'a> {
+impl<'a> RXFIFO_TOUT_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> UART_RXFIFO_TOUT_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_BRK_DET_INT_CLR`"]
-pub type UART_BRK_DET_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_BRK_DET_INT_CLR`"]
-pub struct UART_BRK_DET_INT_CLR_W<'a> {
+#[doc = "Reader of field `BRK_DET_INT_CLR`"]
+pub type BRK_DET_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BRK_DET_INT_CLR`"]
+pub struct BRK_DET_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_BRK_DET_INT_CLR_W<'a> {
+impl<'a> BRK_DET_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> UART_BRK_DET_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_CTS_CHG_INT_CLR`"]
-pub type UART_CTS_CHG_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_CTS_CHG_INT_CLR`"]
-pub struct UART_CTS_CHG_INT_CLR_W<'a> {
+#[doc = "Reader of field `CTS_CHG_INT_CLR`"]
+pub type CTS_CHG_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CTS_CHG_INT_CLR`"]
+pub struct CTS_CHG_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_CTS_CHG_INT_CLR_W<'a> {
+impl<'a> CTS_CHG_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> UART_CTS_CHG_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_DSR_CHG_INT_CLR`"]
-pub type UART_DSR_CHG_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_DSR_CHG_INT_CLR`"]
-pub struct UART_DSR_CHG_INT_CLR_W<'a> {
+#[doc = "Reader of field `DSR_CHG_INT_CLR`"]
+pub type DSR_CHG_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DSR_CHG_INT_CLR`"]
+pub struct DSR_CHG_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_DSR_CHG_INT_CLR_W<'a> {
+impl<'a> DSR_CHG_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> UART_DSR_CHG_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RXFIFO_OVF_INT_CLR`"]
-pub type UART_RXFIFO_OVF_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RXFIFO_OVF_INT_CLR`"]
-pub struct UART_RXFIFO_OVF_INT_CLR_W<'a> {
+#[doc = "Reader of field `RXFIFO_OVF_INT_CLR`"]
+pub type RXFIFO_OVF_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RXFIFO_OVF_INT_CLR`"]
+pub struct RXFIFO_OVF_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RXFIFO_OVF_INT_CLR_W<'a> {
+impl<'a> RXFIFO_OVF_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -370,13 +370,13 @@ impl<'a> UART_RXFIFO_OVF_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_FRM_ERR_INT_CLR`"]
-pub type UART_FRM_ERR_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_FRM_ERR_INT_CLR`"]
-pub struct UART_FRM_ERR_INT_CLR_W<'a> {
+#[doc = "Reader of field `FRM_ERR_INT_CLR`"]
+pub type FRM_ERR_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRM_ERR_INT_CLR`"]
+pub struct FRM_ERR_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_FRM_ERR_INT_CLR_W<'a> {
+impl<'a> FRM_ERR_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -394,13 +394,13 @@ impl<'a> UART_FRM_ERR_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_PARITY_ERR_INT_CLR`"]
-pub type UART_PARITY_ERR_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_PARITY_ERR_INT_CLR`"]
-pub struct UART_PARITY_ERR_INT_CLR_W<'a> {
+#[doc = "Reader of field `PARITY_ERR_INT_CLR`"]
+pub type PARITY_ERR_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PARITY_ERR_INT_CLR`"]
+pub struct PARITY_ERR_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_PARITY_ERR_INT_CLR_W<'a> {
+impl<'a> PARITY_ERR_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -418,13 +418,13 @@ impl<'a> UART_PARITY_ERR_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_TXFIFO_EMPTY_INT_CLR`"]
-pub type UART_TXFIFO_EMPTY_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_TXFIFO_EMPTY_INT_CLR`"]
-pub struct UART_TXFIFO_EMPTY_INT_CLR_W<'a> {
+#[doc = "Reader of field `TXFIFO_EMPTY_INT_CLR`"]
+pub type TXFIFO_EMPTY_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TXFIFO_EMPTY_INT_CLR`"]
+pub struct TXFIFO_EMPTY_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_TXFIFO_EMPTY_INT_CLR_W<'a> {
+impl<'a> TXFIFO_EMPTY_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -442,13 +442,13 @@ impl<'a> UART_TXFIFO_EMPTY_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UART_RXFIFO_FULL_INT_CLR`"]
-pub type UART_RXFIFO_FULL_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UART_RXFIFO_FULL_INT_CLR`"]
-pub struct UART_RXFIFO_FULL_INT_CLR_W<'a> {
+#[doc = "Reader of field `RXFIFO_FULL_INT_CLR`"]
+pub type RXFIFO_FULL_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RXFIFO_FULL_INT_CLR`"]
+pub struct RXFIFO_FULL_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_RXFIFO_FULL_INT_CLR_W<'a> {
+impl<'a> RXFIFO_FULL_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -469,194 +469,194 @@ impl<'a> UART_RXFIFO_FULL_INT_CLR_W<'a> {
 impl R {
     #[doc = "Bit 18 - Set this bit to clear the at_cmd_char_det_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_at_cmd_char_det_int_clr(&self) -> UART_AT_CMD_CHAR_DET_INT_CLR_R {
-        UART_AT_CMD_CHAR_DET_INT_CLR_R::new(((self.bits >> 18) & 0x01) != 0)
+    pub fn at_cmd_char_det_int_clr(&self) -> AT_CMD_CHAR_DET_INT_CLR_R {
+        AT_CMD_CHAR_DET_INT_CLR_R::new(((self.bits >> 18) & 0x01) != 0)
     }
     #[doc = "Bit 17 - Set this bit to clear the rs485_clash_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rs485_clash_int_clr(&self) -> UART_RS485_CLASH_INT_CLR_R {
-        UART_RS485_CLASH_INT_CLR_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn rs485_clash_int_clr(&self) -> RS485_CLASH_INT_CLR_R {
+        RS485_CLASH_INT_CLR_R::new(((self.bits >> 17) & 0x01) != 0)
     }
     #[doc = "Bit 16 - Set this bit to clear the rs485_frm_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rs485_frm_err_int_clr(&self) -> UART_RS485_FRM_ERR_INT_CLR_R {
-        UART_RS485_FRM_ERR_INT_CLR_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn rs485_frm_err_int_clr(&self) -> RS485_FRM_ERR_INT_CLR_R {
+        RS485_FRM_ERR_INT_CLR_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15 - Set this bit to clear the rs485_parity_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rs485_parity_err_int_clr(&self) -> UART_RS485_PARITY_ERR_INT_CLR_R {
-        UART_RS485_PARITY_ERR_INT_CLR_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn rs485_parity_err_int_clr(&self) -> RS485_PARITY_ERR_INT_CLR_R {
+        RS485_PARITY_ERR_INT_CLR_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14 - Set this bit to clear the tx_done_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_tx_done_int_clr(&self) -> UART_TX_DONE_INT_CLR_R {
-        UART_TX_DONE_INT_CLR_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn tx_done_int_clr(&self) -> TX_DONE_INT_CLR_R {
+        TX_DONE_INT_CLR_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13 - Set this bit to clear the tx_brk_idle_done_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_tx_brk_idle_done_int_clr(&self) -> UART_TX_BRK_IDLE_DONE_INT_CLR_R {
-        UART_TX_BRK_IDLE_DONE_INT_CLR_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn tx_brk_idle_done_int_clr(&self) -> TX_BRK_IDLE_DONE_INT_CLR_R {
+        TX_BRK_IDLE_DONE_INT_CLR_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12 - Set this bit to clear the tx_brk_done_int_raw interrupt.."]
     #[inline(always)]
-    pub fn uart_tx_brk_done_int_clr(&self) -> UART_TX_BRK_DONE_INT_CLR_R {
-        UART_TX_BRK_DONE_INT_CLR_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn tx_brk_done_int_clr(&self) -> TX_BRK_DONE_INT_CLR_R {
+        TX_BRK_DONE_INT_CLR_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11 - Set this bit to clear the glitch_det_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_glitch_det_int_clr(&self) -> UART_GLITCH_DET_INT_CLR_R {
-        UART_GLITCH_DET_INT_CLR_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn glitch_det_int_clr(&self) -> GLITCH_DET_INT_CLR_R {
+        GLITCH_DET_INT_CLR_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10 - Set this bit to clear the sw_xon_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_sw_xoff_int_clr(&self) -> UART_SW_XOFF_INT_CLR_R {
-        UART_SW_XOFF_INT_CLR_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn sw_xoff_int_clr(&self) -> SW_XOFF_INT_CLR_R {
+        SW_XOFF_INT_CLR_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9 - Set this bit to clear the sw_xon_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_sw_xon_int_clr(&self) -> UART_SW_XON_INT_CLR_R {
-        UART_SW_XON_INT_CLR_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn sw_xon_int_clr(&self) -> SW_XON_INT_CLR_R {
+        SW_XON_INT_CLR_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8 - Set this bit to clear the rxfifo_tout_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rxfifo_tout_int_clr(&self) -> UART_RXFIFO_TOUT_INT_CLR_R {
-        UART_RXFIFO_TOUT_INT_CLR_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn rxfifo_tout_int_clr(&self) -> RXFIFO_TOUT_INT_CLR_R {
+        RXFIFO_TOUT_INT_CLR_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7 - Set this bit to clear the brk_det_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_brk_det_int_clr(&self) -> UART_BRK_DET_INT_CLR_R {
-        UART_BRK_DET_INT_CLR_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn brk_det_int_clr(&self) -> BRK_DET_INT_CLR_R {
+        BRK_DET_INT_CLR_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - Set this bit to clear the cts_chg_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_cts_chg_int_clr(&self) -> UART_CTS_CHG_INT_CLR_R {
-        UART_CTS_CHG_INT_CLR_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn cts_chg_int_clr(&self) -> CTS_CHG_INT_CLR_R {
+        CTS_CHG_INT_CLR_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5 - Set this bit to clear the dsr_chg_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_dsr_chg_int_clr(&self) -> UART_DSR_CHG_INT_CLR_R {
-        UART_DSR_CHG_INT_CLR_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn dsr_chg_int_clr(&self) -> DSR_CHG_INT_CLR_R {
+        DSR_CHG_INT_CLR_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4 - Set this bit to clear rxfifo_ovf_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rxfifo_ovf_int_clr(&self) -> UART_RXFIFO_OVF_INT_CLR_R {
-        UART_RXFIFO_OVF_INT_CLR_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn rxfifo_ovf_int_clr(&self) -> RXFIFO_OVF_INT_CLR_R {
+        RXFIFO_OVF_INT_CLR_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3 - Set this bit to clear frm_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_frm_err_int_clr(&self) -> UART_FRM_ERR_INT_CLR_R {
-        UART_FRM_ERR_INT_CLR_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn frm_err_int_clr(&self) -> FRM_ERR_INT_CLR_R {
+        FRM_ERR_INT_CLR_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2 - Set this bit to clear parity_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_parity_err_int_clr(&self) -> UART_PARITY_ERR_INT_CLR_R {
-        UART_PARITY_ERR_INT_CLR_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn parity_err_int_clr(&self) -> PARITY_ERR_INT_CLR_R {
+        PARITY_ERR_INT_CLR_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1 - Set this bit to clear txfifo_empty_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_txfifo_empty_int_clr(&self) -> UART_TXFIFO_EMPTY_INT_CLR_R {
-        UART_TXFIFO_EMPTY_INT_CLR_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn txfifo_empty_int_clr(&self) -> TXFIFO_EMPTY_INT_CLR_R {
+        TXFIFO_EMPTY_INT_CLR_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - Set this bit to clear the rxfifo_full_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rxfifo_full_int_clr(&self) -> UART_RXFIFO_FULL_INT_CLR_R {
-        UART_RXFIFO_FULL_INT_CLR_R::new((self.bits & 0x01) != 0)
+    pub fn rxfifo_full_int_clr(&self) -> RXFIFO_FULL_INT_CLR_R {
+        RXFIFO_FULL_INT_CLR_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 18 - Set this bit to clear the at_cmd_char_det_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_at_cmd_char_det_int_clr(&mut self) -> UART_AT_CMD_CHAR_DET_INT_CLR_W {
-        UART_AT_CMD_CHAR_DET_INT_CLR_W { w: self }
+    pub fn at_cmd_char_det_int_clr(&mut self) -> AT_CMD_CHAR_DET_INT_CLR_W {
+        AT_CMD_CHAR_DET_INT_CLR_W { w: self }
     }
     #[doc = "Bit 17 - Set this bit to clear the rs485_clash_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rs485_clash_int_clr(&mut self) -> UART_RS485_CLASH_INT_CLR_W {
-        UART_RS485_CLASH_INT_CLR_W { w: self }
+    pub fn rs485_clash_int_clr(&mut self) -> RS485_CLASH_INT_CLR_W {
+        RS485_CLASH_INT_CLR_W { w: self }
     }
     #[doc = "Bit 16 - Set this bit to clear the rs485_frm_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rs485_frm_err_int_clr(&mut self) -> UART_RS485_FRM_ERR_INT_CLR_W {
-        UART_RS485_FRM_ERR_INT_CLR_W { w: self }
+    pub fn rs485_frm_err_int_clr(&mut self) -> RS485_FRM_ERR_INT_CLR_W {
+        RS485_FRM_ERR_INT_CLR_W { w: self }
     }
     #[doc = "Bit 15 - Set this bit to clear the rs485_parity_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rs485_parity_err_int_clr(&mut self) -> UART_RS485_PARITY_ERR_INT_CLR_W {
-        UART_RS485_PARITY_ERR_INT_CLR_W { w: self }
+    pub fn rs485_parity_err_int_clr(&mut self) -> RS485_PARITY_ERR_INT_CLR_W {
+        RS485_PARITY_ERR_INT_CLR_W { w: self }
     }
     #[doc = "Bit 14 - Set this bit to clear the tx_done_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_tx_done_int_clr(&mut self) -> UART_TX_DONE_INT_CLR_W {
-        UART_TX_DONE_INT_CLR_W { w: self }
+    pub fn tx_done_int_clr(&mut self) -> TX_DONE_INT_CLR_W {
+        TX_DONE_INT_CLR_W { w: self }
     }
     #[doc = "Bit 13 - Set this bit to clear the tx_brk_idle_done_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_tx_brk_idle_done_int_clr(&mut self) -> UART_TX_BRK_IDLE_DONE_INT_CLR_W {
-        UART_TX_BRK_IDLE_DONE_INT_CLR_W { w: self }
+    pub fn tx_brk_idle_done_int_clr(&mut self) -> TX_BRK_IDLE_DONE_INT_CLR_W {
+        TX_BRK_IDLE_DONE_INT_CLR_W { w: self }
     }
     #[doc = "Bit 12 - Set this bit to clear the tx_brk_done_int_raw interrupt.."]
     #[inline(always)]
-    pub fn uart_tx_brk_done_int_clr(&mut self) -> UART_TX_BRK_DONE_INT_CLR_W {
-        UART_TX_BRK_DONE_INT_CLR_W { w: self }
+    pub fn tx_brk_done_int_clr(&mut self) -> TX_BRK_DONE_INT_CLR_W {
+        TX_BRK_DONE_INT_CLR_W { w: self }
     }
     #[doc = "Bit 11 - Set this bit to clear the glitch_det_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_glitch_det_int_clr(&mut self) -> UART_GLITCH_DET_INT_CLR_W {
-        UART_GLITCH_DET_INT_CLR_W { w: self }
+    pub fn glitch_det_int_clr(&mut self) -> GLITCH_DET_INT_CLR_W {
+        GLITCH_DET_INT_CLR_W { w: self }
     }
     #[doc = "Bit 10 - Set this bit to clear the sw_xon_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_sw_xoff_int_clr(&mut self) -> UART_SW_XOFF_INT_CLR_W {
-        UART_SW_XOFF_INT_CLR_W { w: self }
+    pub fn sw_xoff_int_clr(&mut self) -> SW_XOFF_INT_CLR_W {
+        SW_XOFF_INT_CLR_W { w: self }
     }
     #[doc = "Bit 9 - Set this bit to clear the sw_xon_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_sw_xon_int_clr(&mut self) -> UART_SW_XON_INT_CLR_W {
-        UART_SW_XON_INT_CLR_W { w: self }
+    pub fn sw_xon_int_clr(&mut self) -> SW_XON_INT_CLR_W {
+        SW_XON_INT_CLR_W { w: self }
     }
     #[doc = "Bit 8 - Set this bit to clear the rxfifo_tout_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rxfifo_tout_int_clr(&mut self) -> UART_RXFIFO_TOUT_INT_CLR_W {
-        UART_RXFIFO_TOUT_INT_CLR_W { w: self }
+    pub fn rxfifo_tout_int_clr(&mut self) -> RXFIFO_TOUT_INT_CLR_W {
+        RXFIFO_TOUT_INT_CLR_W { w: self }
     }
     #[doc = "Bit 7 - Set this bit to clear the brk_det_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_brk_det_int_clr(&mut self) -> UART_BRK_DET_INT_CLR_W {
-        UART_BRK_DET_INT_CLR_W { w: self }
+    pub fn brk_det_int_clr(&mut self) -> BRK_DET_INT_CLR_W {
+        BRK_DET_INT_CLR_W { w: self }
     }
     #[doc = "Bit 6 - Set this bit to clear the cts_chg_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_cts_chg_int_clr(&mut self) -> UART_CTS_CHG_INT_CLR_W {
-        UART_CTS_CHG_INT_CLR_W { w: self }
+    pub fn cts_chg_int_clr(&mut self) -> CTS_CHG_INT_CLR_W {
+        CTS_CHG_INT_CLR_W { w: self }
     }
     #[doc = "Bit 5 - Set this bit to clear the dsr_chg_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_dsr_chg_int_clr(&mut self) -> UART_DSR_CHG_INT_CLR_W {
-        UART_DSR_CHG_INT_CLR_W { w: self }
+    pub fn dsr_chg_int_clr(&mut self) -> DSR_CHG_INT_CLR_W {
+        DSR_CHG_INT_CLR_W { w: self }
     }
     #[doc = "Bit 4 - Set this bit to clear rxfifo_ovf_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rxfifo_ovf_int_clr(&mut self) -> UART_RXFIFO_OVF_INT_CLR_W {
-        UART_RXFIFO_OVF_INT_CLR_W { w: self }
+    pub fn rxfifo_ovf_int_clr(&mut self) -> RXFIFO_OVF_INT_CLR_W {
+        RXFIFO_OVF_INT_CLR_W { w: self }
     }
     #[doc = "Bit 3 - Set this bit to clear frm_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_frm_err_int_clr(&mut self) -> UART_FRM_ERR_INT_CLR_W {
-        UART_FRM_ERR_INT_CLR_W { w: self }
+    pub fn frm_err_int_clr(&mut self) -> FRM_ERR_INT_CLR_W {
+        FRM_ERR_INT_CLR_W { w: self }
     }
     #[doc = "Bit 2 - Set this bit to clear parity_err_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_parity_err_int_clr(&mut self) -> UART_PARITY_ERR_INT_CLR_W {
-        UART_PARITY_ERR_INT_CLR_W { w: self }
+    pub fn parity_err_int_clr(&mut self) -> PARITY_ERR_INT_CLR_W {
+        PARITY_ERR_INT_CLR_W { w: self }
     }
     #[doc = "Bit 1 - Set this bit to clear txfifo_empty_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_txfifo_empty_int_clr(&mut self) -> UART_TXFIFO_EMPTY_INT_CLR_W {
-        UART_TXFIFO_EMPTY_INT_CLR_W { w: self }
+    pub fn txfifo_empty_int_clr(&mut self) -> TXFIFO_EMPTY_INT_CLR_W {
+        TXFIFO_EMPTY_INT_CLR_W { w: self }
     }
     #[doc = "Bit 0 - Set this bit to clear the rxfifo_full_int_raw interrupt."]
     #[inline(always)]
-    pub fn uart_rxfifo_full_int_clr(&mut self) -> UART_RXFIFO_FULL_INT_CLR_W {
-        UART_RXFIFO_FULL_INT_CLR_W { w: self }
+    pub fn rxfifo_full_int_clr(&mut self) -> RXFIFO_FULL_INT_CLR_W {
+        RXFIFO_FULL_INT_CLR_W { w: self }
     }
 }

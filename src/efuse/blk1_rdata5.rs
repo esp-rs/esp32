@@ -10,13 +10,13 @@ impl crate::ResetValue for super::BLK1_RDATA5 {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_BLK1_DOUT5`"]
-pub type EFUSE_BLK1_DOUT5_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `EFUSE_BLK1_DOUT5`"]
-pub struct EFUSE_BLK1_DOUT5_W<'a> {
+#[doc = "Reader of field `BLK1_DOUT5`"]
+pub type BLK1_DOUT5_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `BLK1_DOUT5`"]
+pub struct BLK1_DOUT5_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_BLK1_DOUT5_W<'a> {
+impl<'a> BLK1_DOUT5_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> EFUSE_BLK1_DOUT5_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - read for BLOCK1"]
     #[inline(always)]
-    pub fn efuse_blk1_dout5(&self) -> EFUSE_BLK1_DOUT5_R {
-        EFUSE_BLK1_DOUT5_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn blk1_dout5(&self) -> BLK1_DOUT5_R {
+        BLK1_DOUT5_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - read for BLOCK1"]
     #[inline(always)]
-    pub fn efuse_blk1_dout5(&mut self) -> EFUSE_BLK1_DOUT5_W {
-        EFUSE_BLK1_DOUT5_W { w: self }
+    pub fn blk1_dout5(&mut self) -> BLK1_DOUT5_W {
+        BLK1_DOUT5_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::U6_CONF2 {
         0
     }
 }
-#[doc = "Reader of field `PCNT_CNT_L_LIM_U6`"]
-pub type PCNT_CNT_L_LIM_U6_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `PCNT_CNT_L_LIM_U6`"]
-pub struct PCNT_CNT_L_LIM_U6_W<'a> {
+#[doc = "Reader of field `CNT_L_LIM_U6`"]
+pub type CNT_L_LIM_U6_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CNT_L_LIM_U6`"]
+pub struct CNT_L_LIM_U6_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_L_LIM_U6_W<'a> {
+impl<'a> CNT_L_LIM_U6_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> PCNT_CNT_L_LIM_U6_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_H_LIM_U6`"]
-pub type PCNT_CNT_H_LIM_U6_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `PCNT_CNT_H_LIM_U6`"]
-pub struct PCNT_CNT_H_LIM_U6_W<'a> {
+#[doc = "Reader of field `CNT_H_LIM_U6`"]
+pub type CNT_H_LIM_U6_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CNT_H_LIM_U6`"]
+pub struct CNT_H_LIM_U6_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_H_LIM_U6_W<'a> {
+impl<'a> CNT_H_LIM_U6_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> PCNT_CNT_H_LIM_U6_W<'a> {
 impl R {
     #[doc = "Bits 16:31 - This register is used to confiugre thr_l_lim value for unit6."]
     #[inline(always)]
-    pub fn pcnt_cnt_l_lim_u6(&self) -> PCNT_CNT_L_LIM_U6_R {
-        PCNT_CNT_L_LIM_U6_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn cnt_l_lim_u6(&self) -> CNT_L_LIM_U6_R {
+        CNT_L_LIM_U6_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bits 0:15 - This register is used to configure thr_h_lim value for unit6."]
     #[inline(always)]
-    pub fn pcnt_cnt_h_lim_u6(&self) -> PCNT_CNT_H_LIM_U6_R {
-        PCNT_CNT_H_LIM_U6_R::new((self.bits & 0xffff) as u16)
+    pub fn cnt_h_lim_u6(&self) -> CNT_H_LIM_U6_R {
+        CNT_H_LIM_U6_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:31 - This register is used to confiugre thr_l_lim value for unit6."]
     #[inline(always)]
-    pub fn pcnt_cnt_l_lim_u6(&mut self) -> PCNT_CNT_L_LIM_U6_W {
-        PCNT_CNT_L_LIM_U6_W { w: self }
+    pub fn cnt_l_lim_u6(&mut self) -> CNT_L_LIM_U6_W {
+        CNT_L_LIM_U6_W { w: self }
     }
     #[doc = "Bits 0:15 - This register is used to configure thr_h_lim value for unit6."]
     #[inline(always)]
-    pub fn pcnt_cnt_h_lim_u6(&mut self) -> PCNT_CNT_H_LIM_U6_W {
-        PCNT_CNT_H_LIM_U6_W { w: self }
+    pub fn cnt_h_lim_u6(&mut self) -> CNT_H_LIM_U6_W {
+        CNT_H_LIM_U6_W { w: self }
     }
 }

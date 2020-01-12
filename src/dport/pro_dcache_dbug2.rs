@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_DCACHE_DBUG2 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_CACHE_VADDR`"]
-pub type DPORT_PRO_CACHE_VADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_PRO_CACHE_VADDR`"]
-pub struct DPORT_PRO_CACHE_VADDR_W<'a> {
+#[doc = "Reader of field `PRO_CACHE_VADDR`"]
+pub type PRO_CACHE_VADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `PRO_CACHE_VADDR`"]
+pub struct PRO_CACHE_VADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_CACHE_VADDR_W<'a> {
+impl<'a> PRO_CACHE_VADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PRO_CACHE_VADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:26"]
     #[inline(always)]
-    pub fn dport_pro_cache_vaddr(&self) -> DPORT_PRO_CACHE_VADDR_R {
-        DPORT_PRO_CACHE_VADDR_R::new((self.bits & 0x07ff_ffff) as u32)
+    pub fn pro_cache_vaddr(&self) -> PRO_CACHE_VADDR_R {
+        PRO_CACHE_VADDR_R::new((self.bits & 0x07ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:26"]
     #[inline(always)]
-    pub fn dport_pro_cache_vaddr(&mut self) -> DPORT_PRO_CACHE_VADDR_W {
-        DPORT_PRO_CACHE_VADDR_W { w: self }
+    pub fn pro_cache_vaddr(&mut self) -> PRO_CACHE_VADDR_W {
+        PRO_CACHE_VADDR_W { w: self }
     }
 }

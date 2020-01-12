@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SDA_HOLD {
         0
     }
 }
-#[doc = "Reader of field `I2C_SDA_HOLD_TIME`"]
-pub type I2C_SDA_HOLD_TIME_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `I2C_SDA_HOLD_TIME`"]
-pub struct I2C_SDA_HOLD_TIME_W<'a> {
+#[doc = "Reader of field `SDA_HOLD_TIME`"]
+pub type SDA_HOLD_TIME_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `SDA_HOLD_TIME`"]
+pub struct SDA_HOLD_TIME_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_SDA_HOLD_TIME_W<'a> {
+impl<'a> SDA_HOLD_TIME_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> I2C_SDA_HOLD_TIME_W<'a> {
 impl R {
     #[doc = "Bits 0:9 - This register is used to configure the clock num I2C used to hold the data after the negedge of SCL."]
     #[inline(always)]
-    pub fn i2c_sda_hold_time(&self) -> I2C_SDA_HOLD_TIME_R {
-        I2C_SDA_HOLD_TIME_R::new((self.bits & 0x03ff) as u16)
+    pub fn sda_hold_time(&self) -> SDA_HOLD_TIME_R {
+        SDA_HOLD_TIME_R::new((self.bits & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:9 - This register is used to configure the clock num I2C used to hold the data after the negedge of SCL."]
     #[inline(always)]
-    pub fn i2c_sda_hold_time(&mut self) -> I2C_SDA_HOLD_TIME_W {
-        I2C_SDA_HOLD_TIME_W { w: self }
+    pub fn sda_hold_time(&mut self) -> SDA_HOLD_TIME_W {
+        SDA_HOLD_TIME_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LACTUPDATE {
         0
     }
 }
-#[doc = "Reader of field `TIMG_LACT_UPDATE`"]
-pub type TIMG_LACT_UPDATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_LACT_UPDATE`"]
-pub struct TIMG_LACT_UPDATE_W<'a> {
+#[doc = "Reader of field `LACT_UPDATE`"]
+pub type LACT_UPDATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `LACT_UPDATE`"]
+pub struct LACT_UPDATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_UPDATE_W<'a> {
+impl<'a> LACT_UPDATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_LACT_UPDATE_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn timg_lact_update(&self) -> TIMG_LACT_UPDATE_R {
-        TIMG_LACT_UPDATE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn lact_update(&self) -> LACT_UPDATE_R {
+        LACT_UPDATE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn timg_lact_update(&mut self) -> TIMG_LACT_UPDATE_W {
-        TIMG_LACT_UPDATE_W { w: self }
+    pub fn lact_update(&mut self) -> LACT_UPDATE_W {
+        LACT_UPDATE_W { w: self }
     }
 }

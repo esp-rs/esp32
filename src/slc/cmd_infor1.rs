@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CMD_INFOR1 {
         0
     }
 }
-#[doc = "Reader of field `SLC_CMD_CONTENT1`"]
-pub type SLC_CMD_CONTENT1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SLC_CMD_CONTENT1`"]
-pub struct SLC_CMD_CONTENT1_W<'a> {
+#[doc = "Reader of field `CMD_CONTENT1`"]
+pub type CMD_CONTENT1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `CMD_CONTENT1`"]
+pub struct CMD_CONTENT1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_CMD_CONTENT1_W<'a> {
+impl<'a> CMD_CONTENT1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SLC_CMD_CONTENT1_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_cmd_content1(&self) -> SLC_CMD_CONTENT1_R {
-        SLC_CMD_CONTENT1_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn cmd_content1(&self) -> CMD_CONTENT1_R {
+        CMD_CONTENT1_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn slc_cmd_content1(&mut self) -> SLC_CMD_CONTENT1_W {
-        SLC_CMD_CONTENT1_W { w: self }
+    pub fn cmd_content1(&mut self) -> CMD_CONTENT1_W {
+        CMD_CONTENT1_W { w: self }
     }
 }

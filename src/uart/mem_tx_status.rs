@@ -10,13 +10,13 @@ impl crate::ResetValue for super::MEM_TX_STATUS {
         0
     }
 }
-#[doc = "Reader of field `UART_MEM_TX_STATUS`"]
-pub type UART_MEM_TX_STATUS_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UART_MEM_TX_STATUS`"]
-pub struct UART_MEM_TX_STATUS_W<'a> {
+#[doc = "Reader of field `MEM_TX_STATUS`"]
+pub type MEM_TX_STATUS_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `MEM_TX_STATUS`"]
+pub struct MEM_TX_STATUS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UART_MEM_TX_STATUS_W<'a> {
+impl<'a> MEM_TX_STATUS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UART_MEM_TX_STATUS_W<'a> {
 impl R {
     #[doc = "Bits 0:23"]
     #[inline(always)]
-    pub fn uart_mem_tx_status(&self) -> UART_MEM_TX_STATUS_R {
-        UART_MEM_TX_STATUS_R::new((self.bits & 0x00ff_ffff) as u32)
+    pub fn mem_tx_status(&self) -> MEM_TX_STATUS_R {
+        MEM_TX_STATUS_R::new((self.bits & 0x00ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:23"]
     #[inline(always)]
-    pub fn uart_mem_tx_status(&mut self) -> UART_MEM_TX_STATUS_W {
-        UART_MEM_TX_STATUS_W { w: self }
+    pub fn mem_tx_status(&mut self) -> MEM_TX_STATUS_W {
+        MEM_TX_STATUS_W { w: self }
     }
 }

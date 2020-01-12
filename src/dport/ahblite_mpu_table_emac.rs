@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_EMAC {
         0
     }
 }
-#[doc = "Reader of field `DPORT_EMAC_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_EMAC_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_EMAC_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_EMAC_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `EMAC_ACCESS_GRANT_CONFIG`"]
+pub type EMAC_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `EMAC_ACCESS_GRANT_CONFIG`"]
+pub struct EMAC_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_EMAC_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> EMAC_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_EMAC_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_emac_access_grant_config(&self) -> DPORT_EMAC_ACCESS_GRANT_CONFIG_R {
-        DPORT_EMAC_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn emac_access_grant_config(&self) -> EMAC_ACCESS_GRANT_CONFIG_R {
+        EMAC_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_emac_access_grant_config(&mut self) -> DPORT_EMAC_ACCESS_GRANT_CONFIG_W {
-        DPORT_EMAC_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn emac_access_grant_config(&mut self) -> EMAC_ACCESS_GRANT_CONFIG_W {
+        EMAC_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

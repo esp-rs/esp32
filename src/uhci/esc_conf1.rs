@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ESC_CONF1 {
         0
     }
 }
-#[doc = "Reader of field `UHCI_ESC_SEQ0_CHAR1`"]
-pub type UHCI_ESC_SEQ0_CHAR1_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_ESC_SEQ0_CHAR1`"]
-pub struct UHCI_ESC_SEQ0_CHAR1_W<'a> {
+#[doc = "Reader of field `ESC_SEQ0_CHAR1`"]
+pub type ESC_SEQ0_CHAR1_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ESC_SEQ0_CHAR1`"]
+pub struct ESC_SEQ0_CHAR1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_ESC_SEQ0_CHAR1_W<'a> {
+impl<'a> ESC_SEQ0_CHAR1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> UHCI_ESC_SEQ0_CHAR1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_ESC_SEQ0_CHAR0`"]
-pub type UHCI_ESC_SEQ0_CHAR0_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_ESC_SEQ0_CHAR0`"]
-pub struct UHCI_ESC_SEQ0_CHAR0_W<'a> {
+#[doc = "Reader of field `ESC_SEQ0_CHAR0`"]
+pub type ESC_SEQ0_CHAR0_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ESC_SEQ0_CHAR0`"]
+pub struct ESC_SEQ0_CHAR0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_ESC_SEQ0_CHAR0_W<'a> {
+impl<'a> ESC_SEQ0_CHAR0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> UHCI_ESC_SEQ0_CHAR0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_ESC_SEQ0`"]
-pub type UHCI_ESC_SEQ0_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_ESC_SEQ0`"]
-pub struct UHCI_ESC_SEQ0_W<'a> {
+#[doc = "Reader of field `ESC_SEQ0`"]
+pub type ESC_SEQ0_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ESC_SEQ0`"]
+pub struct ESC_SEQ0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_ESC_SEQ0_W<'a> {
+impl<'a> ESC_SEQ0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -55,34 +55,34 @@ impl<'a> UHCI_ESC_SEQ0_W<'a> {
 impl R {
     #[doc = "Bits 16:23 - This register stores the second char used to replace the reg_esc_seq0 in data"]
     #[inline(always)]
-    pub fn uhci_esc_seq0_char1(&self) -> UHCI_ESC_SEQ0_CHAR1_R {
-        UHCI_ESC_SEQ0_CHAR1_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn esc_seq0_char1(&self) -> ESC_SEQ0_CHAR1_R {
+        ESC_SEQ0_CHAR1_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - This register stores the first char used to replace reg_esc_seq0 in data."]
     #[inline(always)]
-    pub fn uhci_esc_seq0_char0(&self) -> UHCI_ESC_SEQ0_CHAR0_R {
-        UHCI_ESC_SEQ0_CHAR0_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn esc_seq0_char0(&self) -> ESC_SEQ0_CHAR0_R {
+        ESC_SEQ0_CHAR0_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 0:7 - This register stores the first substitute char used to replace the seperator char."]
     #[inline(always)]
-    pub fn uhci_esc_seq0(&self) -> UHCI_ESC_SEQ0_R {
-        UHCI_ESC_SEQ0_R::new((self.bits & 0xff) as u8)
+    pub fn esc_seq0(&self) -> ESC_SEQ0_R {
+        ESC_SEQ0_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 16:23 - This register stores the second char used to replace the reg_esc_seq0 in data"]
     #[inline(always)]
-    pub fn uhci_esc_seq0_char1(&mut self) -> UHCI_ESC_SEQ0_CHAR1_W {
-        UHCI_ESC_SEQ0_CHAR1_W { w: self }
+    pub fn esc_seq0_char1(&mut self) -> ESC_SEQ0_CHAR1_W {
+        ESC_SEQ0_CHAR1_W { w: self }
     }
     #[doc = "Bits 8:15 - This register stores the first char used to replace reg_esc_seq0 in data."]
     #[inline(always)]
-    pub fn uhci_esc_seq0_char0(&mut self) -> UHCI_ESC_SEQ0_CHAR0_W {
-        UHCI_ESC_SEQ0_CHAR0_W { w: self }
+    pub fn esc_seq0_char0(&mut self) -> ESC_SEQ0_CHAR0_W {
+        ESC_SEQ0_CHAR0_W { w: self }
     }
     #[doc = "Bits 0:7 - This register stores the first substitute char used to replace the seperator char."]
     #[inline(always)]
-    pub fn uhci_esc_seq0(&mut self) -> UHCI_ESC_SEQ0_W {
-        UHCI_ESC_SEQ0_W { w: self }
+    pub fn esc_seq0(&mut self) -> ESC_SEQ0_W {
+        ESC_SEQ0_W { w: self }
     }
 }

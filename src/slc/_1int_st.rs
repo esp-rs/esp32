@@ -10,13 +10,13 @@ impl crate::ResetValue for super::_1INT_ST {
         0
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_ERR_EOF_INT_ST`"]
-pub type SLC_SLC1_TX_ERR_EOF_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_ERR_EOF_INT_ST`"]
-pub struct SLC_SLC1_TX_ERR_EOF_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TX_ERR_EOF_INT_ST`"]
+pub type SLC1_TX_ERR_EOF_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_ERR_EOF_INT_ST`"]
+pub struct SLC1_TX_ERR_EOF_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_ERR_EOF_INT_ST_W<'a> {
+impl<'a> SLC1_TX_ERR_EOF_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SLC_SLC1_TX_ERR_EOF_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_WR_RETRY_DONE_INT_ST`"]
-pub type SLC_SLC1_WR_RETRY_DONE_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_WR_RETRY_DONE_INT_ST`"]
-pub struct SLC_SLC1_WR_RETRY_DONE_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_WR_RETRY_DONE_INT_ST`"]
+pub type SLC1_WR_RETRY_DONE_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_WR_RETRY_DONE_INT_ST`"]
+pub struct SLC1_WR_RETRY_DONE_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_WR_RETRY_DONE_INT_ST_W<'a> {
+impl<'a> SLC1_WR_RETRY_DONE_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SLC_SLC1_WR_RETRY_DONE_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_HOST_RD_ACK_INT_ST`"]
-pub type SLC_SLC1_HOST_RD_ACK_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_HOST_RD_ACK_INT_ST`"]
-pub struct SLC_SLC1_HOST_RD_ACK_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_HOST_RD_ACK_INT_ST`"]
+pub type SLC1_HOST_RD_ACK_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_HOST_RD_ACK_INT_ST`"]
+pub struct SLC1_HOST_RD_ACK_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_HOST_RD_ACK_INT_ST_W<'a> {
+impl<'a> SLC1_HOST_RD_ACK_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> SLC_SLC1_HOST_RD_ACK_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_DSCR_EMPTY_INT_ST`"]
-pub type SLC_SLC1_TX_DSCR_EMPTY_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_DSCR_EMPTY_INT_ST`"]
-pub struct SLC_SLC1_TX_DSCR_EMPTY_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TX_DSCR_EMPTY_INT_ST`"]
+pub type SLC1_TX_DSCR_EMPTY_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_DSCR_EMPTY_INT_ST`"]
+pub struct SLC1_TX_DSCR_EMPTY_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_DSCR_EMPTY_INT_ST_W<'a> {
+impl<'a> SLC1_TX_DSCR_EMPTY_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> SLC_SLC1_TX_DSCR_EMPTY_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RX_DSCR_ERR_INT_ST`"]
-pub type SLC_SLC1_RX_DSCR_ERR_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_RX_DSCR_ERR_INT_ST`"]
-pub struct SLC_SLC1_RX_DSCR_ERR_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_RX_DSCR_ERR_INT_ST`"]
+pub type SLC1_RX_DSCR_ERR_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_RX_DSCR_ERR_INT_ST`"]
+pub struct SLC1_RX_DSCR_ERR_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RX_DSCR_ERR_INT_ST_W<'a> {
+impl<'a> SLC1_RX_DSCR_ERR_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> SLC_SLC1_RX_DSCR_ERR_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_DSCR_ERR_INT_ST`"]
-pub type SLC_SLC1_TX_DSCR_ERR_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_DSCR_ERR_INT_ST`"]
-pub struct SLC_SLC1_TX_DSCR_ERR_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TX_DSCR_ERR_INT_ST`"]
+pub type SLC1_TX_DSCR_ERR_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_DSCR_ERR_INT_ST`"]
+pub struct SLC1_TX_DSCR_ERR_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_DSCR_ERR_INT_ST_W<'a> {
+impl<'a> SLC1_TX_DSCR_ERR_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> SLC_SLC1_TX_DSCR_ERR_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TOHOST_INT_ST`"]
-pub type SLC_SLC1_TOHOST_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TOHOST_INT_ST`"]
-pub struct SLC_SLC1_TOHOST_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TOHOST_INT_ST`"]
+pub type SLC1_TOHOST_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TOHOST_INT_ST`"]
+pub struct SLC1_TOHOST_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TOHOST_INT_ST_W<'a> {
+impl<'a> SLC1_TOHOST_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> SLC_SLC1_TOHOST_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RX_EOF_INT_ST`"]
-pub type SLC_SLC1_RX_EOF_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_RX_EOF_INT_ST`"]
-pub struct SLC_SLC1_RX_EOF_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_RX_EOF_INT_ST`"]
+pub type SLC1_RX_EOF_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_RX_EOF_INT_ST`"]
+pub struct SLC1_RX_EOF_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RX_EOF_INT_ST_W<'a> {
+impl<'a> SLC1_RX_EOF_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> SLC_SLC1_RX_EOF_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RX_DONE_INT_ST`"]
-pub type SLC_SLC1_RX_DONE_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_RX_DONE_INT_ST`"]
-pub struct SLC_SLC1_RX_DONE_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_RX_DONE_INT_ST`"]
+pub type SLC1_RX_DONE_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_RX_DONE_INT_ST`"]
+pub struct SLC1_RX_DONE_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RX_DONE_INT_ST_W<'a> {
+impl<'a> SLC1_RX_DONE_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> SLC_SLC1_RX_DONE_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_SUC_EOF_INT_ST`"]
-pub type SLC_SLC1_TX_SUC_EOF_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_SUC_EOF_INT_ST`"]
-pub struct SLC_SLC1_TX_SUC_EOF_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TX_SUC_EOF_INT_ST`"]
+pub type SLC1_TX_SUC_EOF_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_SUC_EOF_INT_ST`"]
+pub struct SLC1_TX_SUC_EOF_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_SUC_EOF_INT_ST_W<'a> {
+impl<'a> SLC1_TX_SUC_EOF_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> SLC_SLC1_TX_SUC_EOF_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_DONE_INT_ST`"]
-pub type SLC_SLC1_TX_DONE_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_DONE_INT_ST`"]
-pub struct SLC_SLC1_TX_DONE_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TX_DONE_INT_ST`"]
+pub type SLC1_TX_DONE_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_DONE_INT_ST`"]
+pub struct SLC1_TX_DONE_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_DONE_INT_ST_W<'a> {
+impl<'a> SLC1_TX_DONE_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> SLC_SLC1_TX_DONE_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TOKEN1_1TO0_INT_ST`"]
-pub type SLC_SLC1_TOKEN1_1TO0_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TOKEN1_1TO0_INT_ST`"]
-pub struct SLC_SLC1_TOKEN1_1TO0_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TOKEN1_1TO0_INT_ST`"]
+pub type SLC1_TOKEN1_1TO0_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TOKEN1_1TO0_INT_ST`"]
+pub struct SLC1_TOKEN1_1TO0_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TOKEN1_1TO0_INT_ST_W<'a> {
+impl<'a> SLC1_TOKEN1_1TO0_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> SLC_SLC1_TOKEN1_1TO0_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TOKEN0_1TO0_INT_ST`"]
-pub type SLC_SLC1_TOKEN0_1TO0_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TOKEN0_1TO0_INT_ST`"]
-pub struct SLC_SLC1_TOKEN0_1TO0_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TOKEN0_1TO0_INT_ST`"]
+pub type SLC1_TOKEN0_1TO0_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TOKEN0_1TO0_INT_ST`"]
+pub struct SLC1_TOKEN0_1TO0_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TOKEN0_1TO0_INT_ST_W<'a> {
+impl<'a> SLC1_TOKEN0_1TO0_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> SLC_SLC1_TOKEN0_1TO0_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_OVF_INT_ST`"]
-pub type SLC_SLC1_TX_OVF_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_OVF_INT_ST`"]
-pub struct SLC_SLC1_TX_OVF_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TX_OVF_INT_ST`"]
+pub type SLC1_TX_OVF_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_OVF_INT_ST`"]
+pub struct SLC1_TX_OVF_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_OVF_INT_ST_W<'a> {
+impl<'a> SLC1_TX_OVF_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> SLC_SLC1_TX_OVF_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RX_UDF_INT_ST`"]
-pub type SLC_SLC1_RX_UDF_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_RX_UDF_INT_ST`"]
-pub struct SLC_SLC1_RX_UDF_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_RX_UDF_INT_ST`"]
+pub type SLC1_RX_UDF_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_RX_UDF_INT_ST`"]
+pub struct SLC1_RX_UDF_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RX_UDF_INT_ST_W<'a> {
+impl<'a> SLC1_RX_UDF_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -370,13 +370,13 @@ impl<'a> SLC_SLC1_RX_UDF_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_START_INT_ST`"]
-pub type SLC_SLC1_TX_START_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_START_INT_ST`"]
-pub struct SLC_SLC1_TX_START_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_TX_START_INT_ST`"]
+pub type SLC1_TX_START_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_START_INT_ST`"]
+pub struct SLC1_TX_START_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_START_INT_ST_W<'a> {
+impl<'a> SLC1_TX_START_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -394,13 +394,13 @@ impl<'a> SLC_SLC1_TX_START_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_RX_START_INT_ST`"]
-pub type SLC_SLC1_RX_START_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_RX_START_INT_ST`"]
-pub struct SLC_SLC1_RX_START_INT_ST_W<'a> {
+#[doc = "Reader of field `SLC1_RX_START_INT_ST`"]
+pub type SLC1_RX_START_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_RX_START_INT_ST`"]
+pub struct SLC1_RX_START_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_RX_START_INT_ST_W<'a> {
+impl<'a> SLC1_RX_START_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -418,13 +418,13 @@ impl<'a> SLC_SLC1_RX_START_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT15_INT_ST`"]
-pub type SLC_FRHOST_BIT15_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT15_INT_ST`"]
-pub struct SLC_FRHOST_BIT15_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT15_INT_ST`"]
+pub type FRHOST_BIT15_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT15_INT_ST`"]
+pub struct FRHOST_BIT15_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT15_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT15_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -442,13 +442,13 @@ impl<'a> SLC_FRHOST_BIT15_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT14_INT_ST`"]
-pub type SLC_FRHOST_BIT14_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT14_INT_ST`"]
-pub struct SLC_FRHOST_BIT14_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT14_INT_ST`"]
+pub type FRHOST_BIT14_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT14_INT_ST`"]
+pub struct FRHOST_BIT14_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT14_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT14_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -466,13 +466,13 @@ impl<'a> SLC_FRHOST_BIT14_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT13_INT_ST`"]
-pub type SLC_FRHOST_BIT13_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT13_INT_ST`"]
-pub struct SLC_FRHOST_BIT13_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT13_INT_ST`"]
+pub type FRHOST_BIT13_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT13_INT_ST`"]
+pub struct FRHOST_BIT13_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT13_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT13_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -490,13 +490,13 @@ impl<'a> SLC_FRHOST_BIT13_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT12_INT_ST`"]
-pub type SLC_FRHOST_BIT12_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT12_INT_ST`"]
-pub struct SLC_FRHOST_BIT12_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT12_INT_ST`"]
+pub type FRHOST_BIT12_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT12_INT_ST`"]
+pub struct FRHOST_BIT12_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT12_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT12_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -514,13 +514,13 @@ impl<'a> SLC_FRHOST_BIT12_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT11_INT_ST`"]
-pub type SLC_FRHOST_BIT11_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT11_INT_ST`"]
-pub struct SLC_FRHOST_BIT11_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT11_INT_ST`"]
+pub type FRHOST_BIT11_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT11_INT_ST`"]
+pub struct FRHOST_BIT11_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT11_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT11_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -538,13 +538,13 @@ impl<'a> SLC_FRHOST_BIT11_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT10_INT_ST`"]
-pub type SLC_FRHOST_BIT10_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT10_INT_ST`"]
-pub struct SLC_FRHOST_BIT10_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT10_INT_ST`"]
+pub type FRHOST_BIT10_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT10_INT_ST`"]
+pub struct FRHOST_BIT10_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT10_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT10_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -562,13 +562,13 @@ impl<'a> SLC_FRHOST_BIT10_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT9_INT_ST`"]
-pub type SLC_FRHOST_BIT9_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT9_INT_ST`"]
-pub struct SLC_FRHOST_BIT9_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT9_INT_ST`"]
+pub type FRHOST_BIT9_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT9_INT_ST`"]
+pub struct FRHOST_BIT9_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT9_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT9_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -586,13 +586,13 @@ impl<'a> SLC_FRHOST_BIT9_INT_ST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FRHOST_BIT8_INT_ST`"]
-pub type SLC_FRHOST_BIT8_INT_ST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_FRHOST_BIT8_INT_ST`"]
-pub struct SLC_FRHOST_BIT8_INT_ST_W<'a> {
+#[doc = "Reader of field `FRHOST_BIT8_INT_ST`"]
+pub type FRHOST_BIT8_INT_ST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FRHOST_BIT8_INT_ST`"]
+pub struct FRHOST_BIT8_INT_ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FRHOST_BIT8_INT_ST_W<'a> {
+impl<'a> FRHOST_BIT8_INT_ST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -613,254 +613,254 @@ impl<'a> SLC_FRHOST_BIT8_INT_ST_W<'a> {
 impl R {
     #[doc = "Bit 24"]
     #[inline(always)]
-    pub fn slc_slc1_tx_err_eof_int_st(&self) -> SLC_SLC1_TX_ERR_EOF_INT_ST_R {
-        SLC_SLC1_TX_ERR_EOF_INT_ST_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn slc1_tx_err_eof_int_st(&self) -> SLC1_TX_ERR_EOF_INT_ST_R {
+        SLC1_TX_ERR_EOF_INT_ST_R::new(((self.bits >> 24) & 0x01) != 0)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
-    pub fn slc_slc1_wr_retry_done_int_st(&self) -> SLC_SLC1_WR_RETRY_DONE_INT_ST_R {
-        SLC_SLC1_WR_RETRY_DONE_INT_ST_R::new(((self.bits >> 23) & 0x01) != 0)
+    pub fn slc1_wr_retry_done_int_st(&self) -> SLC1_WR_RETRY_DONE_INT_ST_R {
+        SLC1_WR_RETRY_DONE_INT_ST_R::new(((self.bits >> 23) & 0x01) != 0)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
-    pub fn slc_slc1_host_rd_ack_int_st(&self) -> SLC_SLC1_HOST_RD_ACK_INT_ST_R {
-        SLC_SLC1_HOST_RD_ACK_INT_ST_R::new(((self.bits >> 22) & 0x01) != 0)
+    pub fn slc1_host_rd_ack_int_st(&self) -> SLC1_HOST_RD_ACK_INT_ST_R {
+        SLC1_HOST_RD_ACK_INT_ST_R::new(((self.bits >> 22) & 0x01) != 0)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
-    pub fn slc_slc1_tx_dscr_empty_int_st(&self) -> SLC_SLC1_TX_DSCR_EMPTY_INT_ST_R {
-        SLC_SLC1_TX_DSCR_EMPTY_INT_ST_R::new(((self.bits >> 21) & 0x01) != 0)
+    pub fn slc1_tx_dscr_empty_int_st(&self) -> SLC1_TX_DSCR_EMPTY_INT_ST_R {
+        SLC1_TX_DSCR_EMPTY_INT_ST_R::new(((self.bits >> 21) & 0x01) != 0)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
-    pub fn slc_slc1_rx_dscr_err_int_st(&self) -> SLC_SLC1_RX_DSCR_ERR_INT_ST_R {
-        SLC_SLC1_RX_DSCR_ERR_INT_ST_R::new(((self.bits >> 20) & 0x01) != 0)
+    pub fn slc1_rx_dscr_err_int_st(&self) -> SLC1_RX_DSCR_ERR_INT_ST_R {
+        SLC1_RX_DSCR_ERR_INT_ST_R::new(((self.bits >> 20) & 0x01) != 0)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
-    pub fn slc_slc1_tx_dscr_err_int_st(&self) -> SLC_SLC1_TX_DSCR_ERR_INT_ST_R {
-        SLC_SLC1_TX_DSCR_ERR_INT_ST_R::new(((self.bits >> 19) & 0x01) != 0)
+    pub fn slc1_tx_dscr_err_int_st(&self) -> SLC1_TX_DSCR_ERR_INT_ST_R {
+        SLC1_TX_DSCR_ERR_INT_ST_R::new(((self.bits >> 19) & 0x01) != 0)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
-    pub fn slc_slc1_tohost_int_st(&self) -> SLC_SLC1_TOHOST_INT_ST_R {
-        SLC_SLC1_TOHOST_INT_ST_R::new(((self.bits >> 18) & 0x01) != 0)
+    pub fn slc1_tohost_int_st(&self) -> SLC1_TOHOST_INT_ST_R {
+        SLC1_TOHOST_INT_ST_R::new(((self.bits >> 18) & 0x01) != 0)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn slc_slc1_rx_eof_int_st(&self) -> SLC_SLC1_RX_EOF_INT_ST_R {
-        SLC_SLC1_RX_EOF_INT_ST_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn slc1_rx_eof_int_st(&self) -> SLC1_RX_EOF_INT_ST_R {
+        SLC1_RX_EOF_INT_ST_R::new(((self.bits >> 17) & 0x01) != 0)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn slc_slc1_rx_done_int_st(&self) -> SLC_SLC1_RX_DONE_INT_ST_R {
-        SLC_SLC1_RX_DONE_INT_ST_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn slc1_rx_done_int_st(&self) -> SLC1_RX_DONE_INT_ST_R {
+        SLC1_RX_DONE_INT_ST_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn slc_slc1_tx_suc_eof_int_st(&self) -> SLC_SLC1_TX_SUC_EOF_INT_ST_R {
-        SLC_SLC1_TX_SUC_EOF_INT_ST_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn slc1_tx_suc_eof_int_st(&self) -> SLC1_TX_SUC_EOF_INT_ST_R {
+        SLC1_TX_SUC_EOF_INT_ST_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn slc_slc1_tx_done_int_st(&self) -> SLC_SLC1_TX_DONE_INT_ST_R {
-        SLC_SLC1_TX_DONE_INT_ST_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn slc1_tx_done_int_st(&self) -> SLC1_TX_DONE_INT_ST_R {
+        SLC1_TX_DONE_INT_ST_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn slc_slc1_token1_1to0_int_st(&self) -> SLC_SLC1_TOKEN1_1TO0_INT_ST_R {
-        SLC_SLC1_TOKEN1_1TO0_INT_ST_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn slc1_token1_1to0_int_st(&self) -> SLC1_TOKEN1_1TO0_INT_ST_R {
+        SLC1_TOKEN1_1TO0_INT_ST_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn slc_slc1_token0_1to0_int_st(&self) -> SLC_SLC1_TOKEN0_1TO0_INT_ST_R {
-        SLC_SLC1_TOKEN0_1TO0_INT_ST_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn slc1_token0_1to0_int_st(&self) -> SLC1_TOKEN0_1TO0_INT_ST_R {
+        SLC1_TOKEN0_1TO0_INT_ST_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn slc_slc1_tx_ovf_int_st(&self) -> SLC_SLC1_TX_OVF_INT_ST_R {
-        SLC_SLC1_TX_OVF_INT_ST_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn slc1_tx_ovf_int_st(&self) -> SLC1_TX_OVF_INT_ST_R {
+        SLC1_TX_OVF_INT_ST_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn slc_slc1_rx_udf_int_st(&self) -> SLC_SLC1_RX_UDF_INT_ST_R {
-        SLC_SLC1_RX_UDF_INT_ST_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn slc1_rx_udf_int_st(&self) -> SLC1_RX_UDF_INT_ST_R {
+        SLC1_RX_UDF_INT_ST_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn slc_slc1_tx_start_int_st(&self) -> SLC_SLC1_TX_START_INT_ST_R {
-        SLC_SLC1_TX_START_INT_ST_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn slc1_tx_start_int_st(&self) -> SLC1_TX_START_INT_ST_R {
+        SLC1_TX_START_INT_ST_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn slc_slc1_rx_start_int_st(&self) -> SLC_SLC1_RX_START_INT_ST_R {
-        SLC_SLC1_RX_START_INT_ST_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn slc1_rx_start_int_st(&self) -> SLC1_RX_START_INT_ST_R {
+        SLC1_RX_START_INT_ST_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn slc_frhost_bit15_int_st(&self) -> SLC_FRHOST_BIT15_INT_ST_R {
-        SLC_FRHOST_BIT15_INT_ST_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn frhost_bit15_int_st(&self) -> FRHOST_BIT15_INT_ST_R {
+        FRHOST_BIT15_INT_ST_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn slc_frhost_bit14_int_st(&self) -> SLC_FRHOST_BIT14_INT_ST_R {
-        SLC_FRHOST_BIT14_INT_ST_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn frhost_bit14_int_st(&self) -> FRHOST_BIT14_INT_ST_R {
+        FRHOST_BIT14_INT_ST_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn slc_frhost_bit13_int_st(&self) -> SLC_FRHOST_BIT13_INT_ST_R {
-        SLC_FRHOST_BIT13_INT_ST_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn frhost_bit13_int_st(&self) -> FRHOST_BIT13_INT_ST_R {
+        FRHOST_BIT13_INT_ST_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn slc_frhost_bit12_int_st(&self) -> SLC_FRHOST_BIT12_INT_ST_R {
-        SLC_FRHOST_BIT12_INT_ST_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn frhost_bit12_int_st(&self) -> FRHOST_BIT12_INT_ST_R {
+        FRHOST_BIT12_INT_ST_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn slc_frhost_bit11_int_st(&self) -> SLC_FRHOST_BIT11_INT_ST_R {
-        SLC_FRHOST_BIT11_INT_ST_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn frhost_bit11_int_st(&self) -> FRHOST_BIT11_INT_ST_R {
+        FRHOST_BIT11_INT_ST_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn slc_frhost_bit10_int_st(&self) -> SLC_FRHOST_BIT10_INT_ST_R {
-        SLC_FRHOST_BIT10_INT_ST_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn frhost_bit10_int_st(&self) -> FRHOST_BIT10_INT_ST_R {
+        FRHOST_BIT10_INT_ST_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn slc_frhost_bit9_int_st(&self) -> SLC_FRHOST_BIT9_INT_ST_R {
-        SLC_FRHOST_BIT9_INT_ST_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn frhost_bit9_int_st(&self) -> FRHOST_BIT9_INT_ST_R {
+        FRHOST_BIT9_INT_ST_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn slc_frhost_bit8_int_st(&self) -> SLC_FRHOST_BIT8_INT_ST_R {
-        SLC_FRHOST_BIT8_INT_ST_R::new((self.bits & 0x01) != 0)
+    pub fn frhost_bit8_int_st(&self) -> FRHOST_BIT8_INT_ST_R {
+        FRHOST_BIT8_INT_ST_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 24"]
     #[inline(always)]
-    pub fn slc_slc1_tx_err_eof_int_st(&mut self) -> SLC_SLC1_TX_ERR_EOF_INT_ST_W {
-        SLC_SLC1_TX_ERR_EOF_INT_ST_W { w: self }
+    pub fn slc1_tx_err_eof_int_st(&mut self) -> SLC1_TX_ERR_EOF_INT_ST_W {
+        SLC1_TX_ERR_EOF_INT_ST_W { w: self }
     }
     #[doc = "Bit 23"]
     #[inline(always)]
-    pub fn slc_slc1_wr_retry_done_int_st(&mut self) -> SLC_SLC1_WR_RETRY_DONE_INT_ST_W {
-        SLC_SLC1_WR_RETRY_DONE_INT_ST_W { w: self }
+    pub fn slc1_wr_retry_done_int_st(&mut self) -> SLC1_WR_RETRY_DONE_INT_ST_W {
+        SLC1_WR_RETRY_DONE_INT_ST_W { w: self }
     }
     #[doc = "Bit 22"]
     #[inline(always)]
-    pub fn slc_slc1_host_rd_ack_int_st(&mut self) -> SLC_SLC1_HOST_RD_ACK_INT_ST_W {
-        SLC_SLC1_HOST_RD_ACK_INT_ST_W { w: self }
+    pub fn slc1_host_rd_ack_int_st(&mut self) -> SLC1_HOST_RD_ACK_INT_ST_W {
+        SLC1_HOST_RD_ACK_INT_ST_W { w: self }
     }
     #[doc = "Bit 21"]
     #[inline(always)]
-    pub fn slc_slc1_tx_dscr_empty_int_st(&mut self) -> SLC_SLC1_TX_DSCR_EMPTY_INT_ST_W {
-        SLC_SLC1_TX_DSCR_EMPTY_INT_ST_W { w: self }
+    pub fn slc1_tx_dscr_empty_int_st(&mut self) -> SLC1_TX_DSCR_EMPTY_INT_ST_W {
+        SLC1_TX_DSCR_EMPTY_INT_ST_W { w: self }
     }
     #[doc = "Bit 20"]
     #[inline(always)]
-    pub fn slc_slc1_rx_dscr_err_int_st(&mut self) -> SLC_SLC1_RX_DSCR_ERR_INT_ST_W {
-        SLC_SLC1_RX_DSCR_ERR_INT_ST_W { w: self }
+    pub fn slc1_rx_dscr_err_int_st(&mut self) -> SLC1_RX_DSCR_ERR_INT_ST_W {
+        SLC1_RX_DSCR_ERR_INT_ST_W { w: self }
     }
     #[doc = "Bit 19"]
     #[inline(always)]
-    pub fn slc_slc1_tx_dscr_err_int_st(&mut self) -> SLC_SLC1_TX_DSCR_ERR_INT_ST_W {
-        SLC_SLC1_TX_DSCR_ERR_INT_ST_W { w: self }
+    pub fn slc1_tx_dscr_err_int_st(&mut self) -> SLC1_TX_DSCR_ERR_INT_ST_W {
+        SLC1_TX_DSCR_ERR_INT_ST_W { w: self }
     }
     #[doc = "Bit 18"]
     #[inline(always)]
-    pub fn slc_slc1_tohost_int_st(&mut self) -> SLC_SLC1_TOHOST_INT_ST_W {
-        SLC_SLC1_TOHOST_INT_ST_W { w: self }
+    pub fn slc1_tohost_int_st(&mut self) -> SLC1_TOHOST_INT_ST_W {
+        SLC1_TOHOST_INT_ST_W { w: self }
     }
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn slc_slc1_rx_eof_int_st(&mut self) -> SLC_SLC1_RX_EOF_INT_ST_W {
-        SLC_SLC1_RX_EOF_INT_ST_W { w: self }
+    pub fn slc1_rx_eof_int_st(&mut self) -> SLC1_RX_EOF_INT_ST_W {
+        SLC1_RX_EOF_INT_ST_W { w: self }
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn slc_slc1_rx_done_int_st(&mut self) -> SLC_SLC1_RX_DONE_INT_ST_W {
-        SLC_SLC1_RX_DONE_INT_ST_W { w: self }
+    pub fn slc1_rx_done_int_st(&mut self) -> SLC1_RX_DONE_INT_ST_W {
+        SLC1_RX_DONE_INT_ST_W { w: self }
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn slc_slc1_tx_suc_eof_int_st(&mut self) -> SLC_SLC1_TX_SUC_EOF_INT_ST_W {
-        SLC_SLC1_TX_SUC_EOF_INT_ST_W { w: self }
+    pub fn slc1_tx_suc_eof_int_st(&mut self) -> SLC1_TX_SUC_EOF_INT_ST_W {
+        SLC1_TX_SUC_EOF_INT_ST_W { w: self }
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn slc_slc1_tx_done_int_st(&mut self) -> SLC_SLC1_TX_DONE_INT_ST_W {
-        SLC_SLC1_TX_DONE_INT_ST_W { w: self }
+    pub fn slc1_tx_done_int_st(&mut self) -> SLC1_TX_DONE_INT_ST_W {
+        SLC1_TX_DONE_INT_ST_W { w: self }
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn slc_slc1_token1_1to0_int_st(&mut self) -> SLC_SLC1_TOKEN1_1TO0_INT_ST_W {
-        SLC_SLC1_TOKEN1_1TO0_INT_ST_W { w: self }
+    pub fn slc1_token1_1to0_int_st(&mut self) -> SLC1_TOKEN1_1TO0_INT_ST_W {
+        SLC1_TOKEN1_1TO0_INT_ST_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn slc_slc1_token0_1to0_int_st(&mut self) -> SLC_SLC1_TOKEN0_1TO0_INT_ST_W {
-        SLC_SLC1_TOKEN0_1TO0_INT_ST_W { w: self }
+    pub fn slc1_token0_1to0_int_st(&mut self) -> SLC1_TOKEN0_1TO0_INT_ST_W {
+        SLC1_TOKEN0_1TO0_INT_ST_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn slc_slc1_tx_ovf_int_st(&mut self) -> SLC_SLC1_TX_OVF_INT_ST_W {
-        SLC_SLC1_TX_OVF_INT_ST_W { w: self }
+    pub fn slc1_tx_ovf_int_st(&mut self) -> SLC1_TX_OVF_INT_ST_W {
+        SLC1_TX_OVF_INT_ST_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn slc_slc1_rx_udf_int_st(&mut self) -> SLC_SLC1_RX_UDF_INT_ST_W {
-        SLC_SLC1_RX_UDF_INT_ST_W { w: self }
+    pub fn slc1_rx_udf_int_st(&mut self) -> SLC1_RX_UDF_INT_ST_W {
+        SLC1_RX_UDF_INT_ST_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn slc_slc1_tx_start_int_st(&mut self) -> SLC_SLC1_TX_START_INT_ST_W {
-        SLC_SLC1_TX_START_INT_ST_W { w: self }
+    pub fn slc1_tx_start_int_st(&mut self) -> SLC1_TX_START_INT_ST_W {
+        SLC1_TX_START_INT_ST_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn slc_slc1_rx_start_int_st(&mut self) -> SLC_SLC1_RX_START_INT_ST_W {
-        SLC_SLC1_RX_START_INT_ST_W { w: self }
+    pub fn slc1_rx_start_int_st(&mut self) -> SLC1_RX_START_INT_ST_W {
+        SLC1_RX_START_INT_ST_W { w: self }
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn slc_frhost_bit15_int_st(&mut self) -> SLC_FRHOST_BIT15_INT_ST_W {
-        SLC_FRHOST_BIT15_INT_ST_W { w: self }
+    pub fn frhost_bit15_int_st(&mut self) -> FRHOST_BIT15_INT_ST_W {
+        FRHOST_BIT15_INT_ST_W { w: self }
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn slc_frhost_bit14_int_st(&mut self) -> SLC_FRHOST_BIT14_INT_ST_W {
-        SLC_FRHOST_BIT14_INT_ST_W { w: self }
+    pub fn frhost_bit14_int_st(&mut self) -> FRHOST_BIT14_INT_ST_W {
+        FRHOST_BIT14_INT_ST_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn slc_frhost_bit13_int_st(&mut self) -> SLC_FRHOST_BIT13_INT_ST_W {
-        SLC_FRHOST_BIT13_INT_ST_W { w: self }
+    pub fn frhost_bit13_int_st(&mut self) -> FRHOST_BIT13_INT_ST_W {
+        FRHOST_BIT13_INT_ST_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn slc_frhost_bit12_int_st(&mut self) -> SLC_FRHOST_BIT12_INT_ST_W {
-        SLC_FRHOST_BIT12_INT_ST_W { w: self }
+    pub fn frhost_bit12_int_st(&mut self) -> FRHOST_BIT12_INT_ST_W {
+        FRHOST_BIT12_INT_ST_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn slc_frhost_bit11_int_st(&mut self) -> SLC_FRHOST_BIT11_INT_ST_W {
-        SLC_FRHOST_BIT11_INT_ST_W { w: self }
+    pub fn frhost_bit11_int_st(&mut self) -> FRHOST_BIT11_INT_ST_W {
+        FRHOST_BIT11_INT_ST_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn slc_frhost_bit10_int_st(&mut self) -> SLC_FRHOST_BIT10_INT_ST_W {
-        SLC_FRHOST_BIT10_INT_ST_W { w: self }
+    pub fn frhost_bit10_int_st(&mut self) -> FRHOST_BIT10_INT_ST_W {
+        FRHOST_BIT10_INT_ST_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn slc_frhost_bit9_int_st(&mut self) -> SLC_FRHOST_BIT9_INT_ST_W {
-        SLC_FRHOST_BIT9_INT_ST_W { w: self }
+    pub fn frhost_bit9_int_st(&mut self) -> FRHOST_BIT9_INT_ST_W {
+        FRHOST_BIT9_INT_ST_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn slc_frhost_bit8_int_st(&mut self) -> SLC_FRHOST_BIT8_INT_ST_W {
-        SLC_FRHOST_BIT8_INT_ST_W { w: self }
+    pub fn frhost_bit8_int_st(&mut self) -> FRHOST_BIT8_INT_ST_W {
+        FRHOST_BIT8_INT_ST_W { w: self }
     }
 }

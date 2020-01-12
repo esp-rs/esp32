@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TIMER3 {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_ROM_RAM_POWERUP_TIMER`"]
-pub type RTC_CNTL_ROM_RAM_POWERUP_TIMER_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_ROM_RAM_POWERUP_TIMER`"]
-pub struct RTC_CNTL_ROM_RAM_POWERUP_TIMER_W<'a> {
+#[doc = "Reader of field `ROM_RAM_POWERUP_TIMER`"]
+pub type ROM_RAM_POWERUP_TIMER_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ROM_RAM_POWERUP_TIMER`"]
+pub struct ROM_RAM_POWERUP_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_ROM_RAM_POWERUP_TIMER_W<'a> {
+impl<'a> ROM_RAM_POWERUP_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> RTC_CNTL_ROM_RAM_POWERUP_TIMER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_ROM_RAM_WAIT_TIMER`"]
-pub type RTC_CNTL_ROM_RAM_WAIT_TIMER_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RTC_CNTL_ROM_RAM_WAIT_TIMER`"]
-pub struct RTC_CNTL_ROM_RAM_WAIT_TIMER_W<'a> {
+#[doc = "Reader of field `ROM_RAM_WAIT_TIMER`"]
+pub type ROM_RAM_WAIT_TIMER_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `ROM_RAM_WAIT_TIMER`"]
+pub struct ROM_RAM_WAIT_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_ROM_RAM_WAIT_TIMER_W<'a> {
+impl<'a> ROM_RAM_WAIT_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> RTC_CNTL_ROM_RAM_WAIT_TIMER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_WIFI_POWERUP_TIMER`"]
-pub type RTC_CNTL_WIFI_POWERUP_TIMER_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_WIFI_POWERUP_TIMER`"]
-pub struct RTC_CNTL_WIFI_POWERUP_TIMER_W<'a> {
+#[doc = "Reader of field `WIFI_POWERUP_TIMER`"]
+pub type WIFI_POWERUP_TIMER_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `WIFI_POWERUP_TIMER`"]
+pub struct WIFI_POWERUP_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_WIFI_POWERUP_TIMER_W<'a> {
+impl<'a> WIFI_POWERUP_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -52,13 +52,13 @@ impl<'a> RTC_CNTL_WIFI_POWERUP_TIMER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_WIFI_WAIT_TIMER`"]
-pub type RTC_CNTL_WIFI_WAIT_TIMER_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RTC_CNTL_WIFI_WAIT_TIMER`"]
-pub struct RTC_CNTL_WIFI_WAIT_TIMER_W<'a> {
+#[doc = "Reader of field `WIFI_WAIT_TIMER`"]
+pub type WIFI_WAIT_TIMER_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `WIFI_WAIT_TIMER`"]
+pub struct WIFI_WAIT_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_WIFI_WAIT_TIMER_W<'a> {
+impl<'a> WIFI_WAIT_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -69,44 +69,44 @@ impl<'a> RTC_CNTL_WIFI_WAIT_TIMER_W<'a> {
 impl R {
     #[doc = "Bits 25:31"]
     #[inline(always)]
-    pub fn rtc_cntl_rom_ram_powerup_timer(&self) -> RTC_CNTL_ROM_RAM_POWERUP_TIMER_R {
-        RTC_CNTL_ROM_RAM_POWERUP_TIMER_R::new(((self.bits >> 25) & 0x7f) as u8)
+    pub fn rom_ram_powerup_timer(&self) -> ROM_RAM_POWERUP_TIMER_R {
+        ROM_RAM_POWERUP_TIMER_R::new(((self.bits >> 25) & 0x7f) as u8)
     }
     #[doc = "Bits 16:24"]
     #[inline(always)]
-    pub fn rtc_cntl_rom_ram_wait_timer(&self) -> RTC_CNTL_ROM_RAM_WAIT_TIMER_R {
-        RTC_CNTL_ROM_RAM_WAIT_TIMER_R::new(((self.bits >> 16) & 0x01ff) as u16)
+    pub fn rom_ram_wait_timer(&self) -> ROM_RAM_WAIT_TIMER_R {
+        ROM_RAM_WAIT_TIMER_R::new(((self.bits >> 16) & 0x01ff) as u16)
     }
     #[doc = "Bits 9:15"]
     #[inline(always)]
-    pub fn rtc_cntl_wifi_powerup_timer(&self) -> RTC_CNTL_WIFI_POWERUP_TIMER_R {
-        RTC_CNTL_WIFI_POWERUP_TIMER_R::new(((self.bits >> 9) & 0x7f) as u8)
+    pub fn wifi_powerup_timer(&self) -> WIFI_POWERUP_TIMER_R {
+        WIFI_POWERUP_TIMER_R::new(((self.bits >> 9) & 0x7f) as u8)
     }
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn rtc_cntl_wifi_wait_timer(&self) -> RTC_CNTL_WIFI_WAIT_TIMER_R {
-        RTC_CNTL_WIFI_WAIT_TIMER_R::new((self.bits & 0x01ff) as u16)
+    pub fn wifi_wait_timer(&self) -> WIFI_WAIT_TIMER_R {
+        WIFI_WAIT_TIMER_R::new((self.bits & 0x01ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 25:31"]
     #[inline(always)]
-    pub fn rtc_cntl_rom_ram_powerup_timer(&mut self) -> RTC_CNTL_ROM_RAM_POWERUP_TIMER_W {
-        RTC_CNTL_ROM_RAM_POWERUP_TIMER_W { w: self }
+    pub fn rom_ram_powerup_timer(&mut self) -> ROM_RAM_POWERUP_TIMER_W {
+        ROM_RAM_POWERUP_TIMER_W { w: self }
     }
     #[doc = "Bits 16:24"]
     #[inline(always)]
-    pub fn rtc_cntl_rom_ram_wait_timer(&mut self) -> RTC_CNTL_ROM_RAM_WAIT_TIMER_W {
-        RTC_CNTL_ROM_RAM_WAIT_TIMER_W { w: self }
+    pub fn rom_ram_wait_timer(&mut self) -> ROM_RAM_WAIT_TIMER_W {
+        ROM_RAM_WAIT_TIMER_W { w: self }
     }
     #[doc = "Bits 9:15"]
     #[inline(always)]
-    pub fn rtc_cntl_wifi_powerup_timer(&mut self) -> RTC_CNTL_WIFI_POWERUP_TIMER_W {
-        RTC_CNTL_WIFI_POWERUP_TIMER_W { w: self }
+    pub fn wifi_powerup_timer(&mut self) -> WIFI_POWERUP_TIMER_W {
+        WIFI_POWERUP_TIMER_W { w: self }
     }
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn rtc_cntl_wifi_wait_timer(&mut self) -> RTC_CNTL_WIFI_WAIT_TIMER_W {
-        RTC_CNTL_WIFI_WAIT_TIMER_W { w: self }
+    pub fn wifi_wait_timer(&mut self) -> WIFI_WAIT_TIMER_W {
+        WIFI_WAIT_TIMER_W { w: self }
     }
 }

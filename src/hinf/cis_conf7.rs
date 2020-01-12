@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CIS_CONF7 {
         0
     }
 }
-#[doc = "Reader of field `HINF_CIS_CONF_W7`"]
-pub type HINF_CIS_CONF_W7_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `HINF_CIS_CONF_W7`"]
-pub struct HINF_CIS_CONF_W7_W<'a> {
+#[doc = "Reader of field `CIS_CONF_W7`"]
+pub type CIS_CONF_W7_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `CIS_CONF_W7`"]
+pub struct CIS_CONF_W7_W<'a> {
     w: &'a mut W,
 }
-impl<'a> HINF_CIS_CONF_W7_W<'a> {
+impl<'a> CIS_CONF_W7_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> HINF_CIS_CONF_W7_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn hinf_cis_conf_w7(&self) -> HINF_CIS_CONF_W7_R {
-        HINF_CIS_CONF_W7_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn cis_conf_w7(&self) -> CIS_CONF_W7_R {
+        CIS_CONF_W7_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn hinf_cis_conf_w7(&mut self) -> HINF_CIS_CONF_W7_W {
-        HINF_CIS_CONF_W7_W { w: self }
+    pub fn cis_conf_w7(&mut self) -> CIS_CONF_W7_W {
+        CIS_CONF_W7_W { w: self }
     }
 }

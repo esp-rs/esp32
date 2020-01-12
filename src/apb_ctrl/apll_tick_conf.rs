@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APLL_TICK_CONF {
         0
     }
 }
-#[doc = "Reader of field `APB_CTRL_APLL_TICK_NUM`"]
-pub type APB_CTRL_APLL_TICK_NUM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `APB_CTRL_APLL_TICK_NUM`"]
-pub struct APB_CTRL_APLL_TICK_NUM_W<'a> {
+#[doc = "Reader of field `APLL_TICK_NUM`"]
+pub type APLL_TICK_NUM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `APLL_TICK_NUM`"]
+pub struct APLL_TICK_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> APB_CTRL_APLL_TICK_NUM_W<'a> {
+impl<'a> APLL_TICK_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> APB_CTRL_APLL_TICK_NUM_W<'a> {
 impl R {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn apb_ctrl_apll_tick_num(&self) -> APB_CTRL_APLL_TICK_NUM_R {
-        APB_CTRL_APLL_TICK_NUM_R::new((self.bits & 0xff) as u8)
+    pub fn apll_tick_num(&self) -> APLL_TICK_NUM_R {
+        APLL_TICK_NUM_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn apb_ctrl_apll_tick_num(&mut self) -> APB_CTRL_APLL_TICK_NUM_W {
-        APB_CTRL_APLL_TICK_NUM_W { w: self }
+    pub fn apll_tick_num(&mut self) -> APLL_TICK_NUM_W {
+        APLL_TICK_NUM_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_VECBASE_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_OUT_VECBASE_SEL`"]
-pub type DPORT_PRO_OUT_VECBASE_SEL_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_PRO_OUT_VECBASE_SEL`"]
-pub struct DPORT_PRO_OUT_VECBASE_SEL_W<'a> {
+#[doc = "Reader of field `PRO_OUT_VECBASE_SEL`"]
+pub type PRO_OUT_VECBASE_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PRO_OUT_VECBASE_SEL`"]
+pub struct PRO_OUT_VECBASE_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_OUT_VECBASE_SEL_W<'a> {
+impl<'a> PRO_OUT_VECBASE_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PRO_OUT_VECBASE_SEL_W<'a> {
 impl R {
     #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn dport_pro_out_vecbase_sel(&self) -> DPORT_PRO_OUT_VECBASE_SEL_R {
-        DPORT_PRO_OUT_VECBASE_SEL_R::new((self.bits & 0x03) as u8)
+    pub fn pro_out_vecbase_sel(&self) -> PRO_OUT_VECBASE_SEL_R {
+        PRO_OUT_VECBASE_SEL_R::new((self.bits & 0x03) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn dport_pro_out_vecbase_sel(&mut self) -> DPORT_PRO_OUT_VECBASE_SEL_W {
-        DPORT_PRO_OUT_VECBASE_SEL_W { w: self }
+    pub fn pro_out_vecbase_sel(&mut self) -> PRO_OUT_VECBASE_SEL_W {
+        PRO_OUT_VECBASE_SEL_W { w: self }
     }
 }

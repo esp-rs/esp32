@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CAP_CH1 {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_CAP1_VALUE`"]
-pub type MCPWM_CAP1_VALUE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `MCPWM_CAP1_VALUE`"]
-pub struct MCPWM_CAP1_VALUE_W<'a> {
+#[doc = "Reader of field `CAP1_VALUE`"]
+pub type CAP1_VALUE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `CAP1_VALUE`"]
+pub struct CAP1_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP1_VALUE_W<'a> {
+impl<'a> CAP1_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> MCPWM_CAP1_VALUE_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Value of last capture on channel 1"]
     #[inline(always)]
-    pub fn mcpwm_cap1_value(&self) -> MCPWM_CAP1_VALUE_R {
-        MCPWM_CAP1_VALUE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn cap1_value(&self) -> CAP1_VALUE_R {
+        CAP1_VALUE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Value of last capture on channel 1"]
     #[inline(always)]
-    pub fn mcpwm_cap1_value(&mut self) -> MCPWM_CAP1_VALUE_W {
-        MCPWM_CAP1_VALUE_W { w: self }
+    pub fn cap1_value(&mut self) -> CAP1_VALUE_W {
+        CAP1_VALUE_W { w: self }
     }
 }

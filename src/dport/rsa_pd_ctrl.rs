@@ -10,13 +10,13 @@ impl crate::ResetValue for super::RSA_PD_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_RSA_PD`"]
-pub type DPORT_RSA_PD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_RSA_PD`"]
-pub struct DPORT_RSA_PD_W<'a> {
+#[doc = "Reader of field `RSA_PD`"]
+pub type RSA_PD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RSA_PD`"]
+pub struct RSA_PD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_RSA_PD_W<'a> {
+impl<'a> RSA_PD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_RSA_PD_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_rsa_pd(&self) -> DPORT_RSA_PD_R {
-        DPORT_RSA_PD_R::new((self.bits & 0x01) != 0)
+    pub fn rsa_pd(&self) -> RSA_PD_R {
+        RSA_PD_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_rsa_pd(&mut self) -> DPORT_RSA_PD_W {
-        DPORT_RSA_PD_W { w: self }
+    pub fn rsa_pd(&mut self) -> RSA_PD_W {
+        RSA_PD_W { w: self }
     }
 }

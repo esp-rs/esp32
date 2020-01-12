@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INLINK_DSCR_BF1 {
         0
     }
 }
-#[doc = "Reader of field `SPI_DMA_INLINK_DSCR_BF1`"]
-pub type SPI_DMA_INLINK_DSCR_BF1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_DMA_INLINK_DSCR_BF1`"]
-pub struct SPI_DMA_INLINK_DSCR_BF1_W<'a> {
+#[doc = "Reader of field `DMA_INLINK_DSCR_BF1`"]
+pub type DMA_INLINK_DSCR_BF1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `DMA_INLINK_DSCR_BF1`"]
+pub struct DMA_INLINK_DSCR_BF1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_DMA_INLINK_DSCR_BF1_W<'a> {
+impl<'a> DMA_INLINK_DSCR_BF1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_DMA_INLINK_DSCR_BF1_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - The content of current in descriptor data buffer pointer."]
     #[inline(always)]
-    pub fn spi_dma_inlink_dscr_bf1(&self) -> SPI_DMA_INLINK_DSCR_BF1_R {
-        SPI_DMA_INLINK_DSCR_BF1_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn dma_inlink_dscr_bf1(&self) -> DMA_INLINK_DSCR_BF1_R {
+        DMA_INLINK_DSCR_BF1_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - The content of current in descriptor data buffer pointer."]
     #[inline(always)]
-    pub fn spi_dma_inlink_dscr_bf1(&mut self) -> SPI_DMA_INLINK_DSCR_BF1_W {
-        SPI_DMA_INLINK_DSCR_BF1_W { w: self }
+    pub fn dma_inlink_dscr_bf1(&mut self) -> DMA_INLINK_DSCR_BF1_W {
+        DMA_INLINK_DSCR_BF1_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLAVE_ADDR {
         0
     }
 }
-#[doc = "Reader of field `RTC_I2C_SLAVE_ADDR_10BIT`"]
-pub type RTC_I2C_SLAVE_ADDR_10BIT_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_I2C_SLAVE_ADDR_10BIT`"]
-pub struct RTC_I2C_SLAVE_ADDR_10BIT_W<'a> {
+#[doc = "Reader of field `SLAVE_ADDR_10BIT`"]
+pub type SLAVE_ADDR_10BIT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLAVE_ADDR_10BIT`"]
+pub struct SLAVE_ADDR_10BIT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_SLAVE_ADDR_10BIT_W<'a> {
+impl<'a> SLAVE_ADDR_10BIT_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_I2C_SLAVE_ADDR_10BIT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_I2C_SLAVE_ADDR`"]
-pub type RTC_I2C_SLAVE_ADDR_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RTC_I2C_SLAVE_ADDR`"]
-pub struct RTC_I2C_SLAVE_ADDR_W<'a> {
+#[doc = "Reader of field `SLAVE_ADDR`"]
+pub type SLAVE_ADDR_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `SLAVE_ADDR`"]
+pub struct SLAVE_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_SLAVE_ADDR_W<'a> {
+impl<'a> SLAVE_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> RTC_I2C_SLAVE_ADDR_W<'a> {
 impl R {
     #[doc = "Bit 31 - Set if local slave address is 10-bit"]
     #[inline(always)]
-    pub fn rtc_i2c_slave_addr_10bit(&self) -> RTC_I2C_SLAVE_ADDR_10BIT_R {
-        RTC_I2C_SLAVE_ADDR_10BIT_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn slave_addr_10bit(&self) -> SLAVE_ADDR_10BIT_R {
+        SLAVE_ADDR_10BIT_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bits 0:14 - local slave address"]
     #[inline(always)]
-    pub fn rtc_i2c_slave_addr(&self) -> RTC_I2C_SLAVE_ADDR_R {
-        RTC_I2C_SLAVE_ADDR_R::new((self.bits & 0x7fff) as u16)
+    pub fn slave_addr(&self) -> SLAVE_ADDR_R {
+        SLAVE_ADDR_R::new((self.bits & 0x7fff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 31 - Set if local slave address is 10-bit"]
     #[inline(always)]
-    pub fn rtc_i2c_slave_addr_10bit(&mut self) -> RTC_I2C_SLAVE_ADDR_10BIT_W {
-        RTC_I2C_SLAVE_ADDR_10BIT_W { w: self }
+    pub fn slave_addr_10bit(&mut self) -> SLAVE_ADDR_10BIT_W {
+        SLAVE_ADDR_10BIT_W { w: self }
     }
     #[doc = "Bits 0:14 - local slave address"]
     #[inline(always)]
-    pub fn rtc_i2c_slave_addr(&mut self) -> RTC_I2C_SLAVE_ADDR_W {
-        RTC_I2C_SLAVE_ADDR_W { w: self }
+    pub fn slave_addr(&mut self) -> SLAVE_ADDR_W {
+        SLAVE_ADDR_W { w: self }
     }
 }

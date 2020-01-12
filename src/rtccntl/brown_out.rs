@@ -10,13 +10,13 @@ impl crate::ResetValue for super::BROWN_OUT {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_BROWN_OUT_DET`"]
-pub type RTC_CNTL_BROWN_OUT_DET_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_BROWN_OUT_DET`"]
-pub struct RTC_CNTL_BROWN_OUT_DET_W<'a> {
+#[doc = "Reader of field `BROWN_OUT_DET`"]
+pub type BROWN_OUT_DET_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BROWN_OUT_DET`"]
+pub struct BROWN_OUT_DET_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_BROWN_OUT_DET_W<'a> {
+impl<'a> BROWN_OUT_DET_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_BROWN_OUT_DET_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_BROWN_OUT_ENA`"]
-pub type RTC_CNTL_BROWN_OUT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_BROWN_OUT_ENA`"]
-pub struct RTC_CNTL_BROWN_OUT_ENA_W<'a> {
+#[doc = "Reader of field `BROWN_OUT_ENA`"]
+pub type BROWN_OUT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BROWN_OUT_ENA`"]
+pub struct BROWN_OUT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_BROWN_OUT_ENA_W<'a> {
+impl<'a> BROWN_OUT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> RTC_CNTL_BROWN_OUT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_DBROWN_OUT_THRES`"]
-pub type RTC_CNTL_DBROWN_OUT_THRES_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_DBROWN_OUT_THRES`"]
-pub struct RTC_CNTL_DBROWN_OUT_THRES_W<'a> {
+#[doc = "Reader of field `DBROWN_OUT_THRES`"]
+pub type DBROWN_OUT_THRES_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DBROWN_OUT_THRES`"]
+pub struct DBROWN_OUT_THRES_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_DBROWN_OUT_THRES_W<'a> {
+impl<'a> DBROWN_OUT_THRES_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> RTC_CNTL_DBROWN_OUT_THRES_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_BROWN_OUT_RST_ENA`"]
-pub type RTC_CNTL_BROWN_OUT_RST_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_BROWN_OUT_RST_ENA`"]
-pub struct RTC_CNTL_BROWN_OUT_RST_ENA_W<'a> {
+#[doc = "Reader of field `BROWN_OUT_RST_ENA`"]
+pub type BROWN_OUT_RST_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BROWN_OUT_RST_ENA`"]
+pub struct BROWN_OUT_RST_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_BROWN_OUT_RST_ENA_W<'a> {
+impl<'a> BROWN_OUT_RST_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -96,13 +96,13 @@ impl<'a> RTC_CNTL_BROWN_OUT_RST_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_BROWN_OUT_RST_WAIT`"]
-pub type RTC_CNTL_BROWN_OUT_RST_WAIT_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RTC_CNTL_BROWN_OUT_RST_WAIT`"]
-pub struct RTC_CNTL_BROWN_OUT_RST_WAIT_W<'a> {
+#[doc = "Reader of field `BROWN_OUT_RST_WAIT`"]
+pub type BROWN_OUT_RST_WAIT_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `BROWN_OUT_RST_WAIT`"]
+pub struct BROWN_OUT_RST_WAIT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_BROWN_OUT_RST_WAIT_W<'a> {
+impl<'a> BROWN_OUT_RST_WAIT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -110,13 +110,13 @@ impl<'a> RTC_CNTL_BROWN_OUT_RST_WAIT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_BROWN_OUT_PD_RF_ENA`"]
-pub type RTC_CNTL_BROWN_OUT_PD_RF_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_BROWN_OUT_PD_RF_ENA`"]
-pub struct RTC_CNTL_BROWN_OUT_PD_RF_ENA_W<'a> {
+#[doc = "Reader of field `BROWN_OUT_PD_RF_ENA`"]
+pub type BROWN_OUT_PD_RF_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BROWN_OUT_PD_RF_ENA`"]
+pub struct BROWN_OUT_PD_RF_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_BROWN_OUT_PD_RF_ENA_W<'a> {
+impl<'a> BROWN_OUT_PD_RF_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -134,13 +134,13 @@ impl<'a> RTC_CNTL_BROWN_OUT_PD_RF_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA`"]
-pub type RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA`"]
-pub struct RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_W<'a> {
+#[doc = "Reader of field `BROWN_OUT_CLOSE_FLASH_ENA`"]
+pub type BROWN_OUT_CLOSE_FLASH_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `BROWN_OUT_CLOSE_FLASH_ENA`"]
+pub struct BROWN_OUT_CLOSE_FLASH_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_W<'a> {
+impl<'a> BROWN_OUT_CLOSE_FLASH_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -161,74 +161,74 @@ impl<'a> RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_W<'a> {
 impl R {
     #[doc = "Bit 31 - brown out detect"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_det(&self) -> RTC_CNTL_BROWN_OUT_DET_R {
-        RTC_CNTL_BROWN_OUT_DET_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn brown_out_det(&self) -> BROWN_OUT_DET_R {
+        BROWN_OUT_DET_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bit 30 - enable brown out"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_ena(&self) -> RTC_CNTL_BROWN_OUT_ENA_R {
-        RTC_CNTL_BROWN_OUT_ENA_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn brown_out_ena(&self) -> BROWN_OUT_ENA_R {
+        BROWN_OUT_ENA_R::new(((self.bits >> 30) & 0x01) != 0)
     }
     #[doc = "Bits 27:29 - brown out threshold"]
     #[inline(always)]
-    pub fn rtc_cntl_dbrown_out_thres(&self) -> RTC_CNTL_DBROWN_OUT_THRES_R {
-        RTC_CNTL_DBROWN_OUT_THRES_R::new(((self.bits >> 27) & 0x07) as u8)
+    pub fn dbrown_out_thres(&self) -> DBROWN_OUT_THRES_R {
+        DBROWN_OUT_THRES_R::new(((self.bits >> 27) & 0x07) as u8)
     }
     #[doc = "Bit 26 - enable brown out reset"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_rst_ena(&self) -> RTC_CNTL_BROWN_OUT_RST_ENA_R {
-        RTC_CNTL_BROWN_OUT_RST_ENA_R::new(((self.bits >> 26) & 0x01) != 0)
+    pub fn brown_out_rst_ena(&self) -> BROWN_OUT_RST_ENA_R {
+        BROWN_OUT_RST_ENA_R::new(((self.bits >> 26) & 0x01) != 0)
     }
     #[doc = "Bits 16:25 - brown out reset wait cycles"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_rst_wait(&self) -> RTC_CNTL_BROWN_OUT_RST_WAIT_R {
-        RTC_CNTL_BROWN_OUT_RST_WAIT_R::new(((self.bits >> 16) & 0x03ff) as u16)
+    pub fn brown_out_rst_wait(&self) -> BROWN_OUT_RST_WAIT_R {
+        BROWN_OUT_RST_WAIT_R::new(((self.bits >> 16) & 0x03ff) as u16)
     }
     #[doc = "Bit 15 - enable power down RF when brown out happens"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_pd_rf_ena(&self) -> RTC_CNTL_BROWN_OUT_PD_RF_ENA_R {
-        RTC_CNTL_BROWN_OUT_PD_RF_ENA_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn brown_out_pd_rf_ena(&self) -> BROWN_OUT_PD_RF_ENA_R {
+        BROWN_OUT_PD_RF_ENA_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14 - enable close flash when brown out happens"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_close_flash_ena(&self) -> RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_R {
-        RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn brown_out_close_flash_ena(&self) -> BROWN_OUT_CLOSE_FLASH_ENA_R {
+        BROWN_OUT_CLOSE_FLASH_ENA_R::new(((self.bits >> 14) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31 - brown out detect"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_det(&mut self) -> RTC_CNTL_BROWN_OUT_DET_W {
-        RTC_CNTL_BROWN_OUT_DET_W { w: self }
+    pub fn brown_out_det(&mut self) -> BROWN_OUT_DET_W {
+        BROWN_OUT_DET_W { w: self }
     }
     #[doc = "Bit 30 - enable brown out"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_ena(&mut self) -> RTC_CNTL_BROWN_OUT_ENA_W {
-        RTC_CNTL_BROWN_OUT_ENA_W { w: self }
+    pub fn brown_out_ena(&mut self) -> BROWN_OUT_ENA_W {
+        BROWN_OUT_ENA_W { w: self }
     }
     #[doc = "Bits 27:29 - brown out threshold"]
     #[inline(always)]
-    pub fn rtc_cntl_dbrown_out_thres(&mut self) -> RTC_CNTL_DBROWN_OUT_THRES_W {
-        RTC_CNTL_DBROWN_OUT_THRES_W { w: self }
+    pub fn dbrown_out_thres(&mut self) -> DBROWN_OUT_THRES_W {
+        DBROWN_OUT_THRES_W { w: self }
     }
     #[doc = "Bit 26 - enable brown out reset"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_rst_ena(&mut self) -> RTC_CNTL_BROWN_OUT_RST_ENA_W {
-        RTC_CNTL_BROWN_OUT_RST_ENA_W { w: self }
+    pub fn brown_out_rst_ena(&mut self) -> BROWN_OUT_RST_ENA_W {
+        BROWN_OUT_RST_ENA_W { w: self }
     }
     #[doc = "Bits 16:25 - brown out reset wait cycles"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_rst_wait(&mut self) -> RTC_CNTL_BROWN_OUT_RST_WAIT_W {
-        RTC_CNTL_BROWN_OUT_RST_WAIT_W { w: self }
+    pub fn brown_out_rst_wait(&mut self) -> BROWN_OUT_RST_WAIT_W {
+        BROWN_OUT_RST_WAIT_W { w: self }
     }
     #[doc = "Bit 15 - enable power down RF when brown out happens"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_pd_rf_ena(&mut self) -> RTC_CNTL_BROWN_OUT_PD_RF_ENA_W {
-        RTC_CNTL_BROWN_OUT_PD_RF_ENA_W { w: self }
+    pub fn brown_out_pd_rf_ena(&mut self) -> BROWN_OUT_PD_RF_ENA_W {
+        BROWN_OUT_PD_RF_ENA_W { w: self }
     }
     #[doc = "Bit 14 - enable close flash when brown out happens"]
     #[inline(always)]
-    pub fn rtc_cntl_brown_out_close_flash_ena(&mut self) -> RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_W {
-        RTC_CNTL_BROWN_OUT_CLOSE_FLASH_ENA_W { w: self }
+    pub fn brown_out_close_flash_ena(&mut self) -> BROWN_OUT_CLOSE_FLASH_ENA_W {
+        BROWN_OUT_CLOSE_FLASH_ENA_W { w: self }
     }
 }

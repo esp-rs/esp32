@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CPU_INTR_FROM_CPU_0 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_CPU_INTR_FROM_CPU_0`"]
-pub type DPORT_CPU_INTR_FROM_CPU_0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_CPU_INTR_FROM_CPU_0`"]
-pub struct DPORT_CPU_INTR_FROM_CPU_0_W<'a> {
+#[doc = "Reader of field `CPU_INTR_FROM_CPU_0`"]
+pub type CPU_INTR_FROM_CPU_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CPU_INTR_FROM_CPU_0`"]
+pub struct CPU_INTR_FROM_CPU_0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_CPU_INTR_FROM_CPU_0_W<'a> {
+impl<'a> CPU_INTR_FROM_CPU_0_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_CPU_INTR_FROM_CPU_0_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_cpu_intr_from_cpu_0(&self) -> DPORT_CPU_INTR_FROM_CPU_0_R {
-        DPORT_CPU_INTR_FROM_CPU_0_R::new((self.bits & 0x01) != 0)
+    pub fn cpu_intr_from_cpu_0(&self) -> CPU_INTR_FROM_CPU_0_R {
+        CPU_INTR_FROM_CPU_0_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_cpu_intr_from_cpu_0(&mut self) -> DPORT_CPU_INTR_FROM_CPU_0_W {
-        DPORT_CPU_INTR_FROM_CPU_0_W { w: self }
+    pub fn cpu_intr_from_cpu_0(&mut self) -> CPU_INTR_FROM_CPU_0_W {
+        CPU_INTR_FROM_CPU_0_W { w: self }
     }
 }

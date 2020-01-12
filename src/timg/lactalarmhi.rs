@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LACTALARMHI {
         0
     }
 }
-#[doc = "Reader of field `TIMG_LACT_ALARM_HI`"]
-pub type TIMG_LACT_ALARM_HI_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_LACT_ALARM_HI`"]
-pub struct TIMG_LACT_ALARM_HI_W<'a> {
+#[doc = "Reader of field `LACT_ALARM_HI`"]
+pub type LACT_ALARM_HI_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `LACT_ALARM_HI`"]
+pub struct LACT_ALARM_HI_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_ALARM_HI_W<'a> {
+impl<'a> LACT_ALARM_HI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_LACT_ALARM_HI_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn timg_lact_alarm_hi(&self) -> TIMG_LACT_ALARM_HI_R {
-        TIMG_LACT_ALARM_HI_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn lact_alarm_hi(&self) -> LACT_ALARM_HI_R {
+        LACT_ALARM_HI_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn timg_lact_alarm_hi(&mut self) -> TIMG_LACT_ALARM_HI_W {
-        TIMG_LACT_ALARM_HI_W { w: self }
+    pub fn lact_alarm_hi(&mut self) -> LACT_ALARM_HI_W {
+        LACT_ALARM_HI_W { w: self }
     }
 }

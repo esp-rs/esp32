@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLP_TIMER0 {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_SLP_VAL_LO`"]
-pub type RTC_CNTL_SLP_VAL_LO_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_CNTL_SLP_VAL_LO`"]
-pub struct RTC_CNTL_SLP_VAL_LO_W<'a> {
+#[doc = "Reader of field `SLP_VAL_LO`"]
+pub type SLP_VAL_LO_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SLP_VAL_LO`"]
+pub struct SLP_VAL_LO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_SLP_VAL_LO_W<'a> {
+impl<'a> SLP_VAL_LO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_CNTL_SLP_VAL_LO_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - RTC sleep timer low 32 bits"]
     #[inline(always)]
-    pub fn rtc_cntl_slp_val_lo(&self) -> RTC_CNTL_SLP_VAL_LO_R {
-        RTC_CNTL_SLP_VAL_LO_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn slp_val_lo(&self) -> SLP_VAL_LO_R {
+        SLP_VAL_LO_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - RTC sleep timer low 32 bits"]
     #[inline(always)]
-    pub fn rtc_cntl_slp_val_lo(&mut self) -> RTC_CNTL_SLP_VAL_LO_W {
-        RTC_CNTL_SLP_VAL_LO_W { w: self }
+    pub fn slp_val_lo(&mut self) -> SLP_VAL_LO_W {
+        SLP_VAL_LO_W { w: self }
     }
 }

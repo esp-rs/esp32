@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TOKEN_LAT {
         0
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TOKEN`"]
-pub type SLC_SLC1_TOKEN_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SLC_SLC1_TOKEN`"]
-pub struct SLC_SLC1_TOKEN_W<'a> {
+#[doc = "Reader of field `SLC1_TOKEN`"]
+pub type SLC1_TOKEN_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `SLC1_TOKEN`"]
+pub struct SLC1_TOKEN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TOKEN_W<'a> {
+impl<'a> SLC1_TOKEN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SLC_SLC1_TOKEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC0_TOKEN`"]
-pub type SLC_SLC0_TOKEN_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SLC_SLC0_TOKEN`"]
-pub struct SLC_SLC0_TOKEN_W<'a> {
+#[doc = "Reader of field `SLC0_TOKEN`"]
+pub type SLC0_TOKEN_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `SLC0_TOKEN`"]
+pub struct SLC0_TOKEN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC0_TOKEN_W<'a> {
+impl<'a> SLC0_TOKEN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> SLC_SLC0_TOKEN_W<'a> {
 impl R {
     #[doc = "Bits 16:27"]
     #[inline(always)]
-    pub fn slc_slc1_token(&self) -> SLC_SLC1_TOKEN_R {
-        SLC_SLC1_TOKEN_R::new(((self.bits >> 16) & 0x0fff) as u16)
+    pub fn slc1_token(&self) -> SLC1_TOKEN_R {
+        SLC1_TOKEN_R::new(((self.bits >> 16) & 0x0fff) as u16)
     }
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn slc_slc0_token(&self) -> SLC_SLC0_TOKEN_R {
-        SLC_SLC0_TOKEN_R::new((self.bits & 0x0fff) as u16)
+    pub fn slc0_token(&self) -> SLC0_TOKEN_R {
+        SLC0_TOKEN_R::new((self.bits & 0x0fff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:27"]
     #[inline(always)]
-    pub fn slc_slc1_token(&mut self) -> SLC_SLC1_TOKEN_W {
-        SLC_SLC1_TOKEN_W { w: self }
+    pub fn slc1_token(&mut self) -> SLC1_TOKEN_W {
+        SLC1_TOKEN_W { w: self }
     }
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn slc_slc0_token(&mut self) -> SLC_SLC0_TOKEN_W {
-        SLC_SLC0_TOKEN_W { w: self }
+    pub fn slc0_token(&mut self) -> SLC0_TOKEN_W {
+        SLC0_TOKEN_W { w: self }
     }
 }

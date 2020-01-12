@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_TOUCH_OUT2 {
         0
     }
 }
-#[doc = "Reader of field `SENS_TOUCH_MEAS_OUT2`"]
-pub type SENS_TOUCH_MEAS_OUT2_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TOUCH_MEAS_OUT2`"]
-pub struct SENS_TOUCH_MEAS_OUT2_W<'a> {
+#[doc = "Reader of field `TOUCH_MEAS_OUT2`"]
+pub type TOUCH_MEAS_OUT2_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TOUCH_MEAS_OUT2`"]
+pub struct TOUCH_MEAS_OUT2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TOUCH_MEAS_OUT2_W<'a> {
+impl<'a> TOUCH_MEAS_OUT2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SENS_TOUCH_MEAS_OUT2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TOUCH_MEAS_OUT3`"]
-pub type SENS_TOUCH_MEAS_OUT3_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TOUCH_MEAS_OUT3`"]
-pub struct SENS_TOUCH_MEAS_OUT3_W<'a> {
+#[doc = "Reader of field `TOUCH_MEAS_OUT3`"]
+pub type TOUCH_MEAS_OUT3_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TOUCH_MEAS_OUT3`"]
+pub struct TOUCH_MEAS_OUT3_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TOUCH_MEAS_OUT3_W<'a> {
+impl<'a> TOUCH_MEAS_OUT3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> SENS_TOUCH_MEAS_OUT3_W<'a> {
 impl R {
     #[doc = "Bits 16:31 - the counter for touch pad 2"]
     #[inline(always)]
-    pub fn sens_touch_meas_out2(&self) -> SENS_TOUCH_MEAS_OUT2_R {
-        SENS_TOUCH_MEAS_OUT2_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn touch_meas_out2(&self) -> TOUCH_MEAS_OUT2_R {
+        TOUCH_MEAS_OUT2_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bits 0:15 - the counter for touch pad 3"]
     #[inline(always)]
-    pub fn sens_touch_meas_out3(&self) -> SENS_TOUCH_MEAS_OUT3_R {
-        SENS_TOUCH_MEAS_OUT3_R::new((self.bits & 0xffff) as u16)
+    pub fn touch_meas_out3(&self) -> TOUCH_MEAS_OUT3_R {
+        TOUCH_MEAS_OUT3_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:31 - the counter for touch pad 2"]
     #[inline(always)]
-    pub fn sens_touch_meas_out2(&mut self) -> SENS_TOUCH_MEAS_OUT2_W {
-        SENS_TOUCH_MEAS_OUT2_W { w: self }
+    pub fn touch_meas_out2(&mut self) -> TOUCH_MEAS_OUT2_W {
+        TOUCH_MEAS_OUT2_W { w: self }
     }
     #[doc = "Bits 0:15 - the counter for touch pad 3"]
     #[inline(always)]
-    pub fn sens_touch_meas_out3(&mut self) -> SENS_TOUCH_MEAS_OUT3_W {
-        SENS_TOUCH_MEAS_OUT3_W { w: self }
+    pub fn touch_meas_out3(&mut self) -> TOUCH_MEAS_OUT3_W {
+        TOUCH_MEAS_OUT3_W { w: self }
     }
 }

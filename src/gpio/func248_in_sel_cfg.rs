@@ -10,13 +10,13 @@ impl crate::ResetValue for super::FUNC248_IN_SEL_CFG {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SIG248_IN_SEL`"]
-pub type GPIO_SIG248_IN_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_SIG248_IN_SEL`"]
-pub struct GPIO_SIG248_IN_SEL_W<'a> {
+#[doc = "Reader of field `SIG248_IN_SEL`"]
+pub type SIG248_IN_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SIG248_IN_SEL`"]
+pub struct SIG248_IN_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SIG248_IN_SEL_W<'a> {
+impl<'a> SIG248_IN_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> GPIO_SIG248_IN_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_FUNC248_IN_INV_SEL`"]
-pub type GPIO_FUNC248_IN_INV_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_FUNC248_IN_INV_SEL`"]
-pub struct GPIO_FUNC248_IN_INV_SEL_W<'a> {
+#[doc = "Reader of field `FUNC248_IN_INV_SEL`"]
+pub type FUNC248_IN_INV_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FUNC248_IN_INV_SEL`"]
+pub struct FUNC248_IN_INV_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC248_IN_INV_SEL_W<'a> {
+impl<'a> FUNC248_IN_INV_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> GPIO_FUNC248_IN_INV_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_FUNC248_IN_SEL`"]
-pub type GPIO_FUNC248_IN_SEL_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_FUNC248_IN_SEL`"]
-pub struct GPIO_FUNC248_IN_SEL_W<'a> {
+#[doc = "Reader of field `FUNC248_IN_SEL`"]
+pub type FUNC248_IN_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `FUNC248_IN_SEL`"]
+pub struct FUNC248_IN_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC248_IN_SEL_W<'a> {
+impl<'a> FUNC248_IN_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -75,34 +75,34 @@ impl<'a> GPIO_FUNC248_IN_SEL_W<'a> {
 impl R {
     #[doc = "Bit 7 - if the slow signal bypass the io matrix or not if you want setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_sig248_in_sel(&self) -> GPIO_SIG248_IN_SEL_R {
-        GPIO_SIG248_IN_SEL_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn sig248_in_sel(&self) -> SIG248_IN_SEL_R {
+        SIG248_IN_SEL_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - revert the value of the input if you want to revert please set the value to 1"]
     #[inline(always)]
-    pub fn gpio_func248_in_inv_sel(&self) -> GPIO_FUNC248_IN_INV_SEL_R {
-        GPIO_FUNC248_IN_INV_SEL_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn func248_in_inv_sel(&self) -> FUNC248_IN_INV_SEL_R {
+        FUNC248_IN_INV_SEL_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bits 0:5 - select one of the 256 inputs"]
     #[inline(always)]
-    pub fn gpio_func248_in_sel(&self) -> GPIO_FUNC248_IN_SEL_R {
-        GPIO_FUNC248_IN_SEL_R::new((self.bits & 0x3f) as u8)
+    pub fn func248_in_sel(&self) -> FUNC248_IN_SEL_R {
+        FUNC248_IN_SEL_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bit 7 - if the slow signal bypass the io matrix or not if you want setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_sig248_in_sel(&mut self) -> GPIO_SIG248_IN_SEL_W {
-        GPIO_SIG248_IN_SEL_W { w: self }
+    pub fn sig248_in_sel(&mut self) -> SIG248_IN_SEL_W {
+        SIG248_IN_SEL_W { w: self }
     }
     #[doc = "Bit 6 - revert the value of the input if you want to revert please set the value to 1"]
     #[inline(always)]
-    pub fn gpio_func248_in_inv_sel(&mut self) -> GPIO_FUNC248_IN_INV_SEL_W {
-        GPIO_FUNC248_IN_INV_SEL_W { w: self }
+    pub fn func248_in_inv_sel(&mut self) -> FUNC248_IN_INV_SEL_W {
+        FUNC248_IN_INV_SEL_W { w: self }
     }
     #[doc = "Bits 0:5 - select one of the 256 inputs"]
     #[inline(always)]
-    pub fn gpio_func248_in_sel(&mut self) -> GPIO_FUNC248_IN_SEL_W {
-        GPIO_FUNC248_IN_SEL_W { w: self }
+    pub fn func248_in_sel(&mut self) -> FUNC248_IN_SEL_W {
+        FUNC248_IN_SEL_W { w: self }
     }
 }

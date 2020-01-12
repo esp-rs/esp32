@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LSCH1_DUTY {
         0
     }
 }
-#[doc = "Reader of field `LEDC_DUTY_LSCH1`"]
-pub type LEDC_DUTY_LSCH1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `LEDC_DUTY_LSCH1`"]
-pub struct LEDC_DUTY_LSCH1_W<'a> {
+#[doc = "Reader of field `DUTY_LSCH1`"]
+pub type DUTY_LSCH1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `DUTY_LSCH1`"]
+pub struct DUTY_LSCH1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> LEDC_DUTY_LSCH1_W<'a> {
+impl<'a> DUTY_LSCH1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> LEDC_DUTY_LSCH1_W<'a> {
 impl R {
     #[doc = "Bits 0:24 - The register is used to control output duty. When lstimerx(x=\\[0 3\\]) choosed by low speed channel1 has reached reg_lpoint_lsch1 the output signal changes to low. reg_lpoint_lsch1=(reg_hpoint_lsch1\\[19:0\\]+reg_duty_lsch1\\[24:4\\]) (1) reg_lpoint_lsch1=(reg_hpoint_lsch1\\[19:0\\]+reg_duty_lsch1\\[24:4\\] +1) (2) The least four bits in this register represent the decimal part and determines when to choose (1) or (2)"]
     #[inline(always)]
-    pub fn ledc_duty_lsch1(&self) -> LEDC_DUTY_LSCH1_R {
-        LEDC_DUTY_LSCH1_R::new((self.bits & 0x01ff_ffff) as u32)
+    pub fn duty_lsch1(&self) -> DUTY_LSCH1_R {
+        DUTY_LSCH1_R::new((self.bits & 0x01ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:24 - The register is used to control output duty. When lstimerx(x=\\[0 3\\]) choosed by low speed channel1 has reached reg_lpoint_lsch1 the output signal changes to low. reg_lpoint_lsch1=(reg_hpoint_lsch1\\[19:0\\]+reg_duty_lsch1\\[24:4\\]) (1) reg_lpoint_lsch1=(reg_hpoint_lsch1\\[19:0\\]+reg_duty_lsch1\\[24:4\\] +1) (2) The least four bits in this register represent the decimal part and determines when to choose (1) or (2)"]
     #[inline(always)]
-    pub fn ledc_duty_lsch1(&mut self) -> LEDC_DUTY_LSCH1_W {
-        LEDC_DUTY_LSCH1_W { w: self }
+    pub fn duty_lsch1(&mut self) -> DUTY_LSCH1_W {
+        DUTY_LSCH1_W { w: self }
     }
 }

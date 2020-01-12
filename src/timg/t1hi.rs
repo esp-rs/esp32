@@ -10,13 +10,13 @@ impl crate::ResetValue for super::T1HI {
         0
     }
 }
-#[doc = "Reader of field `TIMG_T1_HI`"]
-pub type TIMG_T1_HI_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_T1_HI`"]
-pub struct TIMG_T1_HI_W<'a> {
+#[doc = "Reader of field `T1_HI`"]
+pub type T1_HI_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `T1_HI`"]
+pub struct T1_HI_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_T1_HI_W<'a> {
+impl<'a> T1_HI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_T1_HI_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Register to store timer 1 time-base counter current value higher 32 bits."]
     #[inline(always)]
-    pub fn timg_t1_hi(&self) -> TIMG_T1_HI_R {
-        TIMG_T1_HI_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn t1_hi(&self) -> T1_HI_R {
+        T1_HI_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Register to store timer 1 time-base counter current value higher 32 bits."]
     #[inline(always)]
-    pub fn timg_t1_hi(&mut self) -> TIMG_T1_HI_W {
-        TIMG_T1_HI_W { w: self }
+    pub fn t1_hi(&mut self) -> T1_HI_W {
+        T1_HI_W { w: self }
     }
 }

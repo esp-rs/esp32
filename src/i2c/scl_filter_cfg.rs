@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SCL_FILTER_CFG {
         0
     }
 }
-#[doc = "Reader of field `I2C_SCL_FILTER_EN`"]
-pub type I2C_SCL_FILTER_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2C_SCL_FILTER_EN`"]
-pub struct I2C_SCL_FILTER_EN_W<'a> {
+#[doc = "Reader of field `SCL_FILTER_EN`"]
+pub type SCL_FILTER_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SCL_FILTER_EN`"]
+pub struct SCL_FILTER_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_SCL_FILTER_EN_W<'a> {
+impl<'a> SCL_FILTER_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2C_SCL_FILTER_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2C_SCL_FILTER_THRES`"]
-pub type I2C_SCL_FILTER_THRES_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2C_SCL_FILTER_THRES`"]
-pub struct I2C_SCL_FILTER_THRES_W<'a> {
+#[doc = "Reader of field `SCL_FILTER_THRES`"]
+pub type SCL_FILTER_THRES_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SCL_FILTER_THRES`"]
+pub struct SCL_FILTER_THRES_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_SCL_FILTER_THRES_W<'a> {
+impl<'a> SCL_FILTER_THRES_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> I2C_SCL_FILTER_THRES_W<'a> {
 impl R {
     #[doc = "Bit 3 - This is the filter enable bit for SCL."]
     #[inline(always)]
-    pub fn i2c_scl_filter_en(&self) -> I2C_SCL_FILTER_EN_R {
-        I2C_SCL_FILTER_EN_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn scl_filter_en(&self) -> SCL_FILTER_EN_R {
+        SCL_FILTER_EN_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bits 0:2 - When input SCL's pulse width is smaller than this register value I2C ignores this pulse."]
     #[inline(always)]
-    pub fn i2c_scl_filter_thres(&self) -> I2C_SCL_FILTER_THRES_R {
-        I2C_SCL_FILTER_THRES_R::new((self.bits & 0x07) as u8)
+    pub fn scl_filter_thres(&self) -> SCL_FILTER_THRES_R {
+        SCL_FILTER_THRES_R::new((self.bits & 0x07) as u8)
     }
 }
 impl W {
     #[doc = "Bit 3 - This is the filter enable bit for SCL."]
     #[inline(always)]
-    pub fn i2c_scl_filter_en(&mut self) -> I2C_SCL_FILTER_EN_W {
-        I2C_SCL_FILTER_EN_W { w: self }
+    pub fn scl_filter_en(&mut self) -> SCL_FILTER_EN_W {
+        SCL_FILTER_EN_W { w: self }
     }
     #[doc = "Bits 0:2 - When input SCL's pulse width is smaller than this register value I2C ignores this pulse."]
     #[inline(always)]
-    pub fn i2c_scl_filter_thres(&mut self) -> I2C_SCL_FILTER_THRES_W {
-        I2C_SCL_FILTER_THRES_W { w: self }
+    pub fn scl_filter_thres(&mut self) -> SCL_FILTER_THRES_W {
+        SCL_FILTER_THRES_W { w: self }
     }
 }

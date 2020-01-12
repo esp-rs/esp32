@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DT2_FED_CFG {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_DT2_FED`"]
-pub type MCPWM_DT2_FED_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `MCPWM_DT2_FED`"]
-pub struct MCPWM_DT2_FED_W<'a> {
+#[doc = "Reader of field `DT2_FED`"]
+pub type DT2_FED_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `DT2_FED`"]
+pub struct DT2_FED_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_DT2_FED_W<'a> {
+impl<'a> DT2_FED_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> MCPWM_DT2_FED_W<'a> {
 impl R {
     #[doc = "Bits 0:15 - Shadow reg for FED"]
     #[inline(always)]
-    pub fn mcpwm_dt2_fed(&self) -> MCPWM_DT2_FED_R {
-        MCPWM_DT2_FED_R::new((self.bits & 0xffff) as u16)
+    pub fn dt2_fed(&self) -> DT2_FED_R {
+        DT2_FED_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:15 - Shadow reg for FED"]
     #[inline(always)]
-    pub fn mcpwm_dt2_fed(&mut self) -> MCPWM_DT2_FED_W {
-        MCPWM_DT2_FED_W { w: self }
+    pub fn dt2_fed(&mut self) -> DT2_FED_W {
+        DT2_FED_W { w: self }
     }
 }

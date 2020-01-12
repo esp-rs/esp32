@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TIMER4 {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_DG_WRAP_POWERUP_TIMER`"]
-pub type RTC_CNTL_DG_WRAP_POWERUP_TIMER_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_DG_WRAP_POWERUP_TIMER`"]
-pub struct RTC_CNTL_DG_WRAP_POWERUP_TIMER_W<'a> {
+#[doc = "Reader of field `DG_WRAP_POWERUP_TIMER`"]
+pub type DG_WRAP_POWERUP_TIMER_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DG_WRAP_POWERUP_TIMER`"]
+pub struct DG_WRAP_POWERUP_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_DG_WRAP_POWERUP_TIMER_W<'a> {
+impl<'a> DG_WRAP_POWERUP_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> RTC_CNTL_DG_WRAP_POWERUP_TIMER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_DG_WRAP_WAIT_TIMER`"]
-pub type RTC_CNTL_DG_WRAP_WAIT_TIMER_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RTC_CNTL_DG_WRAP_WAIT_TIMER`"]
-pub struct RTC_CNTL_DG_WRAP_WAIT_TIMER_W<'a> {
+#[doc = "Reader of field `DG_WRAP_WAIT_TIMER`"]
+pub type DG_WRAP_WAIT_TIMER_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `DG_WRAP_WAIT_TIMER`"]
+pub struct DG_WRAP_WAIT_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_DG_WRAP_WAIT_TIMER_W<'a> {
+impl<'a> DG_WRAP_WAIT_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> RTC_CNTL_DG_WRAP_WAIT_TIMER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_POWERUP_TIMER`"]
-pub type RTC_CNTL_POWERUP_TIMER_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RTC_CNTL_POWERUP_TIMER`"]
-pub struct RTC_CNTL_POWERUP_TIMER_W<'a> {
+#[doc = "Reader of field `POWERUP_TIMER`"]
+pub type POWERUP_TIMER_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `POWERUP_TIMER`"]
+pub struct POWERUP_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_POWERUP_TIMER_W<'a> {
+impl<'a> POWERUP_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -52,13 +52,13 @@ impl<'a> RTC_CNTL_POWERUP_TIMER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_WAIT_TIMER`"]
-pub type RTC_CNTL_WAIT_TIMER_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RTC_CNTL_WAIT_TIMER`"]
-pub struct RTC_CNTL_WAIT_TIMER_W<'a> {
+#[doc = "Reader of field `WAIT_TIMER`"]
+pub type WAIT_TIMER_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `WAIT_TIMER`"]
+pub struct WAIT_TIMER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_WAIT_TIMER_W<'a> {
+impl<'a> WAIT_TIMER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -69,44 +69,44 @@ impl<'a> RTC_CNTL_WAIT_TIMER_W<'a> {
 impl R {
     #[doc = "Bits 25:31"]
     #[inline(always)]
-    pub fn rtc_cntl_dg_wrap_powerup_timer(&self) -> RTC_CNTL_DG_WRAP_POWERUP_TIMER_R {
-        RTC_CNTL_DG_WRAP_POWERUP_TIMER_R::new(((self.bits >> 25) & 0x7f) as u8)
+    pub fn dg_wrap_powerup_timer(&self) -> DG_WRAP_POWERUP_TIMER_R {
+        DG_WRAP_POWERUP_TIMER_R::new(((self.bits >> 25) & 0x7f) as u8)
     }
     #[doc = "Bits 16:24"]
     #[inline(always)]
-    pub fn rtc_cntl_dg_wrap_wait_timer(&self) -> RTC_CNTL_DG_WRAP_WAIT_TIMER_R {
-        RTC_CNTL_DG_WRAP_WAIT_TIMER_R::new(((self.bits >> 16) & 0x01ff) as u16)
+    pub fn dg_wrap_wait_timer(&self) -> DG_WRAP_WAIT_TIMER_R {
+        DG_WRAP_WAIT_TIMER_R::new(((self.bits >> 16) & 0x01ff) as u16)
     }
     #[doc = "Bits 9:15"]
     #[inline(always)]
-    pub fn rtc_cntl_powerup_timer(&self) -> RTC_CNTL_POWERUP_TIMER_R {
-        RTC_CNTL_POWERUP_TIMER_R::new(((self.bits >> 9) & 0x7f) as u8)
+    pub fn powerup_timer(&self) -> POWERUP_TIMER_R {
+        POWERUP_TIMER_R::new(((self.bits >> 9) & 0x7f) as u8)
     }
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn rtc_cntl_wait_timer(&self) -> RTC_CNTL_WAIT_TIMER_R {
-        RTC_CNTL_WAIT_TIMER_R::new((self.bits & 0x01ff) as u16)
+    pub fn wait_timer(&self) -> WAIT_TIMER_R {
+        WAIT_TIMER_R::new((self.bits & 0x01ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 25:31"]
     #[inline(always)]
-    pub fn rtc_cntl_dg_wrap_powerup_timer(&mut self) -> RTC_CNTL_DG_WRAP_POWERUP_TIMER_W {
-        RTC_CNTL_DG_WRAP_POWERUP_TIMER_W { w: self }
+    pub fn dg_wrap_powerup_timer(&mut self) -> DG_WRAP_POWERUP_TIMER_W {
+        DG_WRAP_POWERUP_TIMER_W { w: self }
     }
     #[doc = "Bits 16:24"]
     #[inline(always)]
-    pub fn rtc_cntl_dg_wrap_wait_timer(&mut self) -> RTC_CNTL_DG_WRAP_WAIT_TIMER_W {
-        RTC_CNTL_DG_WRAP_WAIT_TIMER_W { w: self }
+    pub fn dg_wrap_wait_timer(&mut self) -> DG_WRAP_WAIT_TIMER_W {
+        DG_WRAP_WAIT_TIMER_W { w: self }
     }
     #[doc = "Bits 9:15"]
     #[inline(always)]
-    pub fn rtc_cntl_powerup_timer(&mut self) -> RTC_CNTL_POWERUP_TIMER_W {
-        RTC_CNTL_POWERUP_TIMER_W { w: self }
+    pub fn powerup_timer(&mut self) -> POWERUP_TIMER_W {
+        POWERUP_TIMER_W { w: self }
     }
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn rtc_cntl_wait_timer(&mut self) -> RTC_CNTL_WAIT_TIMER_W {
-        RTC_CNTL_WAIT_TIMER_W { w: self }
+    pub fn wait_timer(&mut self) -> WAIT_TIMER_W {
+        WAIT_TIMER_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::WDTWPROTECT {
         0
     }
 }
-#[doc = "Reader of field `TIMG_WDT_WKEY`"]
-pub type TIMG_WDT_WKEY_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_WDT_WKEY`"]
-pub struct TIMG_WDT_WKEY_W<'a> {
+#[doc = "Reader of field `WDT_WKEY`"]
+pub type WDT_WKEY_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `WDT_WKEY`"]
+pub struct WDT_WKEY_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_WDT_WKEY_W<'a> {
+impl<'a> WDT_WKEY_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_WDT_WKEY_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - If change its value from default then write protection is on."]
     #[inline(always)]
-    pub fn timg_wdt_wkey(&self) -> TIMG_WDT_WKEY_R {
-        TIMG_WDT_WKEY_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn wdt_wkey(&self) -> WDT_WKEY_R {
+        WDT_WKEY_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - If change its value from default then write protection is on."]
     #[inline(always)]
-    pub fn timg_wdt_wkey(&mut self) -> TIMG_WDT_WKEY_W {
-        TIMG_WDT_WKEY_W { w: self }
+    pub fn wdt_wkey(&mut self) -> WDT_WKEY_W {
+        WDT_WKEY_W { w: self }
     }
 }

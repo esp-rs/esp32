@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CAP_CH2_CFG {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_CAP2_SW`"]
-pub type MCPWM_CAP2_SW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP2_SW`"]
-pub struct MCPWM_CAP2_SW_W<'a> {
+#[doc = "Reader of field `CAP2_SW`"]
+pub type CAP2_SW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP2_SW`"]
+pub struct CAP2_SW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP2_SW_W<'a> {
+impl<'a> CAP2_SW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> MCPWM_CAP2_SW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP2_IN_INVERT`"]
-pub type MCPWM_CAP2_IN_INVERT_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP2_IN_INVERT`"]
-pub struct MCPWM_CAP2_IN_INVERT_W<'a> {
+#[doc = "Reader of field `CAP2_IN_INVERT`"]
+pub type CAP2_IN_INVERT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP2_IN_INVERT`"]
+pub struct CAP2_IN_INVERT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP2_IN_INVERT_W<'a> {
+impl<'a> CAP2_IN_INVERT_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> MCPWM_CAP2_IN_INVERT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP2_PRESCALE`"]
-pub type MCPWM_CAP2_PRESCALE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MCPWM_CAP2_PRESCALE`"]
-pub struct MCPWM_CAP2_PRESCALE_W<'a> {
+#[doc = "Reader of field `CAP2_PRESCALE`"]
+pub type CAP2_PRESCALE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CAP2_PRESCALE`"]
+pub struct CAP2_PRESCALE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP2_PRESCALE_W<'a> {
+impl<'a> CAP2_PRESCALE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> MCPWM_CAP2_PRESCALE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP2_MODE`"]
-pub type MCPWM_CAP2_MODE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MCPWM_CAP2_MODE`"]
-pub struct MCPWM_CAP2_MODE_W<'a> {
+#[doc = "Reader of field `CAP2_MODE`"]
+pub type CAP2_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CAP2_MODE`"]
+pub struct CAP2_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP2_MODE_W<'a> {
+impl<'a> CAP2_MODE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -86,13 +86,13 @@ impl<'a> MCPWM_CAP2_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP2_EN`"]
-pub type MCPWM_CAP2_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP2_EN`"]
-pub struct MCPWM_CAP2_EN_W<'a> {
+#[doc = "Reader of field `CAP2_EN`"]
+pub type CAP2_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP2_EN`"]
+pub struct CAP2_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP2_EN_W<'a> {
+impl<'a> CAP2_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -113,54 +113,54 @@ impl<'a> MCPWM_CAP2_EN_W<'a> {
 impl R {
     #[doc = "Bit 12 - Write 1 will trigger a software forced capture on channel 2"]
     #[inline(always)]
-    pub fn mcpwm_cap2_sw(&self) -> MCPWM_CAP2_SW_R {
-        MCPWM_CAP2_SW_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn cap2_sw(&self) -> CAP2_SW_R {
+        CAP2_SW_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11 - When set CAP2 form GPIO matrix is inverted before prescale"]
     #[inline(always)]
-    pub fn mcpwm_cap2_in_invert(&self) -> MCPWM_CAP2_IN_INVERT_R {
-        MCPWM_CAP2_IN_INVERT_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn cap2_in_invert(&self) -> CAP2_IN_INVERT_R {
+        CAP2_IN_INVERT_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bits 3:10 - Value of prescale on possitive edge of CAP2. Prescale value = PWM_CAP2_PRESCALE + 1"]
     #[inline(always)]
-    pub fn mcpwm_cap2_prescale(&self) -> MCPWM_CAP2_PRESCALE_R {
-        MCPWM_CAP2_PRESCALE_R::new(((self.bits >> 3) & 0xff) as u8)
+    pub fn cap2_prescale(&self) -> CAP2_PRESCALE_R {
+        CAP2_PRESCALE_R::new(((self.bits >> 3) & 0xff) as u8)
     }
     #[doc = "Bits 1:2 - Edge of capture on channel 2 after prescale. bit0: negedge cap en bit1: posedge cap en"]
     #[inline(always)]
-    pub fn mcpwm_cap2_mode(&self) -> MCPWM_CAP2_MODE_R {
-        MCPWM_CAP2_MODE_R::new(((self.bits >> 1) & 0x03) as u8)
+    pub fn cap2_mode(&self) -> CAP2_MODE_R {
+        CAP2_MODE_R::new(((self.bits >> 1) & 0x03) as u8)
     }
     #[doc = "Bit 0 - When set capture on channel 2 is enabled"]
     #[inline(always)]
-    pub fn mcpwm_cap2_en(&self) -> MCPWM_CAP2_EN_R {
-        MCPWM_CAP2_EN_R::new((self.bits & 0x01) != 0)
+    pub fn cap2_en(&self) -> CAP2_EN_R {
+        CAP2_EN_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 12 - Write 1 will trigger a software forced capture on channel 2"]
     #[inline(always)]
-    pub fn mcpwm_cap2_sw(&mut self) -> MCPWM_CAP2_SW_W {
-        MCPWM_CAP2_SW_W { w: self }
+    pub fn cap2_sw(&mut self) -> CAP2_SW_W {
+        CAP2_SW_W { w: self }
     }
     #[doc = "Bit 11 - When set CAP2 form GPIO matrix is inverted before prescale"]
     #[inline(always)]
-    pub fn mcpwm_cap2_in_invert(&mut self) -> MCPWM_CAP2_IN_INVERT_W {
-        MCPWM_CAP2_IN_INVERT_W { w: self }
+    pub fn cap2_in_invert(&mut self) -> CAP2_IN_INVERT_W {
+        CAP2_IN_INVERT_W { w: self }
     }
     #[doc = "Bits 3:10 - Value of prescale on possitive edge of CAP2. Prescale value = PWM_CAP2_PRESCALE + 1"]
     #[inline(always)]
-    pub fn mcpwm_cap2_prescale(&mut self) -> MCPWM_CAP2_PRESCALE_W {
-        MCPWM_CAP2_PRESCALE_W { w: self }
+    pub fn cap2_prescale(&mut self) -> CAP2_PRESCALE_W {
+        CAP2_PRESCALE_W { w: self }
     }
     #[doc = "Bits 1:2 - Edge of capture on channel 2 after prescale. bit0: negedge cap en bit1: posedge cap en"]
     #[inline(always)]
-    pub fn mcpwm_cap2_mode(&mut self) -> MCPWM_CAP2_MODE_W {
-        MCPWM_CAP2_MODE_W { w: self }
+    pub fn cap2_mode(&mut self) -> CAP2_MODE_W {
+        CAP2_MODE_W { w: self }
     }
     #[doc = "Bit 0 - When set capture on channel 2 is enabled"]
     #[inline(always)]
-    pub fn mcpwm_cap2_en(&mut self) -> MCPWM_CAP2_EN_W {
-        MCPWM_CAP2_EN_W { w: self }
+    pub fn cap2_en(&mut self) -> CAP2_EN_W {
+        CAP2_EN_W { w: self }
     }
 }

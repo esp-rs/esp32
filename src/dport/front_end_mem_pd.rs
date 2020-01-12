@@ -10,13 +10,13 @@ impl crate::ResetValue for super::FRONT_END_MEM_PD {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PBUS_MEM_FORCE_PD`"]
-pub type DPORT_PBUS_MEM_FORCE_PD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PBUS_MEM_FORCE_PD`"]
-pub struct DPORT_PBUS_MEM_FORCE_PD_W<'a> {
+#[doc = "Reader of field `PBUS_MEM_FORCE_PD`"]
+pub type PBUS_MEM_FORCE_PD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PBUS_MEM_FORCE_PD`"]
+pub struct PBUS_MEM_FORCE_PD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PBUS_MEM_FORCE_PD_W<'a> {
+impl<'a> PBUS_MEM_FORCE_PD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> DPORT_PBUS_MEM_FORCE_PD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_PBUS_MEM_FORCE_PU`"]
-pub type DPORT_PBUS_MEM_FORCE_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PBUS_MEM_FORCE_PU`"]
-pub struct DPORT_PBUS_MEM_FORCE_PU_W<'a> {
+#[doc = "Reader of field `PBUS_MEM_FORCE_PU`"]
+pub type PBUS_MEM_FORCE_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PBUS_MEM_FORCE_PU`"]
+pub struct PBUS_MEM_FORCE_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PBUS_MEM_FORCE_PU_W<'a> {
+impl<'a> PBUS_MEM_FORCE_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> DPORT_PBUS_MEM_FORCE_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_AGC_MEM_FORCE_PD`"]
-pub type DPORT_AGC_MEM_FORCE_PD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_AGC_MEM_FORCE_PD`"]
-pub struct DPORT_AGC_MEM_FORCE_PD_W<'a> {
+#[doc = "Reader of field `AGC_MEM_FORCE_PD`"]
+pub type AGC_MEM_FORCE_PD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AGC_MEM_FORCE_PD`"]
+pub struct AGC_MEM_FORCE_PD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_AGC_MEM_FORCE_PD_W<'a> {
+impl<'a> AGC_MEM_FORCE_PD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> DPORT_AGC_MEM_FORCE_PD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_AGC_MEM_FORCE_PU`"]
-pub type DPORT_AGC_MEM_FORCE_PU_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_AGC_MEM_FORCE_PU`"]
-pub struct DPORT_AGC_MEM_FORCE_PU_W<'a> {
+#[doc = "Reader of field `AGC_MEM_FORCE_PU`"]
+pub type AGC_MEM_FORCE_PU_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AGC_MEM_FORCE_PU`"]
+pub struct AGC_MEM_FORCE_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_AGC_MEM_FORCE_PU_W<'a> {
+impl<'a> AGC_MEM_FORCE_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -109,44 +109,44 @@ impl<'a> DPORT_AGC_MEM_FORCE_PU_W<'a> {
 impl R {
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn dport_pbus_mem_force_pd(&self) -> DPORT_PBUS_MEM_FORCE_PD_R {
-        DPORT_PBUS_MEM_FORCE_PD_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn pbus_mem_force_pd(&self) -> PBUS_MEM_FORCE_PD_R {
+        PBUS_MEM_FORCE_PD_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn dport_pbus_mem_force_pu(&self) -> DPORT_PBUS_MEM_FORCE_PU_R {
-        DPORT_PBUS_MEM_FORCE_PU_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn pbus_mem_force_pu(&self) -> PBUS_MEM_FORCE_PU_R {
+        PBUS_MEM_FORCE_PU_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn dport_agc_mem_force_pd(&self) -> DPORT_AGC_MEM_FORCE_PD_R {
-        DPORT_AGC_MEM_FORCE_PD_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn agc_mem_force_pd(&self) -> AGC_MEM_FORCE_PD_R {
+        AGC_MEM_FORCE_PD_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_agc_mem_force_pu(&self) -> DPORT_AGC_MEM_FORCE_PU_R {
-        DPORT_AGC_MEM_FORCE_PU_R::new((self.bits & 0x01) != 0)
+    pub fn agc_mem_force_pu(&self) -> AGC_MEM_FORCE_PU_R {
+        AGC_MEM_FORCE_PU_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn dport_pbus_mem_force_pd(&mut self) -> DPORT_PBUS_MEM_FORCE_PD_W {
-        DPORT_PBUS_MEM_FORCE_PD_W { w: self }
+    pub fn pbus_mem_force_pd(&mut self) -> PBUS_MEM_FORCE_PD_W {
+        PBUS_MEM_FORCE_PD_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn dport_pbus_mem_force_pu(&mut self) -> DPORT_PBUS_MEM_FORCE_PU_W {
-        DPORT_PBUS_MEM_FORCE_PU_W { w: self }
+    pub fn pbus_mem_force_pu(&mut self) -> PBUS_MEM_FORCE_PU_W {
+        PBUS_MEM_FORCE_PU_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn dport_agc_mem_force_pd(&mut self) -> DPORT_AGC_MEM_FORCE_PD_W {
-        DPORT_AGC_MEM_FORCE_PD_W { w: self }
+    pub fn agc_mem_force_pd(&mut self) -> AGC_MEM_FORCE_PD_W {
+        AGC_MEM_FORCE_PD_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_agc_mem_force_pu(&mut self) -> DPORT_AGC_MEM_FORCE_PU_W {
-        DPORT_AGC_MEM_FORCE_PU_W { w: self }
+    pub fn agc_mem_force_pu(&mut self) -> AGC_MEM_FORCE_PU_W {
+        AGC_MEM_FORCE_PU_W { w: self }
     }
 }

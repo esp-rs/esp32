@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_TRACEMEM_ENA {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_TRACEMEM_ENA`"]
-pub type DPORT_PRO_TRACEMEM_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_TRACEMEM_ENA`"]
-pub struct DPORT_PRO_TRACEMEM_ENA_W<'a> {
+#[doc = "Reader of field `PRO_TRACEMEM_ENA`"]
+pub type PRO_TRACEMEM_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_TRACEMEM_ENA`"]
+pub struct PRO_TRACEMEM_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_TRACEMEM_ENA_W<'a> {
+impl<'a> PRO_TRACEMEM_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_PRO_TRACEMEM_ENA_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_tracemem_ena(&self) -> DPORT_PRO_TRACEMEM_ENA_R {
-        DPORT_PRO_TRACEMEM_ENA_R::new((self.bits & 0x01) != 0)
+    pub fn pro_tracemem_ena(&self) -> PRO_TRACEMEM_ENA_R {
+        PRO_TRACEMEM_ENA_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_tracemem_ena(&mut self) -> DPORT_PRO_TRACEMEM_ENA_W {
-        DPORT_PRO_TRACEMEM_ENA_W { w: self }
+    pub fn pro_tracemem_ena(&mut self) -> PRO_TRACEMEM_ENA_W {
+        PRO_TRACEMEM_ENA_W { w: self }
     }
 }

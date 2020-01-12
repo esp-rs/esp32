@@ -10,13 +10,13 @@ impl crate::ResetValue for super::STATUS1_W1TS {
         0
     }
 }
-#[doc = "Reader of field `GPIO_STATUS1_INT_W1TS`"]
-pub type GPIO_STATUS1_INT_W1TS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_STATUS1_INT_W1TS`"]
-pub struct GPIO_STATUS1_INT_W1TS_W<'a> {
+#[doc = "Reader of field `STATUS1_INT_W1TS`"]
+pub type STATUS1_INT_W1TS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `STATUS1_INT_W1TS`"]
+pub struct STATUS1_INT_W1TS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_STATUS1_INT_W1TS_W<'a> {
+impl<'a> STATUS1_INT_W1TS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_STATUS1_INT_W1TS_W<'a> {
 impl R {
     #[doc = "Bits 0:7 - GPIO32~39 interrupt status write 1 to set"]
     #[inline(always)]
-    pub fn gpio_status1_int_w1ts(&self) -> GPIO_STATUS1_INT_W1TS_R {
-        GPIO_STATUS1_INT_W1TS_R::new((self.bits & 0xff) as u8)
+    pub fn status1_int_w1ts(&self) -> STATUS1_INT_W1TS_R {
+        STATUS1_INT_W1TS_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:7 - GPIO32~39 interrupt status write 1 to set"]
     #[inline(always)]
-    pub fn gpio_status1_int_w1ts(&mut self) -> GPIO_STATUS1_INT_W1TS_W {
-        GPIO_STATUS1_INT_W1TS_W { w: self }
+    pub fn status1_int_w1ts(&mut self) -> STATUS1_INT_W1TS_W {
+        STATUS1_INT_W1TS_W { w: self }
     }
 }

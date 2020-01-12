@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CLK {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_CLK_EN`"]
-pub type EFUSE_CLK_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EFUSE_CLK_EN`"]
-pub struct EFUSE_CLK_EN_W<'a> {
+#[doc = "Reader of field `CLK_EN`"]
+pub type CLK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CLK_EN`"]
+pub struct CLK_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_CLK_EN_W<'a> {
+impl<'a> CLK_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> EFUSE_CLK_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_CLK_SEL1`"]
-pub type EFUSE_CLK_SEL1_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_CLK_SEL1`"]
-pub struct EFUSE_CLK_SEL1_W<'a> {
+#[doc = "Reader of field `CLK_SEL1`"]
+pub type CLK_SEL1_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CLK_SEL1`"]
+pub struct CLK_SEL1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_CLK_SEL1_W<'a> {
+impl<'a> CLK_SEL1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> EFUSE_CLK_SEL1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_CLK_SEL0`"]
-pub type EFUSE_CLK_SEL0_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_CLK_SEL0`"]
-pub struct EFUSE_CLK_SEL0_W<'a> {
+#[doc = "Reader of field `CLK_SEL0`"]
+pub type CLK_SEL0_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CLK_SEL0`"]
+pub struct CLK_SEL0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_CLK_SEL0_W<'a> {
+impl<'a> CLK_SEL0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -65,34 +65,34 @@ impl<'a> EFUSE_CLK_SEL0_W<'a> {
 impl R {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn efuse_clk_en(&self) -> EFUSE_CLK_EN_R {
-        EFUSE_CLK_EN_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn clk_en(&self) -> CLK_EN_R {
+        CLK_EN_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bits 8:15 - efuse timing configure"]
     #[inline(always)]
-    pub fn efuse_clk_sel1(&self) -> EFUSE_CLK_SEL1_R {
-        EFUSE_CLK_SEL1_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn clk_sel1(&self) -> CLK_SEL1_R {
+        CLK_SEL1_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 0:7 - efuse timing configure"]
     #[inline(always)]
-    pub fn efuse_clk_sel0(&self) -> EFUSE_CLK_SEL0_R {
-        EFUSE_CLK_SEL0_R::new((self.bits & 0xff) as u8)
+    pub fn clk_sel0(&self) -> CLK_SEL0_R {
+        CLK_SEL0_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn efuse_clk_en(&mut self) -> EFUSE_CLK_EN_W {
-        EFUSE_CLK_EN_W { w: self }
+    pub fn clk_en(&mut self) -> CLK_EN_W {
+        CLK_EN_W { w: self }
     }
     #[doc = "Bits 8:15 - efuse timing configure"]
     #[inline(always)]
-    pub fn efuse_clk_sel1(&mut self) -> EFUSE_CLK_SEL1_W {
-        EFUSE_CLK_SEL1_W { w: self }
+    pub fn clk_sel1(&mut self) -> CLK_SEL1_W {
+        CLK_SEL1_W { w: self }
     }
     #[doc = "Bits 0:7 - efuse timing configure"]
     #[inline(always)]
-    pub fn efuse_clk_sel0(&mut self) -> EFUSE_CLK_SEL0_W {
-        EFUSE_CLK_SEL0_W { w: self }
+    pub fn clk_sel0(&mut self) -> CLK_SEL0_W {
+        CLK_SEL0_W { w: self }
     }
 }

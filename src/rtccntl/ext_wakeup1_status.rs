@@ -10,13 +10,13 @@ impl crate::ResetValue for super::EXT_WAKEUP1_STATUS {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_EXT_WAKEUP1_STATUS`"]
-pub type RTC_CNTL_EXT_WAKEUP1_STATUS_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_CNTL_EXT_WAKEUP1_STATUS`"]
-pub struct RTC_CNTL_EXT_WAKEUP1_STATUS_W<'a> {
+#[doc = "Reader of field `EXT_WAKEUP1_STATUS`"]
+pub type EXT_WAKEUP1_STATUS_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `EXT_WAKEUP1_STATUS`"]
+pub struct EXT_WAKEUP1_STATUS_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_EXT_WAKEUP1_STATUS_W<'a> {
+impl<'a> EXT_WAKEUP1_STATUS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_CNTL_EXT_WAKEUP1_STATUS_W<'a> {
 impl R {
     #[doc = "Bits 0:17 - ext wakeup1 status"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_status(&self) -> RTC_CNTL_EXT_WAKEUP1_STATUS_R {
-        RTC_CNTL_EXT_WAKEUP1_STATUS_R::new((self.bits & 0x0003_ffff) as u32)
+    pub fn ext_wakeup1_status(&self) -> EXT_WAKEUP1_STATUS_R {
+        EXT_WAKEUP1_STATUS_R::new((self.bits & 0x0003_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:17 - ext wakeup1 status"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_status(&mut self) -> RTC_CNTL_EXT_WAKEUP1_STATUS_W {
-        RTC_CNTL_EXT_WAKEUP1_STATUS_W { w: self }
+    pub fn ext_wakeup1_status(&mut self) -> EXT_WAKEUP1_STATUS_W {
+        EXT_WAKEUP1_STATUS_W { w: self }
     }
 }

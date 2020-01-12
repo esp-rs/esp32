@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SYSCLK_CONF {
         0
     }
 }
-#[doc = "Reader of field `SYSCON_QUICK_CLK_CHNG`"]
-pub type SYSCON_QUICK_CLK_CHNG_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SYSCON_QUICK_CLK_CHNG`"]
-pub struct SYSCON_QUICK_CLK_CHNG_W<'a> {
+#[doc = "Reader of field `QUICK_CLK_CHNG`"]
+pub type QUICK_CLK_CHNG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `QUICK_CLK_CHNG`"]
+pub struct QUICK_CLK_CHNG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SYSCON_QUICK_CLK_CHNG_W<'a> {
+impl<'a> QUICK_CLK_CHNG_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> SYSCON_QUICK_CLK_CHNG_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SYSCON_RST_TICK_CNT`"]
-pub type SYSCON_RST_TICK_CNT_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SYSCON_RST_TICK_CNT`"]
-pub struct SYSCON_RST_TICK_CNT_W<'a> {
+#[doc = "Reader of field `RST_TICK_CNT`"]
+pub type RST_TICK_CNT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RST_TICK_CNT`"]
+pub struct RST_TICK_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SYSCON_RST_TICK_CNT_W<'a> {
+impl<'a> RST_TICK_CNT_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> SYSCON_RST_TICK_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SYSCON_CLK_EN`"]
-pub type SYSCON_CLK_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SYSCON_CLK_EN`"]
-pub struct SYSCON_CLK_EN_W<'a> {
+#[doc = "Reader of field `CLK_EN`"]
+pub type CLK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CLK_EN`"]
+pub struct CLK_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SYSCON_CLK_EN_W<'a> {
+impl<'a> CLK_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> SYSCON_CLK_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SYSCON_CLK_320M_EN`"]
-pub type SYSCON_CLK_320M_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SYSCON_CLK_320M_EN`"]
-pub struct SYSCON_CLK_320M_EN_W<'a> {
+#[doc = "Reader of field `CLK_320M_EN`"]
+pub type CLK_320M_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CLK_320M_EN`"]
+pub struct CLK_320M_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SYSCON_CLK_320M_EN_W<'a> {
+impl<'a> CLK_320M_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> SYSCON_CLK_320M_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SYSCON_PRE_DIV_CNT`"]
-pub type SYSCON_PRE_DIV_CNT_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SYSCON_PRE_DIV_CNT`"]
-pub struct SYSCON_PRE_DIV_CNT_W<'a> {
+#[doc = "Reader of field `PRE_DIV_CNT`"]
+pub type PRE_DIV_CNT_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `PRE_DIV_CNT`"]
+pub struct PRE_DIV_CNT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SYSCON_PRE_DIV_CNT_W<'a> {
+impl<'a> PRE_DIV_CNT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -123,54 +123,54 @@ impl<'a> SYSCON_PRE_DIV_CNT_W<'a> {
 impl R {
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn syscon_quick_clk_chng(&self) -> SYSCON_QUICK_CLK_CHNG_R {
-        SYSCON_QUICK_CLK_CHNG_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn quick_clk_chng(&self) -> QUICK_CLK_CHNG_R {
+        QUICK_CLK_CHNG_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn syscon_rst_tick_cnt(&self) -> SYSCON_RST_TICK_CNT_R {
-        SYSCON_RST_TICK_CNT_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn rst_tick_cnt(&self) -> RST_TICK_CNT_R {
+        RST_TICK_CNT_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn syscon_clk_en(&self) -> SYSCON_CLK_EN_R {
-        SYSCON_CLK_EN_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn clk_en(&self) -> CLK_EN_R {
+        CLK_EN_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn syscon_clk_320m_en(&self) -> SYSCON_CLK_320M_EN_R {
-        SYSCON_CLK_320M_EN_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn clk_320m_en(&self) -> CLK_320M_EN_R {
+        CLK_320M_EN_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bits 0:9"]
     #[inline(always)]
-    pub fn syscon_pre_div_cnt(&self) -> SYSCON_PRE_DIV_CNT_R {
-        SYSCON_PRE_DIV_CNT_R::new((self.bits & 0x03ff) as u16)
+    pub fn pre_div_cnt(&self) -> PRE_DIV_CNT_R {
+        PRE_DIV_CNT_R::new((self.bits & 0x03ff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn syscon_quick_clk_chng(&mut self) -> SYSCON_QUICK_CLK_CHNG_W {
-        SYSCON_QUICK_CLK_CHNG_W { w: self }
+    pub fn quick_clk_chng(&mut self) -> QUICK_CLK_CHNG_W {
+        QUICK_CLK_CHNG_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn syscon_rst_tick_cnt(&mut self) -> SYSCON_RST_TICK_CNT_W {
-        SYSCON_RST_TICK_CNT_W { w: self }
+    pub fn rst_tick_cnt(&mut self) -> RST_TICK_CNT_W {
+        RST_TICK_CNT_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn syscon_clk_en(&mut self) -> SYSCON_CLK_EN_W {
-        SYSCON_CLK_EN_W { w: self }
+    pub fn clk_en(&mut self) -> CLK_EN_W {
+        CLK_EN_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn syscon_clk_320m_en(&mut self) -> SYSCON_CLK_320M_EN_W {
-        SYSCON_CLK_320M_EN_W { w: self }
+    pub fn clk_320m_en(&mut self) -> CLK_320M_EN_W {
+        CLK_320M_EN_W { w: self }
     }
     #[doc = "Bits 0:9"]
     #[inline(always)]
-    pub fn syscon_pre_div_cnt(&mut self) -> SYSCON_PRE_DIV_CNT_W {
-        SYSCON_PRE_DIV_CNT_W { w: self }
+    pub fn pre_div_cnt(&mut self) -> PRE_DIV_CNT_W {
+        PRE_DIV_CNT_W { w: self }
     }
 }

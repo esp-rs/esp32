@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DATE {
         0
     }
 }
-#[doc = "Reader of field `UHCI_DATE`"]
-pub type UHCI_DATE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UHCI_DATE`"]
-pub struct UHCI_DATE_W<'a> {
+#[doc = "Reader of field `DATE`"]
+pub type DATE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `DATE`"]
+pub struct DATE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_DATE_W<'a> {
+impl<'a> DATE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UHCI_DATE_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - version information"]
     #[inline(always)]
-    pub fn uhci_date(&self) -> UHCI_DATE_R {
-        UHCI_DATE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn date(&self) -> DATE_R {
+        DATE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - version information"]
     #[inline(always)]
-    pub fn uhci_date(&mut self) -> UHCI_DATE_W {
-        UHCI_DATE_W { w: self }
+    pub fn date(&mut self) -> DATE_W {
+        DATE_W { w: self }
     }
 }

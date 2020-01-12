@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SRAM_FO_CTRL_1 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_SRAM_FO_1`"]
-pub type DPORT_SRAM_FO_1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_SRAM_FO_1`"]
-pub struct DPORT_SRAM_FO_1_W<'a> {
+#[doc = "Reader of field `SRAM_FO_1`"]
+pub type SRAM_FO_1_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SRAM_FO_1`"]
+pub struct SRAM_FO_1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_SRAM_FO_1_W<'a> {
+impl<'a> SRAM_FO_1_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_SRAM_FO_1_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_sram_fo_1(&self) -> DPORT_SRAM_FO_1_R {
-        DPORT_SRAM_FO_1_R::new((self.bits & 0x01) != 0)
+    pub fn sram_fo_1(&self) -> SRAM_FO_1_R {
+        SRAM_FO_1_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_sram_fo_1(&mut self) -> DPORT_SRAM_FO_1_W {
-        DPORT_SRAM_FO_1_W { w: self }
+    pub fn sram_fo_1(&mut self) -> SRAM_FO_1_W {
+        SRAM_FO_1_W { w: self }
     }
 }

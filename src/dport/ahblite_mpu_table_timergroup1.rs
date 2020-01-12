@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_TIMERGROUP1 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `TIMERGROUP1_ACCESS_GRANT_CONFIG`"]
+pub type TIMERGROUP1_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TIMERGROUP1_ACCESS_GRANT_CONFIG`"]
+pub struct TIMERGROUP1_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> TIMERGROUP1_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,16 +27,14 @@ impl<'a> DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_timergroup1_access_grant_config(&self) -> DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_R {
-        DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn timergroup1_access_grant_config(&self) -> TIMERGROUP1_ACCESS_GRANT_CONFIG_R {
+        TIMERGROUP1_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_timergroup1_access_grant_config(
-        &mut self,
-    ) -> DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_W {
-        DPORT_TIMERGROUP1_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn timergroup1_access_grant_config(&mut self) -> TIMERGROUP1_ACCESS_GRANT_CONFIG_W {
+        TIMERGROUP1_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

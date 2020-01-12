@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APPCPU_CTRL_C {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APPCPU_RUNSTALL`"]
-pub type DPORT_APPCPU_RUNSTALL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_APPCPU_RUNSTALL`"]
-pub struct DPORT_APPCPU_RUNSTALL_W<'a> {
+#[doc = "Reader of field `APPCPU_RUNSTALL`"]
+pub type APPCPU_RUNSTALL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APPCPU_RUNSTALL`"]
+pub struct APPCPU_RUNSTALL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APPCPU_RUNSTALL_W<'a> {
+impl<'a> APPCPU_RUNSTALL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_APPCPU_RUNSTALL_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_appcpu_runstall(&self) -> DPORT_APPCPU_RUNSTALL_R {
-        DPORT_APPCPU_RUNSTALL_R::new((self.bits & 0x01) != 0)
+    pub fn appcpu_runstall(&self) -> APPCPU_RUNSTALL_R {
+        APPCPU_RUNSTALL_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_appcpu_runstall(&mut self) -> DPORT_APPCPU_RUNSTALL_W {
-        DPORT_APPCPU_RUNSTALL_W { w: self }
+    pub fn appcpu_runstall(&mut self) -> APPCPU_RUNSTALL_W {
+        APPCPU_RUNSTALL_W { w: self }
     }
 }

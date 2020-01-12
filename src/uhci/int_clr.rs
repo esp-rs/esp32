@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_CLR {
         0
     }
 }
-#[doc = "Reader of field `UHCI_DMA_INFIFO_FULL_WM_INT_CLR`"]
-pub type UHCI_DMA_INFIFO_FULL_WM_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_DMA_INFIFO_FULL_WM_INT_CLR`"]
-pub struct UHCI_DMA_INFIFO_FULL_WM_INT_CLR_W<'a> {
+#[doc = "Reader of field `DMA_INFIFO_FULL_WM_INT_CLR`"]
+pub type DMA_INFIFO_FULL_WM_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DMA_INFIFO_FULL_WM_INT_CLR`"]
+pub struct DMA_INFIFO_FULL_WM_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_DMA_INFIFO_FULL_WM_INT_CLR_W<'a> {
+impl<'a> DMA_INFIFO_FULL_WM_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> UHCI_DMA_INFIFO_FULL_WM_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_SEND_A_Q_INT_CLR`"]
-pub type UHCI_SEND_A_Q_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_SEND_A_Q_INT_CLR`"]
-pub struct UHCI_SEND_A_Q_INT_CLR_W<'a> {
+#[doc = "Reader of field `SEND_A_Q_INT_CLR`"]
+pub type SEND_A_Q_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SEND_A_Q_INT_CLR`"]
+pub struct SEND_A_Q_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SEND_A_Q_INT_CLR_W<'a> {
+impl<'a> SEND_A_Q_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> UHCI_SEND_A_Q_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_SEND_S_Q_INT_CLR`"]
-pub type UHCI_SEND_S_Q_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_SEND_S_Q_INT_CLR`"]
-pub struct UHCI_SEND_S_Q_INT_CLR_W<'a> {
+#[doc = "Reader of field `SEND_S_Q_INT_CLR`"]
+pub type SEND_S_Q_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SEND_S_Q_INT_CLR`"]
+pub struct SEND_S_Q_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SEND_S_Q_INT_CLR_W<'a> {
+impl<'a> SEND_S_Q_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> UHCI_SEND_S_Q_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_OUT_TOTAL_EOF_INT_CLR`"]
-pub type UHCI_OUT_TOTAL_EOF_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_OUT_TOTAL_EOF_INT_CLR`"]
-pub struct UHCI_OUT_TOTAL_EOF_INT_CLR_W<'a> {
+#[doc = "Reader of field `OUT_TOTAL_EOF_INT_CLR`"]
+pub type OUT_TOTAL_EOF_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_TOTAL_EOF_INT_CLR`"]
+pub struct OUT_TOTAL_EOF_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUT_TOTAL_EOF_INT_CLR_W<'a> {
+impl<'a> OUT_TOTAL_EOF_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> UHCI_OUT_TOTAL_EOF_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_OUTLINK_EOF_ERR_INT_CLR`"]
-pub type UHCI_OUTLINK_EOF_ERR_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_OUTLINK_EOF_ERR_INT_CLR`"]
-pub struct UHCI_OUTLINK_EOF_ERR_INT_CLR_W<'a> {
+#[doc = "Reader of field `OUTLINK_EOF_ERR_INT_CLR`"]
+pub type OUTLINK_EOF_ERR_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUTLINK_EOF_ERR_INT_CLR`"]
+pub struct OUTLINK_EOF_ERR_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUTLINK_EOF_ERR_INT_CLR_W<'a> {
+impl<'a> OUTLINK_EOF_ERR_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> UHCI_OUTLINK_EOF_ERR_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_IN_DSCR_EMPTY_INT_CLR`"]
-pub type UHCI_IN_DSCR_EMPTY_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_IN_DSCR_EMPTY_INT_CLR`"]
-pub struct UHCI_IN_DSCR_EMPTY_INT_CLR_W<'a> {
+#[doc = "Reader of field `IN_DSCR_EMPTY_INT_CLR`"]
+pub type IN_DSCR_EMPTY_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_DSCR_EMPTY_INT_CLR`"]
+pub struct IN_DSCR_EMPTY_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_IN_DSCR_EMPTY_INT_CLR_W<'a> {
+impl<'a> IN_DSCR_EMPTY_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> UHCI_IN_DSCR_EMPTY_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_OUT_DSCR_ERR_INT_CLR`"]
-pub type UHCI_OUT_DSCR_ERR_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_OUT_DSCR_ERR_INT_CLR`"]
-pub struct UHCI_OUT_DSCR_ERR_INT_CLR_W<'a> {
+#[doc = "Reader of field `OUT_DSCR_ERR_INT_CLR`"]
+pub type OUT_DSCR_ERR_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_DSCR_ERR_INT_CLR`"]
+pub struct OUT_DSCR_ERR_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUT_DSCR_ERR_INT_CLR_W<'a> {
+impl<'a> OUT_DSCR_ERR_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> UHCI_OUT_DSCR_ERR_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_IN_DSCR_ERR_INT_CLR`"]
-pub type UHCI_IN_DSCR_ERR_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_IN_DSCR_ERR_INT_CLR`"]
-pub struct UHCI_IN_DSCR_ERR_INT_CLR_W<'a> {
+#[doc = "Reader of field `IN_DSCR_ERR_INT_CLR`"]
+pub type IN_DSCR_ERR_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_DSCR_ERR_INT_CLR`"]
+pub struct IN_DSCR_ERR_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_IN_DSCR_ERR_INT_CLR_W<'a> {
+impl<'a> IN_DSCR_ERR_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> UHCI_IN_DSCR_ERR_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_OUT_EOF_INT_CLR`"]
-pub type UHCI_OUT_EOF_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_OUT_EOF_INT_CLR`"]
-pub struct UHCI_OUT_EOF_INT_CLR_W<'a> {
+#[doc = "Reader of field `OUT_EOF_INT_CLR`"]
+pub type OUT_EOF_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_EOF_INT_CLR`"]
+pub struct OUT_EOF_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUT_EOF_INT_CLR_W<'a> {
+impl<'a> OUT_EOF_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> UHCI_OUT_EOF_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_OUT_DONE_INT_CLR`"]
-pub type UHCI_OUT_DONE_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_OUT_DONE_INT_CLR`"]
-pub struct UHCI_OUT_DONE_INT_CLR_W<'a> {
+#[doc = "Reader of field `OUT_DONE_INT_CLR`"]
+pub type OUT_DONE_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_DONE_INT_CLR`"]
+pub struct OUT_DONE_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUT_DONE_INT_CLR_W<'a> {
+impl<'a> OUT_DONE_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> UHCI_OUT_DONE_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_IN_ERR_EOF_INT_CLR`"]
-pub type UHCI_IN_ERR_EOF_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_IN_ERR_EOF_INT_CLR`"]
-pub struct UHCI_IN_ERR_EOF_INT_CLR_W<'a> {
+#[doc = "Reader of field `IN_ERR_EOF_INT_CLR`"]
+pub type IN_ERR_EOF_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_ERR_EOF_INT_CLR`"]
+pub struct IN_ERR_EOF_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_IN_ERR_EOF_INT_CLR_W<'a> {
+impl<'a> IN_ERR_EOF_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> UHCI_IN_ERR_EOF_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_IN_SUC_EOF_INT_CLR`"]
-pub type UHCI_IN_SUC_EOF_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_IN_SUC_EOF_INT_CLR`"]
-pub struct UHCI_IN_SUC_EOF_INT_CLR_W<'a> {
+#[doc = "Reader of field `IN_SUC_EOF_INT_CLR`"]
+pub type IN_SUC_EOF_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_SUC_EOF_INT_CLR`"]
+pub struct IN_SUC_EOF_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_IN_SUC_EOF_INT_CLR_W<'a> {
+impl<'a> IN_SUC_EOF_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> UHCI_IN_SUC_EOF_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_IN_DONE_INT_CLR`"]
-pub type UHCI_IN_DONE_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_IN_DONE_INT_CLR`"]
-pub struct UHCI_IN_DONE_INT_CLR_W<'a> {
+#[doc = "Reader of field `IN_DONE_INT_CLR`"]
+pub type IN_DONE_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_DONE_INT_CLR`"]
+pub struct IN_DONE_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_IN_DONE_INT_CLR_W<'a> {
+impl<'a> IN_DONE_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> UHCI_IN_DONE_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_TX_HUNG_INT_CLR`"]
-pub type UHCI_TX_HUNG_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_TX_HUNG_INT_CLR`"]
-pub struct UHCI_TX_HUNG_INT_CLR_W<'a> {
+#[doc = "Reader of field `TX_HUNG_INT_CLR`"]
+pub type TX_HUNG_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_HUNG_INT_CLR`"]
+pub struct TX_HUNG_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_TX_HUNG_INT_CLR_W<'a> {
+impl<'a> TX_HUNG_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> UHCI_TX_HUNG_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_RX_HUNG_INT_CLR`"]
-pub type UHCI_RX_HUNG_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_RX_HUNG_INT_CLR`"]
-pub struct UHCI_RX_HUNG_INT_CLR_W<'a> {
+#[doc = "Reader of field `RX_HUNG_INT_CLR`"]
+pub type RX_HUNG_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_HUNG_INT_CLR`"]
+pub struct RX_HUNG_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_RX_HUNG_INT_CLR_W<'a> {
+impl<'a> RX_HUNG_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -370,13 +370,13 @@ impl<'a> UHCI_RX_HUNG_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_TX_START_INT_CLR`"]
-pub type UHCI_TX_START_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_TX_START_INT_CLR`"]
-pub struct UHCI_TX_START_INT_CLR_W<'a> {
+#[doc = "Reader of field `TX_START_INT_CLR`"]
+pub type TX_START_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TX_START_INT_CLR`"]
+pub struct TX_START_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_TX_START_INT_CLR_W<'a> {
+impl<'a> TX_START_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -394,13 +394,13 @@ impl<'a> UHCI_TX_START_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_RX_START_INT_CLR`"]
-pub type UHCI_RX_START_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `UHCI_RX_START_INT_CLR`"]
-pub struct UHCI_RX_START_INT_CLR_W<'a> {
+#[doc = "Reader of field `RX_START_INT_CLR`"]
+pub type RX_START_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `RX_START_INT_CLR`"]
+pub struct RX_START_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_RX_START_INT_CLR_W<'a> {
+impl<'a> RX_START_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -421,174 +421,174 @@ impl<'a> UHCI_RX_START_INT_CLR_W<'a> {
 impl R {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn uhci_dma_infifo_full_wm_int_clr(&self) -> UHCI_DMA_INFIFO_FULL_WM_INT_CLR_R {
-        UHCI_DMA_INFIFO_FULL_WM_INT_CLR_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn dma_infifo_full_wm_int_clr(&self) -> DMA_INFIFO_FULL_WM_INT_CLR_R {
+        DMA_INFIFO_FULL_WM_INT_CLR_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn uhci_send_a_q_int_clr(&self) -> UHCI_SEND_A_Q_INT_CLR_R {
-        UHCI_SEND_A_Q_INT_CLR_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn send_a_q_int_clr(&self) -> SEND_A_Q_INT_CLR_R {
+        SEND_A_Q_INT_CLR_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn uhci_send_s_q_int_clr(&self) -> UHCI_SEND_S_Q_INT_CLR_R {
-        UHCI_SEND_S_Q_INT_CLR_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn send_s_q_int_clr(&self) -> SEND_S_Q_INT_CLR_R {
+        SEND_S_Q_INT_CLR_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn uhci_out_total_eof_int_clr(&self) -> UHCI_OUT_TOTAL_EOF_INT_CLR_R {
-        UHCI_OUT_TOTAL_EOF_INT_CLR_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn out_total_eof_int_clr(&self) -> OUT_TOTAL_EOF_INT_CLR_R {
+        OUT_TOTAL_EOF_INT_CLR_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn uhci_outlink_eof_err_int_clr(&self) -> UHCI_OUTLINK_EOF_ERR_INT_CLR_R {
-        UHCI_OUTLINK_EOF_ERR_INT_CLR_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn outlink_eof_err_int_clr(&self) -> OUTLINK_EOF_ERR_INT_CLR_R {
+        OUTLINK_EOF_ERR_INT_CLR_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn uhci_in_dscr_empty_int_clr(&self) -> UHCI_IN_DSCR_EMPTY_INT_CLR_R {
-        UHCI_IN_DSCR_EMPTY_INT_CLR_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn in_dscr_empty_int_clr(&self) -> IN_DSCR_EMPTY_INT_CLR_R {
+        IN_DSCR_EMPTY_INT_CLR_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn uhci_out_dscr_err_int_clr(&self) -> UHCI_OUT_DSCR_ERR_INT_CLR_R {
-        UHCI_OUT_DSCR_ERR_INT_CLR_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn out_dscr_err_int_clr(&self) -> OUT_DSCR_ERR_INT_CLR_R {
+        OUT_DSCR_ERR_INT_CLR_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn uhci_in_dscr_err_int_clr(&self) -> UHCI_IN_DSCR_ERR_INT_CLR_R {
-        UHCI_IN_DSCR_ERR_INT_CLR_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn in_dscr_err_int_clr(&self) -> IN_DSCR_ERR_INT_CLR_R {
+        IN_DSCR_ERR_INT_CLR_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn uhci_out_eof_int_clr(&self) -> UHCI_OUT_EOF_INT_CLR_R {
-        UHCI_OUT_EOF_INT_CLR_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn out_eof_int_clr(&self) -> OUT_EOF_INT_CLR_R {
+        OUT_EOF_INT_CLR_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn uhci_out_done_int_clr(&self) -> UHCI_OUT_DONE_INT_CLR_R {
-        UHCI_OUT_DONE_INT_CLR_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn out_done_int_clr(&self) -> OUT_DONE_INT_CLR_R {
+        OUT_DONE_INT_CLR_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn uhci_in_err_eof_int_clr(&self) -> UHCI_IN_ERR_EOF_INT_CLR_R {
-        UHCI_IN_ERR_EOF_INT_CLR_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn in_err_eof_int_clr(&self) -> IN_ERR_EOF_INT_CLR_R {
+        IN_ERR_EOF_INT_CLR_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn uhci_in_suc_eof_int_clr(&self) -> UHCI_IN_SUC_EOF_INT_CLR_R {
-        UHCI_IN_SUC_EOF_INT_CLR_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn in_suc_eof_int_clr(&self) -> IN_SUC_EOF_INT_CLR_R {
+        IN_SUC_EOF_INT_CLR_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn uhci_in_done_int_clr(&self) -> UHCI_IN_DONE_INT_CLR_R {
-        UHCI_IN_DONE_INT_CLR_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn in_done_int_clr(&self) -> IN_DONE_INT_CLR_R {
+        IN_DONE_INT_CLR_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn uhci_tx_hung_int_clr(&self) -> UHCI_TX_HUNG_INT_CLR_R {
-        UHCI_TX_HUNG_INT_CLR_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn tx_hung_int_clr(&self) -> TX_HUNG_INT_CLR_R {
+        TX_HUNG_INT_CLR_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn uhci_rx_hung_int_clr(&self) -> UHCI_RX_HUNG_INT_CLR_R {
-        UHCI_RX_HUNG_INT_CLR_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn rx_hung_int_clr(&self) -> RX_HUNG_INT_CLR_R {
+        RX_HUNG_INT_CLR_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn uhci_tx_start_int_clr(&self) -> UHCI_TX_START_INT_CLR_R {
-        UHCI_TX_START_INT_CLR_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn tx_start_int_clr(&self) -> TX_START_INT_CLR_R {
+        TX_START_INT_CLR_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn uhci_rx_start_int_clr(&self) -> UHCI_RX_START_INT_CLR_R {
-        UHCI_RX_START_INT_CLR_R::new((self.bits & 0x01) != 0)
+    pub fn rx_start_int_clr(&self) -> RX_START_INT_CLR_R {
+        RX_START_INT_CLR_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn uhci_dma_infifo_full_wm_int_clr(&mut self) -> UHCI_DMA_INFIFO_FULL_WM_INT_CLR_W {
-        UHCI_DMA_INFIFO_FULL_WM_INT_CLR_W { w: self }
+    pub fn dma_infifo_full_wm_int_clr(&mut self) -> DMA_INFIFO_FULL_WM_INT_CLR_W {
+        DMA_INFIFO_FULL_WM_INT_CLR_W { w: self }
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn uhci_send_a_q_int_clr(&mut self) -> UHCI_SEND_A_Q_INT_CLR_W {
-        UHCI_SEND_A_Q_INT_CLR_W { w: self }
+    pub fn send_a_q_int_clr(&mut self) -> SEND_A_Q_INT_CLR_W {
+        SEND_A_Q_INT_CLR_W { w: self }
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn uhci_send_s_q_int_clr(&mut self) -> UHCI_SEND_S_Q_INT_CLR_W {
-        UHCI_SEND_S_Q_INT_CLR_W { w: self }
+    pub fn send_s_q_int_clr(&mut self) -> SEND_S_Q_INT_CLR_W {
+        SEND_S_Q_INT_CLR_W { w: self }
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn uhci_out_total_eof_int_clr(&mut self) -> UHCI_OUT_TOTAL_EOF_INT_CLR_W {
-        UHCI_OUT_TOTAL_EOF_INT_CLR_W { w: self }
+    pub fn out_total_eof_int_clr(&mut self) -> OUT_TOTAL_EOF_INT_CLR_W {
+        OUT_TOTAL_EOF_INT_CLR_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn uhci_outlink_eof_err_int_clr(&mut self) -> UHCI_OUTLINK_EOF_ERR_INT_CLR_W {
-        UHCI_OUTLINK_EOF_ERR_INT_CLR_W { w: self }
+    pub fn outlink_eof_err_int_clr(&mut self) -> OUTLINK_EOF_ERR_INT_CLR_W {
+        OUTLINK_EOF_ERR_INT_CLR_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn uhci_in_dscr_empty_int_clr(&mut self) -> UHCI_IN_DSCR_EMPTY_INT_CLR_W {
-        UHCI_IN_DSCR_EMPTY_INT_CLR_W { w: self }
+    pub fn in_dscr_empty_int_clr(&mut self) -> IN_DSCR_EMPTY_INT_CLR_W {
+        IN_DSCR_EMPTY_INT_CLR_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn uhci_out_dscr_err_int_clr(&mut self) -> UHCI_OUT_DSCR_ERR_INT_CLR_W {
-        UHCI_OUT_DSCR_ERR_INT_CLR_W { w: self }
+    pub fn out_dscr_err_int_clr(&mut self) -> OUT_DSCR_ERR_INT_CLR_W {
+        OUT_DSCR_ERR_INT_CLR_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn uhci_in_dscr_err_int_clr(&mut self) -> UHCI_IN_DSCR_ERR_INT_CLR_W {
-        UHCI_IN_DSCR_ERR_INT_CLR_W { w: self }
+    pub fn in_dscr_err_int_clr(&mut self) -> IN_DSCR_ERR_INT_CLR_W {
+        IN_DSCR_ERR_INT_CLR_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn uhci_out_eof_int_clr(&mut self) -> UHCI_OUT_EOF_INT_CLR_W {
-        UHCI_OUT_EOF_INT_CLR_W { w: self }
+    pub fn out_eof_int_clr(&mut self) -> OUT_EOF_INT_CLR_W {
+        OUT_EOF_INT_CLR_W { w: self }
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn uhci_out_done_int_clr(&mut self) -> UHCI_OUT_DONE_INT_CLR_W {
-        UHCI_OUT_DONE_INT_CLR_W { w: self }
+    pub fn out_done_int_clr(&mut self) -> OUT_DONE_INT_CLR_W {
+        OUT_DONE_INT_CLR_W { w: self }
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn uhci_in_err_eof_int_clr(&mut self) -> UHCI_IN_ERR_EOF_INT_CLR_W {
-        UHCI_IN_ERR_EOF_INT_CLR_W { w: self }
+    pub fn in_err_eof_int_clr(&mut self) -> IN_ERR_EOF_INT_CLR_W {
+        IN_ERR_EOF_INT_CLR_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn uhci_in_suc_eof_int_clr(&mut self) -> UHCI_IN_SUC_EOF_INT_CLR_W {
-        UHCI_IN_SUC_EOF_INT_CLR_W { w: self }
+    pub fn in_suc_eof_int_clr(&mut self) -> IN_SUC_EOF_INT_CLR_W {
+        IN_SUC_EOF_INT_CLR_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn uhci_in_done_int_clr(&mut self) -> UHCI_IN_DONE_INT_CLR_W {
-        UHCI_IN_DONE_INT_CLR_W { w: self }
+    pub fn in_done_int_clr(&mut self) -> IN_DONE_INT_CLR_W {
+        IN_DONE_INT_CLR_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn uhci_tx_hung_int_clr(&mut self) -> UHCI_TX_HUNG_INT_CLR_W {
-        UHCI_TX_HUNG_INT_CLR_W { w: self }
+    pub fn tx_hung_int_clr(&mut self) -> TX_HUNG_INT_CLR_W {
+        TX_HUNG_INT_CLR_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn uhci_rx_hung_int_clr(&mut self) -> UHCI_RX_HUNG_INT_CLR_W {
-        UHCI_RX_HUNG_INT_CLR_W { w: self }
+    pub fn rx_hung_int_clr(&mut self) -> RX_HUNG_INT_CLR_W {
+        RX_HUNG_INT_CLR_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn uhci_tx_start_int_clr(&mut self) -> UHCI_TX_START_INT_CLR_W {
-        UHCI_TX_START_INT_CLR_W { w: self }
+    pub fn tx_start_int_clr(&mut self) -> TX_START_INT_CLR_W {
+        TX_START_INT_CLR_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn uhci_rx_start_int_clr(&mut self) -> UHCI_RX_START_INT_CLR_W {
-        UHCI_RX_START_INT_CLR_W { w: self }
+    pub fn rx_start_int_clr(&mut self) -> RX_START_INT_CLR_W {
+        RX_START_INT_CLR_W { w: self }
     }
 }

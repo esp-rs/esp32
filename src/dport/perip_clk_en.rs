@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PERIP_CLK_EN {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PERIP_CLK_EN`"]
-pub type DPORT_PERIP_CLK_EN_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_PERIP_CLK_EN`"]
-pub struct DPORT_PERIP_CLK_EN_W<'a> {
+#[doc = "Reader of field `PERIP_CLK_EN`"]
+pub type PERIP_CLK_EN_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `PERIP_CLK_EN`"]
+pub struct PERIP_CLK_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PERIP_CLK_EN_W<'a> {
+impl<'a> PERIP_CLK_EN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PERIP_CLK_EN_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_perip_clk_en(&self) -> DPORT_PERIP_CLK_EN_R {
-        DPORT_PERIP_CLK_EN_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn perip_clk_en(&self) -> PERIP_CLK_EN_R {
+        PERIP_CLK_EN_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_perip_clk_en(&mut self) -> DPORT_PERIP_CLK_EN_W {
-        DPORT_PERIP_CLK_EN_W { w: self }
+    pub fn perip_clk_en(&mut self) -> PERIP_CLK_EN_W {
+        PERIP_CLK_EN_W { w: self }
     }
 }

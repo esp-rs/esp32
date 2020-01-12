@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_ENA_TIMERS {
         0
     }
 }
-#[doc = "Reader of field `TIMG_LACT_INT_ENA`"]
-pub type TIMG_LACT_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_LACT_INT_ENA`"]
-pub struct TIMG_LACT_INT_ENA_W<'a> {
+#[doc = "Reader of field `LACT_INT_ENA`"]
+pub type LACT_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `LACT_INT_ENA`"]
+pub struct LACT_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_LACT_INT_ENA_W<'a> {
+impl<'a> LACT_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> TIMG_LACT_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_WDT_INT_ENA`"]
-pub type TIMG_WDT_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_WDT_INT_ENA`"]
-pub struct TIMG_WDT_INT_ENA_W<'a> {
+#[doc = "Reader of field `WDT_INT_ENA`"]
+pub type WDT_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `WDT_INT_ENA`"]
+pub struct WDT_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_WDT_INT_ENA_W<'a> {
+impl<'a> WDT_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> TIMG_WDT_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_T1_INT_ENA`"]
-pub type TIMG_T1_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_T1_INT_ENA`"]
-pub struct TIMG_T1_INT_ENA_W<'a> {
+#[doc = "Reader of field `T1_INT_ENA`"]
+pub type T1_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `T1_INT_ENA`"]
+pub struct T1_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_T1_INT_ENA_W<'a> {
+impl<'a> T1_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> TIMG_T1_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TIMG_T0_INT_ENA`"]
-pub type TIMG_T0_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TIMG_T0_INT_ENA`"]
-pub struct TIMG_T0_INT_ENA_W<'a> {
+#[doc = "Reader of field `T0_INT_ENA`"]
+pub type T0_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `T0_INT_ENA`"]
+pub struct T0_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_T0_INT_ENA_W<'a> {
+impl<'a> T0_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -109,44 +109,44 @@ impl<'a> TIMG_T0_INT_ENA_W<'a> {
 impl R {
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn timg_lact_int_ena(&self) -> TIMG_LACT_INT_ENA_R {
-        TIMG_LACT_INT_ENA_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn lact_int_ena(&self) -> LACT_INT_ENA_R {
+        LACT_INT_ENA_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2 - Interrupt when an interrupt stage timeout"]
     #[inline(always)]
-    pub fn timg_wdt_int_ena(&self) -> TIMG_WDT_INT_ENA_R {
-        TIMG_WDT_INT_ENA_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn wdt_int_ena(&self) -> WDT_INT_ENA_R {
+        WDT_INT_ENA_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1 - interrupt when timer1 alarm"]
     #[inline(always)]
-    pub fn timg_t1_int_ena(&self) -> TIMG_T1_INT_ENA_R {
-        TIMG_T1_INT_ENA_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn t1_int_ena(&self) -> T1_INT_ENA_R {
+        T1_INT_ENA_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - interrupt when timer0 alarm"]
     #[inline(always)]
-    pub fn timg_t0_int_ena(&self) -> TIMG_T0_INT_ENA_R {
-        TIMG_T0_INT_ENA_R::new((self.bits & 0x01) != 0)
+    pub fn t0_int_ena(&self) -> T0_INT_ENA_R {
+        T0_INT_ENA_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn timg_lact_int_ena(&mut self) -> TIMG_LACT_INT_ENA_W {
-        TIMG_LACT_INT_ENA_W { w: self }
+    pub fn lact_int_ena(&mut self) -> LACT_INT_ENA_W {
+        LACT_INT_ENA_W { w: self }
     }
     #[doc = "Bit 2 - Interrupt when an interrupt stage timeout"]
     #[inline(always)]
-    pub fn timg_wdt_int_ena(&mut self) -> TIMG_WDT_INT_ENA_W {
-        TIMG_WDT_INT_ENA_W { w: self }
+    pub fn wdt_int_ena(&mut self) -> WDT_INT_ENA_W {
+        WDT_INT_ENA_W { w: self }
     }
     #[doc = "Bit 1 - interrupt when timer1 alarm"]
     #[inline(always)]
-    pub fn timg_t1_int_ena(&mut self) -> TIMG_T1_INT_ENA_W {
-        TIMG_T1_INT_ENA_W { w: self }
+    pub fn t1_int_ena(&mut self) -> T1_INT_ENA_W {
+        T1_INT_ENA_W { w: self }
     }
     #[doc = "Bit 0 - interrupt when timer0 alarm"]
     #[inline(always)]
-    pub fn timg_t0_int_ena(&mut self) -> TIMG_T0_INT_ENA_W {
-        TIMG_T0_INT_ENA_W { w: self }
+    pub fn t0_int_ena(&mut self) -> T0_INT_ENA_W {
+        T0_INT_ENA_W { w: self }
     }
 }

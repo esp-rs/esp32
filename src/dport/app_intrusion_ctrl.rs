@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_INTRUSION_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APP_INTRUSION_RECORD_RESET_N`"]
-pub type DPORT_APP_INTRUSION_RECORD_RESET_N_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_APP_INTRUSION_RECORD_RESET_N`"]
-pub struct DPORT_APP_INTRUSION_RECORD_RESET_N_W<'a> {
+#[doc = "Reader of field `APP_INTRUSION_RECORD_RESET_N`"]
+pub type APP_INTRUSION_RECORD_RESET_N_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APP_INTRUSION_RECORD_RESET_N`"]
+pub struct APP_INTRUSION_RECORD_RESET_N_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APP_INTRUSION_RECORD_RESET_N_W<'a> {
+impl<'a> APP_INTRUSION_RECORD_RESET_N_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_APP_INTRUSION_RECORD_RESET_N_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_app_intrusion_record_reset_n(&self) -> DPORT_APP_INTRUSION_RECORD_RESET_N_R {
-        DPORT_APP_INTRUSION_RECORD_RESET_N_R::new((self.bits & 0x01) != 0)
+    pub fn app_intrusion_record_reset_n(&self) -> APP_INTRUSION_RECORD_RESET_N_R {
+        APP_INTRUSION_RECORD_RESET_N_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_app_intrusion_record_reset_n(&mut self) -> DPORT_APP_INTRUSION_RECORD_RESET_N_W {
-        DPORT_APP_INTRUSION_RECORD_RESET_N_W { w: self }
+    pub fn app_intrusion_record_reset_n(&mut self) -> APP_INTRUSION_RECORD_RESET_N_W {
+        APP_INTRUSION_RECORD_RESET_N_W { w: self }
     }
 }

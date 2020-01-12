@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_PWM1 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PWM1_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_PWM1_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_PWM1_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_PWM1_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `PWM1_ACCESS_GRANT_CONFIG`"]
+pub type PWM1_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `PWM1_ACCESS_GRANT_CONFIG`"]
+pub struct PWM1_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PWM1_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> PWM1_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PWM1_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_pwm1_access_grant_config(&self) -> DPORT_PWM1_ACCESS_GRANT_CONFIG_R {
-        DPORT_PWM1_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn pwm1_access_grant_config(&self) -> PWM1_ACCESS_GRANT_CONFIG_R {
+        PWM1_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_pwm1_access_grant_config(&mut self) -> DPORT_PWM1_ACCESS_GRANT_CONFIG_W {
-        DPORT_PWM1_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn pwm1_access_grant_config(&mut self) -> PWM1_ACCESS_GRANT_CONFIG_W {
+        PWM1_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

@@ -1,0 +1,116 @@
+# Strip prefixes on bitfield names for all registers.
+
+APB_CTRL:
+  "*":
+    _strip:
+      - APB_CTRL_
+
+DPORT:
+  "*":
+    _strip:
+      - DPORT_
+
+EFUSE:
+  "*":
+    _strip:
+      - EFUSE_
+
+GPIO:
+  "*":
+    _strip:
+      - GPIO_
+
+GPIO_SD:
+  "*":
+    _strip:
+      - GPIO_
+
+HINF:
+  "*":
+    _strip:
+      - HINF_
+
+I2S:
+  "*":
+    _strip:
+      - I2S_
+
+I2C:
+  "*":
+    _strip:
+      - I2C_
+
+LEDC:
+  "*":
+    _strip:
+      - LEDC_
+
+MCPWM:
+  "*":
+    _strip:
+      - MCPWM_
+
+PCNT:
+  "*":
+    _strip:
+      - PCNT_
+
+RMT:
+  "*":
+    _strip:
+      - RMT_
+
+RTC_I2C:
+  "*":
+    _strip:
+      - RTC_I2C_
+
+RTCCNTL:
+  "*":
+    _strip:
+      - RTC_CNTL_
+
+RTCIO:
+  "*":
+    _strip:
+      - RTCIO_
+
+SENS:
+  "*":
+    _strip:
+      - SENS_
+
+SLC:
+  "*":
+    _strip:
+      - SLC_
+
+SLCHOST:
+  "*":
+    _strip:
+      - SLCHOST_
+
+SPI:
+  "*":
+    _strip:
+      - SPI_
+
+SYSCON:
+  "*":
+    _strip:
+      - SYSCON_
+
+TIMG:
+  "*":
+    _strip:
+      - TIMG_
+
+UART:
+  "*":
+    _strip:
+      - UART_
+
+UHCI:
+  "*":
+    _strip:
+      - UHCI_

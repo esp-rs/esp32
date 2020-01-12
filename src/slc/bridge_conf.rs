@@ -10,13 +10,13 @@ impl crate::ResetValue for super::BRIDGE_CONF {
         0
     }
 }
-#[doc = "Reader of field `SLC_TX_PUSH_IDLE_NUM`"]
-pub type SLC_TX_PUSH_IDLE_NUM_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SLC_TX_PUSH_IDLE_NUM`"]
-pub struct SLC_TX_PUSH_IDLE_NUM_W<'a> {
+#[doc = "Reader of field `TX_PUSH_IDLE_NUM`"]
+pub type TX_PUSH_IDLE_NUM_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TX_PUSH_IDLE_NUM`"]
+pub struct TX_PUSH_IDLE_NUM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_TX_PUSH_IDLE_NUM_W<'a> {
+impl<'a> TX_PUSH_IDLE_NUM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SLC_TX_PUSH_IDLE_NUM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC1_TX_DUMMY_MODE`"]
-pub type SLC_SLC1_TX_DUMMY_MODE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC1_TX_DUMMY_MODE`"]
-pub struct SLC_SLC1_TX_DUMMY_MODE_W<'a> {
+#[doc = "Reader of field `SLC1_TX_DUMMY_MODE`"]
+pub type SLC1_TX_DUMMY_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC1_TX_DUMMY_MODE`"]
+pub struct SLC1_TX_DUMMY_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC1_TX_DUMMY_MODE_W<'a> {
+impl<'a> SLC1_TX_DUMMY_MODE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> SLC_SLC1_TX_DUMMY_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_HDA_MAP_128K`"]
-pub type SLC_HDA_MAP_128K_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_HDA_MAP_128K`"]
-pub struct SLC_HDA_MAP_128K_W<'a> {
+#[doc = "Reader of field `HDA_MAP_128K`"]
+pub type HDA_MAP_128K_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `HDA_MAP_128K`"]
+pub struct HDA_MAP_128K_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_HDA_MAP_128K_W<'a> {
+impl<'a> HDA_MAP_128K_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> SLC_HDA_MAP_128K_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_SLC0_TX_DUMMY_MODE`"]
-pub type SLC_SLC0_TX_DUMMY_MODE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SLC_SLC0_TX_DUMMY_MODE`"]
-pub struct SLC_SLC0_TX_DUMMY_MODE_W<'a> {
+#[doc = "Reader of field `SLC0_TX_DUMMY_MODE`"]
+pub type SLC0_TX_DUMMY_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SLC0_TX_DUMMY_MODE`"]
+pub struct SLC0_TX_DUMMY_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_SLC0_TX_DUMMY_MODE_W<'a> {
+impl<'a> SLC0_TX_DUMMY_MODE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -96,13 +96,13 @@ impl<'a> SLC_SLC0_TX_DUMMY_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_FIFO_MAP_ENA`"]
-pub type SLC_FIFO_MAP_ENA_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_FIFO_MAP_ENA`"]
-pub struct SLC_FIFO_MAP_ENA_W<'a> {
+#[doc = "Reader of field `FIFO_MAP_ENA`"]
+pub type FIFO_MAP_ENA_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `FIFO_MAP_ENA`"]
+pub struct FIFO_MAP_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_FIFO_MAP_ENA_W<'a> {
+impl<'a> FIFO_MAP_ENA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -110,13 +110,13 @@ impl<'a> SLC_FIFO_MAP_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SLC_TXEOF_ENA`"]
-pub type SLC_TXEOF_ENA_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SLC_TXEOF_ENA`"]
-pub struct SLC_TXEOF_ENA_W<'a> {
+#[doc = "Reader of field `TXEOF_ENA`"]
+pub type TXEOF_ENA_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TXEOF_ENA`"]
+pub struct TXEOF_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SLC_TXEOF_ENA_W<'a> {
+impl<'a> TXEOF_ENA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -127,64 +127,64 @@ impl<'a> SLC_TXEOF_ENA_W<'a> {
 impl R {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn slc_tx_push_idle_num(&self) -> SLC_TX_PUSH_IDLE_NUM_R {
-        SLC_TX_PUSH_IDLE_NUM_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn tx_push_idle_num(&self) -> TX_PUSH_IDLE_NUM_R {
+        TX_PUSH_IDLE_NUM_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn slc_slc1_tx_dummy_mode(&self) -> SLC_SLC1_TX_DUMMY_MODE_R {
-        SLC_SLC1_TX_DUMMY_MODE_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn slc1_tx_dummy_mode(&self) -> SLC1_TX_DUMMY_MODE_R {
+        SLC1_TX_DUMMY_MODE_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn slc_hda_map_128k(&self) -> SLC_HDA_MAP_128K_R {
-        SLC_HDA_MAP_128K_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn hda_map_128k(&self) -> HDA_MAP_128K_R {
+        HDA_MAP_128K_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn slc_slc0_tx_dummy_mode(&self) -> SLC_SLC0_TX_DUMMY_MODE_R {
-        SLC_SLC0_TX_DUMMY_MODE_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn slc0_tx_dummy_mode(&self) -> SLC0_TX_DUMMY_MODE_R {
+        SLC0_TX_DUMMY_MODE_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn slc_fifo_map_ena(&self) -> SLC_FIFO_MAP_ENA_R {
-        SLC_FIFO_MAP_ENA_R::new(((self.bits >> 8) & 0x0f) as u8)
+    pub fn fifo_map_ena(&self) -> FIFO_MAP_ENA_R {
+        FIFO_MAP_ENA_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn slc_txeof_ena(&self) -> SLC_TXEOF_ENA_R {
-        SLC_TXEOF_ENA_R::new((self.bits & 0x3f) as u8)
+    pub fn txeof_ena(&self) -> TXEOF_ENA_R {
+        TXEOF_ENA_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn slc_tx_push_idle_num(&mut self) -> SLC_TX_PUSH_IDLE_NUM_W {
-        SLC_TX_PUSH_IDLE_NUM_W { w: self }
+    pub fn tx_push_idle_num(&mut self) -> TX_PUSH_IDLE_NUM_W {
+        TX_PUSH_IDLE_NUM_W { w: self }
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn slc_slc1_tx_dummy_mode(&mut self) -> SLC_SLC1_TX_DUMMY_MODE_W {
-        SLC_SLC1_TX_DUMMY_MODE_W { w: self }
+    pub fn slc1_tx_dummy_mode(&mut self) -> SLC1_TX_DUMMY_MODE_W {
+        SLC1_TX_DUMMY_MODE_W { w: self }
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn slc_hda_map_128k(&mut self) -> SLC_HDA_MAP_128K_W {
-        SLC_HDA_MAP_128K_W { w: self }
+    pub fn hda_map_128k(&mut self) -> HDA_MAP_128K_W {
+        HDA_MAP_128K_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn slc_slc0_tx_dummy_mode(&mut self) -> SLC_SLC0_TX_DUMMY_MODE_W {
-        SLC_SLC0_TX_DUMMY_MODE_W { w: self }
+    pub fn slc0_tx_dummy_mode(&mut self) -> SLC0_TX_DUMMY_MODE_W {
+        SLC0_TX_DUMMY_MODE_W { w: self }
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn slc_fifo_map_ena(&mut self) -> SLC_FIFO_MAP_ENA_W {
-        SLC_FIFO_MAP_ENA_W { w: self }
+    pub fn fifo_map_ena(&mut self) -> FIFO_MAP_ENA_W {
+        FIFO_MAP_ENA_W { w: self }
     }
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn slc_txeof_ena(&mut self) -> SLC_TXEOF_ENA_W {
-        SLC_TXEOF_ENA_W { w: self }
+    pub fn txeof_ena(&mut self) -> TXEOF_ENA_W {
+        TXEOF_ENA_W { w: self }
     }
 }

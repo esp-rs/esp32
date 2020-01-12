@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_TOUCH_THRES5 {
         0
     }
 }
-#[doc = "Reader of field `SENS_TOUCH_OUT_TH8`"]
-pub type SENS_TOUCH_OUT_TH8_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TOUCH_OUT_TH8`"]
-pub struct SENS_TOUCH_OUT_TH8_W<'a> {
+#[doc = "Reader of field `TOUCH_OUT_TH8`"]
+pub type TOUCH_OUT_TH8_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TOUCH_OUT_TH8`"]
+pub struct TOUCH_OUT_TH8_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TOUCH_OUT_TH8_W<'a> {
+impl<'a> TOUCH_OUT_TH8_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> SENS_TOUCH_OUT_TH8_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SENS_TOUCH_OUT_TH9`"]
-pub type SENS_TOUCH_OUT_TH9_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `SENS_TOUCH_OUT_TH9`"]
-pub struct SENS_TOUCH_OUT_TH9_W<'a> {
+#[doc = "Reader of field `TOUCH_OUT_TH9`"]
+pub type TOUCH_OUT_TH9_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TOUCH_OUT_TH9`"]
+pub struct TOUCH_OUT_TH9_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_TOUCH_OUT_TH9_W<'a> {
+impl<'a> TOUCH_OUT_TH9_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> SENS_TOUCH_OUT_TH9_W<'a> {
 impl R {
     #[doc = "Bits 16:31 - the threshold for touch pad 8"]
     #[inline(always)]
-    pub fn sens_touch_out_th8(&self) -> SENS_TOUCH_OUT_TH8_R {
-        SENS_TOUCH_OUT_TH8_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn touch_out_th8(&self) -> TOUCH_OUT_TH8_R {
+        TOUCH_OUT_TH8_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bits 0:15 - the threshold for touch pad 9"]
     #[inline(always)]
-    pub fn sens_touch_out_th9(&self) -> SENS_TOUCH_OUT_TH9_R {
-        SENS_TOUCH_OUT_TH9_R::new((self.bits & 0xffff) as u16)
+    pub fn touch_out_th9(&self) -> TOUCH_OUT_TH9_R {
+        TOUCH_OUT_TH9_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:31 - the threshold for touch pad 8"]
     #[inline(always)]
-    pub fn sens_touch_out_th8(&mut self) -> SENS_TOUCH_OUT_TH8_W {
-        SENS_TOUCH_OUT_TH8_W { w: self }
+    pub fn touch_out_th8(&mut self) -> TOUCH_OUT_TH8_W {
+        TOUCH_OUT_TH8_W { w: self }
     }
     #[doc = "Bits 0:15 - the threshold for touch pad 9"]
     #[inline(always)]
-    pub fn sens_touch_out_th9(&mut self) -> SENS_TOUCH_OUT_TH9_W {
-        SENS_TOUCH_OUT_TH9_W { w: self }
+    pub fn touch_out_th9(&mut self) -> TOUCH_OUT_TH9_W {
+        TOUCH_OUT_TH9_W { w: self }
     }
 }

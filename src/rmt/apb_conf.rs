@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APB_CONF {
         0
     }
 }
-#[doc = "Reader of field `RMT_MEM_TX_WRAP_EN`"]
-pub type RMT_MEM_TX_WRAP_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RMT_MEM_TX_WRAP_EN`"]
-pub struct RMT_MEM_TX_WRAP_EN_W<'a> {
+#[doc = "Reader of field `MEM_TX_WRAP_EN`"]
+pub type MEM_TX_WRAP_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MEM_TX_WRAP_EN`"]
+pub struct MEM_TX_WRAP_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_MEM_TX_WRAP_EN_W<'a> {
+impl<'a> MEM_TX_WRAP_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RMT_MEM_TX_WRAP_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RMT_APB_FIFO_MASK`"]
-pub type RMT_APB_FIFO_MASK_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RMT_APB_FIFO_MASK`"]
-pub struct RMT_APB_FIFO_MASK_W<'a> {
+#[doc = "Reader of field `APB_FIFO_MASK`"]
+pub type APB_FIFO_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `APB_FIFO_MASK`"]
+pub struct APB_FIFO_MASK_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_APB_FIFO_MASK_W<'a> {
+impl<'a> APB_FIFO_MASK_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> RMT_APB_FIFO_MASK_W<'a> {
 impl R {
     #[doc = "Bit 1 - when datas need to be send is more than channel's mem can store then set this bit to enable reusage of mem this bit is used together with reg_rmt_tx_lim_chn."]
     #[inline(always)]
-    pub fn rmt_mem_tx_wrap_en(&self) -> RMT_MEM_TX_WRAP_EN_R {
-        RMT_MEM_TX_WRAP_EN_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn mem_tx_wrap_en(&self) -> MEM_TX_WRAP_EN_R {
+        MEM_TX_WRAP_EN_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - Set this bit to disable apb fifo access"]
     #[inline(always)]
-    pub fn rmt_apb_fifo_mask(&self) -> RMT_APB_FIFO_MASK_R {
-        RMT_APB_FIFO_MASK_R::new((self.bits & 0x01) != 0)
+    pub fn apb_fifo_mask(&self) -> APB_FIFO_MASK_R {
+        APB_FIFO_MASK_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 1 - when datas need to be send is more than channel's mem can store then set this bit to enable reusage of mem this bit is used together with reg_rmt_tx_lim_chn."]
     #[inline(always)]
-    pub fn rmt_mem_tx_wrap_en(&mut self) -> RMT_MEM_TX_WRAP_EN_W {
-        RMT_MEM_TX_WRAP_EN_W { w: self }
+    pub fn mem_tx_wrap_en(&mut self) -> MEM_TX_WRAP_EN_W {
+        MEM_TX_WRAP_EN_W { w: self }
     }
     #[doc = "Bit 0 - Set this bit to disable apb fifo access"]
     #[inline(always)]
-    pub fn rmt_apb_fifo_mask(&mut self) -> RMT_APB_FIFO_MASK_W {
-        RMT_APB_FIFO_MASK_W { w: self }
+    pub fn apb_fifo_mask(&mut self) -> APB_FIFO_MASK_W {
+        APB_FIFO_MASK_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::W0 {
         0
     }
 }
-#[doc = "Reader of field `SPI_BUF0`"]
-pub type SPI_BUF0_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_BUF0`"]
-pub struct SPI_BUF0_W<'a> {
+#[doc = "Reader of field `BUF0`"]
+pub type BUF0_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `BUF0`"]
+pub struct BUF0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_BUF0_W<'a> {
+impl<'a> BUF0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_BUF0_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - data buffer"]
     #[inline(always)]
-    pub fn spi_buf0(&self) -> SPI_BUF0_R {
-        SPI_BUF0_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn buf0(&self) -> BUF0_R {
+        BUF0_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - data buffer"]
     #[inline(always)]
-    pub fn spi_buf0(&mut self) -> SPI_BUF0_W {
-        SPI_BUF0_W { w: self }
+    pub fn buf0(&mut self) -> BUF0_W {
+        BUF0_W { w: self }
     }
 }

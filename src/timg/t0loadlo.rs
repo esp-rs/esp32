@@ -10,13 +10,13 @@ impl crate::ResetValue for super::T0LOADLO {
         0
     }
 }
-#[doc = "Reader of field `TIMG_T0_LOAD_LO`"]
-pub type TIMG_T0_LOAD_LO_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TIMG_T0_LOAD_LO`"]
-pub struct TIMG_T0_LOAD_LO_W<'a> {
+#[doc = "Reader of field `T0_LOAD_LO`"]
+pub type T0_LOAD_LO_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `T0_LOAD_LO`"]
+pub struct T0_LOAD_LO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> TIMG_T0_LOAD_LO_W<'a> {
+impl<'a> T0_LOAD_LO_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> TIMG_T0_LOAD_LO_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Lower 32 bits of the value that will load into timer 0 time-base counter"]
     #[inline(always)]
-    pub fn timg_t0_load_lo(&self) -> TIMG_T0_LOAD_LO_R {
-        TIMG_T0_LOAD_LO_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn t0_load_lo(&self) -> T0_LOAD_LO_R {
+        T0_LOAD_LO_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Lower 32 bits of the value that will load into timer 0 time-base counter"]
     #[inline(always)]
-    pub fn timg_t0_load_lo(&mut self) -> TIMG_T0_LOAD_LO_W {
-        TIMG_T0_LOAD_LO_W { w: self }
+    pub fn t0_load_lo(&mut self) -> T0_LOAD_LO_W {
+        T0_LOAD_LO_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SIGMADELTA_MISC {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SPI_SWAP`"]
-pub type GPIO_SPI_SWAP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_SPI_SWAP`"]
-pub struct GPIO_SPI_SWAP_W<'a> {
+#[doc = "Reader of field `SPI_SWAP`"]
+pub type SPI_SWAP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SPI_SWAP`"]
+pub struct SPI_SWAP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SPI_SWAP_W<'a> {
+impl<'a> SPI_SWAP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> GPIO_SPI_SWAP_W<'a> {
 impl R {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn gpio_spi_swap(&self) -> GPIO_SPI_SWAP_R {
-        GPIO_SPI_SWAP_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn spi_swap(&self) -> SPI_SWAP_R {
+        SPI_SWAP_R::new(((self.bits >> 31) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn gpio_spi_swap(&mut self) -> GPIO_SPI_SWAP_W {
-        GPIO_SPI_SWAP_W { w: self }
+    pub fn spi_swap(&mut self) -> SPI_SWAP_W {
+        SPI_SWAP_W { w: self }
     }
 }

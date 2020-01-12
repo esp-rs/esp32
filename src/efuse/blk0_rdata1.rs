@@ -10,13 +10,13 @@ impl crate::ResetValue for super::BLK0_RDATA1 {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_RD_WIFI_MAC_CRC_LOW`"]
-pub type EFUSE_RD_WIFI_MAC_CRC_LOW_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `EFUSE_RD_WIFI_MAC_CRC_LOW`"]
-pub struct EFUSE_RD_WIFI_MAC_CRC_LOW_W<'a> {
+#[doc = "Reader of field `RD_WIFI_MAC_CRC_LOW`"]
+pub type RD_WIFI_MAC_CRC_LOW_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `RD_WIFI_MAC_CRC_LOW`"]
+pub struct RD_WIFI_MAC_CRC_LOW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_RD_WIFI_MAC_CRC_LOW_W<'a> {
+impl<'a> RD_WIFI_MAC_CRC_LOW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> EFUSE_RD_WIFI_MAC_CRC_LOW_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - read for low 32bit WIFI_MAC_Address"]
     #[inline(always)]
-    pub fn efuse_rd_wifi_mac_crc_low(&self) -> EFUSE_RD_WIFI_MAC_CRC_LOW_R {
-        EFUSE_RD_WIFI_MAC_CRC_LOW_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn rd_wifi_mac_crc_low(&self) -> RD_WIFI_MAC_CRC_LOW_R {
+        RD_WIFI_MAC_CRC_LOW_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - read for low 32bit WIFI_MAC_Address"]
     #[inline(always)]
-    pub fn efuse_rd_wifi_mac_crc_low(&mut self) -> EFUSE_RD_WIFI_MAC_CRC_LOW_W {
-        EFUSE_RD_WIFI_MAC_CRC_LOW_W { w: self }
+    pub fn rd_wifi_mac_crc_low(&mut self) -> RD_WIFI_MAC_CRC_LOW_W {
+        RD_WIFI_MAC_CRC_LOW_W { w: self }
     }
 }

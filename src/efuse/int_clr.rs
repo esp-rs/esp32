@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_CLR {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_PGM_DONE_INT_CLR`"]
-pub type EFUSE_PGM_DONE_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EFUSE_PGM_DONE_INT_CLR`"]
-pub struct EFUSE_PGM_DONE_INT_CLR_W<'a> {
+#[doc = "Reader of field `PGM_DONE_INT_CLR`"]
+pub type PGM_DONE_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PGM_DONE_INT_CLR`"]
+pub struct PGM_DONE_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_PGM_DONE_INT_CLR_W<'a> {
+impl<'a> PGM_DONE_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> EFUSE_PGM_DONE_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_READ_DONE_INT_CLR`"]
-pub type EFUSE_READ_DONE_INT_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EFUSE_READ_DONE_INT_CLR`"]
-pub struct EFUSE_READ_DONE_INT_CLR_W<'a> {
+#[doc = "Reader of field `READ_DONE_INT_CLR`"]
+pub type READ_DONE_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `READ_DONE_INT_CLR`"]
+pub struct READ_DONE_INT_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_READ_DONE_INT_CLR_W<'a> {
+impl<'a> READ_DONE_INT_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> EFUSE_READ_DONE_INT_CLR_W<'a> {
 impl R {
     #[doc = "Bit 1 - program done interrupt clear"]
     #[inline(always)]
-    pub fn efuse_pgm_done_int_clr(&self) -> EFUSE_PGM_DONE_INT_CLR_R {
-        EFUSE_PGM_DONE_INT_CLR_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn pgm_done_int_clr(&self) -> PGM_DONE_INT_CLR_R {
+        PGM_DONE_INT_CLR_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - read done interrupt clear"]
     #[inline(always)]
-    pub fn efuse_read_done_int_clr(&self) -> EFUSE_READ_DONE_INT_CLR_R {
-        EFUSE_READ_DONE_INT_CLR_R::new((self.bits & 0x01) != 0)
+    pub fn read_done_int_clr(&self) -> READ_DONE_INT_CLR_R {
+        READ_DONE_INT_CLR_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 1 - program done interrupt clear"]
     #[inline(always)]
-    pub fn efuse_pgm_done_int_clr(&mut self) -> EFUSE_PGM_DONE_INT_CLR_W {
-        EFUSE_PGM_DONE_INT_CLR_W { w: self }
+    pub fn pgm_done_int_clr(&mut self) -> PGM_DONE_INT_CLR_W {
+        PGM_DONE_INT_CLR_W { w: self }
     }
     #[doc = "Bit 0 - read done interrupt clear"]
     #[inline(always)]
-    pub fn efuse_read_done_int_clr(&mut self) -> EFUSE_READ_DONE_INT_CLR_W {
-        EFUSE_READ_DONE_INT_CLR_W { w: self }
+    pub fn read_done_int_clr(&mut self) -> READ_DONE_INT_CLR_W {
+        READ_DONE_INT_CLR_W { w: self }
     }
 }

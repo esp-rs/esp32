@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_DCACHE_DBUG9 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_OPSDRAMADDR_IA`"]
-pub type DPORT_PRO_OPSDRAMADDR_IA_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_PRO_OPSDRAMADDR_IA`"]
-pub struct DPORT_PRO_OPSDRAMADDR_IA_W<'a> {
+#[doc = "Reader of field `PRO_OPSDRAMADDR_IA`"]
+pub type PRO_OPSDRAMADDR_IA_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `PRO_OPSDRAMADDR_IA`"]
+pub struct PRO_OPSDRAMADDR_IA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_OPSDRAMADDR_IA_W<'a> {
+impl<'a> PRO_OPSDRAMADDR_IA_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PRO_OPSDRAMADDR_IA_W<'a> {
 impl R {
     #[doc = "Bits 0:19"]
     #[inline(always)]
-    pub fn dport_pro_opsdramaddr_ia(&self) -> DPORT_PRO_OPSDRAMADDR_IA_R {
-        DPORT_PRO_OPSDRAMADDR_IA_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn pro_opsdramaddr_ia(&self) -> PRO_OPSDRAMADDR_IA_R {
+        PRO_OPSDRAMADDR_IA_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19"]
     #[inline(always)]
-    pub fn dport_pro_opsdramaddr_ia(&mut self) -> DPORT_PRO_OPSDRAMADDR_IA_W {
-        DPORT_PRO_OPSDRAMADDR_IA_W { w: self }
+    pub fn pro_opsdramaddr_ia(&mut self) -> PRO_OPSDRAMADDR_IA_W {
+        PRO_OPSDRAMADDR_IA_W { w: self }
     }
 }

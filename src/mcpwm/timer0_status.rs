@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TIMER0_STATUS {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER0_DIRECTION`"]
-pub type MCPWM_TIMER0_DIRECTION_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER0_DIRECTION`"]
-pub struct MCPWM_TIMER0_DIRECTION_W<'a> {
+#[doc = "Reader of field `TIMER0_DIRECTION`"]
+pub type TIMER0_DIRECTION_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER0_DIRECTION`"]
+pub struct TIMER0_DIRECTION_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER0_DIRECTION_W<'a> {
+impl<'a> TIMER0_DIRECTION_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> MCPWM_TIMER0_DIRECTION_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER0_VALUE`"]
-pub type MCPWM_TIMER0_VALUE_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `MCPWM_TIMER0_VALUE`"]
-pub struct MCPWM_TIMER0_VALUE_W<'a> {
+#[doc = "Reader of field `TIMER0_VALUE`"]
+pub type TIMER0_VALUE_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TIMER0_VALUE`"]
+pub struct TIMER0_VALUE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER0_VALUE_W<'a> {
+impl<'a> TIMER0_VALUE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> MCPWM_TIMER0_VALUE_W<'a> {
 impl R {
     #[doc = "Bit 16 - Current PWM timer0 counter direction 0: increment 1: decrement"]
     #[inline(always)]
-    pub fn mcpwm_timer0_direction(&self) -> MCPWM_TIMER0_DIRECTION_R {
-        MCPWM_TIMER0_DIRECTION_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn timer0_direction(&self) -> TIMER0_DIRECTION_R {
+        TIMER0_DIRECTION_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bits 0:15 - Current PWM timer0 counter value"]
     #[inline(always)]
-    pub fn mcpwm_timer0_value(&self) -> MCPWM_TIMER0_VALUE_R {
-        MCPWM_TIMER0_VALUE_R::new((self.bits & 0xffff) as u16)
+    pub fn timer0_value(&self) -> TIMER0_VALUE_R {
+        TIMER0_VALUE_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 16 - Current PWM timer0 counter direction 0: increment 1: decrement"]
     #[inline(always)]
-    pub fn mcpwm_timer0_direction(&mut self) -> MCPWM_TIMER0_DIRECTION_W {
-        MCPWM_TIMER0_DIRECTION_W { w: self }
+    pub fn timer0_direction(&mut self) -> TIMER0_DIRECTION_W {
+        TIMER0_DIRECTION_W { w: self }
     }
     #[doc = "Bits 0:15 - Current PWM timer0 counter value"]
     #[inline(always)]
-    pub fn mcpwm_timer0_value(&mut self) -> MCPWM_TIMER0_VALUE_W {
-        MCPWM_TIMER0_VALUE_W { w: self }
+    pub fn timer0_value(&mut self) -> TIMER0_VALUE_W {
+        TIMER0_VALUE_W { w: self }
     }
 }

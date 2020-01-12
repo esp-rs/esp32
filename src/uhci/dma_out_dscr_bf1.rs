@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMA_OUT_DSCR_BF1 {
         0
     }
 }
-#[doc = "Reader of field `UHCI_OUTLINK_DSCR_BF1`"]
-pub type UHCI_OUTLINK_DSCR_BF1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UHCI_OUTLINK_DSCR_BF1`"]
-pub struct UHCI_OUTLINK_DSCR_BF1_W<'a> {
+#[doc = "Reader of field `OUTLINK_DSCR_BF1`"]
+pub type OUTLINK_DSCR_BF1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `OUTLINK_DSCR_BF1`"]
+pub struct OUTLINK_DSCR_BF1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_OUTLINK_DSCR_BF1_W<'a> {
+impl<'a> OUTLINK_DSCR_BF1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UHCI_OUTLINK_DSCR_BF1_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - The content of current out link descriptor's second dword"]
     #[inline(always)]
-    pub fn uhci_outlink_dscr_bf1(&self) -> UHCI_OUTLINK_DSCR_BF1_R {
-        UHCI_OUTLINK_DSCR_BF1_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn outlink_dscr_bf1(&self) -> OUTLINK_DSCR_BF1_R {
+        OUTLINK_DSCR_BF1_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - The content of current out link descriptor's second dword"]
     #[inline(always)]
-    pub fn uhci_outlink_dscr_bf1(&mut self) -> UHCI_OUTLINK_DSCR_BF1_W {
-        UHCI_OUTLINK_DSCR_BF1_W { w: self }
+    pub fn outlink_dscr_bf1(&mut self) -> OUTLINK_DSCR_BF1_W {
+        OUTLINK_DSCR_BF1_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TO {
         0
     }
 }
-#[doc = "Reader of field `I2C_TIME_OUT_REG`"]
-pub type I2C_TIME_OUT_REG_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `I2C_TIME_OUT_REG`"]
-pub struct I2C_TIME_OUT_REG_W<'a> {
+#[doc = "Reader of field `TIME_OUT_REG`"]
+pub type TIME_OUT_REG_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `TIME_OUT_REG`"]
+pub struct TIME_OUT_REG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2C_TIME_OUT_REG_W<'a> {
+impl<'a> TIME_OUT_REG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> I2C_TIME_OUT_REG_W<'a> {
 impl R {
     #[doc = "Bits 0:19 - This register is used to configure the max clock number of receiving a data."]
     #[inline(always)]
-    pub fn i2c_time_out_reg(&self) -> I2C_TIME_OUT_REG_R {
-        I2C_TIME_OUT_REG_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn time_out_reg(&self) -> TIME_OUT_REG_R {
+        TIME_OUT_REG_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19 - This register is used to configure the max clock number of receiving a data."]
     #[inline(always)]
-    pub fn i2c_time_out_reg(&mut self) -> I2C_TIME_OUT_REG_W {
-        I2C_TIME_OUT_REG_W { w: self }
+    pub fn time_out_reg(&mut self) -> TIME_OUT_REG_W {
+        TIME_OUT_REG_W { w: self }
     }
 }

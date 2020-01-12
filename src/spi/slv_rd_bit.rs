@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SLV_RD_BIT {
         0
     }
 }
-#[doc = "Reader of field `SPI_SLV_RDATA_BIT`"]
-pub type SPI_SLV_RDATA_BIT_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SPI_SLV_RDATA_BIT`"]
-pub struct SPI_SLV_RDATA_BIT_W<'a> {
+#[doc = "Reader of field `SLV_RDATA_BIT`"]
+pub type SLV_RDATA_BIT_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SLV_RDATA_BIT`"]
+pub struct SLV_RDATA_BIT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_SLV_RDATA_BIT_W<'a> {
+impl<'a> SLV_RDATA_BIT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_SLV_RDATA_BIT_W<'a> {
 impl R {
     #[doc = "Bits 0:23 - In the slave mode it is the bit length of read data. The value is the length - 1."]
     #[inline(always)]
-    pub fn spi_slv_rdata_bit(&self) -> SPI_SLV_RDATA_BIT_R {
-        SPI_SLV_RDATA_BIT_R::new((self.bits & 0x00ff_ffff) as u32)
+    pub fn slv_rdata_bit(&self) -> SLV_RDATA_BIT_R {
+        SLV_RDATA_BIT_R::new((self.bits & 0x00ff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:23 - In the slave mode it is the bit length of read data. The value is the length - 1."]
     #[inline(always)]
-    pub fn spi_slv_rdata_bit(&mut self) -> SPI_SLV_RDATA_BIT_W {
-        SPI_SLV_RDATA_BIT_W { w: self }
+    pub fn slv_rdata_bit(&mut self) -> SLV_RDATA_BIT_W {
+        SLV_RDATA_BIT_W { w: self }
     }
 }

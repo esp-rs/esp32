@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CAP_TIMER_PHASE {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_CAP_PHASE`"]
-pub type MCPWM_CAP_PHASE_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `MCPWM_CAP_PHASE`"]
-pub struct MCPWM_CAP_PHASE_W<'a> {
+#[doc = "Reader of field `CAP_PHASE`"]
+pub type CAP_PHASE_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `CAP_PHASE`"]
+pub struct CAP_PHASE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP_PHASE_W<'a> {
+impl<'a> CAP_PHASE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> MCPWM_CAP_PHASE_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - Phase value for capture timer sync operation."]
     #[inline(always)]
-    pub fn mcpwm_cap_phase(&self) -> MCPWM_CAP_PHASE_R {
-        MCPWM_CAP_PHASE_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn cap_phase(&self) -> CAP_PHASE_R {
+        CAP_PHASE_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - Phase value for capture timer sync operation."]
     #[inline(always)]
-    pub fn mcpwm_cap_phase(&mut self) -> MCPWM_CAP_PHASE_W {
-        MCPWM_CAP_PHASE_W { w: self }
+    pub fn cap_phase(&mut self) -> CAP_PHASE_W {
+        CAP_PHASE_W { w: self }
     }
 }

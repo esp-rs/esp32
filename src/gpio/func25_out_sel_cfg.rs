@@ -10,13 +10,13 @@ impl crate::ResetValue for super::FUNC25_OUT_SEL_CFG {
         0
     }
 }
-#[doc = "Reader of field `GPIO_FUNC25_OEN_INV_SEL`"]
-pub type GPIO_FUNC25_OEN_INV_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_FUNC25_OEN_INV_SEL`"]
-pub struct GPIO_FUNC25_OEN_INV_SEL_W<'a> {
+#[doc = "Reader of field `FUNC25_OEN_INV_SEL`"]
+pub type FUNC25_OEN_INV_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FUNC25_OEN_INV_SEL`"]
+pub struct FUNC25_OEN_INV_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC25_OEN_INV_SEL_W<'a> {
+impl<'a> FUNC25_OEN_INV_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> GPIO_FUNC25_OEN_INV_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_FUNC25_OEN_SEL`"]
-pub type GPIO_FUNC25_OEN_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_FUNC25_OEN_SEL`"]
-pub struct GPIO_FUNC25_OEN_SEL_W<'a> {
+#[doc = "Reader of field `FUNC25_OEN_SEL`"]
+pub type FUNC25_OEN_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FUNC25_OEN_SEL`"]
+pub struct FUNC25_OEN_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC25_OEN_SEL_W<'a> {
+impl<'a> FUNC25_OEN_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> GPIO_FUNC25_OEN_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_FUNC25_OUT_INV_SEL`"]
-pub type GPIO_FUNC25_OUT_INV_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_FUNC25_OUT_INV_SEL`"]
-pub struct GPIO_FUNC25_OUT_INV_SEL_W<'a> {
+#[doc = "Reader of field `FUNC25_OUT_INV_SEL`"]
+pub type FUNC25_OUT_INV_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FUNC25_OUT_INV_SEL`"]
+pub struct FUNC25_OUT_INV_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC25_OUT_INV_SEL_W<'a> {
+impl<'a> FUNC25_OUT_INV_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> GPIO_FUNC25_OUT_INV_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_FUNC25_OUT_SEL`"]
-pub type GPIO_FUNC25_OUT_SEL_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `GPIO_FUNC25_OUT_SEL`"]
-pub struct GPIO_FUNC25_OUT_SEL_W<'a> {
+#[doc = "Reader of field `FUNC25_OUT_SEL`"]
+pub type FUNC25_OUT_SEL_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `FUNC25_OUT_SEL`"]
+pub struct FUNC25_OUT_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC25_OUT_SEL_W<'a> {
+impl<'a> FUNC25_OUT_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -99,44 +99,44 @@ impl<'a> GPIO_FUNC25_OUT_SEL_W<'a> {
 impl R {
     #[doc = "Bit 11 - invert the output enable value if you want to revert the output enable value setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_func25_oen_inv_sel(&self) -> GPIO_FUNC25_OEN_INV_SEL_R {
-        GPIO_FUNC25_OEN_INV_SEL_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn func25_oen_inv_sel(&self) -> FUNC25_OEN_INV_SEL_R {
+        FUNC25_OEN_INV_SEL_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10 - weather using the logical oen signal or not using the value setting by the register"]
     #[inline(always)]
-    pub fn gpio_func25_oen_sel(&self) -> GPIO_FUNC25_OEN_SEL_R {
-        GPIO_FUNC25_OEN_SEL_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn func25_oen_sel(&self) -> FUNC25_OEN_SEL_R {
+        FUNC25_OEN_SEL_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9 - invert the output value if you want to revert the output value setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_func25_out_inv_sel(&self) -> GPIO_FUNC25_OUT_INV_SEL_R {
-        GPIO_FUNC25_OUT_INV_SEL_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn func25_out_inv_sel(&self) -> FUNC25_OUT_INV_SEL_R {
+        FUNC25_OUT_INV_SEL_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bits 0:8 - select one of the 256 output to 40 GPIO"]
     #[inline(always)]
-    pub fn gpio_func25_out_sel(&self) -> GPIO_FUNC25_OUT_SEL_R {
-        GPIO_FUNC25_OUT_SEL_R::new((self.bits & 0x01ff) as u16)
+    pub fn func25_out_sel(&self) -> FUNC25_OUT_SEL_R {
+        FUNC25_OUT_SEL_R::new((self.bits & 0x01ff) as u16)
     }
 }
 impl W {
     #[doc = "Bit 11 - invert the output enable value if you want to revert the output enable value setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_func25_oen_inv_sel(&mut self) -> GPIO_FUNC25_OEN_INV_SEL_W {
-        GPIO_FUNC25_OEN_INV_SEL_W { w: self }
+    pub fn func25_oen_inv_sel(&mut self) -> FUNC25_OEN_INV_SEL_W {
+        FUNC25_OEN_INV_SEL_W { w: self }
     }
     #[doc = "Bit 10 - weather using the logical oen signal or not using the value setting by the register"]
     #[inline(always)]
-    pub fn gpio_func25_oen_sel(&mut self) -> GPIO_FUNC25_OEN_SEL_W {
-        GPIO_FUNC25_OEN_SEL_W { w: self }
+    pub fn func25_oen_sel(&mut self) -> FUNC25_OEN_SEL_W {
+        FUNC25_OEN_SEL_W { w: self }
     }
     #[doc = "Bit 9 - invert the output value if you want to revert the output value setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_func25_out_inv_sel(&mut self) -> GPIO_FUNC25_OUT_INV_SEL_W {
-        GPIO_FUNC25_OUT_INV_SEL_W { w: self }
+    pub fn func25_out_inv_sel(&mut self) -> FUNC25_OUT_INV_SEL_W {
+        FUNC25_OUT_INV_SEL_W { w: self }
     }
     #[doc = "Bits 0:8 - select one of the 256 output to 40 GPIO"]
     #[inline(always)]
-    pub fn gpio_func25_out_sel(&mut self) -> GPIO_FUNC25_OUT_SEL_W {
-        GPIO_FUNC25_OUT_SEL_W { w: self }
+    pub fn func25_out_sel(&mut self) -> FUNC25_OUT_SEL_W {
+        FUNC25_OUT_SEL_W { w: self }
     }
 }

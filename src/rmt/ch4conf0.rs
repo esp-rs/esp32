@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CH4CONF0 {
         0
     }
 }
-#[doc = "Reader of field `RMT_CARRIER_OUT_LV_CH4`"]
-pub type RMT_CARRIER_OUT_LV_CH4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RMT_CARRIER_OUT_LV_CH4`"]
-pub struct RMT_CARRIER_OUT_LV_CH4_W<'a> {
+#[doc = "Reader of field `CARRIER_OUT_LV_CH4`"]
+pub type CARRIER_OUT_LV_CH4_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CARRIER_OUT_LV_CH4`"]
+pub struct CARRIER_OUT_LV_CH4_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_CARRIER_OUT_LV_CH4_W<'a> {
+impl<'a> CARRIER_OUT_LV_CH4_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RMT_CARRIER_OUT_LV_CH4_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RMT_CARRIER_EN_CH4`"]
-pub type RMT_CARRIER_EN_CH4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RMT_CARRIER_EN_CH4`"]
-pub struct RMT_CARRIER_EN_CH4_W<'a> {
+#[doc = "Reader of field `CARRIER_EN_CH4`"]
+pub type CARRIER_EN_CH4_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CARRIER_EN_CH4`"]
+pub struct CARRIER_EN_CH4_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_CARRIER_EN_CH4_W<'a> {
+impl<'a> CARRIER_EN_CH4_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> RMT_CARRIER_EN_CH4_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RMT_MEM_SIZE_CH4`"]
-pub type RMT_MEM_SIZE_CH4_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RMT_MEM_SIZE_CH4`"]
-pub struct RMT_MEM_SIZE_CH4_W<'a> {
+#[doc = "Reader of field `MEM_SIZE_CH4`"]
+pub type MEM_SIZE_CH4_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `MEM_SIZE_CH4`"]
+pub struct MEM_SIZE_CH4_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_MEM_SIZE_CH4_W<'a> {
+impl<'a> MEM_SIZE_CH4_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> RMT_MEM_SIZE_CH4_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RMT_IDLE_THRES_CH4`"]
-pub type RMT_IDLE_THRES_CH4_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RMT_IDLE_THRES_CH4`"]
-pub struct RMT_IDLE_THRES_CH4_W<'a> {
+#[doc = "Reader of field `IDLE_THRES_CH4`"]
+pub type IDLE_THRES_CH4_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `IDLE_THRES_CH4`"]
+pub struct IDLE_THRES_CH4_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_IDLE_THRES_CH4_W<'a> {
+impl<'a> IDLE_THRES_CH4_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -86,13 +86,13 @@ impl<'a> RMT_IDLE_THRES_CH4_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RMT_DIV_CNT_CH4`"]
-pub type RMT_DIV_CNT_CH4_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RMT_DIV_CNT_CH4`"]
-pub struct RMT_DIV_CNT_CH4_W<'a> {
+#[doc = "Reader of field `DIV_CNT_CH4`"]
+pub type DIV_CNT_CH4_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DIV_CNT_CH4`"]
+pub struct DIV_CNT_CH4_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RMT_DIV_CNT_CH4_W<'a> {
+impl<'a> DIV_CNT_CH4_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -103,54 +103,54 @@ impl<'a> RMT_DIV_CNT_CH4_W<'a> {
 impl R {
     #[doc = "Bit 29 - This bit is used to configure carrier wave's position for channel4.1'b1:add on low level 1'b0:add on high level."]
     #[inline(always)]
-    pub fn rmt_carrier_out_lv_ch4(&self) -> RMT_CARRIER_OUT_LV_CH4_R {
-        RMT_CARRIER_OUT_LV_CH4_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn carrier_out_lv_ch4(&self) -> CARRIER_OUT_LV_CH4_R {
+        CARRIER_OUT_LV_CH4_R::new(((self.bits >> 29) & 0x01) != 0)
     }
     #[doc = "Bit 28 - This is the carrier modulation enable control bit for channel4."]
     #[inline(always)]
-    pub fn rmt_carrier_en_ch4(&self) -> RMT_CARRIER_EN_CH4_R {
-        RMT_CARRIER_EN_CH4_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn carrier_en_ch4(&self) -> CARRIER_EN_CH4_R {
+        CARRIER_EN_CH4_R::new(((self.bits >> 28) & 0x01) != 0)
     }
     #[doc = "Bits 24:27 - This register is used to configure the the amount of memory blocks allocated to channel4."]
     #[inline(always)]
-    pub fn rmt_mem_size_ch4(&self) -> RMT_MEM_SIZE_CH4_R {
-        RMT_MEM_SIZE_CH4_R::new(((self.bits >> 24) & 0x0f) as u8)
+    pub fn mem_size_ch4(&self) -> MEM_SIZE_CH4_R {
+        MEM_SIZE_CH4_R::new(((self.bits >> 24) & 0x0f) as u8)
     }
     #[doc = "Bits 8:23 - In receive mode when the counter's value is bigger than reg_idle_thres_ch4 then the receive process is done."]
     #[inline(always)]
-    pub fn rmt_idle_thres_ch4(&self) -> RMT_IDLE_THRES_CH4_R {
-        RMT_IDLE_THRES_CH4_R::new(((self.bits >> 8) & 0xffff) as u16)
+    pub fn idle_thres_ch4(&self) -> IDLE_THRES_CH4_R {
+        IDLE_THRES_CH4_R::new(((self.bits >> 8) & 0xffff) as u16)
     }
     #[doc = "Bits 0:7 - This register is used to configure the frequency divider's factor in channel4."]
     #[inline(always)]
-    pub fn rmt_div_cnt_ch4(&self) -> RMT_DIV_CNT_CH4_R {
-        RMT_DIV_CNT_CH4_R::new((self.bits & 0xff) as u8)
+    pub fn div_cnt_ch4(&self) -> DIV_CNT_CH4_R {
+        DIV_CNT_CH4_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bit 29 - This bit is used to configure carrier wave's position for channel4.1'b1:add on low level 1'b0:add on high level."]
     #[inline(always)]
-    pub fn rmt_carrier_out_lv_ch4(&mut self) -> RMT_CARRIER_OUT_LV_CH4_W {
-        RMT_CARRIER_OUT_LV_CH4_W { w: self }
+    pub fn carrier_out_lv_ch4(&mut self) -> CARRIER_OUT_LV_CH4_W {
+        CARRIER_OUT_LV_CH4_W { w: self }
     }
     #[doc = "Bit 28 - This is the carrier modulation enable control bit for channel4."]
     #[inline(always)]
-    pub fn rmt_carrier_en_ch4(&mut self) -> RMT_CARRIER_EN_CH4_W {
-        RMT_CARRIER_EN_CH4_W { w: self }
+    pub fn carrier_en_ch4(&mut self) -> CARRIER_EN_CH4_W {
+        CARRIER_EN_CH4_W { w: self }
     }
     #[doc = "Bits 24:27 - This register is used to configure the the amount of memory blocks allocated to channel4."]
     #[inline(always)]
-    pub fn rmt_mem_size_ch4(&mut self) -> RMT_MEM_SIZE_CH4_W {
-        RMT_MEM_SIZE_CH4_W { w: self }
+    pub fn mem_size_ch4(&mut self) -> MEM_SIZE_CH4_W {
+        MEM_SIZE_CH4_W { w: self }
     }
     #[doc = "Bits 8:23 - In receive mode when the counter's value is bigger than reg_idle_thres_ch4 then the receive process is done."]
     #[inline(always)]
-    pub fn rmt_idle_thres_ch4(&mut self) -> RMT_IDLE_THRES_CH4_W {
-        RMT_IDLE_THRES_CH4_W { w: self }
+    pub fn idle_thres_ch4(&mut self) -> IDLE_THRES_CH4_W {
+        IDLE_THRES_CH4_W { w: self }
     }
     #[doc = "Bits 0:7 - This register is used to configure the frequency divider's factor in channel4."]
     #[inline(always)]
-    pub fn rmt_div_cnt_ch4(&mut self) -> RMT_DIV_CNT_CH4_W {
-        RMT_DIV_CNT_CH4_W { w: self }
+    pub fn div_cnt_ch4(&mut self) -> DIV_CNT_CH4_W {
+        DIV_CNT_CH4_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::EXT_XTL_CONF {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_XTL_EXT_CTR_EN`"]
-pub type RTC_CNTL_XTL_EXT_CTR_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_XTL_EXT_CTR_EN`"]
-pub struct RTC_CNTL_XTL_EXT_CTR_EN_W<'a> {
+#[doc = "Reader of field `XTL_EXT_CTR_EN`"]
+pub type XTL_EXT_CTR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `XTL_EXT_CTR_EN`"]
+pub struct XTL_EXT_CTR_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_XTL_EXT_CTR_EN_W<'a> {
+impl<'a> XTL_EXT_CTR_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_XTL_EXT_CTR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_XTL_EXT_CTR_LV`"]
-pub type RTC_CNTL_XTL_EXT_CTR_LV_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_XTL_EXT_CTR_LV`"]
-pub struct RTC_CNTL_XTL_EXT_CTR_LV_W<'a> {
+#[doc = "Reader of field `XTL_EXT_CTR_LV`"]
+pub type XTL_EXT_CTR_LV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `XTL_EXT_CTR_LV`"]
+pub struct XTL_EXT_CTR_LV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_XTL_EXT_CTR_LV_W<'a> {
+impl<'a> XTL_EXT_CTR_LV_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> RTC_CNTL_XTL_EXT_CTR_LV_W<'a> {
 impl R {
     #[doc = "Bit 31 - enable control XTAL by external pads"]
     #[inline(always)]
-    pub fn rtc_cntl_xtl_ext_ctr_en(&self) -> RTC_CNTL_XTL_EXT_CTR_EN_R {
-        RTC_CNTL_XTL_EXT_CTR_EN_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn xtl_ext_ctr_en(&self) -> XTL_EXT_CTR_EN_R {
+        XTL_EXT_CTR_EN_R::new(((self.bits >> 31) & 0x01) != 0)
     }
     #[doc = "Bit 30 - 0: power down XTAL at high level 1: power down XTAL at low level"]
     #[inline(always)]
-    pub fn rtc_cntl_xtl_ext_ctr_lv(&self) -> RTC_CNTL_XTL_EXT_CTR_LV_R {
-        RTC_CNTL_XTL_EXT_CTR_LV_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn xtl_ext_ctr_lv(&self) -> XTL_EXT_CTR_LV_R {
+        XTL_EXT_CTR_LV_R::new(((self.bits >> 30) & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 31 - enable control XTAL by external pads"]
     #[inline(always)]
-    pub fn rtc_cntl_xtl_ext_ctr_en(&mut self) -> RTC_CNTL_XTL_EXT_CTR_EN_W {
-        RTC_CNTL_XTL_EXT_CTR_EN_W { w: self }
+    pub fn xtl_ext_ctr_en(&mut self) -> XTL_EXT_CTR_EN_W {
+        XTL_EXT_CTR_EN_W { w: self }
     }
     #[doc = "Bit 30 - 0: power down XTAL at high level 1: power down XTAL at low level"]
     #[inline(always)]
-    pub fn rtc_cntl_xtl_ext_ctr_lv(&mut self) -> RTC_CNTL_XTL_EXT_CTR_LV_W {
-        RTC_CNTL_XTL_EXT_CTR_LV_W { w: self }
+    pub fn xtl_ext_ctr_lv(&mut self) -> XTL_EXT_CTR_LV_W {
+        XTL_EXT_CTR_LV_W { w: self }
     }
 }

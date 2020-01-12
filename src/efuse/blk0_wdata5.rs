@@ -10,13 +10,13 @@ impl crate::ResetValue for super::BLK0_WDATA5 {
         0
     }
 }
-#[doc = "Reader of field `EFUSE_FLASH_CRYPT_CONFIG`"]
-pub type EFUSE_FLASH_CRYPT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_FLASH_CRYPT_CONFIG`"]
-pub struct EFUSE_FLASH_CRYPT_CONFIG_W<'a> {
+#[doc = "Reader of field `FLASH_CRYPT_CONFIG`"]
+pub type FLASH_CRYPT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `FLASH_CRYPT_CONFIG`"]
+pub struct FLASH_CRYPT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_FLASH_CRYPT_CONFIG_W<'a> {
+impl<'a> FLASH_CRYPT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> EFUSE_FLASH_CRYPT_CONFIG_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_INST_CONFIG`"]
-pub type EFUSE_INST_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_INST_CONFIG`"]
-pub struct EFUSE_INST_CONFIG_W<'a> {
+#[doc = "Reader of field `INST_CONFIG`"]
+pub type INST_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `INST_CONFIG`"]
+pub struct INST_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_INST_CONFIG_W<'a> {
+impl<'a> INST_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> EFUSE_INST_CONFIG_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_SPI_PAD_CONFIG_D`"]
-pub type EFUSE_SPI_PAD_CONFIG_D_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_SPI_PAD_CONFIG_D`"]
-pub struct EFUSE_SPI_PAD_CONFIG_D_W<'a> {
+#[doc = "Reader of field `SPI_PAD_CONFIG_D`"]
+pub type SPI_PAD_CONFIG_D_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SPI_PAD_CONFIG_D`"]
+pub struct SPI_PAD_CONFIG_D_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_SPI_PAD_CONFIG_D_W<'a> {
+impl<'a> SPI_PAD_CONFIG_D_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -52,13 +52,13 @@ impl<'a> EFUSE_SPI_PAD_CONFIG_D_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_SPI_PAD_CONFIG_Q`"]
-pub type EFUSE_SPI_PAD_CONFIG_Q_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_SPI_PAD_CONFIG_Q`"]
-pub struct EFUSE_SPI_PAD_CONFIG_Q_W<'a> {
+#[doc = "Reader of field `SPI_PAD_CONFIG_Q`"]
+pub type SPI_PAD_CONFIG_Q_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SPI_PAD_CONFIG_Q`"]
+pub struct SPI_PAD_CONFIG_Q_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_SPI_PAD_CONFIG_Q_W<'a> {
+impl<'a> SPI_PAD_CONFIG_Q_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -66,13 +66,13 @@ impl<'a> EFUSE_SPI_PAD_CONFIG_Q_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EFUSE_SPI_PAD_CONFIG_CLK`"]
-pub type EFUSE_SPI_PAD_CONFIG_CLK_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `EFUSE_SPI_PAD_CONFIG_CLK`"]
-pub struct EFUSE_SPI_PAD_CONFIG_CLK_W<'a> {
+#[doc = "Reader of field `SPI_PAD_CONFIG_CLK`"]
+pub type SPI_PAD_CONFIG_CLK_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SPI_PAD_CONFIG_CLK`"]
+pub struct SPI_PAD_CONFIG_CLK_W<'a> {
     w: &'a mut W,
 }
-impl<'a> EFUSE_SPI_PAD_CONFIG_CLK_W<'a> {
+impl<'a> SPI_PAD_CONFIG_CLK_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -83,54 +83,54 @@ impl<'a> EFUSE_SPI_PAD_CONFIG_CLK_W<'a> {
 impl R {
     #[doc = "Bits 28:31 - program for flash_crypt_config"]
     #[inline(always)]
-    pub fn efuse_flash_crypt_config(&self) -> EFUSE_FLASH_CRYPT_CONFIG_R {
-        EFUSE_FLASH_CRYPT_CONFIG_R::new(((self.bits >> 28) & 0x0f) as u8)
+    pub fn flash_crypt_config(&self) -> FLASH_CRYPT_CONFIG_R {
+        FLASH_CRYPT_CONFIG_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
     #[doc = "Bits 20:27 - program for SPI_pad_config_cs0"]
     #[inline(always)]
-    pub fn efuse_inst_config(&self) -> EFUSE_INST_CONFIG_R {
-        EFUSE_INST_CONFIG_R::new(((self.bits >> 20) & 0xff) as u8)
+    pub fn inst_config(&self) -> INST_CONFIG_R {
+        INST_CONFIG_R::new(((self.bits >> 20) & 0xff) as u8)
     }
     #[doc = "Bits 10:14 - program for SPI_pad_config_d"]
     #[inline(always)]
-    pub fn efuse_spi_pad_config_d(&self) -> EFUSE_SPI_PAD_CONFIG_D_R {
-        EFUSE_SPI_PAD_CONFIG_D_R::new(((self.bits >> 10) & 0x1f) as u8)
+    pub fn spi_pad_config_d(&self) -> SPI_PAD_CONFIG_D_R {
+        SPI_PAD_CONFIG_D_R::new(((self.bits >> 10) & 0x1f) as u8)
     }
     #[doc = "Bits 5:9 - program for SPI_pad_config_q"]
     #[inline(always)]
-    pub fn efuse_spi_pad_config_q(&self) -> EFUSE_SPI_PAD_CONFIG_Q_R {
-        EFUSE_SPI_PAD_CONFIG_Q_R::new(((self.bits >> 5) & 0x1f) as u8)
+    pub fn spi_pad_config_q(&self) -> SPI_PAD_CONFIG_Q_R {
+        SPI_PAD_CONFIG_Q_R::new(((self.bits >> 5) & 0x1f) as u8)
     }
     #[doc = "Bits 0:4 - program for SPI_pad_config_clk"]
     #[inline(always)]
-    pub fn efuse_spi_pad_config_clk(&self) -> EFUSE_SPI_PAD_CONFIG_CLK_R {
-        EFUSE_SPI_PAD_CONFIG_CLK_R::new((self.bits & 0x1f) as u8)
+    pub fn spi_pad_config_clk(&self) -> SPI_PAD_CONFIG_CLK_R {
+        SPI_PAD_CONFIG_CLK_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 28:31 - program for flash_crypt_config"]
     #[inline(always)]
-    pub fn efuse_flash_crypt_config(&mut self) -> EFUSE_FLASH_CRYPT_CONFIG_W {
-        EFUSE_FLASH_CRYPT_CONFIG_W { w: self }
+    pub fn flash_crypt_config(&mut self) -> FLASH_CRYPT_CONFIG_W {
+        FLASH_CRYPT_CONFIG_W { w: self }
     }
     #[doc = "Bits 20:27 - program for SPI_pad_config_cs0"]
     #[inline(always)]
-    pub fn efuse_inst_config(&mut self) -> EFUSE_INST_CONFIG_W {
-        EFUSE_INST_CONFIG_W { w: self }
+    pub fn inst_config(&mut self) -> INST_CONFIG_W {
+        INST_CONFIG_W { w: self }
     }
     #[doc = "Bits 10:14 - program for SPI_pad_config_d"]
     #[inline(always)]
-    pub fn efuse_spi_pad_config_d(&mut self) -> EFUSE_SPI_PAD_CONFIG_D_W {
-        EFUSE_SPI_PAD_CONFIG_D_W { w: self }
+    pub fn spi_pad_config_d(&mut self) -> SPI_PAD_CONFIG_D_W {
+        SPI_PAD_CONFIG_D_W { w: self }
     }
     #[doc = "Bits 5:9 - program for SPI_pad_config_q"]
     #[inline(always)]
-    pub fn efuse_spi_pad_config_q(&mut self) -> EFUSE_SPI_PAD_CONFIG_Q_W {
-        EFUSE_SPI_PAD_CONFIG_Q_W { w: self }
+    pub fn spi_pad_config_q(&mut self) -> SPI_PAD_CONFIG_Q_W {
+        SPI_PAD_CONFIG_Q_W { w: self }
     }
     #[doc = "Bits 0:4 - program for SPI_pad_config_clk"]
     #[inline(always)]
-    pub fn efuse_spi_pad_config_clk(&mut self) -> EFUSE_SPI_PAD_CONFIG_CLK_W {
-        EFUSE_SPI_PAD_CONFIG_CLK_W { w: self }
+    pub fn spi_pad_config_clk(&mut self) -> SPI_PAD_CONFIG_CLK_W {
+        SPI_PAD_CONFIG_CLK_W { w: self }
     }
 }

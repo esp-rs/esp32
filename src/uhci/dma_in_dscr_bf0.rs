@@ -10,13 +10,13 @@ impl crate::ResetValue for super::DMA_IN_DSCR_BF0 {
         0
     }
 }
-#[doc = "Reader of field `UHCI_INLINK_DSCR_BF0`"]
-pub type UHCI_INLINK_DSCR_BF0_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UHCI_INLINK_DSCR_BF0`"]
-pub struct UHCI_INLINK_DSCR_BF0_W<'a> {
+#[doc = "Reader of field `INLINK_DSCR_BF0`"]
+pub type INLINK_DSCR_BF0_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `INLINK_DSCR_BF0`"]
+pub struct INLINK_DSCR_BF0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_INLINK_DSCR_BF0_W<'a> {
+impl<'a> INLINK_DSCR_BF0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UHCI_INLINK_DSCR_BF0_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - The content of current in link descriptor's first dword"]
     #[inline(always)]
-    pub fn uhci_inlink_dscr_bf0(&self) -> UHCI_INLINK_DSCR_BF0_R {
-        UHCI_INLINK_DSCR_BF0_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn inlink_dscr_bf0(&self) -> INLINK_DSCR_BF0_R {
+        INLINK_DSCR_BF0_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - The content of current in link descriptor's first dword"]
     #[inline(always)]
-    pub fn uhci_inlink_dscr_bf0(&mut self) -> UHCI_INLINK_DSCR_BF0_W {
-        UHCI_INLINK_DSCR_BF0_W { w: self }
+    pub fn inlink_dscr_bf0(&mut self) -> INLINK_DSCR_BF0_W {
+        INLINK_DSCR_BF0_W { w: self }
     }
 }

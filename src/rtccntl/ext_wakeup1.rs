@@ -10,13 +10,13 @@ impl crate::ResetValue for super::EXT_WAKEUP1 {
         0
     }
 }
-#[doc = "Reader of field `RTC_CNTL_EXT_WAKEUP1_STATUS_CLR`"]
-pub type RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RTC_CNTL_EXT_WAKEUP1_STATUS_CLR`"]
-pub struct RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_W<'a> {
+#[doc = "Reader of field `EXT_WAKEUP1_STATUS_CLR`"]
+pub type EXT_WAKEUP1_STATUS_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `EXT_WAKEUP1_STATUS_CLR`"]
+pub struct EXT_WAKEUP1_STATUS_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_W<'a> {
+impl<'a> EXT_WAKEUP1_STATUS_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RTC_CNTL_EXT_WAKEUP1_SEL`"]
-pub type RTC_CNTL_EXT_WAKEUP1_SEL_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_CNTL_EXT_WAKEUP1_SEL`"]
-pub struct RTC_CNTL_EXT_WAKEUP1_SEL_W<'a> {
+#[doc = "Reader of field `EXT_WAKEUP1_SEL`"]
+pub type EXT_WAKEUP1_SEL_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `EXT_WAKEUP1_SEL`"]
+pub struct EXT_WAKEUP1_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_CNTL_EXT_WAKEUP1_SEL_W<'a> {
+impl<'a> EXT_WAKEUP1_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -51,24 +51,24 @@ impl<'a> RTC_CNTL_EXT_WAKEUP1_SEL_W<'a> {
 impl R {
     #[doc = "Bit 18 - clear ext wakeup1 status"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_status_clr(&self) -> RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_R {
-        RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_R::new(((self.bits >> 18) & 0x01) != 0)
+    pub fn ext_wakeup1_status_clr(&self) -> EXT_WAKEUP1_STATUS_CLR_R {
+        EXT_WAKEUP1_STATUS_CLR_R::new(((self.bits >> 18) & 0x01) != 0)
     }
     #[doc = "Bits 0:17 - Bitmap to select RTC pads for ext wakeup1"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_sel(&self) -> RTC_CNTL_EXT_WAKEUP1_SEL_R {
-        RTC_CNTL_EXT_WAKEUP1_SEL_R::new((self.bits & 0x0003_ffff) as u32)
+    pub fn ext_wakeup1_sel(&self) -> EXT_WAKEUP1_SEL_R {
+        EXT_WAKEUP1_SEL_R::new((self.bits & 0x0003_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bit 18 - clear ext wakeup1 status"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_status_clr(&mut self) -> RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_W {
-        RTC_CNTL_EXT_WAKEUP1_STATUS_CLR_W { w: self }
+    pub fn ext_wakeup1_status_clr(&mut self) -> EXT_WAKEUP1_STATUS_CLR_W {
+        EXT_WAKEUP1_STATUS_CLR_W { w: self }
     }
     #[doc = "Bits 0:17 - Bitmap to select RTC pads for ext wakeup1"]
     #[inline(always)]
-    pub fn rtc_cntl_ext_wakeup1_sel(&mut self) -> RTC_CNTL_EXT_WAKEUP1_SEL_W {
-        RTC_CNTL_EXT_WAKEUP1_SEL_W { w: self }
+    pub fn ext_wakeup1_sel(&mut self) -> EXT_WAKEUP1_SEL_W {
+        EXT_WAKEUP1_SEL_W { w: self }
     }
 }

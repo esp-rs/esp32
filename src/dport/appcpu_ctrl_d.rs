@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APPCPU_CTRL_D {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APPCPU_BOOT_ADDR`"]
-pub type DPORT_APPCPU_BOOT_ADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_APPCPU_BOOT_ADDR`"]
-pub struct DPORT_APPCPU_BOOT_ADDR_W<'a> {
+#[doc = "Reader of field `APPCPU_BOOT_ADDR`"]
+pub type APPCPU_BOOT_ADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `APPCPU_BOOT_ADDR`"]
+pub struct APPCPU_BOOT_ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APPCPU_BOOT_ADDR_W<'a> {
+impl<'a> APPCPU_BOOT_ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_APPCPU_BOOT_ADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_appcpu_boot_addr(&self) -> DPORT_APPCPU_BOOT_ADDR_R {
-        DPORT_APPCPU_BOOT_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn appcpu_boot_addr(&self) -> APPCPU_BOOT_ADDR_R {
+        APPCPU_BOOT_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_appcpu_boot_addr(&mut self) -> DPORT_APPCPU_BOOT_ADDR_W {
-        DPORT_APPCPU_BOOT_ADDR_W { w: self }
+    pub fn appcpu_boot_addr(&mut self) -> APPCPU_BOOT_ADDR_W {
+        APPCPU_BOOT_ADDR_W { w: self }
     }
 }

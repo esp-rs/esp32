@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ESC_CONF0 {
         0
     }
 }
-#[doc = "Reader of field `UHCI_SEPER_ESC_CHAR1`"]
-pub type UHCI_SEPER_ESC_CHAR1_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_SEPER_ESC_CHAR1`"]
-pub struct UHCI_SEPER_ESC_CHAR1_W<'a> {
+#[doc = "Reader of field `SEPER_ESC_CHAR1`"]
+pub type SEPER_ESC_CHAR1_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SEPER_ESC_CHAR1`"]
+pub struct SEPER_ESC_CHAR1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SEPER_ESC_CHAR1_W<'a> {
+impl<'a> SEPER_ESC_CHAR1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> UHCI_SEPER_ESC_CHAR1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_SEPER_ESC_CHAR0`"]
-pub type UHCI_SEPER_ESC_CHAR0_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_SEPER_ESC_CHAR0`"]
-pub struct UHCI_SEPER_ESC_CHAR0_W<'a> {
+#[doc = "Reader of field `SEPER_ESC_CHAR0`"]
+pub type SEPER_ESC_CHAR0_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SEPER_ESC_CHAR0`"]
+pub struct SEPER_ESC_CHAR0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SEPER_ESC_CHAR0_W<'a> {
+impl<'a> SEPER_ESC_CHAR0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -38,13 +38,13 @@ impl<'a> UHCI_SEPER_ESC_CHAR0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `UHCI_SEPER_CHAR`"]
-pub type UHCI_SEPER_CHAR_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `UHCI_SEPER_CHAR`"]
-pub struct UHCI_SEPER_CHAR_W<'a> {
+#[doc = "Reader of field `SEPER_CHAR`"]
+pub type SEPER_CHAR_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SEPER_CHAR`"]
+pub struct SEPER_CHAR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SEPER_CHAR_W<'a> {
+impl<'a> SEPER_CHAR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -55,34 +55,34 @@ impl<'a> UHCI_SEPER_CHAR_W<'a> {
 impl R {
     #[doc = "Bits 16:23 - This register stores the second char used to replace seperator char in data . 0xdc 0xdb replace 0xc0 by default."]
     #[inline(always)]
-    pub fn uhci_seper_esc_char1(&self) -> UHCI_SEPER_ESC_CHAR1_R {
-        UHCI_SEPER_ESC_CHAR1_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn seper_esc_char1(&self) -> SEPER_ESC_CHAR1_R {
+        SEPER_ESC_CHAR1_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - This register stores thee first char used to replace seperator char in data."]
     #[inline(always)]
-    pub fn uhci_seper_esc_char0(&self) -> UHCI_SEPER_ESC_CHAR0_R {
-        UHCI_SEPER_ESC_CHAR0_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn seper_esc_char0(&self) -> SEPER_ESC_CHAR0_R {
+        SEPER_ESC_CHAR0_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 0:7 - This register stores the seperator char seperator char is used to seperate the data frame."]
     #[inline(always)]
-    pub fn uhci_seper_char(&self) -> UHCI_SEPER_CHAR_R {
-        UHCI_SEPER_CHAR_R::new((self.bits & 0xff) as u8)
+    pub fn seper_char(&self) -> SEPER_CHAR_R {
+        SEPER_CHAR_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 16:23 - This register stores the second char used to replace seperator char in data . 0xdc 0xdb replace 0xc0 by default."]
     #[inline(always)]
-    pub fn uhci_seper_esc_char1(&mut self) -> UHCI_SEPER_ESC_CHAR1_W {
-        UHCI_SEPER_ESC_CHAR1_W { w: self }
+    pub fn seper_esc_char1(&mut self) -> SEPER_ESC_CHAR1_W {
+        SEPER_ESC_CHAR1_W { w: self }
     }
     #[doc = "Bits 8:15 - This register stores thee first char used to replace seperator char in data."]
     #[inline(always)]
-    pub fn uhci_seper_esc_char0(&mut self) -> UHCI_SEPER_ESC_CHAR0_W {
-        UHCI_SEPER_ESC_CHAR0_W { w: self }
+    pub fn seper_esc_char0(&mut self) -> SEPER_ESC_CHAR0_W {
+        SEPER_ESC_CHAR0_W { w: self }
     }
     #[doc = "Bits 0:7 - This register stores the seperator char seperator char is used to seperate the data frame."]
     #[inline(always)]
-    pub fn uhci_seper_char(&mut self) -> UHCI_SEPER_CHAR_W {
-        UHCI_SEPER_CHAR_W { w: self }
+    pub fn seper_char(&mut self) -> SEPER_CHAR_W {
+        SEPER_CHAR_W { w: self }
     }
 }

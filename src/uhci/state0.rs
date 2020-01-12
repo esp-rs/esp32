@@ -10,13 +10,13 @@ impl crate::ResetValue for super::STATE0 {
         0
     }
 }
-#[doc = "Reader of field `UHCI_STATE0`"]
-pub type UHCI_STATE0_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UHCI_STATE0`"]
-pub struct UHCI_STATE0_W<'a> {
+#[doc = "Reader of field `STATE0`"]
+pub type STATE0_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `STATE0`"]
+pub struct STATE0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_STATE0_W<'a> {
+impl<'a> STATE0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UHCI_STATE0_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn uhci_state0(&self) -> UHCI_STATE0_R {
-        UHCI_STATE0_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn state0(&self) -> STATE0_R {
+        STATE0_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn uhci_state0(&mut self) -> UHCI_STATE0_W {
-        UHCI_STATE0_W { w: self }
+    pub fn state0(&mut self) -> STATE0_W {
+        STATE0_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::EXT2 {
         0
     }
 }
-#[doc = "Reader of field `SPI_ST`"]
-pub type SPI_ST_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SPI_ST`"]
-pub struct SPI_ST_W<'a> {
+#[doc = "Reader of field `ST`"]
+pub type ST_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ST`"]
+pub struct ST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SPI_ST_W<'a> {
+impl<'a> ST_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SPI_ST_W<'a> {
 impl R {
     #[doc = "Bits 0:2 - The status of spi state machine ."]
     #[inline(always)]
-    pub fn spi_st(&self) -> SPI_ST_R {
-        SPI_ST_R::new((self.bits & 0x07) as u8)
+    pub fn st(&self) -> ST_R {
+        ST_R::new((self.bits & 0x07) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:2 - The status of spi state machine ."]
     #[inline(always)]
-    pub fn spi_st(&mut self) -> SPI_ST_W {
-        SPI_ST_W { w: self }
+    pub fn st(&mut self) -> ST_W {
+        ST_W { w: self }
     }
 }

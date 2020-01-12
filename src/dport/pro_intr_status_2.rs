@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_INTR_STATUS_2 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_INTR_STATUS_2`"]
-pub type DPORT_PRO_INTR_STATUS_2_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_PRO_INTR_STATUS_2`"]
-pub struct DPORT_PRO_INTR_STATUS_2_W<'a> {
+#[doc = "Reader of field `PRO_INTR_STATUS_2`"]
+pub type PRO_INTR_STATUS_2_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `PRO_INTR_STATUS_2`"]
+pub struct PRO_INTR_STATUS_2_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_INTR_STATUS_2_W<'a> {
+impl<'a> PRO_INTR_STATUS_2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_PRO_INTR_STATUS_2_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_pro_intr_status_2(&self) -> DPORT_PRO_INTR_STATUS_2_R {
-        DPORT_PRO_INTR_STATUS_2_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn pro_intr_status_2(&self) -> PRO_INTR_STATUS_2_R {
+        PRO_INTR_STATUS_2_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_pro_intr_status_2(&mut self) -> DPORT_PRO_INTR_STATUS_2_W {
-        DPORT_PRO_INTR_STATUS_2_W { w: self }
+    pub fn pro_intr_status_2(&mut self) -> PRO_INTR_STATUS_2_W {
+        PRO_INTR_STATUS_2_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SDIO_SELECT {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SDIO_SEL`"]
-pub type GPIO_SDIO_SEL_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_SDIO_SEL`"]
-pub struct GPIO_SDIO_SEL_W<'a> {
+#[doc = "Reader of field `SDIO_SEL`"]
+pub type SDIO_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SDIO_SEL`"]
+pub struct SDIO_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SDIO_SEL_W<'a> {
+impl<'a> SDIO_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_SDIO_SEL_W<'a> {
 impl R {
     #[doc = "Bits 0:7 - SDIO PADS on/off control from outside"]
     #[inline(always)]
-    pub fn gpio_sdio_sel(&self) -> GPIO_SDIO_SEL_R {
-        GPIO_SDIO_SEL_R::new((self.bits & 0xff) as u8)
+    pub fn sdio_sel(&self) -> SDIO_SEL_R {
+        SDIO_SEL_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:7 - SDIO PADS on/off control from outside"]
     #[inline(always)]
-    pub fn gpio_sdio_sel(&mut self) -> GPIO_SDIO_SEL_W {
-        GPIO_SDIO_SEL_W { w: self }
+    pub fn sdio_sel(&mut self) -> SDIO_SEL_W {
+        SDIO_SEL_W { w: self }
     }
 }

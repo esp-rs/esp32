@@ -10,13 +10,13 @@ impl crate::ResetValue for super::ACCESS_CHECK {
         0
     }
 }
-#[doc = "Reader of field `DPORT_ACCESS_CHECK_APP`"]
-pub type DPORT_ACCESS_CHECK_APP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_ACCESS_CHECK_APP`"]
-pub struct DPORT_ACCESS_CHECK_APP_W<'a> {
+#[doc = "Reader of field `ACCESS_CHECK_APP`"]
+pub type ACCESS_CHECK_APP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ACCESS_CHECK_APP`"]
+pub struct ACCESS_CHECK_APP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_ACCESS_CHECK_APP_W<'a> {
+impl<'a> ACCESS_CHECK_APP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> DPORT_ACCESS_CHECK_APP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_ACCESS_CHECK_PRO`"]
-pub type DPORT_ACCESS_CHECK_PRO_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_ACCESS_CHECK_PRO`"]
-pub struct DPORT_ACCESS_CHECK_PRO_W<'a> {
+#[doc = "Reader of field `ACCESS_CHECK_PRO`"]
+pub type ACCESS_CHECK_PRO_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ACCESS_CHECK_PRO`"]
+pub struct ACCESS_CHECK_PRO_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_ACCESS_CHECK_PRO_W<'a> {
+impl<'a> ACCESS_CHECK_PRO_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -61,24 +61,24 @@ impl<'a> DPORT_ACCESS_CHECK_PRO_W<'a> {
 impl R {
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn dport_access_check_app(&self) -> DPORT_ACCESS_CHECK_APP_R {
-        DPORT_ACCESS_CHECK_APP_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn access_check_app(&self) -> ACCESS_CHECK_APP_R {
+        ACCESS_CHECK_APP_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_access_check_pro(&self) -> DPORT_ACCESS_CHECK_PRO_R {
-        DPORT_ACCESS_CHECK_PRO_R::new((self.bits & 0x01) != 0)
+    pub fn access_check_pro(&self) -> ACCESS_CHECK_PRO_R {
+        ACCESS_CHECK_PRO_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn dport_access_check_app(&mut self) -> DPORT_ACCESS_CHECK_APP_W {
-        DPORT_ACCESS_CHECK_APP_W { w: self }
+    pub fn access_check_app(&mut self) -> ACCESS_CHECK_APP_W {
+        ACCESS_CHECK_APP_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_access_check_pro(&mut self) -> DPORT_ACCESS_CHECK_PRO_W {
-        DPORT_ACCESS_CHECK_PRO_W { w: self }
+    pub fn access_check_pro(&mut self) -> ACCESS_CHECK_PRO_W {
+        ACCESS_CHECK_PRO_W { w: self }
     }
 }

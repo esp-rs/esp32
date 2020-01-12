@@ -10,13 +10,13 @@ impl crate::ResetValue for super::PRO_BOOT_REMAP_CTRL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_PRO_BOOT_REMAP`"]
-pub type DPORT_PRO_BOOT_REMAP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_PRO_BOOT_REMAP`"]
-pub struct DPORT_PRO_BOOT_REMAP_W<'a> {
+#[doc = "Reader of field `PRO_BOOT_REMAP`"]
+pub type PRO_BOOT_REMAP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `PRO_BOOT_REMAP`"]
+pub struct PRO_BOOT_REMAP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_PRO_BOOT_REMAP_W<'a> {
+impl<'a> PRO_BOOT_REMAP_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -37,14 +37,14 @@ impl<'a> DPORT_PRO_BOOT_REMAP_W<'a> {
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_boot_remap(&self) -> DPORT_PRO_BOOT_REMAP_R {
-        DPORT_PRO_BOOT_REMAP_R::new((self.bits & 0x01) != 0)
+    pub fn pro_boot_remap(&self) -> PRO_BOOT_REMAP_R {
+        PRO_BOOT_REMAP_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_pro_boot_remap(&mut self) -> DPORT_PRO_BOOT_REMAP_W {
-        DPORT_PRO_BOOT_REMAP_W { w: self }
+    pub fn pro_boot_remap(&mut self) -> PRO_BOOT_REMAP_W {
+        PRO_BOOT_REMAP_W { w: self }
     }
 }

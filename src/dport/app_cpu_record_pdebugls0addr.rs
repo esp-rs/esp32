@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_CPU_RECORD_PDEBUGLS0ADDR {
         0
     }
 }
-#[doc = "Reader of field `DPORT_RECORD_APP_PDEBUGLS0ADDR`"]
-pub type DPORT_RECORD_APP_PDEBUGLS0ADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_RECORD_APP_PDEBUGLS0ADDR`"]
-pub struct DPORT_RECORD_APP_PDEBUGLS0ADDR_W<'a> {
+#[doc = "Reader of field `RECORD_APP_PDEBUGLS0ADDR`"]
+pub type RECORD_APP_PDEBUGLS0ADDR_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `RECORD_APP_PDEBUGLS0ADDR`"]
+pub struct RECORD_APP_PDEBUGLS0ADDR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_RECORD_APP_PDEBUGLS0ADDR_W<'a> {
+impl<'a> RECORD_APP_PDEBUGLS0ADDR_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_RECORD_APP_PDEBUGLS0ADDR_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_record_app_pdebugls0addr(&self) -> DPORT_RECORD_APP_PDEBUGLS0ADDR_R {
-        DPORT_RECORD_APP_PDEBUGLS0ADDR_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn record_app_pdebugls0addr(&self) -> RECORD_APP_PDEBUGLS0ADDR_R {
+        RECORD_APP_PDEBUGLS0ADDR_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_record_app_pdebugls0addr(&mut self) -> DPORT_RECORD_APP_PDEBUGLS0ADDR_W {
-        DPORT_RECORD_APP_PDEBUGLS0ADDR_W { w: self }
+    pub fn record_app_pdebugls0addr(&mut self) -> RECORD_APP_PDEBUGLS0ADDR_W {
+        RECORD_APP_PDEBUGLS0ADDR_W { w: self }
     }
 }

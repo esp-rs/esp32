@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CVSD_CONF0 {
         0
     }
 }
-#[doc = "Reader of field `I2S_CVSD_Y_MIN`"]
-pub type I2S_CVSD_Y_MIN_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `I2S_CVSD_Y_MIN`"]
-pub struct I2S_CVSD_Y_MIN_W<'a> {
+#[doc = "Reader of field `CVSD_Y_MIN`"]
+pub type CVSD_Y_MIN_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CVSD_Y_MIN`"]
+pub struct CVSD_Y_MIN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_CVSD_Y_MIN_W<'a> {
+impl<'a> CVSD_Y_MIN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> I2S_CVSD_Y_MIN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_CVSD_Y_MAX`"]
-pub type I2S_CVSD_Y_MAX_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `I2S_CVSD_Y_MAX`"]
-pub struct I2S_CVSD_Y_MAX_W<'a> {
+#[doc = "Reader of field `CVSD_Y_MAX`"]
+pub type CVSD_Y_MAX_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `CVSD_Y_MAX`"]
+pub struct CVSD_Y_MAX_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_CVSD_Y_MAX_W<'a> {
+impl<'a> CVSD_Y_MAX_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> I2S_CVSD_Y_MAX_W<'a> {
 impl R {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn i2s_cvsd_y_min(&self) -> I2S_CVSD_Y_MIN_R {
-        I2S_CVSD_Y_MIN_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn cvsd_y_min(&self) -> CVSD_Y_MIN_R {
+        CVSD_Y_MIN_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn i2s_cvsd_y_max(&self) -> I2S_CVSD_Y_MAX_R {
-        I2S_CVSD_Y_MAX_R::new((self.bits & 0xffff) as u16)
+    pub fn cvsd_y_max(&self) -> CVSD_Y_MAX_R {
+        CVSD_Y_MAX_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn i2s_cvsd_y_min(&mut self) -> I2S_CVSD_Y_MIN_W {
-        I2S_CVSD_Y_MIN_W { w: self }
+    pub fn cvsd_y_min(&mut self) -> CVSD_Y_MIN_W {
+        CVSD_Y_MIN_W { w: self }
     }
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn i2s_cvsd_y_max(&mut self) -> I2S_CVSD_Y_MAX_W {
-        I2S_CVSD_Y_MAX_W { w: self }
+    pub fn cvsd_y_max(&mut self) -> CVSD_Y_MAX_W {
+        CVSD_Y_MAX_W { w: self }
     }
 }

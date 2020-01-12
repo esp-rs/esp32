@@ -10,13 +10,13 @@ impl crate::ResetValue for super::APP_DPORT_APB_MASK0 {
         0
     }
 }
-#[doc = "Reader of field `DPORT_APPDPORT_APB_MASK0`"]
-pub type DPORT_APPDPORT_APB_MASK0_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DPORT_APPDPORT_APB_MASK0`"]
-pub struct DPORT_APPDPORT_APB_MASK0_W<'a> {
+#[doc = "Reader of field `APPDPORT_APB_MASK0`"]
+pub type APPDPORT_APB_MASK0_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `APPDPORT_APB_MASK0`"]
+pub struct APPDPORT_APB_MASK0_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_APPDPORT_APB_MASK0_W<'a> {
+impl<'a> APPDPORT_APB_MASK0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_APPDPORT_APB_MASK0_W<'a> {
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_appdport_apb_mask0(&self) -> DPORT_APPDPORT_APB_MASK0_R {
-        DPORT_APPDPORT_APB_MASK0_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn appdport_apb_mask0(&self) -> APPDPORT_APB_MASK0_R {
+        APPDPORT_APB_MASK0_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dport_appdport_apb_mask0(&mut self) -> DPORT_APPDPORT_APB_MASK0_W {
-        DPORT_APPDPORT_APB_MASK0_W { w: self }
+    pub fn appdport_apb_mask0(&mut self) -> APPDPORT_APB_MASK0_W {
+        APPDPORT_APB_MASK0_W { w: self }
     }
 }

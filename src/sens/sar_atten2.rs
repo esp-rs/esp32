@@ -10,13 +10,13 @@ impl crate::ResetValue for super::SAR_ATTEN2 {
         0
     }
 }
-#[doc = "Reader of field `SENS_SAR2_ATTEN`"]
-pub type SENS_SAR2_ATTEN_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `SENS_SAR2_ATTEN`"]
-pub struct SENS_SAR2_ATTEN_W<'a> {
+#[doc = "Reader of field `SAR2_ATTEN`"]
+pub type SAR2_ATTEN_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SAR2_ATTEN`"]
+pub struct SAR2_ATTEN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> SENS_SAR2_ATTEN_W<'a> {
+impl<'a> SAR2_ATTEN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> SENS_SAR2_ATTEN_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - 2-bit attenuation for each pad 11:1dB 10:6dB 01:3dB 00:0dB"]
     #[inline(always)]
-    pub fn sens_sar2_atten(&self) -> SENS_SAR2_ATTEN_R {
-        SENS_SAR2_ATTEN_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn sar2_atten(&self) -> SAR2_ATTEN_R {
+        SAR2_ATTEN_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - 2-bit attenuation for each pad 11:1dB 10:6dB 01:3dB 00:0dB"]
     #[inline(always)]
-    pub fn sens_sar2_atten(&mut self) -> SENS_SAR2_ATTEN_W {
-        SENS_SAR2_ATTEN_W { w: self }
+    pub fn sar2_atten(&mut self) -> SAR2_ATTEN_W {
+        SAR2_ATTEN_W { w: self }
     }
 }

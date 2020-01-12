@@ -10,13 +10,13 @@ impl crate::ResetValue for super::IRAM_DRAM_AHB_SEL {
         0
     }
 }
-#[doc = "Reader of field `DPORT_MAC_DUMP_MODE`"]
-pub type DPORT_MAC_DUMP_MODE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_MAC_DUMP_MODE`"]
-pub struct DPORT_MAC_DUMP_MODE_W<'a> {
+#[doc = "Reader of field `MAC_DUMP_MODE`"]
+pub type MAC_DUMP_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `MAC_DUMP_MODE`"]
+pub struct MAC_DUMP_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_MAC_DUMP_MODE_W<'a> {
+impl<'a> MAC_DUMP_MODE_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> DPORT_MAC_DUMP_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_MASK_AHB`"]
-pub type DPORT_MASK_AHB_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_MASK_AHB`"]
-pub struct DPORT_MASK_AHB_W<'a> {
+#[doc = "Reader of field `MASK_AHB`"]
+pub type MASK_AHB_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MASK_AHB`"]
+pub struct MASK_AHB_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_MASK_AHB_W<'a> {
+impl<'a> MASK_AHB_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> DPORT_MASK_AHB_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_MASK_APP_DRAM`"]
-pub type DPORT_MASK_APP_DRAM_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_MASK_APP_DRAM`"]
-pub struct DPORT_MASK_APP_DRAM_W<'a> {
+#[doc = "Reader of field `MASK_APP_DRAM`"]
+pub type MASK_APP_DRAM_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MASK_APP_DRAM`"]
+pub struct MASK_APP_DRAM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_MASK_APP_DRAM_W<'a> {
+impl<'a> MASK_APP_DRAM_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> DPORT_MASK_APP_DRAM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_MASK_PRO_DRAM`"]
-pub type DPORT_MASK_PRO_DRAM_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_MASK_PRO_DRAM`"]
-pub struct DPORT_MASK_PRO_DRAM_W<'a> {
+#[doc = "Reader of field `MASK_PRO_DRAM`"]
+pub type MASK_PRO_DRAM_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MASK_PRO_DRAM`"]
+pub struct MASK_PRO_DRAM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_MASK_PRO_DRAM_W<'a> {
+impl<'a> MASK_PRO_DRAM_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -96,13 +96,13 @@ impl<'a> DPORT_MASK_PRO_DRAM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_MASK_APP_IRAM`"]
-pub type DPORT_MASK_APP_IRAM_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_MASK_APP_IRAM`"]
-pub struct DPORT_MASK_APP_IRAM_W<'a> {
+#[doc = "Reader of field `MASK_APP_IRAM`"]
+pub type MASK_APP_IRAM_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MASK_APP_IRAM`"]
+pub struct MASK_APP_IRAM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_MASK_APP_IRAM_W<'a> {
+impl<'a> MASK_APP_IRAM_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -120,13 +120,13 @@ impl<'a> DPORT_MASK_APP_IRAM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DPORT_MASK_PRO_IRAM`"]
-pub type DPORT_MASK_PRO_IRAM_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DPORT_MASK_PRO_IRAM`"]
-pub struct DPORT_MASK_PRO_IRAM_W<'a> {
+#[doc = "Reader of field `MASK_PRO_IRAM`"]
+pub type MASK_PRO_IRAM_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MASK_PRO_IRAM`"]
+pub struct MASK_PRO_IRAM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_MASK_PRO_IRAM_W<'a> {
+impl<'a> MASK_PRO_IRAM_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -147,64 +147,64 @@ impl<'a> DPORT_MASK_PRO_IRAM_W<'a> {
 impl R {
     #[doc = "Bits 5:6"]
     #[inline(always)]
-    pub fn dport_mac_dump_mode(&self) -> DPORT_MAC_DUMP_MODE_R {
-        DPORT_MAC_DUMP_MODE_R::new(((self.bits >> 5) & 0x03) as u8)
+    pub fn mac_dump_mode(&self) -> MAC_DUMP_MODE_R {
+        MAC_DUMP_MODE_R::new(((self.bits >> 5) & 0x03) as u8)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn dport_mask_ahb(&self) -> DPORT_MASK_AHB_R {
-        DPORT_MASK_AHB_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn mask_ahb(&self) -> MASK_AHB_R {
+        MASK_AHB_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn dport_mask_app_dram(&self) -> DPORT_MASK_APP_DRAM_R {
-        DPORT_MASK_APP_DRAM_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn mask_app_dram(&self) -> MASK_APP_DRAM_R {
+        MASK_APP_DRAM_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn dport_mask_pro_dram(&self) -> DPORT_MASK_PRO_DRAM_R {
-        DPORT_MASK_PRO_DRAM_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn mask_pro_dram(&self) -> MASK_PRO_DRAM_R {
+        MASK_PRO_DRAM_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn dport_mask_app_iram(&self) -> DPORT_MASK_APP_IRAM_R {
-        DPORT_MASK_APP_IRAM_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn mask_app_iram(&self) -> MASK_APP_IRAM_R {
+        MASK_APP_IRAM_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_mask_pro_iram(&self) -> DPORT_MASK_PRO_IRAM_R {
-        DPORT_MASK_PRO_IRAM_R::new((self.bits & 0x01) != 0)
+    pub fn mask_pro_iram(&self) -> MASK_PRO_IRAM_R {
+        MASK_PRO_IRAM_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bits 5:6"]
     #[inline(always)]
-    pub fn dport_mac_dump_mode(&mut self) -> DPORT_MAC_DUMP_MODE_W {
-        DPORT_MAC_DUMP_MODE_W { w: self }
+    pub fn mac_dump_mode(&mut self) -> MAC_DUMP_MODE_W {
+        MAC_DUMP_MODE_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn dport_mask_ahb(&mut self) -> DPORT_MASK_AHB_W {
-        DPORT_MASK_AHB_W { w: self }
+    pub fn mask_ahb(&mut self) -> MASK_AHB_W {
+        MASK_AHB_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn dport_mask_app_dram(&mut self) -> DPORT_MASK_APP_DRAM_W {
-        DPORT_MASK_APP_DRAM_W { w: self }
+    pub fn mask_app_dram(&mut self) -> MASK_APP_DRAM_W {
+        MASK_APP_DRAM_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn dport_mask_pro_dram(&mut self) -> DPORT_MASK_PRO_DRAM_W {
-        DPORT_MASK_PRO_DRAM_W { w: self }
+    pub fn mask_pro_dram(&mut self) -> MASK_PRO_DRAM_W {
+        MASK_PRO_DRAM_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn dport_mask_app_iram(&mut self) -> DPORT_MASK_APP_IRAM_W {
-        DPORT_MASK_APP_IRAM_W { w: self }
+    pub fn mask_app_iram(&mut self) -> MASK_APP_IRAM_W {
+        MASK_APP_IRAM_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dport_mask_pro_iram(&mut self) -> DPORT_MASK_PRO_IRAM_W {
-        DPORT_MASK_PRO_IRAM_W { w: self }
+    pub fn mask_pro_iram(&mut self) -> MASK_PRO_IRAM_W {
+        MASK_PRO_IRAM_W { w: self }
     }
 }

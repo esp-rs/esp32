@@ -10,13 +10,13 @@ impl crate::ResetValue for super::STRAP {
         0
     }
 }
-#[doc = "Reader of field `GPIO_STRAPPING`"]
-pub type GPIO_STRAPPING_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `GPIO_STRAPPING`"]
-pub struct GPIO_STRAPPING_W<'a> {
+#[doc = "Reader of field `STRAPPING`"]
+pub type STRAPPING_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `STRAPPING`"]
+pub struct STRAPPING_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_STRAPPING_W<'a> {
+impl<'a> STRAPPING_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> GPIO_STRAPPING_W<'a> {
 impl R {
     #[doc = "Bits 0:15 - {10'b0, MTDI, GPIO0, GPIO2, GPIO4, MTDO, GPIO5}"]
     #[inline(always)]
-    pub fn gpio_strapping(&self) -> GPIO_STRAPPING_R {
-        GPIO_STRAPPING_R::new((self.bits & 0xffff) as u16)
+    pub fn strapping(&self) -> STRAPPING_R {
+        STRAPPING_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:15 - {10'b0, MTDI, GPIO0, GPIO2, GPIO4, MTDO, GPIO5}"]
     #[inline(always)]
-    pub fn gpio_strapping(&mut self) -> GPIO_STRAPPING_W {
-        GPIO_STRAPPING_W { w: self }
+    pub fn strapping(&mut self) -> STRAPPING_W {
+        STRAPPING_W { w: self }
     }
 }

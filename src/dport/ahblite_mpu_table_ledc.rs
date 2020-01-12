@@ -10,13 +10,13 @@ impl crate::ResetValue for super::AHBLITE_MPU_TABLE_LEDC {
         0
     }
 }
-#[doc = "Reader of field `DPORT_LEDC_ACCESS_GRANT_CONFIG`"]
-pub type DPORT_LEDC_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DPORT_LEDC_ACCESS_GRANT_CONFIG`"]
-pub struct DPORT_LEDC_ACCESS_GRANT_CONFIG_W<'a> {
+#[doc = "Reader of field `LEDC_ACCESS_GRANT_CONFIG`"]
+pub type LEDC_ACCESS_GRANT_CONFIG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `LEDC_ACCESS_GRANT_CONFIG`"]
+pub struct LEDC_ACCESS_GRANT_CONFIG_W<'a> {
     w: &'a mut W,
 }
-impl<'a> DPORT_LEDC_ACCESS_GRANT_CONFIG_W<'a> {
+impl<'a> LEDC_ACCESS_GRANT_CONFIG_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> DPORT_LEDC_ACCESS_GRANT_CONFIG_W<'a> {
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_ledc_access_grant_config(&self) -> DPORT_LEDC_ACCESS_GRANT_CONFIG_R {
-        DPORT_LEDC_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
+    pub fn ledc_access_grant_config(&self) -> LEDC_ACCESS_GRANT_CONFIG_R {
+        LEDC_ACCESS_GRANT_CONFIG_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn dport_ledc_access_grant_config(&mut self) -> DPORT_LEDC_ACCESS_GRANT_CONFIG_W {
-        DPORT_LEDC_ACCESS_GRANT_CONFIG_W { w: self }
+    pub fn ledc_access_grant_config(&mut self) -> LEDC_ACCESS_GRANT_CONFIG_W {
+        LEDC_ACCESS_GRANT_CONFIG_W { w: self }
     }
 }

@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CONF_CHAN {
         0
     }
 }
-#[doc = "Reader of field `I2S_RX_CHAN_MOD`"]
-pub type I2S_RX_CHAN_MOD_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_RX_CHAN_MOD`"]
-pub struct I2S_RX_CHAN_MOD_W<'a> {
+#[doc = "Reader of field `RX_CHAN_MOD`"]
+pub type RX_CHAN_MOD_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `RX_CHAN_MOD`"]
+pub struct RX_CHAN_MOD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_RX_CHAN_MOD_W<'a> {
+impl<'a> RX_CHAN_MOD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -24,13 +24,13 @@ impl<'a> I2S_RX_CHAN_MOD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_TX_CHAN_MOD`"]
-pub type I2S_TX_CHAN_MOD_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `I2S_TX_CHAN_MOD`"]
-pub struct I2S_TX_CHAN_MOD_W<'a> {
+#[doc = "Reader of field `TX_CHAN_MOD`"]
+pub type TX_CHAN_MOD_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `TX_CHAN_MOD`"]
+pub struct TX_CHAN_MOD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_TX_CHAN_MOD_W<'a> {
+impl<'a> TX_CHAN_MOD_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -41,24 +41,24 @@ impl<'a> I2S_TX_CHAN_MOD_W<'a> {
 impl R {
     #[doc = "Bits 3:4"]
     #[inline(always)]
-    pub fn i2s_rx_chan_mod(&self) -> I2S_RX_CHAN_MOD_R {
-        I2S_RX_CHAN_MOD_R::new(((self.bits >> 3) & 0x03) as u8)
+    pub fn rx_chan_mod(&self) -> RX_CHAN_MOD_R {
+        RX_CHAN_MOD_R::new(((self.bits >> 3) & 0x03) as u8)
     }
     #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn i2s_tx_chan_mod(&self) -> I2S_TX_CHAN_MOD_R {
-        I2S_TX_CHAN_MOD_R::new((self.bits & 0x07) as u8)
+    pub fn tx_chan_mod(&self) -> TX_CHAN_MOD_R {
+        TX_CHAN_MOD_R::new((self.bits & 0x07) as u8)
     }
 }
 impl W {
     #[doc = "Bits 3:4"]
     #[inline(always)]
-    pub fn i2s_rx_chan_mod(&mut self) -> I2S_RX_CHAN_MOD_W {
-        I2S_RX_CHAN_MOD_W { w: self }
+    pub fn rx_chan_mod(&mut self) -> RX_CHAN_MOD_W {
+        RX_CHAN_MOD_W { w: self }
     }
     #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn i2s_tx_chan_mod(&mut self) -> I2S_TX_CHAN_MOD_W {
-        I2S_TX_CHAN_MOD_W { w: self }
+    pub fn tx_chan_mod(&mut self) -> TX_CHAN_MOD_W {
+        TX_CHAN_MOD_W { w: self }
     }
 }

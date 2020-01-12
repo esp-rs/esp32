@@ -10,13 +10,13 @@ impl crate::ResetValue for super::Q6_WORD1 {
         0
     }
 }
-#[doc = "Reader of field `UHCI_SEND_Q6_WORD1`"]
-pub type UHCI_SEND_Q6_WORD1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `UHCI_SEND_Q6_WORD1`"]
-pub struct UHCI_SEND_Q6_WORD1_W<'a> {
+#[doc = "Reader of field `SEND_Q6_WORD1`"]
+pub type SEND_Q6_WORD1_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `SEND_Q6_WORD1`"]
+pub struct SEND_Q6_WORD1_W<'a> {
     w: &'a mut W,
 }
-impl<'a> UHCI_SEND_Q6_WORD1_W<'a> {
+impl<'a> SEND_Q6_WORD1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> UHCI_SEND_Q6_WORD1_W<'a> {
 impl R {
     #[doc = "Bits 0:31 - This register stores the content of short packet's second dword"]
     #[inline(always)]
-    pub fn uhci_send_q6_word1(&self) -> UHCI_SEND_Q6_WORD1_R {
-        UHCI_SEND_Q6_WORD1_R::new((self.bits & 0xffff_ffff) as u32)
+    pub fn send_q6_word1(&self) -> SEND_Q6_WORD1_R {
+        SEND_Q6_WORD1_R::new((self.bits & 0xffff_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:31 - This register stores the content of short packet's second dword"]
     #[inline(always)]
-    pub fn uhci_send_q6_word1(&mut self) -> UHCI_SEND_Q6_WORD1_W {
-        UHCI_SEND_Q6_WORD1_W { w: self }
+    pub fn send_q6_word1(&mut self) -> SEND_Q6_WORD1_W {
+        SEND_Q6_WORD1_W { w: self }
     }
 }

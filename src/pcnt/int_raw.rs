@@ -10,13 +10,13 @@ impl crate::ResetValue for super::INT_RAW {
         0
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U7_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U7_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U7_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U7_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U7_INT_RAW`"]
+pub type CNT_THR_EVENT_U7_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U7_INT_RAW`"]
+pub struct CNT_THR_EVENT_U7_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U7_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U7_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> PCNT_CNT_THR_EVENT_U7_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U6_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U6_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U6_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U6_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U6_INT_RAW`"]
+pub type CNT_THR_EVENT_U6_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U6_INT_RAW`"]
+pub struct CNT_THR_EVENT_U6_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U6_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U6_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> PCNT_CNT_THR_EVENT_U6_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U5_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U5_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U5_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U5_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U5_INT_RAW`"]
+pub type CNT_THR_EVENT_U5_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U5_INT_RAW`"]
+pub struct CNT_THR_EVENT_U5_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U5_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U5_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> PCNT_CNT_THR_EVENT_U5_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U4_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U4_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U4_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U4_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U4_INT_RAW`"]
+pub type CNT_THR_EVENT_U4_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U4_INT_RAW`"]
+pub struct CNT_THR_EVENT_U4_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U4_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U4_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> PCNT_CNT_THR_EVENT_U4_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U3_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U3_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U3_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U3_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U3_INT_RAW`"]
+pub type CNT_THR_EVENT_U3_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U3_INT_RAW`"]
+pub struct CNT_THR_EVENT_U3_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U3_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U3_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> PCNT_CNT_THR_EVENT_U3_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U2_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U2_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U2_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U2_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U2_INT_RAW`"]
+pub type CNT_THR_EVENT_U2_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U2_INT_RAW`"]
+pub struct CNT_THR_EVENT_U2_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U2_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U2_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> PCNT_CNT_THR_EVENT_U2_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U1_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U1_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U1_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U1_INT_RAW`"]
+pub type CNT_THR_EVENT_U1_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U1_INT_RAW`"]
+pub struct CNT_THR_EVENT_U1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U1_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U1_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> PCNT_CNT_THR_EVENT_U1_INT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PCNT_CNT_THR_EVENT_U0_INT_RAW`"]
-pub type PCNT_CNT_THR_EVENT_U0_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PCNT_CNT_THR_EVENT_U0_INT_RAW`"]
-pub struct PCNT_CNT_THR_EVENT_U0_INT_RAW_W<'a> {
+#[doc = "Reader of field `CNT_THR_EVENT_U0_INT_RAW`"]
+pub type CNT_THR_EVENT_U0_INT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CNT_THR_EVENT_U0_INT_RAW`"]
+pub struct CNT_THR_EVENT_U0_INT_RAW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> PCNT_CNT_THR_EVENT_U0_INT_RAW_W<'a> {
+impl<'a> CNT_THR_EVENT_U0_INT_RAW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -205,84 +205,84 @@ impl<'a> PCNT_CNT_THR_EVENT_U0_INT_RAW_W<'a> {
 impl R {
     #[doc = "Bit 7 - This is the interrupt raw bit for channel7 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u7_int_raw(&self) -> PCNT_CNT_THR_EVENT_U7_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U7_INT_RAW_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn cnt_thr_event_u7_int_raw(&self) -> CNT_THR_EVENT_U7_INT_RAW_R {
+        CNT_THR_EVENT_U7_INT_RAW_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - This is the interrupt raw bit for channel6 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u6_int_raw(&self) -> PCNT_CNT_THR_EVENT_U6_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U6_INT_RAW_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn cnt_thr_event_u6_int_raw(&self) -> CNT_THR_EVENT_U6_INT_RAW_R {
+        CNT_THR_EVENT_U6_INT_RAW_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5 - This is the interrupt raw bit for channel5 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u5_int_raw(&self) -> PCNT_CNT_THR_EVENT_U5_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U5_INT_RAW_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn cnt_thr_event_u5_int_raw(&self) -> CNT_THR_EVENT_U5_INT_RAW_R {
+        CNT_THR_EVENT_U5_INT_RAW_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4 - This is the interrupt raw bit for channel4 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u4_int_raw(&self) -> PCNT_CNT_THR_EVENT_U4_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U4_INT_RAW_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn cnt_thr_event_u4_int_raw(&self) -> CNT_THR_EVENT_U4_INT_RAW_R {
+        CNT_THR_EVENT_U4_INT_RAW_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3 - This is the interrupt raw bit for channel3 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u3_int_raw(&self) -> PCNT_CNT_THR_EVENT_U3_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U3_INT_RAW_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn cnt_thr_event_u3_int_raw(&self) -> CNT_THR_EVENT_U3_INT_RAW_R {
+        CNT_THR_EVENT_U3_INT_RAW_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2 - This is the interrupt raw bit for channel2 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u2_int_raw(&self) -> PCNT_CNT_THR_EVENT_U2_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U2_INT_RAW_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn cnt_thr_event_u2_int_raw(&self) -> CNT_THR_EVENT_U2_INT_RAW_R {
+        CNT_THR_EVENT_U2_INT_RAW_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1 - This is the interrupt raw bit for channel1 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u1_int_raw(&self) -> PCNT_CNT_THR_EVENT_U1_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U1_INT_RAW_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn cnt_thr_event_u1_int_raw(&self) -> CNT_THR_EVENT_U1_INT_RAW_R {
+        CNT_THR_EVENT_U1_INT_RAW_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - This is the interrupt raw bit for channel0 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u0_int_raw(&self) -> PCNT_CNT_THR_EVENT_U0_INT_RAW_R {
-        PCNT_CNT_THR_EVENT_U0_INT_RAW_R::new((self.bits & 0x01) != 0)
+    pub fn cnt_thr_event_u0_int_raw(&self) -> CNT_THR_EVENT_U0_INT_RAW_R {
+        CNT_THR_EVENT_U0_INT_RAW_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 7 - This is the interrupt raw bit for channel7 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u7_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U7_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U7_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u7_int_raw(&mut self) -> CNT_THR_EVENT_U7_INT_RAW_W {
+        CNT_THR_EVENT_U7_INT_RAW_W { w: self }
     }
     #[doc = "Bit 6 - This is the interrupt raw bit for channel6 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u6_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U6_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U6_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u6_int_raw(&mut self) -> CNT_THR_EVENT_U6_INT_RAW_W {
+        CNT_THR_EVENT_U6_INT_RAW_W { w: self }
     }
     #[doc = "Bit 5 - This is the interrupt raw bit for channel5 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u5_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U5_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U5_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u5_int_raw(&mut self) -> CNT_THR_EVENT_U5_INT_RAW_W {
+        CNT_THR_EVENT_U5_INT_RAW_W { w: self }
     }
     #[doc = "Bit 4 - This is the interrupt raw bit for channel4 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u4_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U4_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U4_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u4_int_raw(&mut self) -> CNT_THR_EVENT_U4_INT_RAW_W {
+        CNT_THR_EVENT_U4_INT_RAW_W { w: self }
     }
     #[doc = "Bit 3 - This is the interrupt raw bit for channel3 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u3_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U3_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U3_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u3_int_raw(&mut self) -> CNT_THR_EVENT_U3_INT_RAW_W {
+        CNT_THR_EVENT_U3_INT_RAW_W { w: self }
     }
     #[doc = "Bit 2 - This is the interrupt raw bit for channel2 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u2_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U2_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U2_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u2_int_raw(&mut self) -> CNT_THR_EVENT_U2_INT_RAW_W {
+        CNT_THR_EVENT_U2_INT_RAW_W { w: self }
     }
     #[doc = "Bit 1 - This is the interrupt raw bit for channel1 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u1_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U1_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U1_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u1_int_raw(&mut self) -> CNT_THR_EVENT_U1_INT_RAW_W {
+        CNT_THR_EVENT_U1_INT_RAW_W { w: self }
     }
     #[doc = "Bit 0 - This is the interrupt raw bit for channel0 event."]
     #[inline(always)]
-    pub fn pcnt_cnt_thr_event_u0_int_raw(&mut self) -> PCNT_CNT_THR_EVENT_U0_INT_RAW_W {
-        PCNT_CNT_THR_EVENT_U0_INT_RAW_W { w: self }
+    pub fn cnt_thr_event_u0_int_raw(&mut self) -> CNT_THR_EVENT_U0_INT_RAW_W {
+        CNT_THR_EVENT_U0_INT_RAW_W { w: self }
     }
 }

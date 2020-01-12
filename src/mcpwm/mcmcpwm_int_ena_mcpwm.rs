@@ -10,13 +10,13 @@ impl crate::ResetValue for super::MCMCPWM_INT_ENA_MCPWM {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_CAP2_INT_ENA`"]
-pub type MCPWM_CAP2_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP2_INT_ENA`"]
-pub struct MCPWM_CAP2_INT_ENA_W<'a> {
+#[doc = "Reader of field `CAP2_INT_ENA`"]
+pub type CAP2_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP2_INT_ENA`"]
+pub struct CAP2_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP2_INT_ENA_W<'a> {
+impl<'a> CAP2_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> MCPWM_CAP2_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP1_INT_ENA`"]
-pub type MCPWM_CAP1_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP1_INT_ENA`"]
-pub struct MCPWM_CAP1_INT_ENA_W<'a> {
+#[doc = "Reader of field `CAP1_INT_ENA`"]
+pub type CAP1_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP1_INT_ENA`"]
+pub struct CAP1_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP1_INT_ENA_W<'a> {
+impl<'a> CAP1_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> MCPWM_CAP1_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP0_INT_ENA`"]
-pub type MCPWM_CAP0_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP0_INT_ENA`"]
-pub struct MCPWM_CAP0_INT_ENA_W<'a> {
+#[doc = "Reader of field `CAP0_INT_ENA`"]
+pub type CAP0_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP0_INT_ENA`"]
+pub struct CAP0_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP0_INT_ENA_W<'a> {
+impl<'a> CAP0_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> MCPWM_CAP0_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FH2_OST_INT_ENA`"]
-pub type MCPWM_FH2_OST_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH2_OST_INT_ENA`"]
-pub struct MCPWM_FH2_OST_INT_ENA_W<'a> {
+#[doc = "Reader of field `FH2_OST_INT_ENA`"]
+pub type FH2_OST_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH2_OST_INT_ENA`"]
+pub struct FH2_OST_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH2_OST_INT_ENA_W<'a> {
+impl<'a> FH2_OST_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> MCPWM_FH2_OST_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FH1_OST_INT_ENA`"]
-pub type MCPWM_FH1_OST_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH1_OST_INT_ENA`"]
-pub struct MCPWM_FH1_OST_INT_ENA_W<'a> {
+#[doc = "Reader of field `FH1_OST_INT_ENA`"]
+pub type FH1_OST_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH1_OST_INT_ENA`"]
+pub struct FH1_OST_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH1_OST_INT_ENA_W<'a> {
+impl<'a> FH1_OST_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> MCPWM_FH1_OST_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FH0_OST_INT_ENA`"]
-pub type MCPWM_FH0_OST_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH0_OST_INT_ENA`"]
-pub struct MCPWM_FH0_OST_INT_ENA_W<'a> {
+#[doc = "Reader of field `FH0_OST_INT_ENA`"]
+pub type FH0_OST_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH0_OST_INT_ENA`"]
+pub struct FH0_OST_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH0_OST_INT_ENA_W<'a> {
+impl<'a> FH0_OST_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> MCPWM_FH0_OST_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FH2_CBC_INT_ENA`"]
-pub type MCPWM_FH2_CBC_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH2_CBC_INT_ENA`"]
-pub struct MCPWM_FH2_CBC_INT_ENA_W<'a> {
+#[doc = "Reader of field `FH2_CBC_INT_ENA`"]
+pub type FH2_CBC_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH2_CBC_INT_ENA`"]
+pub struct FH2_CBC_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH2_CBC_INT_ENA_W<'a> {
+impl<'a> FH2_CBC_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> MCPWM_FH2_CBC_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FH1_CBC_INT_ENA`"]
-pub type MCPWM_FH1_CBC_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH1_CBC_INT_ENA`"]
-pub struct MCPWM_FH1_CBC_INT_ENA_W<'a> {
+#[doc = "Reader of field `FH1_CBC_INT_ENA`"]
+pub type FH1_CBC_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH1_CBC_INT_ENA`"]
+pub struct FH1_CBC_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH1_CBC_INT_ENA_W<'a> {
+impl<'a> FH1_CBC_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> MCPWM_FH1_CBC_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FH0_CBC_INT_ENA`"]
-pub type MCPWM_FH0_CBC_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FH0_CBC_INT_ENA`"]
-pub struct MCPWM_FH0_CBC_INT_ENA_W<'a> {
+#[doc = "Reader of field `FH0_CBC_INT_ENA`"]
+pub type FH0_CBC_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FH0_CBC_INT_ENA`"]
+pub struct FH0_CBC_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FH0_CBC_INT_ENA_W<'a> {
+impl<'a> FH0_CBC_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> MCPWM_FH0_CBC_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_OP2_TEB_INT_ENA`"]
-pub type MCPWM_OP2_TEB_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_OP2_TEB_INT_ENA`"]
-pub struct MCPWM_OP2_TEB_INT_ENA_W<'a> {
+#[doc = "Reader of field `OP2_TEB_INT_ENA`"]
+pub type OP2_TEB_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OP2_TEB_INT_ENA`"]
+pub struct OP2_TEB_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_OP2_TEB_INT_ENA_W<'a> {
+impl<'a> OP2_TEB_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> MCPWM_OP2_TEB_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_OP1_TEB_INT_ENA`"]
-pub type MCPWM_OP1_TEB_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_OP1_TEB_INT_ENA`"]
-pub struct MCPWM_OP1_TEB_INT_ENA_W<'a> {
+#[doc = "Reader of field `OP1_TEB_INT_ENA`"]
+pub type OP1_TEB_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OP1_TEB_INT_ENA`"]
+pub struct OP1_TEB_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_OP1_TEB_INT_ENA_W<'a> {
+impl<'a> OP1_TEB_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> MCPWM_OP1_TEB_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_OP0_TEB_INT_ENA`"]
-pub type MCPWM_OP0_TEB_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_OP0_TEB_INT_ENA`"]
-pub struct MCPWM_OP0_TEB_INT_ENA_W<'a> {
+#[doc = "Reader of field `OP0_TEB_INT_ENA`"]
+pub type OP0_TEB_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OP0_TEB_INT_ENA`"]
+pub struct OP0_TEB_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_OP0_TEB_INT_ENA_W<'a> {
+impl<'a> OP0_TEB_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> MCPWM_OP0_TEB_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_OP2_TEA_INT_ENA`"]
-pub type MCPWM_OP2_TEA_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_OP2_TEA_INT_ENA`"]
-pub struct MCPWM_OP2_TEA_INT_ENA_W<'a> {
+#[doc = "Reader of field `OP2_TEA_INT_ENA`"]
+pub type OP2_TEA_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OP2_TEA_INT_ENA`"]
+pub struct OP2_TEA_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_OP2_TEA_INT_ENA_W<'a> {
+impl<'a> OP2_TEA_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> MCPWM_OP2_TEA_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_OP1_TEA_INT_ENA`"]
-pub type MCPWM_OP1_TEA_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_OP1_TEA_INT_ENA`"]
-pub struct MCPWM_OP1_TEA_INT_ENA_W<'a> {
+#[doc = "Reader of field `OP1_TEA_INT_ENA`"]
+pub type OP1_TEA_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OP1_TEA_INT_ENA`"]
+pub struct OP1_TEA_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_OP1_TEA_INT_ENA_W<'a> {
+impl<'a> OP1_TEA_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -346,13 +346,13 @@ impl<'a> MCPWM_OP1_TEA_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_OP0_TEA_INT_ENA`"]
-pub type MCPWM_OP0_TEA_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_OP0_TEA_INT_ENA`"]
-pub struct MCPWM_OP0_TEA_INT_ENA_W<'a> {
+#[doc = "Reader of field `OP0_TEA_INT_ENA`"]
+pub type OP0_TEA_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OP0_TEA_INT_ENA`"]
+pub struct OP0_TEA_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_OP0_TEA_INT_ENA_W<'a> {
+impl<'a> OP0_TEA_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -370,13 +370,13 @@ impl<'a> MCPWM_OP0_TEA_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FAULT2_CLR_INT_ENA`"]
-pub type MCPWM_FAULT2_CLR_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FAULT2_CLR_INT_ENA`"]
-pub struct MCPWM_FAULT2_CLR_INT_ENA_W<'a> {
+#[doc = "Reader of field `FAULT2_CLR_INT_ENA`"]
+pub type FAULT2_CLR_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FAULT2_CLR_INT_ENA`"]
+pub struct FAULT2_CLR_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FAULT2_CLR_INT_ENA_W<'a> {
+impl<'a> FAULT2_CLR_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -394,13 +394,13 @@ impl<'a> MCPWM_FAULT2_CLR_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FAULT1_CLR_INT_ENA`"]
-pub type MCPWM_FAULT1_CLR_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FAULT1_CLR_INT_ENA`"]
-pub struct MCPWM_FAULT1_CLR_INT_ENA_W<'a> {
+#[doc = "Reader of field `FAULT1_CLR_INT_ENA`"]
+pub type FAULT1_CLR_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FAULT1_CLR_INT_ENA`"]
+pub struct FAULT1_CLR_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FAULT1_CLR_INT_ENA_W<'a> {
+impl<'a> FAULT1_CLR_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -418,13 +418,13 @@ impl<'a> MCPWM_FAULT1_CLR_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FAULT0_CLR_INT_ENA`"]
-pub type MCPWM_FAULT0_CLR_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FAULT0_CLR_INT_ENA`"]
-pub struct MCPWM_FAULT0_CLR_INT_ENA_W<'a> {
+#[doc = "Reader of field `FAULT0_CLR_INT_ENA`"]
+pub type FAULT0_CLR_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FAULT0_CLR_INT_ENA`"]
+pub struct FAULT0_CLR_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FAULT0_CLR_INT_ENA_W<'a> {
+impl<'a> FAULT0_CLR_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -442,13 +442,13 @@ impl<'a> MCPWM_FAULT0_CLR_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FAULT2_INT_ENA`"]
-pub type MCPWM_FAULT2_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FAULT2_INT_ENA`"]
-pub struct MCPWM_FAULT2_INT_ENA_W<'a> {
+#[doc = "Reader of field `FAULT2_INT_ENA`"]
+pub type FAULT2_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FAULT2_INT_ENA`"]
+pub struct FAULT2_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FAULT2_INT_ENA_W<'a> {
+impl<'a> FAULT2_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -466,13 +466,13 @@ impl<'a> MCPWM_FAULT2_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FAULT1_INT_ENA`"]
-pub type MCPWM_FAULT1_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FAULT1_INT_ENA`"]
-pub struct MCPWM_FAULT1_INT_ENA_W<'a> {
+#[doc = "Reader of field `FAULT1_INT_ENA`"]
+pub type FAULT1_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FAULT1_INT_ENA`"]
+pub struct FAULT1_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FAULT1_INT_ENA_W<'a> {
+impl<'a> FAULT1_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -490,13 +490,13 @@ impl<'a> MCPWM_FAULT1_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_FAULT0_INT_ENA`"]
-pub type MCPWM_FAULT0_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_FAULT0_INT_ENA`"]
-pub struct MCPWM_FAULT0_INT_ENA_W<'a> {
+#[doc = "Reader of field `FAULT0_INT_ENA`"]
+pub type FAULT0_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FAULT0_INT_ENA`"]
+pub struct FAULT0_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_FAULT0_INT_ENA_W<'a> {
+impl<'a> FAULT0_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -514,13 +514,13 @@ impl<'a> MCPWM_FAULT0_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER2_TEP_INT_ENA`"]
-pub type MCPWM_TIMER2_TEP_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER2_TEP_INT_ENA`"]
-pub struct MCPWM_TIMER2_TEP_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER2_TEP_INT_ENA`"]
+pub type TIMER2_TEP_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER2_TEP_INT_ENA`"]
+pub struct TIMER2_TEP_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER2_TEP_INT_ENA_W<'a> {
+impl<'a> TIMER2_TEP_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -538,13 +538,13 @@ impl<'a> MCPWM_TIMER2_TEP_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER1_TEP_INT_ENA`"]
-pub type MCPWM_TIMER1_TEP_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER1_TEP_INT_ENA`"]
-pub struct MCPWM_TIMER1_TEP_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER1_TEP_INT_ENA`"]
+pub type TIMER1_TEP_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER1_TEP_INT_ENA`"]
+pub struct TIMER1_TEP_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER1_TEP_INT_ENA_W<'a> {
+impl<'a> TIMER1_TEP_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -562,13 +562,13 @@ impl<'a> MCPWM_TIMER1_TEP_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER0_TEP_INT_ENA`"]
-pub type MCPWM_TIMER0_TEP_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER0_TEP_INT_ENA`"]
-pub struct MCPWM_TIMER0_TEP_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER0_TEP_INT_ENA`"]
+pub type TIMER0_TEP_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER0_TEP_INT_ENA`"]
+pub struct TIMER0_TEP_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER0_TEP_INT_ENA_W<'a> {
+impl<'a> TIMER0_TEP_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -586,13 +586,13 @@ impl<'a> MCPWM_TIMER0_TEP_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER2_TEZ_INT_ENA`"]
-pub type MCPWM_TIMER2_TEZ_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER2_TEZ_INT_ENA`"]
-pub struct MCPWM_TIMER2_TEZ_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER2_TEZ_INT_ENA`"]
+pub type TIMER2_TEZ_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER2_TEZ_INT_ENA`"]
+pub struct TIMER2_TEZ_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER2_TEZ_INT_ENA_W<'a> {
+impl<'a> TIMER2_TEZ_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -610,13 +610,13 @@ impl<'a> MCPWM_TIMER2_TEZ_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER1_TEZ_INT_ENA`"]
-pub type MCPWM_TIMER1_TEZ_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER1_TEZ_INT_ENA`"]
-pub struct MCPWM_TIMER1_TEZ_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER1_TEZ_INT_ENA`"]
+pub type TIMER1_TEZ_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER1_TEZ_INT_ENA`"]
+pub struct TIMER1_TEZ_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER1_TEZ_INT_ENA_W<'a> {
+impl<'a> TIMER1_TEZ_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -634,13 +634,13 @@ impl<'a> MCPWM_TIMER1_TEZ_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER0_TEZ_INT_ENA`"]
-pub type MCPWM_TIMER0_TEZ_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER0_TEZ_INT_ENA`"]
-pub struct MCPWM_TIMER0_TEZ_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER0_TEZ_INT_ENA`"]
+pub type TIMER0_TEZ_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER0_TEZ_INT_ENA`"]
+pub struct TIMER0_TEZ_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER0_TEZ_INT_ENA_W<'a> {
+impl<'a> TIMER0_TEZ_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -658,13 +658,13 @@ impl<'a> MCPWM_TIMER0_TEZ_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER2_STOP_INT_ENA`"]
-pub type MCPWM_TIMER2_STOP_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER2_STOP_INT_ENA`"]
-pub struct MCPWM_TIMER2_STOP_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER2_STOP_INT_ENA`"]
+pub type TIMER2_STOP_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER2_STOP_INT_ENA`"]
+pub struct TIMER2_STOP_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER2_STOP_INT_ENA_W<'a> {
+impl<'a> TIMER2_STOP_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -682,13 +682,13 @@ impl<'a> MCPWM_TIMER2_STOP_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER1_STOP_INT_ENA`"]
-pub type MCPWM_TIMER1_STOP_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER1_STOP_INT_ENA`"]
-pub struct MCPWM_TIMER1_STOP_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER1_STOP_INT_ENA`"]
+pub type TIMER1_STOP_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER1_STOP_INT_ENA`"]
+pub struct TIMER1_STOP_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER1_STOP_INT_ENA_W<'a> {
+impl<'a> TIMER1_STOP_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -706,13 +706,13 @@ impl<'a> MCPWM_TIMER1_STOP_INT_ENA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_TIMER0_STOP_INT_ENA`"]
-pub type MCPWM_TIMER0_STOP_INT_ENA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_TIMER0_STOP_INT_ENA`"]
-pub struct MCPWM_TIMER0_STOP_INT_ENA_W<'a> {
+#[doc = "Reader of field `TIMER0_STOP_INT_ENA`"]
+pub type TIMER0_STOP_INT_ENA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `TIMER0_STOP_INT_ENA`"]
+pub struct TIMER0_STOP_INT_ENA_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_TIMER0_STOP_INT_ENA_W<'a> {
+impl<'a> TIMER0_STOP_INT_ENA_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -733,304 +733,304 @@ impl<'a> MCPWM_TIMER0_STOP_INT_ENA_W<'a> {
 impl R {
     #[doc = "Bit 29 - The enable bit for interrupt triggered by captureon channel 2"]
     #[inline(always)]
-    pub fn mcpwm_cap2_int_ena(&self) -> MCPWM_CAP2_INT_ENA_R {
-        MCPWM_CAP2_INT_ENA_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn cap2_int_ena(&self) -> CAP2_INT_ENA_R {
+        CAP2_INT_ENA_R::new(((self.bits >> 29) & 0x01) != 0)
     }
     #[doc = "Bit 28 - The enable bit for interrupt triggered by captureon channel 1"]
     #[inline(always)]
-    pub fn mcpwm_cap1_int_ena(&self) -> MCPWM_CAP1_INT_ENA_R {
-        MCPWM_CAP1_INT_ENA_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn cap1_int_ena(&self) -> CAP1_INT_ENA_R {
+        CAP1_INT_ENA_R::new(((self.bits >> 28) & 0x01) != 0)
     }
     #[doc = "Bit 27 - The enable bit for interrupt triggered by captureon channel 0"]
     #[inline(always)]
-    pub fn mcpwm_cap0_int_ena(&self) -> MCPWM_CAP0_INT_ENA_R {
-        MCPWM_CAP0_INT_ENA_R::new(((self.bits >> 27) & 0x01) != 0)
+    pub fn cap0_int_ena(&self) -> CAP0_INT_ENA_R {
+        CAP0_INT_ENA_R::new(((self.bits >> 27) & 0x01) != 0)
     }
     #[doc = "Bit 26 - The enable bit for interrupt triggered by an one-shot mode action on PWM2"]
     #[inline(always)]
-    pub fn mcpwm_fh2_ost_int_ena(&self) -> MCPWM_FH2_OST_INT_ENA_R {
-        MCPWM_FH2_OST_INT_ENA_R::new(((self.bits >> 26) & 0x01) != 0)
+    pub fn fh2_ost_int_ena(&self) -> FH2_OST_INT_ENA_R {
+        FH2_OST_INT_ENA_R::new(((self.bits >> 26) & 0x01) != 0)
     }
     #[doc = "Bit 25 - The enable bit for interrupt triggered by an one-shot mode action on PWM0"]
     #[inline(always)]
-    pub fn mcpwm_fh1_ost_int_ena(&self) -> MCPWM_FH1_OST_INT_ENA_R {
-        MCPWM_FH1_OST_INT_ENA_R::new(((self.bits >> 25) & 0x01) != 0)
+    pub fn fh1_ost_int_ena(&self) -> FH1_OST_INT_ENA_R {
+        FH1_OST_INT_ENA_R::new(((self.bits >> 25) & 0x01) != 0)
     }
     #[doc = "Bit 24 - The enable bit for interrupt triggered by an one-shot mode action on PWM0"]
     #[inline(always)]
-    pub fn mcpwm_fh0_ost_int_ena(&self) -> MCPWM_FH0_OST_INT_ENA_R {
-        MCPWM_FH0_OST_INT_ENA_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn fh0_ost_int_ena(&self) -> FH0_OST_INT_ENA_R {
+        FH0_OST_INT_ENA_R::new(((self.bits >> 24) & 0x01) != 0)
     }
     #[doc = "Bit 23 - The enable bit for interrupt triggered by an cycle-by-cycle mode action on PWM2"]
     #[inline(always)]
-    pub fn mcpwm_fh2_cbc_int_ena(&self) -> MCPWM_FH2_CBC_INT_ENA_R {
-        MCPWM_FH2_CBC_INT_ENA_R::new(((self.bits >> 23) & 0x01) != 0)
+    pub fn fh2_cbc_int_ena(&self) -> FH2_CBC_INT_ENA_R {
+        FH2_CBC_INT_ENA_R::new(((self.bits >> 23) & 0x01) != 0)
     }
     #[doc = "Bit 22 - The enable bit for interrupt triggered by an cycle-by-cycle mode action on PWM1"]
     #[inline(always)]
-    pub fn mcpwm_fh1_cbc_int_ena(&self) -> MCPWM_FH1_CBC_INT_ENA_R {
-        MCPWM_FH1_CBC_INT_ENA_R::new(((self.bits >> 22) & 0x01) != 0)
+    pub fn fh1_cbc_int_ena(&self) -> FH1_CBC_INT_ENA_R {
+        FH1_CBC_INT_ENA_R::new(((self.bits >> 22) & 0x01) != 0)
     }
     #[doc = "Bit 21 - The enable bit for interrupt triggered by an cycle-by-cycle mode action on PWM0"]
     #[inline(always)]
-    pub fn mcpwm_fh0_cbc_int_ena(&self) -> MCPWM_FH0_CBC_INT_ENA_R {
-        MCPWM_FH0_CBC_INT_ENA_R::new(((self.bits >> 21) & 0x01) != 0)
+    pub fn fh0_cbc_int_ena(&self) -> FH0_CBC_INT_ENA_R {
+        FH0_CBC_INT_ENA_R::new(((self.bits >> 21) & 0x01) != 0)
     }
     #[doc = "Bit 20 - The enable bit for interrupt triggered by a PWM operator 2 TEB event"]
     #[inline(always)]
-    pub fn mcpwm_op2_teb_int_ena(&self) -> MCPWM_OP2_TEB_INT_ENA_R {
-        MCPWM_OP2_TEB_INT_ENA_R::new(((self.bits >> 20) & 0x01) != 0)
+    pub fn op2_teb_int_ena(&self) -> OP2_TEB_INT_ENA_R {
+        OP2_TEB_INT_ENA_R::new(((self.bits >> 20) & 0x01) != 0)
     }
     #[doc = "Bit 19 - The enable bit for interrupt triggered by a PWM operator 1 TEB event"]
     #[inline(always)]
-    pub fn mcpwm_op1_teb_int_ena(&self) -> MCPWM_OP1_TEB_INT_ENA_R {
-        MCPWM_OP1_TEB_INT_ENA_R::new(((self.bits >> 19) & 0x01) != 0)
+    pub fn op1_teb_int_ena(&self) -> OP1_TEB_INT_ENA_R {
+        OP1_TEB_INT_ENA_R::new(((self.bits >> 19) & 0x01) != 0)
     }
     #[doc = "Bit 18 - The enable bit for interrupt triggered by a PWM operator 0 TEB event"]
     #[inline(always)]
-    pub fn mcpwm_op0_teb_int_ena(&self) -> MCPWM_OP0_TEB_INT_ENA_R {
-        MCPWM_OP0_TEB_INT_ENA_R::new(((self.bits >> 18) & 0x01) != 0)
+    pub fn op0_teb_int_ena(&self) -> OP0_TEB_INT_ENA_R {
+        OP0_TEB_INT_ENA_R::new(((self.bits >> 18) & 0x01) != 0)
     }
     #[doc = "Bit 17 - The enable bit for interrupt triggered by a PWM operator 2 TEA event"]
     #[inline(always)]
-    pub fn mcpwm_op2_tea_int_ena(&self) -> MCPWM_OP2_TEA_INT_ENA_R {
-        MCPWM_OP2_TEA_INT_ENA_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn op2_tea_int_ena(&self) -> OP2_TEA_INT_ENA_R {
+        OP2_TEA_INT_ENA_R::new(((self.bits >> 17) & 0x01) != 0)
     }
     #[doc = "Bit 16 - The enable bit for interrupt triggered by a PWM operator 1 TEA event"]
     #[inline(always)]
-    pub fn mcpwm_op1_tea_int_ena(&self) -> MCPWM_OP1_TEA_INT_ENA_R {
-        MCPWM_OP1_TEA_INT_ENA_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn op1_tea_int_ena(&self) -> OP1_TEA_INT_ENA_R {
+        OP1_TEA_INT_ENA_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 15 - The enable bit for interrupt triggered by a PWM operator 0 TEA event"]
     #[inline(always)]
-    pub fn mcpwm_op0_tea_int_ena(&self) -> MCPWM_OP0_TEA_INT_ENA_R {
-        MCPWM_OP0_TEA_INT_ENA_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn op0_tea_int_ena(&self) -> OP0_TEA_INT_ENA_R {
+        OP0_TEA_INT_ENA_R::new(((self.bits >> 15) & 0x01) != 0)
     }
     #[doc = "Bit 14 - The enable bit for interrupt triggered when event_f2 ends"]
     #[inline(always)]
-    pub fn mcpwm_fault2_clr_int_ena(&self) -> MCPWM_FAULT2_CLR_INT_ENA_R {
-        MCPWM_FAULT2_CLR_INT_ENA_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn fault2_clr_int_ena(&self) -> FAULT2_CLR_INT_ENA_R {
+        FAULT2_CLR_INT_ENA_R::new(((self.bits >> 14) & 0x01) != 0)
     }
     #[doc = "Bit 13 - The enable bit for interrupt triggered when event_f1 ends"]
     #[inline(always)]
-    pub fn mcpwm_fault1_clr_int_ena(&self) -> MCPWM_FAULT1_CLR_INT_ENA_R {
-        MCPWM_FAULT1_CLR_INT_ENA_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn fault1_clr_int_ena(&self) -> FAULT1_CLR_INT_ENA_R {
+        FAULT1_CLR_INT_ENA_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12 - The enable bit for interrupt triggered when event_f0 ends"]
     #[inline(always)]
-    pub fn mcpwm_fault0_clr_int_ena(&self) -> MCPWM_FAULT0_CLR_INT_ENA_R {
-        MCPWM_FAULT0_CLR_INT_ENA_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn fault0_clr_int_ena(&self) -> FAULT0_CLR_INT_ENA_R {
+        FAULT0_CLR_INT_ENA_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11 - The enable bit for interrupt triggered when event_f2 starts"]
     #[inline(always)]
-    pub fn mcpwm_fault2_int_ena(&self) -> MCPWM_FAULT2_INT_ENA_R {
-        MCPWM_FAULT2_INT_ENA_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn fault2_int_ena(&self) -> FAULT2_INT_ENA_R {
+        FAULT2_INT_ENA_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10 - The enable bit for interrupt triggered when event_f1 starts"]
     #[inline(always)]
-    pub fn mcpwm_fault1_int_ena(&self) -> MCPWM_FAULT1_INT_ENA_R {
-        MCPWM_FAULT1_INT_ENA_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn fault1_int_ena(&self) -> FAULT1_INT_ENA_R {
+        FAULT1_INT_ENA_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9 - The enable bit for interrupt triggered when event_f0 starts"]
     #[inline(always)]
-    pub fn mcpwm_fault0_int_ena(&self) -> MCPWM_FAULT0_INT_ENA_R {
-        MCPWM_FAULT0_INT_ENA_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn fault0_int_ena(&self) -> FAULT0_INT_ENA_R {
+        FAULT0_INT_ENA_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8 - The enable bit for interrupt triggered by a PWM timer 2 TEP event"]
     #[inline(always)]
-    pub fn mcpwm_timer2_tep_int_ena(&self) -> MCPWM_TIMER2_TEP_INT_ENA_R {
-        MCPWM_TIMER2_TEP_INT_ENA_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn timer2_tep_int_ena(&self) -> TIMER2_TEP_INT_ENA_R {
+        TIMER2_TEP_INT_ENA_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7 - The enable bit for interrupt triggered by a PWM timer 1 TEP event"]
     #[inline(always)]
-    pub fn mcpwm_timer1_tep_int_ena(&self) -> MCPWM_TIMER1_TEP_INT_ENA_R {
-        MCPWM_TIMER1_TEP_INT_ENA_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn timer1_tep_int_ena(&self) -> TIMER1_TEP_INT_ENA_R {
+        TIMER1_TEP_INT_ENA_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - The enable bit for interrupt triggered by a PWM timer 0 TEP event"]
     #[inline(always)]
-    pub fn mcpwm_timer0_tep_int_ena(&self) -> MCPWM_TIMER0_TEP_INT_ENA_R {
-        MCPWM_TIMER0_TEP_INT_ENA_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn timer0_tep_int_ena(&self) -> TIMER0_TEP_INT_ENA_R {
+        TIMER0_TEP_INT_ENA_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5 - The enable bit for interrupt triggered by a PWM timer 2 TEZ event"]
     #[inline(always)]
-    pub fn mcpwm_timer2_tez_int_ena(&self) -> MCPWM_TIMER2_TEZ_INT_ENA_R {
-        MCPWM_TIMER2_TEZ_INT_ENA_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn timer2_tez_int_ena(&self) -> TIMER2_TEZ_INT_ENA_R {
+        TIMER2_TEZ_INT_ENA_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4 - The enable bit for interrupt triggered by a PWM timer 1 TEZ event"]
     #[inline(always)]
-    pub fn mcpwm_timer1_tez_int_ena(&self) -> MCPWM_TIMER1_TEZ_INT_ENA_R {
-        MCPWM_TIMER1_TEZ_INT_ENA_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn timer1_tez_int_ena(&self) -> TIMER1_TEZ_INT_ENA_R {
+        TIMER1_TEZ_INT_ENA_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3 - The enable bit for interrupt triggered by a PWM timer 0 TEZ event"]
     #[inline(always)]
-    pub fn mcpwm_timer0_tez_int_ena(&self) -> MCPWM_TIMER0_TEZ_INT_ENA_R {
-        MCPWM_TIMER0_TEZ_INT_ENA_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn timer0_tez_int_ena(&self) -> TIMER0_TEZ_INT_ENA_R {
+        TIMER0_TEZ_INT_ENA_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2 - The enable bit for interrupt triggered when timer 2 stops"]
     #[inline(always)]
-    pub fn mcpwm_timer2_stop_int_ena(&self) -> MCPWM_TIMER2_STOP_INT_ENA_R {
-        MCPWM_TIMER2_STOP_INT_ENA_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn timer2_stop_int_ena(&self) -> TIMER2_STOP_INT_ENA_R {
+        TIMER2_STOP_INT_ENA_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1 - The enable bit for interrupt triggered when timer 1 stops"]
     #[inline(always)]
-    pub fn mcpwm_timer1_stop_int_ena(&self) -> MCPWM_TIMER1_STOP_INT_ENA_R {
-        MCPWM_TIMER1_STOP_INT_ENA_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn timer1_stop_int_ena(&self) -> TIMER1_STOP_INT_ENA_R {
+        TIMER1_STOP_INT_ENA_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - The enable bit for interrupt triggered when timer 0 stops"]
     #[inline(always)]
-    pub fn mcpwm_timer0_stop_int_ena(&self) -> MCPWM_TIMER0_STOP_INT_ENA_R {
-        MCPWM_TIMER0_STOP_INT_ENA_R::new((self.bits & 0x01) != 0)
+    pub fn timer0_stop_int_ena(&self) -> TIMER0_STOP_INT_ENA_R {
+        TIMER0_STOP_INT_ENA_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 29 - The enable bit for interrupt triggered by captureon channel 2"]
     #[inline(always)]
-    pub fn mcpwm_cap2_int_ena(&mut self) -> MCPWM_CAP2_INT_ENA_W {
-        MCPWM_CAP2_INT_ENA_W { w: self }
+    pub fn cap2_int_ena(&mut self) -> CAP2_INT_ENA_W {
+        CAP2_INT_ENA_W { w: self }
     }
     #[doc = "Bit 28 - The enable bit for interrupt triggered by captureon channel 1"]
     #[inline(always)]
-    pub fn mcpwm_cap1_int_ena(&mut self) -> MCPWM_CAP1_INT_ENA_W {
-        MCPWM_CAP1_INT_ENA_W { w: self }
+    pub fn cap1_int_ena(&mut self) -> CAP1_INT_ENA_W {
+        CAP1_INT_ENA_W { w: self }
     }
     #[doc = "Bit 27 - The enable bit for interrupt triggered by captureon channel 0"]
     #[inline(always)]
-    pub fn mcpwm_cap0_int_ena(&mut self) -> MCPWM_CAP0_INT_ENA_W {
-        MCPWM_CAP0_INT_ENA_W { w: self }
+    pub fn cap0_int_ena(&mut self) -> CAP0_INT_ENA_W {
+        CAP0_INT_ENA_W { w: self }
     }
     #[doc = "Bit 26 - The enable bit for interrupt triggered by an one-shot mode action on PWM2"]
     #[inline(always)]
-    pub fn mcpwm_fh2_ost_int_ena(&mut self) -> MCPWM_FH2_OST_INT_ENA_W {
-        MCPWM_FH2_OST_INT_ENA_W { w: self }
+    pub fn fh2_ost_int_ena(&mut self) -> FH2_OST_INT_ENA_W {
+        FH2_OST_INT_ENA_W { w: self }
     }
     #[doc = "Bit 25 - The enable bit for interrupt triggered by an one-shot mode action on PWM0"]
     #[inline(always)]
-    pub fn mcpwm_fh1_ost_int_ena(&mut self) -> MCPWM_FH1_OST_INT_ENA_W {
-        MCPWM_FH1_OST_INT_ENA_W { w: self }
+    pub fn fh1_ost_int_ena(&mut self) -> FH1_OST_INT_ENA_W {
+        FH1_OST_INT_ENA_W { w: self }
     }
     #[doc = "Bit 24 - The enable bit for interrupt triggered by an one-shot mode action on PWM0"]
     #[inline(always)]
-    pub fn mcpwm_fh0_ost_int_ena(&mut self) -> MCPWM_FH0_OST_INT_ENA_W {
-        MCPWM_FH0_OST_INT_ENA_W { w: self }
+    pub fn fh0_ost_int_ena(&mut self) -> FH0_OST_INT_ENA_W {
+        FH0_OST_INT_ENA_W { w: self }
     }
     #[doc = "Bit 23 - The enable bit for interrupt triggered by an cycle-by-cycle mode action on PWM2"]
     #[inline(always)]
-    pub fn mcpwm_fh2_cbc_int_ena(&mut self) -> MCPWM_FH2_CBC_INT_ENA_W {
-        MCPWM_FH2_CBC_INT_ENA_W { w: self }
+    pub fn fh2_cbc_int_ena(&mut self) -> FH2_CBC_INT_ENA_W {
+        FH2_CBC_INT_ENA_W { w: self }
     }
     #[doc = "Bit 22 - The enable bit for interrupt triggered by an cycle-by-cycle mode action on PWM1"]
     #[inline(always)]
-    pub fn mcpwm_fh1_cbc_int_ena(&mut self) -> MCPWM_FH1_CBC_INT_ENA_W {
-        MCPWM_FH1_CBC_INT_ENA_W { w: self }
+    pub fn fh1_cbc_int_ena(&mut self) -> FH1_CBC_INT_ENA_W {
+        FH1_CBC_INT_ENA_W { w: self }
     }
     #[doc = "Bit 21 - The enable bit for interrupt triggered by an cycle-by-cycle mode action on PWM0"]
     #[inline(always)]
-    pub fn mcpwm_fh0_cbc_int_ena(&mut self) -> MCPWM_FH0_CBC_INT_ENA_W {
-        MCPWM_FH0_CBC_INT_ENA_W { w: self }
+    pub fn fh0_cbc_int_ena(&mut self) -> FH0_CBC_INT_ENA_W {
+        FH0_CBC_INT_ENA_W { w: self }
     }
     #[doc = "Bit 20 - The enable bit for interrupt triggered by a PWM operator 2 TEB event"]
     #[inline(always)]
-    pub fn mcpwm_op2_teb_int_ena(&mut self) -> MCPWM_OP2_TEB_INT_ENA_W {
-        MCPWM_OP2_TEB_INT_ENA_W { w: self }
+    pub fn op2_teb_int_ena(&mut self) -> OP2_TEB_INT_ENA_W {
+        OP2_TEB_INT_ENA_W { w: self }
     }
     #[doc = "Bit 19 - The enable bit for interrupt triggered by a PWM operator 1 TEB event"]
     #[inline(always)]
-    pub fn mcpwm_op1_teb_int_ena(&mut self) -> MCPWM_OP1_TEB_INT_ENA_W {
-        MCPWM_OP1_TEB_INT_ENA_W { w: self }
+    pub fn op1_teb_int_ena(&mut self) -> OP1_TEB_INT_ENA_W {
+        OP1_TEB_INT_ENA_W { w: self }
     }
     #[doc = "Bit 18 - The enable bit for interrupt triggered by a PWM operator 0 TEB event"]
     #[inline(always)]
-    pub fn mcpwm_op0_teb_int_ena(&mut self) -> MCPWM_OP0_TEB_INT_ENA_W {
-        MCPWM_OP0_TEB_INT_ENA_W { w: self }
+    pub fn op0_teb_int_ena(&mut self) -> OP0_TEB_INT_ENA_W {
+        OP0_TEB_INT_ENA_W { w: self }
     }
     #[doc = "Bit 17 - The enable bit for interrupt triggered by a PWM operator 2 TEA event"]
     #[inline(always)]
-    pub fn mcpwm_op2_tea_int_ena(&mut self) -> MCPWM_OP2_TEA_INT_ENA_W {
-        MCPWM_OP2_TEA_INT_ENA_W { w: self }
+    pub fn op2_tea_int_ena(&mut self) -> OP2_TEA_INT_ENA_W {
+        OP2_TEA_INT_ENA_W { w: self }
     }
     #[doc = "Bit 16 - The enable bit for interrupt triggered by a PWM operator 1 TEA event"]
     #[inline(always)]
-    pub fn mcpwm_op1_tea_int_ena(&mut self) -> MCPWM_OP1_TEA_INT_ENA_W {
-        MCPWM_OP1_TEA_INT_ENA_W { w: self }
+    pub fn op1_tea_int_ena(&mut self) -> OP1_TEA_INT_ENA_W {
+        OP1_TEA_INT_ENA_W { w: self }
     }
     #[doc = "Bit 15 - The enable bit for interrupt triggered by a PWM operator 0 TEA event"]
     #[inline(always)]
-    pub fn mcpwm_op0_tea_int_ena(&mut self) -> MCPWM_OP0_TEA_INT_ENA_W {
-        MCPWM_OP0_TEA_INT_ENA_W { w: self }
+    pub fn op0_tea_int_ena(&mut self) -> OP0_TEA_INT_ENA_W {
+        OP0_TEA_INT_ENA_W { w: self }
     }
     #[doc = "Bit 14 - The enable bit for interrupt triggered when event_f2 ends"]
     #[inline(always)]
-    pub fn mcpwm_fault2_clr_int_ena(&mut self) -> MCPWM_FAULT2_CLR_INT_ENA_W {
-        MCPWM_FAULT2_CLR_INT_ENA_W { w: self }
+    pub fn fault2_clr_int_ena(&mut self) -> FAULT2_CLR_INT_ENA_W {
+        FAULT2_CLR_INT_ENA_W { w: self }
     }
     #[doc = "Bit 13 - The enable bit for interrupt triggered when event_f1 ends"]
     #[inline(always)]
-    pub fn mcpwm_fault1_clr_int_ena(&mut self) -> MCPWM_FAULT1_CLR_INT_ENA_W {
-        MCPWM_FAULT1_CLR_INT_ENA_W { w: self }
+    pub fn fault1_clr_int_ena(&mut self) -> FAULT1_CLR_INT_ENA_W {
+        FAULT1_CLR_INT_ENA_W { w: self }
     }
     #[doc = "Bit 12 - The enable bit for interrupt triggered when event_f0 ends"]
     #[inline(always)]
-    pub fn mcpwm_fault0_clr_int_ena(&mut self) -> MCPWM_FAULT0_CLR_INT_ENA_W {
-        MCPWM_FAULT0_CLR_INT_ENA_W { w: self }
+    pub fn fault0_clr_int_ena(&mut self) -> FAULT0_CLR_INT_ENA_W {
+        FAULT0_CLR_INT_ENA_W { w: self }
     }
     #[doc = "Bit 11 - The enable bit for interrupt triggered when event_f2 starts"]
     #[inline(always)]
-    pub fn mcpwm_fault2_int_ena(&mut self) -> MCPWM_FAULT2_INT_ENA_W {
-        MCPWM_FAULT2_INT_ENA_W { w: self }
+    pub fn fault2_int_ena(&mut self) -> FAULT2_INT_ENA_W {
+        FAULT2_INT_ENA_W { w: self }
     }
     #[doc = "Bit 10 - The enable bit for interrupt triggered when event_f1 starts"]
     #[inline(always)]
-    pub fn mcpwm_fault1_int_ena(&mut self) -> MCPWM_FAULT1_INT_ENA_W {
-        MCPWM_FAULT1_INT_ENA_W { w: self }
+    pub fn fault1_int_ena(&mut self) -> FAULT1_INT_ENA_W {
+        FAULT1_INT_ENA_W { w: self }
     }
     #[doc = "Bit 9 - The enable bit for interrupt triggered when event_f0 starts"]
     #[inline(always)]
-    pub fn mcpwm_fault0_int_ena(&mut self) -> MCPWM_FAULT0_INT_ENA_W {
-        MCPWM_FAULT0_INT_ENA_W { w: self }
+    pub fn fault0_int_ena(&mut self) -> FAULT0_INT_ENA_W {
+        FAULT0_INT_ENA_W { w: self }
     }
     #[doc = "Bit 8 - The enable bit for interrupt triggered by a PWM timer 2 TEP event"]
     #[inline(always)]
-    pub fn mcpwm_timer2_tep_int_ena(&mut self) -> MCPWM_TIMER2_TEP_INT_ENA_W {
-        MCPWM_TIMER2_TEP_INT_ENA_W { w: self }
+    pub fn timer2_tep_int_ena(&mut self) -> TIMER2_TEP_INT_ENA_W {
+        TIMER2_TEP_INT_ENA_W { w: self }
     }
     #[doc = "Bit 7 - The enable bit for interrupt triggered by a PWM timer 1 TEP event"]
     #[inline(always)]
-    pub fn mcpwm_timer1_tep_int_ena(&mut self) -> MCPWM_TIMER1_TEP_INT_ENA_W {
-        MCPWM_TIMER1_TEP_INT_ENA_W { w: self }
+    pub fn timer1_tep_int_ena(&mut self) -> TIMER1_TEP_INT_ENA_W {
+        TIMER1_TEP_INT_ENA_W { w: self }
     }
     #[doc = "Bit 6 - The enable bit for interrupt triggered by a PWM timer 0 TEP event"]
     #[inline(always)]
-    pub fn mcpwm_timer0_tep_int_ena(&mut self) -> MCPWM_TIMER0_TEP_INT_ENA_W {
-        MCPWM_TIMER0_TEP_INT_ENA_W { w: self }
+    pub fn timer0_tep_int_ena(&mut self) -> TIMER0_TEP_INT_ENA_W {
+        TIMER0_TEP_INT_ENA_W { w: self }
     }
     #[doc = "Bit 5 - The enable bit for interrupt triggered by a PWM timer 2 TEZ event"]
     #[inline(always)]
-    pub fn mcpwm_timer2_tez_int_ena(&mut self) -> MCPWM_TIMER2_TEZ_INT_ENA_W {
-        MCPWM_TIMER2_TEZ_INT_ENA_W { w: self }
+    pub fn timer2_tez_int_ena(&mut self) -> TIMER2_TEZ_INT_ENA_W {
+        TIMER2_TEZ_INT_ENA_W { w: self }
     }
     #[doc = "Bit 4 - The enable bit for interrupt triggered by a PWM timer 1 TEZ event"]
     #[inline(always)]
-    pub fn mcpwm_timer1_tez_int_ena(&mut self) -> MCPWM_TIMER1_TEZ_INT_ENA_W {
-        MCPWM_TIMER1_TEZ_INT_ENA_W { w: self }
+    pub fn timer1_tez_int_ena(&mut self) -> TIMER1_TEZ_INT_ENA_W {
+        TIMER1_TEZ_INT_ENA_W { w: self }
     }
     #[doc = "Bit 3 - The enable bit for interrupt triggered by a PWM timer 0 TEZ event"]
     #[inline(always)]
-    pub fn mcpwm_timer0_tez_int_ena(&mut self) -> MCPWM_TIMER0_TEZ_INT_ENA_W {
-        MCPWM_TIMER0_TEZ_INT_ENA_W { w: self }
+    pub fn timer0_tez_int_ena(&mut self) -> TIMER0_TEZ_INT_ENA_W {
+        TIMER0_TEZ_INT_ENA_W { w: self }
     }
     #[doc = "Bit 2 - The enable bit for interrupt triggered when timer 2 stops"]
     #[inline(always)]
-    pub fn mcpwm_timer2_stop_int_ena(&mut self) -> MCPWM_TIMER2_STOP_INT_ENA_W {
-        MCPWM_TIMER2_STOP_INT_ENA_W { w: self }
+    pub fn timer2_stop_int_ena(&mut self) -> TIMER2_STOP_INT_ENA_W {
+        TIMER2_STOP_INT_ENA_W { w: self }
     }
     #[doc = "Bit 1 - The enable bit for interrupt triggered when timer 1 stops"]
     #[inline(always)]
-    pub fn mcpwm_timer1_stop_int_ena(&mut self) -> MCPWM_TIMER1_STOP_INT_ENA_W {
-        MCPWM_TIMER1_STOP_INT_ENA_W { w: self }
+    pub fn timer1_stop_int_ena(&mut self) -> TIMER1_STOP_INT_ENA_W {
+        TIMER1_STOP_INT_ENA_W { w: self }
     }
     #[doc = "Bit 0 - The enable bit for interrupt triggered when timer 0 stops"]
     #[inline(always)]
-    pub fn mcpwm_timer0_stop_int_ena(&mut self) -> MCPWM_TIMER0_STOP_INT_ENA_W {
-        MCPWM_TIMER0_STOP_INT_ENA_W { w: self }
+    pub fn timer0_stop_int_ena(&mut self) -> TIMER0_STOP_INT_ENA_W {
+        TIMER0_STOP_INT_ENA_W { w: self }
     }
 }

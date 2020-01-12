@@ -10,13 +10,13 @@ impl crate::ResetValue for super::LC_CONF {
         0
     }
 }
-#[doc = "Reader of field `I2S_MEM_TRANS_EN`"]
-pub type I2S_MEM_TRANS_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_MEM_TRANS_EN`"]
-pub struct I2S_MEM_TRANS_EN_W<'a> {
+#[doc = "Reader of field `MEM_TRANS_EN`"]
+pub type MEM_TRANS_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `MEM_TRANS_EN`"]
+pub struct MEM_TRANS_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_MEM_TRANS_EN_W<'a> {
+impl<'a> MEM_TRANS_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> I2S_MEM_TRANS_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_CHECK_OWNER`"]
-pub type I2S_CHECK_OWNER_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_CHECK_OWNER`"]
-pub struct I2S_CHECK_OWNER_W<'a> {
+#[doc = "Reader of field `CHECK_OWNER`"]
+pub type CHECK_OWNER_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CHECK_OWNER`"]
+pub struct CHECK_OWNER_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_CHECK_OWNER_W<'a> {
+impl<'a> CHECK_OWNER_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> I2S_CHECK_OWNER_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_DATA_BURST_EN`"]
-pub type I2S_OUT_DATA_BURST_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_DATA_BURST_EN`"]
-pub struct I2S_OUT_DATA_BURST_EN_W<'a> {
+#[doc = "Reader of field `OUT_DATA_BURST_EN`"]
+pub type OUT_DATA_BURST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_DATA_BURST_EN`"]
+pub struct OUT_DATA_BURST_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_DATA_BURST_EN_W<'a> {
+impl<'a> OUT_DATA_BURST_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -82,13 +82,13 @@ impl<'a> I2S_OUT_DATA_BURST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_INDSCR_BURST_EN`"]
-pub type I2S_INDSCR_BURST_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_INDSCR_BURST_EN`"]
-pub struct I2S_INDSCR_BURST_EN_W<'a> {
+#[doc = "Reader of field `INDSCR_BURST_EN`"]
+pub type INDSCR_BURST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `INDSCR_BURST_EN`"]
+pub struct INDSCR_BURST_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_INDSCR_BURST_EN_W<'a> {
+impl<'a> INDSCR_BURST_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -106,13 +106,13 @@ impl<'a> I2S_INDSCR_BURST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUTDSCR_BURST_EN`"]
-pub type I2S_OUTDSCR_BURST_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUTDSCR_BURST_EN`"]
-pub struct I2S_OUTDSCR_BURST_EN_W<'a> {
+#[doc = "Reader of field `OUTDSCR_BURST_EN`"]
+pub type OUTDSCR_BURST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUTDSCR_BURST_EN`"]
+pub struct OUTDSCR_BURST_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUTDSCR_BURST_EN_W<'a> {
+impl<'a> OUTDSCR_BURST_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -130,13 +130,13 @@ impl<'a> I2S_OUTDSCR_BURST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_EOF_MODE`"]
-pub type I2S_OUT_EOF_MODE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_EOF_MODE`"]
-pub struct I2S_OUT_EOF_MODE_W<'a> {
+#[doc = "Reader of field `OUT_EOF_MODE`"]
+pub type OUT_EOF_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_EOF_MODE`"]
+pub struct OUT_EOF_MODE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_EOF_MODE_W<'a> {
+impl<'a> OUT_EOF_MODE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -154,13 +154,13 @@ impl<'a> I2S_OUT_EOF_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_NO_RESTART_CLR`"]
-pub type I2S_OUT_NO_RESTART_CLR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_NO_RESTART_CLR`"]
-pub struct I2S_OUT_NO_RESTART_CLR_W<'a> {
+#[doc = "Reader of field `OUT_NO_RESTART_CLR`"]
+pub type OUT_NO_RESTART_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_NO_RESTART_CLR`"]
+pub struct OUT_NO_RESTART_CLR_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_NO_RESTART_CLR_W<'a> {
+impl<'a> OUT_NO_RESTART_CLR_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -178,13 +178,13 @@ impl<'a> I2S_OUT_NO_RESTART_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_AUTO_WRBACK`"]
-pub type I2S_OUT_AUTO_WRBACK_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_AUTO_WRBACK`"]
-pub struct I2S_OUT_AUTO_WRBACK_W<'a> {
+#[doc = "Reader of field `OUT_AUTO_WRBACK`"]
+pub type OUT_AUTO_WRBACK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_AUTO_WRBACK`"]
+pub struct OUT_AUTO_WRBACK_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_AUTO_WRBACK_W<'a> {
+impl<'a> OUT_AUTO_WRBACK_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -202,13 +202,13 @@ impl<'a> I2S_OUT_AUTO_WRBACK_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_IN_LOOP_TEST`"]
-pub type I2S_IN_LOOP_TEST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_IN_LOOP_TEST`"]
-pub struct I2S_IN_LOOP_TEST_W<'a> {
+#[doc = "Reader of field `IN_LOOP_TEST`"]
+pub type IN_LOOP_TEST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_LOOP_TEST`"]
+pub struct IN_LOOP_TEST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_IN_LOOP_TEST_W<'a> {
+impl<'a> IN_LOOP_TEST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -226,13 +226,13 @@ impl<'a> I2S_IN_LOOP_TEST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_LOOP_TEST`"]
-pub type I2S_OUT_LOOP_TEST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_LOOP_TEST`"]
-pub struct I2S_OUT_LOOP_TEST_W<'a> {
+#[doc = "Reader of field `OUT_LOOP_TEST`"]
+pub type OUT_LOOP_TEST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_LOOP_TEST`"]
+pub struct OUT_LOOP_TEST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_LOOP_TEST_W<'a> {
+impl<'a> OUT_LOOP_TEST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -250,13 +250,13 @@ impl<'a> I2S_OUT_LOOP_TEST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_AHBM_RST`"]
-pub type I2S_AHBM_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_AHBM_RST`"]
-pub struct I2S_AHBM_RST_W<'a> {
+#[doc = "Reader of field `AHBM_RST`"]
+pub type AHBM_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AHBM_RST`"]
+pub struct AHBM_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_AHBM_RST_W<'a> {
+impl<'a> AHBM_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -274,13 +274,13 @@ impl<'a> I2S_AHBM_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_AHBM_FIFO_RST`"]
-pub type I2S_AHBM_FIFO_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_AHBM_FIFO_RST`"]
-pub struct I2S_AHBM_FIFO_RST_W<'a> {
+#[doc = "Reader of field `AHBM_FIFO_RST`"]
+pub type AHBM_FIFO_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `AHBM_FIFO_RST`"]
+pub struct AHBM_FIFO_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_AHBM_FIFO_RST_W<'a> {
+impl<'a> AHBM_FIFO_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -298,13 +298,13 @@ impl<'a> I2S_AHBM_FIFO_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_OUT_RST`"]
-pub type I2S_OUT_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_OUT_RST`"]
-pub struct I2S_OUT_RST_W<'a> {
+#[doc = "Reader of field `OUT_RST`"]
+pub type OUT_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `OUT_RST`"]
+pub struct OUT_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_OUT_RST_W<'a> {
+impl<'a> OUT_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -322,13 +322,13 @@ impl<'a> I2S_OUT_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `I2S_IN_RST`"]
-pub type I2S_IN_RST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `I2S_IN_RST`"]
-pub struct I2S_IN_RST_W<'a> {
+#[doc = "Reader of field `IN_RST`"]
+pub type IN_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IN_RST`"]
+pub struct IN_RST_W<'a> {
     w: &'a mut W,
 }
-impl<'a> I2S_IN_RST_W<'a> {
+impl<'a> IN_RST_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -349,144 +349,144 @@ impl<'a> I2S_IN_RST_W<'a> {
 impl R {
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn i2s_mem_trans_en(&self) -> I2S_MEM_TRANS_EN_R {
-        I2S_MEM_TRANS_EN_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn mem_trans_en(&self) -> MEM_TRANS_EN_R {
+        MEM_TRANS_EN_R::new(((self.bits >> 13) & 0x01) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn i2s_check_owner(&self) -> I2S_CHECK_OWNER_R {
-        I2S_CHECK_OWNER_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn check_owner(&self) -> CHECK_OWNER_R {
+        CHECK_OWNER_R::new(((self.bits >> 12) & 0x01) != 0)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_out_data_burst_en(&self) -> I2S_OUT_DATA_BURST_EN_R {
-        I2S_OUT_DATA_BURST_EN_R::new(((self.bits >> 11) & 0x01) != 0)
+    pub fn out_data_burst_en(&self) -> OUT_DATA_BURST_EN_R {
+        OUT_DATA_BURST_EN_R::new(((self.bits >> 11) & 0x01) != 0)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn i2s_indscr_burst_en(&self) -> I2S_INDSCR_BURST_EN_R {
-        I2S_INDSCR_BURST_EN_R::new(((self.bits >> 10) & 0x01) != 0)
+    pub fn indscr_burst_en(&self) -> INDSCR_BURST_EN_R {
+        INDSCR_BURST_EN_R::new(((self.bits >> 10) & 0x01) != 0)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn i2s_outdscr_burst_en(&self) -> I2S_OUTDSCR_BURST_EN_R {
-        I2S_OUTDSCR_BURST_EN_R::new(((self.bits >> 9) & 0x01) != 0)
+    pub fn outdscr_burst_en(&self) -> OUTDSCR_BURST_EN_R {
+        OUTDSCR_BURST_EN_R::new(((self.bits >> 9) & 0x01) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn i2s_out_eof_mode(&self) -> I2S_OUT_EOF_MODE_R {
-        I2S_OUT_EOF_MODE_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn out_eof_mode(&self) -> OUT_EOF_MODE_R {
+        OUT_EOF_MODE_R::new(((self.bits >> 8) & 0x01) != 0)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn i2s_out_no_restart_clr(&self) -> I2S_OUT_NO_RESTART_CLR_R {
-        I2S_OUT_NO_RESTART_CLR_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn out_no_restart_clr(&self) -> OUT_NO_RESTART_CLR_R {
+        OUT_NO_RESTART_CLR_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn i2s_out_auto_wrback(&self) -> I2S_OUT_AUTO_WRBACK_R {
-        I2S_OUT_AUTO_WRBACK_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn out_auto_wrback(&self) -> OUT_AUTO_WRBACK_R {
+        OUT_AUTO_WRBACK_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn i2s_in_loop_test(&self) -> I2S_IN_LOOP_TEST_R {
-        I2S_IN_LOOP_TEST_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn in_loop_test(&self) -> IN_LOOP_TEST_R {
+        IN_LOOP_TEST_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn i2s_out_loop_test(&self) -> I2S_OUT_LOOP_TEST_R {
-        I2S_OUT_LOOP_TEST_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn out_loop_test(&self) -> OUT_LOOP_TEST_R {
+        OUT_LOOP_TEST_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_ahbm_rst(&self) -> I2S_AHBM_RST_R {
-        I2S_AHBM_RST_R::new(((self.bits >> 3) & 0x01) != 0)
+    pub fn ahbm_rst(&self) -> AHBM_RST_R {
+        AHBM_RST_R::new(((self.bits >> 3) & 0x01) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_ahbm_fifo_rst(&self) -> I2S_AHBM_FIFO_RST_R {
-        I2S_AHBM_FIFO_RST_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn ahbm_fifo_rst(&self) -> AHBM_FIFO_RST_R {
+        AHBM_FIFO_RST_R::new(((self.bits >> 2) & 0x01) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_out_rst(&self) -> I2S_OUT_RST_R {
-        I2S_OUT_RST_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn out_rst(&self) -> OUT_RST_R {
+        OUT_RST_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_in_rst(&self) -> I2S_IN_RST_R {
-        I2S_IN_RST_R::new((self.bits & 0x01) != 0)
+    pub fn in_rst(&self) -> IN_RST_R {
+        IN_RST_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn i2s_mem_trans_en(&mut self) -> I2S_MEM_TRANS_EN_W {
-        I2S_MEM_TRANS_EN_W { w: self }
+    pub fn mem_trans_en(&mut self) -> MEM_TRANS_EN_W {
+        MEM_TRANS_EN_W { w: self }
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn i2s_check_owner(&mut self) -> I2S_CHECK_OWNER_W {
-        I2S_CHECK_OWNER_W { w: self }
+    pub fn check_owner(&mut self) -> CHECK_OWNER_W {
+        CHECK_OWNER_W { w: self }
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    pub fn i2s_out_data_burst_en(&mut self) -> I2S_OUT_DATA_BURST_EN_W {
-        I2S_OUT_DATA_BURST_EN_W { w: self }
+    pub fn out_data_burst_en(&mut self) -> OUT_DATA_BURST_EN_W {
+        OUT_DATA_BURST_EN_W { w: self }
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    pub fn i2s_indscr_burst_en(&mut self) -> I2S_INDSCR_BURST_EN_W {
-        I2S_INDSCR_BURST_EN_W { w: self }
+    pub fn indscr_burst_en(&mut self) -> INDSCR_BURST_EN_W {
+        INDSCR_BURST_EN_W { w: self }
     }
     #[doc = "Bit 9"]
     #[inline(always)]
-    pub fn i2s_outdscr_burst_en(&mut self) -> I2S_OUTDSCR_BURST_EN_W {
-        I2S_OUTDSCR_BURST_EN_W { w: self }
+    pub fn outdscr_burst_en(&mut self) -> OUTDSCR_BURST_EN_W {
+        OUTDSCR_BURST_EN_W { w: self }
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn i2s_out_eof_mode(&mut self) -> I2S_OUT_EOF_MODE_W {
-        I2S_OUT_EOF_MODE_W { w: self }
+    pub fn out_eof_mode(&mut self) -> OUT_EOF_MODE_W {
+        OUT_EOF_MODE_W { w: self }
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    pub fn i2s_out_no_restart_clr(&mut self) -> I2S_OUT_NO_RESTART_CLR_W {
-        I2S_OUT_NO_RESTART_CLR_W { w: self }
+    pub fn out_no_restart_clr(&mut self) -> OUT_NO_RESTART_CLR_W {
+        OUT_NO_RESTART_CLR_W { w: self }
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn i2s_out_auto_wrback(&mut self) -> I2S_OUT_AUTO_WRBACK_W {
-        I2S_OUT_AUTO_WRBACK_W { w: self }
+    pub fn out_auto_wrback(&mut self) -> OUT_AUTO_WRBACK_W {
+        OUT_AUTO_WRBACK_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn i2s_in_loop_test(&mut self) -> I2S_IN_LOOP_TEST_W {
-        I2S_IN_LOOP_TEST_W { w: self }
+    pub fn in_loop_test(&mut self) -> IN_LOOP_TEST_W {
+        IN_LOOP_TEST_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn i2s_out_loop_test(&mut self) -> I2S_OUT_LOOP_TEST_W {
-        I2S_OUT_LOOP_TEST_W { w: self }
+    pub fn out_loop_test(&mut self) -> OUT_LOOP_TEST_W {
+        OUT_LOOP_TEST_W { w: self }
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn i2s_ahbm_rst(&mut self) -> I2S_AHBM_RST_W {
-        I2S_AHBM_RST_W { w: self }
+    pub fn ahbm_rst(&mut self) -> AHBM_RST_W {
+        AHBM_RST_W { w: self }
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_ahbm_fifo_rst(&mut self) -> I2S_AHBM_FIFO_RST_W {
-        I2S_AHBM_FIFO_RST_W { w: self }
+    pub fn ahbm_fifo_rst(&mut self) -> AHBM_FIFO_RST_W {
+        AHBM_FIFO_RST_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_out_rst(&mut self) -> I2S_OUT_RST_W {
-        I2S_OUT_RST_W { w: self }
+    pub fn out_rst(&mut self) -> OUT_RST_W {
+        OUT_RST_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn i2s_in_rst(&mut self) -> I2S_IN_RST_W {
-        I2S_IN_RST_W { w: self }
+    pub fn in_rst(&mut self) -> IN_RST_W {
+        IN_RST_W { w: self }
     }
 }

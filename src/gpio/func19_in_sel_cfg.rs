@@ -10,13 +10,13 @@ impl crate::ResetValue for super::FUNC19_IN_SEL_CFG {
         0
     }
 }
-#[doc = "Reader of field `GPIO_SIG19_IN_SEL`"]
-pub type GPIO_SIG19_IN_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_SIG19_IN_SEL`"]
-pub struct GPIO_SIG19_IN_SEL_W<'a> {
+#[doc = "Reader of field `SIG19_IN_SEL`"]
+pub type SIG19_IN_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SIG19_IN_SEL`"]
+pub struct SIG19_IN_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_SIG19_IN_SEL_W<'a> {
+impl<'a> SIG19_IN_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> GPIO_SIG19_IN_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_FUNC19_IN_INV_SEL`"]
-pub type GPIO_FUNC19_IN_INV_SEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GPIO_FUNC19_IN_INV_SEL`"]
-pub struct GPIO_FUNC19_IN_INV_SEL_W<'a> {
+#[doc = "Reader of field `FUNC19_IN_INV_SEL`"]
+pub type FUNC19_IN_INV_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `FUNC19_IN_INV_SEL`"]
+pub struct FUNC19_IN_INV_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC19_IN_INV_SEL_W<'a> {
+impl<'a> FUNC19_IN_INV_SEL_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -58,13 +58,13 @@ impl<'a> GPIO_FUNC19_IN_INV_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GPIO_FUNC19_IN_SEL`"]
-pub type GPIO_FUNC19_IN_SEL_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `GPIO_FUNC19_IN_SEL`"]
-pub struct GPIO_FUNC19_IN_SEL_W<'a> {
+#[doc = "Reader of field `FUNC19_IN_SEL`"]
+pub type FUNC19_IN_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `FUNC19_IN_SEL`"]
+pub struct FUNC19_IN_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> GPIO_FUNC19_IN_SEL_W<'a> {
+impl<'a> FUNC19_IN_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -75,34 +75,34 @@ impl<'a> GPIO_FUNC19_IN_SEL_W<'a> {
 impl R {
     #[doc = "Bit 7 - if the slow signal bypass the io matrix or not if you want setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_sig19_in_sel(&self) -> GPIO_SIG19_IN_SEL_R {
-        GPIO_SIG19_IN_SEL_R::new(((self.bits >> 7) & 0x01) != 0)
+    pub fn sig19_in_sel(&self) -> SIG19_IN_SEL_R {
+        SIG19_IN_SEL_R::new(((self.bits >> 7) & 0x01) != 0)
     }
     #[doc = "Bit 6 - revert the value of the input if you want to revert please set the value to 1"]
     #[inline(always)]
-    pub fn gpio_func19_in_inv_sel(&self) -> GPIO_FUNC19_IN_INV_SEL_R {
-        GPIO_FUNC19_IN_INV_SEL_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn func19_in_inv_sel(&self) -> FUNC19_IN_INV_SEL_R {
+        FUNC19_IN_INV_SEL_R::new(((self.bits >> 6) & 0x01) != 0)
     }
     #[doc = "Bits 0:5 - select one of the 256 inputs"]
     #[inline(always)]
-    pub fn gpio_func19_in_sel(&self) -> GPIO_FUNC19_IN_SEL_R {
-        GPIO_FUNC19_IN_SEL_R::new((self.bits & 0x3f) as u8)
+    pub fn func19_in_sel(&self) -> FUNC19_IN_SEL_R {
+        FUNC19_IN_SEL_R::new((self.bits & 0x3f) as u8)
     }
 }
 impl W {
     #[doc = "Bit 7 - if the slow signal bypass the io matrix or not if you want setting the value to 1"]
     #[inline(always)]
-    pub fn gpio_sig19_in_sel(&mut self) -> GPIO_SIG19_IN_SEL_W {
-        GPIO_SIG19_IN_SEL_W { w: self }
+    pub fn sig19_in_sel(&mut self) -> SIG19_IN_SEL_W {
+        SIG19_IN_SEL_W { w: self }
     }
     #[doc = "Bit 6 - revert the value of the input if you want to revert please set the value to 1"]
     #[inline(always)]
-    pub fn gpio_func19_in_inv_sel(&mut self) -> GPIO_FUNC19_IN_INV_SEL_W {
-        GPIO_FUNC19_IN_INV_SEL_W { w: self }
+    pub fn func19_in_inv_sel(&mut self) -> FUNC19_IN_INV_SEL_W {
+        FUNC19_IN_INV_SEL_W { w: self }
     }
     #[doc = "Bits 0:5 - select one of the 256 inputs"]
     #[inline(always)]
-    pub fn gpio_func19_in_sel(&mut self) -> GPIO_FUNC19_IN_SEL_W {
-        GPIO_FUNC19_IN_SEL_W { w: self }
+    pub fn func19_in_sel(&mut self) -> FUNC19_IN_SEL_W {
+        FUNC19_IN_SEL_W { w: self }
     }
 }

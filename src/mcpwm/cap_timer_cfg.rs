@@ -10,13 +10,13 @@ impl crate::ResetValue for super::CAP_TIMER_CFG {
         0
     }
 }
-#[doc = "Reader of field `MCPWM_CAP_SYNC_SW`"]
-pub type MCPWM_CAP_SYNC_SW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP_SYNC_SW`"]
-pub struct MCPWM_CAP_SYNC_SW_W<'a> {
+#[doc = "Reader of field `CAP_SYNC_SW`"]
+pub type CAP_SYNC_SW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP_SYNC_SW`"]
+pub struct CAP_SYNC_SW_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP_SYNC_SW_W<'a> {
+impl<'a> CAP_SYNC_SW_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -34,13 +34,13 @@ impl<'a> MCPWM_CAP_SYNC_SW_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP_SYNCI_SEL`"]
-pub type MCPWM_CAP_SYNCI_SEL_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MCPWM_CAP_SYNCI_SEL`"]
-pub struct MCPWM_CAP_SYNCI_SEL_W<'a> {
+#[doc = "Reader of field `CAP_SYNCI_SEL`"]
+pub type CAP_SYNCI_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `CAP_SYNCI_SEL`"]
+pub struct CAP_SYNCI_SEL_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP_SYNCI_SEL_W<'a> {
+impl<'a> CAP_SYNCI_SEL_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -48,13 +48,13 @@ impl<'a> MCPWM_CAP_SYNCI_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP_SYNCI_EN`"]
-pub type MCPWM_CAP_SYNCI_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP_SYNCI_EN`"]
-pub struct MCPWM_CAP_SYNCI_EN_W<'a> {
+#[doc = "Reader of field `CAP_SYNCI_EN`"]
+pub type CAP_SYNCI_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP_SYNCI_EN`"]
+pub struct CAP_SYNCI_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP_SYNCI_EN_W<'a> {
+impl<'a> CAP_SYNCI_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -72,13 +72,13 @@ impl<'a> MCPWM_CAP_SYNCI_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MCPWM_CAP_TIMER_EN`"]
-pub type MCPWM_CAP_TIMER_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MCPWM_CAP_TIMER_EN`"]
-pub struct MCPWM_CAP_TIMER_EN_W<'a> {
+#[doc = "Reader of field `CAP_TIMER_EN`"]
+pub type CAP_TIMER_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `CAP_TIMER_EN`"]
+pub struct CAP_TIMER_EN_W<'a> {
     w: &'a mut W,
 }
-impl<'a> MCPWM_CAP_TIMER_EN_W<'a> {
+impl<'a> CAP_TIMER_EN_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -99,44 +99,44 @@ impl<'a> MCPWM_CAP_TIMER_EN_W<'a> {
 impl R {
     #[doc = "Bit 5 - Set this bit to force a capture timer sync capture timer is loaded with value in phase register."]
     #[inline(always)]
-    pub fn mcpwm_cap_sync_sw(&self) -> MCPWM_CAP_SYNC_SW_R {
-        MCPWM_CAP_SYNC_SW_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn cap_sync_sw(&self) -> CAP_SYNC_SW_R {
+        CAP_SYNC_SW_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bits 2:4 - Capture module sync input selection. 0: none 1: timer0 synco 2: timer1 synco 3: timer2 synco 4: SYNC0 from GPIO matrix 5: SYNC1 from GPIO matrix 6: SYNC2 from GPIO matrix"]
     #[inline(always)]
-    pub fn mcpwm_cap_synci_sel(&self) -> MCPWM_CAP_SYNCI_SEL_R {
-        MCPWM_CAP_SYNCI_SEL_R::new(((self.bits >> 2) & 0x07) as u8)
+    pub fn cap_synci_sel(&self) -> CAP_SYNCI_SEL_R {
+        CAP_SYNCI_SEL_R::new(((self.bits >> 2) & 0x07) as u8)
     }
     #[doc = "Bit 1 - When set capture timer sync is enabled."]
     #[inline(always)]
-    pub fn mcpwm_cap_synci_en(&self) -> MCPWM_CAP_SYNCI_EN_R {
-        MCPWM_CAP_SYNCI_EN_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn cap_synci_en(&self) -> CAP_SYNCI_EN_R {
+        CAP_SYNCI_EN_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0 - When set capture timer incrementing under APB_clk is enabled."]
     #[inline(always)]
-    pub fn mcpwm_cap_timer_en(&self) -> MCPWM_CAP_TIMER_EN_R {
-        MCPWM_CAP_TIMER_EN_R::new((self.bits & 0x01) != 0)
+    pub fn cap_timer_en(&self) -> CAP_TIMER_EN_R {
+        CAP_TIMER_EN_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 5 - Set this bit to force a capture timer sync capture timer is loaded with value in phase register."]
     #[inline(always)]
-    pub fn mcpwm_cap_sync_sw(&mut self) -> MCPWM_CAP_SYNC_SW_W {
-        MCPWM_CAP_SYNC_SW_W { w: self }
+    pub fn cap_sync_sw(&mut self) -> CAP_SYNC_SW_W {
+        CAP_SYNC_SW_W { w: self }
     }
     #[doc = "Bits 2:4 - Capture module sync input selection. 0: none 1: timer0 synco 2: timer1 synco 3: timer2 synco 4: SYNC0 from GPIO matrix 5: SYNC1 from GPIO matrix 6: SYNC2 from GPIO matrix"]
     #[inline(always)]
-    pub fn mcpwm_cap_synci_sel(&mut self) -> MCPWM_CAP_SYNCI_SEL_W {
-        MCPWM_CAP_SYNCI_SEL_W { w: self }
+    pub fn cap_synci_sel(&mut self) -> CAP_SYNCI_SEL_W {
+        CAP_SYNCI_SEL_W { w: self }
     }
     #[doc = "Bit 1 - When set capture timer sync is enabled."]
     #[inline(always)]
-    pub fn mcpwm_cap_synci_en(&mut self) -> MCPWM_CAP_SYNCI_EN_W {
-        MCPWM_CAP_SYNCI_EN_W { w: self }
+    pub fn cap_synci_en(&mut self) -> CAP_SYNCI_EN_W {
+        CAP_SYNCI_EN_W { w: self }
     }
     #[doc = "Bit 0 - When set capture timer incrementing under APB_clk is enabled."]
     #[inline(always)]
-    pub fn mcpwm_cap_timer_en(&mut self) -> MCPWM_CAP_TIMER_EN_W {
-        MCPWM_CAP_TIMER_EN_W { w: self }
+    pub fn cap_timer_en(&mut self) -> CAP_TIMER_EN_W {
+        CAP_TIMER_EN_W { w: self }
     }
 }

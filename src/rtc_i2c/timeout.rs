@@ -10,13 +10,13 @@ impl crate::ResetValue for super::TIMEOUT {
         0
     }
 }
-#[doc = "Reader of field `RTC_I2C_TIMEOUT`"]
-pub type RTC_I2C_TIMEOUT_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `RTC_I2C_TIMEOUT`"]
-pub struct RTC_I2C_TIMEOUT_W<'a> {
+#[doc = "Reader of field `TIMEOUT`"]
+pub type TIMEOUT_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `TIMEOUT`"]
+pub struct TIMEOUT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RTC_I2C_TIMEOUT_W<'a> {
+impl<'a> TIMEOUT_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -27,14 +27,14 @@ impl<'a> RTC_I2C_TIMEOUT_W<'a> {
 impl R {
     #[doc = "Bits 0:19 - Maximum number of FAST_CLK cycles that the transmission can take"]
     #[inline(always)]
-    pub fn rtc_i2c_timeout(&self) -> RTC_I2C_TIMEOUT_R {
-        RTC_I2C_TIMEOUT_R::new((self.bits & 0x000f_ffff) as u32)
+    pub fn timeout(&self) -> TIMEOUT_R {
+        TIMEOUT_R::new((self.bits & 0x000f_ffff) as u32)
     }
 }
 impl W {
     #[doc = "Bits 0:19 - Maximum number of FAST_CLK cycles that the transmission can take"]
     #[inline(always)]
-    pub fn rtc_i2c_timeout(&mut self) -> RTC_I2C_TIMEOUT_W {
-        RTC_I2C_TIMEOUT_W { w: self }
+    pub fn timeout(&mut self) -> TIMEOUT_W {
+        TIMEOUT_W { w: self }
     }
 }
