@@ -1,94 +1,135 @@
+# Draft attempt at adding interrupt mappings to peripherals.
+
+# Some peripherals are not publicly documented, but we can infer their
+# existence from the ESP-IDF sources and object files. However, naming
+# is inconsistent between various parts of the ESP-IDF source and the
+# ESP32 Technical Reference.
+#
+# Therefore the strategy used here is to take the name of the peripheral
+# from the interrupt name obtained by `idf2svd` from the ESP-IDF source,
+# except where it is obvious that the interrupt belongs to a peripheral
+# which has already defined by another name.
+#
+# In most cases interrupts map cleaning using this strategy, except some
+# peripherals need to be invented below.
+
+# Open issues:
+#   * should SLC be split into SLC0 and SLC1?
+#   * the comments on the two I2C controllers seem reversed
+#   * unclear where TIMER1 and TIMER2 should live
+#   * group all the cpu specific interrupts under one root peripheral?
+
+# Invented peripherals, defined in order of use
+
 _add:
-  # Wifi MAC is referred to as WMAC in esp-idf/components/soc/esp32/include/soc/soc.h
-  WMAC:
-    interrupts:
+  WIFI_MAC:
+    baseAddress: 0
+
+  WIFI_BB:
+    baseAddress: 0
+
+  BT_MAC:
+    baseAddress: 0
+  
+  BT_BB:
+    baseAddress: 0
+
+  RW_BT:
+    baseAddress: 0
+  
+  RW_BLE:
+    baseAddress: 0
+
+  FROM_CPU:
+    baseAddress: 0
+  
+  ETH_MAC:
+    baseAddress: 0
+  
+  SDIO:
+    baseAddress: 0
+  
+  ETH:
+    baseAddress: 0
+  
+  WDT:
+    baseAddress: 0
+
+  TIMER1:
+    baseAddress: 0
+  
+  TIMER2:
+    baseAddress: 0
+
+  MMU:
+    baseAddress: 0
+  
+  MPU:
+    baseAddress: 0
+  
+  CACHE:
+    baseAddress: 0
+
+# Defined in order of interrupt value
+
+WIFI_MAC:
+  _add:
+    _interrupts:
       WIFI_MAC_INTR:
         description: "interrupt of WiFi MAC, level"
         value: 0
 
-  # Wifi baseband is referred to as WBB in esp-idf/components/soc/esp32/include/soc/soc.h
-  WBB:
-    interrupts:
       WIFI_MAC_NMI:
         description: "interrupt of WiFi MAC, NMI, use if MAC have bug to fix in NMI"
         value: 1
 
       WIFI_BB_INTR:
         description: "interrupt of WiFi BB, level, we can do some calibartion"
-        value: 2q
+        value: 2
 
-  # The BT MAC and baseband are referred to inconsistently - making it symmetric with Wifi
-  BTMAC:
-    interrupts:
+BT_MAC:
+  _add:
+    _interrupts:
       BT_MAC_INTR:
         description: "will be cancelled"
         value: 3
 
-  BTBB:
-    interrupts:
+BT_BB:
+  _add:
+    _interrupts:
       BT_BB_INTR:
         description: "interrupt of BT BB, level"
         value: 4
-      
+
       BT_BB_NMI:
         description: "interrupt of BT BB, NMI, use if BB have bug to fix in NMI"
         value: 5
 
-  RWBT:
-    interrupts:
       RWBT_INTR:
         description: "interrupt of RWBT, level"
         value: 6
-      
-      RWBT_NMI:
-        description: "interrupt of RWBT, NMI, use if RWBT have bug to fix in NMI"
-        value: 8
 
-  RWBLE:
-    interrupts:
+RW_BLE:
+  _add:
+    _interrupts:
       RWBLE_INTR:
         description: "interrupt of RWBLE, level"
         value: 7
 
+RW_BT:
+  _add:
+    _interrupts:    
+      RWBT_NMI:
+        description: "interrupt of RWBT, NMI, use if RWBT have bug to fix in NMI"
+        value: 8
+
+RW_BLE:
+  _add:
+    _interrupts:
       RWBLE_NMI:
         description: "interrupt of RWBLE, NMI, use if RWBT have bug to fix in NMI"
         value: 9
-  
-  # perhaps this should be on some existing peripheral?
-  CPU:
-    interrupts:
-      FROM_CPU_INTR0:
-        description: "interrupt0 generated from a CPU, level"
-        value: 24
 
-      FROM_CPU_INTR1:
-        description: "interrupt1 generated from a CPU, level"
-        value: 25
-    
-      FROM_CPU_INTR2:
-        description: "interrupt2 generated from a CPU, level"
-        value: 26
-
-      FROM_CPU_INTR3:
-        description: "interrupt3 generated from a CPU, level"
-        value: 27
-
-      # arguable if the next three should be here on elsewhere
-      MMU_IA_INTR:
-        description: "interrupt of MMU Invalid Access, LEVEL"
-        value: 66
-      
-      MPU_IA_INTR:
-        description: "interrupt of MPU Invalid Access, LEVEL"
-        value: 67
-      
-      CACHE_IA_INTR:
-        description: "interrupt of Cache Invalied Access, LEVEL"
-        value: 68
-
-
-
-# should SLC be split into SLC0 and SLC1?
 SLC:
   _add:
     _interrupts:
@@ -100,93 +141,57 @@ SLC:
         description: "interrupt of SLC1, level"
         value: 11
 
-_derive:
-  UHCI0:
-    _add:
-      _interrupts:
-        UHCI0_INTR:
-          description: "interrupt of UHCI0, level"
-          value: 12
+UHCI0:
+  _add:
+    _interrupts:
+      UHCI0_INTR:
+        description: "interrupt of UHCI0, level"
+        value: 12
 
-_derive:
-  UHCI1:
-    _add:
-      _interrupts:
-        UHCI1_INTR:
-          description: "interrupt of UHCI1, level"
-          value: 13
-_modify:
-  TIMG0:
-    _add:
-      _interrupts:
-        TG0_T0_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP0, TIMER0, level, we would like use EDGE for timer if permission"
-          value: 14
+UHCI1:
+  _add:
+    _interrupts:
+      UHCI1_INTR:
+        description: "interrupt of UHCI1, level"
+        value: 13
 
-        TG0_T1_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP0, TIMER1, level, we would like use EDGE for timer if permission"
-          value: 15
+TIMG0:
+  _add:
+    _interrupts:
+      TG0_T0_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER0, level, we would like use EDGE for timer if permission"
+        value: 14
 
-        TG0_WDT_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP0, WATCHDOG, level"
-          value: 16
+      TG0_T1_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER1, level, we would like use EDGE for timer if permission"
+        value: 15
 
-        TG0_LACT_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP0, LACT, level"
-          value: 17
-        
-        TG0_T0_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP0, TIMER0, EDGE"
-          value: 58
-        
-        TG0_T1_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP0, TIMER1, EDGE"
-          value: 59
-        
-        TG0_WDT_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP0, WATCH DOG, EDGE"
-          value: 60
-        
-        TG0_LACT_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP0, LACT, EDGE"
-          value: 61
-      
-_modify:
-  TIMG1:
-    _add:
-      _interrupts:
-        TG1_T0_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP1, TIMER0, level, we would like use EDGE for timer if permission"
-          value: 18
-      
-        TG1_T1_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP1, TIMER1, level, we would like use EDGE for timer if permission"
-          value: 19
+      TG0_WDT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, WATCHDOG, level"
+        value: 16
 
-        TG1_WDT_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP1, WATCHDOG, level"
-          value: 20
-      
-        TG1_LACT_LEVEL_INTR:
-          description: "interrupt of TIMER_GROUP1, LACT, level"
-          value: 21
-        
-        TG1_T0_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP1, TIMER0, EDGE"
-          value: 62
-        
-        TG1_T1_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP1, TIMER1, EDGE"
-          value: 63
-        
-        TG1_WDT_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP1, WATCHDOG, EDGE"
-          value: 64
-        
-        TG1_LACT_EDGE_INTR:
-          description: "interrupt of TIMER_GROUP0, LACT, EDGE"
-          value: 65
+      TG0_LACT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, LACT, level"
+        value: 17
 
+TIMG1:
+  _add:
+    _interrupts:
+      TG1_T0_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER0, level, we would like use EDGE for timer if permission"
+        value: 18
+    
+      TG1_T1_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER1, level, we would like use EDGE for timer if permission"
+        value: 19
+
+      TG1_WDT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, WATCHDOG, level"
+        value: 20
+    
+      TG1_LACT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, LACT, level"
+        value: 21
 
 GPIO:
   _add:
@@ -199,34 +204,52 @@ GPIO:
         description: "interrupt of GPIO, NMI"
         value: 23
 
-_derive:
-  SPI0:
-    _add:
-      _interrupts:      
-        SPI0_INTR:
-          description: "interrupt of SPI0, level, SPI0 is for Cache Access, do not use this"
-          value: 28
+FROM_CPU:
+  _add:
+    _interrupts:
+      FROM_CPU_INTR0:
+        description: "interrupt0 generated from a CPU, level"
+        value: 24
 
-  SPI1:
-    _add:
-      _interrupts:      
-        SPI1_INTR:
-          description: "interrupt of SPI1, level, SPI1 is for flash read/write, do not use this"
-          value: 29
+      FROM_CPU_INTR1:
+        description: "interrupt1 generated from a CPU, level"
+        value: 25
+  
+      FROM_CPU_INTR2:
+        description: "interrupt2 generated from a CPU, level"
+        value: 26
 
-  SPI2:
-    _add:
-      _interrupts:      
-        SPI2_INTR:
-          description: "interrupt of SPI2, level"
-          value: 30
+      FROM_CPU_INTR3:
+        description: "interrupt3 generated from a CPU, level"
+        value: 27
 
-  SPI3:
-    _add:
-      _interrupts:      
-        SPI3_INTR:
-          description: "interrupt of SPI3, level"
-          value: 31
+SPI0:
+  _add:
+    _interrupts:      
+      SPI0_INTR:
+        description: "interrupt of SPI0, level, SPI0 is for Cache Access, do not use this"
+        value: 28
+
+SPI1:
+  _add:
+    _interrupts:      
+      SPI1_INTR:
+        description: "interrupt of SPI1, level, SPI1 is for flash read/write, do not use this"
+        value: 29
+
+SPI2:
+  _add:
+    _interrupts:      
+      SPI2_INTR:
+        description: "interrupt of SPI2, level"
+        value: 30
+
+SPI3:
+  _add:
+    _interrupts:      
+      SPI3_INTR:
+        description: "interrupt of SPI3, level"
+        value: 31
 
 I2S:
   _add:
@@ -239,14 +262,12 @@ I2S:
         description: "interrupt of I2S1, level"
         value: 33
 
-# UART0 doesn't exist
-
-# UART0:
-#   _add:
-#     _interrupts:      
-#       UART0_INTR:
-#         description: "interrupt of UART0, level"
-#         value: 34
+UART0:
+  _add:
+    _interrupts:      
+      UART0_INTR:
+        description: "interrupt of UART0, level"
+        value: 34
 
 UART1:
   _add:
@@ -262,50 +283,47 @@ UART2:
         description: "interrupt of UART2, level"
         value: 36
 
-# double check documentation      
-SDMMC:
+SDIO:
   _add:
     _interrupts:      
       SDIO_HOST_INTR:
         description: "interrupt of SD/SDIO/MMC HOST, level"
         value: 37
 
-# ETH doesn't exist
+ETH:
+  _add:
+    _interrupts:      
+      ETH_MAC_INTR:
+        description: "interrupt of ethernet mac, level"
+        value: 38
 
-# ETH_MAC:
-#   _add:
-#     _interrupts:      
-#       ETH_MAC_INTR:
-#         description: "interrupt of ethernet mac, level"
-#         value: 38
-_derive:      
-  PWM0:
-    _add:
-      _interrupts:      
-        PWM0_INTR:
-          description: "interrupt of PWM0, level, Reserved"
-          value: 39
+PWM0:
+  _add:
+    _interrupts:      
+      PWM0_INTR:
+        description: "interrupt of PWM0, level, Reserved"
+        value: 39
 
-  PWM1:
-    _add:
-      _interrupts:      
-        PWM1_INTR:
-          description: "interrupt of PWM1, level, Reserved"
-          value: 40
+PWM1:
+  _add:
+    _interrupts:      
+      PWM1_INTR:
+        description: "interrupt of PWM1, level, Reserved"
+        value: 40
 
-  PWM2:
-    _add:
-      _interrupts:      
-        PWM2_INTR:
-          description: "interrupt of PWM2, level"
-          value: 41
-        
-  PWM3:
-    _add:
-      _interrupts:      
-        PWM3_INTR:
-          description: "interrupt of PWM3, level"
-          value: 42
+PWM2:
+  _add:
+    _interrupts:      
+      PWM2_INTR:
+        description: "interrupt of PWM2, level"
+        value: 41
+      
+PWM3:
+  _add:
+    _interrupts:      
+      PWM3_INTR:
+        description: "interrupt of PWM3, level"
+        value: 42
 
 LEDC:
   _add:
@@ -341,19 +359,7 @@ RMT:
       RMT_INTR:
         description: "interrupt of remote controller, level"
         value: 47
-      
-      # Unclear where TIMER1 and TIMER2 should live
-      # particularly since they are named timer0 and timer1 elsewhere
-      # need to double check this
-      TIMER1_INTR:
-        description: "will be cancelled"
-        value: 56
-      
-      TIMER2_INTR:
-        description: "will be cancelled"
-        value: 57
 
-      
 PCNT:
   _add:
     _interrupts:      
@@ -361,22 +367,19 @@ PCNT:
         description: "interrupt of pluse count, level"
         value: 48
 
-# The comments on the two I2C controllers seem reversed - double check this
-# Also, get 'Could not find I2C0' so I'm unsure the syntax since its renamed
-#
-# I2C0:
-#   _add:
-#     _interrupts:      
-#       I2C_EXT0_INTR:
-#         description: "interrupt of I2C controller1, level"
-#         value: 49
+I2C0:
+  _add:
+    _interrupts:      
+      I2C_EXT0_INTR:
+        description: "interrupt of I2C controller1, level"
+        value: 49
 
-# I2C1:
-#   _add:
-#     _interrupts:      
-#       I2C_EXT1_INTR:
-#         description: "interrupt of I2C controller0, level"
-#         value: 50
+I2C1:
+  _add:
+    _interrupts:      
+      I2C_EXT1_INTR:
+        description: "interrupt of I2C controller0, level"
+        value: 50
 
 RSA:
   _add:
@@ -412,3 +415,76 @@ WDT:
       WDT_INTR:
         description: "will be cancelled"
         value: 55
+
+TIMER1:
+  _add:
+    _interrupts:
+      TIMER1_INTR:
+        description: "will be cancelled"
+        value: 56
+
+TIMER1:
+  _add:
+    _interrupts:
+      TIMER2_INTR:
+        description: "will be cancelled"
+        value: 57
+
+TIMG0:
+  _add:
+    _interrupts:
+      TG0_T0_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER0, EDGE"
+        value: 58
+      
+      TG0_T1_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER1, EDGE"
+        value: 59
+      
+      TG0_WDT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, WATCH DOG, EDGE"
+        value: 60
+      
+      TG0_LACT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, LACT, EDGE"
+        value: 61
+      
+TIMG1:
+  _add:
+    _interrupts:      
+      TG1_T0_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER0, EDGE"
+        value: 62
+      
+      TG1_T1_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER1, EDGE"
+        value: 63
+      
+      TG1_WDT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP1, WATCHDOG, EDGE"
+        value: 64
+      
+      TG1_LACT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, LACT, EDGE"
+        value: 65
+
+MMU:
+  _add:
+    _interrupts:      
+      MMU_IA_INTR:
+        description: "interrupt of MMU Invalid Access, LEVEL"
+        value: 66
+
+MPU:
+  _add:
+    _interrupts:
+      MPU_IA_INTR:
+        description: "interrupt of MPU Invalid Access, LEVEL"
+        value: 67
+
+CACHE:
+  _add:
+    _interrupts:      
+      CACHE_IA_INTR:
+        description: "interrupt of Cache Invalied Access, LEVEL"
+        value: 68
