@@ -1,6 +1,6 @@
 [package]
 name = "esp32"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Scott Mabin <scott@mabez.dev>"]
 edition = "2018"
 readme = "README.md"
@@ -12,10 +12,10 @@ categories = [
     "hardware-support",
     "no-std",
 ]
-exclude = [
-    "svd/esp32.base.svd",
-    "svd/patches/",
-    "svd/patches/*"
+include = [
+    "/src/**",
+    "svd/esp32.svd"
+
 ]
 license = "MIT OR Apache-2.0"
 
