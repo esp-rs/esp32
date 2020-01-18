@@ -14,7 +14,8 @@ categories = [
 ]
 exclude = [
     "svd/esp32.base.svd",
-    "svd/*.yaml"
+    "svd/patches/",
+    "svd/patches/*"
 ]
 license = "MIT OR Apache-2.0"
 
