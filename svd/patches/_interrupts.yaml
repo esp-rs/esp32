@@ -1,76 +1,53 @@
-# Draft attempt at adding interrupt mappings to peripherals.
-
-# Some peripherals are not publicly documented, but we can infer their
-# existence from the ESP-IDF sources and object files. However, naming
-# is inconsistent between various parts of the ESP-IDF source and the
-# ESP32 Technical Reference.
-#
-# Therefore the strategy used here is to take the name of the peripheral
-# from the interrupt name obtained by `idf2svd` from the ESP-IDF source,
-# except where it is obvious that the interrupt belongs to a peripheral
-# which has already defined by another name.
-#
-# In most cases interrupts map cleaning using this strategy, except some
-# peripherals need to be invented below.
-
-# Open issues:
-#   * should SLC be split into SLC0 and SLC1?
-#   * the comments on the two I2C controllers seem reversed
-#   * unclear where TIMER1 and TIMER2 should live
-#   * group all the cpu specific interrupts under one root peripheral?
-
-# Invented peripherals, defined in order of use
+# Add additional peripherals not defined elsewhere for grouping of interrupts,
+# these are taken from Table 7: PRO_CPU, APP_CPU Interrupt Configuration, ESP32
+# Technical Reference manual, page 33.
 
 _add:
+  # Processor specific interrupts and exceptions
+  XTENSA:
+    baseAddress: 0
+
+  # Wifi MAC
   WIFI_MAC:
     baseAddress: 0
 
+  # Wifi Baseband
   WIFI_BB:
     baseAddress: 0
 
+  # Bluetooth MAC
   BT_MAC:
     baseAddress: 0
   
+  # Bluetooth Baseband
   BT_BB:
     baseAddress: 0
 
+  # Related to Bluetooth (what is RW?)
   RW_BT:
     baseAddress: 0
   
+  # Related to Bluetooth low energy
   RW_BLE:
     baseAddress: 0
 
-  FROM_CPU:
-    baseAddress: 0
-  
+  # Ethernet MAC
   ETH_MAC:
     baseAddress: 0
   
+  # SDIO
   SDIO:
     baseAddress: 0
   
+  # Ethernet
   ETH:
     baseAddress: 0
   
+  # Watchdog timer
   WDT:
     baseAddress: 0
 
-  TIMER1:
-    baseAddress: 0
-  
-  TIMER2:
-    baseAddress: 0
-
-  MMU:
-    baseAddress: 0
-  
-  MPU:
-    baseAddress: 0
-  
-  CACHE:
-    baseAddress: 0
-
-# Defined in order of interrupt value
+# Interrupts are defined in order of interrupt value
 
 WIFI_MAC:
   _add:
@@ -83,8 +60,11 @@ WIFI_MAC:
         description: "interrupt of WiFi MAC, NMI, use if MAC have bug to fix in NMI"
         value: 1
 
+WIFI_BB:
+  _add:
+    _interrupts:
       WIFI_BB_INTR:
-        description: "interrupt of WiFi BB, level, we can do some calibartion"
+        description: "interrupt of WiFi BB, level, we can do some calibration"
         value: 2
 
 BT_MAC:
@@ -105,6 +85,9 @@ BT_BB:
         description: "interrupt of BT BB, NMI, use if BB have bug to fix in NMI"
         value: 5
 
+RW_BT:
+  _add:
+    _interrupts:    
       RWBT_INTR:
         description: "interrupt of RWBT, level"
         value: 6
@@ -204,7 +187,7 @@ GPIO:
         description: "interrupt of GPIO, NMI"
         value: 23
 
-FROM_CPU:
+XTENSA:
   _add:
     _interrupts:
       FROM_CPU_INTR0:
@@ -371,14 +354,14 @@ I2C0:
   _add:
     _interrupts:      
       I2C_EXT0_INTR:
-        description: "interrupt of I2C controller1, level"
+        description: "interrupt of I2C controller0, level"
         value: 49
 
 I2C1:
   _add:
     _interrupts:      
       I2C_EXT1_INTR:
-        description: "interrupt of I2C controller0, level"
+        description: "interrupt of I2C controller1, level"
         value: 50
 
 RSA:
@@ -416,16 +399,13 @@ WDT:
         description: "will be cancelled"
         value: 55
 
-TIMER1:
+XTENSA:
   _add:
     _interrupts:
       TIMER1_INTR:
         description: "will be cancelled"
         value: 56
 
-TIMER1:
-  _add:
-    _interrupts:
       TIMER2_INTR:
         description: "will be cancelled"
         value: 57
@@ -468,23 +448,17 @@ TIMG1:
         description: "interrupt of TIMER_GROUP0, LACT, EDGE"
         value: 65
 
-MMU:
+XTENSA:
   _add:
     _interrupts:      
       MMU_IA_INTR:
         description: "interrupt of MMU Invalid Access, LEVEL"
         value: 66
 
-MPU:
-  _add:
-    _interrupts:
       MPU_IA_INTR:
         description: "interrupt of MPU Invalid Access, LEVEL"
         value: 67
 
-CACHE:
-  _add:
-    _interrupts:      
       CACHE_IA_INTR:
-        description: "interrupt of Cache Invalied Access, LEVEL"
+        description: "interrupt of Cache Invalid Access, LEVEL"
         value: 68
