@@ -4,16 +4,7 @@ _svd: ../esp32.base.svd
 _include:
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
-
-# TODO patch in interrupt information
-
-_add:
-  TIMG0:
-    derivedFrom: TIMG
-    baseAddress: "0x3ff5F000"
-  TIMG1:
-    derivedFrom: TIMG
-    baseAddress: "0x3ff60000"
+  - "_interrupts.yaml"
 
 _modify:
   PWM:
@@ -23,20 +14,40 @@ _modify:
   I2C1_EXT:
     name: I2C1
 
+_copy:
+  TIMG0:
+    from: TIMG
+  TIMG1:
+    from: TIMG
+  SPI0:
+    from: SPI
+  SPI1:
+    from: SPI
+  SPI2:
+    from: SPI
+  SPI3:
+    from: SPI
+  PWM0:
+    from: MCPWM
+  PWM1:
+    from: MCPWM
+  PWM2:
+    from: MCPWM
+  PWM3:
+    from: MCPWM
+  I2C0:
+    from: I2C
+  I2C1:
+    from: I2C
+  UHCI0:
+    from: UHCI
+  UHCI1:
+    from: UHCI
+  UART0:
+    from: UART1
 
-_derive:
-  SPI0: SPI
-  SPI1: SPI
-  SPI2: SPI
-  SPI3: SPI
-
-  UHCI0: UHCI
-  UHCI1: UHCI
-
-  PWM0: MCPWM
-  PWM1: MCPWM
-  PWM2: MCPWM
-  PWM3: MCPWM
-
-  I2C0: I2C
-  I2C1: I2C
+_modify:
+  TIMG0:
+    baseAddress: "0x3ff5F000"
+  TIMG1:
+    baseAddress: "0x3ff60000"
