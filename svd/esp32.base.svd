@@ -37776,7 +37776,7 @@
                     <addressOffset>0x4</addressOffset>
                     <description>IO_MUX_GPIO36_REG</description>
                     <size>32</size>
-                    <resetValue>0x00000800</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MCU_SEL</name>
@@ -37840,7 +37840,7 @@
                     <addressOffset>0x8</addressOffset>
                     <description>IO_MUX_GPIO37_REG</description>
                     <size>32</size>
-                    <resetValue>0x00000800</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MCU_SEL</name>
@@ -37904,7 +37904,7 @@
                     <addressOffset>0xC</addressOffset>
                     <description>IO_MUX_GPIO38_REG</description>
                     <size>32</size>
-                    <resetValue>0x00000800</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MCU_SEL</name>
@@ -37968,7 +37968,7 @@
                     <addressOffset>0x10</addressOffset>
                     <description>IO_MUX_GPIO39_REG</description>
                     <size>32</size>
-                    <resetValue>0x00000800</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MCU_SEL</name>
@@ -38032,7 +38032,7 @@
                     <addressOffset>0x14</addressOffset>
                     <description>IO_MUX_GPIO34_REG</description>
                     <size>32</size>
-                    <resetValue>0x00000800</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MCU_SEL</name>
@@ -38096,7 +38096,7 @@
                     <addressOffset>0x18</addressOffset>
                     <description>IO_MUX_GPIO35_REG</description>
                     <size>32</size>
-                    <resetValue>0x00000800</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MCU_SEL</name>
