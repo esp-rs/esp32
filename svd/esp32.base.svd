@@ -37772,7 +37772,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO36_REG></name>
+                    <name>IO_MUX_GPIO36_REG</name>
                     <addressOffset>0x4</addressOffset>
                     <description>IO_MUX_GPIO36_REG</description>
                     <size>32</size>
@@ -37836,7 +37836,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO37_REG></name>
+                    <name>IO_MUX_GPIO37_REG</name>
                     <addressOffset>0x8</addressOffset>
                     <description>IO_MUX_GPIO37_REG</description>
                     <size>32</size>
@@ -37900,7 +37900,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO38_REG></name>
+                    <name>IO_MUX_GPIO38_REG</name>
                     <addressOffset>0xC</addressOffset>
                     <description>IO_MUX_GPIO38_REG</description>
                     <size>32</size>
@@ -37964,7 +37964,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO39_REG></name>
+                    <name>IO_MUX_GPIO39_REG</name>
                     <addressOffset>0x10</addressOffset>
                     <description>IO_MUX_GPIO39_REG</description>
                     <size>32</size>
@@ -38028,7 +38028,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO34_REG></name>
+                    <name>IO_MUX_GPIO34_REG</name>
                     <addressOffset>0x14</addressOffset>
                     <description>IO_MUX_GPIO34_REG</description>
                     <size>32</size>
@@ -38092,7 +38092,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO35_REG></name>
+                    <name>IO_MUX_GPIO35_REG</name>
                     <addressOffset>0x18</addressOffset>
                     <description>IO_MUX_GPIO35_REG</description>
                     <size>32</size>
@@ -38156,7 +38156,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO32_REG></name>
+                    <name>IO_MUX_GPIO32_REG</name>
                     <addressOffset>0x1C</addressOffset>
                     <description>IO_MUX_GPIO32_REG</description>
                     <size>32</size>
@@ -38220,7 +38220,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO33_REG></name>
+                    <name>IO_MUX_GPIO33_REG</name>
                     <addressOffset>0x20</addressOffset>
                     <description>IO_MUX_GPIO33_REG</description>
                     <size>32</size>
@@ -38284,7 +38284,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO25_REG></name>
+                    <name>IO_MUX_GPIO25_REG</name>
                     <addressOffset>0x24</addressOffset>
                     <description>IO_MUX_GPIO25_REG</description>
                     <size>32</size>
@@ -38348,7 +38348,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO26_REG></name>
+                    <name>IO_MUX_GPIO26_REG</name>
                     <addressOffset>0x28</addressOffset>
                     <description>IO_MUX_GPIO26_REG</description>
                     <size>32</size>
@@ -38412,7 +38412,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO27_REG></name>
+                    <name>IO_MUX_GPIO27_REG</name>
                     <addressOffset>0x2C</addressOffset>
                     <description>IO_MUX_GPIO27_REG</description>
                     <size>32</size>
@@ -38476,7 +38476,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_MTMS_REG></name>
+                    <name>IO_MUX_MTMS_REG</name>
                     <addressOffset>0x30</addressOffset>
                     <description>IO_MUX_MTMS_REG</description>
                     <size>32</size>
@@ -38540,7 +38540,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_MTDI_REG></name>
+                    <name>IO_MUX_MTDI_REG</name>
                     <addressOffset>0x34</addressOffset>
                     <description>IO_MUX_MTDI_REG</description>
                     <size>32</size>
@@ -38604,7 +38604,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_MTCK_REG></name>
+                    <name>IO_MUX_MTCK_REG</name>
                     <addressOffset>0x38</addressOffset>
                     <description>IO_MUX_MTCK_REG</description>
                     <size>32</size>
@@ -38668,7 +38668,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_MTDO_REG></name>
+                    <name>IO_MUX_MTDO_REG</name>
                     <addressOffset>0x3C</addressOffset>
                     <description>IO_MUX_MTDO_REG</description>
                     <size>32</size>
@@ -38732,7 +38732,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO2_REG></name>
+                    <name>IO_MUX_GPIO2_REG</name>
                     <addressOffset>0x40</addressOffset>
                     <description>IO_MUX_GPIO2_REG</description>
                     <size>32</size>
@@ -38796,7 +38796,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO0_REG></name>
+                    <name>IO_MUX_GPIO0_REG</name>
                     <addressOffset>0x44</addressOffset>
                     <description>IO_MUX_GPIO0_REG</description>
                     <size>32</size>
@@ -38860,7 +38860,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO4_REG></name>
+                    <name>IO_MUX_GPIO4_REG</name>
                     <addressOffset>0x48</addressOffset>
                     <description>IO_MUX_GPIO4_REG</description>
                     <size>32</size>
@@ -38924,7 +38924,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO16_REG></name>
+                    <name>IO_MUX_GPIO16_REG</name>
                     <addressOffset>0x4C</addressOffset>
                     <description>IO_MUX_GPIO16_REG</description>
                     <size>32</size>
@@ -38988,7 +38988,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO17_REG></name>
+                    <name>IO_MUX_GPIO17_REG</name>
                     <addressOffset>0x50</addressOffset>
                     <description>IO_MUX_GPIO17_REG</description>
                     <size>32</size>
@@ -39052,7 +39052,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_SD_DATA2_REG></name>
+                    <name>IO_MUX_SD_DATA2_REG</name>
                     <addressOffset>0x54</addressOffset>
                     <description>IO_MUX_SD_DATA2_REG</description>
                     <size>32</size>
@@ -39116,7 +39116,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_SD_DATA3_REG></name>
+                    <name>IO_MUX_SD_DATA3_REG</name>
                     <addressOffset>0x58</addressOffset>
                     <description>IO_MUX_SD_DATA3_REG</description>
                     <size>32</size>
@@ -39180,7 +39180,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_SD_CMD_REG></name>
+                    <name>IO_MUX_SD_CMD_REG</name>
                     <addressOffset>0x5C</addressOffset>
                     <description>IO_MUX_SD_CMD_REG</description>
                     <size>32</size>
@@ -39244,7 +39244,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_SD_CLK_REG></name>
+                    <name>IO_MUX_SD_CLK_REG</name>
                     <addressOffset>0x60</addressOffset>
                     <description>IO_MUX_SD_CLK_REG</description>
                     <size>32</size>
@@ -39308,7 +39308,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_SD_DATA0_REG></name>
+                    <name>IO_MUX_SD_DATA0_REG</name>
                     <addressOffset>0x64</addressOffset>
                     <description>IO_MUX_SD_DATA0_REG</description>
                     <size>32</size>
@@ -39372,7 +39372,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_SD_DATA1_REG></name>
+                    <name>IO_MUX_SD_DATA1_REG</name>
                     <addressOffset>0x68</addressOffset>
                     <description>IO_MUX_SD_DATA1_REG</description>
                     <size>32</size>
@@ -39436,7 +39436,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO5_REG></name>
+                    <name>IO_MUX_GPIO5_REG</name>
                     <addressOffset>0x6C</addressOffset>
                     <description>IO_MUX_GPIO5_REG</description>
                     <size>32</size>
@@ -39500,7 +39500,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO18_REG></name>
+                    <name>IO_MUX_GPIO18_REG</name>
                     <addressOffset>0x70</addressOffset>
                     <description>IO_MUX_GPIO18_REG</description>
                     <size>32</size>
@@ -39564,7 +39564,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO19_REG></name>
+                    <name>IO_MUX_GPIO19_REG</name>
                     <addressOffset>0x74</addressOffset>
                     <description>IO_MUX_GPIO19_REG</description>
                     <size>32</size>
@@ -39628,7 +39628,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO20_REG></name>
+                    <name>IO_MUX_GPIO20_REG</name>
                     <addressOffset>0x78</addressOffset>
                     <description>IO_MUX_GPIO20_REG</description>
                     <size>32</size>
@@ -39692,7 +39692,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO21_REG></name>
+                    <name>IO_MUX_GPIO21_REG</name>
                     <addressOffset>0x7C</addressOffset>
                     <description>IO_MUX_GPIO21_REG</description>
                     <size>32</size>
@@ -39756,7 +39756,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO22_REG></name>
+                    <name>IO_MUX_GPIO22_REG</name>
                     <addressOffset>0x80</addressOffset>
                     <description>IO_MUX_GPIO22_REG</description>
                     <size>32</size>
@@ -39820,7 +39820,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_U0RXD_REG></name>
+                    <name>IO_MUX_U0RXD_REG</name>
                     <addressOffset>0x84</addressOffset>
                     <description>IO_MUX_U0RXD_REG</description>
                     <size>32</size>
@@ -39884,7 +39884,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_U0TXD_REG></name>
+                    <name>IO_MUX_U0TXD_REG</name>
                     <addressOffset>0x88</addressOffset>
                     <description>IO_MUX_U0TXD_REG</description>
                     <size>32</size>
@@ -39948,7 +39948,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO23_REG></name>
+                    <name>IO_MUX_GPIO23_REG</name>
                     <addressOffset>0x8C</addressOffset>
                     <description>IO_MUX_GPIO23_REG</description>
                     <size>32</size>
@@ -40012,7 +40012,7 @@
                     </fields>
                 </register>
                 <register>
-                    <name>IO_MUX_GPIO24_REG></name>
+                    <name>IO_MUX_GPIO24_REG</name>
                     <addressOffset>0x90</addressOffset>
                     <description>IO_MUX_GPIO24_REG</description>
                     <size>32</size>
