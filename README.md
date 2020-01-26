@@ -23,6 +23,8 @@ $ make
 
 ## Submitting new patches
 
+The base svd file created from `idf2svd` should **not** be edited. Instead the svd is manipulated through the svdtools patching tool.
+
 See [svd](https://github.com/stm32-rs/svdtools) and [stm32-rs yaml format](https://github.com/stm32-rs/stm32-rs#device-and-peripheral-yaml-format) for more infomation on the patching format
 
 ## License
