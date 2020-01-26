@@ -2,6 +2,7 @@ _svd: ../esp32.base.svd
 
 
 _include:
+  - "io_mux.yaml"
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
   - "_interrupts.yaml"

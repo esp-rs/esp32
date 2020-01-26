@@ -1,0 +1,1421 @@
+
+IO_MUX:
+  _add:
+    PIN_CTRL:
+      size: 32
+      addressOffset: 0
+      resetValue: 0x00000000
+      fields:
+        PIN_CTRL_CLK3:
+          bitOffset: 8
+          bitWidth: 3
+        PIN_CTRL_CLK2:
+          bitOffset: 4
+          bitWidth: 3
+        PIN_CTRL_CLK1:
+          bitOffset: 0
+          bitWidth: 3
+
+    GPIO36:
+      size: 32
+      addressOffset: 4
+      resetValue: 0x00000000
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO37:
+      size: 32
+      addressOffset: 8
+      resetValue: 0x00000000
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO38:
+      size: 32
+      addressOffset: 12
+      resetValue: 0x00000000
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO39:
+      size: 32
+      addressOffset: 16
+      resetValue: 0x00000000
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO34:
+      size: 32
+      addressOffset: 20
+      resetValue: 0x00000000
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO35:
+      size: 32
+      addressOffset: 24
+      resetValue: 0x00000000
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO32:
+      size: 32
+      addressOffset: 28
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO33:
+      size: 32
+      addressOffset: 32
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO25:
+      size: 32
+      addressOffset: 36
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO26:
+      size: 32
+      addressOffset: 40
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO27:
+      size: 32
+      addressOffset: 44
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    MTMS:
+      size: 32
+      addressOffset: 48
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    MTDI:
+      size: 32
+      addressOffset: 52
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    MTCK:
+      size: 32
+      addressOffset: 56
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    MTDO:
+      size: 32
+      addressOffset: 60
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO2:
+      size: 32
+      addressOffset: 64
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO0:
+      size: 32
+      addressOffset: 68
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO4:
+      size: 32
+      addressOffset: 72
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO16:
+      size: 32
+      addressOffset: 76
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO17:
+      size: 32
+      addressOffset: 80
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    SD_DATA2:
+      size: 32
+      addressOffset: 84
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    SD_DATA3:
+      size: 32
+      addressOffset: 88
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    SD_CMD:
+      size: 32
+      addressOffset: 92
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    SD_CLK:
+      size: 32
+      addressOffset: 96
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    SD_DATA0:
+      size: 32
+      addressOffset: 100
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    SD_DATA1:
+      size: 32
+      addressOffset: 104
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO5:
+      size: 32
+      addressOffset: 108
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO18:
+      size: 32
+      addressOffset: 112
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO19:
+      size: 32
+      addressOffset: 116
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO20:
+      size: 32
+      addressOffset: 120
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO21:
+      size: 32
+      addressOffset: 124
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO22:
+      size: 32
+      addressOffset: 128
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    U0RXD:
+      size: 32
+      addressOffset: 132
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    U0TXD:
+      size: 32
+      addressOffset: 136
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO23:
+      size: 32
+      addressOffset: 140
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
+
+    GPIO24:
+      size: 32
+      addressOffset: 144
+      resetValue: 0x00000800
+      fields:
+        MCU_SEL:
+          bitOffset: 12
+          bitWidth: 2
+        FUN_DRV:
+          bitOffset: 10
+          bitWidth: 2
+        FUN_IE:
+          bitOffset: 9
+          bitWidth: 1
+        FUN_WPU:
+          bitOffset: 8
+          bitWidth: 1
+        FUN_WPD:
+          bitOffset: 7
+          bitWidth: 1
+        MCU_DRV:
+          bitOffset: 5
+          bitWidth: 2
+        MCU_IE:
+          bitOffset: 4
+          bitWidth: 1
+        MCU_WPU:
+          bitOffset: 3
+          bitWidth: 1
+        MCU_WPD:
+          bitOffset: 2
+          bitWidth: 1
+        SLP_SEL:
+          bitOffset: 1
+          bitWidth: 1
+        MCU_OE:
+          bitOffset: 0
+          bitWidth: 1
