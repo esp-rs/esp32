@@ -21,7 +21,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO36"
       size: 32
       addressOffset: 4
-      resetValue: 0x00000000
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -72,7 +71,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO37"
       size: 32
       addressOffset: 8
-      resetValue: 0x00000000
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -123,7 +121,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO38"
       size: 32
       addressOffset: 12
-      resetValue: 0x00000000
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -174,7 +171,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO39"
       size: 32
       addressOffset: 16
-      resetValue: 0x00000000
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -225,7 +221,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO34"
       size: 32
       addressOffset: 20
-      resetValue: 0x00000000
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -276,7 +271,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO35"
       size: 32
       addressOffset: 24
-      resetValue: 0x00000000
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -327,7 +321,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO32"
       size: 32
       addressOffset: 28
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -378,7 +371,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO33"
       size: 32
       addressOffset: 32
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -429,7 +421,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO25"
       size: 32
       addressOffset: 36
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -480,7 +471,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO26"
       size: 32
       addressOffset: 40
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -531,7 +521,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO27"
       size: 32
       addressOffset: 44
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -582,7 +571,6 @@ IO_MUX:
       description: "configures IO_MUX for MTMS"
       size: 32
       addressOffset: 48
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -633,7 +621,6 @@ IO_MUX:
       description: "configures IO_MUX for MTDI"
       size: 32
       addressOffset: 52
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -684,7 +671,6 @@ IO_MUX:
       description: "configures IO_MUX for MTCK"
       size: 32
       addressOffset: 56
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -735,7 +721,6 @@ IO_MUX:
       description: "configures IO_MUX for MTDO"
       size: 32
       addressOffset: 60
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -786,7 +771,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO2"
       size: 32
       addressOffset: 64
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -837,7 +821,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO0"
       size: 32
       addressOffset: 68
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -888,7 +871,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO4"
       size: 32
       addressOffset: 72
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -939,7 +921,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO16"
       size: 32
       addressOffset: 76
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -990,7 +971,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO17"
       size: 32
       addressOffset: 80
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1041,7 +1021,6 @@ IO_MUX:
       description: "configures IO_MUX for SD_DATA2"
       size: 32
       addressOffset: 84
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1092,7 +1071,6 @@ IO_MUX:
       description: "configures IO_MUX for SD_DATA3"
       size: 32
       addressOffset: 88
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1143,7 +1121,6 @@ IO_MUX:
       description: "configures IO_MUX for SD_CMD"
       size: 32
       addressOffset: 92
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1194,7 +1171,6 @@ IO_MUX:
       description: "configures IO_MUX for SD_CLK"
       size: 32
       addressOffset: 96
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1245,7 +1221,6 @@ IO_MUX:
       description: "configures IO_MUX for SD_DATA0"
       size: 32
       addressOffset: 100
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1296,7 +1271,6 @@ IO_MUX:
       description: "configures IO_MUX for SD_DATA1"
       size: 32
       addressOffset: 104
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1347,7 +1321,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO5"
       size: 32
       addressOffset: 108
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1398,7 +1371,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO18"
       size: 32
       addressOffset: 112
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1449,7 +1421,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO19"
       size: 32
       addressOffset: 116
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1500,7 +1471,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO20"
       size: 32
       addressOffset: 120
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1551,7 +1521,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO21"
       size: 32
       addressOffset: 124
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1602,7 +1571,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO22"
       size: 32
       addressOffset: 128
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1653,7 +1621,6 @@ IO_MUX:
       description: "configures IO_MUX for U0RXD"
       size: 32
       addressOffset: 132
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1704,7 +1671,6 @@ IO_MUX:
       description: "configures IO_MUX for U0TXD"
       size: 32
       addressOffset: 136
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1755,7 +1721,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO23"
       size: 32
       addressOffset: 140
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
@@ -1806,7 +1771,6 @@ IO_MUX:
       description: "configures IO_MUX for GPIO24"
       size: 32
       addressOffset: 144
-      resetValue: 0x00000800
       fields:
         MCU_SEL:
           description: "configures IO_MUX function"
