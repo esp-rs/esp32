@@ -5,6 +5,8 @@
 
 A peripheral access crate the ESP32. See the [`svd2rust repo`](https://github.com/rust-embedded/svd2rust) for more infomation on how to use this crate. Espressif do not provide an SVD for the esp32, so the svd used in this project has been generated from the C header documentation via the [idf2svd tool](https://github.com/MabezDev/idf2svd).
 
+Join in on the discussion: https://matrix.to/#/#esp-rs:matrix.org!
+
 
 ## [`Documentation`](https://docs.rs/esp32/latest/esp32/)
 
