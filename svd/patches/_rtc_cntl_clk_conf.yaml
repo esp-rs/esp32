@@ -1,0 +1,34 @@
+RTCCNTL:
+  CLK_CONF:
+    ANA_CLK_RTC_SEL:
+      SLOW_CK: [0, "Select slow clock"]
+      CK_XTAL_32K: [1, "Select XTAL_32K"]
+    FAST_CLK_RTC_SEL:
+      XTAL: [0, "Select XTAL"]
+      CK8M: [1, "Select CK8M"]
+    SOC_CLK_SEL:
+      XTAL: [0, "Select XTAL clock"]
+      PLL: [1, "Select PLL clock"]
+      CK8M: [2, "Select CK8M clock"]
+      APLL: [3, "Select APLL clock"]
+    CK8M_FORCE_PU:
+      Clear: [0, "Don't force power up"]
+      Force: [1, "Force power up"]
+    CK8M_FORCE_PD:
+      Clear: [0, "Don't force power down"]
+      Force: [1, "Force power down"]
+    DIG_CLK8M_EN:
+      Disable: [0, "Disable CK8M"]
+      Enable: [1, "Enable CK8M for digital core (no relation to RTC core)"]
+    DIG_CLK8M_D256_EN:
+      Disable: [0, "Disable CK8M_D256_OUT"]
+      Enable: [1, "Enable CK8M_D256_OUT for digital core (no relation to RTC core)"]
+    DIG_XTAL32K_EN:
+      Disable: [0, "Disable CK_XTAL_32K"]
+      Enable: [1, "Enable CK_XTAL_32K for digital core(no relation to RTC core)"]
+    CK8M_DIV:
+      div128: [0, "div128"]
+      div256: [1, "div256"]
+      div512: [2, "div512"]
+      div1024: [3, "div1024"]
+
