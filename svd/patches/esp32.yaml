@@ -6,6 +6,7 @@ _include:
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
   - "_interrupts.yaml"
+  - "_rtc_cntl_clk_conf.yaml"
 
 _modify:
   PWM:
