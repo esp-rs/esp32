@@ -7,6 +7,7 @@ _include:
   - "_rename_bitfields.yaml"
   - "_interrupts.yaml"
   - "_rtc_cntl_clk_conf.yaml"
+  - "_dport_cpu_per_conf.yaml"
 
 _modify:
   PWM:
