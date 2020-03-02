@@ -2,6 +2,8 @@ _svd: ../esp32.base.svd
 
 
 _include:
+  - "_uart.yaml"
+  - "_dport_peri.yaml"
   - "_io_mux.yaml"
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
