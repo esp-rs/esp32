@@ -6,6 +6,7 @@ _include:
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
   - "_interrupts.yaml"
+  # - "_indexed_interrupts.yaml" # currently broken with svdtools, see: https://github.com/esp-rs/esp32/issues/17
 
 _modify:
   PWM:
