@@ -2,13 +2,14 @@ _svd: ../esp32.base.svd
 
 
 _include:
+  - "_uart.yaml"
   - "_io_mux.yaml"
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
+  - "_rtc_cntl.yaml"
+  - "_dport.yaml"
   - "_interrupts.yaml"
-  - "_rtc_cntl_clk_conf.yaml"
-  - "_dport_cpu_per_conf.yaml"
-  # - "_indexed_interrupts.yaml" # currently broken with svdtools, see: https://github.com/esp-rs/esp32/issues/17
+#  - "_indexed_interrupts.yaml" # currently broken with svdtools, see: https://github.com/esp-rs/esp32/issues/17
 
 _modify:
   PWM:

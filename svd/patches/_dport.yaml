@@ -1,0 +1,206 @@
+DPORT:
+  CPU_PER_CONF:
+    CPUPERIOD_SEL:
+      SEL_80: [0, "Select 80 MHz clock"]
+      SEL_160: [1, "Select 160 MHz clock"]
+      SEL_240: [2, "Select 240 MHz clock"]
+  PERI_CLK_EN:
+    _add:
+        DIGITAL_SIGNATURE:
+          bitOffset: 4
+          bitWidth: 1
+        SECURE_BOOT:
+          bitOffset: 3
+          bitWidth: 1
+        RSA_ACCELERATOR:
+          bitOffset: 2
+          bitWidth: 1
+        SHA_ACCELERATOR:
+          bitOffset: 1
+          bitWidth: 1
+        AES_ACCELERATOR:
+          bitOffset: 0
+          bitWidth: 1
+  PERI_RST_EN:
+    _add:
+        DIGITAL_SIGNATURE:
+          bitOffset: 4
+          bitWidth: 1
+        SECURE_BOOT:
+          bitOffset: 3
+          bitWidth: 1
+        RSA_ACCELERATOR:
+          bitOffset: 2
+          bitWidth: 1
+        SHA_ACCELERATOR:
+          bitOffset: 1
+          bitWidth: 1
+        AES_ACCELERATOR:
+          bitOffset: 0
+          bitWidth: 1
+  PERIP_CLK_EN:
+    _add:
+        PWM3:
+          bitOffset: 26
+          bitWidth: 1
+        PWM2:
+          bitOffset: 25
+          bitWidth: 1
+        UART_MEM:
+          bitOffset: 24
+          bitWidth: 1
+        UART2:
+          bitOffset: 23
+          bitWidth: 1
+        SPI_DMA:
+          bitOffset: 22
+          bitWidth: 1
+        I2S1:
+          bitOffset: 21
+          bitWidth: 1
+        PWM1:
+          bitOffset: 20
+          bitWidth: 1
+        CAN:
+          bitOffset: 19
+          bitWidth: 1
+        I2C1:
+          bitOffset: 18
+          bitWidth: 1
+        PWM0:
+          bitOffset: 17
+          bitWidth: 1
+        SPI3:
+          bitOffset: 16
+          bitWidth: 1
+        TIMER_GROUP1:
+          bitOffset: 15
+          bitWidth: 1
+        EFUSE:
+          bitOffset: 14
+          bitWidth: 1
+        TIMER_GROUP0:
+          bitOffset: 13
+          bitWidth: 1
+        UHCI1:
+          bitOffset: 12
+          bitWidth: 1
+        LED_PWM:
+          bitOffset: 11
+          bitWidth: 1
+        PULSE_CNT:
+          bitOffset: 10
+          bitWidth: 1
+        REMOTE_CONTROLLER:
+          bitOffset: 9
+          bitWidth: 1
+        UHCI0:
+          bitOffset: 8
+          bitWidth: 1
+        I2C0:
+          bitOffset: 7
+          bitWidth: 1
+        SPI2:
+          bitOffset: 6
+          bitWidth: 1
+        UART1:
+          bitOffset: 5
+          bitWidth: 1
+        I2S0:
+          bitOffset: 4
+          bitWidth: 1
+        WDG:
+          bitOffset: 3
+          bitWidth: 1
+        UART0:
+          bitOffset: 2
+          bitWidth: 1
+        SPI0:
+          bitOffset: 1
+          bitWidth: 1
+        TIMERS:
+          bitOffset: 0
+          bitWidth: 1
+  PERIP_RST_EN:
+    _add:
+        PWM3:
+          bitOffset: 26
+          bitWidth: 1
+        PWM2:
+          bitOffset: 25
+          bitWidth: 1
+        UART_MEM:
+          bitOffset: 24
+          bitWidth: 1
+        UART2:
+          bitOffset: 23
+          bitWidth: 1
+        SPI_DMA:
+          bitOffset: 22
+          bitWidth: 1
+        I2S1:
+          bitOffset: 21
+          bitWidth: 1
+        PWM1:
+          bitOffset: 20
+          bitWidth: 1
+        CAN:
+          bitOffset: 19
+          bitWidth: 1
+        I2C1:
+          bitOffset: 18
+          bitWidth: 1
+        PWM0:
+          bitOffset: 17
+          bitWidth: 1
+        SPI3:
+          bitOffset: 16
+          bitWidth: 1
+        TIMER_GROUP1:
+          bitOffset: 15
+          bitWidth: 1
+        EFUSE:
+          bitOffset: 14
+          bitWidth: 1
+        TIMER_GROUP0:
+          bitOffset: 13
+          bitWidth: 1
+        UHCI1:
+          bitOffset: 12
+          bitWidth: 1
+        LED_PWM:
+          bitOffset: 11
+          bitWidth: 1
+        PULSE_CNT:
+          bitOffset: 10
+          bitWidth: 1
+        REMOTE_CONTROLLER:
+          bitOffset: 9
+          bitWidth: 1
+        UHCI0:
+          bitOffset: 8
+          bitWidth: 1
+        I2C0:
+          bitOffset: 7
+          bitWidth: 1
+        SPI2:
+          bitOffset: 6
+          bitWidth: 1
+        UART1:
+          bitOffset: 5
+          bitWidth: 1
+        I2S0:
+          bitOffset: 4
+          bitWidth: 1
+        WDG:
+          bitOffset: 3
+          bitWidth: 1
+        UART0:
+          bitOffset: 2
+          bitWidth: 1
+        SPI0:
+          bitOffset: 1
+          bitWidth: 1
+        TIMERS:
+          bitOffset: 0
+          bitWidth: 1

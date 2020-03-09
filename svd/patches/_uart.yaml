@@ -1,0 +1,64 @@
+_modify:
+  UART:
+    addressBlocks:
+    - offset: 0x0
+      size: 0x400
+      usage: UART registers
+    - offset: 0x200C0000
+      size: 0x4
+      usage: TX FIFO
+
+UART:
+  _add:
+    TX_FIFO:
+      description: UART_TX_FIFO
+      addressOffset: 0x200C0000
+      size: 8
+      access: write-only
+    RX_FIFO:
+      description: UART_RX_FIFO
+      addressOffset: 0x00
+      size: 8
+      access: read-only
+  STATUS:
+    UART_ST_UTX_OUT:
+      TX_IDLE: [0, "TX_IDLE"]
+      TX_STRT: [1, "TX_STRT"]
+      TX_DAT0: [2, "TX_DAT0"]
+      TX_DAT1: [3, "TX_DAT1"]
+      TX_DAT2: [4, "TX_DAT2"]
+      TX_DAT3: [5, "TX_DAT3"]
+      TX_DAT4: [6, "TX_DAT4"]
+      TX_DAT5: [7, "TX_DAT5"]
+      TX_DAT6: [8, "TX_DAT6"]
+      TX_DAT7: [9, "TX_DAT7"]
+      TX_PRTY: [10, "TX_PRTY"]
+      TX_STP1: [11, "TX_STP1"]
+      TX_STP2: [12, "TX_STP2"]
+      TX_DL1: [13, "TX_DL0"]
+      TX_DL1: [14, "TX_DL1"]
+    UART_ST_URX_OUT:
+      RX_IDLE: [0, "RX_IDLE"]
+      RX_STRT: [1, "RX_STRT"]
+      RX_DAT0: [2, "RX_DAT0"]
+      RX_DAT1: [3, "RX_DAT1"]
+      RX_DAT2: [4, "RX_DAT2"]
+      RX_DAT3: [5, "RX_DAT3"]
+      RX_DAT4: [6, "RX_DAT4"]
+      RX_DAT5: [7, "RX_DAT5"]
+      RX_DAT6: [8, "RX_DAT6"]
+      RX_DAT7: [9, "RX_DAT7"]
+      RX_PRTY: [10, "RX_PRTY"]
+      RX_STP1: [11, "RX_STP1"]
+      RX_STP2: [12, "RX_STP2"]
+      RX_DL1: [13, "RX_DL1"]
+  CONF0:
+    UART_STOP_BIT_NUM:
+      STOP_BITS_1: [1, "1 stop bits"]
+      STOP_BITS_1p5: [2, "1.5 stop bits"]
+      STOP_BITS_2: [3, "2 stop bits"]
+    UART_BIT_NUM:
+      DATA_BITS_5: [0, "5 data bits"]
+      DATA_BITS_6: [1, "6 data bits"]
+      DATA_BITS_7: [2, "7 data bits"]
+      DATA_BITS_8: [3, "8 data bits"]
