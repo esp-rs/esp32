@@ -39,6 +39,30 @@ I2C:
   "*":
     _strip:
       - I2C_
+  SCL_HIGH_PERIOD:
+    _strip:
+      - SCL_HIGH_
+  SCL_LOW_PERIOD:
+    _strip:
+      - SCL_LOW_
+  SCL_RSTART_SETUP:
+    _strip:
+      - SCL_RSTART_SETUP_
+  SCL_START_HOLD:
+    _strip:
+      - SCL_START_HOLD_
+  SCL_STOP_HOLD:
+    _strip:
+      - SCL_STOP_HOLD_
+  SCL_STOP_SETUP:
+    _strip:
+      - SCL_STOP_SETUP_
+  SDA_HOLD:
+    _strip:
+      - SDA_HOLD_
+  SDA_SAMPLE:
+    _strip:
+      - SDA_SAMPLE_
 
 LEDC:
   "*":
