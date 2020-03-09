@@ -1,6 +1,0 @@
-DPORT:
-  CPU_PER_CONF:
-    CPUPERIOD_SEL:
-      SEL_80: [0, "Select 80 MHz clock"]
-      SEL_160: [1, "Select 160 MHz clock"]
-      SEL_240: [2, "Select 240 MHz clock"]
