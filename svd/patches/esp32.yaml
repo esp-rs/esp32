@@ -6,9 +6,10 @@ _include:
   - "_io_mux.yaml"
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
-#  - "_interrupts.yaml"
   - "_rtc_cntl.yaml"
   - "_dport.yaml"
+  - "_interrupts.yaml"
+#  - "_indexed_interrupts.yaml" # currently broken with svdtools, see: https://github.com/esp-rs/esp32/issues/17
 
 _modify:
   PWM:
@@ -22,32 +23,10 @@ _modify:
   TIMERGROUP1:
     name: TIMG1
 
-_delete:
-  UART1:
-  UART2:
-
 _add:
   UART0:
     derivedFrom: UART
     baseAddress: "0x3ff40000"
-    interrupts:
-      UART0_INTR:
-        description: "interrupt of UART0, level"
-        value: 34
-  UART1:
-    derivedFrom: UART
-    baseAddress: "0x3ff50000"
-    interrupts:
-      UART1_INTR:
-        description: "interrupt of UART1, level"
-        value: 35
-  UART2:
-    derivedFrom: UART
-    baseAddress: "0x3ff60000"
-    interrupts:
-      UART2_INTR:
-        description: "interrupt of UART2, level"
-        value: 36
 
 _derive:
   TIMG0: TIMG
@@ -64,3 +43,6 @@ _derive:
   I2C1: I2C
   UHCI0: UHCI
   UHCI1: UHCI
+  UART0: UART
+  UART1: UART
+  UART2: UART
