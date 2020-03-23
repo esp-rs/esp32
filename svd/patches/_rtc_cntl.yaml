@@ -1,3 +1,13 @@
+_modify:
+  RTCCNTL:
+    addressBlocks:
+    - offset: 0x0
+      size: 0x6a0
+      usage: RTC CNTL registers
+    - offset: 0x200C6000
+      size: 0x4
+      usage: Internal I2C registers
+
 RTCCNTL:
   CLK_CONF:
     ANA_CLK_RTC_SEL:
@@ -58,3 +68,61 @@ RTCCNTL:
       BIAS_1V15: [5, "Core voltage 1.15V"]
       BIAS_1V20: [6, "Core voltage 1.20V"]
       BIAS_1V25: [7, "Core voltage 1.25V"]
+  _add:
+    APLL:
+      description: APLL I2C Register
+      addressOffset: 0x200C600C
+      size: 32
+      access: read-write
+      resetValue: 0
+      fields:
+          BLOCK:
+              description: Block
+              bitOffset: 0
+              bitWidth: 8
+          ADDR:
+              description: Address
+              bitOffset: 8
+              bitWidth: 8
+          DATA:
+              description: Data
+              bitOffset: 16
+              bitWidth: 8
+          WRITE:
+              description: Write
+              bitOffset: 24
+              bitWidth: 1
+          BUSY:
+              description: Ready
+              bitOffset: 25
+              bitWidth: 1
+    PLL:
+      description: PLL I2C Register
+      addressOffset: 0x200C6010
+      size: 32
+      access: read-write
+      resetValue: 0
+      fields:
+          BLOCK:
+              description: Block
+              bitOffset: 0
+              bitWidth: 8
+          ADDR:
+              description: Address
+              bitOffset: 8
+              bitWidth: 8
+          DATA:
+              description: Data
+              bitOffset: 16
+              bitWidth: 8
+          WRITE:
+              description: Write
+              bitOffset: 24
+              bitWidth: 1
+          BUSY:
+              description: Ready
+              bitOffset: 25
+              bitWidth: 1
+
+
+
