@@ -1,0 +1,6 @@
+TIMG:
+  RTCCALICFG:
+    CLK_SEL:
+      RTC_MUX: [0, "Select RTC slow clock"]
+      CK8M_D256: [1, "Internal 8 MHz RC oscillator, divided by 256"]
+      XTAL32K: [2, "Select XTAL_32K"]

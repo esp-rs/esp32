@@ -58,7 +58,7 @@ RTCCNTL:
       T800ns: [5, "800ns"]
       T1600ns: [6, "1600ns"]
       T3200ns: [7, "3200ns"]
-  BIAS_CONF:
+  CNTL:
     "*DBIAS_*":
       BIAS_0V90: [0, "Core voltage 0.90V"]
       BIAS_0V95: [1, "Core voltage 0.95V"]
@@ -69,6 +69,53 @@ RTCCNTL:
       BIAS_1V20: [6, "Core voltage 1.20V"]
       BIAS_1V25: [7, "Core voltage 1.25V"]
   _add:
+    CNTL:
+      description: RTC Control Register
+      addressOffset: 0x7c
+      size: 32
+      access: read-write
+      resetValue: 0
+      fields:
+        FORCE_PU:
+          description: "Force RTC power up"
+          bitOffset: 31
+          bitWidth: 1
+        FORCE_PD:
+          description: "Force RTC power down (decrease voltage to 0.8V or lower)"
+          bitOffset: 30
+          bitWidth: 1
+        FORCE_DBOOST_PU:
+          description: "Force DBOOST power up"
+          bitOffset: 29
+          bitWidth: 1
+        FORCE_DBOOST_PD:
+          description: "Force DBOOST power down"
+          bitOffset: 28
+          bitWidth: 1
+        DBIAS_WAK:
+          description: "RTC DBIAS during wakeup"
+          bitOffset: 25
+          bitWidth: 3
+        DBIAS_SLP:
+          description: "RTC DBIAS during sleep"
+          bitOffset: 22
+          bitWidth: 3          
+        SCK_DCAP:
+          description: "150kHz oscillator tuning"
+          bitOffset: 14
+          bitWidth: 8
+        DIG_DBIAS_WAK:
+          description: "DBIAS during wakeup"
+          bitOffset: 11
+          bitWidth: 3
+        DIG_DBIAS_SLP:
+          description: "DBIAS during wakeup"
+          bitOffset: 8
+          bitWidth: 3
+        SCK_DCAP_FORCE:
+          description: "150kHz tuning force"
+          bitOffset: 7
+          bitWidth: 1
     APLL:
       description: APLL I2C Register
       addressOffset: 0x200C600C
@@ -76,26 +123,26 @@ RTCCNTL:
       access: read-write
       resetValue: 0
       fields:
-          BLOCK:
-              description: Block
-              bitOffset: 0
-              bitWidth: 8
-          ADDR:
-              description: Address
-              bitOffset: 8
-              bitWidth: 8
-          DATA:
-              description: Data
-              bitOffset: 16
-              bitWidth: 8
-          WRITE:
-              description: Write
-              bitOffset: 24
-              bitWidth: 1
-          BUSY:
-              description: Ready
-              bitOffset: 25
-              bitWidth: 1
+        BLOCK:
+            description: Block
+            bitOffset: 0
+            bitWidth: 8
+        ADDR:
+            description: Address
+            bitOffset: 8
+            bitWidth: 8
+        DATA:
+            description: Data
+            bitOffset: 16
+            bitWidth: 8
+        WRITE:
+            description: Write
+            bitOffset: 24
+            bitWidth: 1
+        BUSY:
+            description: Ready
+            bitOffset: 25
+            bitWidth: 1
     PLL:
       description: PLL I2C Register
       addressOffset: 0x200C6010
@@ -103,26 +150,24 @@ RTCCNTL:
       access: read-write
       resetValue: 0
       fields:
-          BLOCK:
-              description: Block
-              bitOffset: 0
-              bitWidth: 8
-          ADDR:
-              description: Address
-              bitOffset: 8
-              bitWidth: 8
-          DATA:
-              description: Data
-              bitOffset: 16
-              bitWidth: 8
-          WRITE:
-              description: Write
-              bitOffset: 24
-              bitWidth: 1
-          BUSY:
-              description: Ready
-              bitOffset: 25
-              bitWidth: 1
-
-
-
+        BLOCK:
+            description: Block
+            bitOffset: 0
+            bitWidth: 8
+        ADDR:
+            description: Address
+            bitOffset: 8
+            bitWidth: 8
+        DATA:
+            description: Data
+            bitOffset: 16
+            bitWidth: 8
+        WRITE:
+            description: Write
+            bitOffset: 24
+            bitWidth: 1
+        BUSY:
+            description: Ready
+            bitOffset: 25
+            bitWidth: 1
+  
