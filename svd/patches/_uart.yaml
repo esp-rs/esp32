@@ -15,11 +15,21 @@ UART:
       addressOffset: 0x200C0000
       size: 8
       access: write-only
+      fields:
+          DATA:
+            description: TX FIFO Data
+            bitOffset: 0
+            bitWidth: 8
     RX_FIFO:
       description: UART_RX_FIFO
       addressOffset: 0x00
       size: 8
       access: read-only
+      fields:
+          DATA:
+            description: TX FIFO Data
+            bitOffset: 0
+            bitWidth: 8
   STATUS:
     UART_ST_UTX_OUT:
       TX_IDLE: [0, "TX_IDLE"]
