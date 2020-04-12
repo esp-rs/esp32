@@ -80,7 +80,7 @@ fn main() -> std::io::Result<()> {
 
     // println!("Formatting rust source files.");
     Command::new("cargo")
-        .arg("format")
+        .arg("fmt")
         .output()
         .expect("failed to run cargo format");
 
