@@ -24,14 +24,14 @@
 // build:
 // cargo clean
 // cargo build
-use std::process::Command;
+use std::fmt::Write;
 use std::fs;
-use std::path::Path;
 use std::fs::File;
 use std::io::{Read, Write as IoWrite};
-use std::fmt::Write;
+use std::path::Path;
+use std::process::Command;
 
-fn svd2rust(svd_path:&str) -> std::io::Result<String> {
+fn svd2rust(svd_path: &str) -> std::io::Result<String> {
     let mut svd_xml = String::new();
     File::open(svd_path)?.read_to_string(&mut svd_xml)?;
     let generated = svd2rust::generate(svd_xml.as_str(), svd2rust::Target::None, false).unwrap();
@@ -41,7 +41,8 @@ fn svd2rust(svd_path:&str) -> std::io::Result<String> {
     write!(data, "{}", generated.lib_rs).expect("Could not output code");
 
     let newlined = data.replace("] ", "]\n");
-    file.write_all(newlined.as_ref()).expect("Could not write code to lib.rs");
+    file.write_all(newlined.as_ref())
+        .expect("Could not write code to lib.rs");
 
     Ok(newlined)
 }
@@ -79,6 +80,11 @@ fn main() -> std::io::Result<()> {
         println!("Unable to convert to common rust format.");
     }
 
-    Ok(())
+    println!("Formatting rust source files.");
+    Command::new("cargo")
+        .arg("format")
+        .output()
+        .expect("failed to run cargo format");
 
+    Ok(())
 }
