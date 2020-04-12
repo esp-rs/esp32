@@ -56,31 +56,29 @@ fn main() -> std::io::Result<()> {
     let svd_final = "svd/esp32.svd";
 
     println!("cargo:rerun-if-changed={}", svd);
-    println!("cargo:rerun-if-changed={}", svd_patched);
-    println!("cargo:rerun-if-changed={}", yaml);
 
     // Delete the output if it exists.
     if Path::new(svd_patched).exists() {
         fs::remove_file(svd_patched)?;
     }
 
-    println!("Patching SVD {} -> {}", svd, svd_final);
+    // println!("Patching SVD {} -> {}", svd, svd_final);
     // generate patched file.
     Command::new("svd").arg("patch").arg(yaml)
         .output()
         .expect("failed to run svd tool. This is a python tool that should have been installed via: pip3 install --upgrade --user svdtools");
     fs::copy(svd_patched, svd_final)?;
 
-    println!("Generating rust source from AVD");
+    // println!("Generating rust source from AVD");
     let rs = svd2rust(svd_final)?;
 
     // convert it into the rust form.
-    println!("Converting sources into commonly accepted rust format.");
+    // println!("Converting sources into commonly accepted rust format.");
     if form::create_directory_structure("src", rs).is_err() {
         println!("Unable to convert to common rust format.");
     }
 
-    println!("Formatting rust source files.");
+    // println!("Formatting rust source files.");
     Command::new("cargo")
         .arg("format")
         .output()
