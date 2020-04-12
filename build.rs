@@ -56,23 +56,23 @@ fn main() -> std::io::Result<()> {
     let svd_final = "svd/esp32.svd";
     let generate_file_sample = "src/gpio.rs";
 
+    println!("cargo:rerun-if-changed={}", svd);
+
     if Path::new(generate_file_sample).exists() {
         let in_m = fs::metadata("svd/esp32.base.svd")?;
         let out_m = fs::metadata(generate_file_sample)?;
         if in_m.modified()? < out_m.modified()? {
-            println!("No need for changes.");
+            println!("src/* files newer than {}, skipping any regeneration.", svd);
             return Ok(());
         }
-
     }
-    println!("cargo:rerun-if-changed={}", svd);
 
     // Delete the output if it exists.
     if Path::new(svd_patched).exists() {
         fs::remove_file(svd_patched)?;
     }
 
-    // println!("Patching SVD {} -> {}", svd, svd_final);
+    println!("Patching SVD {} -> {}", svd, svd_final);
     // generate patched file.
     Command::new("svd").arg("patch").arg(yaml)
         .output()
@@ -83,12 +83,12 @@ fn main() -> std::io::Result<()> {
     let rs = svd2rust(svd_final)?;
 
     // convert it into the rust form.
-    // println!("Converting sources into commonly accepted rust format.");
+    println!("Converting sources into commonly accepted rust format.");
     if form::create_directory_structure("src", rs).is_err() {
         println!("Unable to convert to common rust format.");
     }
 
-    // println!("Formatting rust source files.");
+    println!("Formatting rust source files.");
     Command::new("cargo")
         .arg("fmt")
         .output()
