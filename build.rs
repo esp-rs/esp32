@@ -54,7 +54,17 @@ fn main() -> std::io::Result<()> {
     let svd_patched = "svd/esp32.base.svd.patched";
     let yaml = "svd/patches/esp32.yaml";
     let svd_final = "svd/esp32.svd";
+    let generate_file_sample = "src/gpio.rs";
 
+    if Path::new(generate_file_sample).exists() {
+        let in_m = fs::metadata("svd/esp32.base.svd")?;
+        let out_m = fs::metadata(generate_file_sample)?;
+        if in_m.modified()? < out_m.modified()? {
+            println!("No need for changes.");
+            return Ok(());
+        }
+
+    }
     println!("cargo:rerun-if-changed={}", svd);
 
     // Delete the output if it exists.
