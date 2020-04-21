@@ -94,5 +94,13 @@ fn main() -> std::io::Result<()> {
         .output()
         .expect("failed to run cargo format");
 
+	// Tell git to ignore changes to the generated src/lib.rs
+    Command::new("git")
+        .arg("update-index")
+        .arg("--assume-unchanged")
+        .arg("src/lib.rs")
+        .output()
+        .expect("failed to suppress change notification on generated lib.rs");
+		
     Ok(())
 }
