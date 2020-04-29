@@ -2,3 +2,6 @@
 **/*.rs.bk
 Cargo.lock
 svd/esp32.svd
+svd/esp32.base.svd.patched
+svd/esp32.svd.rs
+.cargo/config
