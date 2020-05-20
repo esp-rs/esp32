@@ -3,6 +3,11 @@
 # Technical Reference manual, page 33.
 
 _add:
+
+  # Xtensa Internal: these are not routed via teh interrupt matrix
+  XTENSA_INTERNAL:
+    baseAddress: 0
+
   # Processor specific interrupts and exceptions
   XTENSA:
     baseAddress: 0
@@ -92,16 +97,6 @@ RW_BT:
         description: "interrupt of RWBT, level"
         value: 6
 
-RW_BLE:
-  _add:
-    _interrupts:
-      RWBLE_INTR:
-        description: "interrupt of RWBLE, level"
-        value: 7
-
-RW_BT:
-  _add:
-    _interrupts:    
       RWBT_NMI:
         description: "interrupt of RWBT, NMI, use if RWBT have bug to fix in NMI"
         value: 8
@@ -109,6 +104,10 @@ RW_BT:
 RW_BLE:
   _add:
     _interrupts:
+      RWBLE_INTR:
+        description: "interrupt of RWBLE, level"
+        value: 7
+
       RWBLE_NMI:
         description: "interrupt of RWBLE, NMI, use if RWBT have bug to fix in NMI"
         value: 9
@@ -153,7 +152,26 @@ XTENSA:
       FROM_CPU_INTR3:
         description: "interrupt3 generated from a CPU, level"
         value: 27
+        
+      TIMER1_INTR:
+        description: "will be cancelled"
+        value: 56
 
+      TIMER2_INTR:
+        description: "will be cancelled"
+        value: 57
+
+      MMU_IA_INTR:
+        description: "interrupt of MMU Invalid Access, LEVEL"
+        value: 66
+
+      MPU_IA_INTR:
+        description: "interrupt of MPU Invalid Access, LEVEL"
+        value: 67
+
+      CACHE_IA_INTR:
+        description: "interrupt of Cache Invalid Access, LEVEL"
+        value: 68
 I2S:
   _add:
     _interrupts:      
@@ -235,28 +253,28 @@ WDT:
         description: "will be cancelled"
         value: 55
 
-XTENSA:
+
+# Xtensa Internal interrupts are not routed via the interrupt matrix and 
+# therefore have fixed priorities
+# The numbers are chosen sequentially to be able to use same handler mechanism        
+XTENSA_INTERNAL:
   _add:
     _interrupts:
-      TIMER1_INTR:
-        description: "will be cancelled"
-        value: 56
-
-      TIMER2_INTR:
-        description: "will be cancelled"
-        value: 57
-
-XTENSA:
-  _add:
-    _interrupts:      
-      MMU_IA_INTR:
-        description: "interrupt of MMU Invalid Access, LEVEL"
-        value: 66
-
-      MPU_IA_INTR:
-        description: "interrupt of MPU Invalid Access, LEVEL"
-        value: 67
-
-      CACHE_IA_INTR:
-        description: "interrupt of Cache Invalid Access, LEVEL"
-        value: 68
+      INTERNAL_TIMER0_INTR:
+        description: "Internal Timer 0 interrupt"
+        value: 69
+      INTERNAL_SOFTWARE_LEVEL_1_INTR:
+        description: "Software Level 1 interrupt"
+        value: 70
+      INTERNAL_PROFILING_INTR:
+        description: "Profiling interrupt"
+        value: 71
+      INTERNAL_TIMER1_INTR:
+        description: "Internal Timer 1 interrupt"
+        value: 72
+      INTERNAL_TIMER2_INTR:
+        description: "Internal Timer 1 interrupt"
+        value: 73
+      INTERNAL_SOFTWARE_LEVEL_3_INTR:
+        description: "Software Level 3 interrupt"
+        value: 74
