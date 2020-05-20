@@ -1,6 +1,6 @@
 [package]
 name = "esp32"
-version = "0.2.2"
+version = "0.3.0"
 authors = ["Scott Mabin <scott@mabez.dev>"]
 edition = "2018"
 readme = "README.md"
@@ -22,3 +22,9 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 bare-metal = "0.2"
 vcell = "0.1"
+xtensa-lx6-rt = { git = "https://github.com/esp-rs/xtensa-lx6-rt.git" }
+
+[features]
+default=["rt"]
+
+rt=[]

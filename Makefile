@@ -12,7 +12,7 @@ patch:
 	mv svd/$(BASE).patched svd/$(OUTPUT)
 
 generate:
-	svd2rust --target none -i svd/$(OUTPUT)
+	svd2rust --target esp32 -i svd/$(OUTPUT)
 
 form:
 	form -i lib.rs -o src/
@@ -23,4 +23,4 @@ fmt:
 
 build:
 	cargo clean
-	cargo build
+	cargo xbuild --target xtensa-esp32-none-elf
