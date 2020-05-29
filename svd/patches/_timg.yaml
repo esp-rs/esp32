@@ -4,3 +4,19 @@ TIMG:
       RTC_MUX: [0, "Select RTC slow clock"]
       CK8M_D256: [1, "Internal 8 MHz RC oscillator, divided by 256"]
       XTAL32K: [2, "Select XTAL_32K"]
+  WDTCONFIG0:
+    "WDT_STG*":
+      Disable: [0, "Disabled"]
+      Interrupt: [1, "Trigger an interrupt"]
+      ResetCPU: [2, "Reset CPU core"]
+      ResetSystem: [3, "Reset System, but not RTC"]
+      ResetRTC: [4, "Reset System & RTC"]
+    "*_RESET_LENGTH":
+      T100ns: [0, "100ns"]
+      T200ns: [1, "200ns"]
+      T300ns: [2, "300ns"]
+      T400ns: [3, "400ns"]
+      T500ns: [4, "500ns"]
+      T800ns: [5, "800ns"]
+      T1600ns: [6, "1600ns"]
+      T3200ns: [7, "3200ns"]

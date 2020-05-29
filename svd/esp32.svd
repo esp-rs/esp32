@@ -37016,22 +37016,26 @@
                             <name>WDT_STG0</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
-                        </field>
+                        <enumeratedValues><name>WDT_STG0</name><usage>read-write</usage><enumeratedValue><name>Disable</name><description>Disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Interrupt</name><description>Trigger an interrupt</description><value>1</value></enumeratedValue><enumeratedValue><name>ResetCPU</name><description>Reset CPU core</description><value>2</value></enumeratedValue><enumeratedValue><name>ResetSystem</name><description>Reset System, but not RTC</description><value>3</value></enumeratedValue><enumeratedValue><name>ResetRTC</name><description>Reset System &amp; RTC</description><value>4</value></enumeratedValue></enumeratedValues>
+            </field>
                         <field>
                             <name>WDT_STG1</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>2</bitWidth>
-                        </field>
+                        <enumeratedValues derivedFrom="WDT_STG0" />
+            </field>
                         <field>
                             <name>WDT_STG2</name>
                             <bitOffset>25</bitOffset>
                             <bitWidth>2</bitWidth>
-                        </field>
+                        <enumeratedValues derivedFrom="WDT_STG0" />
+            </field>
                         <field>
                             <name>WDT_STG3</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>2</bitWidth>
-                        </field>
+                        <enumeratedValues derivedFrom="WDT_STG0" />
+            </field>
                         <field>
                             <name>WDT_EDGE_INT_EN</name>
                             <bitOffset>22</bitOffset>
@@ -37046,12 +37050,14 @@
                             <name>WDT_CPU_RESET_LENGTH</name>
                             <bitOffset>18</bitOffset>
                             <bitWidth>3</bitWidth>
-                        </field>
+                        <enumeratedValues><name>WDT_CPU_RESET_LENGTH</name><usage>read-write</usage><enumeratedValue><name>T100ns</name><description>100ns</description><value>0</value></enumeratedValue><enumeratedValue><name>T200ns</name><description>200ns</description><value>1</value></enumeratedValue><enumeratedValue><name>T300ns</name><description>300ns</description><value>2</value></enumeratedValue><enumeratedValue><name>T400ns</name><description>400ns</description><value>3</value></enumeratedValue><enumeratedValue><name>T500ns</name><description>500ns</description><value>4</value></enumeratedValue><enumeratedValue><name>T800ns</name><description>800ns</description><value>5</value></enumeratedValue><enumeratedValue><name>T1600ns</name><description>1600ns</description><value>6</value></enumeratedValue><enumeratedValue><name>T3200ns</name><description>3200ns</description><value>7</value></enumeratedValue></enumeratedValues>
+            </field>
                         <field>
                             <name>WDT_SYS_RESET_LENGTH</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>3</bitWidth>
-                        </field>
+                        <enumeratedValues derivedFrom="WDT_CPU_RESET_LENGTH" />
+            </field>
                         <field>
                             <name>WDT_FLASHBOOT_MOD_EN</name>
                             <bitOffset>14</bitOffset>
