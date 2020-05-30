@@ -37016,7 +37016,7 @@
                             <name>WDT_STG0</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
-                        <enumeratedValues><name>WDT_STG0</name><usage>read-write</usage><enumeratedValue><name>Disable</name><description>Disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Interrupt</name><description>Trigger an interrupt</description><value>1</value></enumeratedValue><enumeratedValue><name>ResetCPU</name><description>Reset CPU core</description><value>2</value></enumeratedValue><enumeratedValue><name>ResetSystem</name><description>Reset System, but not RTC</description><value>3</value></enumeratedValue><enumeratedValue><name>ResetRTC</name><description>Reset System &amp; RTC</description><value>4</value></enumeratedValue></enumeratedValues>
+                        <enumeratedValues><name>WDT_STG0</name><usage>read-write</usage><enumeratedValue><name>Disable</name><description>Disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Interrupt</name><description>Trigger an interrupt</description><value>1</value></enumeratedValue><enumeratedValue><name>ResetCPU</name><description>Reset CPU core</description><value>2</value></enumeratedValue><enumeratedValue><name>ResetSystem</name><description>Reset System</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
                         <field>
                             <name>WDT_STG1</name>

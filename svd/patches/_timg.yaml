@@ -9,8 +9,7 @@ TIMG:
       Disable: [0, "Disabled"]
       Interrupt: [1, "Trigger an interrupt"]
       ResetCPU: [2, "Reset CPU core"]
-      ResetSystem: [3, "Reset System, but not RTC"]
-      ResetRTC: [4, "Reset System & RTC"]
+      ResetSystem: [3, "Reset System"]
     "*_RESET_LENGTH":
       T100ns: [0, "100ns"]
       T200ns: [1, "200ns"]
