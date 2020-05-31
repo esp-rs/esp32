@@ -1,6 +1,5 @@
 language: rust
 rust:
-  - stable
   - nightly
 cache: cargo
 dist: "trusty"
@@ -10,8 +9,6 @@ before_install:
   - pyenv global 3.6.3
 
 matrix:
-  allow_failures:
-    - rust: nightly
   fast_finish: true
 
 install:
