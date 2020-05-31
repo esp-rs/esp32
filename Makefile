@@ -23,4 +23,4 @@ fmt:
 
 build:
 	cargo clean
-	cargo xbuild --target xtensa-esp32-none-elf
+	cargo build
