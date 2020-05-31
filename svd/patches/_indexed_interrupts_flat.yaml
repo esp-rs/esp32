@@ -1,0 +1,152 @@
+
+
+TIMG:
+  _add:
+    _interrupts:
+      TG0_T0_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER0, level, we would like use EDGE for timer if permission"
+        value: 14
+
+      TG0_T1_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER1, level, we would like use EDGE for timer if permission"
+        value: 15
+
+      TG0_WDT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, WATCHDOG, level"
+        value: 16
+
+      TG0_LACT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP0, LACT, level"
+        value: 17
+
+      TG1_T0_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER0, level, we would like use EDGE for timer if permission"
+        value: 18
+    
+      TG1_T1_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER1, level, we would like use EDGE for timer if permission"
+        value: 19
+
+      TG1_WDT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, WATCHDOG, level"
+        value: 20
+    
+      TG1_LACT_LEVEL_INTR:
+        description: "interrupt of TIMER_GROUP1, LACT, level"
+        value: 21
+
+      TG0_T0_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER0, EDGE"
+        value: 58
+      
+      TG0_T1_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, TIMER1, EDGE"
+        value: 59
+      
+      TG0_WDT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, WATCH DOG, EDGE"
+        value: 60
+      
+      TG0_LACT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, LACT, EDGE"
+        value: 61
+      
+      TG1_T0_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER0, EDGE"
+        value: 62
+      
+      TG1_T1_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP1, TIMER1, EDGE"
+        value: 63
+      
+      TG1_WDT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP1, WATCHDOG, EDGE"
+        value: 64
+      
+      TG1_LACT_EDGE_INTR:
+        description: "interrupt of TIMER_GROUP0, LACT, EDGE"
+        value: 65
+
+SPI:
+  _add:
+    _interrupts:      
+      SPI1_DMA_INTR:
+        description: "interrupt of SPI1 DMA, SPI1 is for flash read/write, do not use this"
+        value: 52
+
+      SPI2_DMA_INTR:
+        description: "interrupt of SPI2 DMA, level"
+        value: 53
+      
+      SPI3_DMA_INTR:
+        description: "interrupt of SPI3 DMA, level"
+        value: 54
+
+I2C:
+  _add:
+    _interrupts:      
+      I2C_EXT0_INTR:
+        description: "interrupt of I2C controller0, level"
+        value: 49
+
+      I2C_EXT1_INTR:
+        description: "interrupt of I2C controller1, level"
+        value: 50
+
+      PWM0_INTR:
+        description: "interrupt of PWM0, level, Reserved"
+        value: 39
+
+      PWM1_INTR:
+        description: "interrupt of PWM1, level, Reserved"
+        value: 40
+
+      PWM2_INTR:
+        description: "interrupt of PWM2, level"
+        value: 41
+      
+      PWM3_INTR:
+        description: "interrupt of PWM3, level"
+        value: 42
+
+UART:
+  _add:
+    _interrupts:      
+      UART0_INTR:
+        description: "interrupt of UART0, level"
+        value: 34
+
+      UART1_INTR:
+        description: "interrupt of UART1, level"
+        value: 35
+
+      UART2_INTR:
+        description: "interrupt of UART2, level"
+        value: 36
+
+      SPI0_INTR:
+        description: "interrupt of SPI0, level, SPI0 is for Cache Access, do not use this"
+        value: 28
+
+      SPI1_INTR:
+        description: "interrupt of SPI1, level, SPI1 is for flash read/write, do not use this"
+        value: 29
+
+      SPI2_INTR:
+        description: "interrupt of SPI2, level"
+        value: 30
+
+      SPI3_INTR:
+        description: "interrupt of SPI3, level"
+        value: 31
+
+UHCI:
+  _add:
+    _interrupts:
+      UHCI0_INTR:
+        description: "interrupt of UHCI0, level"
+        value: 12
+
+      UHCI1_INTR:
+        description: "interrupt of UHCI1, level"
+        value: 13
