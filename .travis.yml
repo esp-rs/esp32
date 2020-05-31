@@ -17,4 +17,4 @@ install:
   - cargo install form --force
   - cargo install --git https://github.com/rust-embedded/svd2rust svd2rust --force
 
-script: make all
+script: make clean patch generate form fmt
