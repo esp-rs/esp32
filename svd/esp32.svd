@@ -20,7 +20,28 @@
                 <size>0x00000000</size>
                 <usage>registers</usage>
             </addressBlock>
-            <registers />
+            <registers><register><name>START</name><fields><field><name>START</name><description>Write 1 to start AES operation</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth></field>
+            </fields><description>AES Start</description><size>32</size><addressOffset>0</addressOffset><access>write-only</access><resetValue>0</resetValue></register>
+        <register><name>IDLE</name><fields><field><name>IDLE</name><description>0 when AES is busy, 1 otherwise</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth></field>
+            </fields><description>AES Idle</description><size>32</size><addressOffset>4</addressOffset><access>read-only</access><resetValue>1</resetValue></register>
+        <register><name>MODE</name><fields><field><name>MODE</name><description>Selects AES accelerator mode</description><bitOffset>0</bitOffset><bitWidth>3</bitWidth><enumeratedValues><name>MODE</name><usage>read-write</usage><enumeratedValue><name>AES128_ENCRYPT</name><description>AES-128 Encryption</description><value>0</value></enumeratedValue><enumeratedValue><name>AES192_ENCRYPT</name><description>AES-192 Encryption</description><value>1</value></enumeratedValue><enumeratedValue><name>AES256_ENCRYPT</name><description>AES-256 Encryption</description><value>2</value></enumeratedValue><enumeratedValue><name>AES128_DECRYPT</name><description>AES-128 Decryption</description><value>4</value></enumeratedValue><enumeratedValue><name>AES192_DECRYPT</name><description>AES-192 Decryption</description><value>5</value></enumeratedValue><enumeratedValue><name>AES256_DECRYPT</name><description>AES-256 Decryption</description><value>6</value></enumeratedValue></enumeratedValues>
+            </field>
+            </fields><description>AES Mode</description><size>32</size><addressOffset>8</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_0</name><fields /><description>AES Key material 0</description><size>32</size><addressOffset>16</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_1</name><fields /><description>AES Key material 1</description><size>32</size><addressOffset>20</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_2</name><fields /><description>AES Key material 2</description><size>32</size><addressOffset>24</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_3</name><fields /><description>AES Key material 3</description><size>32</size><addressOffset>28</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_4</name><fields /><description>AES Key material 4</description><size>32</size><addressOffset>32</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_5</name><fields /><description>AES Key material 5</description><size>32</size><addressOffset>36</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_6</name><fields /><description>AES Key material 6</description><size>32</size><addressOffset>40</addressOffset><resetValue>0</resetValue></register>
+        <register><name>KEY_7</name><fields /><description>AES Key material 7</description><size>32</size><addressOffset>44</addressOffset><resetValue>0</resetValue></register>
+        <register><name>TEXT_0</name><fields /><description>Plaintext and ciphertext register 0</description><size>32</size><addressOffset>48</addressOffset><resetValue>0</resetValue></register>
+        <register><name>TEXT_1</name><fields /><description>Plaintext and ciphertext register 1</description><size>32</size><addressOffset>52</addressOffset><resetValue>0</resetValue></register>
+        <register><name>TEXT_2</name><fields /><description>Plaintext and ciphertext register 2</description><size>32</size><addressOffset>56</addressOffset><resetValue>0</resetValue></register>
+        <register><name>TEXT_3</name><fields /><description>Plaintext and ciphertext register 3</description><size>32</size><addressOffset>60</addressOffset><resetValue>0</resetValue></register>
+        <register><name>ENDIAN</name><fields><field><name>MODE</name><description>Select AES endian mode</description><bitOffset>0</bitOffset><bitWidth>6</bitWidth></field>
+            </fields><description>AES Endian selection</description><size>32</size><addressOffset>64</addressOffset><resetValue>63</resetValue></register>
+        </registers>
         </peripheral>
         <peripheral>
             <name>HINF</name>
