@@ -2,6 +2,7 @@ _svd: ../esp32.base.svd
 
 
 _include:
+  - "_aes.yaml"
   - "_uart.yaml"
   - "_io_mux.yaml"
   - "_rename_registers.yaml"
