@@ -1,7 +1,7 @@
 [package]
 name = "esp32"
 version = "0.4.0"
-authors = ["Scott Mabin <scott@mabez.dev>"]
+authors = ["Scott Mabin <scott@mabez.dev>", "Arjan Mels <arjan@mels.email>"]
 edition = "2018"
 readme = "README.md"
 repository = "https://github.com/esp-rs/esp32"
@@ -23,7 +23,8 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 bare-metal = "0.2"
 vcell = "0.1"
-xtensa-lx6-rt = "0.1.0"
+xtensa-lx6 = "0.1.0"
+xtensa-lx6-rt = "0.2.0"
 
 [features]
 default=["rt"]

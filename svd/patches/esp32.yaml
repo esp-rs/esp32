@@ -2,6 +2,7 @@ _svd: ../esp32.base.svd
 
 
 _include:
+  - "_aes.yaml"
   - "_uart.yaml"
   - "_io_mux.yaml"
   - "_rename_registers.yaml"
@@ -11,7 +12,7 @@ _include:
   - "_interrupts.yaml"
   - "_timg.yaml"
 #  - "_indexed_interrupts.yaml" # currently broken with svdtools, see: https://github.com/esp-rs/esp32/issues/17
-  - "_indexed_interrupts_flat.yaml" # currently broken with svdtools, see: https://github.com/esp-rs/esp32/issues/17
+  - "_indexed_interrupts_flat.yaml"
 
 _modify:
   PWM:
