@@ -19,6 +19,13 @@ GPIO:
   "*":
     _strip:
       - GPIO_
+  "PIN*":
+    _strip:
+      - "PIN*_"
+  "FUNC*":
+    _strip:
+      - "FUNC*_"
+      - "SIG*_IN_"
 
 GPIO_SD:
   "*":
@@ -97,7 +104,10 @@ RTCCNTL:
 RTCIO:
   "*":
     _strip:
-      - RTCIO_
+      - RTC_GPIO_
+  "PIN*":
+    _strip:
+      - "PIN*_"
 
 SENS:
   "*":
