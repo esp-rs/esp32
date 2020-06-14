@@ -105,6 +105,7 @@ RTCIO:
   "*":
     _strip:
       - RTC_GPIO_
+      - RTC_IO_
   "PIN*":
     _strip:
       - "PIN*_"

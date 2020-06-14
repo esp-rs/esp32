@@ -29347,32 +29347,32 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_DEBUG_12M_NO_GATING</name>
+                            <name>DEBUG_12M_NO_GATING</name>
                             <bitOffset>25</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DEBUG_SEL4</name>
+                            <name>DEBUG_SEL4</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DEBUG_SEL3</name>
+                            <name>DEBUG_SEL3</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DEBUG_SEL2</name>
+                            <name>DEBUG_SEL2</name>
                             <bitOffset>10</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DEBUG_SEL1</name>
+                            <name>DEBUG_SEL1</name>
                             <bitOffset>5</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DEBUG_SEL0</name>
+                            <name>DEBUG_SEL0</name>
                             <bitOffset>0</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
@@ -29386,7 +29386,7 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_DIG_PAD_HOLD</name>
+                            <name>DIG_PAD_HOLD</name>
                             <bitOffset>0</bitOffset>
                             <bitWidth>32</bitWidth>
                         </field>
@@ -29400,12 +29400,12 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_XPD_HALL</name>
+                            <name>XPD_HALL</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_HALL_PHASE</name>
+                            <name>HALL_PHASE</name>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -29419,122 +29419,122 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_SENSE1_HOLD</name>
+                            <name>SENSE1_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE2_HOLD</name>
+                            <name>SENSE2_HOLD</name>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE3_HOLD</name>
+                            <name>SENSE3_HOLD</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE4_HOLD</name>
+                            <name>SENSE4_HOLD</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE1_MUX_SEL</name>
+                            <name>SENSE1_MUX_SEL</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE2_MUX_SEL</name>
+                            <name>SENSE2_MUX_SEL</name>
                             <bitOffset>26</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE3_MUX_SEL</name>
+                            <name>SENSE3_MUX_SEL</name>
                             <bitOffset>25</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE4_MUX_SEL</name>
+                            <name>SENSE4_MUX_SEL</name>
                             <bitOffset>24</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE1_FUN_SEL</name>
+                            <name>SENSE1_FUN_SEL</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE1_SLP_SEL</name>
+                            <name>SENSE1_SLP_SEL</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE1_SLP_IE</name>
+                            <name>SENSE1_SLP_IE</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE1_FUN_IE</name>
+                            <name>SENSE1_FUN_IE</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE2_FUN_SEL</name>
+                            <name>SENSE2_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE2_SLP_SEL</name>
+                            <name>SENSE2_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE2_SLP_IE</name>
+                            <name>SENSE2_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE2_FUN_IE</name>
+                            <name>SENSE2_FUN_IE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE3_FUN_SEL</name>
+                            <name>SENSE3_FUN_SEL</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE3_SLP_SEL</name>
+                            <name>SENSE3_SLP_SEL</name>
                             <bitOffset>11</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE3_SLP_IE</name>
+                            <name>SENSE3_SLP_IE</name>
                             <bitOffset>10</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE3_FUN_IE</name>
+                            <name>SENSE3_FUN_IE</name>
                             <bitOffset>9</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE4_FUN_SEL</name>
+                            <name>SENSE4_FUN_SEL</name>
                             <bitOffset>7</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE4_SLP_SEL</name>
+                            <name>SENSE4_SLP_SEL</name>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE4_SLP_IE</name>
+                            <name>SENSE4_SLP_IE</name>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SENSE4_FUN_IE</name>
+                            <name>SENSE4_FUN_IE</name>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -29548,62 +29548,62 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_ADC1_HOLD</name>
+                            <name>ADC1_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC2_HOLD</name>
+                            <name>ADC2_HOLD</name>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC1_MUX_SEL</name>
+                            <name>ADC1_MUX_SEL</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC2_MUX_SEL</name>
+                            <name>ADC2_MUX_SEL</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC1_FUN_SEL</name>
+                            <name>ADC1_FUN_SEL</name>
                             <bitOffset>26</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC1_SLP_SEL</name>
+                            <name>ADC1_SLP_SEL</name>
                             <bitOffset>25</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC1_SLP_IE</name>
+                            <name>ADC1_SLP_IE</name>
                             <bitOffset>24</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC1_FUN_IE</name>
+                            <name>ADC1_FUN_IE</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC2_FUN_SEL</name>
+                            <name>ADC2_FUN_SEL</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC2_SLP_SEL</name>
+                            <name>ADC2_SLP_SEL</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC2_SLP_IE</name>
+                            <name>ADC2_SLP_IE</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_ADC2_FUN_IE</name>
+                            <name>ADC2_FUN_IE</name>
                             <bitOffset>18</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -29617,67 +29617,67 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_PDAC1_DRV</name>
+                            <name>PDAC1_DRV</name>
                             <bitOffset>30</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_HOLD</name>
+                            <name>PDAC1_HOLD</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_RDE</name>
+                            <name>PDAC1_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_RUE</name>
+                            <name>PDAC1_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_DAC</name>
+                            <name>PDAC1_DAC</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>8</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_XPD_DAC</name>
+                            <name>PDAC1_XPD_DAC</name>
                             <bitOffset>18</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_MUX_SEL</name>
+                            <name>PDAC1_MUX_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_FUN_SEL</name>
+                            <name>PDAC1_FUN_SEL</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_SLP_SEL</name>
+                            <name>PDAC1_SLP_SEL</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_SLP_IE</name>
+                            <name>PDAC1_SLP_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_SLP_OE</name>
+                            <name>PDAC1_SLP_OE</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_FUN_IE</name>
+                            <name>PDAC1_FUN_IE</name>
                             <bitOffset>11</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC1_DAC_XPD_FORCE</name>
+                            <name>PDAC1_DAC_XPD_FORCE</name>
                             <bitOffset>10</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -29691,67 +29691,67 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_PDAC2_DRV</name>
+                            <name>PDAC2_DRV</name>
                             <bitOffset>30</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_HOLD</name>
+                            <name>PDAC2_HOLD</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_RDE</name>
+                            <name>PDAC2_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_RUE</name>
+                            <name>PDAC2_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_DAC</name>
+                            <name>PDAC2_DAC</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>8</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_XPD_DAC</name>
+                            <name>PDAC2_XPD_DAC</name>
                             <bitOffset>18</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_MUX_SEL</name>
+                            <name>PDAC2_MUX_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_FUN_SEL</name>
+                            <name>PDAC2_FUN_SEL</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_SLP_SEL</name>
+                            <name>PDAC2_SLP_SEL</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_SLP_IE</name>
+                            <name>PDAC2_SLP_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_SLP_OE</name>
+                            <name>PDAC2_SLP_OE</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_FUN_IE</name>
+                            <name>PDAC2_FUN_IE</name>
                             <bitOffset>11</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_PDAC2_DAC_XPD_FORCE</name>
+                            <name>PDAC2_DAC_XPD_FORCE</name>
                             <bitOffset>10</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -29765,122 +29765,122 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_X32N_DRV</name>
+                            <name>X32N_DRV</name>
                             <bitOffset>30</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_HOLD</name>
+                            <name>X32N_HOLD</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_RDE</name>
+                            <name>X32N_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_RUE</name>
+                            <name>X32N_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_DRV</name>
+                            <name>X32P_DRV</name>
                             <bitOffset>25</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_HOLD</name>
+                            <name>X32P_HOLD</name>
                             <bitOffset>24</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_RDE</name>
+                            <name>X32P_RDE</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_RUE</name>
+                            <name>X32P_RUE</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DAC_XTAL_32K</name>
+                            <name>DAC_XTAL_32K</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_XPD_XTAL_32K</name>
+                            <name>XPD_XTAL_32K</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_MUX_SEL</name>
+                            <name>X32N_MUX_SEL</name>
                             <bitOffset>18</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_MUX_SEL</name>
+                            <name>X32P_MUX_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_FUN_SEL</name>
+                            <name>X32N_FUN_SEL</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_SLP_SEL</name>
+                            <name>X32N_SLP_SEL</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_SLP_IE</name>
+                            <name>X32N_SLP_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_SLP_OE</name>
+                            <name>X32N_SLP_OE</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32N_FUN_IE</name>
+                            <name>X32N_FUN_IE</name>
                             <bitOffset>11</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_FUN_SEL</name>
+                            <name>X32P_FUN_SEL</name>
                             <bitOffset>9</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_SLP_SEL</name>
+                            <name>X32P_SLP_SEL</name>
                             <bitOffset>8</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_SLP_IE</name>
+                            <name>X32P_SLP_IE</name>
                             <bitOffset>7</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_SLP_OE</name>
+                            <name>X32P_SLP_OE</name>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_X32P_FUN_IE</name>
+                            <name>X32P_FUN_IE</name>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DRES_XTAL_32K</name>
+                            <name>DRES_XTAL_32K</name>
                             <bitOffset>3</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_DBIAS_XTAL_32K</name>
+                            <name>DBIAS_XTAL_32K</name>
                             <bitOffset>1</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
@@ -29894,27 +29894,27 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_XPD_BIAS</name>
+                            <name>TOUCH_XPD_BIAS</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_DREFH</name>
+                            <name>TOUCH_DREFH</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_DREFL</name>
+                            <name>TOUCH_DREFL</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_DRANGE</name>
+                            <name>TOUCH_DRANGE</name>
                             <bitOffset>25</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_DCUR</name>
+                            <name>TOUCH_DCUR</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
@@ -29928,77 +29928,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_HOLD</name>
+                            <name>TOUCH_PAD0_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_DRV</name>
+                            <name>TOUCH_PAD0_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_RDE</name>
+                            <name>TOUCH_PAD0_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_RUE</name>
+                            <name>TOUCH_PAD0_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_DAC</name>
+                            <name>TOUCH_PAD0_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_START</name>
+                            <name>TOUCH_PAD0_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_TIE_OPT</name>
+                            <name>TOUCH_PAD0_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_XPD</name>
+                            <name>TOUCH_PAD0_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_MUX_SEL</name>
+                            <name>TOUCH_PAD0_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_FUN_SEL</name>
+                            <name>TOUCH_PAD0_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_SLP_SEL</name>
+                            <name>TOUCH_PAD0_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_SLP_IE</name>
+                            <name>TOUCH_PAD0_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_SLP_OE</name>
+                            <name>TOUCH_PAD0_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_FUN_IE</name>
+                            <name>TOUCH_PAD0_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD0_TO_GPIO</name>
+                            <name>TOUCH_PAD0_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30012,77 +30012,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_HOLD</name>
+                            <name>TOUCH_PAD1_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_DRV</name>
+                            <name>TOUCH_PAD1_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_RDE</name>
+                            <name>TOUCH_PAD1_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_RUE</name>
+                            <name>TOUCH_PAD1_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_DAC</name>
+                            <name>TOUCH_PAD1_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_START</name>
+                            <name>TOUCH_PAD1_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_TIE_OPT</name>
+                            <name>TOUCH_PAD1_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_XPD</name>
+                            <name>TOUCH_PAD1_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_MUX_SEL</name>
+                            <name>TOUCH_PAD1_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_FUN_SEL</name>
+                            <name>TOUCH_PAD1_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_SLP_SEL</name>
+                            <name>TOUCH_PAD1_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_SLP_IE</name>
+                            <name>TOUCH_PAD1_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_SLP_OE</name>
+                            <name>TOUCH_PAD1_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_FUN_IE</name>
+                            <name>TOUCH_PAD1_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD1_TO_GPIO</name>
+                            <name>TOUCH_PAD1_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30096,77 +30096,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_HOLD</name>
+                            <name>TOUCH_PAD2_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_DRV</name>
+                            <name>TOUCH_PAD2_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_RDE</name>
+                            <name>TOUCH_PAD2_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_RUE</name>
+                            <name>TOUCH_PAD2_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_DAC</name>
+                            <name>TOUCH_PAD2_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_START</name>
+                            <name>TOUCH_PAD2_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_TIE_OPT</name>
+                            <name>TOUCH_PAD2_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_XPD</name>
+                            <name>TOUCH_PAD2_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_MUX_SEL</name>
+                            <name>TOUCH_PAD2_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_FUN_SEL</name>
+                            <name>TOUCH_PAD2_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_SLP_SEL</name>
+                            <name>TOUCH_PAD2_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_SLP_IE</name>
+                            <name>TOUCH_PAD2_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_SLP_OE</name>
+                            <name>TOUCH_PAD2_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_FUN_IE</name>
+                            <name>TOUCH_PAD2_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD2_TO_GPIO</name>
+                            <name>TOUCH_PAD2_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30180,77 +30180,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_HOLD</name>
+                            <name>TOUCH_PAD3_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_DRV</name>
+                            <name>TOUCH_PAD3_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_RDE</name>
+                            <name>TOUCH_PAD3_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_RUE</name>
+                            <name>TOUCH_PAD3_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_DAC</name>
+                            <name>TOUCH_PAD3_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_START</name>
+                            <name>TOUCH_PAD3_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_TIE_OPT</name>
+                            <name>TOUCH_PAD3_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_XPD</name>
+                            <name>TOUCH_PAD3_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_MUX_SEL</name>
+                            <name>TOUCH_PAD3_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_FUN_SEL</name>
+                            <name>TOUCH_PAD3_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_SLP_SEL</name>
+                            <name>TOUCH_PAD3_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_SLP_IE</name>
+                            <name>TOUCH_PAD3_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_SLP_OE</name>
+                            <name>TOUCH_PAD3_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_FUN_IE</name>
+                            <name>TOUCH_PAD3_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD3_TO_GPIO</name>
+                            <name>TOUCH_PAD3_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30264,77 +30264,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_HOLD</name>
+                            <name>TOUCH_PAD4_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_DRV</name>
+                            <name>TOUCH_PAD4_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_RDE</name>
+                            <name>TOUCH_PAD4_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_RUE</name>
+                            <name>TOUCH_PAD4_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_DAC</name>
+                            <name>TOUCH_PAD4_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_START</name>
+                            <name>TOUCH_PAD4_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_TIE_OPT</name>
+                            <name>TOUCH_PAD4_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_XPD</name>
+                            <name>TOUCH_PAD4_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_MUX_SEL</name>
+                            <name>TOUCH_PAD4_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_FUN_SEL</name>
+                            <name>TOUCH_PAD4_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_SLP_SEL</name>
+                            <name>TOUCH_PAD4_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_SLP_IE</name>
+                            <name>TOUCH_PAD4_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_SLP_OE</name>
+                            <name>TOUCH_PAD4_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_FUN_IE</name>
+                            <name>TOUCH_PAD4_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD4_TO_GPIO</name>
+                            <name>TOUCH_PAD4_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30348,77 +30348,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_HOLD</name>
+                            <name>TOUCH_PAD5_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_DRV</name>
+                            <name>TOUCH_PAD5_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_RDE</name>
+                            <name>TOUCH_PAD5_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_RUE</name>
+                            <name>TOUCH_PAD5_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_DAC</name>
+                            <name>TOUCH_PAD5_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_START</name>
+                            <name>TOUCH_PAD5_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_TIE_OPT</name>
+                            <name>TOUCH_PAD5_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_XPD</name>
+                            <name>TOUCH_PAD5_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_MUX_SEL</name>
+                            <name>TOUCH_PAD5_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_FUN_SEL</name>
+                            <name>TOUCH_PAD5_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_SLP_SEL</name>
+                            <name>TOUCH_PAD5_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_SLP_IE</name>
+                            <name>TOUCH_PAD5_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_SLP_OE</name>
+                            <name>TOUCH_PAD5_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_FUN_IE</name>
+                            <name>TOUCH_PAD5_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD5_TO_GPIO</name>
+                            <name>TOUCH_PAD5_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30432,77 +30432,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_HOLD</name>
+                            <name>TOUCH_PAD6_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_DRV</name>
+                            <name>TOUCH_PAD6_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_RDE</name>
+                            <name>TOUCH_PAD6_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_RUE</name>
+                            <name>TOUCH_PAD6_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_DAC</name>
+                            <name>TOUCH_PAD6_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_START</name>
+                            <name>TOUCH_PAD6_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_TIE_OPT</name>
+                            <name>TOUCH_PAD6_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_XPD</name>
+                            <name>TOUCH_PAD6_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_MUX_SEL</name>
+                            <name>TOUCH_PAD6_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_FUN_SEL</name>
+                            <name>TOUCH_PAD6_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_SLP_SEL</name>
+                            <name>TOUCH_PAD6_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_SLP_IE</name>
+                            <name>TOUCH_PAD6_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_SLP_OE</name>
+                            <name>TOUCH_PAD6_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_FUN_IE</name>
+                            <name>TOUCH_PAD6_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD6_TO_GPIO</name>
+                            <name>TOUCH_PAD6_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30516,77 +30516,77 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_HOLD</name>
+                            <name>TOUCH_PAD7_HOLD</name>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_DRV</name>
+                            <name>TOUCH_PAD7_DRV</name>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_RDE</name>
+                            <name>TOUCH_PAD7_RDE</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_RUE</name>
+                            <name>TOUCH_PAD7_RUE</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_DAC</name>
+                            <name>TOUCH_PAD7_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_START</name>
+                            <name>TOUCH_PAD7_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_TIE_OPT</name>
+                            <name>TOUCH_PAD7_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_XPD</name>
+                            <name>TOUCH_PAD7_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_MUX_SEL</name>
+                            <name>TOUCH_PAD7_MUX_SEL</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_FUN_SEL</name>
+                            <name>TOUCH_PAD7_FUN_SEL</name>
                             <bitOffset>17</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_SLP_SEL</name>
+                            <name>TOUCH_PAD7_SLP_SEL</name>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_SLP_IE</name>
+                            <name>TOUCH_PAD7_SLP_IE</name>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_SLP_OE</name>
+                            <name>TOUCH_PAD7_SLP_OE</name>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_FUN_IE</name>
+                            <name>TOUCH_PAD7_FUN_IE</name>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD7_TO_GPIO</name>
+                            <name>TOUCH_PAD7_TO_GPIO</name>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30600,27 +30600,27 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD8_DAC</name>
+                            <name>TOUCH_PAD8_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD8_START</name>
+                            <name>TOUCH_PAD8_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD8_TIE_OPT</name>
+                            <name>TOUCH_PAD8_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD8_XPD</name>
+                            <name>TOUCH_PAD8_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD8_TO_GPIO</name>
+                            <name>TOUCH_PAD8_TO_GPIO</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30634,27 +30634,27 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD9_DAC</name>
+                            <name>TOUCH_PAD9_DAC</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>3</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD9_START</name>
+                            <name>TOUCH_PAD9_START</name>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD9_TIE_OPT</name>
+                            <name>TOUCH_PAD9_TIE_OPT</name>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD9_XPD</name>
+                            <name>TOUCH_PAD9_XPD</name>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_TOUCH_PAD9_TO_GPIO</name>
+                            <name>TOUCH_PAD9_TO_GPIO</name>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -30668,7 +30668,7 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_EXT_WAKEUP0_SEL</name>
+                            <name>EXT_WAKEUP0_SEL</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
@@ -30682,7 +30682,7 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_XTL_EXT_CTR_SEL</name>
+                            <name>XTL_EXT_CTR_SEL</name>
                             <bitOffset>27</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
@@ -30696,17 +30696,17 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_SAR_I2C_SDA_SEL</name>
+                            <name>SAR_I2C_SDA_SEL</name>
                             <bitOffset>30</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SAR_I2C_SCL_SEL</name>
+                            <name>SAR_I2C_SCL_SEL</name>
                             <bitOffset>28</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
-                            <name>RTC_IO_SAR_DEBUG_BIT_SEL</name>
+                            <name>SAR_DEBUG_BIT_SEL</name>
                             <bitOffset>23</bitOffset>
                             <bitWidth>5</bitWidth>
                         </field>
@@ -30720,7 +30720,7 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>RTC_IO_IO_DATE</name>
+                            <name>IO_DATE</name>
                             <bitOffset>0</bitOffset>
                             <bitWidth>28</bitWidth>
                         </field>
