@@ -5,6 +5,8 @@ _include:
   - "_aes.yaml"
   - "_uart.yaml"
   - "_io_mux.yaml"
+  - "_gpio.yaml"
+  - "_rtcio.yaml"
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
   - "_rtc_cntl.yaml"

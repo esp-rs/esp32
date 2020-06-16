@@ -109,6 +109,10 @@ RTCIO:
   "PIN*":
     _strip:
       - "PIN*_"
+  "TOUCH_PAD*":
+    _strip:
+      - "TOUCH_PAD*_"
+
 
 SENS:
   "*":
