@@ -1,0 +1,11 @@
+
+GPIO:
+  _array:
+    FUNC*_IN_SEL_CFG: 
+      description: Peripheral input selection register array
+    FUNC*_OUT_SEL_CFG: 
+      description: Peripheral output selection register array
+    PIN*: 
+      description: GPIO Configuration register array
+
+

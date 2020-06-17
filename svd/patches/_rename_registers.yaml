@@ -65,7 +65,8 @@ RTCCNTL:
 
 RTCIO:
   _strip:
-    - RTCIO_
+    - RTC_GPIO_
+    - RTC_IO_
 
 SENS:
   _strip:

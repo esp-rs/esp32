@@ -1,0 +1,4 @@
+RTCIO:
+  _array:
+    PIN*: {}
+
