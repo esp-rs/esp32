@@ -1,0 +1,6 @@
+SPI:
+  _array:
+    W*: 
+      description: SPI Data Buffer
+
+

@@ -12,6 +12,7 @@ _include:
   - "_rtc_cntl.yaml"
   - "_dport.yaml"
   - "_interrupts.yaml"
+  - "_spi.yaml"
   - "_timg.yaml"
 #  - "_indexed_interrupts.yaml" # currently broken with svdtools, see: https://github.com/esp-rs/esp32/issues/17
   - "_indexed_interrupts_flat.yaml"
