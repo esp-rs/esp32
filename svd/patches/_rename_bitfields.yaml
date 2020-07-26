@@ -133,6 +133,12 @@ SPI:
   "*":
     _strip:
       - SPI_
+  "W?":
+    _strip_end:
+      - "?"
+  "W??":
+    _strip_end:
+      - "??"
 
 SYSCON:
   "*":
