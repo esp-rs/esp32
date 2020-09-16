@@ -1,6 +1,6 @@
 [package]
 name = "esp32"
-version = "0.7.0"
+version = "0.8.0"
 authors = ["Scott Mabin <scott@mabez.dev>", "Arjan Mels <arjan@mels.email>"]
 edition = "2018"
 readme = "README.md"
