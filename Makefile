@@ -12,7 +12,7 @@ patch:
 	mv svd/$(BASE).patched svd/$(OUTPUT)
 
 generate:
-	svd2rust --target xtensalx6 -i svd/$(OUTPUT)
+	svd2rust --target xtensa-lx -i svd/$(OUTPUT)
 
 form:
 	form -i lib.rs -o src/
