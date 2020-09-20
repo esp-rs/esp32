@@ -23,10 +23,9 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 bare-metal = "0.2"
 vcell = "0.1"
-xtensa-lx6 = "0.2.0"
-xtensa-lx6-rt = { version = "0.4.0", optional = true }
+xtensa-lx = "0.3.0"
+xtensa-lx-rt = { version = "0.5.0", optional = true }
 
 [features]
-default=["rt"]
-
-rt=["xtensa-lx6-rt"]
+default=[]
+rt=["xtensa-lx-rt"]
