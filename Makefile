@@ -3,6 +3,8 @@ BASE=esp32.base.svd
 
 all: clean patch generate form fmt build
 
+codegen: clean generate form fmt build
+
 clean:
 	rm -rf src/
 
