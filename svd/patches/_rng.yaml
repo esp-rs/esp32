@@ -1,0 +1,11 @@
+
+_add:
+  RNG:
+    baseAddress: 0x3ff75144
+    description: True Random Number Generator
+    registers:
+      RNG_DATA_REG:
+        description: Random Number Data
+        addressOffset: 0x0
+        size: 32
+        access: read-only
