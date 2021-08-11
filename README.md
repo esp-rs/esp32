@@ -17,7 +17,7 @@ Required dependencies:
 
 - [form](https://crates.io/crates/form)
 - [svd](https://github.com/stm32-rs/svdtools)
-- [svd2rust](https://github.com/rust-embedded/svd2rust)
+- [svd2rust](https://github.com/rust-embedded/svd2rust) - NOTE: Currently requires a `svd2rust` with this PR included: https://github.com/rust-embedded/svd2rust/pull/536
 
 ```
 $ make
