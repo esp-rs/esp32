@@ -1,6 +1,6 @@
 [package]
 name = "esp32"
-version = "0.10.0"
+version = "0.11.0"
 authors = ["Scott Mabin <scott@mabez.dev>", "Arjan Mels <arjan@mels.email>"]
 edition = "2018"
 readme = "README.md"
@@ -21,11 +21,11 @@ include = [
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-bare-metal = "0.2"
+bare-metal = "1.0"
 vcell = "0.1"
-xtensa-lx = "0.3.0"
-xtensa-lx-rt = { version = "0.5.0", optional = true }
+xtensa-lx = "0.4.0"
+xtensa-lx-rt = { version = "0.7.0", optional = true }
 
 [features]
-default=[]
-rt=["xtensa-lx-rt"]
+default=["xtensa-lx/lx6"]
+rt=["xtensa-lx-rt/lx6"]
