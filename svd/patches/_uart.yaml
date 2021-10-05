@@ -45,7 +45,7 @@ UART:
       TX_PRTY: [10, "TX_PRTY"]
       TX_STP1: [11, "TX_STP1"]
       TX_STP2: [12, "TX_STP2"]
-      TX_DL1: [13, "TX_DL0"]
+      TX_DL0: [13, "TX_DL0"]
       TX_DL1: [14, "TX_DL1"]
     UART_ST_URX_OUT:
       RX_IDLE: [0, "RX_IDLE"]
