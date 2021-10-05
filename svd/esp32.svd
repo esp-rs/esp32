@@ -35666,6 +35666,11 @@
                                     <value>12</value>
                                 </enumeratedValue>
                                 <enumeratedValue>
+                                    <name>TX_DL0</name>
+                                    <description>TX_DL0</description>
+                                    <value>13</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
                                     <name>TX_DL1</name>
                                     <description>TX_DL1</description>
                                     <value>14</value>
