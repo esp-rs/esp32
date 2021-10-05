@@ -3,10 +3,10 @@ _modify:
     addressBlocks:
     - offset: 0x0
       size: 0x6a0
-      usage: RTC CNTL registers
+      usage: registers
     - offset: 0x200C6000
       size: 0x4
-      usage: Internal I2C registers
+      usage: registers
 
 RTCCNTL:
   CLK_CONF:

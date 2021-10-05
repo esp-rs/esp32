@@ -3,10 +3,10 @@ _modify:
     addressBlocks:
     - offset: 0x0
       size: 0x400
-      usage: UART registers
+      usage: registers
     - offset: 0x200C0000
       size: 0x4
-      usage: TX FIFO
+      usage: buffer
 
 UART:
   _add:

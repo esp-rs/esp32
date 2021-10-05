@@ -17017,12 +17017,12 @@
             <addressBlock>
                 <offset>0</offset>
                 <size>1696</size>
-                <usage>RTC CNTL registers</usage>
+                <usage>registers</usage>
             </addressBlock>
             <addressBlock>
                 <offset>537681920</offset>
                 <size>4</size>
-                <usage>Internal I2C registers</usage>
+                <usage>registers</usage>
             </addressBlock>
             <interrupt>
                 <name>RTC_CORE_INTR</name>
@@ -35074,12 +35074,12 @@
             <addressBlock>
                 <offset>0</offset>
                 <size>1024</size>
-                <usage>UART registers</usage>
+                <usage>registers</usage>
             </addressBlock>
             <addressBlock>
                 <offset>537657344</offset>
                 <size>4</size>
-                <usage>TX FIFO</usage>
+                <usage>buffer</usage>
             </addressBlock>
             <interrupt>
                 <name>UART0_INTR</name>
